@@ -54,7 +54,7 @@
                     </div>
 
                     <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">رقم المريض
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">رقم الهاتف
                             <span class="required">*</span>
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
@@ -89,16 +89,16 @@
 
 
                     <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12">Gender</label>
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12">الجنس</label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
                             <div id="gender" class="btn-group" data-toggle="buttons">
                                 <label class="btn btn-default" data-toggle-class="btn-primary"
                                        data-toggle-passive-class="btn-default">
-                                    <input type="radio" name="gender" value="male" > &nbsp; Male &nbsp;
+                                    <input type="radio" name="gender" value="male" > &nbsp; ذكر &nbsp;
                                 </label>
                                 <label class="btn btn-primary" data-toggle-class="btn-primary"
                                        data-toggle-passive-class="btn-default">
-                                    <input type="radio" name="gender" value="female" > Female
+                                    <input type="radio" name="gender" value="female" > أنثى
                                 </label>
                             </div>
                         </div>
@@ -143,7 +143,7 @@
 
                     <div class="form-group">
                         <label class="control-label col-md-3 col-sm-3 col-xs-12" for="age">
-                            السن <span class="required">*</span>
+                            العمر <span class="required">*</span>
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
                             <input type="text" name="age" id="age"
@@ -173,9 +173,9 @@
                         <div class="col-md-6 col-sm-6 col-xs-12"  id="body_fat" required="required" >
                             <select class="form-control" value="{{old('body_fat')}}" name="body_fat">
                                 <option >اختر</option>
-                                <option value="low">Low</option>
-                                <option value="medium"> Medium</option>
-                                <option value="High">High </option>
+                                <option value="منخفض">منخفض</option>
+                                <option value="متوسط"> متوسط</option>
+                                <option value="مرتفع">مرتفع </option>
                             </select>
                         </div>
                     </div>

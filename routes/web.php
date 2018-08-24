@@ -25,4 +25,6 @@ Route::group(['middleware' => ['auth']], function () {
     });
 
     Route::resource('/patient','PatientController');
+    Route::post('/notes/save/{id}','PatientController@saveNote');
+    Route::get('/noteDeletion/{id}/{pid}','PatientController@deleteNote');
 });

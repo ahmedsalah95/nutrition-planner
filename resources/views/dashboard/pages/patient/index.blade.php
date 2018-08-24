@@ -29,7 +29,7 @@
     <hr>
     <br>
     <br>
-    <input class="form-control" id="myInput" type="text" placeholder="Search..">
+    <input class="form-control" id="myInput" type="text" placeholder="البحث بالاسم او رقم الهاتف">
     <br>
     <section class="indexPatient">
         <div class="container">
@@ -72,9 +72,10 @@
 
 
                     </tbody>
+
                 </table>
 
-
+                    <center>{{$patients->links()}}</center>
             </div>
         </div>
 

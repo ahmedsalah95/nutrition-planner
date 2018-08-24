@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Note;
 use App\Patient;
 use Illuminate\Http\Request;
 
@@ -15,7 +16,7 @@ class PatientController extends Controller
     public function index()
     {
 
-        $patients = Patient::all();
+        $patients = Patient::paginate(2);
         return view('dashboard.pages.patient.index')->with(['patients'=>$patients]);
     }
 
@@ -92,7 +93,13 @@ class PatientController extends Controller
      */
     public function show($id)
     {
-        //
+        $patient = Patient::where('id',$id)->first();
+
+        $notes = Note::where('patient_id',$id)->get();
+        return view('dashboard.pages.patient.showPatient')->with([
+           'patient'=>$patient,
+            'notes'=>$notes
+        ]);
     }
 
     /**
@@ -119,7 +126,51 @@ class PatientController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+
+        $this->validate($request,[
+
+            'name'=>'required',
+            'phone'=>'required',
+            'register_date'=>'required',
+            'email'=>'email|required',
+            'gender'=>'required',
+            'birthday'=>'required',
+
+            'height' => 'required',
+            'weight' => 'required',
+
+
+            'age'=>'required',
+            'health_condition'=>'required',
+            'body_fat'=>'required',
+            'activity_level'=>'required',
+            'food_type_diet' => 'required',
+
+            'goal'=>'required',
+
+        ]);
+        $patientData = Patient::where('id',$id)->first();
+        $patientData->name = $request['name'];
+        $patientData->phone = $request['phone'];
+        $patientData->register_date = $request['register_date'];
+        $patientData->email = $request['email'];
+        $patientData->gender = $request['gender'];
+        $patientData->birthday = $request['birthday'];
+        $patientData->height = $request['height'];
+        $patientData->weight = $request['weight'];
+        $patientData->age = $request['age'];
+        $patientData->health_condition = $request['health_condition'];
+        $patientData->body_fat = $request['body_fat'];
+        $patientData->activity_level = $request['activity_level'];
+        $patientData->food_type_diet = $request['food_type_diet'];
+        $patientData->dont_eat = $request['dont_eat'];
+        $patientData->goal           =$request['goal'];
+
+        $patientData->save();
+
+        return redirect('patient');
+
+
     }
 
     /**
@@ -132,5 +183,30 @@ class PatientController extends Controller
     {
         Patient::where('id',$id)->delete();
         return redirect('patient');
+    }
+
+    public function saveNote(Request $request,$id)
+    {
+
+
+        $notesNumber = count($request->notes);
+
+        for ($i=0;$i<$notesNumber;$i++)
+        {
+
+            $saveNote = new Note();
+            $saveNote->patient_id=$id;
+            $saveNote->note = $request->notes[$i];
+            $saveNote->save();
+        }
+
+        return redirect('patient/'.$id);
+
+    }
+    public function deleteNote($id,$pid)
+    {
+        Note::where('id',$id)->delete();
+        return back();
+
     }
 }
