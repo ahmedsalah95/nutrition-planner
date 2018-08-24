@@ -39,29 +39,52 @@
     <section class="patients">
         <div class="container">
             <div class="row">
-                <form id="demo-form2"  class="form-horizontal form-label-left" novalidate="">
+                <form   action="/patient/{{$id}}"  method="post" class="form-horizontal form-label-left" >
 
+                    <input type="hidden" name="_method" value="PUT">
+                    @csrf
                     <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">اسم المريض <span class="required">*</span>
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">اسم المريض
+                            <span class="required">*</span>
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
-                            <input type="text" id="name" required="required" name="name" class="form-control col-md-7 col-xs-12">
+                            <input type="text" id="name" required="required" name="name"
+                                   class="form-control col-md-7 col-xs-12"
+                                   value="{{$patient->name}}">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">رقم المريض
+                            <span class="required">*</span>
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <input type="text" id="phone" required="required" name="phone"
+                                   class="form-control col-md-7 col-xs-12"
+                                   value="{{$patient->phone}}">
                         </div>
                     </div>
                     <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="register_date">تاريخ الكشف <span class="required">*</span>
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="register_date">تاريخ الكشف
+                            <span class="required">*</span>
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
 
-                            <input type="date" id="register_date" name="register_date" size="20" class="form-control col-md-7 col-xs-12"/>
+                            <input type="date" id="register_date" name="register_date" size="20"
+                                   class="form-control col-md-7 col-xs-12"
+                                   value="{{$patient->register_date}}"
+                            />
                         </div>
                     </div>
                     <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="email"> البريد الالكتروني <span class="required">*</span>
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="email"> البريد الالكتروني
+                            <span class="required">*</span>
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
 
-                            <input type="date" id="email" name="email" size="20" class="form-control col-md-7 col-xs-12"/>
+                            <input type="date" id="email" name="email"
+                                   value="{{$patient->email}}"
+                                   size="20" class="form-control col-md-7 col-xs-12"/>
                         </div>
                     </div>
 
@@ -70,55 +93,77 @@
                         <label class="control-label col-md-3 col-sm-3 col-xs-12">Gender</label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
                             <div id="gender" class="btn-group" data-toggle="buttons">
-                                <label class="btn btn-default" data-toggle-class="btn-primary" data-toggle-passive-class="btn-default">
+                                <label class="btn btn-default" data-toggle-class="btn-primary"
+                                       data-toggle-passive-class="btn-default">
                                     <input type="radio" name="gender" value="male" > &nbsp; Male &nbsp;
                                 </label>
-                                <label class="btn btn-primary" data-toggle-class="btn-primary" data-toggle-passive-class="btn-default">
+                                <label class="btn btn-primary" data-toggle-class="btn-primary"
+                                       data-toggle-passive-class="btn-default">
                                     <input type="radio" name="gender" value="female" > Female
                                 </label>
                             </div>
                         </div>
                     </div>
                     <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="birthday">تاريخ ميلاد المريض <span class="required">*</span>
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="birthday">تاريخ ميلاد المريض
+                            <span class="required">*</span>
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
-                            <input type="date" name="birthday" id="birthday" class="date-picker form-control col-md-7 col-xs-12" required="required" >
+                            <input type="date" name="birthday" id="birthday"
+                                   class="date-picker form-control col-md-7 col-xs-12"
+                                   required="required"
+                                   value="{{$patient->birthday}}"
+                            >
                         </div>
                     </div>
 
                     <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="height">  طول المريض <span class="required">*</span>
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="height">
+                            طول المريض <span class="required">*</span>
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
-                            <input type="text" name="height" id="height" class=" form-control col-md-7 col-xs-12" required="required" >
-                        </div>
-                    </div>
-
-
-                    <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="weight"> وزن المريض <span class="required">*</span>
-                        </label>
-                        <div class="col-md-6 col-sm-6 col-xs-12">
-                            <input type="text" name="weight" id="weight" class=" form-control col-md-7 col-xs-12" required="required" >
-                        </div>
-                    </div>
-
-
-                    <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="age">  السن <span class="required">*</span>
-                        </label>
-                        <div class="col-md-6 col-sm-6 col-xs-12">
-                            <input type="text" name="age" id="age" class=" form-control col-md-7 col-xs-12" required="required" >
+                            <input type="text" name="height" id="height"
+                                   class=" form-control col-md-7 col-xs-12"
+                                   value="{{$patient->height}}"
+                                   required="required" >
                         </div>
                     </div>
 
 
                     <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="health_condition">  الحاله الصحية للمريض <span class="required">*</span>
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="weight"> وزن المريض
+                            <span class="required">*</span>
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
-                            <textarea name="health_condition"  cols="30" rows="10" id="health_condition"></textarea>
+                            <input type="text" name="weight"
+                                   value="{{$patient->height}}"
+                                   id="weight" class=" form-control col-md-7 col-xs-12" required="required" >
+                        </div>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="age">
+                            السن <span class="required">*</span>
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <input type="text" name="age" id="age"
+                                   value="{{$patient->age}}"
+                                   class=" form-control col-md-7 col-xs-12" required="required" >
+                        </div>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="health_condition">  الحاله الصحية للمريض
+
+
+                            <span class="required">*</span>
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <textarea name="health_condition"  cols="30" rows="10" id="health_condition">
+                              {{$patient->health_condition}}
+                            </textarea>
                         </div>
                     </div>
 
@@ -126,9 +171,9 @@
 
                     <div class="form-group">
                         <label class="control-label col-md-3 col-sm-3 col-xs-12"> نسبة الدهون في الجسم</label>
-                        <div class="col-md-6 col-sm-6 col-xs-12" name="body_fat" id="body_fat" required="required" >
-                            <select class="form-control">
-                                <option >اختر</option>
+                        <div class="col-md-6 col-sm-6 col-xs-12"  id="body_fat" required="required" >
+                            <select class="form-control" name="body_fat">
+                                <option value="{{$patient->body_fat}}" >{{$patient->body_fat}} </option>
                                 <option value="low">Low</option>
                                 <option value="medium"> Medium</option>
                                 <option value="High">High </option>
@@ -138,9 +183,9 @@
 
                     <div class="form-group">
                         <label class="control-label col-md-3 col-sm-3 col-xs-12"> نشاط المريض</label>
-                        <div class="col-md-6 col-sm-6 col-xs-12" name="activity_level" id="activity_level" required="required" >
-                            <select class="form-control">
-                                <option >اختر</option>
+                        <div class="col-md-6 col-sm-6 col-xs-12"  id="activity_level" required="required" >
+                            <select class="form-control" name="activity_level" value="{{$patient->activity_level}}">
+                                <option value="{{$patient->activity_level}}" >{{$patient->activity_level}} </option>
                                 <option value="low">قليل</option>
                                 <option value="medium"> متوسط</option>
                                 <option value="High">مرتفع </option>
@@ -152,9 +197,9 @@
 
                     <div class="form-group">
                         <label class="control-label col-md-3 col-sm-3 col-xs-12">  انواع الطعام المفضلة للمريض</label>
-                        <div class="col-md-6 col-sm-6 col-xs-12" name="food_type_diet" id="food_type_diet" required="required" >
-                            <select class="form-control">
-                                <option >اختر</option>
+                        <div class="col-md-6 col-sm-6 col-xs-12"  id="food_type_diet" required="required" >
+                            <select class="form-control" value="{{$patient->food_type_diet}}" name="food_type_diet">
+                                <option value="{{$patient->food_type_diet}}" >{{$patient->food_type_diet}} </option>
                                 <option value="anything">anything</option>
                                 <option value="paleo">paleo</option>
                                 <option value="vegetarian">vegetarian</option>
@@ -169,7 +214,9 @@
                         <label class="control-label col-md-3 col-sm-3 col-xs-12" for="dont_eat">  نوع طعام لا يفضله المريض <span class="required">*</span>
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
-                            <input type="text" value="البقوليات,اللحوم,الالبان" name="dont_eat" id="dont_eat" data-role="tagsinput">
+                            <input type="text" value="البقوليات,اللحوم,الالبان"
+                                   value="{{$patient->dont_eat}}"
+                                   name="dont_eat" id="dont_eat" data-role="tagsinput">
                         </div>
                     </div>
 
@@ -179,20 +226,16 @@
                         <label class="control-label col-md-3 col-sm-3 col-xs-12" for="goal"> هدف المريض <span class="required">*</span>
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
-                            <textarea name="goal"  cols="30" rows="10" id="goal"></textarea>
+                            <textarea name="goal"  cols="30" rows="10" id="goal">
+                                {{$patient->goal}}
+                            </textarea>
                         </div>
                     </div>
 
 
 
-                    <div class="ln_solid"></div>
-                    <div class="form-group">
-                        <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
-                            <button class="btn btn-primary" type="button">Cancel</button>
-                            <button class="btn btn-primary" type="reset">Reset</button>
-                            <button type="submit" class="btn btn-success">Submit</button>
-                        </div>
-                    </div>
+
+                    <input type="submit" name="submit" value="تعديل" class="btn btn-success btn-block">
 
                 </form>
             </div>

@@ -103,7 +103,11 @@ class PatientController extends Controller
      */
     public function edit($id)
     {
-        //
+        $patient = Patient::where('id',$id)->first();
+        return view('dashboard.pages.patient.updatePatient')->with([
+            'patient'=>$patient,
+            'id'=>$id,
+        ]);
     }
 
     /**
@@ -126,6 +130,7 @@ class PatientController extends Controller
      */
     public function destroy($id)
     {
-        //
+        Patient::where('id',$id)->delete();
+        return redirect('patient');
     }
 }

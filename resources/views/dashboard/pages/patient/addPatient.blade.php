@@ -223,14 +223,16 @@
                         <label class="control-label col-md-3 col-sm-3 col-xs-12" for="goal"> هدف المريض <span class="required">*</span>
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
-                            <textarea name="goal"  cols="30" rows="10" id="goal"></textarea>
+                            <textarea name="goal"  cols="30" rows="10" id="goal">
+                                {{old('goal')}}
+                            </textarea>
                         </div>
                     </div>
 
 
 
 
-                            <input type="submit" name="submit" class="btn btn-success btn-block">
+                            <input type="submit" name="submit" value="حفظ" class="btn btn-success btn-block">
 
                 </form>
             </div>
