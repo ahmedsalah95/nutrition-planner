@@ -81,7 +81,7 @@
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
 
-                            <input type="date" id="email" name="email"
+                            <input type="text" id="email" name="email"
                                    value="{{old('email')}}"
                                    size="20" class="form-control col-md-7 col-xs-12"/>
                         </div>
