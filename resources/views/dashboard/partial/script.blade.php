@@ -1,3 +1,8 @@
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Parsley -->
+<script src="{{url('/')}}/vendors/parsleyjs/dist/parsley.min.js"></script>
 <!-- jQuery -->
 <script src="{{url('/')}}/vendors/jquery/dist/jquery.min.js"></script>
 <!-- Bootstrap -->
@@ -23,8 +28,7 @@
 <script src="{{url('/')}}/vendors/switchery/dist/switchery.min.js"></script>
 <!-- Select2 -->
 <script src="{{url('/')}}/vendors/select2/dist/js/select2.full.min.js"></script>
-<!-- Parsley -->
-<script src="{{url('/')}}/vendors/parsleyjs/dist/parsley.min.js"></script>
+
 <!-- Autosize -->
 <script src="{{url('/')}}/vendors/autosize/dist/autosize.min.js"></script>
 <!-- jQuery autocomplete -->
@@ -33,3 +37,9 @@
 <script src="{{url('/')}}/vendors/starrr/dist/starrr.js"></script>
 <!-- Custom Theme Scripts -->
 <script src="{{url('/')}}/build/js/custom.min.js"></script>
+
+<script src="{{url('/')}}/vendors/bootstrap-tagsinput.min.js"></script>
+
+
+
+

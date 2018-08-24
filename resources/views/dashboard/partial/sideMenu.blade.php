@@ -27,8 +27,8 @@
                 <ul class="nav side-menu">
 
 
-                    <li><a href="#"> <i class="fa fa-laptop"></i> Setting</a></li>
-                    <li><a href="#"> <i class="fa fa-laptop"></i> About</a></li>
+                    <li><a href="/settings"> <i class="fa fa-laptop"></i> الصفحة الرئيسية</a></li>
+                    <li><a href="/patient"> <i class="fa fa-users"></i> المرضي</a></li>
 
 
                     <li><a><i class="fa fa-home"></i> trips <span class="fa fa-chevron-down"></span></a>

@@ -28,4 +28,6 @@
 
     <!-- Custom Theme Style -->
     <link href="{{url('/')}}/build/css/custom.min.css" rel="stylesheet">
+
+    <link href="{{url('/')}}/vendors/bootstrap-tagsinput.css" rel="stylesheet">
 </head>

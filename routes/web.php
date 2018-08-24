@@ -11,9 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
 
 Auth::routes();
 
@@ -21,3 +19,10 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::resource('/settings','SettingController'); // index
 
+Route::group(['middleware' => ['auth']], function () {
+    Route::get('/', function () {
+        return view('dashboard.pages.settings');
+    });
+
+    Route::resource('/patient','PatientController');
+});
