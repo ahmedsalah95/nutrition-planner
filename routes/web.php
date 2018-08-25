@@ -24,7 +24,13 @@ Route::group(['middleware' => ['auth']], function () {
         return view('dashboard.pages.settings');
     });
 
+    // patient routes
+
     Route::resource('/patient','PatientController');
     Route::post('/notes/save/{id}','PatientController@saveNote');
     Route::get('/noteDeletion/{id}/{pid}','PatientController@deleteNote');
+
+    // food category route
+
+    Route::resource('/foodCategory','FoodcategoryController');
 });
