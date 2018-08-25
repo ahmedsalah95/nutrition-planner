@@ -49,7 +49,7 @@
                     @foreach($foods as $food)
                         <tr>
                             <td>{{$food->name}}</td>
-                            <td>{{$food->description}}</td>
+                            <td>{!! $food->description !!}</td>
 
                             <td>
 
@@ -66,7 +66,6 @@
                                     <input type="hidden" name="_method" value="delete"/>
 
                                 </form>
-                                <a href="/patient/{{$food->id}}" class="btn btn-success"> <i class="fa fa-eye"></i></a>
                             </td>
                         </tr>
                     @endforeach

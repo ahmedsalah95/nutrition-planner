@@ -33,4 +33,9 @@ Route::group(['middleware' => ['auth']], function () {
     // food category route
 
     Route::resource('/foodCategory','FoodcategoryController');
+
+
+    // items route
+
+    //Route::resource('/food','FoodController');
 });

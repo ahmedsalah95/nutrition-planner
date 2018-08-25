@@ -15,7 +15,7 @@ class FoodcategoryController extends Controller
     public function index()
     {
         $foods = Foodcategory::paginate(3);
-        return view('dashboard.pages.foodCategory.index');
+        return view('dashboard.pages.foodCategory.index')->with(['foods'=>$foods]);
     }
 
     /**
@@ -25,7 +25,7 @@ class FoodcategoryController extends Controller
      */
     public function create()
     {
-        //
+        return view('dashboard.pages.foodCategory.addFood');
     }
 
     /**
@@ -36,7 +36,23 @@ class FoodcategoryController extends Controller
      */
     public function store(Request $request)
     {
-        //
+
+        $this->validate($request, [
+
+            'name' => 'required',
+            'description' => 'required',
+        ]);
+
+        $saveData = new Foodcategory();
+
+        $saveData->name = $request['name'];
+        $saveData->description = $request['description'];
+
+        $saveData->save();
+
+        session()->flash('success', 'Category added Successfully');
+
+        return redirect('foodCategory');
     }
 
     /**
@@ -58,7 +74,8 @@ class FoodcategoryController extends Controller
      */
     public function edit($id)
     {
-        //
+        $data = Foodcategory::where('id',$id)->first();
+        return view('dashboard.pages.foodCategory.updateFood',['id'=>$id,'data'=>$data]);
     }
 
     /**
@@ -70,7 +87,22 @@ class FoodcategoryController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $this->validate($request, [
+
+            'name' => 'required',
+            'description' => 'required',
+        ]);
+
+        $saveData = Foodcategory::where('id',$id)->first();
+
+        $saveData->name = $request['name'];
+        $saveData->description = $request['description'];
+
+        $saveData->save();
+
+        session()->flash('success', 'Category added Successfully');
+
+        return redirect('foodCategory');
     }
 
     /**
@@ -81,6 +113,11 @@ class FoodcategoryController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $data = Foodcategory::where('id',$id)->first();
+        $data->delete();
+
+        session()->flash('success', 'Category deleted Successfully');
+
+        return redirect('foodCategory');
     }
 }
