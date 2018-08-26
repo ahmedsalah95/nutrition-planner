@@ -37,5 +37,9 @@ Route::group(['middleware' => ['auth']], function () {
 
     // items route
 
-    //Route::resource('/food','FoodController');
+    Route::resource('/food','FoodController');
+
+    // systems route
+
+    Route::resource('/system','SystemController');
 });

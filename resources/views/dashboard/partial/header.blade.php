@@ -30,4 +30,19 @@
     <link href="{{url('/')}}/build/css/custom.min.css" rel="stylesheet">
 
     <link href="{{url('/')}}/vendors/bootstrap-tagsinput.css" rel="stylesheet">
+
+    <!-- adding textext -->
+    <link  href="{{url('/')}}/vendors/textext.core.css" rel="stylesheet">
+
+    <link  href="{{url('/')}}/vendors/textext.plugin.arrow.css" rel="stylesheet">
+
+    <link  href="{{url('/')}}/vendors/textext.plugin.autocomplete.css" rel="stylesheet">
+
+    <link  href="{{url('/')}}/vendors/textext.plugin.clear.css" rel="stylesheet">
+
+    <link  href="{{url('/')}}/vendors/textext.plugin.focus.css" rel="stylesheet">
+
+    <link  href="{{url('/')}}/vendors/textext.plugin.prompt.css" rel="stylesheet">
+
+    <link  href="{{url('/')}}/vendors/textext.plugin.tags.css" rel="stylesheet">
 </head>

@@ -2,9 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\System;
 use Illuminate\Http\Request;
 
-class food extends Controller
+class SystemController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -13,7 +14,10 @@ class food extends Controller
      */
     public function index()
     {
-        //
+        $systems = System::paginate(3);
+        return view('dashboard.pages.system.index')->with([
+            'systems'=>$systems
+        ]);
     }
 
     /**
@@ -23,7 +27,7 @@ class food extends Controller
      */
     public function create()
     {
-        //
+        return view('dashboard.pages.system.addSystem');
     }
 
     /**

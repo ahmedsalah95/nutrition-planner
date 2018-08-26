@@ -16,7 +16,7 @@ class PatientController extends Controller
     public function index()
     {
 
-        $patients = Patient::paginate(2);
+        $patients = Patient::paginate(10);
         return view('dashboard.pages.patient.index')->with(['patients'=>$patients]);
     }
 

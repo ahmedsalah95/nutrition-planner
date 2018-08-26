@@ -1,4 +1,4 @@
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 <!-- Parsley -->
@@ -39,6 +39,30 @@
 <script src="{{url('/')}}/build/js/custom.min.js"></script>
 
 <script src="{{url('/')}}/vendors/bootstrap-tagsinput.min.js"></script>
+
+
+
+<script src="{{url('/')}}/js/typeahead.js"></script>
+<script>
+    var places = [
+        {name: "New York"},
+        {name: "Los Angeles"},
+        {name: "Copenhagen"},
+        {name: "Albertslund"},
+        {name: "Skjern"}
+    ];
+
+    $('.tagsinput-typeahead').tagsinput({
+        typeahead: {
+            source: places.map(function(item) { return item.name }),
+            afterSelect: function() {
+                this.$element[0].value = '';
+            }
+        }
+    })
+
+
+</script>
 
 
 
