@@ -2,7 +2,9 @@
 
 @section('content')
 
-
+    <link rel="stylesheet" href="{{url('/')}}/vendors/fm.tagator.jquery.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+    <script src="{{url('/')}}/vendors/fm.tagator.jquery.js"></script>
     <script src="//cdn.ckeditor.com/4.9.0/standard/ckeditor.js"></script>
 
 
@@ -50,16 +52,17 @@
                                   <span class="required">*</span>
                               </label>
                               <div class="col-md-6 col-sm-6 col-xs-12">
+                                  <input id="example" name="example"
+                                         class="form-control col-md-7 col-xs-12"
 
-
-                                  <div class="category-container">
-                                      <input class="tagsinput-typeahead" type="text"
-                                             data-role="tagsinput"
-                                      />
-                                  </div>
+                                  >
                               </div>
 
+
                           </div>
+
+
+
 
 
 
@@ -75,12 +78,51 @@
                 </div>
             </div>
         </div>
+        <?php
+
+            $data = \App\Food::all();
+      //  $items = array();
+        /*    foreach ($data as $d)
+                {
+
+
+                    array_push($items,$d->food_name);
+                }
+
+                print_r($items);
+
+ */
+        ?>
     </section>
 
     <script>
         CKEDITOR.replace('system_desc');
     </script>
+    <script src="{{url('/')}}/js/typeahead.js"></script>
 
+
+
+    <script>
+
+        var pausecontent = new Array();
+
+        <?php foreach ($data as $item) {
+
+            ?>
+
+        pausecontent.push('<?php echo $item->food_name; ?>');
+
+        <?php }?>
+
+        $('#example').tagator({
+
+            autocomplete: pausecontent,
+            showAllOptionsOnFocus: true,
+
+
+        });
+
+    </script>
 
 
 
