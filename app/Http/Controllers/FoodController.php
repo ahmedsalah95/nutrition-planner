@@ -55,6 +55,7 @@ class FoodController extends Controller
         $saveData->food_name = $request['food_name'];
         $saveData->category_id=$request['category_id'];
         $saveData->calories =$request['calories'];
+        $saveData->gm =    floatval($request['calories']) /100;
 
         $saveData->save();
         return redirect('food');
@@ -115,6 +116,7 @@ class FoodController extends Controller
         }
 
         $saveData->calories =$request['calories'];
+        $saveData->gm =   floatval($request['calories']) /100;
 
         $saveData->save();
         return redirect('food');

@@ -18,6 +18,7 @@ class CreateFoodsTable extends Migration
             $table->integer('category_id');
             $table->String('food_name');
             $table->String('calories');
+            $table->String('gm');
             $table->timestamps();
         });
     }

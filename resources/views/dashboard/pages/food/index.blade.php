@@ -60,11 +60,13 @@
 
 
                                     ?>
-
+                                    @if(isset($cat))
                                     {{
 
 
-                                $cat->name}}</td>
+                                $cat->name}}
+                                @endif
+                                </td>
 
                                 <td>
 
