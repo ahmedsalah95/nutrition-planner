@@ -13,7 +13,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <form   action="/patient"  method="post" class="form-horizontal form-label-left" >
+                    <form   action="/system"  method="post" class="form-horizontal form-label-left" >
                         @csrf
 
                         <div class="form-group">
@@ -71,7 +71,7 @@
                                   <option value="600">600 gm</option>
                               </select>
 
-                              <button type="button" class="btn btn-success" onclick="getData()">add</button>
+                              <button type="button" class="btn btn-success" onclick="getData()">أضف</button>
 
                           </div>
 
@@ -88,29 +88,32 @@
 
                                   >
                               </div>
+                              <br>
+                              <br>
+                              <br>
 
+                              <div class="col-lg-12">
+                                  <div class="col-lg-4 col-md-4 col-sm-12">
+                                      <input type="text" id="carbSum" class="form-control"
+                                             placeholder="مجموع الكربهيدرات">
+                                  </div>
+                                  <div class="col-lg-4 col-md-4 col-sm-12">
+                                      <input type="text" id="fatsSum" class="form-control"
+                                             placeholder="مجموع الدهون">
+                                  </div>
+                                  <div class="col-lg-4 col-md-4 col-sm-12">
+                                      <input type="text" id="proteinSum" class="form-control"
+                                             placeholder="مجموع البروتينات">
+                                  </div>
+                              </div>
 
                           </div>
-
-                          <input type="text" id="carbSum" class="form-control" placeholder="carbs">
-                          <input type="text" id="fatsSum" class="form-control" placeholder="fats">
-                          <input type="text" id="proteinSum" class="form-control" placeholder="protein">
-
-
-
-
-
-
-
-
-
-
 
 
 
                       </div>
 
-
+                        <input type="submit" name="submit" value="حفظ" class="btn btn-success btn-block">
                     </form>
                 </div>
             </div>
@@ -332,8 +335,8 @@
 
              if(value)
              {
-                 value +=parseFloat(t[2]);
-                 $('#carbSum').val(value*x);
+                 value +=parseFloat(t[2]*x);
+                 $('#carbSum').val(value);
 
              }else
              {
@@ -346,12 +349,12 @@
 
                 if(value)
                 {
-                    value +=parseFloat(t[2]);
+                    value +=parseFloat(t[2]*x);
                     $('#fatsSum').val(value);
 
                 }else
                 {
-                    $('#fatsSum').val(parseFloat(t[2]));
+                    $('#fatsSum').val(parseFloat(t[2])*x);
                 }
 
             }else
@@ -360,12 +363,12 @@
 
                 if(value)
                 {
-                    value +=parseFloat(t[2]);
+                    value +=parseFloat(t[2]*x);
                     $('#proteinSum').val(value);
 
                 }else
                 {
-                    $('#proteinSum').val(parseFloat(t[2]));
+                    $('#proteinSum').val(parseFloat(t[2])*x);
                 }
             }
 
