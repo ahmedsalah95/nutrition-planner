@@ -45,4 +45,6 @@
     <link  href="{{url('/')}}/vendors/textext.plugin.prompt.css" rel="stylesheet">
 
     <link  href="{{url('/')}}/vendors/textext.plugin.tags.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="{{url('/')}}/vendors/accordination.css">
 </head>

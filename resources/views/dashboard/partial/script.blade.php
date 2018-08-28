@@ -40,6 +40,8 @@
 
 <script src="{{url('/')}}/vendors/bootstrap-tagsinput.min.js"></script>
 
+<script src="{{url('/')}}/vendors/accordination.js"></script>
+
 
 
 

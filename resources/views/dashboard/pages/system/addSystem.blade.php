@@ -9,6 +9,7 @@
 
 
 
+
     <section class="system">
         <div class="container">
             <div class="row">
@@ -16,917 +17,928 @@
                     <form   action="/system"  method="post" class="form-horizontal form-label-left" >
                         @csrf
 
-                        <div class="form-group">
-                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="system_name">اسم النظام
-                                <span class="required">*</span>
-                            </label>
-                            <div class="col-md-6 col-sm-6 col-xs-12">
-                                <input type="text" id="system_name" required="required" name="system_name"
-                                       class="form-control col-md-7 col-xs-12"
-                                       value="{{old('system_name')}}">
+
+                        <button class="accordion" type="button"> معلومات عن النظام</button>
+                        <div class="panel">
+                            <br><br>
+                            <div class="form-group">
+                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="system_name">اسم النظام
+                                    <span class="required">*</span>
+                                </label>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <input type="text" id="system_name" required="required" name="system_name"
+                                           class="form-control col-md-7 col-xs-12"
+                                           value="{{old('system_name')}}">
+                                </div>
                             </div>
-                        </div>
 
 
-                        <div class="form-group">
-                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="system_desc"> وصف النظام
+                            <div class="form-group">
+                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="system_desc"> وصف النظام
 
 
-                                <span class="required">*</span>
-                            </label>
-                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <span class="required">*</span>
+                                </label>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
                             <textarea name="system_desc"  cols="30" rows="10" id="system_desc" class="form-control">
                                 {{old('system_desc')}}
                             </textarea>
-                            </div>
-                        </div>
-
-                        <hr>
-                      <div class="form-group first_day">
-
-                          <div class="text-center">
-
-                              <h2 class="text-center">اليوم الاول</h2>
-
-
-
-                          </div>
-
-
-
-
-                          <div class="form-group text-center">
-
-                              <select id="continents">
-                                  <option value = "0">all</option>
-                                  <option value="1">carbs</option>
-                                  <option value="2">Fats</option>
-                                  <option value="3">proteins</option>
-
-
-                              </select>
-                              <select id="selectcountries"></select>
-
-                              <select name="gmValue" id="gmValue" >
-                                  <option value="10">10 gm</option>
-                                  <option value="20">20 gm</option>
-                                  <option value="30">30 gm</option>
-                                  <option value="50">50 gm</option>
-                                  <option value="100">100 gm</option>
-                                  <option value="200">200 gm</option>
-                                  <option value="300">300 gm</option>
-                                  <option value="400">400 gm</option>
-                                  <option value="500">500 gm</option>
-                                  <option value="600">600 gm</option>
-                              </select>
-
-                              <button type="button" class="btn btn-success" onclick="getData()">أضف</button>
-                              <br>
-                              <br>
-
-                              <label class="control-label col-md-3 col-sm-3 col-xs-12" for="day1_breakfast">الافطار
-                                  <span class="required">*</span>
-                              </label>
-                              <div class="col-md-6 col-sm-6 col-xs-12">
-                                  <input type="text" id="day1_breakfast" name="day1_breakfast"
-                                         class="form-control col-md-7 col-xs-12">
-                              </div>
-
-
-
-
-                          </div>
-
-
-                          <br><br><br>
-
-
-
-                          <div class="form-group text-center">
-
-                              <select id="continents1_break1">
-                                  <option value = "0">all</option>
-                                  <option value="1">carbs</option>
-                                  <option value="2">Fats</option>
-                                  <option value="3">proteins</option>
-
-
-                              </select>
-                              <select id="selectcountries1_break1"></select>
-
-                              <select name="gmValue" id="gmValue1_break1" >
-                                  <option value="10">10 gm</option>
-                                  <option value="20">20 gm</option>
-                                  <option value="30">30 gm</option>
-                                  <option value="50">50 gm</option>
-                                  <option value="100">100 gm</option>
-                                  <option value="200">200 gm</option>
-                                  <option value="300">300 gm</option>
-                                  <option value="400">400 gm</option>
-                                  <option value="500">500 gm</option>
-                                  <option value="600">600 gm</option>
-                              </select>
-
-                              <button type="button" class="btn btn-success" onclick="getData1_break1()">أضف</button>
-                              <br>
-                              <br>
-
-                              <label class="control-label col-md-3 col-sm-3 col-xs-12" for="day1_break1">وجبة خفيفة
-                                  <span class="required">*</span>
-                              </label>
-                              <div class="col-md-6 col-sm-6 col-xs-12">
-                                  <input type="text" id="day1_break1" name="day1_break1"
-                                         class="form-control col-md-7 col-xs-12">
-                              </div>
-
-
-
-
-                          </div>
-
-                          <br><br><br>
-
-
-
-                          <div class="form-group text-center">
-
-                              <select id="continents1_lunch">
-                                  <option value = "0">all</option>
-                                  <option value="1">carbs</option>
-                                  <option value="2">Fats</option>
-                                  <option value="3">proteins</option>
-
-
-                              </select>
-                              <select id="selectcountries1_lunch"></select>
-
-                              <select name="gmValue" id="gmValue1_lunch" >
-                                  <option value="10">10 gm</option>
-                                  <option value="20">20 gm</option>
-                                  <option value="30">30 gm</option>
-                                  <option value="50">50 gm</option>
-                                  <option value="100">100 gm</option>
-                                  <option value="200">200 gm</option>
-                                  <option value="300">300 gm</option>
-                                  <option value="400">400 gm</option>
-                                  <option value="500">500 gm</option>
-                                  <option value="600">600 gm</option>
-                              </select>
-
-                              <button type="button" class="btn btn-success" onclick="getData1_lunch()">أضف</button>
-                              <br>
-                              <br>
-
-                              <label class="control-label col-md-3 col-sm-3 col-xs-12" for="day1_lunch">الغداء
-                                  <span class="required">*</span>
-                              </label>
-                              <div class="col-md-6 col-sm-6 col-xs-12">
-                                  <input type="text" id="day1_lunch" name="day1_lunch"
-                                         class="form-control col-md-7 col-xs-12">
-                              </div>
-
-
-
-
-                          </div>
-
-
-                          <br><br><br>
-
-
-
-                          <div class="form-group text-center">
-
-                              <select id="continents1_break2">
-                                  <option value = "0">all</option>
-                                  <option value="1">carbs</option>
-                                  <option value="2">Fats</option>
-                                  <option value="3">proteins</option>
-
-
-                              </select>
-                              <select id="selectcountries1_break2"></select>
-
-                              <select name="gmValue" id="gmValue1_break2" >
-                                  <option value="10">10 gm</option>
-                                  <option value="20">20 gm</option>
-                                  <option value="30">30 gm</option>
-                                  <option value="50">50 gm</option>
-                                  <option value="100">100 gm</option>
-                                  <option value="200">200 gm</option>
-                                  <option value="300">300 gm</option>
-                                  <option value="400">400 gm</option>
-                                  <option value="500">500 gm</option>
-                                  <option value="600">600 gm</option>
-                              </select>
-
-                              <button type="button" class="btn btn-success" onclick="getData1_break2()">أضف</button>
-                              <br>
-                              <br>
-
-                              <label class="control-label col-md-3 col-sm-3 col-xs-12" for="day1_break2">وجبة خفيفة
-                                  <span class="required">*</span>
-                              </label>
-                              <div class="col-md-6 col-sm-6 col-xs-12">
-                                  <input type="text" id="day1_break2" name="day1_break2"
-                                         class="form-control col-md-7 col-xs-12">
-                              </div>
-
-
-
-
-                          </div>
-
-
-                          <br><br><br>
-
-
-
-                          <div class="form-group text-center">
-
-                              <select id="continents1_dinner">
-                                  <option value = "0">all</option>
-                                  <option value="1">carbs</option>
-                                  <option value="2">Fats</option>
-                                  <option value="3">proteins</option>
-
-
-                              </select>
-                              <select id="selectcountries1_dinner"></select>
-
-                              <select name="gmValue" id="gmValue1_dinner" >
-                                  <option value="10">10 gm</option>
-                                  <option value="20">20 gm</option>
-                                  <option value="30">30 gm</option>
-                                  <option value="50">50 gm</option>
-                                  <option value="100">100 gm</option>
-                                  <option value="200">200 gm</option>
-                                  <option value="300">300 gm</option>
-                                  <option value="400">400 gm</option>
-                                  <option value="500">500 gm</option>
-                                  <option value="600">600 gm</option>
-                              </select>
-
-                              <button type="button" class="btn btn-success" onclick="getData1_dinner()">أضف</button>
-                              <br>
-                              <br>
-
-                              <label class="control-label col-md-3 col-sm-3 col-xs-12" for="day1_dinner">العشاء
-                                  <span class="required">*</span>
-                              </label>
-                              <div class="col-md-6 col-sm-6 col-xs-12">
-                                  <input type="text" id="day1_dinner" name="day1_dinner"
-                                         class="form-control col-md-7 col-xs-12">
-                              </div>
-
-
-
-
-                          </div>
-
-                          <br><br><br>
-
-                          <div class="form-group text-center">
-
-                              <label class="control-label col-md-3 col-sm-3 col-xs-12" for="day1_dinner">ملاحظات
-                                  <span class="required">*</span>
-                              </label>
-                              <div class="col-md-6 col-sm-6 col-xs-12">
-                                  <input type="text" id="day1_notes" name="day1_notes"
-                                         class="form-control col-md-7 col-xs-12">
-                              </div>
-
-
-                          </div>
-
-
-
-
-
-
-                              <br>
-                              <br>
-                              <br>
-
-                              <div class="col-lg-12">
-
-                                  <h2 class="text-center">مجموع السعرات الحرارية لليوم الاول</h2>
-                                  <div class="col-lg-4 col-md-4 col-sm-12">
-                                      <input type="text" id="carbSum" class="form-control"
-                                             name="carbSum"
-                                             placeholder="مجموع الكربهيدرات" readonly>
-                                  </div>
-                                  <div class="col-lg-4 col-md-4 col-sm-12">
-                                      <input type="text" id="fatsSum" class="form-control"
-                                             name="fatsSum"
-                                             placeholder="مجموع الدهون" readonly>
-                                  </div>
-                                  <div class="col-lg-4 col-md-4 col-sm-12">
-                                      <input type="text" id="proteinSum" class="form-control"
-                                             name="proteinSum"
-                                             placeholder="مجموع البروتينات" readonly>
-                                  </div>
-                              </div>
-
-
-
-
-
-                      </div>
-
-                        <br>
-                        <hr>
-                        <br>
-
-                        <div class="form-group sec_day">
-
-                            <div class="text-center">
-
-                                <h2 class="text-center">اليوم الثانى</h2>
-
-
-
-                            </div>
-
-
-
-
-                            <div class="form-group text-center">
-
-                                <select id="continent2">
-                                    <option value = "0">all</option>
-                                    <option value="1">carbs</option>
-                                    <option value="2">Fats</option>
-                                    <option value="3">proteins</option>
-
-
-                                </select>
-                                <select id="selectcountries2"></select>
-
-                                <select name="gmValue" id="gmValue2" >
-                                    <option value="10">10 gm</option>
-                                    <option value="20">20 gm</option>
-                                    <option value="30">30 gm</option>
-                                    <option value="50">50 gm</option>
-                                    <option value="100">100 gm</option>
-                                    <option value="200">200 gm</option>
-                                    <option value="300">300 gm</option>
-                                    <option value="400">400 gm</option>
-                                    <option value="500">500 gm</option>
-                                    <option value="600">600 gm</option>
-                                </select>
-
-                                <button type="button" class="btn btn-success" onclick="getData2()">أضف</button>
-                                <br>
-                                <br>
-
-                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="day2_breakfast">الافطار
-                                    <span class="required">*</span>
-                                </label>
-                                <div class="col-md-6 col-sm-6 col-xs-12">
-                                    <input type="text" id="day2_breakfast" name="day2_breakfast"
-                                           class="form-control col-md-7 col-xs-12">
-                                </div>
-
-
-
-
-                            </div>
-
-
-                            <br><br><br>
-
-
-
-                            <div class="form-group text-center">
-
-                                <select id="continents2_break1">
-                                    <option value = "0">all</option>
-                                    <option value="1">carbs</option>
-                                    <option value="2">Fats</option>
-                                    <option value="3">proteins</option>
-
-
-                                </select>
-                                <select id="selectcountries2_break1"></select>
-
-                                <select name="gmValue" id="gmValue2_break1" >
-                                    <option value="10">10 gm</option>
-                                    <option value="20">20 gm</option>
-                                    <option value="30">30 gm</option>
-                                    <option value="50">50 gm</option>
-                                    <option value="100">100 gm</option>
-                                    <option value="200">200 gm</option>
-                                    <option value="300">300 gm</option>
-                                    <option value="400">400 gm</option>
-                                    <option value="500">500 gm</option>
-                                    <option value="600">600 gm</option>
-                                </select>
-
-                                <button type="button" class="btn btn-success" onclick="getData2_break1()">أضف</button>
-                                <br>
-                                <br>
-
-                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="day2_break1">وجبة خفيفة
-                                    <span class="required">*</span>
-                                </label>
-                                <div class="col-md-6 col-sm-6 col-xs-12">
-                                    <input type="text" id="day2_break1" name="day2_break1"
-                                           class="form-control col-md-7 col-xs-12">
-                                </div>
-
-
-
-
-                            </div>
-
-                            <br><br><br>
-
-
-
-                            <div class="form-group text-center">
-
-                                <select id="continents2_lunch">
-                                    <option value = "0">all</option>
-                                    <option value="1">carbs</option>
-                                    <option value="2">Fats</option>
-                                    <option value="3">proteins</option>
-
-
-                                </select>
-                                <select id="selectcountries2_lunch"></select>
-
-                                <select name="gmValue" id="gmValue2_lunch" >
-                                    <option value="10">10 gm</option>
-                                    <option value="20">20 gm</option>
-                                    <option value="30">30 gm</option>
-                                    <option value="50">50 gm</option>
-                                    <option value="100">100 gm</option>
-                                    <option value="200">200 gm</option>
-                                    <option value="300">300 gm</option>
-                                    <option value="400">400 gm</option>
-                                    <option value="500">500 gm</option>
-                                    <option value="600">600 gm</option>
-                                </select>
-
-                                <button type="button" class="btn btn-success" onclick="getData2_lunch()">أضف</button>
-                                <br>
-                                <br>
-
-                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="day2_lunch">الغداء
-                                    <span class="required">*</span>
-                                </label>
-                                <div class="col-md-6 col-sm-6 col-xs-12">
-                                    <input type="text" id="day2_lunch" name="day2_lunch"
-                                           class="form-control col-md-7 col-xs-12">
-                                </div>
-
-
-
-
-                            </div>
-
-
-                            <br><br><br>
-
-
-
-                            <div class="form-group text-center">
-
-                                <select id="continents2_break2">
-                                    <option value = "0">all</option>
-                                    <option value="1">carbs</option>
-                                    <option value="2">Fats</option>
-                                    <option value="3">proteins</option>
-
-
-                                </select>
-                                <select id="selectcountries2_break2"></select>
-
-                                <select name="gmValue" id="gmValue2_break2" >
-                                    <option value="10">10 gm</option>
-                                    <option value="20">20 gm</option>
-                                    <option value="30">30 gm</option>
-                                    <option value="50">50 gm</option>
-                                    <option value="100">100 gm</option>
-                                    <option value="200">200 gm</option>
-                                    <option value="300">300 gm</option>
-                                    <option value="400">400 gm</option>
-                                    <option value="500">500 gm</option>
-                                    <option value="600">600 gm</option>
-                                </select>
-
-                                <button type="button" class="btn btn-success" onclick="getData2_break2()">أضف</button>
-                                <br>
-                                <br>
-
-                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="day2_break2">وجبة خفيفة
-                                    <span class="required">*</span>
-                                </label>
-                                <div class="col-md-6 col-sm-6 col-xs-12">
-                                    <input type="text" id="day2_break2" name="day2_break2"
-                                           class="form-control col-md-7 col-xs-12">
-                                </div>
-
-
-
-
-                            </div>
-
-
-                            <br><br><br>
-
-
-
-                            <div class="form-group text-center">
-
-                                <select id="continents2_dinner">
-                                    <option value = "0">all</option>
-                                    <option value="1">carbs</option>
-                                    <option value="2">Fats</option>
-                                    <option value="3">proteins</option>
-
-
-                                </select>
-                                <select id="selectcountries2_dinner"></select>
-
-                                <select name="gmValue" id="gmValue2_dinner" >
-                                    <option value="10">10 gm</option>
-                                    <option value="20">20 gm</option>
-                                    <option value="30">30 gm</option>
-                                    <option value="50">50 gm</option>
-                                    <option value="100">100 gm</option>
-                                    <option value="200">200 gm</option>
-                                    <option value="300">300 gm</option>
-                                    <option value="400">400 gm</option>
-                                    <option value="500">500 gm</option>
-                                    <option value="600">600 gm</option>
-                                </select>
-
-                                <button type="button" class="btn btn-success" onclick="getData2_dinner()">أضف</button>
-                                <br>
-                                <br>
-
-                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="day2_dinner">العشاء
-                                    <span class="required">*</span>
-                                </label>
-                                <div class="col-md-6 col-sm-6 col-xs-12">
-                                    <input type="text" id="day2_dinner" name="day2_dinner"
-                                           class="form-control col-md-7 col-xs-12">
-                                </div>
-
-
-
-
-                            </div>
-
-                            <br><br><br>
-
-                            <div class="form-group text-center">
-
-                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="day2_notes">ملاحظات
-                                    <span class="required">*</span>
-                                </label>
-                                <div class="col-md-6 col-sm-6 col-xs-12">
-                                    <input type="text" id="day2_notes" name="day2_notes"
-                                           class="form-control col-md-7 col-xs-12">
-                                </div>
-
-
-                            </div>
-
-
-
-
-
-
-                            <br>
-                            <br>
-                            <br>
-
-                            <div class="col-lg-12">
-
-                                <h2 class="text-center">مجموع السعرات الحرارية لليوم الثانى</h2>
-                                <div class="col-lg-4 col-md-4 col-sm-12">
-                                    <input type="text" id="carbSum2" class="form-control"
-                                           name="carbSum2"
-                                           placeholder="مجموع الكربهيدرات" readonly>
-                                </div>
-                                <div class="col-lg-4 col-md-4 col-sm-12">
-                                    <input type="text" id="fatsSum2" class="form-control"
-                                           name="fatsSum2"
-                                           placeholder="مجموع الدهون" readonly>
-                                </div>
-                                <div class="col-lg-4 col-md-4 col-sm-12">
-                                    <input type="text" id="proteinSum2" class="form-control"
-                                           name="proteinSum2"
-                                           placeholder="مجموع البروتينات" readonly>
                                 </div>
                             </div>
-
-
-
-
-
                         </div>
 
 
 
-                        <br>
-                        <hr>
-                        <br>
 
-                        <div class="form-group third_day">
+                        <button class="accordion" type="button"> اليوم الاول</button>
+                        <div class="panel">
+                            <br><br>
+                            <div class="form-group first_day">
 
-                            <div class="text-center">
+                                <div class="text-center">
 
-                                <h2 class="text-center">اليوم الثالث</h2>
+                                    <h2 class="text-center">اليوم الاول</h2>
+
+
+
+                                </div>
+
+
+
+
+                                <div class="form-group text-center">
+
+                                    <select id="continents">
+                                        <option value = "0">all</option>
+                                        <option value="1">carbs</option>
+                                        <option value="2">Fats</option>
+                                        <option value="3">proteins</option>
+
+
+                                    </select>
+                                    <select id="selectcountries"></select>
+
+                                    <select name="gmValue" id="gmValue" >
+                                        <option value="10">10 gm</option>
+                                        <option value="20">20 gm</option>
+                                        <option value="30">30 gm</option>
+                                        <option value="50">50 gm</option>
+                                        <option value="100">100 gm</option>
+                                        <option value="200">200 gm</option>
+                                        <option value="300">300 gm</option>
+                                        <option value="400">400 gm</option>
+                                        <option value="500">500 gm</option>
+                                        <option value="600">600 gm</option>
+                                    </select>
+
+                                    <button type="button" class="btn btn-success" onclick="getData()">أضف</button>
+                                    <br>
+                                    <br>
+
+                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="day1_breakfast">الافطار
+                                        <span class="required">*</span>
+                                    </label>
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <input type="text" id="day1_breakfast" name="day1_breakfast"
+                                               class="form-control col-md-7 col-xs-12">
+                                    </div>
+
+
+
+
+                                </div>
+
+
+                                <br><br><br>
+
+
+
+                                <div class="form-group text-center">
+
+                                    <select id="continents1_break1">
+                                        <option value = "0">all</option>
+                                        <option value="1">carbs</option>
+                                        <option value="2">Fats</option>
+                                        <option value="3">proteins</option>
+
+
+                                    </select>
+                                    <select id="selectcountries1_break1"></select>
+
+                                    <select name="gmValue" id="gmValue1_break1" >
+                                        <option value="10">10 gm</option>
+                                        <option value="20">20 gm</option>
+                                        <option value="30">30 gm</option>
+                                        <option value="50">50 gm</option>
+                                        <option value="100">100 gm</option>
+                                        <option value="200">200 gm</option>
+                                        <option value="300">300 gm</option>
+                                        <option value="400">400 gm</option>
+                                        <option value="500">500 gm</option>
+                                        <option value="600">600 gm</option>
+                                    </select>
+
+                                    <button type="button" class="btn btn-success" onclick="getData1_break1()">أضف</button>
+                                    <br>
+                                    <br>
+
+                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="day1_break1">وجبة خفيفة
+                                        <span class="required">*</span>
+                                    </label>
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <input type="text" id="day1_break1" name="day1_break1"
+                                               class="form-control col-md-7 col-xs-12">
+                                    </div>
+
+
+
+
+                                </div>
+
+                                <br><br><br>
+
+
+
+                                <div class="form-group text-center">
+
+                                    <select id="continents1_lunch">
+                                        <option value = "0">all</option>
+                                        <option value="1">carbs</option>
+                                        <option value="2">Fats</option>
+                                        <option value="3">proteins</option>
+
+
+                                    </select>
+                                    <select id="selectcountries1_lunch"></select>
+
+                                    <select name="gmValue" id="gmValue1_lunch" >
+                                        <option value="10">10 gm</option>
+                                        <option value="20">20 gm</option>
+                                        <option value="30">30 gm</option>
+                                        <option value="50">50 gm</option>
+                                        <option value="100">100 gm</option>
+                                        <option value="200">200 gm</option>
+                                        <option value="300">300 gm</option>
+                                        <option value="400">400 gm</option>
+                                        <option value="500">500 gm</option>
+                                        <option value="600">600 gm</option>
+                                    </select>
+
+                                    <button type="button" class="btn btn-success" onclick="getData1_lunch()">أضف</button>
+                                    <br>
+                                    <br>
+
+                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="day1_lunch">الغداء
+                                        <span class="required">*</span>
+                                    </label>
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <input type="text" id="day1_lunch" name="day1_lunch"
+                                               class="form-control col-md-7 col-xs-12">
+                                    </div>
+
+
+
+
+                                </div>
+
+
+                                <br><br><br>
+
+
+
+                                <div class="form-group text-center">
+
+                                    <select id="continents1_break2">
+                                        <option value = "0">all</option>
+                                        <option value="1">carbs</option>
+                                        <option value="2">Fats</option>
+                                        <option value="3">proteins</option>
+
+
+                                    </select>
+                                    <select id="selectcountries1_break2"></select>
+
+                                    <select name="gmValue" id="gmValue1_break2" >
+                                        <option value="10">10 gm</option>
+                                        <option value="20">20 gm</option>
+                                        <option value="30">30 gm</option>
+                                        <option value="50">50 gm</option>
+                                        <option value="100">100 gm</option>
+                                        <option value="200">200 gm</option>
+                                        <option value="300">300 gm</option>
+                                        <option value="400">400 gm</option>
+                                        <option value="500">500 gm</option>
+                                        <option value="600">600 gm</option>
+                                    </select>
+
+                                    <button type="button" class="btn btn-success" onclick="getData1_break2()">أضف</button>
+                                    <br>
+                                    <br>
+
+                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="day1_break2">وجبة خفيفة
+                                        <span class="required">*</span>
+                                    </label>
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <input type="text" id="day1_break2" name="day1_break2"
+                                               class="form-control col-md-7 col-xs-12">
+                                    </div>
+
+
+
+
+                                </div>
+
+
+                                <br><br><br>
+
+
+
+                                <div class="form-group text-center">
+
+                                    <select id="continents1_dinner">
+                                        <option value = "0">all</option>
+                                        <option value="1">carbs</option>
+                                        <option value="2">Fats</option>
+                                        <option value="3">proteins</option>
+
+
+                                    </select>
+                                    <select id="selectcountries1_dinner"></select>
+
+                                    <select name="gmValue" id="gmValue1_dinner" >
+                                        <option value="10">10 gm</option>
+                                        <option value="20">20 gm</option>
+                                        <option value="30">30 gm</option>
+                                        <option value="50">50 gm</option>
+                                        <option value="100">100 gm</option>
+                                        <option value="200">200 gm</option>
+                                        <option value="300">300 gm</option>
+                                        <option value="400">400 gm</option>
+                                        <option value="500">500 gm</option>
+                                        <option value="600">600 gm</option>
+                                    </select>
+
+                                    <button type="button" class="btn btn-success" onclick="getData1_dinner()">أضف</button>
+                                    <br>
+                                    <br>
+
+                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="day1_dinner">العشاء
+                                        <span class="required">*</span>
+                                    </label>
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <input type="text" id="day1_dinner" name="day1_dinner"
+                                               class="form-control col-md-7 col-xs-12">
+                                    </div>
+
+
+
+
+                                </div>
+
+                                <br><br><br>
+
+                                <div class="form-group text-center">
+
+                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="day1_dinner">ملاحظات
+                                        <span class="required">*</span>
+                                    </label>
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <input type="text" id="day1_notes" name="day1_notes"
+                                               class="form-control col-md-7 col-xs-12">
+                                    </div>
+
+
+                                </div>
+
+
+
+
+
+
+                                <br>
+                                <br>
+                                <br>
+
+                                <div class="col-lg-12">
+
+                                    <h2 class="text-center">مجموع السعرات الحرارية لليوم الاول</h2>
+                                    <div class="col-lg-4 col-md-4 col-sm-12">
+                                        <input type="text" id="carbSum" class="form-control"
+                                               name="carbSum"
+                                               placeholder="مجموع الكربهيدرات" readonly>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-12">
+                                        <input type="text" id="fatsSum" class="form-control"
+                                               name="fatsSum"
+                                               placeholder="مجموع الدهون" readonly>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-12">
+                                        <input type="text" id="proteinSum" class="form-control"
+                                               name="proteinSum"
+                                               placeholder="مجموع البروتينات" readonly>
+                                    </div>
+                                </div>
+
+
 
 
 
                             </div>
-
-
-
-
-                            <div class="form-group text-center">
-
-                                <select id="continent3">
-                                    <option value = "0">all</option>
-                                    <option value="1">carbs</option>
-                                    <option value="2">Fats</option>
-                                    <option value="3">proteins</option>
-
-
-                                </select>
-                                <select id="selectcountries3"></select>
-
-                                <select name="gmValue" id="gmValue3" >
-                                    <option value="10">10 gm</option>
-                                    <option value="20">20 gm</option>
-                                    <option value="30">30 gm</option>
-                                    <option value="50">50 gm</option>
-                                    <option value="100">100 gm</option>
-                                    <option value="200">200 gm</option>
-                                    <option value="300">300 gm</option>
-                                    <option value="400">400 gm</option>
-                                    <option value="500">500 gm</option>
-                                    <option value="600">600 gm</option>
-                                </select>
-
-                                <button type="button" class="btn btn-success" onclick="getData3()">أضف</button>
-                                <br>
-                                <br>
-
-                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="day3_breakfast">الافطار
-                                    <span class="required">*</span>
-                                </label>
-                                <div class="col-md-6 col-sm-6 col-xs-12">
-                                    <input type="text" id="day3_breakfast" name="day3_breakfast"
-                                           class="form-control col-md-7 col-xs-12">
-                                </div>
-
-
-
-
-                            </div>
-
-
-                            <br><br><br>
-
-
-
-                            <div class="form-group text-center">
-
-                                <select id="continents3_break1">
-                                    <option value = "0">all</option>
-                                    <option value="1">carbs</option>
-                                    <option value="2">Fats</option>
-                                    <option value="3">proteins</option>
-
-
-                                </select>
-                                <select id="selectcountries3_break1"></select>
-
-                                <select name="gmValue" id="gmValue3_break1" >
-                                    <option value="10">10 gm</option>
-                                    <option value="20">20 gm</option>
-                                    <option value="30">30 gm</option>
-                                    <option value="50">50 gm</option>
-                                    <option value="100">100 gm</option>
-                                    <option value="200">200 gm</option>
-                                    <option value="300">300 gm</option>
-                                    <option value="400">400 gm</option>
-                                    <option value="500">500 gm</option>
-                                    <option value="600">600 gm</option>
-                                </select>
-
-                                <button type="button" class="btn btn-success" onclick="getData3_break1()">أضف</button>
-                                <br>
-                                <br>
-
-                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="day3_break1">وجبة خفيفة
-                                    <span class="required">*</span>
-                                </label>
-                                <div class="col-md-6 col-sm-6 col-xs-12">
-                                    <input type="text" id="day3_break1" name="day3_break1"
-                                           class="form-control col-md-7 col-xs-12">
-                                </div>
-
-
-
-
-                            </div>
-
-                            <br><br><br>
-
-
-
-                            <div class="form-group text-center">
-
-                                <select id="continents3_lunch">
-                                    <option value = "0">all</option>
-                                    <option value="1">carbs</option>
-                                    <option value="2">Fats</option>
-                                    <option value="3">proteins</option>
-
-
-                                </select>
-                                <select id="selectcountries3_lunch"></select>
-
-                                <select  id="gmValue3_lunch" >
-                                    <option value="10">10 gm</option>
-                                    <option value="20">20 gm</option>
-                                    <option value="30">30 gm</option>
-                                    <option value="50">50 gm</option>
-                                    <option value="100">100 gm</option>
-                                    <option value="200">200 gm</option>
-                                    <option value="300">300 gm</option>
-                                    <option value="400">400 gm</option>
-                                    <option value="500">500 gm</option>
-                                    <option value="600">600 gm</option>
-                                </select>
-
-                                <button type="button" class="btn btn-success" onclick="getData3_lunch()">أضف</button>
-                                <br>
-                                <br>
-
-                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="day3_lunch">الغداء
-                                    <span class="required">*</span>
-                                </label>
-                                <div class="col-md-6 col-sm-6 col-xs-12">
-                                    <input type="text" id="day3_lunch" name="day3_lunch"
-                                           class="form-control col-md-7 col-xs-12">
-                                </div>
-
-
-
-
-                            </div>
-
-
-                            <br><br><br>
-
-
-
-                            <div class="form-group text-center">
-
-                                <select id="continents3_break2">
-                                    <option value = "0">all</option>
-                                    <option value="1">carbs</option>
-                                    <option value="2">Fats</option>
-                                    <option value="3">proteins</option>
-
-
-                                </select>
-                                <select id="selectcountries3_break2"></select>
-
-                                <select name="gmValue" id="gmValue3_break2" >
-                                    <option value="10">10 gm</option>
-                                    <option value="20">20 gm</option>
-                                    <option value="30">30 gm</option>
-                                    <option value="50">50 gm</option>
-                                    <option value="100">100 gm</option>
-                                    <option value="200">200 gm</option>
-                                    <option value="300">300 gm</option>
-                                    <option value="400">400 gm</option>
-                                    <option value="500">500 gm</option>
-                                    <option value="600">600 gm</option>
-                                </select>
-
-                                <button type="button" class="btn btn-success" onclick="getData3_break2()">أضف</button>
-                                <br>
-                                <br>
-
-                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="day3_break2">وجبة خفيفة
-                                    <span class="required">*</span>
-                                </label>
-                                <div class="col-md-6 col-sm-6 col-xs-12">
-                                    <input type="text" id="day3_break2" name="day3_break2"
-                                           class="form-control col-md-7 col-xs-12">
-                                </div>
-
-
-
-
-                            </div>
-
-
-                            <br><br><br>
-
-
-
-                            <div class="form-group text-center">
-
-                                <select id="continents3_dinner">
-                                    <option value = "0">all</option>
-                                    <option value="1">carbs</option>
-                                    <option value="2">Fats</option>
-                                    <option value="3">proteins</option>
-
-
-                                </select>
-                                <select id="selectcountries3_dinner"></select>
-
-                                <select name="gmValue" id="gmValue3_dinner" >
-                                    <option value="10">10 gm</option>
-                                    <option value="20">20 gm</option>
-                                    <option value="30">30 gm</option>
-                                    <option value="50">50 gm</option>
-                                    <option value="100">100 gm</option>
-                                    <option value="200">200 gm</option>
-                                    <option value="300">300 gm</option>
-                                    <option value="400">400 gm</option>
-                                    <option value="500">500 gm</option>
-                                    <option value="600">600 gm</option>
-                                </select>
-
-                                <button type="button" class="btn btn-success" onclick="getData3_dinner()">أضف</button>
-                                <br>
-                                <br>
-
-                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="day3_dinner">العشاء
-                                    <span class="required">*</span>
-                                </label>
-                                <div class="col-md-6 col-sm-6 col-xs-12">
-                                    <input type="text" id="day3_dinner" name="day3_dinner"
-                                           class="form-control col-md-7 col-xs-12">
-                                </div>
-
-
-
-
-                            </div>
-
-                            <br><br><br>
-
-                            <div class="form-group text-center">
-
-                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="day3_notes">ملاحظات
-                                    <span class="required">*</span>
-                                </label>
-                                <div class="col-md-6 col-sm-6 col-xs-12">
-                                    <input type="text" id="day3_notes" name="day3_notes"
-                                           class="form-control col-md-7 col-xs-12">
-                                </div>
-
-
-                            </div>
-
-
-
-
-
-
-                            <br>
-                            <br>
-                            <br>
-
-                            <div class="col-lg-12">
-
-                                <h2 class="text-center">مجموع السعرات الحرارية لليوم الثالث</h2>
-                                <div class="col-lg-4 col-md-4 col-sm-12">
-                                    <input type="text" id="carbSum3" class="form-control"
-                                           name="carbSum3"
-                                           placeholder="مجموع الكربهيدرات" readonly>
-                                </div>
-                                <div class="col-lg-4 col-md-4 col-sm-12">
-                                    <input type="text" id="fatsSum3" class="form-control"
-                                           name="fatsSum3"
-                                           placeholder="مجموع الدهون" readonly>
-                                </div>
-                                <div class="col-lg-4 col-md-4 col-sm-12">
-                                    <input type="text" id="proteinSum3" class="form-control"
-                                           name="proteinSum3"
-                                           placeholder="مجموع البروتينات" readonly>
-                                </div>
-                            </div>
-
-
-
-
-
                         </div>
+
+
+
+                        <button class="accordion" type="button">اليوم الثانى</button>
+                        <div class="panel">
+                            <div class="form-group sec_day">
+
+                                <div class="text-center">
+
+                                    <h2 class="text-center">اليوم الثانى</h2>
+
+
+
+                                </div>
+
+
+
+
+                                <div class="form-group text-center">
+
+                                    <select id="continent2">
+                                        <option value = "0">all</option>
+                                        <option value="1">carbs</option>
+                                        <option value="2">Fats</option>
+                                        <option value="3">proteins</option>
+
+
+                                    </select>
+                                    <select id="selectcountries2"></select>
+
+                                    <select name="gmValue" id="gmValue2" >
+                                        <option value="10">10 gm</option>
+                                        <option value="20">20 gm</option>
+                                        <option value="30">30 gm</option>
+                                        <option value="50">50 gm</option>
+                                        <option value="100">100 gm</option>
+                                        <option value="200">200 gm</option>
+                                        <option value="300">300 gm</option>
+                                        <option value="400">400 gm</option>
+                                        <option value="500">500 gm</option>
+                                        <option value="600">600 gm</option>
+                                    </select>
+
+                                    <button type="button" class="btn btn-success" onclick="getData2()">أضف</button>
+                                    <br>
+                                    <br>
+
+                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="day2_breakfast">الافطار
+                                        <span class="required">*</span>
+                                    </label>
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <input type="text" id="day2_breakfast" name="day2_breakfast"
+                                               class="form-control col-md-7 col-xs-12">
+                                    </div>
+
+
+
+
+                                </div>
+
+
+                                <br><br><br>
+
+
+
+                                <div class="form-group text-center">
+
+                                    <select id="continents2_break1">
+                                        <option value = "0">all</option>
+                                        <option value="1">carbs</option>
+                                        <option value="2">Fats</option>
+                                        <option value="3">proteins</option>
+
+
+                                    </select>
+                                    <select id="selectcountries2_break1"></select>
+
+                                    <select name="gmValue" id="gmValue2_break1" >
+                                        <option value="10">10 gm</option>
+                                        <option value="20">20 gm</option>
+                                        <option value="30">30 gm</option>
+                                        <option value="50">50 gm</option>
+                                        <option value="100">100 gm</option>
+                                        <option value="200">200 gm</option>
+                                        <option value="300">300 gm</option>
+                                        <option value="400">400 gm</option>
+                                        <option value="500">500 gm</option>
+                                        <option value="600">600 gm</option>
+                                    </select>
+
+                                    <button type="button" class="btn btn-success" onclick="getData2_break1()">أضف</button>
+                                    <br>
+                                    <br>
+
+                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="day2_break1">وجبة خفيفة
+                                        <span class="required">*</span>
+                                    </label>
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <input type="text" id="day2_break1" name="day2_break1"
+                                               class="form-control col-md-7 col-xs-12">
+                                    </div>
+
+
+
+
+                                </div>
+
+                                <br><br><br>
+
+
+
+                                <div class="form-group text-center">
+
+                                    <select id="continents2_lunch">
+                                        <option value = "0">all</option>
+                                        <option value="1">carbs</option>
+                                        <option value="2">Fats</option>
+                                        <option value="3">proteins</option>
+
+
+                                    </select>
+                                    <select id="selectcountries2_lunch"></select>
+
+                                    <select name="gmValue" id="gmValue2_lunch" >
+                                        <option value="10">10 gm</option>
+                                        <option value="20">20 gm</option>
+                                        <option value="30">30 gm</option>
+                                        <option value="50">50 gm</option>
+                                        <option value="100">100 gm</option>
+                                        <option value="200">200 gm</option>
+                                        <option value="300">300 gm</option>
+                                        <option value="400">400 gm</option>
+                                        <option value="500">500 gm</option>
+                                        <option value="600">600 gm</option>
+                                    </select>
+
+                                    <button type="button" class="btn btn-success" onclick="getData2_lunch()">أضف</button>
+                                    <br>
+                                    <br>
+
+                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="day2_lunch">الغداء
+                                        <span class="required">*</span>
+                                    </label>
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <input type="text" id="day2_lunch" name="day2_lunch"
+                                               class="form-control col-md-7 col-xs-12">
+                                    </div>
+
+
+
+
+                                </div>
+
+
+                                <br><br><br>
+
+
+
+                                <div class="form-group text-center">
+
+                                    <select id="continents2_break2">
+                                        <option value = "0">all</option>
+                                        <option value="1">carbs</option>
+                                        <option value="2">Fats</option>
+                                        <option value="3">proteins</option>
+
+
+                                    </select>
+                                    <select id="selectcountries2_break2"></select>
+
+                                    <select name="gmValue" id="gmValue2_break2" >
+                                        <option value="10">10 gm</option>
+                                        <option value="20">20 gm</option>
+                                        <option value="30">30 gm</option>
+                                        <option value="50">50 gm</option>
+                                        <option value="100">100 gm</option>
+                                        <option value="200">200 gm</option>
+                                        <option value="300">300 gm</option>
+                                        <option value="400">400 gm</option>
+                                        <option value="500">500 gm</option>
+                                        <option value="600">600 gm</option>
+                                    </select>
+
+                                    <button type="button" class="btn btn-success" onclick="getData2_break2()">أضف</button>
+                                    <br>
+                                    <br>
+
+                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="day2_break2">وجبة خفيفة
+                                        <span class="required">*</span>
+                                    </label>
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <input type="text" id="day2_break2" name="day2_break2"
+                                               class="form-control col-md-7 col-xs-12">
+                                    </div>
+
+
+
+
+                                </div>
+
+
+                                <br><br><br>
+
+
+
+                                <div class="form-group text-center">
+
+                                    <select id="continents2_dinner">
+                                        <option value = "0">all</option>
+                                        <option value="1">carbs</option>
+                                        <option value="2">Fats</option>
+                                        <option value="3">proteins</option>
+
+
+                                    </select>
+                                    <select id="selectcountries2_dinner"></select>
+
+                                    <select name="gmValue" id="gmValue2_dinner" >
+                                        <option value="10">10 gm</option>
+                                        <option value="20">20 gm</option>
+                                        <option value="30">30 gm</option>
+                                        <option value="50">50 gm</option>
+                                        <option value="100">100 gm</option>
+                                        <option value="200">200 gm</option>
+                                        <option value="300">300 gm</option>
+                                        <option value="400">400 gm</option>
+                                        <option value="500">500 gm</option>
+                                        <option value="600">600 gm</option>
+                                    </select>
+
+                                    <button type="button" class="btn btn-success" onclick="getData2_dinner()">أضف</button>
+                                    <br>
+                                    <br>
+
+                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="day2_dinner">العشاء
+                                        <span class="required">*</span>
+                                    </label>
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <input type="text" id="day2_dinner" name="day2_dinner"
+                                               class="form-control col-md-7 col-xs-12">
+                                    </div>
+
+
+
+
+                                </div>
+
+                                <br><br><br>
+
+                                <div class="form-group text-center">
+
+                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="day2_notes">ملاحظات
+                                        <span class="required">*</span>
+                                    </label>
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <input type="text" id="day2_notes" name="day2_notes"
+                                               class="form-control col-md-7 col-xs-12">
+                                    </div>
+
+
+                                </div>
+
+
+
+
+
+
+                                <br>
+                                <br>
+                                <br>
+
+                                <div class="col-lg-12">
+
+                                    <h2 class="text-center">مجموع السعرات الحرارية لليوم الثانى</h2>
+                                    <div class="col-lg-4 col-md-4 col-sm-12">
+                                        <input type="text" id="carbSum2" class="form-control"
+                                               name="carbSum2"
+                                               placeholder="مجموع الكربهيدرات" readonly>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-12">
+                                        <input type="text" id="fatsSum2" class="form-control"
+                                               name="fatsSum2"
+                                               placeholder="مجموع الدهون" readonly>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-12">
+                                        <input type="text" id="proteinSum2" class="form-control"
+                                               name="proteinSum2"
+                                               placeholder="مجموع البروتينات" readonly>
+                                    </div>
+                                </div>
+
+
+
+
+
+                            </div>
+                        </div>
+
+
+                        <button class="accordion" type="button">اليوم الثالث</button>
+                        <div class="panel">
+                            <div class="form-group third_day">
+
+                                <div class="text-center">
+
+                                    <h2 class="text-center">اليوم الثالث</h2>
+
+
+
+                                </div>
+
+
+
+
+                                <div class="form-group text-center">
+
+                                    <select id="continent3">
+                                        <option value = "0">all</option>
+                                        <option value="1">carbs</option>
+                                        <option value="2">Fats</option>
+                                        <option value="3">proteins</option>
+
+
+                                    </select>
+                                    <select id="selectcountries3"></select>
+
+                                    <select name="gmValue" id="gmValue3" >
+                                        <option value="10">10 gm</option>
+                                        <option value="20">20 gm</option>
+                                        <option value="30">30 gm</option>
+                                        <option value="50">50 gm</option>
+                                        <option value="100">100 gm</option>
+                                        <option value="200">200 gm</option>
+                                        <option value="300">300 gm</option>
+                                        <option value="400">400 gm</option>
+                                        <option value="500">500 gm</option>
+                                        <option value="600">600 gm</option>
+                                    </select>
+
+                                    <button type="button" class="btn btn-success" onclick="getData3()">أضف</button>
+                                    <br>
+                                    <br>
+
+                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="day3_breakfast">الافطار
+                                        <span class="required">*</span>
+                                    </label>
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <input type="text" id="day3_breakfast" name="day3_breakfast"
+                                               class="form-control col-md-7 col-xs-12">
+                                    </div>
+
+
+
+
+                                </div>
+
+
+                                <br><br><br>
+
+
+
+                                <div class="form-group text-center">
+
+                                    <select id="continents3_break1">
+                                        <option value = "0">all</option>
+                                        <option value="1">carbs</option>
+                                        <option value="2">Fats</option>
+                                        <option value="3">proteins</option>
+
+
+                                    </select>
+                                    <select id="selectcountries3_break1"></select>
+
+                                    <select name="gmValue" id="gmValue3_break1" >
+                                        <option value="10">10 gm</option>
+                                        <option value="20">20 gm</option>
+                                        <option value="30">30 gm</option>
+                                        <option value="50">50 gm</option>
+                                        <option value="100">100 gm</option>
+                                        <option value="200">200 gm</option>
+                                        <option value="300">300 gm</option>
+                                        <option value="400">400 gm</option>
+                                        <option value="500">500 gm</option>
+                                        <option value="600">600 gm</option>
+                                    </select>
+
+                                    <button type="button" class="btn btn-success" onclick="getData3_break1()">أضف</button>
+                                    <br>
+                                    <br>
+
+                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="day3_break1">وجبة خفيفة
+                                        <span class="required">*</span>
+                                    </label>
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <input type="text" id="day3_break1" name="day3_break1"
+                                               class="form-control col-md-7 col-xs-12">
+                                    </div>
+
+
+
+
+                                </div>
+
+                                <br><br><br>
+
+
+
+                                <div class="form-group text-center">
+
+                                    <select id="continents3_lunch">
+                                        <option value = "0">all</option>
+                                        <option value="1">carbs</option>
+                                        <option value="2">Fats</option>
+                                        <option value="3">proteins</option>
+
+
+                                    </select>
+                                    <select id="selectcountries3_lunch"></select>
+
+                                    <select  id="gmValue3_lunch" >
+                                        <option value="10">10 gm</option>
+                                        <option value="20">20 gm</option>
+                                        <option value="30">30 gm</option>
+                                        <option value="50">50 gm</option>
+                                        <option value="100">100 gm</option>
+                                        <option value="200">200 gm</option>
+                                        <option value="300">300 gm</option>
+                                        <option value="400">400 gm</option>
+                                        <option value="500">500 gm</option>
+                                        <option value="600">600 gm</option>
+                                    </select>
+
+                                    <button type="button" class="btn btn-success" onclick="getData3_lunch()">أضف</button>
+                                    <br>
+                                    <br>
+
+                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="day3_lunch">الغداء
+                                        <span class="required">*</span>
+                                    </label>
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <input type="text" id="day3_lunch" name="day3_lunch"
+                                               class="form-control col-md-7 col-xs-12">
+                                    </div>
+
+
+
+
+                                </div>
+
+
+                                <br><br><br>
+
+
+
+                                <div class="form-group text-center">
+
+                                    <select id="continents3_break2">
+                                        <option value = "0">all</option>
+                                        <option value="1">carbs</option>
+                                        <option value="2">Fats</option>
+                                        <option value="3">proteins</option>
+
+
+                                    </select>
+                                    <select id="selectcountries3_break2"></select>
+
+                                    <select name="gmValue" id="gmValue3_break2" >
+                                        <option value="10">10 gm</option>
+                                        <option value="20">20 gm</option>
+                                        <option value="30">30 gm</option>
+                                        <option value="50">50 gm</option>
+                                        <option value="100">100 gm</option>
+                                        <option value="200">200 gm</option>
+                                        <option value="300">300 gm</option>
+                                        <option value="400">400 gm</option>
+                                        <option value="500">500 gm</option>
+                                        <option value="600">600 gm</option>
+                                    </select>
+
+                                    <button type="button" class="btn btn-success" onclick="getData3_break2()">أضف</button>
+                                    <br>
+                                    <br>
+
+                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="day3_break2">وجبة خفيفة
+                                        <span class="required">*</span>
+                                    </label>
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <input type="text" id="day3_break2" name="day3_break2"
+                                               class="form-control col-md-7 col-xs-12">
+                                    </div>
+
+
+
+
+                                </div>
+
+
+                                <br><br><br>
+
+
+
+                                <div class="form-group text-center">
+
+                                    <select id="continents3_dinner">
+                                        <option value = "0">all</option>
+                                        <option value="1">carbs</option>
+                                        <option value="2">Fats</option>
+                                        <option value="3">proteins</option>
+
+
+                                    </select>
+                                    <select id="selectcountries3_dinner"></select>
+
+                                    <select name="gmValue" id="gmValue3_dinner" >
+                                        <option value="10">10 gm</option>
+                                        <option value="20">20 gm</option>
+                                        <option value="30">30 gm</option>
+                                        <option value="50">50 gm</option>
+                                        <option value="100">100 gm</option>
+                                        <option value="200">200 gm</option>
+                                        <option value="300">300 gm</option>
+                                        <option value="400">400 gm</option>
+                                        <option value="500">500 gm</option>
+                                        <option value="600">600 gm</option>
+                                    </select>
+
+                                    <button type="button" class="btn btn-success" onclick="getData3_dinner()">أضف</button>
+                                    <br>
+                                    <br>
+
+                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="day3_dinner">العشاء
+                                        <span class="required">*</span>
+                                    </label>
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <input type="text" id="day3_dinner" name="day3_dinner"
+                                               class="form-control col-md-7 col-xs-12">
+                                    </div>
+
+
+
+
+                                </div>
+
+                                <br><br><br>
+
+                                <div class="form-group text-center">
+
+                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="day3_notes">ملاحظات
+                                        <span class="required">*</span>
+                                    </label>
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <input type="text" id="day3_notes" name="day3_notes"
+                                               class="form-control col-md-7 col-xs-12">
+                                    </div>
+
+
+                                </div>
+
+
+
+
+
+
+                                <br>
+                                <br>
+                                <br>
+
+                                <div class="col-lg-12">
+
+                                    <h2 class="text-center">مجموع السعرات الحرارية لليوم الثالث</h2>
+                                    <div class="col-lg-4 col-md-4 col-sm-12">
+                                        <input type="text" id="carbSum3" class="form-control"
+                                               name="carbSum3"
+                                               placeholder="مجموع الكربهيدرات" readonly>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-12">
+                                        <input type="text" id="fatsSum3" class="form-control"
+                                               name="fatsSum3"
+                                               placeholder="مجموع الدهون" readonly>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-12">
+                                        <input type="text" id="proteinSum3" class="form-control"
+                                               name="proteinSum3"
+                                               placeholder="مجموع البروتينات" readonly>
+                                    </div>
+                                </div>
+
+
+
+
+
+                            </div>
+                        </div>
+
 
                         <input type="submit" name="submit" value="حفظ" class="btn btn-success btn-block">
                     </form>
