@@ -29,15 +29,15 @@
 
                     <li><a href="/settings"> <i class="fa fa-laptop"></i> الصفحة الرئيسية</a></li>
                     <li><a href="/patient"> <i class="fa fa-users"></i> المرضي</a></li>
+                    <li><a href="/system"> <i class="fa fa-assistive-listening-systems"></i> الانظمة الغذائية</a></li>
 
-
-                {{--    <li><a><i class="fa fa-home"></i> trips <span class="fa fa-chevron-down"></span></a>
+                    <li><a><i class="fa fa-apple"></i> الأطعمة <span class="fa fa-chevron-down"></span></a>
                         <ul class="nav child_menu">
 
-                            <li><a href="index2.html">category</a></li>
-                            <li><a href="index3.html">tirp</a></li>
+                            <li><a href="/foodCategory">الانواع</a></li>
+                            <li><a href="/food">الطعام</a></li>
                         </ul>
-                    </li>--}}
+                    </li>
 
                 </ul>
 

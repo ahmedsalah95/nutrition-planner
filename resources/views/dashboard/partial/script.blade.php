@@ -1,4 +1,4 @@
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 <!-- Parsley -->
@@ -39,6 +39,10 @@
 <script src="{{url('/')}}/build/js/custom.min.js"></script>
 
 <script src="{{url('/')}}/vendors/bootstrap-tagsinput.min.js"></script>
+
+
+
+
 
 
 
