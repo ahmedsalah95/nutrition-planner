@@ -24,7 +24,8 @@
             @endif
             <div class="row">
                 <div class="col-lg-12">
-                    <form   action="/system"  method="post" class="form-horizontal form-label-left" >
+                    <form   action="/system/{{$id}}"  method="post" class="form-horizontal form-label-left" >
+                        <input type="hidden" name="_method" value="PUT">
                         @csrf
 
 
@@ -38,7 +39,7 @@
                                 <div class="col-md-6 col-sm-6 col-xs-12">
                                     <input type="text" id="system_name" required="required" name="system_name"
                                            class="form-control col-md-7 col-xs-12"
-                                           value="{{old('system_name')}}">
+                                           value="{{$data->system_name}}">
                                 </div>
                             </div>
 
@@ -51,7 +52,7 @@
                                 </label>
                                 <div class="col-md-6 col-sm-6 col-xs-12">
                             <textarea name="system_desc"  cols="30" rows="10" id="system_desc" class="form-control">
-                                {{old('system_desc')}}
+                                {!! $data->system_desc !!}
                             </textarea>
                                 </div>
                             </div>
@@ -665,17 +666,6 @@
                         <div class="panel">
                             <div class="form-group third_day">
 
-                                <div class="text-center">
-
-                                    <h2 class="text-center">اليوم الثالث</h2>
-
-
-
-                                </div>
-
-
-
-
                                 <div class="form-group text-center">
 
                                     <select id="continent3">
@@ -710,6 +700,7 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day3_breakfast" name="day3_breakfast"
+                                               value="{{$data->day3_breakfast}}"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
 
@@ -757,6 +748,7 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day3_break1" name="day3_break1"
+                                               value="{{$data->day3_break1}}"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
 
@@ -803,6 +795,7 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day3_lunch" name="day3_lunch"
+                                               value="{{$data->day3_lunch}}"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
 
@@ -850,6 +843,7 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day3_break2" name="day3_break2"
+                                               value="{{$data->day3_break2}}"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
 
@@ -897,6 +891,7 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day3_dinner" name="day3_dinner"
+                                               value="{{$data->day3_dinner}}"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
 
@@ -914,6 +909,7 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day3_notes" name="day3_notes"
+                                               value="{{$data->day3_notes}}"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
 
@@ -935,16 +931,19 @@
                                     <div class="col-lg-4 col-md-4 col-sm-12">
                                         <input type="text" id="carbSum3" class="form-control"
                                                name="carbSum3"
+                                               value="{{$data->carbSum3}}"
                                                placeholder="مجموع الكربهيدرات" readonly>
                                     </div>
                                     <div class="col-lg-4 col-md-4 col-sm-12">
                                         <input type="text" id="fatsSum3" class="form-control"
                                                name="fatsSum3"
+                                               value="{{$data->fatsSum3}}"
                                                placeholder="مجموع الدهون" readonly>
                                     </div>
                                     <div class="col-lg-4 col-md-4 col-sm-12">
                                         <input type="text" id="proteinSum3" class="form-control"
                                                name="proteinSum3"
+                                               value="{{$data->proteinSum3}}"
                                                placeholder="مجموع البروتينات" readonly>
                                     </div>
                                 </div>
@@ -998,6 +997,7 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day4_breakfast" name="day4_breakfast"
+                                               value="{{$data->day4_breakfast}}"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
 
@@ -1045,6 +1045,7 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day4_break1" name="day4_break1"
+                                               value="{{$data->day4_break1}}"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
 
@@ -1091,6 +1092,7 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day4_lunch" name="day4_lunch"
+                                               value="{{$data->day4_lunch}}"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
 
@@ -1138,6 +1140,7 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day4_break2" name="day4_break2"
+                                               value="{{$data->day4_break2}}"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
 
@@ -1185,6 +1188,7 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day4_dinner" name="day4_dinner"
+                                               value="{{$data->day4_dinner}}"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
 
@@ -1202,6 +1206,7 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day4_notes" name="day4_notes"
+                                               value="{{$data->day4_notes}}"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
 
@@ -1223,16 +1228,19 @@
                                     <div class="col-lg-4 col-md-4 col-sm-12">
                                         <input type="text" id="carbSum4" class="form-control"
                                                name="carbSum4"
+                                               value="{{$data->carbSum4}}"
                                                placeholder="مجموع الكربهيدرات" readonly>
                                     </div>
                                     <div class="col-lg-4 col-md-4 col-sm-12">
                                         <input type="text" id="fatsSum4" class="form-control"
                                                name="fatsSum4"
+                                               value="{{$data->fatsSum4}}"
                                                placeholder="مجموع الدهون" readonly>
                                     </div>
                                     <div class="col-lg-4 col-md-4 col-sm-12">
                                         <input type="text" id="proteinSum4" class="form-control"
                                                name="proteinSum4"
+                                               value="{{$data->proteinSum4}}"
                                                placeholder="مجموع البروتينات" readonly>
                                     </div>
                                 </div>
@@ -1284,6 +1292,7 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day5_breakfast" name="day5_breakfast"
+                                               value="{{$data->day5_breakfast}}"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
 
@@ -1331,6 +1340,7 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day5_break1" name="day5_break1"
+                                               value="{{$data->day5_break1}}"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
 
@@ -1377,6 +1387,7 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day5_lunch" name="day5_lunch"
+                                               value="{{$data->day5_lunch}}"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
 
@@ -1424,6 +1435,7 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day5_break2" name="day5_break2"
+                                               value="{{$data->day5_break2}}"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
 
@@ -1471,6 +1483,7 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day5_dinner" name="day5_dinner"
+                                               value="{{$data->day5_dinner}}"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
 
@@ -1488,6 +1501,7 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day5_notes" name="day5_notes"
+                                               value="{{$data->day5_notes}}"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
 
@@ -1509,16 +1523,19 @@
                                     <div class="col-lg-4 col-md-4 col-sm-12">
                                         <input type="text" id="carbSum5" class="form-control"
                                                name="carbSum5"
+                                               value="{{$data->carbSum5}}"
                                                placeholder="مجموع الكربهيدرات" readonly>
                                     </div>
                                     <div class="col-lg-4 col-md-4 col-sm-12">
                                         <input type="text" id="fatsSum5" class="form-control"
                                                name="fatsSum5"
+                                               value="{{$data->fatsSum5}}"
                                                placeholder="مجموع الدهون" readonly>
                                     </div>
                                     <div class="col-lg-4 col-md-4 col-sm-12">
                                         <input type="text" id="proteinSum5" class="form-control"
                                                name="proteinSum5"
+                                               value="{{$data->proteinSum5}}"
                                                placeholder="مجموع البروتينات" readonly>
                                     </div>
                                 </div>
@@ -1573,6 +1590,7 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day6_breakfast" name="day6_breakfast"
+                                               value="{{$data->day6_breakfast}}"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
 
@@ -1620,6 +1638,7 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day6_break1" name="day6_break1"
+                                               value="{{$data->day6_break1}}"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
 
@@ -1666,6 +1685,7 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day6_lunch" name="day6_lunch"
+                                               value="{{$data->day6_lunch}}"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
 
@@ -1713,6 +1733,7 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day6_break2" name="day6_break2"
+                                               value="{{$data->day6_break2}}"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
 
@@ -1760,6 +1781,7 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day6_dinner" name="day6_dinner"
+                                               value="{{$data->day6_dinner}}"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
 
@@ -1777,6 +1799,7 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day6_notes" name="day6_notes"
+                                               value="{{$data->day6_notes}}"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
 
@@ -1798,16 +1821,19 @@
                                     <div class="col-lg-4 col-md-4 col-sm-12">
                                         <input type="text" id="carbSum6" class="form-control"
                                                name="carbSum6"
+                                               value="{{$data->carbSum6}}"
                                                placeholder="مجموع الكربهيدرات" readonly>
                                     </div>
                                     <div class="col-lg-4 col-md-4 col-sm-12">
                                         <input type="text" id="fatsSum6" class="form-control"
                                                name="fatsSum6"
+                                               value="{{$data->fatsSum6}}"
                                                placeholder="مجموع الدهون" readonly>
                                     </div>
                                     <div class="col-lg-4 col-md-4 col-sm-12">
                                         <input type="text" id="proteinSum6" class="form-control"
                                                name="proteinSum6"
+                                               value="{{$data->proteinSum6}}"
                                                placeholder="مجموع البروتينات" readonly>
                                     </div>
                                 </div>
@@ -1859,6 +1885,7 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day7_breakfast" name="day7_breakfast"
+                                               value="{{$data->day7_breakfast}}"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
 
@@ -1906,6 +1933,7 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day7_break1" name="day7_break1"
+                                               value="{{$data->day7_break1}}"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
 
@@ -1952,6 +1980,7 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day7_lunch" name="day7_lunch"
+                                               value="{{$data->day7_lunch}}"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
 
@@ -1999,6 +2028,7 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day7_break2" name="day7_break2"
+                                               value="{{$data->day7_break2}}"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
 
@@ -2046,6 +2076,7 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day7_dinner" name="day7_dinner"
+                                               value="{{$data->day7_dinner}}"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
 
@@ -2063,6 +2094,7 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day7_notes" name="day7_notes"
+                                               value="{{$data->day7_notes}}"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
 
@@ -2084,16 +2116,19 @@
                                     <div class="col-lg-4 col-md-4 col-sm-12">
                                         <input type="text" id="carbSum7" class="form-control"
                                                name="carbSum7"
+                                               value="{{$data->carbSum7}}"
                                                placeholder="مجموع الكربهيدرات" readonly>
                                     </div>
                                     <div class="col-lg-4 col-md-4 col-sm-12">
                                         <input type="text" id="fatsSum7" class="form-control"
                                                name="fatsSum7"
+                                               value="{{$data->fatsSum7}}"
                                                placeholder="مجموع الدهون" readonly>
                                     </div>
                                     <div class="col-lg-4 col-md-4 col-sm-12">
                                         <input type="text" id="proteinSum7" class="form-control"
                                                name="proteinSum7"
+                                               value="{{$data->proteinSum7}}"
                                                placeholder="مجموع البروتينات" readonly>
                                     </div>
                                 </div>

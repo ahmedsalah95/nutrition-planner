@@ -58,6 +58,7 @@ function getData() {
             $('#day1_breakfast').text(current +  ' و ' + '  '+x+' جم '  +  t[0]);
             $('#day1_breakfast').val( currentVal +  ' و ' + '  '+x+' جم '  +  t[0]);
 
+
         }else
         {
             $('#fatsSum').val(parseFloat(t[2])*x);
@@ -67,6 +68,7 @@ function getData() {
             $('#day1_breakfast').text(" ");
             $('#day1_breakfast').text(current +  ' و ' + '  '+x+' جم '  +  t[0]);
             $('#day1_breakfast').val( currentVal +  ' و ' + '  '+x+' جم '  +  t[0]);
+
         }
 
     }

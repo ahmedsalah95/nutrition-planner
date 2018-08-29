@@ -21,7 +21,7 @@
 
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12">
-                <a href="{{url('/')}}/system/create" class="btn btn-success btn-block">اضافة نوع طعام جديد</a>
+                <a href="{{url('/')}}/system/create" class="btn btn-success btn-block">اضافة نظام جديد</a>
             </div>
         </div>
     </div>
