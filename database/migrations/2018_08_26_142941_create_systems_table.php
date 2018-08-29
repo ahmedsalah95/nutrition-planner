@@ -15,55 +15,81 @@ class CreateSystemsTable extends Migration
     {
         Schema::create('systems', function (Blueprint $table) {
             $table->increments('id');
-            $table->String('system_name');
-            $table->longText('system_desc');
+            $table->String('system_name')->nullable();
+            $table->longText('system_desc')->nullable();
 
 
-            $table->longText('day1_breakfast');
-            $table->longText('day1_lunch');
-            $table->longText('day1_dinner');
-            $table->longText('day1_snacks');
-            $table->longText('day1_workout');
+            $table->longText('day1_breakfast')->nullable();
+            $table->longText('day1_lunch')->nullable();
+            $table->longText('day1_dinner')->nullable();
+            $table->longText('day1_break1')->nullable();
+            $table->longText('day1_break2')->nullable();
+            $table->longText('day1_notes')->nullable();
 
-            $table->longText('day2_breakfast');
-            $table->longText('day2_lunch');
-            $table->longText('day2_dinner');
-            $table->longText('day2_snacks');
-            $table->longText('day2_workout');
+            $table->String('carbSum')->nullable();
+            $table->String('fatsSum')->nullable();
+            $table->String('proteinSum')->nullable();
 
-            $table->longText('day3_breakfast');
-            $table->longText('day3_lunch');
-            $table->longText('day3_dinner');
-            $table->longText('day3_snacks');
-            $table->longText('day3_workout');
-
-            $table->longText('day4_breakfast');
-            $table->longText('day4_lunch');
-            $table->longText('day4_dinner');
-            $table->longText('day4_snacks');
-            $table->longText('day4_workout');
-
-            $table->longText('day5_breakfast');
-            $table->longText('day5_lunch');
-            $table->longText('day5_dinner');
-            $table->longText('day5_snacks');
-            $table->longText('day5_workout');
-
-            $table->longText('day6_breakfast');
-            $table->longText('day6_lunch');
-            $table->longText('day6_dinner');
-            $table->longText('day6_snacks');
-            $table->longText('day6_workout');
-
-            $table->longText('day7_breakfast');
-            $table->longText('day7_lunch');
-            $table->longText('day7_dinner');
-            $table->longText('day7_snacks');
-            $table->longText('day7_workout');
+            $table->longText('day2_breakfast')->nullable();
+            $table->longText('day2_lunch')->nullable();
+            $table->longText('day2_dinner')->nullable();
+            $table->longText('day2_break1')->nullable();
+            $table->longText('day2_break2')->nullable();
+            $table->longText('day2_notes')->nullable();
+            $table->String('carbSum2')->nullable();
+            $table->String('fatsSum2')->nullable();
+            $table->String('proteinSum2')->nullable();
 
 
+            $table->longText('day3_breakfast')->nullable();
+            $table->longText('day3_lunch')->nullable();
+            $table->longText('day3_dinner')->nullable();
+            $table->longText('day3_break1')->nullable();
+            $table->longText('day3_break2')->nullable();
+            $table->longText('day3_notes')->nullable();
+            $table->String('carbSum3')->nullable();
+            $table->String('fatsSum3')->nullable();
+            $table->String('proteinSum3')->nullable();
 
+            $table->longText('day4_breakfast')->nullable();
+            $table->longText('day4_lunch')->nullable();
+            $table->longText('day4_dinner')->nullable();
+            $table->longText('day4_break1')->nullable();
+            $table->longText('day4_break2')->nullable();
+            $table->longText('day4_notes')->nullable();
+            $table->String('carbSum4')->nullable();
+            $table->String('fatsSum4')->nullable();
+            $table->String('proteinSum4')->nullable();
 
+            $table->longText('day5_breakfast')->nullable();
+            $table->longText('day5_lunch')->nullable();
+            $table->longText('day5_dinner')->nullable();
+            $table->longText('day5_break1')->nullable();
+            $table->longText('day5_break2')->nullable();
+            $table->longText('day5_notes')->nullable();
+            $table->String('carbSum5')->nullable();
+            $table->String('fatsSum5')->nullable();
+            $table->String('proteinSum5')->nullable();
+
+            $table->longText('day6_breakfast')->nullable();
+            $table->longText('day6_lunch')->nullable();
+            $table->longText('day6_dinner')->nullable();
+            $table->longText('day6_break1')->nullable();
+            $table->longText('day6_break2')->nullable();
+            $table->longText('day6_notes')->nullable();
+            $table->String('carbSum6')->nullable();
+            $table->String('fatsSum6')->nullable();
+            $table->String('proteinSum6')->nullable();
+
+            $table->longText('day7_breakfast')->nullable();
+            $table->longText('day7_lunch')->nullable();
+            $table->longText('day7_dinner')->nullable();
+            $table->longText('day7_break1')->nullable();
+            $table->longText('day7_break2')->nullable();
+            $table->longText('day7_notes')->nullable();
+            $table->String('carbSum7')->nullable();
+            $table->String('fatsSum7')->nullable();
+            $table->String('proteinSum7')->nullable();
 
 
             $table->timestamps();

@@ -2372,3 +2372,954 @@ function getData5_break2() {
 
 
 }
+
+// sixth day
+
+
+function getData6() {
+
+    var x =  $("#gmValue6 option:selected").val();
+    var y = $("#selectcountries6 option:selected").text();
+    var t = y.split(/[ ,]+/);
+
+    if(t[4] ==1)
+    {
+        var value = parseFloat($('#carbSum6').val()) ;
+
+        if(value)
+        {
+            value +=parseFloat(t[2]*x);
+            $('#carbSum6').val(value);
+            //    $('#day1_breakfast').focus();
+
+
+
+            var current =  $('#day6_breakfast').text();
+            var currentVal =$('#day6_breakfast').val();
+            $('#day6_breakfast').val(" ");
+            $('#day6_breakfast').text(" ");
+            $('#day6_breakfast').text(current +  ' و ' + '  '+x+' جم '  +  t[0]);
+            $('#day6_breakfast').val( currentVal +  ' و ' + '  '+x+' جم '  +  t[0]);
+
+        }
+
+        else
+        {
+            $('#carbSum6').val(parseFloat(t[2])*x);
+
+            var current =  $('#day6_breakfast').text();
+            var currentVal =$('#day6_breakfast').val();
+            $('#day6_breakfast').val(" ");
+            $('#day6_breakfast').text(" ");
+            $('#day6_breakfast').text(current +  ' و ' + '  '+x+' جم '  +  t[0]);
+            $('#day6_breakfast').val( currentVal +  ' و ' + '  '+x+' جم '  +  t[0]);
+
+
+        }
+
+    }
+
+
+    else if(t[4] ==2)
+    {
+        var value = parseFloat($('#fatsSum6').val()) ;
+
+        if(value)
+        {
+            value +=parseFloat(t[2]*x);
+            $('#fatsSum6').val(value);
+            var current =  $('#day6_breakfast').text();
+            var currentVal =$('#day6_breakfast').val();
+            $('#day6_breakfast').val(" ");
+            $('#day6_breakfast').text(" ");
+            $('#day6_breakfast').text(current +  ' و ' + '  '+x+' جم '  +  t[0]);
+            $('#day6_breakfast').val( currentVal +  ' و ' + '  '+x+' جم '  +  t[0]);
+
+        }else
+        {
+            $('#fatsSum6').val(parseFloat(t[2])*x);
+            var current =  $('#day6_breakfast').text();
+            var currentVal =$('#day6_breakfast').val();
+            $('#day6_breakfast').val(" ");
+            $('#day6_breakfast').text(" ");
+            $('#day6_breakfast').text(current +  ' و ' + '  '+x+' جم '  +  t[0]);
+            $('#day6_breakfast').val( currentVal +  ' و ' + '  '+x+' جم '  +  t[0]);
+        }
+
+    }
+
+    else
+    {
+        var value = parseFloat($('#proteinSum6').val()) ;
+
+        if(value)
+        {
+            value +=parseFloat(t[2]*x);
+            $('#proteinSum6').val(value);
+
+            var current =  $('#day6_breakfast').text();
+            var currentVal =$('#day6_breakfast').val();
+            $('#day6_breakfast').val(" ");
+            $('#day6_breakfast').text(" ");
+            $('#day6_breakfast').text(current +  ' و ' + '  '+x+' جم '  +  t[0]);
+            $('#day6_breakfast').val( currentVal +  ' و ' + '  '+x+' جم '  +  t[0]);
+
+        }else
+        {
+            $('#proteinSum6').val(parseFloat(t[2])*x);
+            var current =  $('#day6_breakfast').text();
+            var currentVal =$('#day6_breakfast').val();
+            $('#day6_breakfast').val(" ");
+            $('#day6_breakfast').text(" ");
+            $('#day6_breakfast').text(current +  ' و ' + '  '+x+' جم '  +  t[0]);
+            $('#day6_breakfast').val( currentVal +  ' و ' + '  '+x+' جم '  +  t[0]);
+        }
+    }
+
+
+
+}
+
+function getData6_lunch() {
+
+    var x =  $("#gmValue6_lunch option:selected").val();
+    var y = $("#selectcountries6_lunch option:selected").text();
+    var t = y.split(/[ ,]+/);
+
+    if(t[4] ==1)
+    {
+        var value = parseFloat($('#carbSum6').val()) ;
+
+        if(value)
+        {
+            value +=parseFloat(t[2]*x);
+            $('#carbSum6').val(value);
+
+            var current =  $('#day6_lunch').text();
+            var currentVal =$('#day6_lunch').val();
+            $('#day6_lunch').val(" ");
+            $('#day6_lunch').text(" ");
+            $('#day6_lunch').text(current +  ' و ' + '  '+x+' جم '  +  t[0]);
+            $('#day6_lunch').val( currentVal +  ' و ' + '  '+x+' جم '  +  t[0]);
+
+        }else
+        {
+            $('#carbSum6').val(parseFloat(t[2])*x);
+
+            var current =  $('#day6_lunch').text();
+            var currentVal =$('#day6_lunch').val();
+            $('#day6_lunch').val(" ");
+            $('#day6_lunch').text(" ");
+            $('#day6_lunch').text(current +  ' و ' + '  '+x+' جم '  +  t[0]);
+            $('#day6_lunch').val( currentVal +  ' و ' + '  '+x+' جم '  +  t[0]);
+
+        }
+
+    }else if(t[4] ==2)
+    {
+        var value = parseFloat($('#fatsSum6').val()) ;
+
+        if(value)
+        {
+            value +=parseFloat(t[2]*x);
+            $('#fatsSum6').val(value);
+            var current =  $('#day6_lunch').text();
+            var currentVal =$('#day6_lunch').val();
+            $('#day6_lunch').val(" ");
+            $('#day6_lunch').text(" ");
+            $('#day6_lunch').text(current +  ' و ' + '  '+x+' جم '  +  t[0]);
+            $('#day6_lunch').val( currentVal +  ' و ' + '  '+x+' جم '  +  t[0]);
+
+        }else
+        {
+            $('#fatsSum6').val(parseFloat(t[2])*x);
+            var current =  $('#day6_lunch').text();
+            var currentVal =$('#day6_lunch').val();
+            $('#day6_lunch').val(" ");
+            $('#day6_lunch').text(" ");
+            $('#day6_lunch').text(current +  ' و ' + '  '+x+' جم '  +  t[0]);
+            $('#day6_lunch').val( currentVal +  ' و ' + '  '+x+' جم '  +  t[0]);
+        }
+
+    }else
+    {
+        var value = parseFloat($('#proteinSum6').val()) ;
+
+        if(value)
+        {
+            value +=parseFloat(t[2]*x);
+            $('#proteinSum6').val(value);
+            var current =  $('#day6_lunch').text();
+            var currentVal =$('#day6_lunch').val();
+            $('#day6_lunch').val(" ");
+            $('#day6_lunch').text(" ");
+            $('#day6_lunch').text(current +  ' و ' + '  '+x+' جم '  +  t[0]);
+            $('#day6_lunch').val( currentVal +  ' و ' + '  '+x+' جم '  +  t[0]);
+
+        }else
+        {
+            $('#proteinSum6').val(parseFloat(t[2])*x);
+            var current =  $('#day6_lunch').text();
+            var currentVal =$('#day6_lunch').val();
+            $('#day6_lunch').val(" ");
+            $('#day6_lunch').text(" ");
+            $('#day6_lunch').text(current +  ' و ' + '  '+x+' جم '  +  t[0]);
+            $('#day6_lunch').val( currentVal +  ' و ' + '  '+x+' جم '  +  t[0]);
+        }
+    }
+
+
+
+}
+
+function getData6_dinner() {
+
+    var x =  $("#gmValue6_dinner option:selected").val();
+    var y = $("#selectcountries6_dinner option:selected").text();
+    var t = y.split(/[ ,]+/);
+
+    if(t[4] ==1)
+    {
+        var value = parseFloat($('#carbSum6').val()) ;
+
+        if(value)
+        {
+            value +=parseFloat(t[2]*x);
+            $('#carbSum6').val(value);
+
+            var current =  $('#day6_dinner').text();
+            var currentVal =$('#day6_dinner').val();
+            $('#day6_dinner').val(" ");
+            $('#day6_dinner').text(" ");
+            $('#day6_dinner').text(current +  ' و ' + '  '+x+' جم '  +  t[0]);
+            $('#day6_dinner').val( currentVal +  ' و ' + '  '+x+' جم '  +  t[0]);
+
+        }else
+        {
+            $('#carbSum6').val(parseFloat(t[2])*x);
+
+            var current =  $('#day6_dinner').text();
+            var currentVal =$('#day6_dinner').val();
+            $('#day6_dinner').val(" ");
+            $('#day6_dinner').text(" ");
+            $('#day6_dinner').text(current +  ' و ' + '  '+x+' جم '  +  t[0]);
+            $('#day6_dinner').val( currentVal +  ' و ' + '  '+x+' جم '  +  t[0]);
+
+        }
+
+    }else if(t[4] ==2)
+    {
+        var value = parseFloat($('#fatsSum6').val()) ;
+
+        if(value)
+        {
+            value +=parseFloat(t[2]*x);
+            $('#fatsSum6').val(value);
+            var current =  $('#day6_dinner').text();
+            var currentVal =$('#day6_dinner').val();
+            $('#day6_dinner').val(" ");
+            $('#day6_dinner').text(" ");
+            $('#day6_dinner').text(current +  ' و ' + '  '+x+' جم '  +  t[0]);
+            $('#day6_dinner').val( currentVal +  ' و ' + '  '+x+' جم '  +  t[0]);
+
+        }else
+        {
+            $('#fatsSum6').val(parseFloat(t[2])*x);
+            var current =  $('#day6_dinner').text();
+            var currentVal =$('#day6_dinner').val();
+            $('#day6_dinner').val(" ");
+            $('#day6_dinner').text(" ");
+            $('#day6_dinner').text(current +  ' و ' + '  '+x+' جم '  +  t[0]);
+            $('#day6_dinner').val( currentVal +  ' و ' + '  '+x+' جم '  +  t[0]);
+        }
+
+    }else
+    {
+        var value = parseFloat($('#proteinSum5').val()) ;
+
+        if(value)
+        {
+            value +=parseFloat(t[2]*x);
+            $('#proteinSum6').val(value);
+            var current =  $('#day6_dinner').text();
+            var currentVal =$('#day6_dinner').val();
+            $('#day6_dinner').val(" ");
+            $('#day6_dinner').text(" ");
+            $('#day6_dinner').text(current +  ' و ' + '  '+x+' جم '  +  t[0]);
+            $('#day6_dinner').val( currentVal +  ' و ' + '  '+x+' جم '  +  t[0]);
+
+        }else
+        {
+            $('#proteinSum6').val(parseFloat(t[2])*x);
+            var current =  $('#day6_dinner').text();
+            var currentVal =$('#day6_dinner').val();
+            $('#day6_dinner').val(" ");
+            $('#day6_dinner').text(" ");
+            $('#day6_dinner').text(current +  ' و ' + '  '+x+' جم '  +  t[0]);
+            $('#day6_dinner').val( currentVal +  ' و ' + '  '+x+' جم '  +  t[0]);
+        }
+    }
+
+
+
+}
+
+function getData6_break1() {
+
+    var x =  $("#gmValue6_break1 option:selected").val();
+    var y = $("#selectcountries6_break1 option:selected").text();
+    var t = y.split(/[ ,]+/);
+
+    if(t[4] ==1)
+    {
+        var value = parseFloat($('#carbSum6').val()) ;
+
+        if(value)
+        {
+            value +=parseFloat(t[2]*x);
+            $('#carbSum6').val(value);
+
+            var current =  $('#day6_break1').text();
+            var currentVal =$('#day6_break1').val();
+            $('#day6_break1').val(" ");
+            $('#day6_break1').text(" ");
+            $('#day6_break1').text(current +  ' و ' + '  '+x+' جم '  +  t[0]);
+            $('#day6_break1').val( currentVal +  ' و ' + '  '+x+' جم '  +  t[0]);
+
+        }else
+        {
+            $('#carbSum6').val(parseFloat(t[2])*x);
+
+            var current =  $('#day6_break1').text();
+            var currentVal =$('#day6_break1').val();
+            $('#day6_break1').val(" ");
+            $('#day6_break1').text(" ");
+            $('#day6_break1').text(current +  ' و ' + '  '+x+' جم '  +  t[0]);
+            $('#day6_break1').val( currentVal +  ' و ' + '  '+x+' جم '  +  t[0]);
+
+        }
+
+    }else if(t[4] ==2)
+    {
+        var value = parseFloat($('#fatsSum6').val()) ;
+
+        if(value)
+        {
+            value +=parseFloat(t[2]*x);
+            $('#fatsSum6').val(value);
+            var current =  $('#day6_break1').text();
+            var currentVal =$('#day6_break1').val();
+            $('#day6_break1').val(" ");
+            $('#day6_break1').text(" ");
+            $('#day6_break1').text(current +  ' و ' + '  '+x+' جم '  +  t[0]);
+            $('#day6_break1').val( currentVal +  ' و ' + '  '+x+' جم '  +  t[0]);
+
+        }else
+        {
+            $('#fatsSum6').val(parseFloat(t[2])*x);
+            var current =  $('#day6_break1').text();
+            var currentVal =$('#day6_break1').val();
+            $('#day6_break1').val(" ");
+            $('#day6_break1').text(" ");
+            $('#day6_break1').text(current +  ' و ' + '  '+x+' جم '  +  t[0]);
+            $('#day6_break1').val( currentVal +  ' و ' + '  '+x+' جم '  +  t[0]);
+        }
+
+    }else
+    {
+        var value = parseFloat($('#proteinSum6').val()) ;
+
+        if(value)
+        {
+            value +=parseFloat(t[2]*x);
+            $('#proteinSum6').val(value);
+            var current =  $('#day6_break1').text();
+            var currentVal =$('#day6_break1').val();
+            $('#day6_break1').val(" ");
+            $('#day6_break1').text(" ");
+            $('#day6_break1').text(current +  ' و ' + '  '+x+' جم '  +  t[0]);
+            $('#day6_break1').val( currentVal +  ' و ' + '  '+x+' جم '  +  t[0]);
+
+        }else
+        {
+            $('#proteinSum6').val(parseFloat(t[2])*x);
+            var current =  $('#day6_break1').text();
+            var currentVal =$('#day6_break1').val();
+            $('#day6_break1').val(" ");
+            $('#day6_break1').text(" ");
+            $('#day6_break1').text(current +  ' و ' + '  '+x+' جم '  +  t[0]);
+            $('#day6_break1').val( currentVal +  ' و ' + '  '+x+' جم '  +  t[0]);
+        }
+    }
+
+
+
+}
+
+function getData6_break2() {
+
+    var x =  $("#gmValue6_break2 option:selected").val();
+    var y = $("#selectcountries6_break2 option:selected").text();
+    var t = y.split(/[ ,]+/);
+
+    if(t[4] ==1)
+    {
+        var value = parseFloat($('#carbSum6').val()) ;
+
+        if(value)
+        {
+            value +=parseFloat(t[2]*x);
+            $('#carbSum6').val(value);
+
+            var current =  $('#day6_break2').text();
+            var currentVal =$('#day6_break2').val();
+            $('#day6_break2').val(" ");
+            $('#day6_break2').text(" ");
+            $('#day6_break2').text(current +  ' و ' + '  '+x+' جم '  +  t[0]);
+            $('#day6_break2').val( currentVal +  ' و ' + '  '+x+' جم '  +  t[0]);
+
+        }else
+        {
+            $('#carbSum6').val(parseFloat(t[2])*x);
+
+            var current =  $('#day6_break2').text();
+            var currentVal =$('#day6_break2').val();
+            $('#day6_break2').val(" ");
+            $('#day6_break2').text(" ");
+            $('#day6_break2').text(current +  ' و ' + '  '+x+' جم '  +  t[0]);
+            $('#day6_break2').val( currentVal +  ' و ' + '  '+x+' جم '  +  t[0]);
+
+        }
+
+    }else if(t[4] ==2)
+    {
+        var value = parseFloat($('#fatsSum6').val()) ;
+
+        if(value)
+        {
+            value +=parseFloat(t[2]*x);
+            $('#fatsSum6').val(value);
+            var current =  $('#day6_break2').text();
+            var currentVal =$('#day6_break2').val();
+            $('#day6_break2').val(" ");
+            $('#day6_break2').text(" ");
+            $('#day6_break2').text(current +  ' و ' + '  '+x+' جم '  +  t[0]);
+            $('#day6_break2').val( currentVal +  ' و ' + '  '+x+' جم '  +  t[0]);
+
+        }else
+        {
+            $('#fatsSum6').val(parseFloat(t[2])*x);
+            var current =  $('#day6_break2').text();
+            var currentVal =$('#day6_break2').val();
+            $('#day6_break2').val(" ");
+            $('#day6_break2').text(" ");
+            $('#day6_break2').text(current +  ' و ' + '  '+x+' جم '  +  t[0]);
+            $('#day6_break2').val( currentVal +  ' و ' + '  '+x+' جم '  +  t[0]);
+        }
+
+    }else
+    {
+        var value = parseFloat($('#proteinSum6').val()) ;
+
+        if(value)
+        {
+            value +=parseFloat(t[2]*x);
+            $('#proteinSum6').val(value);
+            var current =  $('#day6_break2').text();
+            var currentVal =$('#day6_break2').val();
+            $('#day6_break2').val(" ");
+            $('#day6_break2').text(" ");
+            $('#day6_break2').text(current +  ' و ' + '  '+x+' جم '  +  t[0]);
+            $('#day6_break2').val( currentVal +  ' و ' + '  '+x+' جم '  +  t[0]);
+
+        }else
+        {
+            $('#proteinSum6').val(parseFloat(t[2])*x);
+            var current =  $('#day6_break2').text();
+            var currentVal =$('#day6_break2').val();
+            $('#day6_break2').val(" ");
+            $('#day6_break2').text(" ");
+            $('#day6_break2').text(current +  ' و ' + '  '+x+' جم '  +  t[0]);
+            $('#day6_break2').val( currentVal +  ' و ' + '  '+x+' جم '  +  t[0]);
+        }
+    }
+
+
+
+}
+
+
+// seventh day
+
+
+function getData7() {
+
+    var x =  $("#gmValue7 option:selected").val();
+    var y = $("#selectcountries7 option:selected").text();
+    var t = y.split(/[ ,]+/);
+
+    if(t[4] ==1)
+    {
+        var value = parseFloat($('#carbSum7').val()) ;
+
+        if(value)
+        {
+            value +=parseFloat(t[2]*x);
+            $('#carbSum7').val(value);
+            //    $('#day1_breakfast').focus();
+
+
+
+            var current =  $('#day7_breakfast').text();
+            var currentVal =$('#day7_breakfast').val();
+            $('#day7_breakfast').val(" ");
+            $('#day7_breakfast').text(" ");
+            $('#day7_breakfast').text(current +  ' و ' + '  '+x+' جم '  +  t[0]);
+            $('#day7_breakfast').val( currentVal +  ' و ' + '  '+x+' جم '  +  t[0]);
+
+        }
+
+        else
+        {
+            $('#carbSum7').val(parseFloat(t[2])*x);
+
+            var current =  $('#day7_breakfast').text();
+            var currentVal =$('#day7_breakfast').val();
+            $('#day7_breakfast').val(" ");
+            $('#day7_breakfast').text(" ");
+            $('#day7_breakfast').text(current +  ' و ' + '  '+x+' جم '  +  t[0]);
+            $('#day7_breakfast').val( currentVal +  ' و ' + '  '+x+' جم '  +  t[0]);
+
+
+        }
+
+    }
+
+
+    else if(t[4] ==2)
+    {
+        var value = parseFloat($('#fatsSum7').val()) ;
+
+        if(value)
+        {
+            value +=parseFloat(t[2]*x);
+            $('#fatsSum7').val(value);
+            var current =  $('#day7_breakfast').text();
+            var currentVal =$('#day7_breakfast').val();
+            $('#day7_breakfast').val(" ");
+            $('#day7_breakfast').text(" ");
+            $('#day7_breakfast').text(current +  ' و ' + '  '+x+' جم '  +  t[0]);
+            $('#day7_breakfast').val( currentVal +  ' و ' + '  '+x+' جم '  +  t[0]);
+
+        }else
+        {
+            $('#fatsSum7').val(parseFloat(t[2])*x);
+            var current =  $('#day7_breakfast').text();
+            var currentVal =$('#day7_breakfast').val();
+            $('#day7_breakfast').val(" ");
+            $('#day7_breakfast').text(" ");
+            $('#day7_breakfast').text(current +  ' و ' + '  '+x+' جم '  +  t[0]);
+            $('#day7_breakfast').val( currentVal +  ' و ' + '  '+x+' جم '  +  t[0]);
+        }
+
+    }
+
+    else
+    {
+        var value = parseFloat($('#proteinSum7').val()) ;
+
+        if(value)
+        {
+            value +=parseFloat(t[2]*x);
+            $('#proteinSum7').val(value);
+
+            var current =  $('#day7_breakfast').text();
+            var currentVal =$('#day7_breakfast').val();
+            $('#day7_breakfast').val(" ");
+            $('#day7_breakfast').text(" ");
+            $('#day7_breakfast').text(current +  ' و ' + '  '+x+' جم '  +  t[0]);
+            $('#day7_breakfast').val( currentVal +  ' و ' + '  '+x+' جم '  +  t[0]);
+
+        }else
+        {
+            $('#proteinSum7').val(parseFloat(t[2])*x);
+            var current =  $('#day7_breakfast').text();
+            var currentVal =$('#day7_breakfast').val();
+            $('#day7_breakfast').val(" ");
+            $('#day7_breakfast').text(" ");
+            $('#day7_breakfast').text(current +  ' و ' + '  '+x+' جم '  +  t[0]);
+            $('#day7_breakfast').val( currentVal +  ' و ' + '  '+x+' جم '  +  t[0]);
+        }
+    }
+
+
+
+}
+
+function getData7_lunch() {
+
+    var x =  $("#gmValue7_lunch option:selected").val();
+    var y = $("#selectcountries7_lunch option:selected").text();
+    var t = y.split(/[ ,]+/);
+
+    if(t[4] ==1)
+    {
+        var value = parseFloat($('#carbSum7').val()) ;
+
+        if(value)
+        {
+            value +=parseFloat(t[2]*x);
+            $('#carbSum7').val(value);
+
+            var current =  $('#day7_lunch').text();
+            var currentVal =$('#day7_lunch').val();
+            $('#day7_lunch').val(" ");
+            $('#day7_lunch').text(" ");
+            $('#day7_lunch').text(current +  ' و ' + '  '+x+' جم '  +  t[0]);
+            $('#day7_lunch').val( currentVal +  ' و ' + '  '+x+' جم '  +  t[0]);
+
+        }else
+        {
+            $('#carbSum7').val(parseFloat(t[2])*x);
+
+            var current =  $('#day7_lunch').text();
+            var currentVal =$('#day7_lunch').val();
+            $('#day7_lunch').val(" ");
+            $('#day7_lunch').text(" ");
+            $('#day7_lunch').text(current +  ' و ' + '  '+x+' جم '  +  t[0]);
+            $('#day7_lunch').val( currentVal +  ' و ' + '  '+x+' جم '  +  t[0]);
+
+        }
+
+    }else if(t[4] ==2)
+    {
+        var value = parseFloat($('#fatsSum7').val()) ;
+
+        if(value)
+        {
+            value +=parseFloat(t[2]*x);
+            $('#fatsSum7').val(value);
+            var current =  $('#day7_lunch').text();
+            var currentVal =$('#day7_lunch').val();
+            $('#day7_lunch').val(" ");
+            $('#day7_lunch').text(" ");
+            $('#day7_lunch').text(current +  ' و ' + '  '+x+' جم '  +  t[0]);
+            $('#day7_lunch').val( currentVal +  ' و ' + '  '+x+' جم '  +  t[0]);
+
+        }else
+        {
+            $('#fatsSum7').val(parseFloat(t[2])*x);
+            var current =  $('#day7_lunch').text();
+            var currentVal =$('#day7_lunch').val();
+            $('#day7_lunch').val(" ");
+            $('#day7_lunch').text(" ");
+            $('#day7_lunch').text(current +  ' و ' + '  '+x+' جم '  +  t[0]);
+            $('#day7_lunch').val( currentVal +  ' و ' + '  '+x+' جم '  +  t[0]);
+        }
+
+    }else
+    {
+        var value = parseFloat($('#proteinSum7').val()) ;
+
+        if(value)
+        {
+            value +=parseFloat(t[2]*x);
+            $('#proteinSum7').val(value);
+            var current =  $('#day7_lunch').text();
+            var currentVal =$('#day7_lunch').val();
+            $('#day7_lunch').val(" ");
+            $('#day7_lunch').text(" ");
+            $('#day7_lunch').text(current +  ' و ' + '  '+x+' جم '  +  t[0]);
+            $('#day7_lunch').val( currentVal +  ' و ' + '  '+x+' جم '  +  t[0]);
+
+        }else
+        {
+            $('#proteinSum7').val(parseFloat(t[2])*x);
+            var current =  $('#day7_lunch').text();
+            var currentVal =$('#day7_lunch').val();
+            $('#day7_lunch').val(" ");
+            $('#day7_lunch').text(" ");
+            $('#day7_lunch').text(current +  ' و ' + '  '+x+' جم '  +  t[0]);
+            $('#day7_lunch').val( currentVal +  ' و ' + '  '+x+' جم '  +  t[0]);
+        }
+    }
+
+
+
+}
+
+function getData7_dinner() {
+
+    var x =  $("#gmValue7_dinner option:selected").val();
+    var y = $("#selectcountries7_dinner option:selected").text();
+    var t = y.split(/[ ,]+/);
+
+    if(t[4] ==1)
+    {
+        var value = parseFloat($('#carbSum7').val()) ;
+
+        if(value)
+        {
+            value +=parseFloat(t[2]*x);
+            $('#carbSum7').val(value);
+
+            var current =  $('#day7_dinner').text();
+            var currentVal =$('#day7_dinner').val();
+            $('#day7_dinner').val(" ");
+            $('#day7_dinner').text(" ");
+            $('#day7_dinner').text(current +  ' و ' + '  '+x+' جم '  +  t[0]);
+            $('#day7_dinner').val( currentVal +  ' و ' + '  '+x+' جم '  +  t[0]);
+
+        }else
+        {
+            $('#carbSum7').val(parseFloat(t[2])*x);
+
+            var current =  $('#day7_dinner').text();
+            var currentVal =$('#day7_dinner').val();
+            $('#day7_dinner').val(" ");
+            $('#day7_dinner').text(" ");
+            $('#day7_dinner').text(current +  ' و ' + '  '+x+' جم '  +  t[0]);
+            $('#day7_dinner').val( currentVal +  ' و ' + '  '+x+' جم '  +  t[0]);
+
+        }
+
+    }else if(t[4] ==2)
+    {
+        var value = parseFloat($('#fatsSum7').val()) ;
+
+        if(value)
+        {
+            value +=parseFloat(t[2]*x);
+            $('#fatsSum7').val(value);
+            var current =  $('#day7_dinner').text();
+            var currentVal =$('#day7_dinner').val();
+            $('#day7_dinner').val(" ");
+            $('#day7_dinner').text(" ");
+            $('#day7_dinner').text(current +  ' و ' + '  '+x+' جم '  +  t[0]);
+            $('#day7_dinner').val( currentVal +  ' و ' + '  '+x+' جم '  +  t[0]);
+
+        }else
+        {
+            $('#fatsSum7').val(parseFloat(t[2])*x);
+            var current =  $('#day7_dinner').text();
+            var currentVal =$('#day7_dinner').val();
+            $('#day7_dinner').val(" ");
+            $('#day7_dinner').text(" ");
+            $('#day7_dinner').text(current +  ' و ' + '  '+x+' جم '  +  t[0]);
+            $('#day7_dinner').val( currentVal +  ' و ' + '  '+x+' جم '  +  t[0]);
+        }
+
+    }else
+    {
+        var value = parseFloat($('#proteinSum6').val()) ;
+
+        if(value)
+        {
+            value +=parseFloat(t[2]*x);
+            $('#proteinSum6').val(value);
+            var current =  $('#day7_dinner').text();
+            var currentVal =$('#day7_dinner').val();
+            $('#day7_dinner').val(" ");
+            $('#day7_dinner').text(" ");
+            $('#day7_dinner').text(current +  ' و ' + '  '+x+' جم '  +  t[0]);
+            $('#day7_dinner').val( currentVal +  ' و ' + '  '+x+' جم '  +  t[0]);
+
+        }else
+        {
+            $('#proteinSum7').val(parseFloat(t[2])*x);
+            var current =  $('#day7_dinner').text();
+            var currentVal =$('#day7_dinner').val();
+            $('#day7_dinner').val(" ");
+            $('#day7_dinner').text(" ");
+            $('#day7_dinner').text(current +  ' و ' + '  '+x+' جم '  +  t[0]);
+            $('#day7_dinner').val( currentVal +  ' و ' + '  '+x+' جم '  +  t[0]);
+        }
+    }
+
+
+
+}
+
+function getData7_break1() {
+
+    var x =  $("#gmValue7_break1 option:selected").val();
+    var y = $("#selectcountries7_break1 option:selected").text();
+    var t = y.split(/[ ,]+/);
+
+    if(t[4] ==1)
+    {
+        var value = parseFloat($('#carbSum7').val()) ;
+
+        if(value)
+        {
+            value +=parseFloat(t[2]*x);
+            $('#carbSum7').val(value);
+
+            var current =  $('#day7_break1').text();
+            var currentVal =$('#day7_break1').val();
+            $('#day7_break1').val(" ");
+            $('#day7_break1').text(" ");
+            $('#day7_break1').text(current +  ' و ' + '  '+x+' جم '  +  t[0]);
+            $('#day7_break1').val( currentVal +  ' و ' + '  '+x+' جم '  +  t[0]);
+
+        }else
+        {
+            $('#carbSum7').val(parseFloat(t[2])*x);
+
+            var current =  $('#day7_break1').text();
+            var currentVal =$('#day7_break1').val();
+            $('#day7_break1').val(" ");
+            $('#day7_break1').text(" ");
+            $('#day7_break1').text(current +  ' و ' + '  '+x+' جم '  +  t[0]);
+            $('#day7_break1').val( currentVal +  ' و ' + '  '+x+' جم '  +  t[0]);
+
+        }
+
+    }else if(t[4] ==2)
+    {
+        var value = parseFloat($('#fatsSum7').val()) ;
+
+        if(value)
+        {
+            value +=parseFloat(t[2]*x);
+            $('#fatsSum7').val(value);
+            var current =  $('#day7_break1').text();
+            var currentVal =$('#day7_break1').val();
+            $('#day7_break1').val(" ");
+            $('#day7_break1').text(" ");
+            $('#day7_break1').text(current +  ' و ' + '  '+x+' جم '  +  t[0]);
+            $('#day7_break1').val( currentVal +  ' و ' + '  '+x+' جم '  +  t[0]);
+
+        }else
+        {
+            $('#fatsSum7').val(parseFloat(t[2])*x);
+            var current =  $('#day7_break1').text();
+            var currentVal =$('#day7_break1').val();
+            $('#day7_break1').val(" ");
+            $('#day7_break1').text(" ");
+            $('#day7_break1').text(current +  ' و ' + '  '+x+' جم '  +  t[0]);
+            $('#day7_break1').val( currentVal +  ' و ' + '  '+x+' جم '  +  t[0]);
+        }
+
+    }else
+    {
+        var value = parseFloat($('#proteinSum7').val()) ;
+
+        if(value)
+        {
+            value +=parseFloat(t[2]*x);
+            $('#proteinSum7').val(value);
+            var current =  $('#day7_break1').text();
+            var currentVal =$('#day7_break1').val();
+            $('#day7_break1').val(" ");
+            $('#day7_break1').text(" ");
+            $('#day7_break1').text(current +  ' و ' + '  '+x+' جم '  +  t[0]);
+            $('#day7_break1').val( currentVal +  ' و ' + '  '+x+' جم '  +  t[0]);
+
+        }else
+        {
+            $('#proteinSum7').val(parseFloat(t[2])*x);
+            var current =  $('#day7_break1').text();
+            var currentVal =$('#day7_break1').val();
+            $('#day7_break1').val(" ");
+            $('#day7_break1').text(" ");
+            $('#day7_break1').text(current +  ' و ' + '  '+x+' جم '  +  t[0]);
+            $('#day7_break1').val( currentVal +  ' و ' + '  '+x+' جم '  +  t[0]);
+        }
+    }
+
+
+
+}
+
+function getData7_break2() {
+
+    var x =  $("#gmValue7_break2 option:selected").val();
+    var y = $("#selectcountries7_break2 option:selected").text();
+    var t = y.split(/[ ,]+/);
+
+    if(t[4] ==1)
+    {
+        var value = parseFloat($('#carbSum7').val()) ;
+
+        if(value)
+        {
+            value +=parseFloat(t[2]*x);
+            $('#carbSum7').val(value);
+
+            var current =  $('#day7_break2').text();
+            var currentVal =$('#day7_break2').val();
+            $('#day7_break2').val(" ");
+            $('#day7_break2').text(" ");
+            $('#day7_break2').text(current +  ' و ' + '  '+x+' جم '  +  t[0]);
+            $('#day7_break2').val( currentVal +  ' و ' + '  '+x+' جم '  +  t[0]);
+
+        }else
+        {
+            $('#carbSum7').val(parseFloat(t[2])*x);
+
+            var current =  $('#day7_break2').text();
+            var currentVal =$('#day7_break2').val();
+            $('#day7_break2').val(" ");
+            $('#day7_break2').text(" ");
+            $('#day7_break2').text(current +  ' و ' + '  '+x+' جم '  +  t[0]);
+            $('#day7_break2').val( currentVal +  ' و ' + '  '+x+' جم '  +  t[0]);
+
+        }
+
+    }else if(t[4] ==2)
+    {
+        var value = parseFloat($('#fatsSum7').val()) ;
+
+        if(value)
+        {
+            value +=parseFloat(t[2]*x);
+            $('#7').val(value);
+            var current =  $('#day7_break2').text();
+            var currentVal =$('#day7_break2').val();
+            $('#day7_break2').val(" ");
+            $('#day7_break2').text(" ");
+            $('#day7_break2').text(current +  ' و ' + '  '+x+' جم '  +  t[0]);
+            $('#day7_break2').val( currentVal +  ' و ' + '  '+x+' جم '  +  t[0]);
+
+        }else
+        {
+            $('#fatsSum7').val(parseFloat(t[2])*x);
+            var current =  $('#day7_break2').text();
+            var currentVal =$('#day7_break2').val();
+            $('#day7_break2').val(" ");
+            $('#day7_break2').text(" ");
+            $('#day7_break2').text(current +  ' و ' + '  '+x+' جم '  +  t[0]);
+            $('#day7_break2').val( currentVal +  ' و ' + '  '+x+' جم '  +  t[0]);
+        }
+
+    }else
+    {
+        var value = parseFloat($('#proteinSum7').val()) ;
+
+        if(value)
+        {
+            value +=parseFloat(t[2]*x);
+            $('#proteinSum7').val(value);
+            var current =  $('#day7_break2').text();
+            var currentVal =$('#day7_break2').val();
+            $('#day7_break2').val(" ");
+            $('#day7_break2').text(" ");
+            $('#day7_break2').text(current +  ' و ' + '  '+x+' جم '  +  t[0]);
+            $('#day7_break2').val( currentVal +  ' و ' + '  '+x+' جم '  +  t[0]);
+
+        }else
+        {
+            $('#proteinSum7').val(parseFloat(t[2])*x);
+            var current =  $('#day7_break2').text();
+            var currentVal =$('#day7_break2').val();
+            $('#day7_break2').val(" ");
+            $('#day7_break2').text(" ");
+            $('#day7_break2').text(current +  ' و ' + '  '+x+' جم '  +  t[0]);
+            $('#day6_break2').val( currentVal +  ' و ' + '  '+x+' جم '  +  t[0]);
+        }
+    }
+
+
+
+}
