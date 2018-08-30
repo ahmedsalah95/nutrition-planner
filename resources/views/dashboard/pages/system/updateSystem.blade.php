@@ -79,7 +79,7 @@
 
                                 <div class="form-group text-center">
 
-                                    <select id="continents">
+                                    <select id="continents" class="form-control">
                                         <option value = "0">all</option>
                                         <option value="1">carbs</option>
                                         <option value="2">Fats</option>
@@ -87,9 +87,9 @@
 
 
                                     </select>
-                                    <select id="selectcountries"></select>
+                                    <select id="selectcountries" class="form-control"></select>
 
-                                    <select name="gmValue" id="gmValue" >
+                                    <select name="gmValue" id="gmValue" class="form-control">
                                         <option value="10">10 gm</option>
                                         <option value="20">20 gm</option>
                                         <option value="30">30 gm</option>
