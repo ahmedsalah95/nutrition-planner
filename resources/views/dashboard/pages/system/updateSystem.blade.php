@@ -111,7 +111,9 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day1_breakfast" name="day1_breakfast"
-                                               value="{{$data->day1_breakfast}}"
+
+
+                                               value="<?php echo str_replace("<br>","و", $data->day1_breakfast) ?>"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
 

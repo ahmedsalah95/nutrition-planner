@@ -13,6 +13,7 @@
     <section class="system">
         <div class="container">
 
+
             @if($errors->all())
                 <div style="color: #a94442; background-color: #f2dede; border-color: #ebccd1;" class="alert ">
                     <ul>
@@ -657,17 +658,6 @@
                         <button class="accordion" type="button">اليوم الثالث</button>
                         <div class="panel">
                             <div class="form-group third_day">
-
-                                <div class="text-center">
-
-                                    <h2 class="text-center">اليوم الثالث</h2>
-
-
-
-                                </div>
-
-
-
 
                                 <div class="form-group text-center">
 
