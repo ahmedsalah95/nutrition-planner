@@ -180,11 +180,6 @@
 
                                     <br>
 
-
-
-
-
-
                                     <br>
                                     <br>
 
@@ -580,10 +575,7 @@
                                     </div>
 
 
-
-
-
-
+                                    <br>
                                     <br>
                                     <br>
 
@@ -592,7 +584,7 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day2_lunch" name="day2_lunch"
-                                               value="{{$data->day2_lunch}}"
+                                               value="<?php echo str_replace("<br>","و", $data->day2_lunch) ?>"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
 
@@ -607,31 +599,33 @@
 
 
                                 <div class="form-group text-center">
+                                    <div class="col-lg-12">
+                                        <div class="col-lg-3">   <select id="continents2_break2" class="form-control">
+                                                <option value = "0">all</option>
+                                                <option value="1">carbs</option>
+                                                <option value="2">Fats</option>
+                                                <option value="3">proteins</option>
 
-                                    <select id="continents2_break2">
-                                        <option value = "0">all</option>
-                                        <option value="1">carbs</option>
-                                        <option value="2">Fats</option>
-                                        <option value="3">proteins</option>
+
+                                            </select></div>
+                                        <div class="col-lg-3"><select id="selectcountries2_break2" class="form-control"></select></div>
+                                        <div class="col-lg-3">    <select name="gmValue" id="gmValue2_break2" class="form-control">
+                                                <option value="10">10 gm</option>
+                                                <option value="20">20 gm</option>
+                                                <option value="30">30 gm</option>
+                                                <option value="50">50 gm</option>
+                                                <option value="100">100 gm</option>
+                                                <option value="200">200 gm</option>
+                                                <option value="300">300 gm</option>
+                                                <option value="400">400 gm</option>
+                                                <option value="500">500 gm</option>
+                                                <option value="600">600 gm</option>
+                                            </select></div>
+                                        <div class="col-lg-3">      <button type="button" class="btn btn-success" onclick="getData2_break2()">أضف</button></div>
+                                    </div>
 
 
-                                    </select>
-                                    <select id="selectcountries2_break2"></select>
-
-                                    <select name="gmValue" id="gmValue2_break2" >
-                                        <option value="10">10 gm</option>
-                                        <option value="20">20 gm</option>
-                                        <option value="30">30 gm</option>
-                                        <option value="50">50 gm</option>
-                                        <option value="100">100 gm</option>
-                                        <option value="200">200 gm</option>
-                                        <option value="300">300 gm</option>
-                                        <option value="400">400 gm</option>
-                                        <option value="500">500 gm</option>
-                                        <option value="600">600 gm</option>
-                                    </select>
-
-                                    <button type="button" class="btn btn-success" onclick="getData2_break2()">أضف</button>
+                                    <br>
                                     <br>
                                     <br>
 
@@ -640,7 +634,7 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day2_break2" name="day2_break2"
-                                               value="{{$data->day2_break2}}"
+                                               value="<?php echo str_replace("<br>","و", $data->day2_break2) ?>"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
 
@@ -655,31 +649,34 @@
 
 
                                 <div class="form-group text-center">
+                                    <div class="col-lg-12">
+                                        <div class="col-lg-3">   <select id="continents2_dinner" class="form-control">
+                                                <option value = "0">all</option>
+                                                <option value="1">carbs</option>
+                                                <option value="2">Fats</option>
+                                                <option value="3">proteins</option>
 
-                                    <select id="continents2_dinner">
-                                        <option value = "0">all</option>
-                                        <option value="1">carbs</option>
-                                        <option value="2">Fats</option>
-                                        <option value="3">proteins</option>
+
+                                            </select></div>
+                                        <div class="col-lg-3"> <select id="selectcountries2_dinner" class="form-control"></select></div>
+                                        <div class="col-lg-3">   <select name="gmValue" id="gmValue2_dinner" class="form-control">
+                                                <option value="10">10 gm</option>
+                                                <option value="20">20 gm</option>
+                                                <option value="30">30 gm</option>
+                                                <option value="50">50 gm</option>
+                                                <option value="100">100 gm</option>
+                                                <option value="200">200 gm</option>
+                                                <option value="300">300 gm</option>
+                                                <option value="400">400 gm</option>
+                                                <option value="500">500 gm</option>
+                                                <option value="600">600 gm</option>
+                                            </select></div>
+                                        <div class="col-lg-3">
+                                            <button type="button" class="btn btn-success" onclick="getData2_dinner()">أضف</button></div>
+                                    </div>
 
 
-                                    </select>
-                                    <select id="selectcountries2_dinner"></select>
-
-                                    <select name="gmValue" id="gmValue2_dinner" >
-                                        <option value="10">10 gm</option>
-                                        <option value="20">20 gm</option>
-                                        <option value="30">30 gm</option>
-                                        <option value="50">50 gm</option>
-                                        <option value="100">100 gm</option>
-                                        <option value="200">200 gm</option>
-                                        <option value="300">300 gm</option>
-                                        <option value="400">400 gm</option>
-                                        <option value="500">500 gm</option>
-                                        <option value="600">600 gm</option>
-                                    </select>
-
-                                    <button type="button" class="btn btn-success" onclick="getData2_dinner()">أضف</button>
+                                    <br>
                                     <br>
                                     <br>
 
@@ -688,7 +685,7 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day2_dinner" name="day2_dinner"
-                                               value="{{$data->day2_dinner}}"
+                                               value="<?php echo str_replace("<br>","و", $data->day2_dinner) ?>"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
 
@@ -726,21 +723,24 @@
 
                                     <h2 class="text-center">مجموع السعرات الحرارية لليوم الثانى</h2>
                                     <div class="col-lg-4 col-md-4 col-sm-12">
+                                        <label for="carbSum">carbs old value : {{$data->carbSum2}}</label>
                                         <input type="text" id="carbSum2" class="form-control"
                                                name="carbSum2"
-                                               value="{{$data->carbSum2}}"
+
                                                placeholder="مجموع الكربهيدرات" readonly>
                                     </div>
                                     <div class="col-lg-4 col-md-4 col-sm-12">
+                                        <label for="carbSum">fats old value : {{$data->fatsSum2}}</label>
                                         <input type="text" id="fatsSum2" class="form-control"
                                                name="fatsSum2"
-                                               value="{{$data->fatsSum2}}"
+
                                                placeholder="مجموع الدهون" readonly>
                                     </div>
                                     <div class="col-lg-4 col-md-4 col-sm-12">
+                                        <label for="carbSum">protein old value : {{$data->proteinSum2}}</label>
                                         <input type="text" id="proteinSum2" class="form-control"
                                                name="proteinSum2"
-                                               value="{{$data->proteinSum2}}"
+
                                                placeholder="مجموع البروتينات" readonly>
                                     </div>
                                 </div>
@@ -758,31 +758,33 @@
                             <div class="form-group third_day">
 
                                 <div class="form-group text-center">
+                                    <div class="col-lg-12">
+                                        <div class="col-lg-3">  <select id="continent3" class="form-control">
+                                                <option value = "0">all</option>
+                                                <option value="1">carbs</option>
+                                                <option value="2">Fats</option>
+                                                <option value="3">proteins</option>
 
-                                    <select id="continent3">
-                                        <option value = "0">all</option>
-                                        <option value="1">carbs</option>
-                                        <option value="2">Fats</option>
-                                        <option value="3">proteins</option>
+
+                                            </select></div>
+                                        <div class="col-lg-3"><select id="selectcountries3" class="form-control"></select></div>
+                                        <div class="col-lg-3">     <select name="gmValue" id="gmValue3" class="form-control">
+                                                <option value="10">10 gm</option>
+                                                <option value="20">20 gm</option>
+                                                <option value="30">30 gm</option>
+                                                <option value="50">50 gm</option>
+                                                <option value="100">100 gm</option>
+                                                <option value="200">200 gm</option>
+                                                <option value="300">300 gm</option>
+                                                <option value="400">400 gm</option>
+                                                <option value="500">500 gm</option>
+                                                <option value="600">600 gm</option>
+                                            </select></div>
+                                        <div class="col-lg-3">  <button type="button" class="btn btn-success" onclick="getData3()">أضف</button></div>
+                                    </div>
 
 
-                                    </select>
-                                    <select id="selectcountries3"></select>
-
-                                    <select name="gmValue" id="gmValue3" >
-                                        <option value="10">10 gm</option>
-                                        <option value="20">20 gm</option>
-                                        <option value="30">30 gm</option>
-                                        <option value="50">50 gm</option>
-                                        <option value="100">100 gm</option>
-                                        <option value="200">200 gm</option>
-                                        <option value="300">300 gm</option>
-                                        <option value="400">400 gm</option>
-                                        <option value="500">500 gm</option>
-                                        <option value="600">600 gm</option>
-                                    </select>
-
-                                    <button type="button" class="btn btn-success" onclick="getData3()">أضف</button>
+                                    <br>
                                     <br>
                                     <br>
 
@@ -791,7 +793,7 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day3_breakfast" name="day3_breakfast"
-                                               value="{{$data->day3_breakfast}}"
+                                               value="<?php echo str_replace("<br>","و", $data->day3_breakfast) ?>"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
 
@@ -806,31 +808,33 @@
 
 
                                 <div class="form-group text-center">
+                                    <div class="col-lg-12">
+                                        <div class="col-lg-3">
+                                            <select id="continents3_break1" class="form-control">
+                                                <option value = "0">all</option>
+                                                <option value="1">carbs</option>
+                                                <option value="2">Fats</option>
+                                                <option value="3">proteins</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-lg-3"><select id="selectcountries3_break1" class="form-control"></select></div>
+                                        <div class="col-lg-3">   <select name="gmValue" id="gmValue3_break1" class="form-control">
+                                                <option value="10">10 gm</option>
+                                                <option value="20">20 gm</option>
+                                                <option value="30">30 gm</option>
+                                                <option value="50">50 gm</option>
+                                                <option value="100">100 gm</option>
+                                                <option value="200">200 gm</option>
+                                                <option value="300">300 gm</option>
+                                                <option value="400">400 gm</option>
+                                                <option value="500">500 gm</option>
+                                                <option value="600">600 gm</option>
+                                            </select></div>
+                                        <div class="col-lg-3"><button type="button" class="btn btn-success" onclick="getData3_break1()">أضف</button></div>
+                                    </div>
 
-                                    <select id="continents3_break1">
-                                        <option value = "0">all</option>
-                                        <option value="1">carbs</option>
-                                        <option value="2">Fats</option>
-                                        <option value="3">proteins</option>
 
-
-                                    </select>
-                                    <select id="selectcountries3_break1"></select>
-
-                                    <select name="gmValue" id="gmValue3_break1" >
-                                        <option value="10">10 gm</option>
-                                        <option value="20">20 gm</option>
-                                        <option value="30">30 gm</option>
-                                        <option value="50">50 gm</option>
-                                        <option value="100">100 gm</option>
-                                        <option value="200">200 gm</option>
-                                        <option value="300">300 gm</option>
-                                        <option value="400">400 gm</option>
-                                        <option value="500">500 gm</option>
-                                        <option value="600">600 gm</option>
-                                    </select>
-
-                                    <button type="button" class="btn btn-success" onclick="getData3_break1()">أضف</button>
+                                    <br>
                                     <br>
                                     <br>
 
@@ -839,7 +843,7 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day3_break1" name="day3_break1"
-                                               value="{{$data->day3_break1}}"
+                                               value="<?php echo str_replace("<br>","و", $data->day3_break1) ?>"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
 
@@ -853,31 +857,33 @@
 
 
                                 <div class="form-group text-center">
+                                    <div class="col-lg-12">
+                                        <div class="col-lg-3">  <select id="continents3_lunch" class="form-control">
+                                                <option value = "0">all</option>
+                                                <option value="1">carbs</option>
+                                                <option value="2">Fats</option>
+                                                <option value="3">proteins</option>
 
-                                    <select id="continents3_lunch">
-                                        <option value = "0">all</option>
-                                        <option value="1">carbs</option>
-                                        <option value="2">Fats</option>
-                                        <option value="3">proteins</option>
+
+                                            </select></div>
+                                        <div class="col-lg-3"> <select id="selectcountries3_lunch" class="form-control"></select></div>
+                                        <div class="col-lg-3">     <select  id="gmValue3_lunch" class="form-control">
+                                                <option value="10">10 gm</option>
+                                                <option value="20">20 gm</option>
+                                                <option value="30">30 gm</option>
+                                                <option value="50">50 gm</option>
+                                                <option value="100">100 gm</option>
+                                                <option value="200">200 gm</option>
+                                                <option value="300">300 gm</option>
+                                                <option value="400">400 gm</option>
+                                                <option value="500">500 gm</option>
+                                                <option value="600">600 gm</option>
+                                            </select></div>
+                                        <div class="col-lg-3"> <button type="button" class="btn btn-success" onclick="getData3_lunch()">أضف</button></div>
+                                    </div>
 
 
-                                    </select>
-                                    <select id="selectcountries3_lunch"></select>
-
-                                    <select  id="gmValue3_lunch" >
-                                        <option value="10">10 gm</option>
-                                        <option value="20">20 gm</option>
-                                        <option value="30">30 gm</option>
-                                        <option value="50">50 gm</option>
-                                        <option value="100">100 gm</option>
-                                        <option value="200">200 gm</option>
-                                        <option value="300">300 gm</option>
-                                        <option value="400">400 gm</option>
-                                        <option value="500">500 gm</option>
-                                        <option value="600">600 gm</option>
-                                    </select>
-
-                                    <button type="button" class="btn btn-success" onclick="getData3_lunch()">أضف</button>
+                                    <br>
                                     <br>
                                     <br>
 
@@ -886,7 +892,7 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day3_lunch" name="day3_lunch"
-                                               value="{{$data->day3_lunch}}"
+                                               value="<?php echo str_replace("<br>","و", $data->day3_lunch) ?>"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
 
@@ -901,31 +907,34 @@
 
 
                                 <div class="form-group text-center">
+                                    <div class="col-lg-12">
+                                        <div class="col-lg-3"> <select id="continents3_break2" class="form-control">
+                                                <option value = "0">all</option>
+                                                <option value="1">carbs</option>
+                                                <option value="2">Fats</option>
+                                                <option value="3">proteins</option>
 
-                                    <select id="continents3_break2">
-                                        <option value = "0">all</option>
-                                        <option value="1">carbs</option>
-                                        <option value="2">Fats</option>
-                                        <option value="3">proteins</option>
+
+                                            </select></div>
+                                        <div class="col-lg-3"><select id="selectcountries3_break2" class="form-control"></select></div>
+                                        <div class="col-lg-3">   <select name="gmValue" id="gmValue3_break2" class="form-control">
+                                                <option value="10">10 gm</option>
+                                                <option value="20">20 gm</option>
+                                                <option value="30">30 gm</option>
+                                                <option value="50">50 gm</option>
+                                                <option value="100">100 gm</option>
+                                                <option value="200">200 gm</option>
+                                                <option value="300">300 gm</option>
+                                                <option value="400">400 gm</option>
+                                                <option value="500">500 gm</option>
+                                                <option value="600">600 gm</option>
+                                            </select></div>
+                                        <div class="col-lg-3">
+                                            <button type="button" class="btn btn-success" onclick="getData3_break2()">أضف</button></div>
+                                    </div>
 
 
-                                    </select>
-                                    <select id="selectcountries3_break2"></select>
-
-                                    <select name="gmValue" id="gmValue3_break2" >
-                                        <option value="10">10 gm</option>
-                                        <option value="20">20 gm</option>
-                                        <option value="30">30 gm</option>
-                                        <option value="50">50 gm</option>
-                                        <option value="100">100 gm</option>
-                                        <option value="200">200 gm</option>
-                                        <option value="300">300 gm</option>
-                                        <option value="400">400 gm</option>
-                                        <option value="500">500 gm</option>
-                                        <option value="600">600 gm</option>
-                                    </select>
-
-                                    <button type="button" class="btn btn-success" onclick="getData3_break2()">أضف</button>
+                                    <br>
                                     <br>
                                     <br>
 
@@ -934,7 +943,7 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day3_break2" name="day3_break2"
-                                               value="{{$data->day3_break2}}"
+                                               value="<?php echo str_replace("<br>","و", $data->day3_break2) ?>"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
 
@@ -949,31 +958,33 @@
 
 
                                 <div class="form-group text-center">
+                                    <div class="col-lg-12">
+                                        <div class="col-lg-3"> <select id="continents3_dinner" class="form-control">
+                                                <option value = "0">all</option>
+                                                <option value="1">carbs</option>
+                                                <option value="2">Fats</option>
+                                                <option value="3">proteins</option>
 
-                                    <select id="continents3_dinner">
-                                        <option value = "0">all</option>
-                                        <option value="1">carbs</option>
-                                        <option value="2">Fats</option>
-                                        <option value="3">proteins</option>
+
+                                            </select></div>
+                                        <div class="col-lg-3"><select id="selectcountries3_dinner"class="form-control"></select></div>
+                                        <div class="col-lg-3">   <select name="gmValue" id="gmValue3_dinner" class="form-control">
+                                                <option value="10">10 gm</option>
+                                                <option value="20">20 gm</option>
+                                                <option value="30">30 gm</option>
+                                                <option value="50">50 gm</option>
+                                                <option value="100">100 gm</option>
+                                                <option value="200">200 gm</option>
+                                                <option value="300">300 gm</option>
+                                                <option value="400">400 gm</option>
+                                                <option value="500">500 gm</option>
+                                                <option value="600">600 gm</option>
+                                            </select></div>
+                                        <div class="col-lg-3"> <button type="button" class="btn btn-success" onclick="getData3_dinner()">أضف</button></div>
+                                    </div>
 
 
-                                    </select>
-                                    <select id="selectcountries3_dinner"></select>
-
-                                    <select name="gmValue" id="gmValue3_dinner" >
-                                        <option value="10">10 gm</option>
-                                        <option value="20">20 gm</option>
-                                        <option value="30">30 gm</option>
-                                        <option value="50">50 gm</option>
-                                        <option value="100">100 gm</option>
-                                        <option value="200">200 gm</option>
-                                        <option value="300">300 gm</option>
-                                        <option value="400">400 gm</option>
-                                        <option value="500">500 gm</option>
-                                        <option value="600">600 gm</option>
-                                    </select>
-
-                                    <button type="button" class="btn btn-success" onclick="getData3_dinner()">أضف</button>
+                                    <br>
                                     <br>
                                     <br>
 
@@ -982,7 +993,7 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day3_dinner" name="day3_dinner"
-                                               value="{{$data->day3_dinner}}"
+                                               value="<?php echo str_replace("<br>","و", $data->day3_dinner) ?>"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
 
@@ -1020,18 +1031,21 @@
 
                                     <h2 class="text-center">مجموع السعرات الحرارية لليوم الثالث</h2>
                                     <div class="col-lg-4 col-md-4 col-sm-12">
+                                        <label for="carbSum">carbs old value : {{$data->carbSum3}}</label>
                                         <input type="text" id="carbSum3" class="form-control"
                                                name="carbSum3"
                                                value="{{$data->carbSum3}}"
                                                placeholder="مجموع الكربهيدرات" readonly>
                                     </div>
                                     <div class="col-lg-4 col-md-4 col-sm-12">
+                                        <label for="carbSum">fats old value : {{$data->fatsSum3}}</label>
                                         <input type="text" id="fatsSum3" class="form-control"
                                                name="fatsSum3"
                                                value="{{$data->fatsSum3}}"
                                                placeholder="مجموع الدهون" readonly>
                                     </div>
                                     <div class="col-lg-4 col-md-4 col-sm-12">
+                                        <label for="carbSum">protein old value : {{$data->proteinSum3}}</label>
                                         <input type="text" id="proteinSum3" class="form-control"
                                                name="proteinSum3"
                                                value="{{$data->proteinSum3}}"
@@ -1055,31 +1069,33 @@
 
 
                                 <div class="form-group text-center">
+                                    <div class="col-lg-12">
+                                        <div class="col-lg-3"><select id="continent4" class="form-control">
+                                                <option value = "0">all</option>
+                                                <option value="1">carbs</option>
+                                                <option value="2">Fats</option>
+                                                <option value="3">proteins</option>
 
-                                    <select id="continent4">
-                                        <option value = "0">all</option>
-                                        <option value="1">carbs</option>
-                                        <option value="2">Fats</option>
-                                        <option value="3">proteins</option>
+
+                                            </select></div>
+                                        <div class="col-lg-3">  <select id="selectcountries4" class="form-control"></select></div>
+                                        <div class="col-lg-3"> <select name="gmValue" id="gmValue4" class="form-control">
+                                                <option value="10">10 gm</option>
+                                                <option value="20">20 gm</option>
+                                                <option value="30">30 gm</option>
+                                                <option value="50">50 gm</option>
+                                                <option value="100">100 gm</option>
+                                                <option value="200">200 gm</option>
+                                                <option value="300">300 gm</option>
+                                                <option value="400">400 gm</option>
+                                                <option value="500">500 gm</option>
+                                                <option value="600">600 gm</option>
+                                            </select></div>
+                                        <div class="col-lg-3"> <button type="button" class="btn btn-success" onclick="getData4()">أضف</button></div>
+                                    </div>
 
 
-                                    </select>
-                                    <select id="selectcountries4"></select>
-
-                                    <select name="gmValue" id="gmValue4" >
-                                        <option value="10">10 gm</option>
-                                        <option value="20">20 gm</option>
-                                        <option value="30">30 gm</option>
-                                        <option value="50">50 gm</option>
-                                        <option value="100">100 gm</option>
-                                        <option value="200">200 gm</option>
-                                        <option value="300">300 gm</option>
-                                        <option value="400">400 gm</option>
-                                        <option value="500">500 gm</option>
-                                        <option value="600">600 gm</option>
-                                    </select>
-
-                                    <button type="button" class="btn btn-success" onclick="getData4()">أضف</button>
+                                    <br>
                                     <br>
                                     <br>
 
@@ -1088,7 +1104,7 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day4_breakfast" name="day4_breakfast"
-                                               value="{{$data->day4_breakfast}}"
+                                               value="<?php echo str_replace("<br>","و", $data->day4_breakfast) ?>"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
 
@@ -1103,31 +1119,31 @@
 
 
                                 <div class="form-group text-center">
+                                    <div class="col-lg-12">
+                                        <div class="col-lg-3">    <select id="continents4_break1" class="form-control">
+                                                <option value = "0">all</option>
+                                                <option value="1">carbs</option>
+                                                <option value="2">Fats</option>
+                                                <option value="3">proteins</option>
 
-                                    <select id="continents4_break1">
-                                        <option value = "0">all</option>
-                                        <option value="1">carbs</option>
-                                        <option value="2">Fats</option>
-                                        <option value="3">proteins</option>
 
-
-                                    </select>
-                                    <select id="selectcountries4_break1"></select>
-
-                                    <select name="gmValue" id="gmValue4_break1" >
-                                        <option value="10">10 gm</option>
-                                        <option value="20">20 gm</option>
-                                        <option value="30">30 gm</option>
-                                        <option value="50">50 gm</option>
-                                        <option value="100">100 gm</option>
-                                        <option value="200">200 gm</option>
-                                        <option value="300">300 gm</option>
-                                        <option value="400">400 gm</option>
-                                        <option value="500">500 gm</option>
-                                        <option value="600">600 gm</option>
-                                    </select>
-
-                                    <button type="button" class="btn btn-success" onclick="getData4_break1()">أضف</button>
+                                            </select></div>
+                                        <div class="col-lg-3"><select id="selectcountries4_break1" class="form-control"></select></div>
+                                        <div class="col-lg-3">   <select name="gmValue" id="gmValue4_break1" class="form-control">
+                                                <option value="10">10 gm</option>
+                                                <option value="20">20 gm</option>
+                                                <option value="30">30 gm</option>
+                                                <option value="50">50 gm</option>
+                                                <option value="100">100 gm</option>
+                                                <option value="200">200 gm</option>
+                                                <option value="300">300 gm</option>
+                                                <option value="400">400 gm</option>
+                                                <option value="500">500 gm</option>
+                                                <option value="600">600 gm</option>
+                                            </select></div>
+                                        <div class="col-lg-3"> <button type="button" class="btn btn-success" onclick="getData4_break1()">أضف</button></div>
+                                    </div>
+                                    <br>
                                     <br>
                                     <br>
 
@@ -1136,7 +1152,7 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day4_break1" name="day4_break1"
-                                               value="{{$data->day4_break1}}"
+                                               value="<?php echo str_replace("<br>","و", $data->day4_break1) ?>"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
 
@@ -1150,31 +1166,32 @@
 
 
                                 <div class="form-group text-center">
+                                    <div class="col-lg-12">
+                                        <div class="col-lg-3"> <select id="continents4_lunch" class="form-control">
+                                                <option value = "0">all</option>
+                                                <option value="1">carbs</option>
+                                                <option value="2">Fats</option>
+                                                <option value="3">proteins</option>
+                                            </select></div>
+                                        <div class="col-lg-3"><select id="selectcountries4_lunch" class="form-control"></select></div>
+                                        <div class="col-lg-3">
+                                            <select  id="gmValue4_lunch" class="form-control">
+                                                <option value="10">10 gm</option>
+                                                <option value="20">20 gm</option>
+                                                <option value="30">30 gm</option>
+                                                <option value="50">50 gm</option>
+                                                <option value="100">100 gm</option>
+                                                <option value="200">200 gm</option>
+                                                <option value="300">300 gm</option>
+                                                <option value="400">400 gm</option>
+                                                <option value="500">500 gm</option>
+                                                <option value="600">600 gm</option>
+                                            </select></div>
+                                        <div class="col-lg-3"><button type="button" class="btn btn-success" onclick="getData4_lunch()">أضف</button></div>
+                                    </div>
 
-                                    <select id="continents4_lunch">
-                                        <option value = "0">all</option>
-                                        <option value="1">carbs</option>
-                                        <option value="2">Fats</option>
-                                        <option value="3">proteins</option>
 
-
-                                    </select>
-                                    <select id="selectcountries4_lunch"></select>
-
-                                    <select  id="gmValue4_lunch" >
-                                        <option value="10">10 gm</option>
-                                        <option value="20">20 gm</option>
-                                        <option value="30">30 gm</option>
-                                        <option value="50">50 gm</option>
-                                        <option value="100">100 gm</option>
-                                        <option value="200">200 gm</option>
-                                        <option value="300">300 gm</option>
-                                        <option value="400">400 gm</option>
-                                        <option value="500">500 gm</option>
-                                        <option value="600">600 gm</option>
-                                    </select>
-
-                                    <button type="button" class="btn btn-success" onclick="getData4_lunch()">أضف</button>
+                                    <br>
                                     <br>
                                     <br>
 
@@ -1183,7 +1200,7 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day4_lunch" name="day4_lunch"
-                                               value="{{$data->day4_lunch}}"
+                                               value="<?php echo str_replace("<br>","و", $data->day4_lunch) ?>"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
 
@@ -1198,31 +1215,33 @@
 
 
                                 <div class="form-group text-center">
+                                    <div class="col-lg-12">
+                                        <div class="col-lg-3">   <select id="continents4_break2" class="form-control">
+                                                <option value = "0">all</option>
+                                                <option value="1">carbs</option>
+                                                <option value="2">Fats</option>
+                                                <option value="3">proteins</option>
 
-                                    <select id="continents4_break2">
-                                        <option value = "0">all</option>
-                                        <option value="1">carbs</option>
-                                        <option value="2">Fats</option>
-                                        <option value="3">proteins</option>
+
+                                            </select></div>
+                                        <div class="col-lg-3"><select id="selectcountries4_break2" class="form-control"></select></div>
+                                        <div class="col-lg-3">   <select name="gmValue" id="gmValue4_break2" class="form-control" >
+                                                <option value="10">10 gm</option>
+                                                <option value="20">20 gm</option>
+                                                <option value="30">30 gm</option>
+                                                <option value="50">50 gm</option>
+                                                <option value="100">100 gm</option>
+                                                <option value="200">200 gm</option>
+                                                <option value="300">300 gm</option>
+                                                <option value="400">400 gm</option>
+                                                <option value="500">500 gm</option>
+                                                <option value="600">600 gm</option>
+                                            </select></div>
+                                        <div class="col-lg-3"> <button type="button" class="btn btn-success" onclick="getData4_break2()">أضف</button></div>
+                                    </div>
 
 
-                                    </select>
-                                    <select id="selectcountries4_break2"></select>
-
-                                    <select name="gmValue" id="gmValue4_break2" >
-                                        <option value="10">10 gm</option>
-                                        <option value="20">20 gm</option>
-                                        <option value="30">30 gm</option>
-                                        <option value="50">50 gm</option>
-                                        <option value="100">100 gm</option>
-                                        <option value="200">200 gm</option>
-                                        <option value="300">300 gm</option>
-                                        <option value="400">400 gm</option>
-                                        <option value="500">500 gm</option>
-                                        <option value="600">600 gm</option>
-                                    </select>
-
-                                    <button type="button" class="btn btn-success" onclick="getData4_break2()">أضف</button>
+                                    <br>
                                     <br>
                                     <br>
 
@@ -1231,7 +1250,7 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day4_break2" name="day4_break2"
-                                               value="{{$data->day4_break2}}"
+                                               value="<?php echo str_replace("<br>","و", $data->day4_break2) ?>"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
 
@@ -1246,31 +1265,33 @@
 
 
                                 <div class="form-group text-center">
+                                    <div class="col-lg-12">
+                                        <div class="col-lg-3"> <select id="continents4_dinner" class="form-control">
+                                                <option value = "0">all</option>
+                                                <option value="1">carbs</option>
+                                                <option value="2">Fats</option>
+                                                <option value="3">proteins</option>
 
-                                    <select id="continents4_dinner">
-                                        <option value = "0">all</option>
-                                        <option value="1">carbs</option>
-                                        <option value="2">Fats</option>
-                                        <option value="3">proteins</option>
+
+                                            </select></div>
+                                        <div class="col-lg-3"> <select id="selectcountries4_dinner" class="form-control"></select></div>
+                                        <div class="col-lg-3">   <select name="gmValue" id="gmValue4_dinner" class="form-control">
+                                                <option value="10">10 gm</option>
+                                                <option value="20">20 gm</option>
+                                                <option value="30">30 gm</option>
+                                                <option value="50">50 gm</option>
+                                                <option value="100">100 gm</option>
+                                                <option value="200">200 gm</option>
+                                                <option value="300">300 gm</option>
+                                                <option value="400">400 gm</option>
+                                                <option value="500">500 gm</option>
+                                                <option value="600">600 gm</option>
+                                            </select></div>
+                                        <div class="col-lg-3"> <button type="button" class="btn btn-success" onclick="getData4_dinner()">أضف</button></div>
+                                    </div>
 
 
-                                    </select>
-                                    <select id="selectcountries4_dinner"></select>
-
-                                    <select name="gmValue" id="gmValue4_dinner" >
-                                        <option value="10">10 gm</option>
-                                        <option value="20">20 gm</option>
-                                        <option value="30">30 gm</option>
-                                        <option value="50">50 gm</option>
-                                        <option value="100">100 gm</option>
-                                        <option value="200">200 gm</option>
-                                        <option value="300">300 gm</option>
-                                        <option value="400">400 gm</option>
-                                        <option value="500">500 gm</option>
-                                        <option value="600">600 gm</option>
-                                    </select>
-
-                                    <button type="button" class="btn btn-success" onclick="getData4_dinner()">أضف</button>
+                                    <br>
                                     <br>
                                     <br>
 
@@ -1279,7 +1300,7 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day4_dinner" name="day4_dinner"
-                                               value="{{$data->day4_dinner}}"
+                                               value="<?php echo str_replace("<br>","و", $data->day4_dinner) ?>"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
 
@@ -1315,23 +1336,26 @@
 
                                 <div class="col-lg-12">
 
-                                    <h2 class="text-center">مجموع السعرات الحرارية لليوم الثالث</h2>
+                                    <h2 class="text-center">مجموع السعرات الحرارية لليوم الرابع</h2>
                                     <div class="col-lg-4 col-md-4 col-sm-12">
+                                        <label for="carbSum">carbs old value : {{$data->carbSum4}}</label>
                                         <input type="text" id="carbSum4" class="form-control"
                                                name="carbSum4"
-                                               value="{{$data->carbSum4}}"
+
                                                placeholder="مجموع الكربهيدرات" readonly>
                                     </div>
                                     <div class="col-lg-4 col-md-4 col-sm-12">
+                                        <label for="carbSum">fats old value : {{$data->fatsSum4}}</label>
                                         <input type="text" id="fatsSum4" class="form-control"
                                                name="fatsSum4"
-                                               value="{{$data->fatsSum4}}"
+
                                                placeholder="مجموع الدهون" readonly>
                                     </div>
                                     <div class="col-lg-4 col-md-4 col-sm-12">
+                                        <label for="carbSum">proteins old value : {{$data->proteinSum4}}</label>
                                         <input type="text" id="proteinSum4" class="form-control"
                                                name="proteinSum4"
-                                               value="{{$data->proteinSum4}}"
+
                                                placeholder="مجموع البروتينات" readonly>
                                     </div>
                                 </div>
@@ -1349,32 +1373,33 @@
                             <div class="form-group fifth_day">
 
 
-                                <div class="form-group text-center">
+                                <div class="form-group text-center" >
+                                    <div class="col-lg-12">
+                                        <div class="col-lg-3"> <select id="continent5" class="form-control">
+                                                <option value = "0">all</option>
+                                                <option value="1">carbs</option>
+                                                <option value="2">Fats</option>
+                                                <option value="3">proteins</option>
 
-                                    <select id="continent5">
-                                        <option value = "0">all</option>
-                                        <option value="1">carbs</option>
-                                        <option value="2">Fats</option>
-                                        <option value="3">proteins</option>
 
+                                            </select></div>
+                                        <div class="col-lg-3"><select id="selectcountries5" class="form-control"></select></div>
+                                        <div class="col-lg-3"> <select name="gmValue" id="gmValue5" class="form-control">
+                                                <option value="10">10 gm</option>
+                                                <option value="20">20 gm</option>
+                                                <option value="30">30 gm</option>
+                                                <option value="50">50 gm</option>
+                                                <option value="100">100 gm</option>
+                                                <option value="200">200 gm</option>
+                                                <option value="300">300 gm</option>
+                                                <option value="400">400 gm</option>
+                                                <option value="500">500 gm</option>
+                                                <option value="600">600 gm</option>
+                                            </select></div>
+                                        <div class="col-lg-3"><button type="button" class="btn btn-success" onclick="getData5()">أضف</button></div>
+                                    </div>
 
-                                    </select>
-                                    <select id="selectcountries5"></select>
-
-                                    <select name="gmValue" id="gmValue5" >
-                                        <option value="10">10 gm</option>
-                                        <option value="20">20 gm</option>
-                                        <option value="30">30 gm</option>
-                                        <option value="50">50 gm</option>
-                                        <option value="100">100 gm</option>
-                                        <option value="200">200 gm</option>
-                                        <option value="300">300 gm</option>
-                                        <option value="400">400 gm</option>
-                                        <option value="500">500 gm</option>
-                                        <option value="600">600 gm</option>
-                                    </select>
-
-                                    <button type="button" class="btn btn-success" onclick="getData5()">أضف</button>
+                                    <br>
                                     <br>
                                     <br>
 
@@ -1383,7 +1408,7 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day5_breakfast" name="day5_breakfast"
-                                               value="{{$data->day5_breakfast}}"
+                                               value="<?php echo str_replace("<br>","و", $data->day5_breakfast) ?>"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
 
@@ -1398,31 +1423,33 @@
 
 
                                 <div class="form-group text-center">
+                                    <div class="col-lg-12">
+                                        <div class="col-lg-3">   <select id="continents5_break1" class="form-control">
+                                                <option value = "0">all</option>
+                                                <option value="1">carbs</option>
+                                                <option value="2">Fats</option>
+                                                <option value="3">proteins</option>
 
-                                    <select id="continents5_break1">
-                                        <option value = "0">all</option>
-                                        <option value="1">carbs</option>
-                                        <option value="2">Fats</option>
-                                        <option value="3">proteins</option>
+
+                                            </select></div>
+                                        <div class="col-lg-3"><select id="selectcountries5_break1"class="form-control"></select></div>
+                                        <div class="col-lg-3">   <select name="gmValue" id="gmValue5_break1" class="form-control">
+                                                <option value="10">10 gm</option>
+                                                <option value="20">20 gm</option>
+                                                <option value="30">30 gm</option>
+                                                <option value="50">50 gm</option>
+                                                <option value="100">100 gm</option>
+                                                <option value="200">200 gm</option>
+                                                <option value="300">300 gm</option>
+                                                <option value="400">400 gm</option>
+                                                <option value="500">500 gm</option>
+                                                <option value="600">600 gm</option>
+                                            </select></div>
+                                        <div class="col-lg-3"><button type="button" class="btn btn-success" onclick="getData5_break1()">أضف</button></div>
+                                    </div>
 
 
-                                    </select>
-                                    <select id="selectcountries5_break1"></select>
-
-                                    <select name="gmValue" id="gmValue5_break1" >
-                                        <option value="10">10 gm</option>
-                                        <option value="20">20 gm</option>
-                                        <option value="30">30 gm</option>
-                                        <option value="50">50 gm</option>
-                                        <option value="100">100 gm</option>
-                                        <option value="200">200 gm</option>
-                                        <option value="300">300 gm</option>
-                                        <option value="400">400 gm</option>
-                                        <option value="500">500 gm</option>
-                                        <option value="600">600 gm</option>
-                                    </select>
-
-                                    <button type="button" class="btn btn-success" onclick="getData5_break1()">أضف</button>
+                                    <br>
                                     <br>
                                     <br>
 
@@ -1431,7 +1458,7 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day5_break1" name="day5_break1"
-                                               value="{{$data->day5_break1}}"
+                                               value="<?php echo str_replace("<br>","و", $data->day5_break1) ?>"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
 
@@ -1445,31 +1472,35 @@
 
 
                                 <div class="form-group text-center">
+                                    <div class="col-lg-12">
+                                        <div class="col-lg-3">
+                                            <select id="continents5_lunch" class="form-control">
+                                                <option value = "0">all</option>
+                                                <option value="1">carbs</option>
+                                                <option value="2">Fats</option>
+                                                <option value="3">proteins</option>
 
-                                    <select id="continents5_lunch">
-                                        <option value = "0">all</option>
-                                        <option value="1">carbs</option>
-                                        <option value="2">Fats</option>
-                                        <option value="3">proteins</option>
+
+                                            </select>
+                                        </div>
+                                        <div class="col-lg-3">   <select id="selectcountries5_lunch" class="form-control"></select></div>
+                                        <div class="col-lg-3">  <select  id="gmValue5_lunch" class="form-control">
+                                                <option value="10">10 gm</option>
+                                                <option value="20">20 gm</option>
+                                                <option value="30">30 gm</option>
+                                                <option value="50">50 gm</option>
+                                                <option value="100">100 gm</option>
+                                                <option value="200">200 gm</option>
+                                                <option value="300">300 gm</option>
+                                                <option value="400">400 gm</option>
+                                                <option value="500">500 gm</option>
+                                                <option value="600">600 gm</option>
+                                            </select></div>
+                                        <div class="col-lg-3"><button type="button" class="btn btn-success" onclick="getData5_lunch()">أضف</button></div>
+                                    </div>
 
 
-                                    </select>
-                                    <select id="selectcountries5_lunch"></select>
-
-                                    <select  id="gmValue5_lunch" >
-                                        <option value="10">10 gm</option>
-                                        <option value="20">20 gm</option>
-                                        <option value="30">30 gm</option>
-                                        <option value="50">50 gm</option>
-                                        <option value="100">100 gm</option>
-                                        <option value="200">200 gm</option>
-                                        <option value="300">300 gm</option>
-                                        <option value="400">400 gm</option>
-                                        <option value="500">500 gm</option>
-                                        <option value="600">600 gm</option>
-                                    </select>
-
-                                    <button type="button" class="btn btn-success" onclick="getData5_lunch()">أضف</button>
+                                    <br>
                                     <br>
                                     <br>
 
@@ -1478,7 +1509,7 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day5_lunch" name="day5_lunch"
-                                               value="{{$data->day5_lunch}}"
+                                               value="<?php echo str_replace("<br>","و", $data->day5_lunch) ?>"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
 
@@ -1493,31 +1524,32 @@
 
 
                                 <div class="form-group text-center">
+                                    <div class="col-lg-12">
+                                        <div class="col-lg-3">     <select id="continents5_break2" class="form-control">
+                                                <option value = "0">all</option>
+                                                <option value="1">carbs</option>
+                                                <option value="2">Fats</option>
+                                                <option value="3">proteins</option>
 
-                                    <select id="continents5_break2">
-                                        <option value = "0">all</option>
-                                        <option value="1">carbs</option>
-                                        <option value="2">Fats</option>
-                                        <option value="3">proteins</option>
 
+                                            </select></div>
+                                        <div class="col-lg-3"> <select id="selectcountries5_break2" class="form-control"></select></div>
+                                        <div class="col-lg-3"> <select name="gmValue" id="gmValue5_break2" class="form-control">
+                                                <option value="10">10 gm</option>
+                                                <option value="20">20 gm</option>
+                                                <option value="30">30 gm</option>
+                                                <option value="50">50 gm</option>
+                                                <option value="100">100 gm</option>
+                                                <option value="200">200 gm</option>
+                                                <option value="300">300 gm</option>
+                                                <option value="400">400 gm</option>
+                                                <option value="500">500 gm</option>
+                                                <option value="600">600 gm</option>
+                                            </select></div>
+                                        <div class="col-lg-3"><button type="button" class="btn btn-success" onclick="getData5_break2()">أضف</button></div>
+                                    </div>
 
-                                    </select>
-                                    <select id="selectcountries5_break2"></select>
-
-                                    <select name="gmValue" id="gmValue5_break2" >
-                                        <option value="10">10 gm</option>
-                                        <option value="20">20 gm</option>
-                                        <option value="30">30 gm</option>
-                                        <option value="50">50 gm</option>
-                                        <option value="100">100 gm</option>
-                                        <option value="200">200 gm</option>
-                                        <option value="300">300 gm</option>
-                                        <option value="400">400 gm</option>
-                                        <option value="500">500 gm</option>
-                                        <option value="600">600 gm</option>
-                                    </select>
-
-                                    <button type="button" class="btn btn-success" onclick="getData5_break2()">أضف</button>
+                                    <br>
                                     <br>
                                     <br>
 
@@ -1526,7 +1558,7 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day5_break2" name="day5_break2"
-                                               value="{{$data->day5_break2}}"
+                                               value="<?php echo str_replace("<br>","و", $data->day5_break2) ?>"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
 
@@ -1541,31 +1573,31 @@
 
 
                                 <div class="form-group text-center">
+                                    <div class="col-lg-12">
+                                        <div class="col-lg-3">  <select id="continents5_dinner" class="form-control">
+                                                <option value = "0">all</option>
+                                                <option value="1">carbs</option>
+                                                <option value="2">Fats</option>
+                                                <option value="3">proteins</option>
 
-                                    <select id="continents5_dinner">
-                                        <option value = "0">all</option>
-                                        <option value="1">carbs</option>
-                                        <option value="2">Fats</option>
-                                        <option value="3">proteins</option>
 
-
-                                    </select>
-                                    <select id="selectcountries5_dinner"></select>
-
-                                    <select name="gmValue" id="gmValue5_dinner" >
-                                        <option value="10">10 gm</option>
-                                        <option value="20">20 gm</option>
-                                        <option value="30">30 gm</option>
-                                        <option value="50">50 gm</option>
-                                        <option value="100">100 gm</option>
-                                        <option value="200">200 gm</option>
-                                        <option value="300">300 gm</option>
-                                        <option value="400">400 gm</option>
-                                        <option value="500">500 gm</option>
-                                        <option value="600">600 gm</option>
-                                    </select>
-
-                                    <button type="button" class="btn btn-success" onclick="getData5_dinner()">أضف</button>
+                                            </select></div>
+                                        <div class="col-lg-3"><select id="selectcountries5_dinner" class="form-control"></select></div>
+                                        <div class="col-lg-3">  <select name="gmValue" id="gmValue5_dinner" class="form-control"class="form-control">
+                                                <option value="10">10 gm</option>
+                                                <option value="20">20 gm</option>
+                                                <option value="30">30 gm</option>
+                                                <option value="50">50 gm</option>
+                                                <option value="100">100 gm</option>
+                                                <option value="200">200 gm</option>
+                                                <option value="300">300 gm</option>
+                                                <option value="400">400 gm</option>
+                                                <option value="500">500 gm</option>
+                                                <option value="600">600 gm</option>
+                                            </select></div>
+                                        <div class="col-lg-3"><button type="button" class="btn btn-success" onclick="getData5_dinner()">أضف</button></div>
+                                    </div>
+                                    <br>
                                     <br>
                                     <br>
 
@@ -1574,7 +1606,7 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day5_dinner" name="day5_dinner"
-                                               value="{{$data->day5_dinner}}"
+                                               value="<?php echo str_replace("<br>","و", $data->day5_dinner) ?>"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
 
@@ -1612,21 +1644,24 @@
 
                                     <h2 class="text-center">مجموع السعرات الحرارية لليوم الخامس</h2>
                                     <div class="col-lg-4 col-md-4 col-sm-12">
+                                        <label for="carbSum">carbs old value : {{$data->carbSum5}}</label>
                                         <input type="text" id="carbSum5" class="form-control"
                                                name="carbSum5"
-                                               value="{{$data->carbSum5}}"
+
                                                placeholder="مجموع الكربهيدرات" readonly>
                                     </div>
                                     <div class="col-lg-4 col-md-4 col-sm-12">
+                                        <label for="carbSum">fats old value : {{$data->fatsSum5}}</label>
                                         <input type="text" id="fatsSum5" class="form-control"
                                                name="fatsSum5"
-                                               value="{{$data->fatsSum5}}"
+
                                                placeholder="مجموع الدهون" readonly>
                                     </div>
                                     <div class="col-lg-4 col-md-4 col-sm-12">
+                                        <label for="carbSum">protein old value : {{$data->proteinSum5}}</label>
                                         <input type="text" id="proteinSum5" class="form-control"
                                                name="proteinSum5"
-                                               value="{{$data->proteinSum5}}"
+
                                                placeholder="مجموع البروتينات" readonly>
                                     </div>
                                 </div>
@@ -1648,31 +1683,33 @@
 
 
                                 <div class="form-group text-center">
+                                    <div class="col-lg-12">
+                                        <div class="col-lg-3">   <select id="continent6" class="form-control">
+                                                <option value = "0">all</option>
+                                                <option value="1">carbs</option>
+                                                <option value="2">Fats</option>
+                                                <option value="3">proteins</option>
 
-                                    <select id="continent6">
-                                        <option value = "0">all</option>
-                                        <option value="1">carbs</option>
-                                        <option value="2">Fats</option>
-                                        <option value="3">proteins</option>
+
+                                            </select></div>
+                                        <div class="col-lg-3"><select id="selectcountries6" class="form-control"></select></div>
+                                        <div class="col-lg-3">   <select name="gmValue" id="gmValue6" class="form-control">
+                                                <option value="10">10 gm</option>
+                                                <option value="20">20 gm</option>
+                                                <option value="30">30 gm</option>
+                                                <option value="50">50 gm</option>
+                                                <option value="100">100 gm</option>
+                                                <option value="200">200 gm</option>
+                                                <option value="300">300 gm</option>
+                                                <option value="400">400 gm</option>
+                                                <option value="500">500 gm</option>
+                                                <option value="600">600 gm</option>
+                                            </select></div>
+                                        <div class="col-lg-3"> <button type="button" class="btn btn-success" onclick="getData6()">أضف</button></div>
+                                    </div>
 
 
-                                    </select>
-                                    <select id="selectcountries6"></select>
-
-                                    <select name="gmValue" id="gmValue6" >
-                                        <option value="10">10 gm</option>
-                                        <option value="20">20 gm</option>
-                                        <option value="30">30 gm</option>
-                                        <option value="50">50 gm</option>
-                                        <option value="100">100 gm</option>
-                                        <option value="200">200 gm</option>
-                                        <option value="300">300 gm</option>
-                                        <option value="400">400 gm</option>
-                                        <option value="500">500 gm</option>
-                                        <option value="600">600 gm</option>
-                                    </select>
-
-                                    <button type="button" class="btn btn-success" onclick="getData6()">أضف</button>
+                                    <br>
                                     <br>
                                     <br>
 
@@ -1681,7 +1718,7 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day6_breakfast" name="day6_breakfast"
-                                               value="{{$data->day6_breakfast}}"
+                                               value="<?php echo str_replace("<br>","و", $data->day6_breakfast) ?>"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
 
@@ -1696,31 +1733,33 @@
 
 
                                 <div class="form-group text-center">
+                                    <div class="col-lg-12">
+                                        <div class="col-lg-3">  <select id="continents6_break1" class="form-control">
+                                                <option value = "0">all</option>
+                                                <option value="1">carbs</option>
+                                                <option value="2">Fats</option>
+                                                <option value="3">proteins</option>
 
-                                    <select id="continents6_break1">
-                                        <option value = "0">all</option>
-                                        <option value="1">carbs</option>
-                                        <option value="2">Fats</option>
-                                        <option value="3">proteins</option>
+
+                                            </select></div>
+                                        <div class="col-lg-3"><select id="selectcountries6_break1" class="form-control"></select></div>
+                                        <div class="col-lg-3">   <select name="gmValue" id="gmValue6_break1" class="form-control">
+                                                <option value="10">10 gm</option>
+                                                <option value="20">20 gm</option>
+                                                <option value="30">30 gm</option>
+                                                <option value="50">50 gm</option>
+                                                <option value="100">100 gm</option>
+                                                <option value="200">200 gm</option>
+                                                <option value="300">300 gm</option>
+                                                <option value="400">400 gm</option>
+                                                <option value="500">500 gm</option>
+                                                <option value="600">600 gm</option>
+                                            </select></div>
+                                        <div class="col-lg-3"><button type="button" class="btn btn-success" onclick="getData6_break1()">أضف</button></div>
+                                    </div>
 
 
-                                    </select>
-                                    <select id="selectcountries6_break1"></select>
-
-                                    <select name="gmValue" id="gmValue6_break1" >
-                                        <option value="10">10 gm</option>
-                                        <option value="20">20 gm</option>
-                                        <option value="30">30 gm</option>
-                                        <option value="50">50 gm</option>
-                                        <option value="100">100 gm</option>
-                                        <option value="200">200 gm</option>
-                                        <option value="300">300 gm</option>
-                                        <option value="400">400 gm</option>
-                                        <option value="500">500 gm</option>
-                                        <option value="600">600 gm</option>
-                                    </select>
-
-                                    <button type="button" class="btn btn-success" onclick="getData6_break1()">أضف</button>
+                                    <br>
                                     <br>
                                     <br>
 
@@ -1729,7 +1768,7 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day6_break1" name="day6_break1"
-                                               value="{{$data->day6_break1}}"
+                                               value="<?php echo str_replace("<br>","و", $data->day6_break1) ?>"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
 
@@ -1744,30 +1783,34 @@
 
                                 <div class="form-group text-center">
 
-                                    <select id="continents6_lunch">
-                                        <option value = "0">all</option>
-                                        <option value="1">carbs</option>
-                                        <option value="2">Fats</option>
-                                        <option value="3">proteins</option>
+                                    <div class="col-lg-12">
+                                        <div class="col-lg-3">
+                                            <select id="continents6_lunch" class="form-control">
+                                                <option value = "0">all</option>
+                                                <option value="1">carbs</option>
+                                                <option value="2">Fats</option>
+                                                <option value="3">proteins</option>
 
 
-                                    </select>
-                                    <select id="selectcountries6_lunch"></select>
+                                            </select>
+                                        </div>
+                                        <div class="col-lg-3"> <select id="selectcountries6_lunch" class="form-control"></select></div>
+                                        <div class="col-lg-3">  <select  id="gmValue6_lunch" class="form-control">
+                                                <option value="10">10 gm</option>
+                                                <option value="20">20 gm</option>
+                                                <option value="30">30 gm</option>
+                                                <option value="50">50 gm</option>
+                                                <option value="100">100 gm</option>
+                                                <option value="200">200 gm</option>
+                                                <option value="300">300 gm</option>
+                                                <option value="400">400 gm</option>
+                                                <option value="500">500 gm</option>
+                                                <option value="600">600 gm</option>
+                                            </select></div>
+                                        <div class="col-lg-3"><button type="button" class="btn btn-success" onclick="getData6_lunch()">أضف</button></div>
+                                    </div>
 
-                                    <select  id="gmValue6_lunch" >
-                                        <option value="10">10 gm</option>
-                                        <option value="20">20 gm</option>
-                                        <option value="30">30 gm</option>
-                                        <option value="50">50 gm</option>
-                                        <option value="100">100 gm</option>
-                                        <option value="200">200 gm</option>
-                                        <option value="300">300 gm</option>
-                                        <option value="400">400 gm</option>
-                                        <option value="500">500 gm</option>
-                                        <option value="600">600 gm</option>
-                                    </select>
-
-                                    <button type="button" class="btn btn-success" onclick="getData6_lunch()">أضف</button>
+                                    <br>
                                     <br>
                                     <br>
 
@@ -1776,7 +1819,7 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day6_lunch" name="day6_lunch"
-                                               value="{{$data->day6_lunch}}"
+                                               value="<?php echo str_replace("<br>","و", $data->day6_lunch) ?>"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
 
@@ -1791,31 +1834,32 @@
 
 
                                 <div class="form-group text-center">
+                                    <div class="col-lg-12">
+                                        <div class="col-lg-3"> <select id="continents6_break2" class="form-control">
+                                                <option value = "0">all</option>
+                                                <option value="1">carbs</option>
+                                                <option value="2">Fats</option>
+                                                <option value="3">proteins</option>
 
-                                    <select id="continents6_break2">
-                                        <option value = "0">all</option>
-                                        <option value="1">carbs</option>
-                                        <option value="2">Fats</option>
-                                        <option value="3">proteins</option>
 
+                                            </select></div>
+                                        <div class="col-lg-3"><select id="selectcountries6_break2" class="form-control"></select></div>
+                                        <div class="col-lg-3">   <select name="gmValue" id="gmValue6_break2" class="form-control">
+                                                <option value="10">10 gm</option>
+                                                <option value="20">20 gm</option>
+                                                <option value="30">30 gm</option>
+                                                <option value="50">50 gm</option>
+                                                <option value="100">100 gm</option>
+                                                <option value="200">200 gm</option>
+                                                <option value="300">300 gm</option>
+                                                <option value="400">400 gm</option>
+                                                <option value="500">500 gm</option>
+                                                <option value="600">600 gm</option>
+                                            </select></div>
+                                        <div class="col-lg-3"><button type="button" class="btn btn-success" onclick="getData6_break2()">أضف</button></div>
+                                    </div>
 
-                                    </select>
-                                    <select id="selectcountries6_break2"></select>
-
-                                    <select name="gmValue" id="gmValue6_break2" >
-                                        <option value="10">10 gm</option>
-                                        <option value="20">20 gm</option>
-                                        <option value="30">30 gm</option>
-                                        <option value="50">50 gm</option>
-                                        <option value="100">100 gm</option>
-                                        <option value="200">200 gm</option>
-                                        <option value="300">300 gm</option>
-                                        <option value="400">400 gm</option>
-                                        <option value="500">500 gm</option>
-                                        <option value="600">600 gm</option>
-                                    </select>
-
-                                    <button type="button" class="btn btn-success" onclick="getData6_break2()">أضف</button>
+                                    <br>
                                     <br>
                                     <br>
 
@@ -1824,7 +1868,7 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day6_break2" name="day6_break2"
-                                               value="{{$data->day6_break2}}"
+                                               value="<?php echo str_replace("<br>","و", $data->day6_break2) ?>"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
 
@@ -1839,31 +1883,35 @@
 
 
                                 <div class="form-group text-center">
+                                    <div class="col-lg-12">
+                                        <div class="col-lg-3">
+                                            <select id="continents6_dinner" class="form-control">
+                                                <option value = "0">all</option>
+                                                <option value="1">carbs</option>
+                                                <option value="2">Fats</option>
+                                                <option value="3">proteins</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <select id="selectcountries6_dinner" class="form-control"></select>
+                                        </div>
+                                        <div class="col-lg-3"> <select name="gmValue" id="gmValue6_dinner" class="form-control">
+                                                <option value="10">10 gm</option>
+                                                <option value="20">20 gm</option>
+                                                <option value="30">30 gm</option>
+                                                <option value="50">50 gm</option>
+                                                <option value="100">100 gm</option>
+                                                <option value="200">200 gm</option>
+                                                <option value="300">300 gm</option>
+                                                <option value="400">400 gm</option>
+                                                <option value="500">500 gm</option>
+                                                <option value="600">600 gm</option>
+                                            </select></div>
+                                        <div class="col-lg-3"> <button type="button" class="btn btn-success" onclick="getData6_dinner()">أضف</button></div>
+                                    </div>
 
-                                    <select id="continents6_dinner">
-                                        <option value = "0">all</option>
-                                        <option value="1">carbs</option>
-                                        <option value="2">Fats</option>
-                                        <option value="3">proteins</option>
 
-
-                                    </select>
-                                    <select id="selectcountries6_dinner"></select>
-
-                                    <select name="gmValue" id="gmValue6_dinner" >
-                                        <option value="10">10 gm</option>
-                                        <option value="20">20 gm</option>
-                                        <option value="30">30 gm</option>
-                                        <option value="50">50 gm</option>
-                                        <option value="100">100 gm</option>
-                                        <option value="200">200 gm</option>
-                                        <option value="300">300 gm</option>
-                                        <option value="400">400 gm</option>
-                                        <option value="500">500 gm</option>
-                                        <option value="600">600 gm</option>
-                                    </select>
-
-                                    <button type="button" class="btn btn-success" onclick="getData6_dinner()">أضف</button>
+                                    <br>
                                     <br>
                                     <br>
 
@@ -1872,7 +1920,7 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day6_dinner" name="day6_dinner"
-                                               value="{{$data->day6_dinner}}"
+                                               value="<?php echo str_replace("<br>","و", $data->day6_dinner) ?>"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
 
@@ -1910,21 +1958,24 @@
 
                                     <h2 class="text-center">مجموع السعرات الحرارية لليوم السادس</h2>
                                     <div class="col-lg-4 col-md-4 col-sm-12">
+                                        <label for="carbSum">carbs old value : {{$data->carbSum6}}</label>
                                         <input type="text" id="carbSum6" class="form-control"
                                                name="carbSum6"
-                                               value="{{$data->carbSum6}}"
+
                                                placeholder="مجموع الكربهيدرات" readonly>
                                     </div>
                                     <div class="col-lg-4 col-md-4 col-sm-12">
+                                        <label for="carbSum">fats old value : {{$data->fatsSum6}}</label>
                                         <input type="text" id="fatsSum6" class="form-control"
                                                name="fatsSum6"
-                                               value="{{$data->fatsSum6}}"
+
                                                placeholder="مجموع الدهون" readonly>
                                     </div>
                                     <div class="col-lg-4 col-md-4 col-sm-12">
+                                        <label for="carbSum">proteins old value : {{$data->proteinSum6}}</label>
                                         <input type="text" id="proteinSum6" class="form-control"
                                                name="proteinSum6"
-                                               value="{{$data->proteinSum6}}"
+
                                                placeholder="مجموع البروتينات" readonly>
                                     </div>
                                 </div>
@@ -1943,31 +1994,33 @@
 
 
                                 <div class="form-group text-center">
+                                    <div class="col-lg-12">
+                                        <div class="col-lg-3">  <select id="continent7" class="form-control">
+                                                <option value = "0">all</option>
+                                                <option value="1">carbs</option>
+                                                <option value="2">Fats</option>
+                                                <option value="3">proteins</option>
 
-                                    <select id="continent7">
-                                        <option value = "0">all</option>
-                                        <option value="1">carbs</option>
-                                        <option value="2">Fats</option>
-                                        <option value="3">proteins</option>
+
+                                            </select></div>
+                                        <div class="col-lg-3"><select id="selectcountries7" class="form-control"></select></div>
+                                        <div class="col-lg-3"> <select name="gmValue" id="gmValue7" class="form-control">
+                                                <option value="10">10 gm</option>
+                                                <option value="20">20 gm</option>
+                                                <option value="30">30 gm</option>
+                                                <option value="50">50 gm</option>
+                                                <option value="100">100 gm</option>
+                                                <option value="200">200 gm</option>
+                                                <option value="300">300 gm</option>
+                                                <option value="400">400 gm</option>
+                                                <option value="500">500 gm</option>
+                                                <option value="600">600 gm</option>
+                                            </select></div>
+                                        <div class="col-lg-3"><button type="button" class="btn btn-success" onclick="getData7()">أضف</button></div>
+                                    </div>
 
 
-                                    </select>
-                                    <select id="selectcountries7"></select>
-
-                                    <select name="gmValue" id="gmValue7" >
-                                        <option value="10">10 gm</option>
-                                        <option value="20">20 gm</option>
-                                        <option value="30">30 gm</option>
-                                        <option value="50">50 gm</option>
-                                        <option value="100">100 gm</option>
-                                        <option value="200">200 gm</option>
-                                        <option value="300">300 gm</option>
-                                        <option value="400">400 gm</option>
-                                        <option value="500">500 gm</option>
-                                        <option value="600">600 gm</option>
-                                    </select>
-
-                                    <button type="button" class="btn btn-success" onclick="getData7()">أضف</button>
+                                    <br>
                                     <br>
                                     <br>
 
@@ -1976,7 +2029,7 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day7_breakfast" name="day7_breakfast"
-                                               value="{{$data->day7_breakfast}}"
+                                               value="<?php echo str_replace("<br>","و", $data->day7_breakfast) ?>"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
 
@@ -1991,31 +2044,33 @@
 
 
                                 <div class="form-group text-center">
+                                    <div class="col-lg-12">
+                                        <div class="col-lg-3"> <select id="continents7_break1" class="form-control">
+                                                <option value = "0">all</option>
+                                                <option value="1">carbs</option>
+                                                <option value="2">Fats</option>
+                                                <option value="3">proteins</option>
 
-                                    <select id="continents7_break1">
-                                        <option value = "0">all</option>
-                                        <option value="1">carbs</option>
-                                        <option value="2">Fats</option>
-                                        <option value="3">proteins</option>
+
+                                            </select></div>
+                                        <div class="col-lg-3"> <select id="selectcountries7_break1" class="form-control"></select></div>
+                                        <div class="col-lg-3">  <select name="gmValue" id="gmValue7_break1" class="form-control">
+                                                <option value="10">10 gm</option>
+                                                <option value="20">20 gm</option>
+                                                <option value="30">30 gm</option>
+                                                <option value="50">50 gm</option>
+                                                <option value="100">100 gm</option>
+                                                <option value="200">200 gm</option>
+                                                <option value="300">300 gm</option>
+                                                <option value="400">400 gm</option>
+                                                <option value="500">500 gm</option>
+                                                <option value="600">600 gm</option>
+                                            </select></div>
+                                        <div class="col-lg-3"><button type="button" class="btn btn-success" onclick="getData7_break1()">أضف</button></div>
+                                    </div>
 
 
-                                    </select>
-                                    <select id="selectcountries7_break1"></select>
-
-                                    <select name="gmValue" id="gmValue7_break1" >
-                                        <option value="10">10 gm</option>
-                                        <option value="20">20 gm</option>
-                                        <option value="30">30 gm</option>
-                                        <option value="50">50 gm</option>
-                                        <option value="100">100 gm</option>
-                                        <option value="200">200 gm</option>
-                                        <option value="300">300 gm</option>
-                                        <option value="400">400 gm</option>
-                                        <option value="500">500 gm</option>
-                                        <option value="600">600 gm</option>
-                                    </select>
-
-                                    <button type="button" class="btn btn-success" onclick="getData7_break1()">أضف</button>
+                                    <br>
                                     <br>
                                     <br>
 
@@ -2024,7 +2079,7 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day7_break1" name="day7_break1"
-                                               value="{{$data->day7_break1}}"
+                                               value="<?php echo str_replace("<br>","و", $data->day7_break1) ?>"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
 
@@ -2038,31 +2093,35 @@
 
 
                                 <div class="form-group text-center">
+                                    <div class="col-lg-12">
+                                        <div class="col-lg-3">
+                                            <select id="continents7_lunch" class="form-control">
+                                                <option value = "0">all</option>
+                                                <option value="1">carbs</option>
+                                                <option value="2">Fats</option>
+                                                <option value="3">proteins</option>
 
-                                    <select id="continents7_lunch">
-                                        <option value = "0">all</option>
-                                        <option value="1">carbs</option>
-                                        <option value="2">Fats</option>
-                                        <option value="3">proteins</option>
+
+                                            </select>
+                                        </div>
+                                        <div class="col-lg-3"> <select id="selectcountries7_lunch" class="form-control"></select></div>
+                                        <div class="col-lg-3">    <select  id="gmValue7_lunch" class="form-control">
+                                                <option value="10">10 gm</option>
+                                                <option value="20">20 gm</option>
+                                                <option value="30">30 gm</option>
+                                                <option value="50">50 gm</option>
+                                                <option value="100">100 gm</option>
+                                                <option value="200">200 gm</option>
+                                                <option value="300">300 gm</option>
+                                                <option value="400">400 gm</option>
+                                                <option value="500">500 gm</option>
+                                                <option value="600">600 gm</option>
+                                            </select></div>
+                                        <div class="col-lg-3"><button type="button" class="btn btn-success" onclick="getData7_lunch()">أضف</button></div>
+                                    </div>
 
 
-                                    </select>
-                                    <select id="selectcountries7_lunch"></select>
-
-                                    <select  id="gmValue7_lunch" >
-                                        <option value="10">10 gm</option>
-                                        <option value="20">20 gm</option>
-                                        <option value="30">30 gm</option>
-                                        <option value="50">50 gm</option>
-                                        <option value="100">100 gm</option>
-                                        <option value="200">200 gm</option>
-                                        <option value="300">300 gm</option>
-                                        <option value="400">400 gm</option>
-                                        <option value="500">500 gm</option>
-                                        <option value="600">600 gm</option>
-                                    </select>
-
-                                    <button type="button" class="btn btn-success" onclick="getData7_lunch()">أضف</button>
+                                    <br>
                                     <br>
                                     <br>
 
@@ -2071,7 +2130,7 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day7_lunch" name="day7_lunch"
-                                               value="{{$data->day7_lunch}}"
+                                               value="<?php echo str_replace("<br>","و", $data->day7_lunch) ?>"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
 
@@ -2086,31 +2145,33 @@
 
 
                                 <div class="form-group text-center">
+                                    <div class="col-lg-12">
+                                        <div class="col-lg-3">     <select id="continents7_break2" class="form-control">
+                                                <option value = "0">all</option>
+                                                <option value="1">carbs</option>
+                                                <option value="2">Fats</option>
+                                                <option value="3">proteins</option>
 
-                                    <select id="continents7_break2">
-                                        <option value = "0">all</option>
-                                        <option value="1">carbs</option>
-                                        <option value="2">Fats</option>
-                                        <option value="3">proteins</option>
+
+                                            </select></div>
+                                        <div class="col-lg-3"><select id="selectcountries7_break2" class="form-control"></select></div>
+                                        <div class="col-lg-3">    <select name="gmValue" id="gmValue7_break2" class="form-control">
+                                                <option value="10">10 gm</option>
+                                                <option value="20">20 gm</option>
+                                                <option value="30">30 gm</option>
+                                                <option value="50">50 gm</option>
+                                                <option value="100">100 gm</option>
+                                                <option value="200">200 gm</option>
+                                                <option value="300">300 gm</option>
+                                                <option value="400">400 gm</option>
+                                                <option value="500">500 gm</option>
+                                                <option value="600">600 gm</option>
+                                            </select></div>
+                                        <div class="col-lg-3"> <button type="button" class="btn btn-success" onclick="getData7_break2()">أضف</button></div>
+                                    </div>
 
 
-                                    </select>
-                                    <select id="selectcountries7_break2"></select>
-
-                                    <select name="gmValue" id="gmValue7_break2" >
-                                        <option value="10">10 gm</option>
-                                        <option value="20">20 gm</option>
-                                        <option value="30">30 gm</option>
-                                        <option value="50">50 gm</option>
-                                        <option value="100">100 gm</option>
-                                        <option value="200">200 gm</option>
-                                        <option value="300">300 gm</option>
-                                        <option value="400">400 gm</option>
-                                        <option value="500">500 gm</option>
-                                        <option value="600">600 gm</option>
-                                    </select>
-
-                                    <button type="button" class="btn btn-success" onclick="getData7_break2()">أضف</button>
+                                    <br>
                                     <br>
                                     <br>
 
@@ -2119,7 +2180,7 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day7_break2" name="day7_break2"
-                                               value="{{$data->day7_break2}}"
+                                               value="<?php echo str_replace("<br>","و", $data->day7_break2) ?>"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
 
@@ -2134,31 +2195,33 @@
 
 
                                 <div class="form-group text-center">
+                                    <div class="col-lg-12">
+                                        <div class="col-lg-3">  <select id="continents7_dinner" class="form-control">
+                                                <option value = "0">all</option>
+                                                <option value="1">carbs</option>
+                                                <option value="2">Fats</option>
+                                                <option value="3">proteins</option>
 
-                                    <select id="continents7_dinner">
-                                        <option value = "0">all</option>
-                                        <option value="1">carbs</option>
-                                        <option value="2">Fats</option>
-                                        <option value="3">proteins</option>
+
+                                            </select></div>
+                                        <div class="col-lg-3"><select id="selectcountries7_dinner" class="form-control"></select></div>
+                                        <div class="col-lg-3">     <select name="gmValue" id="gmValue7_dinner" class="form-control">
+                                                <option value="10">10 gm</option>
+                                                <option value="20">20 gm</option>
+                                                <option value="30">30 gm</option>
+                                                <option value="50">50 gm</option>
+                                                <option value="100">100 gm</option>
+                                                <option value="200">200 gm</option>
+                                                <option value="300">300 gm</option>
+                                                <option value="400">400 gm</option>
+                                                <option value="500">500 gm</option>
+                                                <option value="600">600 gm</option>
+                                            </select></div>
+                                        <div class="col-lg-3"><button type="button" class="btn btn-success" onclick="getData7_dinner()">أضف</button></div>
+                                    </div>
 
 
-                                    </select>
-                                    <select id="selectcountries7_dinner"></select>
-
-                                    <select name="gmValue" id="gmValue7_dinner" >
-                                        <option value="10">10 gm</option>
-                                        <option value="20">20 gm</option>
-                                        <option value="30">30 gm</option>
-                                        <option value="50">50 gm</option>
-                                        <option value="100">100 gm</option>
-                                        <option value="200">200 gm</option>
-                                        <option value="300">300 gm</option>
-                                        <option value="400">400 gm</option>
-                                        <option value="500">500 gm</option>
-                                        <option value="600">600 gm</option>
-                                    </select>
-
-                                    <button type="button" class="btn btn-success" onclick="getData7_dinner()">أضف</button>
+                                    <br>
                                     <br>
                                     <br>
 
@@ -2167,7 +2230,7 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day7_dinner" name="day7_dinner"
-                                               value="{{$data->day7_dinner}}"
+                                               value="<?php echo str_replace("<br>","و", $data->day7_dinner) ?>"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
 
@@ -2205,21 +2268,24 @@
 
                                     <h2 class="text-center">مجموع السعرات الحرارية لليوم السابع</h2>
                                     <div class="col-lg-4 col-md-4 col-sm-12">
+                                        <label for="carbSum">carbs old value : {{$data->carbSum7}}</label>
                                         <input type="text" id="carbSum7" class="form-control"
                                                name="carbSum7"
-                                               value="{{$data->carbSum7}}"
+
                                                placeholder="مجموع الكربهيدرات" readonly>
                                     </div>
                                     <div class="col-lg-4 col-md-4 col-sm-12">
+                                        <label for="carbSum">fats old value : {{$data->fatsSum7}}</label>
                                         <input type="text" id="fatsSum7" class="form-control"
                                                name="fatsSum7"
-                                               value="{{$data->fatsSum7}}"
+
                                                placeholder="مجموع الدهون" readonly>
                                     </div>
                                     <div class="col-lg-4 col-md-4 col-sm-12">
+                                        <label for="carbSum">proteins old value : {{$data->proteinSum7}}</label>
                                         <input type="text" id="proteinSum7" class="form-control"
                                                name="proteinSum7"
-                                               value="{{$data->proteinSum7}}"
+
                                                placeholder="مجموع البروتينات" readonly>
                                     </div>
                                 </div>

@@ -757,10 +757,10 @@ function getData2_break1() {
         {
             value +=parseFloat(t[2]*x);
             $('#fatsSum2').val(value);
-            var current =  $('#day1_break1').text();
-            var currentVal =$('#day1_break1').val();
-            $('#day1_break1').val(" ");
-            $('#day1_break1').text(" ");
+            var current =  $('#day2_break1').text();
+            var currentVal =$('#day2_break1').val();
+            $('#day2_break1').val(" ");
+            $('#day2_break1').text(" ");
             $('#day2_break1').val( currentVal  + ' و  '+  t[0]+x+' جم ');
 
         }else
