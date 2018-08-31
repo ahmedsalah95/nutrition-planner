@@ -13,10 +13,10 @@
 
 
 
-                        <div class="col-lg-4 col-md-4 col-sm-12">
+                        <div class="col-lg-6 col-md-6 col-sm-12">
 
                             <h2 class="text-center"> عن المريض</h2>
-                            <table class="table table-hover">
+                            <table class="table table-hover" border="3px solid #2A3F54">
                                 <thead>
 
                                 </thead>
@@ -108,17 +108,77 @@
                                     <td>{{$patient->dont_eat}}</td>
 
                                 </tr>
+                                <tr>
+                                    <td>النظام الحالي للمريض</td>
+                                    <td>
+                                        <?php
+                                        $currentSystem = \App\System::where('id',$patient->system)->first();
+
+                                        ?>
+                                            {{ $currentSystem->system_name}}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <form action="/saveSystem/{{$patient->id}}" method="post">
+                                            @csrf
+                                            <select name="patientSystem" class="form-control">
+                                                <?php
+                                                $systems = \App\System::all();
+
+                                                ?>
+                                                @foreach($systems as $system)
+                                                    <option value="{{$system->id}}">{{$system->system_name}}</option>
+
+                                                @endforeach
+                                            </select>
+
+                                            <br>
+                                            <br>
+                                            <br>
+                                            <button class="btn btn-success form-control" type="submit">اختيار</button>
+                                        </form>
+                                    </td>
+
+                                    <td>
+                                        <p class="text-center">لا يوجد نظام مناسب؟ اضف نظام</p>
+                                        <center><a href="/addNewSystem" class="btn btn-success">اضافة نظام جديد</a></center>
+                                        <p class="text-center">او عدل علي اخر موجود</p>
+                                        <form action="/updateSpecificSystem/{{$patient->id}}" method="get">
+                                            @csrf
+                                            <select name="patientSystem" class="form-control">
+                                                <?php
+                                                $systems = \App\System::all();
+
+                                                ?>
+                                                @foreach($systems as $system)
+                                                    <option value="{{$system->id}}">{{$system->system_name}}</option>
+
+                                                @endforeach
+                                            </select>
+
+                                            <br>
+                                            <br>
+                                            <br>
+                                          <center> <button class="btn btn-warning" type="submit">عدل هذا النظام</button></center>
+
+                                        </form>
+                                    </td>
+
+
+
+                                </tr>
 
                                 </tbody>
                             </table>
                         </div>
 
                         <div class="col-lg-1 col-md-1 col-sm-12"></div>
-                        <div class="col-lg-7 col-md-7 col-sm-12" style="background: lavender">
+                        <div class="col-lg-5 col-md-5 col-sm-12" style="background: #434C54;border-radius: 10px;color: white;padding: 10px">
                             <h2 class="text-center">ملاحظات </h2>
 
 
-                            <form action="/notes/save/{{$patient->id}}" method="post">
+                            <form action="/notes/save/{{$patient->id}}" method="post" >
                                 @csrf
 
 

@@ -16,6 +16,7 @@ class CreatePatientsTable extends Migration
         Schema::create('patients', function (Blueprint $table) {
             $table->increments('id');
             $table->String('name');
+            $table->String('phone');
             $table->String('register_date');
             $table->String('email');
             $table->String('birthday');
@@ -29,6 +30,7 @@ class CreatePatientsTable extends Migration
             $table->string('activity_level');
             $table->String('food_type_diet');
             $table->String('dont_eat');
+            $table->integer('system')->nullable();
 
             $table->timestamps();
         });

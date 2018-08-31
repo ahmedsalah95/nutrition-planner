@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Note;
 use App\Patient;
+use App\System;
 use Illuminate\Http\Request;
 
 class PatientController extends Controller
@@ -209,4 +210,25 @@ class PatientController extends Controller
         return back();
 
     }
+
+    public function saveSystem(Request $request,$id)
+    {
+        $data = Patient::where('id',$id)->first();
+        $data->system = $request['patientSystem'];
+        $data->save();
+
+        return redirect('/patient/'.$id);
+    }
+    public function updateSpecificSystem($id,Request $request)
+    {
+
+        $data = System::where('id',$request['patientSystem'])->first();
+
+        return view('dashboard.pages.system.updateSpecificSystem')->with([
+            'id'=>$id,
+            'data'=>$data,
+        ]);
+    }
+
+
 }
