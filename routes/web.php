@@ -52,4 +52,12 @@ Route::group(['middleware' => ['auth']], function () {
 
     //Routes to update form for specific user
     Route::post('/systemUpdatedForPatient','SystemController@systemUpdatedForPatient');
+
+    //Routes add new system to specific patient
+
+    Route::get('addNewSystem/{id}','SystemController@showNewSystem');
+
+    //store system for specific patient
+
+    Route::post('saveSystemForPatient','SystemController@storeSystemForSpecificPatient');
 });

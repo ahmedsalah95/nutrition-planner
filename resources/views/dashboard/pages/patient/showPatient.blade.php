@@ -115,7 +115,10 @@
                                         $currentSystem = \App\System::where('id',$patient->system)->first();
 
                                         ?>
+                                        @if(isset($currentSystem))
                                             {{ $currentSystem->system_name}}
+
+                                            @endif
                                     </td>
                                 </tr>
                                 <tr>
@@ -135,15 +138,13 @@
 
                                             <br>
                                             <br>
-                                            <br>
+
                                             <button class="btn btn-success form-control" type="submit">اختيار</button>
                                         </form>
                                     </td>
 
                                     <td>
-                                        <p class="text-center">لا يوجد نظام مناسب؟ اضف نظام</p>
-                                        <center><a href="/addNewSystem" class="btn btn-success">اضافة نظام جديد</a></center>
-                                        <p class="text-center">او عدل علي اخر موجود</p>
+
                                         <form action="/updateSpecificSystem/{{$patient->id}}" method="get">
                                             @csrf
                                             <select name="patientSystem" class="form-control">
@@ -159,10 +160,13 @@
 
                                             <br>
                                             <br>
-                                            <br>
-                                          <center> <button class="btn btn-warning" type="submit">عدل هذا النظام</button></center>
+
+                                          <center> <button class="btn btn-warning btn-block" type="submit">عدل هذا النظام</button></center>
 
                                         </form>
+
+                                        <p class="text-center">لا يوجد نظام مناسب؟ اضف نظام</p>
+                                        <center><a href="/addNewSystem/{{$patient->id}}" class="btn btn-success btn-block">اضافة نظام جديد</a></center>
                                     </td>
 
 
@@ -174,7 +178,7 @@
                         </div>
 
                         <div class="col-lg-1 col-md-1 col-sm-12"></div>
-                        <div class="col-lg-5 col-md-5 col-sm-12" style="background: #434C54;border-radius: 10px;color: white;padding: 10px">
+                        <div class="col-lg-5 col-md-5 col-sm-12" style="background: #73879F;border-radius: 10px;color: white;padding: 10px">
                             <h2 class="text-center">ملاحظات </h2>
 
 
