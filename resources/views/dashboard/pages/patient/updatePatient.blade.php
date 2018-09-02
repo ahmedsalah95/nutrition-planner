@@ -105,14 +105,14 @@
                     <div class="form-group">
                         <label class="control-label col-md-3 col-sm-3 col-xs-12">الجنس</label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
-                            <div id="gender" class="btn-group" data-toggle="buttons">
+                            <div id="gender" class="btn-group" data-toggle="buttons" name="gender" >
                                 <label class="btn btn-default" data-toggle-class="btn-primary"
                                        data-toggle-passive-class="btn-default">
-                                    <input type="radio" name="gender" value="male" > &nbsp; ذكر &nbsp;
+                                    <input type="radio" name="gender" value="ذكر" > &nbsp; ذكر &nbsp;
                                 </label>
                                 <label class="btn btn-primary" data-toggle-class="btn-primary"
                                        data-toggle-passive-class="btn-default">
-                                    <input type="radio" name="gender" value="female" > أنثى
+                                    <input type="radio" name="gender" value="انثي" > أنثى
                                 </label>
                             </div>
                         </div>
@@ -239,7 +239,7 @@
 
                         <div class="col-md-6 col-sm-6 col-xs-12">
 
-                            <input type="text" value="<?php $patient->sensitivity ? $patient->sensitivity : "" ?>" name="sensitivity" id="sensitivity" data-role="tagsinput" class="form-control col-md-7 col-xs-12">
+                            <input type="text" value="{{$patient->sensitivity}}" name="sensitivity" id="sensitivity" data-role="tagsinput" class="form-control col-md-7 col-xs-12">
                         </div>
                     </div>
 
@@ -248,7 +248,7 @@
                         <label class="control-label col-md-3 col-sm-3 col-xs-12" for="blood"> ادوية مميعه للدم <span class="required">*</span>
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
-                            <input type="text" value="" name="blood" id="blood" data-role="tagsinput" class="form-control col-md-7 col-xs-12"
+                            <input type="text" value="{{$patient->blood}}" name="blood" id="blood" data-role="tagsinput" class="form-control col-md-7 col-xs-12"
 
                             >
                         </div>
@@ -260,7 +260,7 @@
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
                             <input type="text" name="sleeping_hours"
-
+                                   value="{{$patient->sleeping_hours}}"
                                    id="sleeping_hours" class=" form-control col-md-7 col-xs-12" required="required" >
                         </div>
                     </div>
@@ -271,7 +271,7 @@
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
                             <input type="text" name="water"
-                                   value="{{old('water')}}"
+                                   value="{{$patient->sleeping_hours}}"
                                    id="water" class=" form-control col-md-7 col-xs-12" required="required" >
                         </div>
                     </div>
@@ -282,7 +282,7 @@
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
                             <input type="text" name="diet"
-                                   value="{{old('diet')}}"
+                                   value="{{$patient->diet}}"
                                    id="diet" class=" form-control col-md-7 col-xs-12" required="required" >
                         </div>
                     </div>
@@ -292,7 +292,7 @@
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
                             <input type="text" name="diet_name"
-                                   value="{{old('diet_name')}}"
+                                   value="{{$patient->diet_name}}"
                                    id="diet_name" class=" form-control col-md-7 col-xs-12" required="required" >
                         </div>
                     </div>
@@ -303,7 +303,7 @@
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
                             <input type="text" name="diet_result"
-                                   value="{{old('diet_result')}}"
+                                   value="{{$patient->diet_result}}"
                                    id="diet_result" class=" form-control col-md-7 col-xs-12" required="required" >
                         </div>
                     </div>

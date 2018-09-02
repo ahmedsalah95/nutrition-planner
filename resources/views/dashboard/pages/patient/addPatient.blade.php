@@ -210,7 +210,7 @@
                     </div>
 
                     <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="dont_eat">  نوع طعام لا يفضله المريض <span class="required">*</span>
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="dont_eat">  نوع طعام لا يفضله المريض
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
                             <input type="text" value="الالبان" name="dont_eat" id="dont_eat" data-role="tagsinput" class="form-control col-md-7 col-xs-12">
@@ -218,7 +218,7 @@
                     </div>
 
                     <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="dont_eat"> اطعمة تسبب الحساسية للمريض <span class="required">*</span>
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="dont_eat"> اطعمة تسبب الحساسية للمريض
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
                             <input type="text" value="الفول السوداني" name="sensitivity" id="sensitivity" data-role="tagsinput" class="form-control col-md-7 col-xs-12">
@@ -227,7 +227,7 @@
 
 
                     <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="blood"> ادوية مميعه للدم <span class="required">*</span>
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="blood"> ادوية مميعه للدم
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
                             <input type="text" value="Heparin" name="blood" id="blood" data-role="tagsinput" class="form-control col-md-7 col-xs-12"
@@ -238,55 +238,55 @@
 
                     <div class="form-group">
                         <label class="control-label col-md-3 col-sm-3 col-xs-12" for="sleeping_hours">عدد ساعات النوم
-                            <span class="required">*</span>
+
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
                             <input type="text" name="sleeping_hours"
                                    value="{{old('sleeping_hours')}}"
-                                   id="sleeping_hours" class=" form-control col-md-7 col-xs-12" required="required" >
+                                   id="sleeping_hours" class=" form-control col-md-7 col-xs-12"  >
                         </div>
                     </div>
 
                     <div class="form-group">
                         <label class="control-label col-md-3 col-sm-3 col-xs-12" for="water">كمية الماء المستهلك يوميا
-                            <span class="required">*</span>
+
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
                             <input type="text" name="water"
                                    value="{{old('water')}}"
-                                   id="water" class=" form-control col-md-7 col-xs-12" required="required" >
+                                   id="water" class=" form-control col-md-7 col-xs-12"  >
                         </div>
                     </div>
 
                     <div class="form-group">
                         <label class="control-label col-md-3 col-sm-3 col-xs-12" for="diet">هل قمت بعمل روجيم من قبل؟
-                            <span class="required">*</span>
+
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
                             <input type="text" name="diet"
                                    value="{{old('diet')}}"
-                                   id="diet" class=" form-control col-md-7 col-xs-12" required="required" >
+                                   id="diet" class=" form-control col-md-7 col-xs-12"  >
                         </div>
                     </div>
                     <div class="form-group">
                         <label class="control-label col-md-3 col-sm-3 col-xs-12" for="diet_name">ما اسم النظام الذي اتبعته؟
-                            <span class="required">*</span>
+
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
                             <input type="text" name="diet_name"
                                    value="{{old('diet_name')}}"
-                                   id="diet_name" class=" form-control col-md-7 col-xs-12" required="required" >
+                                   id="diet_name" class=" form-control col-md-7 col-xs-12"  >
                         </div>
                     </div>
 
                     <div class="form-group">
                         <label class="control-label col-md-3 col-sm-3 col-xs-12" for="diet_result">كم خسرت من الوزن؟
-                            <span class="required">*</span>
+
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
                             <input type="text" name="diet_result"
                                    value="{{old('diet_result')}}"
-                                   id="diet_result" class=" form-control col-md-7 col-xs-12" required="required" >
+                                   id="diet_result" class=" form-control col-md-7 col-xs-12"  >
                         </div>
                     </div>
 

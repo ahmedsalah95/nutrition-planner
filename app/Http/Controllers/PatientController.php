@@ -77,7 +77,16 @@ class PatientController extends Controller
         $patientData->activity_level = $request['activity_level'];
         $patientData->food_type_diet = $request['food_type_diet'];
         $patientData->dont_eat = $request['dont_eat'];
-        $patientData->goal           =$request['goal'];
+        $patientData->goal=$request['goal'];
+        $patientData->sensitivity=$request['sensitivity'];
+        $patientData->blood=$request['blood'];
+        $patientData->sleeping_hours=$request['sleeping_hours'];
+        $patientData->water=$request['water'];
+        $patientData->diet=$request['diet'];
+        $patientData->diet_name=$request['diet_name'];
+        $patientData->diet_result=$request['diet_result'];
+
+
 
         $patientData->save();
 
@@ -165,7 +174,14 @@ class PatientController extends Controller
         $patientData->activity_level = $request['activity_level'];
         $patientData->food_type_diet = $request['food_type_diet'];
         $patientData->dont_eat = $request['dont_eat'];
-        $patientData->goal           =$request['goal'];
+        $patientData->goal =$request['goal'];
+        $patientData->sensitivity=$request['sensitivity'];
+        $patientData->blood=$request['blood'];
+        $patientData->sleeping_hours=$request['sleeping_hours'];
+        $patientData->water=$request['water'];
+        $patientData->diet=$request['diet'];
+        $patientData->diet_name=$request['diet_name'];
+        $patientData->diet_result=$request['diet_result'];
 
         $patientData->save();
 

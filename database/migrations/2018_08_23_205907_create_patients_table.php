@@ -31,6 +31,13 @@ class CreatePatientsTable extends Migration
             $table->String('food_type_diet');
             $table->String('dont_eat');
             $table->integer('system')->nullable();
+            $table->String('sensitivity')->nullable();
+            $table->String('blood')->nullable();
+            $table->String('sleeping_hours')->nullable();
+            $table->String('water')->nullable();
+            $table->String('diet')->nullable();
+            $table->String('diet_name')->nullable();
+            $table->String('diet_result')->nullable();
 
             $table->timestamps();
         });
