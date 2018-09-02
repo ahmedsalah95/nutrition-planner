@@ -60,4 +60,8 @@ Route::group(['middleware' => ['auth']], function () {
     //store system for specific patient
 
     Route::post('saveSystemForPatient','SystemController@storeSystemForSpecificPatient');
+
+    // reservations
+
+    Route::resource('reservation','ReservationController');
 });
