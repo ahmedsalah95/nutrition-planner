@@ -59,7 +59,7 @@
                                    style="font-size: 20px;margin-right: 5px;color: #D73925;">
                                     <i class="fa fa-trash-o" aria-hidden="true"></i></a>
                                 <form id="delete-form{{$patient->id}}"
-                                      action="{{url('/patient/'.$patient->id) }}"
+                                      action="{{url('/reservation/'.$patient->id) }}"
                                       method="post"
                                       style="display: none;">
                                     @csrf

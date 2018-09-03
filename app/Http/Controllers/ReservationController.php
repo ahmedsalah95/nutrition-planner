@@ -76,7 +76,11 @@ class ReservationController extends Controller
      */
     public function edit($id)
     {
-        //
+        $data = Reservation::where('id',$id)->first();
+        return view('dashboard.pages.reservation.updateReservation')->with([
+            'data'=>$data,
+            'id'=>$id
+        ]);
     }
 
     /**
@@ -88,7 +92,23 @@ class ReservationController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $this->validate($request,[
+            'patient_name'=>'required',
+            'patient_number'=>'required',
+            'reservation_date'=>'required'
+
+
+        ]);
+
+        $saveData = Reservation::where('id',$id)->first();
+
+        $saveData->patient_name = $request['patient_name'];
+        $saveData->patient_number=$request['patient_number'];
+        $saveData->reservation_date=$request['reservation_date'];
+        $saveData->save();
+
+        return redirect('reservation');
+
     }
 
     /**
@@ -99,6 +119,8 @@ class ReservationController extends Controller
      */
     public function destroy($id)
     {
-        //
+        Reservation::where('id',$id)->delete();
+
+        return redirect('reservation');
     }
 }
