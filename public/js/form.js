@@ -1,4 +1,319 @@
 
+function deleteData() {
+    var x =  $("#gmValueg option:selected").val();
+    var y = $("#selectcountriesg option:selected").text();
+    var t = y.split(/[ ,]+/);
+    if(t[4] ==1)
+    {
+        var value = parseFloat($('#carbSum').val()) ;
+
+        if(value)
+        {
+            value -=parseFloat(t[2]*x);
+            $('#carbSum').val(value);
+
+        }
+
+    }
+
+
+    else if(t[4] ==2)
+    {
+        var value = parseFloat($('#fatsSum').val()) ;
+
+        if(value)
+        {
+            value -=parseFloat(t[2]*x);
+            $('#fatsSum').val(value);
+        }
+
+    }
+
+    else
+    {
+        var value = parseFloat($('#proteinSum').val()) ;
+
+        if(value)
+        {
+            value -=parseFloat(t[2]*x);
+            $('#proteinSum').val(value);
+
+
+        }
+    }
+
+}
+
+
+
+function deleteData2() {
+    var x =  $("#gmValueg2 option:selected").val();
+    var y = $("#selectcountriesg2 option:selected").text();
+    var t = y.split(/[ ,]+/);
+    if(t[4] ==1)
+    {
+        var value = parseFloat($('#carbSum2').val()) ;
+
+        if(value)
+        {
+            value -=parseFloat(t[2]*x);
+            $('#carbSum2').val(value);
+
+        }
+
+    }
+
+
+    else if(t[4] ==2)
+    {
+        var value = parseFloat($('#fatsSum2').val()) ;
+
+        if(value)
+        {
+            value -=parseFloat(t[2]*x);
+            $('#fatsSum2').val(value);
+        }
+
+    }
+
+    else
+    {
+        var value = parseFloat($('#proteinSum2').val()) ;
+
+        if(value)
+        {
+            value -=parseFloat(t[2]*x);
+            $('#proteinSum2').val(value);
+
+
+        }
+    }
+
+}
+
+function deleteData3() {
+    var x =  $("#gmValueg3 option:selected").val();
+    var y = $("#selectcountriesg3 option:selected").text();
+    var t = y.split(/[ ,]+/);
+    if(t[4] ==1)
+    {
+        var value = parseFloat($('#carbSum3').val()) ;
+
+        if(value)
+        {
+            value -=parseFloat(t[2]*x);
+            $('#carbSum3').val(value);
+
+        }
+
+    }
+
+
+    else if(t[4] ==2)
+    {
+        var value = parseFloat($('#fatsSum3').val()) ;
+
+        if(value)
+        {
+            value -=parseFloat(t[2]*x);
+            $('#fatsSum3').val(value);
+        }
+
+    }
+
+    else
+    {
+        var value = parseFloat($('#proteinSum3').val()) ;
+
+        if(value)
+        {
+            value -=parseFloat(t[2]*x);
+            $('#proteinSum3').val(value);
+
+
+        }
+    }
+
+}
+
+function deleteData4() {
+    var x =  $("#gmValueg4 option:selected").val();
+    var y = $("#selectcountriesg4 option:selected").text();
+    var t = y.split(/[ ,]+/);
+    if(t[4] ==1)
+    {
+        var value = parseFloat($('#carbSum4').val()) ;
+
+        if(value)
+        {
+            value -=parseFloat(t[2]*x);
+            $('#carbSum4').val(value);
+
+        }
+
+    }
+
+
+    else if(t[4] ==2)
+    {
+        var value = parseFloat($('#fatsSum4').val()) ;
+
+        if(value)
+        {
+            value -=parseFloat(t[2]*x);
+            $('#fatsSum4').val(value);
+        }
+
+    }
+
+    else
+    {
+        var value = parseFloat($('#proteinSum4').val()) ;
+
+        if(value)
+        {
+            value -=parseFloat(t[2]*x);
+            $('#proteinSum4').val(value);
+
+
+        }
+    }
+
+}
+
+function deleteData5() {
+    var x =  $("#gmValueg5 option:selected").val();
+    var y = $("#selectcountriesg5 option:selected").text();
+    var t = y.split(/[ ,]+/);
+    if(t[4] ==1)
+    {
+        var value = parseFloat($('#carbSum5').val()) ;
+
+        if(value)
+        {
+            value -=parseFloat(t[2]*x);
+            $('#carbSum5').val(value);
+
+        }
+
+    }
+
+
+    else if(t[4] ==2)
+    {
+        var value = parseFloat($('#fatsSum5').val()) ;
+
+        if(value)
+        {
+            value -=parseFloat(t[2]*x);
+            $('#fatsSum5').val(value);
+        }
+
+    }
+
+    else
+    {
+        var value = parseFloat($('#proteinSum5').val()) ;
+
+        if(value)
+        {
+            value -=parseFloat(t[2]*x);
+            $('#proteinSum5').val(value);
+
+
+        }
+    }
+
+}
+function deleteData6() {
+    var x =  $("#gmValueg6 option:selected").val();
+    var y = $("#selectcountriesg6 option:selected").text();
+    var t = y.split(/[ ,]+/);
+    if(t[4] ==1)
+    {
+        var value = parseFloat($('#carbSum6').val()) ;
+
+        if(value)
+        {
+            value -=parseFloat(t[2]*x);
+            $('#carbSum6').val(value);
+
+        }
+
+    }
+
+
+    else if(t[4] ==2)
+    {
+        var value = parseFloat($('#fatsSum6').val()) ;
+
+        if(value)
+        {
+            value -=parseFloat(t[2]*x);
+            $('#fatsSum6').val(value);
+        }
+
+    }
+
+    else
+    {
+        var value = parseFloat($('#proteinSum6').val()) ;
+
+        if(value)
+        {
+            value -=parseFloat(t[2]*x);
+            $('#proteinSum6').val(value);
+
+
+        }
+    }
+
+}
+function deleteData7() {
+    var x =  $("#gmValueg7 option:selected").val();
+    var y = $("#selectcountriesg7 option:selected").text();
+    var t = y.split(/[ ,]+/);
+    if(t[4] ==1)
+    {
+        var value = parseFloat($('#carbSum7').val()) ;
+
+        if(value)
+        {
+            value -=parseFloat(t[2]*x);
+            $('#carbSum7').val(value);
+
+        }
+
+    }
+
+
+    else if(t[4] ==2)
+    {
+        var value = parseFloat($('#fatsSum7').val()) ;
+
+        if(value)
+        {
+            value -=parseFloat(t[2]*x);
+            $('#fatsSum7').val(value);
+        }
+
+    }
+
+    else
+    {
+        var value = parseFloat($('#proteinSum7').val()) ;
+
+        if(value)
+        {
+            value -=parseFloat(t[2]*x);
+            $('#proteinSum7').val(value);
+
+
+        }
+    }
+
+}
+
 function getData() {
 
     var x =  $("#gmValue option:selected").val();

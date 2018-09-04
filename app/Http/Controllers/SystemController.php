@@ -159,16 +159,16 @@ class SystemController extends Controller
         $saveData->day1_notes =  $request['day1_notes'];
         if($request['carbSum'])
         {
-            $saveData->carbSum  = $request['carbSum']+(int)$saveData->carbSum;
+            $saveData->carbSum  = $request['carbSum'];
         }
         if($request['fatsSum'])
         {
-            $saveData->fatsSum  =$request['fatsSum']+ (int)$saveData->fatsSum;
+            $saveData->fatsSum  =$request['fatsSum'];
         }
 
         if($request['proteinSum'])
         {
-            $saveData->proteinSum=$request['proteinSum']+(int)$saveData->proteinSum;
+            $saveData->proteinSum=$request['proteinSum'];
         }
 
 
@@ -183,16 +183,16 @@ class SystemController extends Controller
         $saveData->day2_notes =  $request['day2_notes'];
         if($request['carbSum2'])
         {
-            $saveData->carbSum2  = $request['carbSum2']+(int)$saveData->carbSum2;
+            $saveData->carbSum2  = $request['carbSum2'];
         }
         if($request['fatsSum2'])
         {
-            $saveData->fatsSum2  =$request['fatsSum2']+ (int)$saveData->fatsSum2;
+            $saveData->fatsSum2  =$request['fatsSum2'];
         }
 
         if($request['proteinSum2'])
         {
-            $saveData->proteinSum2=$request['proteinSum2']+(int)$saveData->proteinSum2;
+            $saveData->proteinSum2=$request['proteinSum2'];
         }
 
 
@@ -205,16 +205,16 @@ class SystemController extends Controller
         $saveData->day3_notes =  $request['day3_notes'];
         if($request['carbSum3'])
         {
-            $saveData->carbSum3  = $request['carbSum3']+(int)$saveData->carbSum3;
+            $saveData->carbSum3  = $request['carbSum3'];
         }
         if($request['fatsSum3'])
         {
-            $saveData->fatsSum3  =$request['fatsSum3']+ (int)$saveData->fatsSum3;
+            $saveData->fatsSum3  =$request['fatsSum3'];
         }
 
         if($request['proteinSum3'])
         {
-            $saveData->proteinSum3=$request['proteinSum3']+(int)$saveData->proteinSum3;
+            $saveData->proteinSum3=$request['proteinSum3'];
         }
         //day 4
         $saveData->day4_breakfast =str_replace('و' ,'<br>',$request['day4_breakfast']);
@@ -225,16 +225,16 @@ class SystemController extends Controller
         $saveData->day4_notes = $request['day4_notes'];
         if($request['carbSum4'])
         {
-            $saveData->carbSum4  = $request['carbSum4']+(int)$saveData->carbSum4;
+            $saveData->carbSum4  = $request['carbSum4'];
         }
         if($request['fatsSum4'])
         {
-            $saveData->fatsSum4  =$request['fatsSum4']+ (int)$saveData->fatsSum4;
+            $saveData->fatsSum4  =$request['fatsSum4'];
         }
 
         if($request['proteinSum4'])
         {
-            $saveData->proteinSum4=$request['proteinSum4']+(int)$saveData->proteinSum4;
+            $saveData->proteinSum4=$request['proteinSum4'];
         }
 
         //day 5
@@ -246,16 +246,16 @@ class SystemController extends Controller
         $saveData->day5_notes =  $request['day5_notes'];
         if($request['carbSum5'])
         {
-            $saveData->carbSum5  = $request['carbSum5']+(int)$saveData->carbSum5;
+            $saveData->carbSum5  = $request['carbSum5'];
         }
         if($request['fatsSum5'])
         {
-            $saveData->fatsSum5  =$request['fatsSum5']+ (int)$saveData->fatsSum5;
+            $saveData->fatsSum5  =$request['fatsSum5'];
         }
 
         if($request['proteinSum5'])
         {
-            $saveData->proteinSum5=$request['proteinSum5']+(int)$saveData->proteinSum5;
+            $saveData->proteinSum5=$request['proteinSum5'];
         }
         //day 6
         $saveData->day6_breakfast =str_replace('و' ,'<br>',$request['day6_breakfast']);
@@ -266,16 +266,16 @@ class SystemController extends Controller
         $saveData->day6_notes = $request['day6_notes'];
         if($request['carbSum6'])
         {
-            $saveData->carbSum6  = $request['carbSum6']+(int)$saveData->carbSum6;
+            $saveData->carbSum6  = $request['carbSum6'];
         }
         if($request['fatsSum6'])
         {
-            $saveData->fatsSum6  =$request['fatsSum6']+ (int)$saveData->fatsSum6;
+            $saveData->fatsSum6  =$request['fatsSum6'];
         }
 
         if($request['proteinSum6'])
         {
-            $saveData->proteinSum6=$request['proteinSum6']+(int)$saveData->proteinSum6;
+            $saveData->proteinSum6=$request['proteinSum6'];
         }
 
         //day 7
@@ -287,16 +287,16 @@ class SystemController extends Controller
         $saveData->day7_notes = $request['day7_notes'];
         if($request['carbSum7'])
         {
-            $saveData->carbSum7  = $request['carbSum7']+(int)$saveData->carbSum7;
+            $saveData->carbSum7  = $request['carbSum7'];
         }
         if($request['fatsSum7'])
         {
-            $saveData->fatsSum7  =$request['fatsSum7']+ (int)$saveData->fatsSum7;
+            $saveData->fatsSum7  =$request['fatsSum7'];
         }
 
         if($request['proteinSum7'])
         {
-            $saveData->proteinSum7=$request['proteinSum7']+(int)$saveData->proteinSum7;
+            $saveData->proteinSum7=$request['proteinSum7'];
         }
 
 
@@ -323,16 +323,16 @@ class SystemController extends Controller
         $saveData->day1_notes =  $request['day1_notes'];
         if($request['carbSum'])
         {
-            $saveData->carbSum  = $request['carbSum']+(int)$saveData->carbSum;
+            $saveData->carbSum  = $request['carbSum'];
         }
         if($request['fatsSum'])
         {
-            $saveData->fatsSum  =$request['fatsSum']+ (int)$saveData->fatsSum;
+            $saveData->fatsSum  =$request['fatsSum'];
         }
 
         if($request['proteinSum'])
         {
-            $saveData->proteinSum=$request['proteinSum']+(int)$saveData->proteinSum;
+            $saveData->proteinSum=$request['proteinSum'];
         }
 
 
@@ -347,16 +347,16 @@ class SystemController extends Controller
         $saveData->day2_notes =  $request['day2_notes'];
         if($request['carbSum2'])
         {
-            $saveData->carbSum2  = $request['carbSum2']+(int)$saveData->carbSum2;
+            $saveData->carbSum2  = $request['carbSum2'];
         }
         if($request['fatsSum2'])
         {
-            $saveData->fatsSum2  =$request['fatsSum2']+ (int)$saveData->fatsSum2;
+            $saveData->fatsSum2  =$request['fatsSum2'];
         }
 
         if($request['proteinSum2'])
         {
-            $saveData->proteinSum2=$request['proteinSum2']+(int)$saveData->proteinSum2;
+            $saveData->proteinSum2=$request['proteinSum2'];
         }
 
 
@@ -369,16 +369,16 @@ class SystemController extends Controller
         $saveData->day3_notes =  $request['day3_notes'];
         if($request['carbSum3'])
         {
-            $saveData->carbSum3  = $request['carbSum3']+(int)$saveData->carbSum3;
+            $saveData->carbSum3  = $request['carbSum3'];
         }
         if($request['fatsSum3'])
         {
-            $saveData->fatsSum3  =$request['fatsSum3']+ (int)$saveData->fatsSum3;
+            $saveData->fatsSum3  =$request['fatsSum3'];
         }
 
         if($request['proteinSum3'])
         {
-            $saveData->proteinSum3=$request['proteinSum3']+(int)$saveData->proteinSum3;
+            $saveData->proteinSum3=$request['proteinSum3'];
         }
         //day 4
         $saveData->day4_breakfast =str_replace('و' ,'<br>',$request['day4_breakfast']);
@@ -389,16 +389,16 @@ class SystemController extends Controller
         $saveData->day4_notes = $request['day4_notes'];
         if($request['carbSum4'])
         {
-            $saveData->carbSum4  = $request['carbSum4']+(int)$saveData->carbSum4;
+            $saveData->carbSum4  = $request['carbSum4'];
         }
         if($request['fatsSum4'])
         {
-            $saveData->fatsSum4  =$request['fatsSum4']+ (int)$saveData->fatsSum4;
+            $saveData->fatsSum4  =$request['fatsSum4'];
         }
 
         if($request['proteinSum4'])
         {
-            $saveData->proteinSum4=$request['proteinSum4']+(int)$saveData->proteinSum4;
+            $saveData->proteinSum4=$request['proteinSum4'];
         }
 
         //day 5
@@ -410,16 +410,16 @@ class SystemController extends Controller
         $saveData->day5_notes =  $request['day5_notes'];
         if($request['carbSum5'])
         {
-            $saveData->carbSum5  = $request['carbSum5']+(int)$saveData->carbSum5;
+            $saveData->carbSum5  = $request['carbSum5'];
         }
         if($request['fatsSum5'])
         {
-            $saveData->fatsSum5  =$request['fatsSum5']+ (int)$saveData->fatsSum5;
+            $saveData->fatsSum5  =$request['fatsSum5'];
         }
 
         if($request['proteinSum5'])
         {
-            $saveData->proteinSum5=$request['proteinSum5']+(int)$saveData->proteinSum5;
+            $saveData->proteinSum5=$request['proteinSum5'];
         }
         //day 6
         $saveData->day6_breakfast =str_replace('و' ,'<br>',$request['day6_breakfast']);
@@ -430,16 +430,16 @@ class SystemController extends Controller
         $saveData->day6_notes = $request['day6_notes'];
         if($request['carbSum6'])
         {
-            $saveData->carbSum6  = $request['carbSum6']+(int)$saveData->carbSum6;
+            $saveData->carbSum6  = $request['carbSum6'];
         }
         if($request['fatsSum6'])
         {
-            $saveData->fatsSum6  =$request['fatsSum6']+ (int)$saveData->fatsSum6;
+            $saveData->fatsSum6  =$request['fatsSum6'];
         }
 
         if($request['proteinSum6'])
         {
-            $saveData->proteinSum6=$request['proteinSum6']+(int)$saveData->proteinSum6;
+            $saveData->proteinSum6=$request['proteinSum6'];
         }
 
         //day 7
@@ -451,16 +451,16 @@ class SystemController extends Controller
         $saveData->day7_notes = $request['day7_notes'];
         if($request['carbSum7'])
         {
-            $saveData->carbSum7  = $request['carbSum7']+(int)$saveData->carbSum7;
+            $saveData->carbSum7  = $request['carbSum7'];
         }
         if($request['fatsSum7'])
         {
-            $saveData->fatsSum7  =$request['fatsSum7']+ (int)$saveData->fatsSum7;
+            $saveData->fatsSum7  =$request['fatsSum7'];
         }
 
         if($request['proteinSum7'])
         {
-            $saveData->proteinSum7=$request['proteinSum7']+(int)$saveData->proteinSum7;
+            $saveData->proteinSum7=$request['proteinSum7'];
         }
 
 
