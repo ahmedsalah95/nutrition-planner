@@ -2591,8 +2591,8 @@
 
 
 
-    <script>
-        CKEDITOR.replace('system_desc');
+                <script>
+                    CKEDITOR.replace('system_desc');
     </script>
     <script src="{{url('/')}}/js/typeahead.js"></script>
 
