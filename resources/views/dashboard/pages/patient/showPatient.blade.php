@@ -191,7 +191,7 @@
                                             <div class="col-lg-10 col-md-10 col-sm-10">
                                                 <div class="form-group">
 
-                                                <textarea type="text" name="notes[]" class="form-control"
+                                                <textarea type="text" name="notes[]" class="form-control" style="text-align: center"
 
                                                           id="notes"  ></textarea>
                                                 </div>
@@ -235,7 +235,7 @@
                             <div class="col-lg-12 col-md-12 col-sm-12" style="margin-top: 30px">
                                 <h5 class="pull-left"> وقت الملاحظة {{$note->created_at}}</h5>
                                 <a href="/noteDeletion/{{$note->id}}/{{$patient->id}}" class="btn btn-danger pull-right">احذف</a>
-                                <textarea name="" id="" cols="30" rows="10" readonly class="form-control">
+                                <textarea name="" id="" cols="30" rows="10" readonly class="form-control" style="text-align: center">
                                     {{$note->note}}
                                 </textarea>
 
@@ -257,7 +257,7 @@
             '                                        <div class="col-lg-10 col-md-10 col-sm-10">\n' +
             '                                            <div class="form-group">\n' +
             '\n' +
-            '                                                <textarea type="text" name="notes[]" class="form-control"\n' +
+            '                                                <textarea style="text-align: center" type="text" name="notes[]" class="form-control"\n' +
             '\n' +
             '                                                          id="notes"  ></textarea>\n' +
             '                                            </div>\n' +
