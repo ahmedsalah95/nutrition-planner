@@ -60,8 +60,6 @@
                         </div>
 
 
-
-
                         <button class="accordion" type="button"> اليوم الاول</button>
                         <div class="panel">
                             <br><br>
@@ -74,6 +72,47 @@
 
 
                                 </div>
+
+
+                                <br>
+
+                                <div class="form-group text-center">
+                                    <div class="col-lg-12">
+                                        <div class="col-lg-3">
+                                            <select id="continentsg" class="form-control">
+                                                <option value = "0">all</option>
+                                                <option value="1">carbs</option>
+                                                <option value="2">Fats</option>
+                                                <option value="3">proteins</option>
+
+
+                                            </select>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <select id="selectcountriesg" class="form-control"></select>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <select name="gmValue" id="gmValueg" class="form-control">
+                                                <option value="10">10 gm</option>
+                                                <option value="20">20 gm</option>
+                                                <option value="30">30 gm</option>
+                                                <option value="50">50 gm</option>
+                                                <option value="100">100 gm</option>
+                                                <option value="200">200 gm</option>
+                                                <option value="300">300 gm</option>
+                                                <option value="400">400 gm</option>
+                                                <option value="500">500 gm</option>
+                                                <option value="600">600 gm</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <button type="button" class="btn btn-warning" onclick="deleteData()">حذف</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <br><br><br>
 
 
 
@@ -115,6 +154,12 @@
 
                                     <br>
                                     <br>
+
+
+
+
+
+
                                     <br>
                                     <br>
 
@@ -123,6 +168,9 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day1_breakfast" name="day1_breakfast"
+
+
+                                               value="{{old('day1_breakfast')}}"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
 
@@ -137,7 +185,6 @@
 
 
                                 <div class="form-group text-center">
-
                                     <div class="col-lg-12">
                                         <div class="col-lg-3">
                                             <select id="continents1_break1" class="form-control">
@@ -170,7 +217,9 @@
                                             <button type="button" class="btn btn-success" onclick="getData1_break1()">أضف</button>
                                         </div>
                                     </div>
+
                                     <br>
+
                                     <br>
                                     <br>
 
@@ -179,6 +228,8 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day1_break1" name="day1_break1"
+
+                                               value="{{old('day1_break1')}}"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
 
@@ -192,7 +243,6 @@
 
 
                                 <div class="form-group text-center">
-
                                     <div class="col-lg-12">
                                         <div class="col-lg-3"> <select id="continents1_lunch" class="form-control">
                                                 <option value = "0">all</option>
@@ -225,11 +275,14 @@
 
 
 
+
                                     <label class="control-label col-md-3 col-sm-3 col-xs-12" for="day1_lunch">الغداء
                                         <span class="required">*</span>
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day1_lunch" name="day1_lunch"
+
+                                               value="{{old('day1_lunch')}}"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
 
@@ -237,14 +290,14 @@
 
 
                                 </div>
-
-
                                 <br><br><br>
 
 
 
-                                <div class="form-group text-center">
 
+
+
+                                <div class="form-group text-center">
                                     <div class="col-lg-12">
                                         <div class="col-lg-3">   <select id="continents1_break2" class="form-control">
                                                 <option value = "0">all</option>
@@ -276,15 +329,21 @@
                                         </div>
                                     </div>
 
+
+                                    <br><br>
+
+
+
                                     <br>
-                                    <br>
-                                    <br>
+
 
                                     <label class="control-label col-md-3 col-sm-3 col-xs-12" for="day1_break2">وجبة خفيفة
                                         <span class="required">*</span>
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day1_break2" name="day1_break2"
+
+                                               value="{{old('day1_break2')}}"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
 
@@ -299,7 +358,6 @@
 
 
                                 <div class="form-group text-center">
-
                                     <div class="col-lg-12">
                                         <div class="col-lg-3">
                                             <select id="continents1_dinner" class="form-control">
@@ -334,6 +392,10 @@
                                         </div>
                                     </div>
 
+
+
+
+
                                     <br>
                                     <br>
                                     <br>
@@ -343,6 +405,7 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day1_dinner" name="day1_dinner"
+                                               value="{{old('day1_dinner')}}"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
 
@@ -360,38 +423,42 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day1_notes" name="day1_notes"
+                                               value="{{old('day1_notes')}}"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
 
 
                                 </div>
 
-
-
-
-
-
                                 <br>
                                 <br>
-                                <br>
+
 
                                 <div class="col-lg-12">
 
                                     <h2 class="text-center">مجموع السعرات الحرارية لليوم الاول</h2>
                                     <div class="col-lg-4 col-md-4 col-sm-12">
+                                        <label for="carbSum">carbs </label>
                                         <input type="text" id="carbSum" class="form-control"
+                                               value="{{old('carbSum')}}"
                                                name="carbSum"
-                                               placeholder="مجموع الكربهيدرات" readonly>
+
+                                               placeholder="مجموع الكربهيدرات" >
                                     </div>
                                     <div class="col-lg-4 col-md-4 col-sm-12">
+                                        <label for="fatsSum">fats </label>
                                         <input type="text" id="fatsSum" class="form-control"
                                                name="fatsSum"
-                                               placeholder="مجموع الدهون" readonly>
+                                               value="{{old('fatsSum')}}"
+
+                                               placeholder="مجموع الدهون" >
                                     </div>
                                     <div class="col-lg-4 col-md-4 col-sm-12">
+                                        <label for="proteinSum">protein </label>
                                         <input type="text" id="proteinSum" class="form-control"
                                                name="proteinSum"
-                                               placeholder="مجموع البروتينات" readonly>
+                                               value="{{old('proteinSum')}}"
+                                               placeholder="مجموع البروتينات" >
                                     </div>
                                 </div>
 
@@ -403,24 +470,53 @@
                         </div>
 
 
-
                         <button class="accordion" type="button">اليوم الثانى</button>
                         <div class="panel">
+
+
+
+                            <br>
+
+                            <div class="form-group text-center">
+                                <div class="col-lg-12">
+                                    <div class="col-lg-3">
+                                        <select id="continentsg2" class="form-control">
+                                            <option value = "0">all</option>
+                                            <option value="1">carbs</option>
+                                            <option value="2">Fats</option>
+                                            <option value="3">proteins</option>
+
+
+                                        </select>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <select id="selectcountriesg2" class="form-control"></select>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <select name="gmValue" id="gmValueg2" class="form-control">
+                                            <option value="10">10 gm</option>
+                                            <option value="20">20 gm</option>
+                                            <option value="30">30 gm</option>
+                                            <option value="50">50 gm</option>
+                                            <option value="100">100 gm</option>
+                                            <option value="200">200 gm</option>
+                                            <option value="300">300 gm</option>
+                                            <option value="400">400 gm</option>
+                                            <option value="500">500 gm</option>
+                                            <option value="600">600 gm</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <button type="button" class="btn btn-warning" onclick="deleteData2()">حذف</button>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <br><br><br>
                             <div class="form-group sec_day">
 
-                                <div class="text-center">
-
-                                    <h2 class="text-center">اليوم الثانى</h2>
-
-
-
-                                </div>
-
-
-
-
                                 <div class="form-group text-center">
-
                                     <div class="col-lg-12">
                                         <div class="col-lg-3">
                                             <select id="continent2" class="form-control">
@@ -464,6 +560,7 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day2_breakfast" name="day2_breakfast"
+                                               value="{{old('day2_breakfast')}}"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
 
@@ -478,7 +575,6 @@
 
 
                                 <div class="form-group text-center">
-
                                     <div class="col-lg-12">
                                         <div class="col-lg-3">
                                             <select id="continents2_break1" class="form-control">
@@ -511,6 +607,8 @@
                                             <button type="button" class="btn btn-success" onclick="getData2_break1()">أضف</button>
                                         </div>
                                     </div>
+
+
                                     <br>
                                     <br>
                                     <br>
@@ -520,6 +618,7 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day2_break1" name="day2_break1"
+                                               value="{{old('day2_break1')}}"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
 
@@ -533,7 +632,6 @@
 
 
                                 <div class="form-group text-center">
-
                                     <div class="col-lg-12">
                                         <div class="col-lg-3"> <select id="continents2_lunch" class="form-control">
                                                 <option value = "0">all</option>
@@ -564,13 +662,12 @@
                                     <br>
                                     <br>
 
-
-
                                     <label class="control-label col-md-3 col-sm-3 col-xs-12" for="day2_lunch">الغداء
                                         <span class="required">*</span>
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day2_lunch" name="day2_lunch"
+                                               value="{{old('day2_lunch')}}"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
 
@@ -585,7 +682,6 @@
 
 
                                 <div class="form-group text-center">
-
                                     <div class="col-lg-12">
                                         <div class="col-lg-3">   <select id="continents2_break2" class="form-control">
                                                 <option value = "0">all</option>
@@ -621,6 +717,7 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day2_break2" name="day2_break2"
+                                               value="{{old('day2_break2')}}"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
 
@@ -635,7 +732,6 @@
 
 
                                 <div class="form-group text-center">
-
                                     <div class="col-lg-12">
                                         <div class="col-lg-3">   <select id="continents2_dinner" class="form-control">
                                                 <option value = "0">all</option>
@@ -672,6 +768,7 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day2_dinner" name="day2_dinner"
+                                               value="{{old('day2_dinner')}}"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
 
@@ -689,6 +786,7 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day2_notes" name="day2_notes"
+                                               value="{{old('day2_notes')}}"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
 
@@ -708,19 +806,28 @@
 
                                     <h2 class="text-center">مجموع السعرات الحرارية لليوم الثانى</h2>
                                     <div class="col-lg-4 col-md-4 col-sm-12">
+                                        <label for="carbSum">carbs </label>
                                         <input type="text" id="carbSum2" class="form-control"
+                                               value="{{old('carbSum2')}}"
                                                name="carbSum2"
-                                               placeholder="مجموع الكربهيدرات" readonly>
+
+                                               placeholder="مجموع الكربهيدرات" >
                                     </div>
                                     <div class="col-lg-4 col-md-4 col-sm-12">
+                                        <label for="carbSum">fats </label>
                                         <input type="text" id="fatsSum2" class="form-control"
+                                               value="{{old('fatsSum2')}}"
                                                name="fatsSum2"
-                                               placeholder="مجموع الدهون" readonly>
+
+                                               placeholder="مجموع الدهون" >
                                     </div>
                                     <div class="col-lg-4 col-md-4 col-sm-12">
+                                        <label for="carbSum">protein </label>
                                         <input type="text" id="proteinSum2" class="form-control"
+                                               value="{{old('proteinSum2')}}"
                                                name="proteinSum2"
-                                               placeholder="مجموع البروتينات" readonly>
+
+                                               placeholder="مجموع البروتينات" >
                                     </div>
                                 </div>
 
@@ -734,10 +841,43 @@
 
                         <button class="accordion" type="button">اليوم الثالث</button>
                         <div class="panel">
+                            <div class="form-group text-center">
+                                <div class="col-lg-12">
+                                    <div class="col-lg-3">
+                                        <select id="continentsg3" class="form-control">
+                                            <option value = "0">all</option>
+                                            <option value="1">carbs</option>
+                                            <option value="2">Fats</option>
+                                            <option value="3">proteins</option>
+
+
+                                        </select>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <select id="selectcountriesg3" class="form-control"></select>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <select name="gmValue" id="gmValueg3" class="form-control">
+                                            <option value="10">10 gm</option>
+                                            <option value="20">20 gm</option>
+                                            <option value="30">30 gm</option>
+                                            <option value="50">50 gm</option>
+                                            <option value="100">100 gm</option>
+                                            <option value="200">200 gm</option>
+                                            <option value="300">300 gm</option>
+                                            <option value="400">400 gm</option>
+                                            <option value="500">500 gm</option>
+                                            <option value="600">600 gm</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <button type="button" class="btn btn-warning" onclick="deleteData3()">حذف</button>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="form-group third_day">
 
                                 <div class="form-group text-center">
-
                                     <div class="col-lg-12">
                                         <div class="col-lg-3">  <select id="continent3" class="form-control">
                                                 <option value = "0">all</option>
@@ -773,6 +913,7 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day3_breakfast" name="day3_breakfast"
+                                               value="{{old('day3_breakfast')}}"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
 
@@ -787,7 +928,6 @@
 
 
                                 <div class="form-group text-center">
-
                                     <div class="col-lg-12">
                                         <div class="col-lg-3">
                                             <select id="continents3_break1" class="form-control">
@@ -823,6 +963,7 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day3_break1" name="day3_break1"
+                                               value="{{old('day3_break1')}}"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
 
@@ -836,7 +977,6 @@
 
 
                                 <div class="form-group text-center">
-
                                     <div class="col-lg-12">
                                         <div class="col-lg-3">  <select id="continents3_lunch" class="form-control">
                                                 <option value = "0">all</option>
@@ -872,6 +1012,7 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day3_lunch" name="day3_lunch"
+                                               value="{{old('day3_lunch')}}"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
 
@@ -884,9 +1025,8 @@
                                 <br><br><br>
 
 
-
+                                <br>
                                 <div class="form-group text-center">
-
                                     <div class="col-lg-12">
                                         <div class="col-lg-3"> <select id="continents3_break2" class="form-control">
                                                 <option value = "0">all</option>
@@ -923,6 +1063,7 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day3_break2" name="day3_break2"
+                                               value="{{old('day3_break2')}}"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
 
@@ -937,7 +1078,6 @@
 
 
                                 <div class="form-group text-center">
-
                                     <div class="col-lg-12">
                                         <div class="col-lg-3"> <select id="continents3_dinner" class="form-control">
                                                 <option value = "0">all</option>
@@ -973,6 +1113,7 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day3_dinner" name="day3_dinner"
+                                               value="{{old('day3_dinner')}}"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
 
@@ -990,6 +1131,7 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day3_notes" name="day3_notes"
+                                               value="{{old('day3_notes')}}"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
 
@@ -1009,19 +1151,25 @@
 
                                     <h2 class="text-center">مجموع السعرات الحرارية لليوم الثالث</h2>
                                     <div class="col-lg-4 col-md-4 col-sm-12">
+                                        <label for="carbSum">carbs </label>
                                         <input type="text" id="carbSum3" class="form-control"
                                                name="carbSum3"
-                                               placeholder="مجموع الكربهيدرات" readonly>
+                                               value="{{old('carbSum3')}}"
+                                               placeholder="مجموع الكربهيدرات" >
                                     </div>
                                     <div class="col-lg-4 col-md-4 col-sm-12">
+                                        <label for="carbSum">fats </label>
                                         <input type="text" id="fatsSum3" class="form-control"
                                                name="fatsSum3"
-                                               placeholder="مجموع الدهون" readonly>
+                                               value="{{old('fatsSum3')}}"
+                                               placeholder="مجموع الدهون" >
                                     </div>
                                     <div class="col-lg-4 col-md-4 col-sm-12">
+                                        <label for="carbSum">protein </label>
                                         <input type="text" id="proteinSum3" class="form-control"
                                                name="proteinSum3"
-                                               placeholder="مجموع البروتينات" readonly>
+                                               value="{{old('proteinSum3')}}"
+                                               placeholder="مجموع البروتينات" >
                                     </div>
                                 </div>
 
@@ -1033,15 +1181,47 @@
                         </div>
 
 
-
-
                         <button class="accordion" type="button">اليوم الرابع</button>
                         <div class="panel">
                             <div class="form-group forth_day">
+                                <br><br>
+                                <div class="form-group text-center">
+                                    <div class="col-lg-12">
+                                        <div class="col-lg-3">
+                                            <select id="continentsg4" class="form-control">
+                                                <option value = "0">all</option>
+                                                <option value="1">carbs</option>
+                                                <option value="2">Fats</option>
+                                                <option value="3">proteins</option>
 
+
+                                            </select>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <select id="selectcountriesg4" class="form-control"></select>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <select name="gmValue" id="gmValueg4" class="form-control">
+                                                <option value="10">10 gm</option>
+                                                <option value="20">20 gm</option>
+                                                <option value="30">30 gm</option>
+                                                <option value="50">50 gm</option>
+                                                <option value="100">100 gm</option>
+                                                <option value="200">200 gm</option>
+                                                <option value="300">300 gm</option>
+                                                <option value="400">400 gm</option>
+                                                <option value="500">500 gm</option>
+                                                <option value="600">600 gm</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <button type="button" class="btn btn-warning" onclick="deleteData4()">حذف</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br><br><br>
 
                                 <div class="form-group text-center">
-
                                     <div class="col-lg-12">
                                         <div class="col-lg-3"><select id="continent4" class="form-control">
                                                 <option value = "0">all</option>
@@ -1077,6 +1257,7 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day4_breakfast" name="day4_breakfast"
+                                               value="{{old('day4_breakfast')}}"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
 
@@ -1091,7 +1272,6 @@
 
 
                                 <div class="form-group text-center">
-
                                     <div class="col-lg-12">
                                         <div class="col-lg-3">    <select id="continents4_break1" class="form-control">
                                                 <option value = "0">all</option>
@@ -1125,6 +1305,7 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day4_break1" name="day4_break1"
+                                               value="{{old('day4_break1')}}"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
 
@@ -1138,7 +1319,6 @@
 
 
                                 <div class="form-group text-center">
-
                                     <div class="col-lg-12">
                                         <div class="col-lg-3"> <select id="continents4_lunch" class="form-control">
                                                 <option value = "0">all</option>
@@ -1173,6 +1353,7 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day4_lunch" name="day4_lunch"
+                                               value="{{old('day4_lunch')}}"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
 
@@ -1187,7 +1368,6 @@
 
 
                                 <div class="form-group text-center">
-
                                     <div class="col-lg-12">
                                         <div class="col-lg-3">   <select id="continents4_break2" class="form-control">
                                                 <option value = "0">all</option>
@@ -1223,6 +1403,7 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day4_break2" name="day4_break2"
+                                               value="{{old('day4_break2')}}"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
 
@@ -1237,7 +1418,6 @@
 
 
                                 <div class="form-group text-center">
-
                                     <div class="col-lg-12">
                                         <div class="col-lg-3"> <select id="continents4_dinner" class="form-control">
                                                 <option value = "0">all</option>
@@ -1273,6 +1453,7 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day4_dinner" name="day4_dinner"
+                                               value="{{old('day4_dinner')}}"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
 
@@ -1290,6 +1471,7 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day4_notes" name="day4_notes"
+                                               value="{{old('day4_notes')}}"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
 
@@ -1307,21 +1489,30 @@
 
                                 <div class="col-lg-12">
 
-                                    <h2 class="text-center">مجموع السعرات الحرارية لليوم الثالث</h2>
+                                    <h2 class="text-center">مجموع السعرات الحرارية لليوم الرابع</h2>
                                     <div class="col-lg-4 col-md-4 col-sm-12">
+                                        <label for="carbSum">carbs </label>
                                         <input type="text" id="carbSum4" class="form-control"
+                                               value="{{old('carbSum4')}}"
                                                name="carbSum4"
-                                               placeholder="مجموع الكربهيدرات" readonly>
+
+                                               placeholder="مجموع الكربهيدرات" >
                                     </div>
                                     <div class="col-lg-4 col-md-4 col-sm-12">
+                                        <label for="carbSum">fats </label>
                                         <input type="text" id="fatsSum4" class="form-control"
+                                               value="{{old('fatsSum4')}}"
                                                name="fatsSum4"
-                                               placeholder="مجموع الدهون" readonly>
+
+                                               placeholder="مجموع الدهون" >
                                     </div>
                                     <div class="col-lg-4 col-md-4 col-sm-12">
+                                        <label for="carbSum">proteins </label>
                                         <input type="text" id="proteinSum4" class="form-control"
+                                               value="{{old('proteinSum4')}}"
                                                name="proteinSum4"
-                                               placeholder="مجموع البروتينات" readonly>
+
+                                               placeholder="مجموع البروتينات" >
                                     </div>
                                 </div>
 
@@ -1338,6 +1529,42 @@
                             <div class="form-group fifth_day">
 
 
+                                <br><br>
+                                <div class="form-group text-center">
+                                    <div class="col-lg-12">
+                                        <div class="col-lg-3">
+                                            <select id="continentsg5" class="form-control">
+                                                <option value = "0">all</option>
+                                                <option value="1">carbs</option>
+                                                <option value="2">Fats</option>
+                                                <option value="3">proteins</option>
+
+
+                                            </select>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <select id="selectcountriesg5" class="form-control"></select>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <select name="gmValue" id="gmValueg5" class="form-control">
+                                                <option value="10">10 gm</option>
+                                                <option value="20">20 gm</option>
+                                                <option value="30">30 gm</option>
+                                                <option value="50">50 gm</option>
+                                                <option value="100">100 gm</option>
+                                                <option value="200">200 gm</option>
+                                                <option value="300">300 gm</option>
+                                                <option value="400">400 gm</option>
+                                                <option value="500">500 gm</option>
+                                                <option value="600">600 gm</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <button type="button" class="btn btn-warning" onclick="deleteData5()">حذف</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br><br><br>
                                 <div class="form-group text-center" >
                                     <div class="col-lg-12">
                                         <div class="col-lg-3"> <select id="continent5" class="form-control">
@@ -1609,25 +1836,28 @@
 
                                     <h2 class="text-center">مجموع السعرات الحرارية لليوم الخامس</h2>
                                     <div class="col-lg-4 col-md-4 col-sm-12">
-
+                                        <label for="carbSum">carbs </label>
                                         <input type="text" id="carbSum5" class="form-control"
-                                               name="carbSum5"
                                                value="{{old('carbSum5')}}"
-                                               placeholder="مجموع الكربهيدرات" readonly>
+                                               name="carbSum5"
+
+                                               placeholder="مجموع الكربهيدرات" >
                                     </div>
                                     <div class="col-lg-4 col-md-4 col-sm-12">
-
+                                        <label for="carbSum">fats </label>
                                         <input type="text" id="fatsSum5" class="form-control"
-                                               name="fatsSum5"
                                                value="{{old('fatsSum5')}}"
-                                               placeholder="مجموع الدهون" readonly>
+                                               name="fatsSum5"
+
+                                               placeholder="مجموع الدهون" >
                                     </div>
                                     <div class="col-lg-4 col-md-4 col-sm-12">
-
+                                        <label for="carbSum">protein </label>
                                         <input type="text" id="proteinSum5" class="form-control"
-                                               name="proteinSum5"
                                                value="{{old('proteinSum5')}}"
-                                               placeholder="مجموع البروتينات" readonly>
+                                               name="proteinSum5"
+
+                                               placeholder="مجموع البروتينات" >
                                     </div>
                                 </div>
 
@@ -1639,14 +1869,46 @@
                         </div>
 
 
-
-
-
                         <button class="accordion" type="button">اليوم السادس</button>
                         <div class="panel">
                             <div class="form-group sixth_day">
 
+                                <br><br>
+                                <div class="form-group text-center">
+                                    <div class="col-lg-12">
+                                        <div class="col-lg-3">
+                                            <select id="continentsg6" class="form-control">
+                                                <option value = "0">all</option>
+                                                <option value="1">carbs</option>
+                                                <option value="2">Fats</option>
+                                                <option value="3">proteins</option>
 
+
+                                            </select>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <select id="selectcountriesg6" class="form-control"></select>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <select name="gmValue" id="gmValueg6" class="form-control">
+                                                <option value="10">10 gm</option>
+                                                <option value="20">20 gm</option>
+                                                <option value="30">30 gm</option>
+                                                <option value="50">50 gm</option>
+                                                <option value="100">100 gm</option>
+                                                <option value="200">200 gm</option>
+                                                <option value="300">300 gm</option>
+                                                <option value="400">400 gm</option>
+                                                <option value="500">500 gm</option>
+                                                <option value="600">600 gm</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <button type="button" class="btn btn-warning" onclick="deleteData6()">حذف</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br><br><br>
                                 <div class="form-group text-center">
                                     <div class="col-lg-12">
                                         <div class="col-lg-3">   <select id="continent6" class="form-control">
@@ -1923,28 +2185,28 @@
 
                                     <h2 class="text-center">مجموع السعرات الحرارية لليوم السادس</h2>
                                     <div class="col-lg-4 col-md-4 col-sm-12">
-
+                                        <label for="carbSum">carbs </label>
                                         <input type="text" id="carbSum6" class="form-control"
                                                value="{{old('carbSum6')}}"
                                                name="carbSum6"
 
-                                               placeholder="مجموع الكربهيدرات" readonly>
+                                               placeholder="مجموع الكربهيدرات" >
                                     </div>
                                     <div class="col-lg-4 col-md-4 col-sm-12">
-
+                                        <label for="carbSum">fats </label>
                                         <input type="text" id="fatsSum6" class="form-control"
                                                value="{{old('fatsSum6')}}"
                                                name="fatsSum6"
 
-                                               placeholder="مجموع الدهون" readonly>
+                                               placeholder="مجموع الدهون" >
                                     </div>
                                     <div class="col-lg-4 col-md-4 col-sm-12">
-
+                                        <label for="carbSum">proteins </label>
                                         <input type="text" id="proteinSum6" class="form-control"
                                                value="{{old('proteinSum6')}}"
                                                name="proteinSum6"
 
-                                               placeholder="مجموع البروتينات" readonly>
+                                               placeholder="مجموع البروتينات" >
                                     </div>
                                 </div>
 
@@ -1960,7 +2222,42 @@
                         <div class="panel">
                             <div class="form-group seventh_day">
 
+                                <br><br>
+                                <div class="form-group text-center">
+                                    <div class="col-lg-12">
+                                        <div class="col-lg-3">
+                                            <select id="continentsg7" class="form-control">
+                                                <option value = "0">all</option>
+                                                <option value="1">carbs</option>
+                                                <option value="2">Fats</option>
+                                                <option value="3">proteins</option>
 
+
+                                            </select>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <select id="selectcountriesg7" class="form-control"></select>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <select name="gmValue" id="gmValueg7" class="form-control">
+                                                <option value="10">10 gm</option>
+                                                <option value="20">20 gm</option>
+                                                <option value="30">30 gm</option>
+                                                <option value="50">50 gm</option>
+                                                <option value="100">100 gm</option>
+                                                <option value="200">200 gm</option>
+                                                <option value="300">300 gm</option>
+                                                <option value="400">400 gm</option>
+                                                <option value="500">500 gm</option>
+                                                <option value="600">600 gm</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <button type="button" class="btn btn-warning" onclick="deleteData7()">حذف</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br><br><br>
                                 <div class="form-group text-center">
                                     <div class="col-lg-12">
                                         <div class="col-lg-3">  <select id="continent7" class="form-control">
@@ -2236,25 +2533,28 @@
 
                                     <h2 class="text-center">مجموع السعرات الحرارية لليوم السابع</h2>
                                     <div class="col-lg-4 col-md-4 col-sm-12">
-
+                                        <label for="carbSum">carbs </label>
                                         <input type="text" id="carbSum7" class="form-control"
-                                               name="carbSum7"
                                                value="{{old('carbSum7')}}"
-                                               placeholder="مجموع الكربهيدرات" readonly>
+                                               name="carbSum7"
+
+                                               placeholder="مجموع الكربهيدرات" >
                                     </div>
                                     <div class="col-lg-4 col-md-4 col-sm-12">
-
+                                        <label for="carbSum">fats </label>
                                         <input type="text" id="fatsSum7" class="form-control"
-                                               name="fatsSum7"
                                                value="{{old('fatsSum7')}}"
-                                               placeholder="مجموع الدهون" readonly>
+                                               name="fatsSum7"
+
+                                               placeholder="مجموع الدهون" >
                                     </div>
                                     <div class="col-lg-4 col-md-4 col-sm-12">
-
+                                        <label for="carbSum">proteins </label>
                                         <input type="text" id="proteinSum7" class="form-control"
-                                               name="proteinSum7"
                                                value="{{old('proteinSum7')}}"
-                                               placeholder="مجموع البروتينات" readonly>
+                                               name="proteinSum7"
+
+                                               placeholder="مجموع البروتينات" >
                                     </div>
                                 </div>
 
@@ -2363,6 +2663,833 @@
 
     </script>
 
+
+    {{-- day 1 deleting data --}}
+
+    <script>
+
+        function initSelectors(){
+            // next 2 statements should generate error message, see console
+            MAIN.createRelatedSelector();
+            MAIN.createRelatedSelector(document.querySelector('#continentsg') );
+
+            //countries
+            MAIN.createRelatedSelector
+            ( document.querySelector('#continentsg')           // from select element
+                ,document.querySelector('#selectcountriesg')      // to select element
+                ,{                                               // values object
+
+
+                    carbs: carbs,
+                    Fats: fats,
+                    proteins: proteins
+                }
+                ,function(a,b){return a>b ? 1 : a<b ? -1 : 0;}   // sort method
+            );
+
+
+
+
+        }
+
+        //create MAIN namespace
+        (function(ns){ // don't pollute the global namespace
+
+            function create(from, to, obj, srt){
+                if (!from) {
+                    throw CreationError('create: parameter selector [from] missing');
+                }
+                if (!to) {
+                    throw CreationError('create: parameter related selector [to] missing');
+                }
+                if (!obj) {
+                    throw CreationError('create: related filter definition object [obj] missing');
+                }
+
+                //retrieve all options from obj and add it
+                obj.all = (function(o){
+                    var a = [];
+                    for (var l in o) {
+                        a = /array/i.test (o[l].constructor) ? a.concat(o[l]) : a;
+                    }
+                    return a.sort(srt);
+                }(obj));
+                // initialize and populate to-selector with all
+                populator.call( from
+                    ,null
+                    ,to
+                    ,obj
+                    ,srt
+                );
+
+                // assign handler
+                from.onchange = populator;
+
+                function initStatics(fn,obj){
+                    for (var l in obj) {
+                        if (obj.hasOwnProperty(l)){
+                            fn[l] = obj[l];
+                        }
+                    }
+                    fn.initialized = true;
+                }
+
+                function populator(e, relatedto, obj, srt){
+                    // set pseudo statics
+                    var self = populator;
+                    if (!self.initialized) {
+                        initStatics(self,{optselects:obj,optselectsall:obj.all,relatedTo:relatedto,sorter:srt || false});
+                    }
+
+                    if (!self.relatedTo){
+                        throw 'not related to a selector';
+                    }
+                    // populate to-selector from filter/all
+                    var optsfilter = this.selectedIndex < 1
+                        ? self.optselectsall
+                        : self.optselects[this.options[this.selectedIndex].firstChild.nodeValue]
+                        ,cselect = self.relatedTo
+                        ,opts = cselect.options;
+                    if (self.sorter) optsfilter.sort(self.sorter);
+                    opts.length = 0;
+                    for (var i=0;i<optsfilter.length;i+=1){
+                        opts[i] = new Option(optsfilter[i],i);
+                    }
+                }
+            }
+
+            // custom Error
+            function CreationError(mssg){
+                return {name:'CreationError',message:mssg};
+            }
+
+            // return the create method with some error handling
+            window[ns] = {
+                createRelatedSelector: function(from,to,obj,srt) {
+                    try {
+                        if (arguments.length<1) {
+                            throw CreationError('no parameters');
+                        }
+                        create.call(null,from,to,obj,srt);
+                    }
+                    catch(e) { console.log('createRelatedSelector ->',e.name,'\n'
+                        + e.message +
+                        '\ncheck parameters'); }
+                }
+            };
+        }('MAIN'));
+        //initialize
+        initSelectors();
+    </script>
+
+    {{-- day 2 deleting data --}}
+
+    <script>
+
+        function initSelectors(){
+            // next 2 statements should generate error message, see console
+            MAIN.createRelatedSelector();
+            MAIN.createRelatedSelector(document.querySelector('#continentsg2') );
+
+            //countries
+            MAIN.createRelatedSelector
+            ( document.querySelector('#continentsg2')           // from select element
+                ,document.querySelector('#selectcountriesg2')      // to select element
+                ,{                                               // values object
+
+
+                    carbs: carbs,
+                    Fats: fats,
+                    proteins: proteins
+                }
+                ,function(a,b){return a>b ? 1 : a<b ? -1 : 0;}   // sort method
+            );
+
+
+
+
+        }
+
+        //create MAIN namespace
+        (function(ns){ // don't pollute the global namespace
+
+            function create(from, to, obj, srt){
+                if (!from) {
+                    throw CreationError('create: parameter selector [from] missing');
+                }
+                if (!to) {
+                    throw CreationError('create: parameter related selector [to] missing');
+                }
+                if (!obj) {
+                    throw CreationError('create: related filter definition object [obj] missing');
+                }
+
+                //retrieve all options from obj and add it
+                obj.all = (function(o){
+                    var a = [];
+                    for (var l in o) {
+                        a = /array/i.test (o[l].constructor) ? a.concat(o[l]) : a;
+                    }
+                    return a.sort(srt);
+                }(obj));
+                // initialize and populate to-selector with all
+                populator.call( from
+                    ,null
+                    ,to
+                    ,obj
+                    ,srt
+                );
+
+                // assign handler
+                from.onchange = populator;
+
+                function initStatics(fn,obj){
+                    for (var l in obj) {
+                        if (obj.hasOwnProperty(l)){
+                            fn[l] = obj[l];
+                        }
+                    }
+                    fn.initialized = true;
+                }
+
+                function populator(e, relatedto, obj, srt){
+                    // set pseudo statics
+                    var self = populator;
+                    if (!self.initialized) {
+                        initStatics(self,{optselects:obj,optselectsall:obj.all,relatedTo:relatedto,sorter:srt || false});
+                    }
+
+                    if (!self.relatedTo){
+                        throw 'not related to a selector';
+                    }
+                    // populate to-selector from filter/all
+                    var optsfilter = this.selectedIndex < 1
+                        ? self.optselectsall
+                        : self.optselects[this.options[this.selectedIndex].firstChild.nodeValue]
+                        ,cselect = self.relatedTo
+                        ,opts = cselect.options;
+                    if (self.sorter) optsfilter.sort(self.sorter);
+                    opts.length = 0;
+                    for (var i=0;i<optsfilter.length;i+=1){
+                        opts[i] = new Option(optsfilter[i],i);
+                    }
+                }
+            }
+
+            // custom Error
+            function CreationError(mssg){
+                return {name:'CreationError',message:mssg};
+            }
+
+            // return the create method with some error handling
+            window[ns] = {
+                createRelatedSelector: function(from,to,obj,srt) {
+                    try {
+                        if (arguments.length<1) {
+                            throw CreationError('no parameters');
+                        }
+                        create.call(null,from,to,obj,srt);
+                    }
+                    catch(e) { console.log('createRelatedSelector ->',e.name,'\n'
+                        + e.message +
+                        '\ncheck parameters'); }
+                }
+            };
+        }('MAIN'));
+        //initialize
+        initSelectors();
+    </script>
+
+    {{-- day 3 deleting data --}}
+
+    <script>
+
+        function initSelectors(){
+            // next 2 statements should generate error message, see console
+            MAIN.createRelatedSelector();
+            MAIN.createRelatedSelector(document.querySelector('#continentsg3') );
+
+            //countries
+            MAIN.createRelatedSelector
+            ( document.querySelector('#continentsg3')           // from select element
+                ,document.querySelector('#selectcountriesg3')      // to select element
+                ,{                                               // values object
+
+
+                    carbs: carbs,
+                    Fats: fats,
+                    proteins: proteins
+                }
+                ,function(a,b){return a>b ? 1 : a<b ? -1 : 0;}   // sort method
+            );
+
+
+
+
+        }
+
+        //create MAIN namespace
+        (function(ns){ // don't pollute the global namespace
+
+            function create(from, to, obj, srt){
+                if (!from) {
+                    throw CreationError('create: parameter selector [from] missing');
+                }
+                if (!to) {
+                    throw CreationError('create: parameter related selector [to] missing');
+                }
+                if (!obj) {
+                    throw CreationError('create: related filter definition object [obj] missing');
+                }
+
+                //retrieve all options from obj and add it
+                obj.all = (function(o){
+                    var a = [];
+                    for (var l in o) {
+                        a = /array/i.test (o[l].constructor) ? a.concat(o[l]) : a;
+                    }
+                    return a.sort(srt);
+                }(obj));
+                // initialize and populate to-selector with all
+                populator.call( from
+                    ,null
+                    ,to
+                    ,obj
+                    ,srt
+                );
+
+                // assign handler
+                from.onchange = populator;
+
+                function initStatics(fn,obj){
+                    for (var l in obj) {
+                        if (obj.hasOwnProperty(l)){
+                            fn[l] = obj[l];
+                        }
+                    }
+                    fn.initialized = true;
+                }
+
+                function populator(e, relatedto, obj, srt){
+                    // set pseudo statics
+                    var self = populator;
+                    if (!self.initialized) {
+                        initStatics(self,{optselects:obj,optselectsall:obj.all,relatedTo:relatedto,sorter:srt || false});
+                    }
+
+                    if (!self.relatedTo){
+                        throw 'not related to a selector';
+                    }
+                    // populate to-selector from filter/all
+                    var optsfilter = this.selectedIndex < 1
+                        ? self.optselectsall
+                        : self.optselects[this.options[this.selectedIndex].firstChild.nodeValue]
+                        ,cselect = self.relatedTo
+                        ,opts = cselect.options;
+                    if (self.sorter) optsfilter.sort(self.sorter);
+                    opts.length = 0;
+                    for (var i=0;i<optsfilter.length;i+=1){
+                        opts[i] = new Option(optsfilter[i],i);
+                    }
+                }
+            }
+
+            // custom Error
+            function CreationError(mssg){
+                return {name:'CreationError',message:mssg};
+            }
+
+            // return the create method with some error handling
+            window[ns] = {
+                createRelatedSelector: function(from,to,obj,srt) {
+                    try {
+                        if (arguments.length<1) {
+                            throw CreationError('no parameters');
+                        }
+                        create.call(null,from,to,obj,srt);
+                    }
+                    catch(e) { console.log('createRelatedSelector ->',e.name,'\n'
+                        + e.message +
+                        '\ncheck parameters'); }
+                }
+            };
+        }('MAIN'));
+        //initialize
+        initSelectors();
+    </script>
+
+    {{-- day 4 deleting data --}}
+
+    <script>
+
+        function initSelectors(){
+            // next 2 statements should generate error message, see console
+            MAIN.createRelatedSelector();
+            MAIN.createRelatedSelector(document.querySelector('#continentsg4') );
+
+            //countries
+            MAIN.createRelatedSelector
+            ( document.querySelector('#continentsg4')           // from select element
+                ,document.querySelector('#selectcountriesg4')      // to select element
+                ,{                                               // values object
+
+
+                    carbs: carbs,
+                    Fats: fats,
+                    proteins: proteins
+                }
+                ,function(a,b){return a>b ? 1 : a<b ? -1 : 0;}   // sort method
+            );
+
+
+
+
+        }
+
+        //create MAIN namespace
+        (function(ns){ // don't pollute the global namespace
+
+            function create(from, to, obj, srt){
+                if (!from) {
+                    throw CreationError('create: parameter selector [from] missing');
+                }
+                if (!to) {
+                    throw CreationError('create: parameter related selector [to] missing');
+                }
+                if (!obj) {
+                    throw CreationError('create: related filter definition object [obj] missing');
+                }
+
+                //retrieve all options from obj and add it
+                obj.all = (function(o){
+                    var a = [];
+                    for (var l in o) {
+                        a = /array/i.test (o[l].constructor) ? a.concat(o[l]) : a;
+                    }
+                    return a.sort(srt);
+                }(obj));
+                // initialize and populate to-selector with all
+                populator.call( from
+                    ,null
+                    ,to
+                    ,obj
+                    ,srt
+                );
+
+                // assign handler
+                from.onchange = populator;
+
+                function initStatics(fn,obj){
+                    for (var l in obj) {
+                        if (obj.hasOwnProperty(l)){
+                            fn[l] = obj[l];
+                        }
+                    }
+                    fn.initialized = true;
+                }
+
+                function populator(e, relatedto, obj, srt){
+                    // set pseudo statics
+                    var self = populator;
+                    if (!self.initialized) {
+                        initStatics(self,{optselects:obj,optselectsall:obj.all,relatedTo:relatedto,sorter:srt || false});
+                    }
+
+                    if (!self.relatedTo){
+                        throw 'not related to a selector';
+                    }
+                    // populate to-selector from filter/all
+                    var optsfilter = this.selectedIndex < 1
+                        ? self.optselectsall
+                        : self.optselects[this.options[this.selectedIndex].firstChild.nodeValue]
+                        ,cselect = self.relatedTo
+                        ,opts = cselect.options;
+                    if (self.sorter) optsfilter.sort(self.sorter);
+                    opts.length = 0;
+                    for (var i=0;i<optsfilter.length;i+=1){
+                        opts[i] = new Option(optsfilter[i],i);
+                    }
+                }
+            }
+
+            // custom Error
+            function CreationError(mssg){
+                return {name:'CreationError',message:mssg};
+            }
+
+            // return the create method with some error handling
+            window[ns] = {
+                createRelatedSelector: function(from,to,obj,srt) {
+                    try {
+                        if (arguments.length<1) {
+                            throw CreationError('no parameters');
+                        }
+                        create.call(null,from,to,obj,srt);
+                    }
+                    catch(e) { console.log('createRelatedSelector ->',e.name,'\n'
+                        + e.message +
+                        '\ncheck parameters'); }
+                }
+            };
+        }('MAIN'));
+        //initialize
+        initSelectors();
+    </script>
+
+    {{-- day 5 deleting data --}}
+
+    <script>
+
+        function initSelectors(){
+            // next 2 statements should generate error message, see console
+            MAIN.createRelatedSelector();
+            MAIN.createRelatedSelector(document.querySelector('#continentsg5') );
+
+            //countries
+            MAIN.createRelatedSelector
+            ( document.querySelector('#continentsg5')           // from select element
+                ,document.querySelector('#selectcountriesg5')      // to select element
+                ,{                                               // values object
+
+
+                    carbs: carbs,
+                    Fats: fats,
+                    proteins: proteins
+                }
+                ,function(a,b){return a>b ? 1 : a<b ? -1 : 0;}   // sort method
+            );
+
+
+
+
+        }
+
+        //create MAIN namespace
+        (function(ns){ // don't pollute the global namespace
+
+            function create(from, to, obj, srt){
+                if (!from) {
+                    throw CreationError('create: parameter selector [from] missing');
+                }
+                if (!to) {
+                    throw CreationError('create: parameter related selector [to] missing');
+                }
+                if (!obj) {
+                    throw CreationError('create: related filter definition object [obj] missing');
+                }
+
+                //retrieve all options from obj and add it
+                obj.all = (function(o){
+                    var a = [];
+                    for (var l in o) {
+                        a = /array/i.test (o[l].constructor) ? a.concat(o[l]) : a;
+                    }
+                    return a.sort(srt);
+                }(obj));
+                // initialize and populate to-selector with all
+                populator.call( from
+                    ,null
+                    ,to
+                    ,obj
+                    ,srt
+                );
+
+                // assign handler
+                from.onchange = populator;
+
+                function initStatics(fn,obj){
+                    for (var l in obj) {
+                        if (obj.hasOwnProperty(l)){
+                            fn[l] = obj[l];
+                        }
+                    }
+                    fn.initialized = true;
+                }
+
+                function populator(e, relatedto, obj, srt){
+                    // set pseudo statics
+                    var self = populator;
+                    if (!self.initialized) {
+                        initStatics(self,{optselects:obj,optselectsall:obj.all,relatedTo:relatedto,sorter:srt || false});
+                    }
+
+                    if (!self.relatedTo){
+                        throw 'not related to a selector';
+                    }
+                    // populate to-selector from filter/all
+                    var optsfilter = this.selectedIndex < 1
+                        ? self.optselectsall
+                        : self.optselects[this.options[this.selectedIndex].firstChild.nodeValue]
+                        ,cselect = self.relatedTo
+                        ,opts = cselect.options;
+                    if (self.sorter) optsfilter.sort(self.sorter);
+                    opts.length = 0;
+                    for (var i=0;i<optsfilter.length;i+=1){
+                        opts[i] = new Option(optsfilter[i],i);
+                    }
+                }
+            }
+
+            // custom Error
+            function CreationError(mssg){
+                return {name:'CreationError',message:mssg};
+            }
+
+            // return the create method with some error handling
+            window[ns] = {
+                createRelatedSelector: function(from,to,obj,srt) {
+                    try {
+                        if (arguments.length<1) {
+                            throw CreationError('no parameters');
+                        }
+                        create.call(null,from,to,obj,srt);
+                    }
+                    catch(e) { console.log('createRelatedSelector ->',e.name,'\n'
+                        + e.message +
+                        '\ncheck parameters'); }
+                }
+            };
+        }('MAIN'));
+        //initialize
+        initSelectors();
+    </script>
+
+
+    {{-- day 6 deleting data --}}
+
+    <script>
+
+        function initSelectors(){
+            // next 2 statements should generate error message, see console
+            MAIN.createRelatedSelector();
+            MAIN.createRelatedSelector(document.querySelector('#continentsg6') );
+
+            //countries
+            MAIN.createRelatedSelector
+            ( document.querySelector('#continentsg6')           // from select element
+                ,document.querySelector('#selectcountriesg6')      // to select element
+                ,{                                               // values object
+
+
+                    carbs: carbs,
+                    Fats: fats,
+                    proteins: proteins
+                }
+                ,function(a,b){return a>b ? 1 : a<b ? -1 : 0;}   // sort method
+            );
+
+
+
+
+        }
+
+        //create MAIN namespace
+        (function(ns){ // don't pollute the global namespace
+
+            function create(from, to, obj, srt){
+                if (!from) {
+                    throw CreationError('create: parameter selector [from] missing');
+                }
+                if (!to) {
+                    throw CreationError('create: parameter related selector [to] missing');
+                }
+                if (!obj) {
+                    throw CreationError('create: related filter definition object [obj] missing');
+                }
+
+                //retrieve all options from obj and add it
+                obj.all = (function(o){
+                    var a = [];
+                    for (var l in o) {
+                        a = /array/i.test (o[l].constructor) ? a.concat(o[l]) : a;
+                    }
+                    return a.sort(srt);
+                }(obj));
+                // initialize and populate to-selector with all
+                populator.call( from
+                    ,null
+                    ,to
+                    ,obj
+                    ,srt
+                );
+
+                // assign handler
+                from.onchange = populator;
+
+                function initStatics(fn,obj){
+                    for (var l in obj) {
+                        if (obj.hasOwnProperty(l)){
+                            fn[l] = obj[l];
+                        }
+                    }
+                    fn.initialized = true;
+                }
+
+                function populator(e, relatedto, obj, srt){
+                    // set pseudo statics
+                    var self = populator;
+                    if (!self.initialized) {
+                        initStatics(self,{optselects:obj,optselectsall:obj.all,relatedTo:relatedto,sorter:srt || false});
+                    }
+
+                    if (!self.relatedTo){
+                        throw 'not related to a selector';
+                    }
+                    // populate to-selector from filter/all
+                    var optsfilter = this.selectedIndex < 1
+                        ? self.optselectsall
+                        : self.optselects[this.options[this.selectedIndex].firstChild.nodeValue]
+                        ,cselect = self.relatedTo
+                        ,opts = cselect.options;
+                    if (self.sorter) optsfilter.sort(self.sorter);
+                    opts.length = 0;
+                    for (var i=0;i<optsfilter.length;i+=1){
+                        opts[i] = new Option(optsfilter[i],i);
+                    }
+                }
+            }
+
+            // custom Error
+            function CreationError(mssg){
+                return {name:'CreationError',message:mssg};
+            }
+
+            // return the create method with some error handling
+            window[ns] = {
+                createRelatedSelector: function(from,to,obj,srt) {
+                    try {
+                        if (arguments.length<1) {
+                            throw CreationError('no parameters');
+                        }
+                        create.call(null,from,to,obj,srt);
+                    }
+                    catch(e) { console.log('createRelatedSelector ->',e.name,'\n'
+                        + e.message +
+                        '\ncheck parameters'); }
+                }
+            };
+        }('MAIN'));
+        //initialize
+        initSelectors();
+    </script>
+
+    {{-- day 7 deleting data --}}
+
+    <script>
+
+        function initSelectors(){
+            // next 2 statements should generate error message, see console
+            MAIN.createRelatedSelector();
+            MAIN.createRelatedSelector(document.querySelector('#continentsg7') );
+
+            //countries
+            MAIN.createRelatedSelector
+            ( document.querySelector('#continentsg7')           // from select element
+                ,document.querySelector('#selectcountriesg7')      // to select element
+                ,{                                               // values object
+
+
+                    carbs: carbs,
+                    Fats: fats,
+                    proteins: proteins
+                }
+                ,function(a,b){return a>b ? 1 : a<b ? -1 : 0;}   // sort method
+            );
+
+
+
+
+        }
+
+        //create MAIN namespace
+        (function(ns){ // don't pollute the global namespace
+
+            function create(from, to, obj, srt){
+                if (!from) {
+                    throw CreationError('create: parameter selector [from] missing');
+                }
+                if (!to) {
+                    throw CreationError('create: parameter related selector [to] missing');
+                }
+                if (!obj) {
+                    throw CreationError('create: related filter definition object [obj] missing');
+                }
+
+                //retrieve all options from obj and add it
+                obj.all = (function(o){
+                    var a = [];
+                    for (var l in o) {
+                        a = /array/i.test (o[l].constructor) ? a.concat(o[l]) : a;
+                    }
+                    return a.sort(srt);
+                }(obj));
+                // initialize and populate to-selector with all
+                populator.call( from
+                    ,null
+                    ,to
+                    ,obj
+                    ,srt
+                );
+
+                // assign handler
+                from.onchange = populator;
+
+                function initStatics(fn,obj){
+                    for (var l in obj) {
+                        if (obj.hasOwnProperty(l)){
+                            fn[l] = obj[l];
+                        }
+                    }
+                    fn.initialized = true;
+                }
+
+                function populator(e, relatedto, obj, srt){
+                    // set pseudo statics
+                    var self = populator;
+                    if (!self.initialized) {
+                        initStatics(self,{optselects:obj,optselectsall:obj.all,relatedTo:relatedto,sorter:srt || false});
+                    }
+
+                    if (!self.relatedTo){
+                        throw 'not related to a selector';
+                    }
+                    // populate to-selector from filter/all
+                    var optsfilter = this.selectedIndex < 1
+                        ? self.optselectsall
+                        : self.optselects[this.options[this.selectedIndex].firstChild.nodeValue]
+                        ,cselect = self.relatedTo
+                        ,opts = cselect.options;
+                    if (self.sorter) optsfilter.sort(self.sorter);
+                    opts.length = 0;
+                    for (var i=0;i<optsfilter.length;i+=1){
+                        opts[i] = new Option(optsfilter[i],i);
+                    }
+                }
+            }
+
+            // custom Error
+            function CreationError(mssg){
+                return {name:'CreationError',message:mssg};
+            }
+
+            // return the create method with some error handling
+            window[ns] = {
+                createRelatedSelector: function(from,to,obj,srt) {
+                    try {
+                        if (arguments.length<1) {
+                            throw CreationError('no parameters');
+                        }
+                        create.call(null,from,to,obj,srt);
+                    }
+                    catch(e) { console.log('createRelatedSelector ->',e.name,'\n'
+                        + e.message +
+                        '\ncheck parameters'); }
+                }
+            };
+        }('MAIN'));
+        //initialize
+        initSelectors();
+    </script>
 
 
     {{-- day 1 breakfast start --}}

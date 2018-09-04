@@ -59,8 +59,6 @@
                         </div>
 
 
-
-
                         <button class="accordion" type="button"> اليوم الاول</button>
                         <div class="panel">
                             <br><br>
@@ -469,7 +467,6 @@
 
                             </div>
                         </div>
-
 
 
                         <button class="accordion" type="button">اليوم الثانى</button>
@@ -1183,8 +1180,6 @@
                         </div>
 
 
-
-
                         <button class="accordion" type="button">اليوم الرابع</button>
                         <div class="panel">
                             <div class="form-group forth_day">
@@ -1871,9 +1866,6 @@
 
                             </div>
                         </div>
-
-
-
 
 
                         <button class="accordion" type="button">اليوم السادس</button>

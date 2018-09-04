@@ -59,8 +59,6 @@
                         </div>
 
 
-
-
                         <button class="accordion" type="button"> اليوم الاول</button>
                         <div class="panel">
                             <br><br>
@@ -1869,10 +1867,6 @@
 
                             </div>
                         </div>
-
-
-
-
 
                         <button class="accordion" type="button">اليوم السادس</button>
                         <div class="panel">
