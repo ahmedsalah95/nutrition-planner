@@ -132,21 +132,18 @@
                                         <div class="col-lg-3">
                                             <select id="selectcountries" class="form-control"></select>
                                         </div>
-                                        <div class="col-lg-3">
+                                        <div class="col-lg-2">
                                             <select name="gmValue" id="gmValue" class="form-control">
-                                                <option value="10">10 gm</option>
-                                                <option value="20">20 gm</option>
-                                                <option value="30">30 gm</option>
-                                                <option value="50">50 gm</option>
-                                                <option value="100">100 gm</option>
-                                                <option value="200">200 gm</option>
-                                                <option value="300">300 gm</option>
-                                                <option value="400">400 gm</option>
-                                                <option value="500">500 gm</option>
-                                                <option value="600">600 gm</option>
+                                                @for($i=1;$i<=1000;$i++)
+                                                    <option value="{{$i}}">{{$i}}</option>
+                                                @endfor
                                             </select>
                                         </div>
-                                        <div class="col-lg-3">
+
+
+
+
+                                        <div class="col-lg-2">
                                             <button type="button" class="btn btn-success" onclick="getData()">أضف</button>
                                         </div>
                                     </div>

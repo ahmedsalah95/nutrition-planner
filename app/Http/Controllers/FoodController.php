@@ -48,6 +48,8 @@ class FoodController extends Controller
             'food_name'=>'required',
             'calories'=>'required',
             'category_id'=>'required',
+            'unit'=>'required',
+            'gm_in_each_unit'=>'required'
 
         ]);
 
@@ -56,6 +58,8 @@ class FoodController extends Controller
         $saveData->category_id=$request['category_id'];
         $saveData->calories =$request['calories'];
         $saveData->gm =    floatval($request['calories']) /100;
+        $saveData->unit =$request['unit'];
+        $saveData->gm_in_each_unit =$request['gm_in_each_unit'];
 
         $saveData->save();
         return redirect('food');
@@ -104,6 +108,8 @@ class FoodController extends Controller
             'food_name'=>'required',
             'calories'=>'required',
             'category_id'=>'required',
+            'unit'=>'required',
+            'gm_in_each_unit'=>'required'
 
         ]);
 
@@ -117,6 +123,8 @@ class FoodController extends Controller
 
         $saveData->calories =$request['calories'];
         $saveData->gm =   floatval($request['calories']) /100;
+        $saveData->unit =$request['unit'];
+        $saveData->gm_in_each_unit =$request['gm_in_each_unit'];
 
         $saveData->save();
         return redirect('food');

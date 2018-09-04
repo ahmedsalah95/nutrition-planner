@@ -19,6 +19,8 @@ class CreateFoodsTable extends Migration
             $table->String('food_name');
             $table->String('calories');
             $table->String('gm');
+            $table->String('gm_in_each_unit');
+            $table->String('unit');
             $table->timestamps();
         });
     }

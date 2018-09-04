@@ -35,6 +35,31 @@
                         </div>
 
                         <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="calories">وحده القياس
+                                <span class="required">*</span>
+                            </label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <input type="text" id="unit" required="required" name="unit"
+                                       class="form-control col-md-7 col-xs-12"
+                                       value="{{old('unit')}}">
+                            </div>
+                        </div>
+
+
+
+                        <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="calories">عدد الغرامات في كل وحده
+                                <span class="required">*</span>
+                            </label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <input type="text" id="gm_in_each_unit" required="required" name="gm_in_each_unit"
+                                       class="form-control col-md-7 col-xs-12"
+                                       value="{{old('gm_in_each_unit')}}">
+                            </div>
+                        </div>
+
+
+                        <div class="form-group">
                             <label class="control-label col-md-3 col-sm-3 col-xs-12" for="category_id">
                                      التصنيف
                                 <span class="required">*</span>
