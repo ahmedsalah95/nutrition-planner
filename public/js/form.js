@@ -320,31 +320,32 @@ function getData() {
     var y = $("#selectcountries option:selected").text();
     var t = y.split(/[ ,]+/);
 
+
     if(t[4] ==1)
     {
         var value = parseFloat($('#carbSum').val()) ;
 
         if(value)
         {
-            value +=parseFloat(t[2]*x);
+            value +=parseFloat(x*t[6]*t[8]);
             $('#carbSum').val(value);
             var current =  $('#day1_breakfast').text();
             var currentVal =$('#day1_breakfast').val();
             $('#day1_breakfast').val(" ");
             $('#day1_breakfast').text(" ");
-            $('#day1_breakfast').val( currentVal  + ' و '+  t[0]+x+' جم ');
+            $('#day1_breakfast').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
         }
 
         else
         {
-            $('#carbSum').val(parseFloat(t[2])*x);
+            $('#carbSum').val(parseFloat(t[6])*x*t[8]);
 
             var current =  $('#day1_breakfast').text();
             var currentVal =$('#day1_breakfast').val();
             $('#day1_breakfast').val(" ");
             $('#day1_breakfast').text(" ");
-            $('#day1_breakfast').val( currentVal  + ' و '+  t[0]+x+' جم ');
+            $('#day1_breakfast').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
 
         }
