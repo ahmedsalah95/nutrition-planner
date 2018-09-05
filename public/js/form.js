@@ -359,23 +359,26 @@ function getData() {
 
         if(value)
         {
-            value +=parseFloat(t[2]*x);
+            value +=parseFloat(x*t[6]*t[8]);
             $('#fatsSum').val(value);
             var current =  $('#day1_breakfast').text();
             var currentVal =$('#day1_breakfast').val();
             $('#day1_breakfast').val(" ");
             $('#day1_breakfast').text(" ");
-            $('#day1_breakfast').val( currentVal  + ' و '+  t[0]+x+' جم ');
+            $('#day1_breakfast').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
+        }
 
-        }else
+        else
         {
-            $('#fatsSum').val(parseFloat(t[2])*x);
+            $('#fatsSum').val(parseFloat(t[6])*x*t[8]);
+
             var current =  $('#day1_breakfast').text();
             var currentVal =$('#day1_breakfast').val();
             $('#day1_breakfast').val(" ");
             $('#day1_breakfast').text(" ");
-            $('#day1_breakfast').val( currentVal  + ' و '+  t[0]+x+' جم ');
+            $('#day1_breakfast').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
+
 
         }
 
@@ -387,24 +390,26 @@ function getData() {
 
         if(value)
         {
-            value +=parseFloat(t[2]*x);
+            value +=parseFloat(x*t[6]*t[8]);
             $('#proteinSum').val(value);
-
             var current =  $('#day1_breakfast').text();
             var currentVal =$('#day1_breakfast').val();
             $('#day1_breakfast').val(" ");
             $('#day1_breakfast').text(" ");
-            $('#day1_breakfast').val( currentVal  + ' و '+  t[0]+x+' جم ');
+            $('#day1_breakfast').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
-        }else
+        }
+
+        else
         {
-            $('#proteinSum').val(parseFloat(t[2])*x);
+            $('#proteinSum').val(parseFloat(t[6])*x*t[8]);
+
             var current =  $('#day1_breakfast').text();
             var currentVal =$('#day1_breakfast').val();
             $('#day1_breakfast').val(" ");
             $('#day1_breakfast').text(" ");
+            $('#day1_breakfast').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
-            $('#day1_breakfast').val( currentVal  + ' و '+  t[0]+x+' جم ');
 
         }
     }
@@ -425,24 +430,24 @@ function getData1_lunch() {
 
         if(value)
         {
-            value +=parseFloat(t[2]*x);
+            value +=parseFloat(x*t[6]*t[8]);
             $('#carbSum').val(value);
 
             var current =  $('#day1_lunch').text();
             var currentVal =$('#day1_lunch').val();
             $('#day1_lunch').val(" ");
             $('#day1_lunch').text(" ");
-            $('#day1_lunch').val( currentVal  + ' و '+  t[0]+x+' جم ');
+            $('#day1_lunch').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
         }else
         {
-            $('#carbSum').val(parseFloat(t[2])*x);
+            $('#carbSum').val(parseFloat(t[6])*x*t[8]);
 
             var current =  $('#day1_lunch').text();
             var currentVal =$('#day1_lunch').val();
             $('#day1_lunch').val(" ");
             $('#day1_lunch').text(" ");
-            $('#day1_lunch').val( currentVal  + ' و '+  t[0]+x+' جم ');
+            $('#day1_lunch').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
         }
 
@@ -452,22 +457,22 @@ function getData1_lunch() {
 
         if(value)
         {
-            value +=parseFloat(t[2]*x);
+            value +=parseFloat(x*t[6]*t[8]);
             $('#fatsSum').val(value);
             var current =  $('#day1_lunch').text();
             var currentVal =$('#day1_lunch').val();
             $('#day1_lunch').val(" ");
             $('#day1_lunch').text(" ");
-            $('#day1_lunch').val( currentVal  + ' و '+  t[0]+x+' جم ');
+            $('#day1_lunch').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
         }else
         {
-            $('#fatsSum').val(parseFloat(t[2])*x);
+            $('#fatsSum').parseFloat(x*t[6]*t[8]);
             var current =  $('#day1_lunch').text();
             var currentVal =$('#day1_lunch').val();
             $('#day1_lunch').val(" ");
             $('#day1_lunch').text(" ");
-            $('#day1_lunch').val( currentVal  + ' و '+  t[0]+x+' جم ');
+            $('#day1_lunch').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
         }
 
     }else
@@ -476,22 +481,22 @@ function getData1_lunch() {
 
         if(value)
         {
-            value +=parseFloat(t[2]*x);
+            value +=parseFloat(x*t[6]*t[8]);
             $('#proteinSum').val(value);
             var current =  $('#day1_lunch').text();
             var currentVal =$('#day1_lunch').val();
             $('#day1_lunch').val(" ");
             $('#day1_lunch').text(" ");
-            $('#day1_lunch').val( currentVal  + ' و '+  t[0]+x+' جم ');
+            $('#day1_lunch').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
         }else
         {
-            $('#proteinSum').val(parseFloat(t[2])*x);
+            $('#proteinSum').parseFloat(x*t[6]*t[8]);
             var current =  $('#day1_lunch').text();
             var currentVal =$('#day1_lunch').val();
             $('#day1_lunch').val(" ");
             $('#day1_lunch').text(" ");
-            $('#day1_lunch').val( currentVal  + ' و '+  t[0]+x+' جم ');
+            $('#day1_lunch').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
         }
     }
 
@@ -511,24 +516,24 @@ function getData1_dinner() {
 
         if(value)
         {
-            value +=parseFloat(t[2]*x);
+            value +=parseFloat(x*t[6]*t[8]);
             $('#carbSum').val(value);
 
             var current =  $('#day1_dinner').text();
             var currentVal =$('#day1_dinner').val();
             $('#day1_dinner').val(" ");
             $('#day1_dinner').text(" ");
-            $('#day1_dinner').val( currentVal  + ' و '+  t[0]+x+' جم ');
+            $('#day1_dinner').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
         }else
         {
-            $('#carbSum').val(parseFloat(t[2])*x);
+            $('#carbSum').val(parseFloat(t[6])*x*t[8]);
 
             var current =  $('#day1_dinner').text();
             var currentVal =$('#day1_dinner').val();
             $('#day1_dinner').val(" ");
             $('#day1_dinner').text(" ");
-            $('#day1_dinner').val( currentVal  + ' و  '+  t[0]+x+' جم ');
+            $('#day1_dinner').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
         }
 
@@ -538,22 +543,22 @@ function getData1_dinner() {
 
         if(value)
         {
-            value +=parseFloat(t[2]*x);
+            value +=parseFloat(x*t[6]*t[8]);
             $('#fatsSum').val(value);
             var current =  $('#day1_dinner').text();
             var currentVal =$('#day1_dinner').val();
             $('#day1_dinner').val(" ");
             $('#day1_dinner').text(" ");
-            $('#day1_dinner').val( currentVal  + ' و '+  t[0]+x+' جم ');
+            $('#day1_dinner').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
         }else
         {
-            $('#fatsSum').val(parseFloat(t[2])*x);
+            $('#fatsSum').val(parseFloat(t[6])*x*t[8]);
             var current =  $('#day1_dinner').text();
             var currentVal =$('#day1_dinner').val();
             $('#day1_dinner').val(" ");
             $('#day1_dinner').text(" ");
-            $('#day1_dinner').val( currentVal  + ' و  '+  t[0]+x+' جم ');
+            $('#day1_dinner').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
         }
 
     }else
@@ -562,22 +567,22 @@ function getData1_dinner() {
 
         if(value)
         {
-            value +=parseFloat(t[2]*x);
+            value +=parseFloat(x*t[6]*t[8]);
             $('#proteinSum').val(value);
             var current =  $('#day1_dinner').text();
             var currentVal =$('#day1_dinner').val();
             $('#day1_dinner').val(" ");
             $('#day1_dinner').text(" ");
-            $('#day1_dinner').val( currentVal  + ' و '+  t[0]+x+' جم ');
+            $('#day1_dinner').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
         }else
         {
-            $('#proteinSum').val(parseFloat(t[2])*x);
+            $('#proteinSum').val(parseFloat(t[6])*x*t[8]);
             var current =  $('#day1_dinner').text();
             var currentVal =$('#day1_dinner').val();
             $('#day1_dinner').val(" ");
             $('#day1_dinner').text(" ");
-            $('#day1_dinner').val( currentVal  + ' و  '+  t[0]+x+' جم ');
+            $('#day1_dinner').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
         }
     }
 
@@ -597,25 +602,25 @@ function getData1_break1() {
 
         if(value)
         {
-            value +=parseFloat(t[2]*x);
+            value +=parseFloat(x*t[6]*t[8]);
             $('#carbSum').val(value);
 
             var current =  $('#day1_break1').text();
             var currentVal =$('#day1_break1').val();
             $('#day1_break1').val(" ");
             $('#day1_break1').text(" ");
-            $('#day1_break1').val( currentVal  + ' و '+  t[0]+x+' جم ');
+            $('#day1_break1').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
 
         }else
         {
-            $('#carbSum').val(parseFloat(t[2])*x);
+            $('#carbSum').val(parseFloat(t[6])*x*t[8]);
 
             var current =  $('#day1_break1').text();
             var currentVal =$('#day1_break1').val();
             $('#day1_break1').val(" ");
             $('#day1_break1').text(" ");
-            $('#day1_break1').val( currentVal  + ' و  '+  t[0]+x+' جم ');
+            $('#day1_break1').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
         }
 
@@ -625,22 +630,22 @@ function getData1_break1() {
 
         if(value)
         {
-            value +=parseFloat(t[2]*x);
+            value +=parseFloat(x*t[6]*t[8]);
             $('#fatsSum').val(value);
             var current =  $('#day1_break1').text();
             var currentVal =$('#day1_break1').val();
             $('#day1_break1').val(" ");
             $('#day1_break1').text(" ");
-            $('#day1_break1').val( currentVal  + ' و '+  t[0]+x+' جم ');
+            $('#day1_break1').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
         }else
         {
-            $('#fatsSum').val(parseFloat(t[2])*x);
+            $('#fatsSum').val(parseFloat(t[6])*x*t[8]);
             var current =  $('#day1_break1').text();
             var currentVal =$('#day1_break1').val();
             $('#day1_break1').val(" ");
             $('#day1_break1').text(" ");
-            $('#day1_break1').val( currentVal  + ' و  '+  t[0]+x+' جم ');
+            $('#day1_break1').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
         }
 
     }else
@@ -649,22 +654,22 @@ function getData1_break1() {
 
         if(value)
         {
-            value +=parseFloat(t[2]*x);
+            value +=parseFloat(x*t[6]*t[8]);
             $('#proteinSum').val(value);
             var current =  $('#day1_break1').text();
             var currentVal =$('#day1_break1').val();
             $('#day1_break1').val(" ");
             $('#day1_break1').text(" ");
-            $('#day1_break1').val( currentVal  + ' و '+  t[0]+x+' جم ');
+            $('#day1_break1').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
         }else
         {
-            $('#proteinSum').val(parseFloat(t[2])*x);
+            $('#proteinSum').val(parseFloat(t[6])*x*t[8]);
             var current =  $('#day1_break1').text();
             var currentVal =$('#day1_break1').val();
             $('#day1_break1').val(" ");
             $('#day1_break1').text(" ");
-            $('#day1_break1').val( currentVal  + ' و  '+  t[0]+x+' جم ');
+            $('#day1_break1').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
         }
     }
 
@@ -684,24 +689,24 @@ function getData1_break2() {
 
         if(value)
         {
-            value +=parseFloat(t[2]*x);
+            value +=parseFloat(x*t[6]*t[8]);
             $('#carbSum').val(value);
 
             var current =  $('#day1_break2').text();
             var currentVal =$('#day1_break2').val();
             $('#day1_break2').val(" ");
             $('#day1_break2').text(" ");
-            $('#day1_break2').val( currentVal  + ' و '+  t[0]+x+' جم ');
+            $('#day1_break2').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
         }else
         {
-            $('#carbSum').val(parseFloat(t[2])*x);
+            $('#carbSum').val(parseFloat(t[6])*x*t[8]);
 
             var current =  $('#day1_break2').text();
             var currentVal =$('#day1_break2').val();
             $('#day1_break2').val(" ");
             $('#day1_break2').text(" ");
-            $('#day1_break2').val( currentVal  + ' و  '+  t[0]+x+' جم ');
+            $('#day1_break2').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
         }
 
@@ -711,22 +716,22 @@ function getData1_break2() {
 
         if(value)
         {
-            value +=parseFloat(t[2]*x);
+            value +=parseFloat(x*t[6]*t[8]);
             $('#fatsSum').val(value);
             var current =  $('#day1_break2').text();
             var currentVal =$('#day1_break2').val();
             $('#day1_break2').val(" ");
             $('#day1_break2').text(" ");
-            $('#day1_break2').val( currentVal  + ' و '+  t[0]+x+' جم ');
+            $('#day1_break2').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
         }else
         {
-            $('#fatsSum').val(parseFloat(t[2])*x);
+            $('#fatsSum').val(parseFloat(t[6])*x*t[8]);
             var current =  $('#day1_break2').text();
             var currentVal =$('#day1_break2').val();
             $('#day1_break2').val(" ");
             $('#day1_break2').text(" ");
-            $('#day1_break2').val( currentVal  + ' و  '+  t[0]+x+' جم ');
+            $('#day1_break2').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
         }
 
     }else
@@ -735,22 +740,22 @@ function getData1_break2() {
 
         if(value)
         {
-            value +=parseFloat(t[2]*x);
+            value +=parseFloat(x*t[6]*t[8]);
             $('#proteinSum').val(value);
             var current =  $('#day1_break2').text();
             var currentVal =$('#day1_break2').val();
             $('#day1_break2').val(" ");
             $('#day1_break2').text(" ");
-            $('#day1_break2').val( currentVal  + ' و '+  t[0]+x+' جم ');
+            $('#day1_break2').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
         }else
         {
-            $('#proteinSum').val(parseFloat(t[2])*x);
+            $('#proteinSum').val(parseFloat(t[6])*x*t[8]);
             var current =  $('#day1_break2').text();
             var currentVal =$('#day1_break2').val();
             $('#day1_break2').val(" ");
             $('#day1_break2').text(" ");
-            $('#day1_break2').val( currentVal  + ' و  '+  t[0]+x+' جم ');
+            $('#day1_break2').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
         }
     }
 
@@ -784,7 +789,7 @@ function getData2() {
             var currentVal =$('#day2_breakfast').val();
             $('#day2_breakfast').val(" ");
             $('#day2_breakfast').text(" ");
-            $('#day2_breakfast').val( currentVal  + ' و '+  t[0]+x+' جم ');
+            $('#day2_breakfast').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
         }
 
@@ -796,7 +801,7 @@ function getData2() {
             var currentVal =$('#day2_breakfast').val();
             $('#day2_breakfast').val(" ");
             $('#day2_breakfast').text(" ");
-            $('#day2_breakfast').val( currentVal  + ' و  '+  t[0]+x+' جم ');
+            $('#day2_breakfast').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
 
         }
@@ -816,7 +821,7 @@ function getData2() {
             var currentVal =$('#day2_breakfast').val();
             $('#day2_breakfast').val(" ");
             $('#day2_breakfast').text(" ");
-            $('#day2_breakfast').val( currentVal  + ' و '+  t[0]+x+' جم ');
+            $('#day2_breakfast').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
         }else
         {
@@ -825,7 +830,7 @@ function getData2() {
             var currentVal =$('#day2_breakfast').val();
             $('#day2_breakfast').val(" ");
             $('#day2_breakfast').text(" ");
-            $('#day2_breakfast').val( currentVal  + ' و  '+  t[0]+x+' جم ');
+            $('#day2_breakfast').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
         }
 
     }
@@ -843,7 +848,7 @@ function getData2() {
             var currentVal =$('#day2_breakfast').val();
             $('#day2_breakfast').val(" ");
             $('#day2_breakfast').text(" ");
-            $('#day2_breakfast').val( currentVal  + ' و '+  t[0]+x+' جم ');
+            $('#day2_breakfast').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
         }else
         {
@@ -879,7 +884,7 @@ function getData2_lunch() {
             var currentVal =$('#day2_lunch').val();
             $('#day2_lunch').val(" ");
             $('#day2_lunch').text(" ");
-            $('#day2_lunch').val( currentVal  + ' و '+  t[0]+x+' جم ');
+            $('#day2_lunch').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
         }else
         {
@@ -889,7 +894,7 @@ function getData2_lunch() {
             var currentVal =$('#day2_lunch').val();
             $('#day2_lunch').val(" ");
             $('#day2_lunch').text(" ");
-            $('#day2_lunch').val( currentVal  + ' و  '+  t[0]+x+' جم ');
+            $('#day2_lunch').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
         }
 
@@ -905,7 +910,7 @@ function getData2_lunch() {
             var currentVal =$('#day2_lunch').val();
             $('#day2_lunch').val(" ");
             $('#day2_lunch').text(" ");
-            $('#day2_lunch').val( currentVal  + ' و '+  t[0]+x+' جم ');
+            $('#day2_lunch').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
         }else
         {
@@ -914,7 +919,7 @@ function getData2_lunch() {
             var currentVal =$('#day2_lunch').val();
             $('#day2_lunch').val(" ");
             $('#day2_lunch').text(" ");
-            $('#day2_lunch').val( currentVal  + ' و  '+  t[0]+x+' جم ');
+            $('#day2_lunch').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
         }
 
     }else
@@ -929,7 +934,7 @@ function getData2_lunch() {
             var currentVal =$('#day2_lunch').val();
             $('#day2_lunch').val(" ");
             $('#day2_lunch').text(" ");
-            $('#day2_lunch').val( currentVal  + ' و '+  t[0]+x+' جم ');
+            $('#day2_lunch').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
         }else
         {
@@ -938,7 +943,7 @@ function getData2_lunch() {
             var currentVal =$('#day2_lunch').val();
             $('#day2_lunch').val(" ");
             $('#day2_lunch').text(" ");
-            $('#day2_lunch').val( currentVal  + ' و  '+  t[0]+x+' جم ');
+            $('#day2_lunch').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
         }
     }
 
@@ -965,7 +970,7 @@ function getData2_dinner() {
             var currentVal =$('#day2_dinner').val();
             $('#day2_dinner').val(" ");
             $('#day2_dinner').text(" ");
-            $('#day2_dinner').val( currentVal  + ' و '+  t[0]+x+' جم ');
+            $('#day2_dinner').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
         }else
         {
@@ -975,7 +980,7 @@ function getData2_dinner() {
             var currentVal =$('#day2_dinner').val();
             $('#day2_dinner').val(" ");
             $('#day2_dinner').text(" ");
-            $('#day2_dinner').val( currentVal  + ' و  '+  t[0]+x+' جم ');
+            $('#day2_dinner').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
         }
 
@@ -991,7 +996,7 @@ function getData2_dinner() {
             var currentVal =$('#day2_dinner').val();
             $('#day2_dinner').val(" ");
             $('#day2_dinner').text(" ");
-            $('#day2_dinner').val( currentVal  + ' و '+  t[0]+x+' جم ');
+            $('#day2_dinner').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
         }else
         {
@@ -1000,7 +1005,7 @@ function getData2_dinner() {
             var currentVal =$('#day2_dinner').val();
             $('#day2_dinner').val(" ");
             $('#day2_dinner').text(" ");
-            $('#day2_dinner').val( currentVal  + ' و  '+  t[0]+x+' جم ');
+            $('#day2_dinner').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
         }
 
     }else
@@ -1015,7 +1020,7 @@ function getData2_dinner() {
             var currentVal =$('#day2_dinner').val();
             $('#day2_dinner').val(" ");
             $('#day2_dinner').text(" ");
-            $('#day2_dinner').val( currentVal  + ' و '+  t[0]+x+' جم ');
+            $('#day2_dinner').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
         }else
         {
@@ -1024,7 +1029,7 @@ function getData2_dinner() {
             var currentVal =$('#day2_dinner').val();
             $('#day2_dinner').val(" ");
             $('#day2_dinner').text(" ");
-            $('#day2_dinner').val( currentVal  + ' و  '+  t[0]+x+' جم ');
+            $('#day2_dinner').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
         }
     }
 
@@ -1051,7 +1056,7 @@ function getData2_break1() {
             var currentVal =$('#day2_break1').val();
             $('#day2_break1').val(" ");
             $('#day2_break1').text(" ");
-            $('#day2_break1').val( currentVal  + ' و '+  t[0]+x+' جم ');
+            $('#day2_break1').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
         }else
         {
@@ -1061,7 +1066,7 @@ function getData2_break1() {
             var currentVal =$('#day2_break1').val();
             $('#day2_break1').val(" ");
             $('#day2_break1').text(" ");
-            $('#day2_break1').val( currentVal  + ' و  '+  t[0]+x+' جم ');
+            $('#day2_break1').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
         }
 
@@ -1077,7 +1082,7 @@ function getData2_break1() {
             var currentVal =$('#day2_break1').val();
             $('#day2_break1').val(" ");
             $('#day2_break1').text(" ");
-            $('#day2_break1').val( currentVal  + ' و  '+  t[0]+x+' جم ');
+            $('#day2_break1').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
         }else
         {
@@ -1086,7 +1091,7 @@ function getData2_break1() {
             var currentVal =$('#day2_break1').val();
             $('#day2_break1').val(" ");
             $('#day2_break1').text(" ");
-            $('#day2_break1').val( currentVal  + ' و '+  t[0]+x+' جم ');
+            $('#day2_break1').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
         }
 
     }else
@@ -1101,7 +1106,7 @@ function getData2_break1() {
             var currentVal =$('#day2_break1').val();
             $('#day2_break1').val(" ");
             $('#day2_break1').text(" ");
-            $('#day2_break1').val( currentVal  + ' و  '+  t[0]+x+' جم ');
+            $('#day2_break1').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
         }else
         {
@@ -1110,7 +1115,7 @@ function getData2_break1() {
             var currentVal =$('#day2_break1').val();
             $('#day2_break1').val(" ");
             $('#day2_break1').text(" ");
-            $('#day2_break1').val( currentVal  + ' و '+  t[0]+x+' جم ');
+            $('#day2_break1').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
         }
     }
 
@@ -1137,7 +1142,7 @@ function getData2_break2() {
             var currentVal =$('#day2_break2').val();
             $('#day2_break2').val(" ");
             $('#day2_break2').text(" ");
-            $('#day2_break2').val( currentVal  + ' و '+  t[0]+x+' جم ');
+            $('#day2_break2').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
         }else
         {
@@ -1147,7 +1152,7 @@ function getData2_break2() {
             var currentVal =$('#day2_break2').val();
             $('#day2_break2').val(" ");
             $('#day2_break2').text(" ");
-            $('#day2_break2').val( currentVal  + ' و  '+  t[0]+x+' جم ');
+            $('#day2_break2').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
         }
 
@@ -1163,7 +1168,7 @@ function getData2_break2() {
             var currentVal =$('#day2_break2').val();
             $('#day2_break2').val(" ");
             $('#day2_break2').text(" ");
-            $('#day2_break2').val( currentVal  + ' و '+  t[0]+x+' جم ');
+            $('#day2_break2').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
         }else
         {
@@ -1172,7 +1177,7 @@ function getData2_break2() {
             var currentVal =$('#day2_break2').val();
             $('#day2_break2').val(" ");
             $('#day2_break2').text(" ");
-            $('#day2_break2').val( currentVal  + ' و  '+  t[0]+x+' جم ');
+            $('#day2_break2').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
         }
 
     }else
@@ -1187,7 +1192,7 @@ function getData2_break2() {
             var currentVal =$('#day2_break2').val();
             $('#day2_break2').val(" ");
             $('#day2_break2').text(" ");
-            $('#day2_break2').val( currentVal  + ' و '+  t[0]+x+' جم ');
+            $('#day2_break2').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
         }else
         {
@@ -1196,7 +1201,7 @@ function getData2_break2() {
             var currentVal =$('#day2_break2').val();
             $('#day2_break2').val(" ");
             $('#day2_break2').text(" ");
-            $('#day2_break2').val( currentVal  + ' و  '+  t[0]+x+' جم ');
+            $('#day2_break2').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
         }
     }
 
@@ -1229,7 +1234,7 @@ function getData3() {
             var currentVal =$('#day3_breakfast').val();
             $('#day3_breakfast').val(" ");
             $('#day3_breakfast').text(" ");
-            $('#day3_breakfast').val( currentVal  + ' و '+  t[0]+x+' جم ');
+            $('#day3_breakfast').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
         }
 
@@ -1261,7 +1266,7 @@ function getData3() {
             var currentVal =$('#day3_breakfast').val();
             $('#day3_breakfast').val(" ");
             $('#day3_breakfast').text(" ");
-            $('#day3_breakfast').val( currentVal  + ' و '+  t[0]+x+' جم ');
+            $('#day3_breakfast').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
         }else
         {
@@ -1288,7 +1293,7 @@ function getData3() {
             var currentVal =$('#day3_breakfast').val();
             $('#day3_breakfast').val(" ");
             $('#day3_breakfast').text(" ");
-            $('#day3_breakfast').val( currentVal  + ' و '+  t[0]+x+' جم ');
+            $('#day3_breakfast').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
         }else
         {
@@ -1324,7 +1329,7 @@ function getData3_lunch() {
             var currentVal =$('#day3_lunch').val();
             $('#day3_lunch').val(" ");
             $('#day3_lunch').text(" ");
-            $('#day3_lunch').val( currentVal  + ' و '+  t[0]+x+' جم ');
+            $('#day3_lunch').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
         }else
         {
@@ -1334,7 +1339,7 @@ function getData3_lunch() {
             var currentVal =$('#day3_lunch').val();
             $('#day3_lunch').val(" ");
             $('#day3_lunch').text(" ");
-            $('#day3_lunch').val( currentVal  + ' و  '+  t[0]+x+' جم ');
+            $('#day3_lunch').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
         }
 
@@ -1350,7 +1355,7 @@ function getData3_lunch() {
             var currentVal =$('#day3_lunch').val();
             $('#day3_lunch').val(" ");
             $('#day3_lunch').text(" ");
-            $('#day3_lunch').val( currentVal  + ' و '+  t[0]+x+' جم ');
+            $('#day3_lunch').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
         }else
         {
@@ -1359,7 +1364,7 @@ function getData3_lunch() {
             var currentVal =$('#day3_lunch').val();
             $('#day3_lunch').val(" ");
             $('#day3_lunch').text(" ");
-            $('#day3_lunch').val( currentVal  + ' و  '+  t[0]+x+' جم ');
+            $('#day3_lunch').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
         }
 
     }else
@@ -1374,7 +1379,7 @@ function getData3_lunch() {
             var currentVal =$('#day3_lunch').val();
             $('#day3_lunch').val(" ");
             $('#day3_lunch').text(" ");
-            $('#day3_lunch').val( currentVal  + ' و '+  t[0]+x+' جم ');
+            $('#day3_lunch').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
         }else
         {
@@ -1383,7 +1388,7 @@ function getData3_lunch() {
             var currentVal =$('#day3_lunch').val();
             $('#day3_lunch').val(" ");
             $('#day3_lunch').text(" ");
-            $('#day3_lunch').val( currentVal  + ' و  '+  t[0]+x+' جم ');
+            $('#day3_lunch').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
         }
     }
 
@@ -1410,7 +1415,7 @@ function getData3_dinner() {
             var currentVal =$('#day3_dinner').val();
             $('#day3_dinner').val(" ");
             $('#day3_dinner').text(" ");
-            $('#day3_dinner').val( currentVal  + ' و '+  t[0]+x+' جم ');
+            $('#day3_dinner').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
         }else
         {
@@ -1420,7 +1425,7 @@ function getData3_dinner() {
             var currentVal =$('#day3_dinner').val();
             $('#day3_dinner').val(" ");
             $('#day3_dinner').text(" ");
-            $('#day3_dinner').val( currentVal  + ' و  '+  t[0]+x+' جم ');
+            $('#day3_dinner').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
         }
 
@@ -1436,7 +1441,7 @@ function getData3_dinner() {
             var currentVal =$('#day3_dinner').val();
             $('#day3_dinner').val(" ");
             $('#day3_dinner').text(" ");
-            $('#day3_dinner').val( currentVal  + ' و '+  t[0]+x+' جم ');
+            $('#day3_dinner').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
         }else
         {
@@ -1445,7 +1450,7 @@ function getData3_dinner() {
             var currentVal =$('#day3_dinner').val();
             $('#day3_dinner').val(" ");
             $('#day3_dinner').text(" ");
-            $('#day3_dinner').val( currentVal  + ' و  '+  t[0]+x+' جم ');
+            $('#day3_dinner').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
         }
 
     }else
@@ -1460,7 +1465,7 @@ function getData3_dinner() {
             var currentVal =$('#day3_dinner').val();
             $('#day3_dinner').val(" ");
             $('#day3_dinner').text(" ");
-            $('#day3_dinner').val( currentVal  + ' و '+  t[0]+x+' جم ');
+            $('#day3_dinner').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
         }else
         {
@@ -1469,7 +1474,7 @@ function getData3_dinner() {
             var currentVal =$('#day3_dinner').val();
             $('#day3_dinner').val(" ");
             $('#day3_dinner').text(" ");
-            $('#day3_dinner').val( currentVal  + ' و  '+  t[0]+x+' جم ');
+            $('#day3_dinner').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
         }
     }
 
@@ -1496,7 +1501,7 @@ function getData3_break1() {
             var currentVal =$('#day3_break1').val();
             $('#day3_break1').val(" ");
             $('#day3_break1').text(" ");
-            $('#day3_break1').val( currentVal  + ' و '+  t[0]+x+' جم ');
+            $('#day3_break1').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
         }else
         {
@@ -1506,7 +1511,7 @@ function getData3_break1() {
             var currentVal =$('#day3_break1').val();
             $('#day3_break1').val(" ");
             $('#day3_break1').text(" ");
-            $('#day3_break1').val( currentVal  + ' و  '+  t[0]+x+' جم ');
+            $('#day3_break1').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
         }
 
@@ -1522,7 +1527,7 @@ function getData3_break1() {
             var currentVal =$('#day3_break1').val();
             $('#day3_break1').val(" ");
             $('#day3_break1').text(" ");
-            $('#day3_break1').val( currentVal  + ' و '+  t[0]+x+' جم ');
+            $('#day3_break1').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
         }else
         {
@@ -1531,7 +1536,7 @@ function getData3_break1() {
             var currentVal =$('#day3_break1').val();
             $('#day3_break1').val(" ");
             $('#day3_break1').text(" ");
-            $('#day3_break1').val( currentVal  + ' و  '+  t[0]+x+' جم ');
+            $('#day3_break1').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
         }
 
     }else
@@ -1546,7 +1551,7 @@ function getData3_break1() {
             var currentVal =$('#day3_break1').val();
             $('#day3_break1').val(" ");
             $('#day3_break1').text(" ");
-            $('#day3_break1').val( currentVal  + ' و '+  t[0]+x+' جم ');
+            $('#day3_break1').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
         }else
         {
@@ -1555,7 +1560,7 @@ function getData3_break1() {
             var currentVal =$('#day3_break1').val();
             $('#day3_break1').val(" ");
             $('#day3_break1').text(" ");
-            $('#day3_break1').val( currentVal  + ' و  '+  t[0]+x+' جم ');
+            $('#day3_break1').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
         }
     }
 
@@ -1582,7 +1587,7 @@ function getData3_break2() {
             var currentVal =$('#day3_break2').val();
             $('#day3_break2').val(" ");
             $('#day3_break2').text(" ");
-            $('#day3_break2').val( currentVal  + ' و  '+  t[0]+x+' جم ');
+            $('#day3_break2').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
         }else
         {
@@ -1592,7 +1597,7 @@ function getData3_break2() {
             var currentVal =$('#day3_break2').val();
             $('#day3_break2').val(" ");
             $('#day3_break2').text(" ");
-            $('#day3_break2').val( currentVal  + ' و  '+  t[0]+x+' جم ');
+            $('#day3_break2').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
         }
 
@@ -1608,7 +1613,7 @@ function getData3_break2() {
             var currentVal =$('#day3_break2').val();
             $('#day3_break2').val(" ");
             $('#day3_break2').text(" ");
-            $('#day3_break2').val( currentVal  + ' و '+  t[0]+x+' جم ');
+            $('#day3_break2').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
 
         }else
@@ -1618,7 +1623,7 @@ function getData3_break2() {
             var currentVal =$('#day3_break2').val();
             $('#day3_break2').val(" ");
             $('#day3_break2').text(" ");
-            $('#day3_break2').val( currentVal  + ' و  '+  t[0]+x+' جم ');
+            $('#day3_break2').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
         }
 
@@ -1634,7 +1639,7 @@ function getData3_break2() {
             var currentVal =$('#day3_break2').val();
             $('#day3_break2').val(" ");
             $('#day3_break2').text(" ");
-            $('#day3_break2').val( currentVal  + ' و '+  t[0]+x+' جم ');
+            $('#day3_break2').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
 
         }else
@@ -1644,7 +1649,7 @@ function getData3_break2() {
             var currentVal =$('#day3_break2').val();
             $('#day3_break2').val(" ");
             $('#day3_break2').text(" ");
-            $('#day3_break2').val( currentVal  + ' و  '+  t[0]+x+' جم ');
+            $('#day3_break2').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
         }
     }
@@ -1679,7 +1684,7 @@ function getData4() {
             var currentVal =$('#day4_breakfast').val();
             $('#day4_breakfast').val(" ");
             $('#day4_breakfast').text(" ");
-            $('#day4_breakfast').val( currentVal  + ' و '+  t[0]+x+' جم ');
+            $('#day4_breakfast').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
         }
 
@@ -1691,7 +1696,7 @@ function getData4() {
             var currentVal =$('#day4_breakfast').val();
             $('#day4_breakfast').val(" ");
             $('#day4_breakfast').text(" ");
-            $('#day4_breakfast').val( currentVal  + ' و  '+  t[0]+x+' جم ');
+            $('#day4_breakfast').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
 
         }
@@ -1711,7 +1716,7 @@ function getData4() {
             var currentVal =$('#day4_breakfast').val();
             $('#day4_breakfast').val(" ");
             $('#day4_breakfast').text(" ");
-            $('#day4_breakfast').val( currentVal  + ' و '+  t[0]+x+' جم ');
+            $('#day4_breakfast').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
         }else
         {
@@ -1720,7 +1725,7 @@ function getData4() {
             var currentVal =$('#day4_breakfast').val();
             $('#day4_breakfast').val(" ");
             $('#day4_breakfast').text(" ");
-            $('#day4_breakfast').val( currentVal  + ' و  '+  t[0]+x+' جم ');
+            $('#day4_breakfast').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
         }
 
@@ -1739,7 +1744,7 @@ function getData4() {
             var currentVal =$('#day4_breakfast').val();
             $('#day4_breakfast').val(" ");
             $('#day4_breakfast').text(" ");
-            $('#day4_breakfast').val( currentVal  + ' و '+  t[0]+x+' جم ');
+            $('#day4_breakfast').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
 
         }else
@@ -1749,7 +1754,7 @@ function getData4() {
             var currentVal =$('#day4_breakfast').val();
             $('#day4_breakfast').val(" ");
             $('#day4_breakfast').text(" ");
-            $('#day4_breakfast').val( currentVal  + ' و  '+  t[0]+x+' جم ');
+            $('#day4_breakfast').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
         }
     }
@@ -1777,7 +1782,7 @@ function getData4_lunch() {
             var currentVal =$('#day4_lunch').val();
             $('#day4_lunch').val(" ");
             $('#day4_lunch').text(" ");
-            $('#day4_lunch').val( currentVal  + ' و '+  t[0]+x+' جم ');
+            $('#day4_lunch').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
         }else
         {
@@ -1787,7 +1792,7 @@ function getData4_lunch() {
             var currentVal =$('#day4_lunch').val();
             $('#day4_lunch').val(" ");
             $('#day4_lunch').text(" ");
-            $('#day4_lunch').val( currentVal  + ' و  '+  t[0]+x+' جم ');
+            $('#day4_lunch').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
         }
 
@@ -1803,7 +1808,7 @@ function getData4_lunch() {
             var currentVal =$('#day4_lunch').val();
             $('#day4_lunch').val(" ");
             $('#day4_lunch').text(" ");
-            $('#day4_lunch').val( currentVal  + ' و '+  t[0]+x+' جم ');
+            $('#day4_lunch').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
         }else
         {
@@ -1812,7 +1817,7 @@ function getData4_lunch() {
             var currentVal =$('#day4_lunch').val();
             $('#day4_lunch').val(" ");
             $('#day4_lunch').text(" ");
-            $('#day4_lunch').val( currentVal  + ' و  '+  t[0]+x+' جم ');
+            $('#day4_lunch').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
         }
 
     }else
@@ -1827,7 +1832,7 @@ function getData4_lunch() {
             var currentVal =$('#day4_lunch').val();
             $('#day4_lunch').val(" ");
             $('#day4_lunch').text(" ");
-            $('#day4_lunch').val( currentVal  + ' و '+  t[0]+x+' جم ');
+            $('#day4_lunch').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
         }else
         {
@@ -1836,7 +1841,7 @@ function getData4_lunch() {
             var currentVal =$('#day4_lunch').val();
             $('#day4_lunch').val(" ");
             $('#day4_lunch').text(" ");
-            $('#day4_lunch').val( currentVal  + ' و  '+  t[0]+x+' جم ');
+            $('#day4_lunch').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
         }
     }
 
@@ -1863,7 +1868,7 @@ function getData4_dinner() {
             var currentVal =$('#day4_dinner').val();
             $('#day4_dinner').val(" ");
             $('#day4_dinner').text(" ");
-            $('#day4_dinner').val( currentVal  + ' و '+  t[0]+x+' جم ');
+            $('#day4_dinner').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
         }else
         {
@@ -1873,7 +1878,7 @@ function getData4_dinner() {
             var currentVal =$('#day4_dinner').val();
             $('#day4_dinner').val(" ");
             $('#day4_dinner').text(" ");
-            $('#day4_dinner').val( currentVal  + ' و  '+  t[0]+x+' جم ');
+            $('#day4_dinner').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
         }
 
@@ -1889,7 +1894,7 @@ function getData4_dinner() {
             var currentVal =$('#day4_dinner').val();
             $('#day4_dinner').val(" ");
             $('#day4_dinner').text(" ");
-            $('#day4_dinner').val( currentVal  + ' و '+  t[0]+x+' جم ');
+            $('#day4_dinner').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
         }else
         {
@@ -1898,7 +1903,7 @@ function getData4_dinner() {
             var currentVal =$('#day4_dinner').val();
             $('#day4_dinner').val(" ");
             $('#day4_dinner').text(" ");
-            $('#day4_dinner').val( currentVal  + ' و  '+  t[0]+x+' جم ');
+            $('#day4_dinner').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
         }
 
     }else
@@ -1913,7 +1918,7 @@ function getData4_dinner() {
             var currentVal =$('#day4_dinner').val();
             $('#day4_dinner').val(" ");
             $('#day4_dinner').text(" ");
-            $('#day4_dinner').val( currentVal  + ' و '+  t[0]+x+' جم ');
+            $('#day4_dinner').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
         }else
         {
@@ -1922,7 +1927,7 @@ function getData4_dinner() {
             var currentVal =$('#day4_dinner').val();
             $('#day4_dinner').val(" ");
             $('#day4_dinner').text(" ");
-            $('#day4_dinner').val( currentVal  + ' و  '+  t[0]+x+' جم ');
+            $('#day4_dinner').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
         }
     }
 
@@ -1949,7 +1954,7 @@ function getData4_break1() {
             var currentVal =$('#day4_break1').val();
             $('#day4_break1').val(" ");
             $('#day4_break1').text(" ");
-            $('#day4_break1').val( currentVal  + ' و '+  t[0]+x+' جم ');
+            $('#day4_break1').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
         }else
         {
@@ -1959,7 +1964,7 @@ function getData4_break1() {
             var currentVal =$('#day4_break1').val();
             $('#day4_break1').val(" ");
             $('#day4_break1').text(" ");
-            $('#day4_break1').val( currentVal  + ' و  '+  t[0]+x+' جم ');
+            $('#day4_break1').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
         }
 
@@ -1975,7 +1980,7 @@ function getData4_break1() {
             var currentVal =$('#day4_break1').val();
             $('#day4_break1').val(" ");
             $('#day4_break1').text(" ");
-            $('#day4_break1').val( currentVal  + ' و '+  t[0]+x+' جم ');
+            $('#day4_break1').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
         }else
         {
@@ -1984,7 +1989,7 @@ function getData4_break1() {
             var currentVal =$('#day4_break1').val();
             $('#day4_break1').val(" ");
             $('#day4_break1').text(" ");
-            $('#day4_break1').val( currentVal  + ' و  '+  t[0]+x+' جم ');
+            $('#day4_break1').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
         }
 
     }else
@@ -1999,7 +2004,7 @@ function getData4_break1() {
             var currentVal =$('#day4_break1').val();
             $('#day4_break1').val(" ");
             $('#day4_break1').text(" ");
-            $('#day4_break1').val( currentVal  + ' و '+  t[0]+x+' جم ');
+            $('#day4_break1').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
         }else
         {
@@ -2008,7 +2013,7 @@ function getData4_break1() {
             var currentVal =$('#day4_break1').val();
             $('#day4_break1').val(" ");
             $('#day4_break1').text(" ");
-            $('#day4_break1').val( currentVal  + ' و  '+  t[0]+x+' جم ');
+            $('#day4_break1').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
         }
     }
 
@@ -2035,7 +2040,7 @@ function getData4_break2() {
             var currentVal =$('#day4_break2').val();
             $('#day4_break2').val(" ");
             $('#day4_break2').text(" ");
-            $('#day4_break2').val( currentVal  + ' و '+  t[0]+x+' جم ');
+            $('#day4_break2').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
         }else
         {
@@ -2045,7 +2050,7 @@ function getData4_break2() {
             var currentVal =$('#day4_break2').val();
             $('#day4_break2').val(" ");
             $('#day4_break2').text(" ");
-            $('#day4_break2').val( currentVal  + ' و  '+  t[0]+x+' جم ');
+            $('#day4_break2').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
 
         }
@@ -2062,7 +2067,7 @@ function getData4_break2() {
             var currentVal =$('#day4_break2').val();
             $('#day4_break2').val(" ");
             $('#day4_break2').text(" ");
-            $('#day4_break2').val( currentVal  + ' و '+  t[0]+x+' جم ');
+            $('#day4_break2').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
 
         }else
@@ -2072,7 +2077,7 @@ function getData4_break2() {
             var currentVal =$('#day4_break2').val();
             $('#day4_break2').val(" ");
             $('#day4_break2').text(" ");
-            $('#day4_break2').val( currentVal  + ' و '+  t[0]+x+' جم ');
+            $('#day4_break2').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
         }
 
@@ -2088,7 +2093,7 @@ function getData4_break2() {
             var currentVal =$('#day4_break2').val();
             $('#day4_break2').val(" ");
             $('#day4_break2').text(" ");
-            $('#day4_break2').val( currentVal  + ' و '+  t[0]+x+' جم ');
+            $('#day4_break2').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
 
         }else
@@ -2098,7 +2103,7 @@ function getData4_break2() {
             var currentVal =$('#day4_break2').val();
             $('#day4_break2').val(" ");
             $('#day4_break2').text(" ");
-            $('#day4_break2').val( currentVal  + ' و  '+  t[0]+x+' جم ');
+            $('#day4_break2').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
         }
     }
@@ -2132,7 +2137,7 @@ function getData5() {
             var currentVal =$('#day5_breakfast').val();
             $('#day5_breakfast').val(" ");
             $('#day5_breakfast').text(" ");
-            $('#day5_breakfast').val( currentVal  + ' و '+  t[0]+x+' جم ');
+            $('#day5_breakfast').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
 
         }
@@ -2145,7 +2150,7 @@ function getData5() {
             var currentVal =$('#day5_breakfast').val();
             $('#day5_breakfast').val(" ");
             $('#day5_breakfast').text(" ");
-            $('#day5_breakfast').val( currentVal  + ' و  '+  t[0]+x+' جم ');
+            $('#day5_breakfast').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
 
 
@@ -2166,7 +2171,7 @@ function getData5() {
             var currentVal =$('#day5_breakfast').val();
             $('#day5_breakfast').val(" ");
             $('#day5_breakfast').text(" ");
-            $('#day5_breakfast').val( currentVal  + ' و '+  t[0]+x+' جم ');
+            $('#day5_breakfast').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
 
         }else
@@ -2176,7 +2181,7 @@ function getData5() {
             var currentVal =$('#day5_breakfast').val();
             $('#day5_breakfast').val(" ");
             $('#day5_breakfast').text(" ");
-            $('#day5_breakfast').val( currentVal  + ' و  '+  t[0]+x+' جم ');
+            $('#day5_breakfast').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
         }
 
@@ -2195,7 +2200,7 @@ function getData5() {
             var currentVal =$('#day5_breakfast').val();
             $('#day5_breakfast').val(" ");
             $('#day5_breakfast').text(" ");
-            $('#day5_breakfast').val( currentVal  + ' و '+  t[0]+x+' جم ');
+            $('#day5_breakfast').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
 
         }else
@@ -2205,7 +2210,7 @@ function getData5() {
             var currentVal =$('#day5_breakfast').val();
             $('#day5_breakfast').val(" ");
             $('#day5_breakfast').text(" ");
-            $('#day5_breakfast').val( currentVal  + ' و  '+  t[0]+x+' جم ');
+            $('#day5_breakfast').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
         }
     }
@@ -2233,7 +2238,7 @@ function getData5_lunch() {
             var currentVal =$('#day5_lunch').val();
             $('#day5_lunch').val(" ");
             $('#day5_lunch').text(" ");
-            $('#day5_lunch').val( currentVal  + ' و '+  t[0]+x+' جم ');
+            $('#day5_lunch').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
 
         }else
@@ -2244,7 +2249,7 @@ function getData5_lunch() {
             var currentVal =$('#day5_lunch').val();
             $('#day5_lunch').val(" ");
             $('#day5_lunch').text(" ");
-            $('#day5_lunch').val( currentVal  + ' و  '+  t[0]+x+' جم ');
+            $('#day5_lunch').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
 
         }
@@ -2261,7 +2266,7 @@ function getData5_lunch() {
             var currentVal =$('#day5_lunch').val();
             $('#day5_lunch').val(" ");
             $('#day5_lunch').text(" ");
-            $('#day5_lunch').val( currentVal  + ' و '+  t[0]+x+' جم ');
+            $('#day5_lunch').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
 
         }else
@@ -2271,7 +2276,7 @@ function getData5_lunch() {
             var currentVal =$('#day5_lunch').val();
             $('#day5_lunch').val(" ");
             $('#day5_lunch').text(" ");
-            $('#day5_lunch').val( currentVal  + ' و  '+  t[0]+x+' جم ');
+            $('#day5_lunch').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
         }
 
@@ -2287,7 +2292,7 @@ function getData5_lunch() {
             var currentVal =$('#day5_lunch').val();
             $('#day5_lunch').val(" ");
             $('#day5_lunch').text(" ");
-            $('#day5_lunch').val( currentVal  + ' و '+  t[0]+x+' جم ');
+            $('#day5_lunch').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
 
         }else
@@ -2297,7 +2302,7 @@ function getData5_lunch() {
             var currentVal =$('#day5_lunch').val();
             $('#day5_lunch').val(" ");
             $('#day5_lunch').text(" ");
-            $('#day5_lunch').val( currentVal  + ' و  '+  t[0]+x+' جم ');
+            $('#day5_lunch').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
         }
     }
@@ -2325,7 +2330,7 @@ function getData5_dinner() {
             var currentVal =$('#day5_dinner').val();
             $('#day5_dinner').val(" ");
             $('#day5_dinner').text(" ");
-            $('#day5_dinner').val( currentVal  + ' و '+  t[0]+x+' جم ');
+            $('#day5_dinner').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
 
         }else
@@ -2336,7 +2341,7 @@ function getData5_dinner() {
             var currentVal =$('#day5_dinner').val();
             $('#day5_dinner').val(" ");
             $('#day5_dinner').text(" ");
-            $('#day5_dinner').val( currentVal  + ' و  '+  t[0]+x+' جم ');
+            $('#day5_dinner').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
 
         }
@@ -2353,7 +2358,7 @@ function getData5_dinner() {
             var currentVal =$('#day5_dinner').val();
             $('#day5_dinner').val(" ");
             $('#day5_dinner').text(" ");
-            $('#day5_dinner').val( currentVal  + ' و '+  t[0]+x+' جم ');
+            $('#day5_dinner').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
         }else
         {
@@ -2362,7 +2367,7 @@ function getData5_dinner() {
             var currentVal =$('#day5_dinner').val();
             $('#day5_dinner').val(" ");
             $('#day5_dinner').text(" ");
-            $('#day5_dinner').val( currentVal  + ' و  '+  t[0]+x+' جم ');
+            $('#day5_dinner').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
         }
 
     }else
@@ -2377,7 +2382,7 @@ function getData5_dinner() {
             var currentVal =$('#day5_dinner').val();
             $('#day5_dinner').val(" ");
             $('#day5_dinner').text(" ");
-            $('#day5_dinner').val( currentVal  + ' و '+  t[0]+x+' جم ');
+            $('#day5_dinner').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
         }else
         {
@@ -2386,7 +2391,7 @@ function getData5_dinner() {
             var currentVal =$('#day5_dinner').val();
             $('#day5_dinner').val(" ");
             $('#day5_dinner').text(" ");
-            $('#day5_dinner').val( currentVal  + ' و  '+  t[0]+x+' جم ');
+            $('#day5_dinner').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
         }
     }
 
@@ -2413,7 +2418,7 @@ function getData5_break1() {
             var currentVal =$('#day5_break1').val();
             $('#day5_break1').val(" ");
             $('#day5_break1').text(" ");
-            $('#day5_break1').val( currentVal  + ' و '+  t[0]+x+' جم ');
+            $('#day5_break1').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
         }else
         {
@@ -2423,7 +2428,7 @@ function getData5_break1() {
             var currentVal =$('#day5_break1').val();
             $('#day5_break1').val(" ");
             $('#day5_break1').text(" ");
-            $('#day5_break1').val( currentVal  + ' و  '+  t[0]+x+' جم ');
+            $('#day5_break1').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
         }
 
@@ -2439,7 +2444,7 @@ function getData5_break1() {
             var currentVal =$('#day5_break1').val();
             $('#day5_break1').val(" ");
             $('#day5_break1').text(" ");
-            $('#day5_break1').val( currentVal  + ' و '+  t[0]+x+' جم ');
+            $('#day5_break1').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
         }else
         {
@@ -2448,7 +2453,7 @@ function getData5_break1() {
             var currentVal =$('#day5_break1').val();
             $('#day5_break1').val(" ");
             $('#day5_break1').text(" ");
-            $('#day5_break1').val( currentVal  + ' و  '+  t[0]+x+' جم ');
+            $('#day5_break1').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
         }
 
     }else
@@ -2463,7 +2468,7 @@ function getData5_break1() {
             var currentVal =$('#day5_break1').val();
             $('#day5_break1').val(" ");
             $('#day5_break1').text(" ");
-            $('#day5_break1').val( currentVal  + ' و '+  t[0]+x+' جم ');
+            $('#day5_break1').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
         }else
         {
@@ -2472,7 +2477,7 @@ function getData5_break1() {
             var currentVal =$('#day5_break1').val();
             $('#day5_break1').val(" ");
             $('#day5_break1').text(" ");
-            $('#day5_break1').val( currentVal  + ' و  '+  t[0]+x+' جم ');
+            $('#day5_break1').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
         }
     }
 
@@ -2499,7 +2504,7 @@ function getData5_break2() {
             var currentVal =$('#day5_break2').val();
             $('#day5_break2').val(" ");
             $('#day5_break2').text(" ");
-            $('#day5_break2').val( currentVal  + ' و '+  t[0]+x+' جم ');
+            $('#day5_break2').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
         }else
         {
@@ -2509,7 +2514,7 @@ function getData5_break2() {
             var currentVal =$('#day5_break2').val();
             $('#day5_break2').val(" ");
             $('#day5_break2').text(" ");
-            $('#day5_break2').val( currentVal  + ' و  '+  t[0]+x+' جم ');
+            $('#day5_break2').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
         }
 
@@ -2525,7 +2530,7 @@ function getData5_break2() {
             var currentVal =$('#day5_break2').val();
             $('#day5_break2').val(" ");
             $('#day5_break2').text(" ");
-            $('#day5_break2').val( currentVal  + ' و '+  t[0]+x+' جم ');
+            $('#day5_break2').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
         }else
         {
@@ -2534,7 +2539,7 @@ function getData5_break2() {
             var currentVal =$('#day5_break2').val();
             $('#day5_break2').val(" ");
             $('#day5_break2').text(" ");
-            $('#day5_break2').val( currentVal  + ' و '+  t[0]+x+' جم ');
+            $('#day5_break2').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
         }
 
     }else
@@ -2549,7 +2554,7 @@ function getData5_break2() {
             var currentVal =$('#day5_break2').val();
             $('#day5_break2').val(" ");
             $('#day5_break2').text(" ");
-            $('#day5_break2').val( currentVal  + ' و '+  t[0]+x+' جم ');
+            $('#day5_break2').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
         }else
         {
@@ -2558,7 +2563,7 @@ function getData5_break2() {
             var currentVal =$('#day5_break2').val();
             $('#day5_break2').val(" ");
             $('#day5_break2').text(" ");
-            $('#day5_break2').val( currentVal  + ' و  '+  t[0]+x+' جم ');
+            $('#day5_break2').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
         }
     }
 
@@ -2591,7 +2596,7 @@ function getData6() {
             var currentVal =$('#day6_breakfast').val();
             $('#day6_breakfast').val(" ");
             $('#day6_breakfast').text(" ");
-            $('#day6_breakfast').val( currentVal  + ' و '+  t[0]+x+' جم ');
+            $('#day6_breakfast').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
         }
 
@@ -2603,7 +2608,7 @@ function getData6() {
             var currentVal =$('#day6_breakfast').val();
             $('#day6_breakfast').val(" ");
             $('#day6_breakfast').text(" ");
-            $('#day6_breakfast').val( currentVal  + ' و  '+  t[0]+x+' جم ');
+            $('#day6_breakfast').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
 
 
@@ -2624,7 +2629,7 @@ function getData6() {
             var currentVal =$('#day6_breakfast').val();
             $('#day6_breakfast').val(" ");
             $('#day6_breakfast').text(" ");
-            $('#day6_breakfast').val( currentVal  + ' و '+  t[0]+x+' جم ');
+            $('#day6_breakfast').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
 
         }else
@@ -2634,7 +2639,7 @@ function getData6() {
             var currentVal =$('#day6_breakfast').val();
             $('#day6_breakfast').val(" ");
             $('#day6_breakfast').text(" ");
-            $('#day6_breakfast').val( currentVal  + ' و  '+  t[0]+x+' جم ');
+            $('#day6_breakfast').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
         }
 
@@ -2653,7 +2658,7 @@ function getData6() {
             var currentVal =$('#day6_breakfast').val();
             $('#day6_breakfast').val(" ");
             $('#day6_breakfast').text(" ");
-            $('#day6_breakfast').val( currentVal  + ' و '+  t[0]+x+' جم ');
+            $('#day6_breakfast').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
 
         }else
@@ -2663,7 +2668,7 @@ function getData6() {
             var currentVal =$('#day6_breakfast').val();
             $('#day6_breakfast').val(" ");
             $('#day6_breakfast').text(" ");
-            $('#day6_breakfast').val( currentVal  + ' و  '+  t[0]+x+' جم ');
+            $('#day6_breakfast').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
         }
     }
@@ -2691,7 +2696,7 @@ function getData6_lunch() {
             var currentVal =$('#day6_lunch').val();
             $('#day6_lunch').val(" ");
             $('#day6_lunch').text(" ");
-            $('#day6_lunch').val( currentVal  + ' و '+  t[0]+x+' جم ');
+            $('#day6_lunch').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
 
         }else
@@ -2702,7 +2707,7 @@ function getData6_lunch() {
             var currentVal =$('#day6_lunch').val();
             $('#day6_lunch').val(" ");
             $('#day6_lunch').text(" ");
-            $('#day6_lunch').val( currentVal  + ' و  '+  t[0]+x+' جم ');
+            $('#day6_lunch').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
 
 
@@ -2720,7 +2725,7 @@ function getData6_lunch() {
             var currentVal =$('#day6_lunch').val();
             $('#day6_lunch').val(" ");
             $('#day6_lunch').text(" ");
-            $('#day6_lunch').val( currentVal  + ' و '+  t[0]+x+' جم ');
+            $('#day6_lunch').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
 
         }else
@@ -2730,7 +2735,7 @@ function getData6_lunch() {
             var currentVal =$('#day6_lunch').val();
             $('#day6_lunch').val(" ");
             $('#day6_lunch').text(" ");
-            $('#day6_lunch').val( currentVal  + ' و  '+  t[0]+x+' جم ');
+            $('#day6_lunch').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
         }
 
     }else
@@ -2745,7 +2750,7 @@ function getData6_lunch() {
             var currentVal =$('#day6_lunch').val();
             $('#day6_lunch').val(" ");
             $('#day6_lunch').text(" ");
-            $('#day6_lunch').val( currentVal  + ' و '+  t[0]+x+' جم ');
+            $('#day6_lunch').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
         }else
         {
@@ -2754,7 +2759,7 @@ function getData6_lunch() {
             var currentVal =$('#day6_lunch').val();
             $('#day6_lunch').val(" ");
             $('#day6_lunch').text(" ");
-            $('#day6_lunch').val( currentVal  + ' و  '+  t[0]+x+' جم ');
+            $('#day6_lunch').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
         }
     }
 
@@ -2781,7 +2786,7 @@ function getData6_dinner() {
             var currentVal =$('#day6_dinner').val();
             $('#day6_dinner').val(" ");
             $('#day6_dinner').text(" ");
-            $('#day6_dinner').val( currentVal  + ' و '+  t[0]+x+' جم ');
+            $('#day6_dinner').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
         }else
         {
@@ -2791,7 +2796,7 @@ function getData6_dinner() {
             var currentVal =$('#day6_dinner').val();
             $('#day6_dinner').val(" ");
             $('#day6_dinner').text(" ");
-            $('#day6_dinner').val( currentVal  + ' و  '+  t[0]+x+' جم ');
+            $('#day6_dinner').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
 
         }
@@ -2808,7 +2813,7 @@ function getData6_dinner() {
             var currentVal =$('#day6_dinner').val();
             $('#day6_dinner').val(" ");
             $('#day6_dinner').text(" ");
-            $('#day6_dinner').val( currentVal  + ' و '+  t[0]+x+' جم ');
+            $('#day6_dinner').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
 
         }else
@@ -2818,7 +2823,7 @@ function getData6_dinner() {
             var currentVal =$('#day6_dinner').val();
             $('#day6_dinner').val(" ");
             $('#day6_dinner').text(" ");
-            $('#day6_dinner').val( currentVal  + ' و  '+  t[0]+x+' جم ');
+            $('#day6_dinner').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
         }
 
@@ -2834,7 +2839,7 @@ function getData6_dinner() {
             var currentVal =$('#day6_dinner').val();
             $('#day6_dinner').val(" ");
             $('#day6_dinner').text(" ");
-            $('#day6_dinner').val( currentVal  + ' و '+  t[0]+x+' جم ');
+            $('#day6_dinner').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
 
         }else
@@ -2844,7 +2849,7 @@ function getData6_dinner() {
             var currentVal =$('#day6_dinner').val();
             $('#day6_dinner').val(" ");
             $('#day6_dinner').text(" ");
-            $('#day6_dinner').val( currentVal  + ' و  '+  t[0]+x+' جم ');
+            $('#day6_dinner').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
         }
     }
@@ -2872,7 +2877,7 @@ function getData6_break1() {
             var currentVal =$('#day6_break1').val();
             $('#day6_break1').val(" ");
             $('#day6_break1').text(" ");
-            $('#day6_break1').val( currentVal  + ' و '+  t[0]+x+' جم ');
+            $('#day6_break1').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
 
         }else
@@ -2883,7 +2888,7 @@ function getData6_break1() {
             var currentVal =$('#day6_break1').val();
             $('#day6_break1').val(" ");
             $('#day6_break1').text(" ");
-            $('#day6_break1').val( currentVal  + ' و  '+  t[0]+x+' جم ');
+            $('#day6_break1').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
         }
 
@@ -2899,7 +2904,7 @@ function getData6_break1() {
             var currentVal =$('#day6_break1').val();
             $('#day6_break1').val(" ");
             $('#day6_break1').text(" ");
-            $('#day6_break1').val( currentVal  + ' و  '+  t[0]+x+' جم ');
+            $('#day6_break1').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
         }else
         {
@@ -2908,7 +2913,7 @@ function getData6_break1() {
             var currentVal =$('#day6_break1').val();
             $('#day6_break1').val(" ");
             $('#day6_break1').text(" ");
-            $('#day6_break1').val( currentVal  + ' و '+  t[0]+x+' جم ');
+            $('#day6_break1').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
         }
 
     }else
@@ -2923,7 +2928,7 @@ function getData6_break1() {
             var currentVal =$('#day6_break1').val();
             $('#day6_break1').val(" ");
             $('#day6_break1').text(" ");
-            $('#day6_break1').val( currentVal  + ' و '+  t[0]+x+' جم ');
+            $('#day6_break1').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
         }else
         {
@@ -2932,7 +2937,7 @@ function getData6_break1() {
             var currentVal =$('#day6_break1').val();
             $('#day6_break1').val(" ");
             $('#day6_break1').text(" ");
-            $('#day6_break1').val( currentVal  + ' و  '+  t[0]+x+' جم ');
+            $('#day6_break1').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
         }
     }
 
@@ -2959,7 +2964,7 @@ function getData6_break2() {
             var currentVal =$('#day6_break2').val();
             $('#day6_break2').val(" ");
             $('#day6_break2').text(" ");
-            $('#day6_break2').val( currentVal  + ' و '+  t[0]+x+' جم ');
+            $('#day6_break2').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
         }else
         {
@@ -2969,7 +2974,7 @@ function getData6_break2() {
             var currentVal =$('#day6_break2').val();
             $('#day6_break2').val(" ");
             $('#day6_break2').text(" ");
-            $('#day6_break2').val( currentVal  + ' و  '+  t[0]+x+' جم ');
+            $('#day6_break2').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
 
         }
@@ -2986,7 +2991,7 @@ function getData6_break2() {
             var currentVal =$('#day6_break2').val();
             $('#day6_break2').val(" ");
             $('#day6_break2').text(" ");
-            $('#day6_break2').val( currentVal  + ' و '+  t[0]+x+' جم ');
+            $('#day6_break2').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
 
         }else
@@ -2996,7 +3001,7 @@ function getData6_break2() {
             var currentVal =$('#day6_break2').val();
             $('#day6_break2').val(" ");
             $('#day6_break2').text(" ");
-            $('#day6_break2').val( currentVal  + ' و  '+  t[0]+x+' جم ');
+            $('#day6_break2').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
         }
 
@@ -3012,7 +3017,7 @@ function getData6_break2() {
             var currentVal =$('#day6_break2').val();
             $('#day6_break2').val(" ");
             $('#day6_break2').text(" ");
-            $('#day6_break2').val( currentVal  + ' و '+  t[0]+x+' جم ');
+            $('#day6_break2').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
 
         }else
@@ -3022,7 +3027,7 @@ function getData6_break2() {
             var currentVal =$('#day6_break2').val();
             $('#day6_break2').val(" ");
             $('#day6_break2').text(" ");
-            $('#day6_break2').val( currentVal  + ' و  '+  t[0]+x+' جم ');
+            $('#day6_break2').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
         }
     }
@@ -3057,7 +3062,7 @@ function getData7() {
             var currentVal =$('#day7_breakfast').val();
             $('#day7_breakfast').val(" ");
             $('#day7_breakfast').text(" ");
-            $('#day7_breakfast').val( currentVal  + ' و  '+  t[0]+x+' جم ');
+            $('#day7_breakfast').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
 
         }
@@ -3091,7 +3096,7 @@ function getData7() {
             var currentVal =$('#day7_breakfast').val();
             $('#day7_breakfast').val(" ");
             $('#day7_breakfast').text(" ");
-            $('#day7_breakfast').val( currentVal  + ' و  '+  t[0]+x+' جم ');
+            $('#day7_breakfast').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
 
         }else
@@ -3120,7 +3125,7 @@ function getData7() {
             var currentVal =$('#day7_breakfast').val();
             $('#day7_breakfast').val(" ");
             $('#day7_breakfast').text(" ");
-            $('#day7_breakfast').val( currentVal  + ' و  '+  t[0]+x+' جم ');
+            $('#day7_breakfast').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
 
         }else
@@ -3158,7 +3163,7 @@ function getData7_lunch() {
             var currentVal =$('#day7_lunch').val();
             $('#day7_lunch').val(" ");
             $('#day7_lunch').text(" ");
-            $('#day7_lunch').val( currentVal  + ' و  '+  t[0]+x+' جم ');
+            $('#day7_lunch').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
 
         }else
@@ -3186,7 +3191,7 @@ function getData7_lunch() {
             var currentVal =$('#day7_lunch').val();
             $('#day7_lunch').val(" ");
             $('#day7_lunch').text(" ");
-            $('#day7_lunch').val( currentVal  + ' و  '+  t[0]+x+' جم ');
+            $('#day7_lunch').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
 
         }else
@@ -3212,7 +3217,7 @@ function getData7_lunch() {
             var currentVal =$('#day7_lunch').val();
             $('#day7_lunch').val(" ");
             $('#day7_lunch').text(" ");
-            $('#day7_lunch').val( currentVal  + ' و  '+  t[0]+x+' جم ');
+            $('#day7_lunch').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
 
         }else
@@ -3250,7 +3255,7 @@ function getData7_dinner() {
             var currentVal =$('#day7_dinner').val();
             $('#day7_dinner').val(" ");
             $('#day7_dinner').text(" ");
-            $('#day7_dinner').val( currentVal  + ' و  '+  t[0]+x+' جم ');
+            $('#day7_dinner').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
 
         }else
@@ -3278,7 +3283,7 @@ function getData7_dinner() {
             var currentVal =$('#day7_dinner').val();
             $('#day7_dinner').val(" ");
             $('#day7_dinner').text(" ");
-            $('#day7_dinner').val( currentVal  + ' و  '+  t[0]+x+' جم ');
+            $('#day7_dinner').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
 
         }else
@@ -3304,7 +3309,7 @@ function getData7_dinner() {
             var currentVal =$('#day7_dinner').val();
             $('#day7_dinner').val(" ");
             $('#day7_dinner').text(" ");
-            $('#day7_dinner').val( currentVal  + ' و  '+  t[0]+x+' جم ');
+            $('#day7_dinner').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
 
         }else
@@ -3342,7 +3347,7 @@ function getData7_break1() {
             var currentVal =$('#day7_break1').val();
             $('#day7_break1').val(" ");
             $('#day7_break1').text(" ");
-            $('#day7_break1').val( currentVal  + ' و  '+  t[0]+x+' جم ');
+            $('#day7_break1').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
 
         }else
@@ -3370,7 +3375,7 @@ function getData7_break1() {
             var currentVal =$('#day7_break1').val();
             $('#day7_break1').val(" ");
             $('#day7_break1').text(" ");
-            $('#day7_break1').val( currentVal  + ' و  '+  t[0]+x+' جم ');
+            $('#day7_break1').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
 
         }else
@@ -3396,7 +3401,7 @@ function getData7_break1() {
             var currentVal =$('#day7_break1').val();
             $('#day7_break1').val(" ");
             $('#day7_break1').text(" ");
-            $('#day7_break1').val( currentVal  + ' و  '+  t[0]+x+' جم ');
+            $('#day7_break1').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
 
         }else
@@ -3434,7 +3439,7 @@ function getData7_break2() {
             var currentVal =$('#day7_break2').val();
             $('#day7_break2').val(" ");
             $('#day7_break2').text(" ");
-            $('#day7_break2').val( currentVal  + ' و  '+  t[0]+x+' جم ');
+            $('#day7_break2').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
 
         }else
@@ -3462,7 +3467,7 @@ function getData7_break2() {
             var currentVal =$('#day7_break2').val();
             $('#day7_break2').val(" ");
             $('#day7_break2').text(" ");
-            $('#day7_break2').val( currentVal  + ' و  '+  t[0]+x+' جم ');
+            $('#day7_break2').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
 
         }else
@@ -3488,7 +3493,7 @@ function getData7_break2() {
             var currentVal =$('#day7_break2').val();
             $('#day7_break2').val(" ");
             $('#day7_break2').text(" ");
-            $('#day7_break2').val( currentVal  + ' و  '+  t[0]+x+' جم ');
+            $('#day7_break2').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
 
         }else

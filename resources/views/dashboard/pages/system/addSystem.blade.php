@@ -92,16 +92,9 @@
                                         </div>
                                         <div class="col-lg-3">
                                             <select name="gmValue" id="gmValueg" class="form-control">
-                                                <option value="10">10 gm</option>
-                                                <option value="20">20 gm</option>
-                                                <option value="30">30 gm</option>
-                                                <option value="50">50 gm</option>
-                                                <option value="100">100 gm</option>
-                                                <option value="200">200 gm</option>
-                                                <option value="300">300 gm</option>
-                                                <option value="400">400 gm</option>
-                                                <option value="500">500 gm</option>
-                                                <option value="600">600 gm</option>
+                                                @for($i=1;$i<=1000;$i++)
+                                                    <option value="{{$i}}">{{$i}}</option>
+                                                @endfor
                                             </select>
                                         </div>
                                         <div class="col-lg-3">
@@ -130,9 +123,10 @@
                                             </select>
                                         </div>
                                         <div class="col-lg-3">
+
                                             <select id="selectcountries" class="form-control"></select>
                                         </div>
-                                        <div class="col-lg-2">
+                                        <div class="col-lg-3">
                                             <select name="gmValue" id="gmValue" class="form-control">
                                                 @for($i=1;$i<=1000;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
@@ -143,7 +137,7 @@
 
 
 
-                                        <div class="col-lg-2">
+                                        <div class="col-lg-3">
                                             <button type="button" class="btn btn-success" onclick="getData()">أضف</button>
                                         </div>
                                     </div>
@@ -197,16 +191,9 @@
                                         </div>
                                         <div class="col-lg-3">
                                             <select name="gmValue" id="gmValue1_break1" class="form-control" >
-                                                <option value="10">10 gm</option>
-                                                <option value="20">20 gm</option>
-                                                <option value="30">30 gm</option>
-                                                <option value="50">50 gm</option>
-                                                <option value="100">100 gm</option>
-                                                <option value="200">200 gm</option>
-                                                <option value="300">300 gm</option>
-                                                <option value="400">400 gm</option>
-                                                <option value="500">500 gm</option>
-                                                <option value="600">600 gm</option>
+                                                @for($i=1;$i<=1000;$i++)
+                                                    <option value="{{$i}}">{{$i}}</option>
+                                                @endfor
                                             </select>
                                         </div>
                                         <div class="col-lg-3">
@@ -250,16 +237,9 @@
                                             </select></div>
                                         <div class="col-lg-3"><select id="selectcountries1_lunch" class="form-control"></select></div>
                                         <div class="col-lg-3">  <select name="gmValue" id="gmValue1_lunch" class="form-control" >
-                                                <option value="10">10 gm</option>
-                                                <option value="20">20 gm</option>
-                                                <option value="30">30 gm</option>
-                                                <option value="50">50 gm</option>
-                                                <option value="100">100 gm</option>
-                                                <option value="200">200 gm</option>
-                                                <option value="300">300 gm</option>
-                                                <option value="400">400 gm</option>
-                                                <option value="500">500 gm</option>
-                                                <option value="600">600 gm</option>
+                                                @for($i=1;$i<=1000;$i++)
+                                                    <option value="{{$i}}">{{$i}}</option>
+                                                @endfor
                                             </select></div>
                                         <div class="col-lg-3">
                                             <button type="button" class="btn btn-success" onclick="getData1_lunch()">أضف</button>
@@ -308,16 +288,9 @@
                                         </div>
                                         <div class="col-lg-3">
                                             <select name="gmValue" id="gmValue1_break2" class="form-control" >
-                                                <option value="10">10 gm</option>
-                                                <option value="20">20 gm</option>
-                                                <option value="30">30 gm</option>
-                                                <option value="50">50 gm</option>
-                                                <option value="100">100 gm</option>
-                                                <option value="200">200 gm</option>
-                                                <option value="300">300 gm</option>
-                                                <option value="400">400 gm</option>
-                                                <option value="500">500 gm</option>
-                                                <option value="600">600 gm</option>
+                                                @for($i=1;$i<=1000;$i++)
+                                                    <option value="{{$i}}">{{$i}}</option>
+                                                @endfor
                                             </select>
                                         </div>
                                         <div class="col-lg-3">
@@ -370,16 +343,9 @@
                                         </div>
                                         <div class="col-lg-3">
                                             <select name="gmValue" id="gmValue1_dinner" class="form-control">
-                                                <option value="10">10 gm</option>
-                                                <option value="20">20 gm</option>
-                                                <option value="30">30 gm</option>
-                                                <option value="50">50 gm</option>
-                                                <option value="100">100 gm</option>
-                                                <option value="200">200 gm</option>
-                                                <option value="300">300 gm</option>
-                                                <option value="400">400 gm</option>
-                                                <option value="500">500 gm</option>
-                                                <option value="600">600 gm</option>
+                                                @for($i=1;$i<=1000;$i++)
+                                                    <option value="{{$i}}">{{$i}}</option>
+                                                @endfor
                                             </select>
                                         </div>
                                         <div class="col-lg-3">
@@ -490,16 +456,9 @@
                                     </div>
                                     <div class="col-lg-3">
                                         <select name="gmValue" id="gmValueg2" class="form-control">
-                                            <option value="10">10 gm</option>
-                                            <option value="20">20 gm</option>
-                                            <option value="30">30 gm</option>
-                                            <option value="50">50 gm</option>
-                                            <option value="100">100 gm</option>
-                                            <option value="200">200 gm</option>
-                                            <option value="300">300 gm</option>
-                                            <option value="400">400 gm</option>
-                                            <option value="500">500 gm</option>
-                                            <option value="600">600 gm</option>
+                                            @for($i=1;$i<=1000;$i++)
+                                                <option value="{{$i}}">{{$i}}</option>
+                                            @endfor
                                         </select>
                                     </div>
                                     <div class="col-lg-3">
@@ -529,16 +488,9 @@
                                         </div>
                                         <div class="col-lg-3">
                                             <select name="gmValue" id="gmValue2" class="form-control">
-                                                <option value="10">10 gm</option>
-                                                <option value="20">20 gm</option>
-                                                <option value="30">30 gm</option>
-                                                <option value="50">50 gm</option>
-                                                <option value="100">100 gm</option>
-                                                <option value="200">200 gm</option>
-                                                <option value="300">300 gm</option>
-                                                <option value="400">400 gm</option>
-                                                <option value="500">500 gm</option>
-                                                <option value="600">600 gm</option>
+                                                @for($i=1;$i<=1000;$i++)
+                                                    <option value="{{$i}}">{{$i}}</option>
+                                                @endfor
                                             </select>
                                         </div>
                                         <div class="col-lg-3">
@@ -587,16 +539,9 @@
                                         </div>
                                         <div class="col-lg-3">
                                             <select name="gmValue" id="gmValue2_break1" class="form-control">
-                                                <option value="10">10 gm</option>
-                                                <option value="20">20 gm</option>
-                                                <option value="30">30 gm</option>
-                                                <option value="50">50 gm</option>
-                                                <option value="100">100 gm</option>
-                                                <option value="200">200 gm</option>
-                                                <option value="300">300 gm</option>
-                                                <option value="400">400 gm</option>
-                                                <option value="500">500 gm</option>
-                                                <option value="600">600 gm</option>
+                                                @for($i=1;$i<=1000;$i++)
+                                                    <option value="{{$i}}">{{$i}}</option>
+                                                @endfor
                                             </select>
                                         </div>
                                         <div class="col-lg-3">
@@ -639,16 +584,9 @@
                                             </select></div>
                                         <div class="col-lg-3"> <select id="selectcountries2_lunch" class="form-control"></select></div>
                                         <div class="col-lg-3">   <select name="gmValue" id="gmValue2_lunch"  class="form-control">
-                                                <option value="10">10 gm</option>
-                                                <option value="20">20 gm</option>
-                                                <option value="30">30 gm</option>
-                                                <option value="50">50 gm</option>
-                                                <option value="100">100 gm</option>
-                                                <option value="200">200 gm</option>
-                                                <option value="300">300 gm</option>
-                                                <option value="400">400 gm</option>
-                                                <option value="500">500 gm</option>
-                                                <option value="600">600 gm</option>
+                                                @for($i=1;$i<=1000;$i++)
+                                                    <option value="{{$i}}">{{$i}}</option>
+                                                @endfor
                                             </select></div>
                                         <div class="col-lg-3"> <button type="button" class="btn btn-success" onclick="getData2_lunch()">أضف</button></div>
                                     </div>
@@ -689,16 +627,9 @@
                                             </select></div>
                                         <div class="col-lg-3"><select id="selectcountries2_break2" class="form-control"></select></div>
                                         <div class="col-lg-3">    <select name="gmValue" id="gmValue2_break2" class="form-control">
-                                                <option value="10">10 gm</option>
-                                                <option value="20">20 gm</option>
-                                                <option value="30">30 gm</option>
-                                                <option value="50">50 gm</option>
-                                                <option value="100">100 gm</option>
-                                                <option value="200">200 gm</option>
-                                                <option value="300">300 gm</option>
-                                                <option value="400">400 gm</option>
-                                                <option value="500">500 gm</option>
-                                                <option value="600">600 gm</option>
+                                                @for($i=1;$i<=1000;$i++)
+                                                    <option value="{{$i}}">{{$i}}</option>
+                                                @endfor
                                             </select></div>
                                         <div class="col-lg-3">      <button type="button" class="btn btn-success" onclick="getData2_break2()">أضف</button></div>
                                     </div>
@@ -739,16 +670,9 @@
                                             </select></div>
                                         <div class="col-lg-3"> <select id="selectcountries2_dinner" class="form-control"></select></div>
                                         <div class="col-lg-3">   <select name="gmValue" id="gmValue2_dinner" class="form-control">
-                                                <option value="10">10 gm</option>
-                                                <option value="20">20 gm</option>
-                                                <option value="30">30 gm</option>
-                                                <option value="50">50 gm</option>
-                                                <option value="100">100 gm</option>
-                                                <option value="200">200 gm</option>
-                                                <option value="300">300 gm</option>
-                                                <option value="400">400 gm</option>
-                                                <option value="500">500 gm</option>
-                                                <option value="600">600 gm</option>
+                                                @for($i=1;$i<=1000;$i++)
+                                                    <option value="{{$i}}">{{$i}}</option>
+                                                @endfor
                                             </select></div>
                                         <div class="col-lg-3">
                                             <button type="button" class="btn btn-success" onclick="getData2_dinner()">أضف</button></div>
@@ -854,16 +778,9 @@
                                     </div>
                                     <div class="col-lg-3">
                                         <select name="gmValue" id="gmValueg3" class="form-control">
-                                            <option value="10">10 gm</option>
-                                            <option value="20">20 gm</option>
-                                            <option value="30">30 gm</option>
-                                            <option value="50">50 gm</option>
-                                            <option value="100">100 gm</option>
-                                            <option value="200">200 gm</option>
-                                            <option value="300">300 gm</option>
-                                            <option value="400">400 gm</option>
-                                            <option value="500">500 gm</option>
-                                            <option value="600">600 gm</option>
+                                            @for($i=1;$i<=1000;$i++)
+                                                <option value="{{$i}}">{{$i}}</option>
+                                            @endfor
                                         </select>
                                     </div>
                                     <div class="col-lg-3">
@@ -885,16 +802,9 @@
                                             </select></div>
                                         <div class="col-lg-3"><select id="selectcountries3" class="form-control"></select></div>
                                         <div class="col-lg-3">     <select name="gmValue" id="gmValue3" class="form-control">
-                                                <option value="10">10 gm</option>
-                                                <option value="20">20 gm</option>
-                                                <option value="30">30 gm</option>
-                                                <option value="50">50 gm</option>
-                                                <option value="100">100 gm</option>
-                                                <option value="200">200 gm</option>
-                                                <option value="300">300 gm</option>
-                                                <option value="400">400 gm</option>
-                                                <option value="500">500 gm</option>
-                                                <option value="600">600 gm</option>
+                                                @for($i=1;$i<=1000;$i++)
+                                                <option value="{{$i}}">{{$i}}</option>
+                                            @endfor
                                             </select></div>
                                         <div class="col-lg-3">  <button type="button" class="btn btn-success" onclick="getData3()">أضف</button></div>
                                     </div>
@@ -935,16 +845,9 @@
                                         </div>
                                         <div class="col-lg-3"><select id="selectcountries3_break1" class="form-control"></select></div>
                                         <div class="col-lg-3">   <select name="gmValue" id="gmValue3_break1" class="form-control">
-                                                <option value="10">10 gm</option>
-                                                <option value="20">20 gm</option>
-                                                <option value="30">30 gm</option>
-                                                <option value="50">50 gm</option>
-                                                <option value="100">100 gm</option>
-                                                <option value="200">200 gm</option>
-                                                <option value="300">300 gm</option>
-                                                <option value="400">400 gm</option>
-                                                <option value="500">500 gm</option>
-                                                <option value="600">600 gm</option>
+                                                @for($i=1;$i<=1000;$i++)
+                                                <option value="{{$i}}">{{$i}}</option>
+                                            @endfor
                                             </select></div>
                                         <div class="col-lg-3"><button type="button" class="btn btn-success" onclick="getData3_break1()">أضف</button></div>
                                     </div>
@@ -984,16 +887,9 @@
                                             </select></div>
                                         <div class="col-lg-3"> <select id="selectcountries3_lunch" class="form-control"></select></div>
                                         <div class="col-lg-3">     <select  id="gmValue3_lunch" class="form-control">
-                                                <option value="10">10 gm</option>
-                                                <option value="20">20 gm</option>
-                                                <option value="30">30 gm</option>
-                                                <option value="50">50 gm</option>
-                                                <option value="100">100 gm</option>
-                                                <option value="200">200 gm</option>
-                                                <option value="300">300 gm</option>
-                                                <option value="400">400 gm</option>
-                                                <option value="500">500 gm</option>
-                                                <option value="600">600 gm</option>
+                                                @for($i=1;$i<=1000;$i++)
+                                                <option value="{{$i}}">{{$i}}</option>
+                                            @endfor
                                             </select></div>
                                         <div class="col-lg-3"> <button type="button" class="btn btn-success" onclick="getData3_lunch()">أضف</button></div>
                                     </div>
@@ -1034,16 +930,9 @@
                                             </select></div>
                                         <div class="col-lg-3"><select id="selectcountries3_break2" class="form-control"></select></div>
                                         <div class="col-lg-3">   <select name="gmValue" id="gmValue3_break2" class="form-control">
-                                                <option value="10">10 gm</option>
-                                                <option value="20">20 gm</option>
-                                                <option value="30">30 gm</option>
-                                                <option value="50">50 gm</option>
-                                                <option value="100">100 gm</option>
-                                                <option value="200">200 gm</option>
-                                                <option value="300">300 gm</option>
-                                                <option value="400">400 gm</option>
-                                                <option value="500">500 gm</option>
-                                                <option value="600">600 gm</option>
+                                                @for($i=1;$i<=1000;$i++)
+                                                <option value="{{$i}}">{{$i}}</option>
+                                            @endfor
                                             </select></div>
                                         <div class="col-lg-3">
                                             <button type="button" class="btn btn-success" onclick="getData3_break2()">أضف</button></div>
@@ -1085,16 +974,9 @@
                                             </select></div>
                                         <div class="col-lg-3"><select id="selectcountries3_dinner"class="form-control"></select></div>
                                         <div class="col-lg-3">   <select name="gmValue" id="gmValue3_dinner" class="form-control">
-                                                <option value="10">10 gm</option>
-                                                <option value="20">20 gm</option>
-                                                <option value="30">30 gm</option>
-                                                <option value="50">50 gm</option>
-                                                <option value="100">100 gm</option>
-                                                <option value="200">200 gm</option>
-                                                <option value="300">300 gm</option>
-                                                <option value="400">400 gm</option>
-                                                <option value="500">500 gm</option>
-                                                <option value="600">600 gm</option>
+                                                @for($i=1;$i<=1000;$i++)
+                                                <option value="{{$i}}">{{$i}}</option>
+                                            @endfor
                                             </select></div>
                                         <div class="col-lg-3"> <button type="button" class="btn btn-success" onclick="getData3_dinner()">أضف</button></div>
                                     </div>
@@ -1198,16 +1080,9 @@
                                         </div>
                                         <div class="col-lg-3">
                                             <select name="gmValue" id="gmValueg4" class="form-control">
-                                                <option value="10">10 gm</option>
-                                                <option value="20">20 gm</option>
-                                                <option value="30">30 gm</option>
-                                                <option value="50">50 gm</option>
-                                                <option value="100">100 gm</option>
-                                                <option value="200">200 gm</option>
-                                                <option value="300">300 gm</option>
-                                                <option value="400">400 gm</option>
-                                                <option value="500">500 gm</option>
-                                                <option value="600">600 gm</option>
+                                                @for($i=1;$i<=1000;$i++)
+                                                <option value="{{$i}}">{{$i}}</option>
+                                            @endfor
                                             </select>
                                         </div>
                                         <div class="col-lg-3">
@@ -1229,16 +1104,9 @@
                                             </select></div>
                                         <div class="col-lg-3">  <select id="selectcountries4" class="form-control"></select></div>
                                         <div class="col-lg-3"> <select name="gmValue" id="gmValue4" class="form-control">
-                                                <option value="10">10 gm</option>
-                                                <option value="20">20 gm</option>
-                                                <option value="30">30 gm</option>
-                                                <option value="50">50 gm</option>
-                                                <option value="100">100 gm</option>
-                                                <option value="200">200 gm</option>
-                                                <option value="300">300 gm</option>
-                                                <option value="400">400 gm</option>
-                                                <option value="500">500 gm</option>
-                                                <option value="600">600 gm</option>
+                                                @for($i=1;$i<=1000;$i++)
+                                                <option value="{{$i}}">{{$i}}</option>
+                                            @endfor
                                             </select></div>
                                         <div class="col-lg-3"> <button type="button" class="btn btn-success" onclick="getData4()">أضف</button></div>
                                     </div>
@@ -1279,16 +1147,9 @@
                                             </select></div>
                                         <div class="col-lg-3"><select id="selectcountries4_break1" class="form-control"></select></div>
                                         <div class="col-lg-3">   <select name="gmValue" id="gmValue4_break1" class="form-control">
-                                                <option value="10">10 gm</option>
-                                                <option value="20">20 gm</option>
-                                                <option value="30">30 gm</option>
-                                                <option value="50">50 gm</option>
-                                                <option value="100">100 gm</option>
-                                                <option value="200">200 gm</option>
-                                                <option value="300">300 gm</option>
-                                                <option value="400">400 gm</option>
-                                                <option value="500">500 gm</option>
-                                                <option value="600">600 gm</option>
+                                                @for($i=1;$i<=1000;$i++)
+                                                <option value="{{$i}}">{{$i}}</option>
+                                            @endfor
                                             </select></div>
                                         <div class="col-lg-3"> <button type="button" class="btn btn-success" onclick="getData4_break1()">أضف</button></div>
                                     </div>
@@ -1325,16 +1186,9 @@
                                         <div class="col-lg-3"><select id="selectcountries4_lunch" class="form-control"></select></div>
                                         <div class="col-lg-3">
                                             <select  id="gmValue4_lunch" class="form-control">
-                                                <option value="10">10 gm</option>
-                                                <option value="20">20 gm</option>
-                                                <option value="30">30 gm</option>
-                                                <option value="50">50 gm</option>
-                                                <option value="100">100 gm</option>
-                                                <option value="200">200 gm</option>
-                                                <option value="300">300 gm</option>
-                                                <option value="400">400 gm</option>
-                                                <option value="500">500 gm</option>
-                                                <option value="600">600 gm</option>
+                                                @for($i=1;$i<=1000;$i++)
+                                                <option value="{{$i}}">{{$i}}</option>
+                                            @endfor
                                             </select></div>
                                         <div class="col-lg-3"><button type="button" class="btn btn-success" onclick="getData4_lunch()">أضف</button></div>
                                     </div>
@@ -1375,16 +1229,9 @@
                                             </select></div>
                                         <div class="col-lg-3"><select id="selectcountries4_break2" class="form-control"></select></div>
                                         <div class="col-lg-3">   <select name="gmValue" id="gmValue4_break2" class="form-control" >
-                                                <option value="10">10 gm</option>
-                                                <option value="20">20 gm</option>
-                                                <option value="30">30 gm</option>
-                                                <option value="50">50 gm</option>
-                                                <option value="100">100 gm</option>
-                                                <option value="200">200 gm</option>
-                                                <option value="300">300 gm</option>
-                                                <option value="400">400 gm</option>
-                                                <option value="500">500 gm</option>
-                                                <option value="600">600 gm</option>
+                                                @for($i=1;$i<=1000;$i++)
+                                                <option value="{{$i}}">{{$i}}</option>
+                                            @endfor
                                             </select></div>
                                         <div class="col-lg-3"> <button type="button" class="btn btn-success" onclick="getData4_break2()">أضف</button></div>
                                     </div>
@@ -1425,16 +1272,9 @@
                                             </select></div>
                                         <div class="col-lg-3"> <select id="selectcountries4_dinner" class="form-control"></select></div>
                                         <div class="col-lg-3">   <select name="gmValue" id="gmValue4_dinner" class="form-control">
-                                                <option value="10">10 gm</option>
-                                                <option value="20">20 gm</option>
-                                                <option value="30">30 gm</option>
-                                                <option value="50">50 gm</option>
-                                                <option value="100">100 gm</option>
-                                                <option value="200">200 gm</option>
-                                                <option value="300">300 gm</option>
-                                                <option value="400">400 gm</option>
-                                                <option value="500">500 gm</option>
-                                                <option value="600">600 gm</option>
+                                                @for($i=1;$i<=1000;$i++)
+                                                <option value="{{$i}}">{{$i}}</option>
+                                            @endfor
                                             </select></div>
                                         <div class="col-lg-3"> <button type="button" class="btn btn-success" onclick="getData4_dinner()">أضف</button></div>
                                     </div>
@@ -1543,16 +1383,9 @@
                                         </div>
                                         <div class="col-lg-3">
                                             <select name="gmValue" id="gmValueg5" class="form-control">
-                                                <option value="10">10 gm</option>
-                                                <option value="20">20 gm</option>
-                                                <option value="30">30 gm</option>
-                                                <option value="50">50 gm</option>
-                                                <option value="100">100 gm</option>
-                                                <option value="200">200 gm</option>
-                                                <option value="300">300 gm</option>
-                                                <option value="400">400 gm</option>
-                                                <option value="500">500 gm</option>
-                                                <option value="600">600 gm</option>
+                                                @for($i=1;$i<=1000;$i++)
+                                                <option value="{{$i}}">{{$i}}</option>
+                                            @endfor
                                             </select>
                                         </div>
                                         <div class="col-lg-3">
@@ -1573,16 +1406,9 @@
                                             </select></div>
                                         <div class="col-lg-3"><select id="selectcountries5" class="form-control"></select></div>
                                         <div class="col-lg-3"> <select name="gmValue" id="gmValue5" class="form-control">
-                                                <option value="10">10 gm</option>
-                                                <option value="20">20 gm</option>
-                                                <option value="30">30 gm</option>
-                                                <option value="50">50 gm</option>
-                                                <option value="100">100 gm</option>
-                                                <option value="200">200 gm</option>
-                                                <option value="300">300 gm</option>
-                                                <option value="400">400 gm</option>
-                                                <option value="500">500 gm</option>
-                                                <option value="600">600 gm</option>
+                                                @for($i=1;$i<=1000;$i++)
+                                                <option value="{{$i}}">{{$i}}</option>
+                                            @endfor
                                             </select></div>
                                         <div class="col-lg-3"><button type="button" class="btn btn-success" onclick="getData5()">أضف</button></div>
                                     </div>
@@ -1622,16 +1448,9 @@
                                             </select></div>
                                         <div class="col-lg-3"><select id="selectcountries5_break1"class="form-control"></select></div>
                                         <div class="col-lg-3">   <select name="gmValue" id="gmValue5_break1" class="form-control">
-                                                <option value="10">10 gm</option>
-                                                <option value="20">20 gm</option>
-                                                <option value="30">30 gm</option>
-                                                <option value="50">50 gm</option>
-                                                <option value="100">100 gm</option>
-                                                <option value="200">200 gm</option>
-                                                <option value="300">300 gm</option>
-                                                <option value="400">400 gm</option>
-                                                <option value="500">500 gm</option>
-                                                <option value="600">600 gm</option>
+                                                @for($i=1;$i<=1000;$i++)
+                                                <option value="{{$i}}">{{$i}}</option>
+                                            @endfor
                                             </select></div>
                                         <div class="col-lg-3"><button type="button" class="btn btn-success" onclick="getData5_break1()">أضف</button></div>
                                     </div>
@@ -1673,16 +1492,9 @@
                                         </div>
                                         <div class="col-lg-3">   <select id="selectcountries5_lunch" class="form-control"></select></div>
                                         <div class="col-lg-3">  <select  id="gmValue5_lunch" class="form-control">
-                                                <option value="10">10 gm</option>
-                                                <option value="20">20 gm</option>
-                                                <option value="30">30 gm</option>
-                                                <option value="50">50 gm</option>
-                                                <option value="100">100 gm</option>
-                                                <option value="200">200 gm</option>
-                                                <option value="300">300 gm</option>
-                                                <option value="400">400 gm</option>
-                                                <option value="500">500 gm</option>
-                                                <option value="600">600 gm</option>
+                                                @for($i=1;$i<=1000;$i++)
+                                                <option value="{{$i}}">{{$i}}</option>
+                                            @endfor
                                             </select></div>
                                         <div class="col-lg-3"><button type="button" class="btn btn-success" onclick="getData5_lunch()">أضف</button></div>
                                     </div>
@@ -1723,16 +1535,9 @@
                                             </select></div>
                                         <div class="col-lg-3"> <select id="selectcountries5_break2" class="form-control"></select></div>
                                         <div class="col-lg-3"> <select name="gmValue" id="gmValue5_break2" class="form-control">
-                                                <option value="10">10 gm</option>
-                                                <option value="20">20 gm</option>
-                                                <option value="30">30 gm</option>
-                                                <option value="50">50 gm</option>
-                                                <option value="100">100 gm</option>
-                                                <option value="200">200 gm</option>
-                                                <option value="300">300 gm</option>
-                                                <option value="400">400 gm</option>
-                                                <option value="500">500 gm</option>
-                                                <option value="600">600 gm</option>
+                                                @for($i=1;$i<=1000;$i++)
+                                                <option value="{{$i}}">{{$i}}</option>
+                                            @endfor
                                             </select></div>
                                         <div class="col-lg-3"><button type="button" class="btn btn-success" onclick="getData5_break2()">أضف</button></div>
                                     </div>
@@ -1772,16 +1577,9 @@
                                             </select></div>
                                         <div class="col-lg-3"><select id="selectcountries5_dinner" class="form-control"></select></div>
                                         <div class="col-lg-3">  <select name="gmValue" id="gmValue5_dinner" class="form-control"class="form-control">
-                                                <option value="10">10 gm</option>
-                                                <option value="20">20 gm</option>
-                                                <option value="30">30 gm</option>
-                                                <option value="50">50 gm</option>
-                                                <option value="100">100 gm</option>
-                                                <option value="200">200 gm</option>
-                                                <option value="300">300 gm</option>
-                                                <option value="400">400 gm</option>
-                                                <option value="500">500 gm</option>
-                                                <option value="600">600 gm</option>
+                                                @for($i=1;$i<=1000;$i++)
+                                                <option value="{{$i}}">{{$i}}</option>
+                                            @endfor
                                             </select></div>
                                         <div class="col-lg-3"><button type="button" class="btn btn-success" onclick="getData5_dinner()">أضف</button></div>
                                     </div>
@@ -1887,16 +1685,9 @@
                                         </div>
                                         <div class="col-lg-3">
                                             <select name="gmValue" id="gmValueg6" class="form-control">
-                                                <option value="10">10 gm</option>
-                                                <option value="20">20 gm</option>
-                                                <option value="30">30 gm</option>
-                                                <option value="50">50 gm</option>
-                                                <option value="100">100 gm</option>
-                                                <option value="200">200 gm</option>
-                                                <option value="300">300 gm</option>
-                                                <option value="400">400 gm</option>
-                                                <option value="500">500 gm</option>
-                                                <option value="600">600 gm</option>
+                                                @for($i=1;$i<=1000;$i++)
+                                                <option value="{{$i}}">{{$i}}</option>
+                                            @endfor
                                             </select>
                                         </div>
                                         <div class="col-lg-3">
@@ -1917,16 +1708,9 @@
                                             </select></div>
                                         <div class="col-lg-3"><select id="selectcountries6" class="form-control"></select></div>
                                         <div class="col-lg-3">   <select name="gmValue" id="gmValue6" class="form-control">
-                                                <option value="10">10 gm</option>
-                                                <option value="20">20 gm</option>
-                                                <option value="30">30 gm</option>
-                                                <option value="50">50 gm</option>
-                                                <option value="100">100 gm</option>
-                                                <option value="200">200 gm</option>
-                                                <option value="300">300 gm</option>
-                                                <option value="400">400 gm</option>
-                                                <option value="500">500 gm</option>
-                                                <option value="600">600 gm</option>
+                                                @for($i=1;$i<=1000;$i++)
+                                                <option value="{{$i}}">{{$i}}</option>
+                                            @endfor
                                             </select></div>
                                         <div class="col-lg-3"> <button type="button" class="btn btn-success" onclick="getData6()">أضف</button></div>
                                     </div>
@@ -1967,16 +1751,9 @@
                                             </select></div>
                                         <div class="col-lg-3"><select id="selectcountries6_break1" class="form-control"></select></div>
                                         <div class="col-lg-3">   <select name="gmValue" id="gmValue6_break1" class="form-control">
-                                                <option value="10">10 gm</option>
-                                                <option value="20">20 gm</option>
-                                                <option value="30">30 gm</option>
-                                                <option value="50">50 gm</option>
-                                                <option value="100">100 gm</option>
-                                                <option value="200">200 gm</option>
-                                                <option value="300">300 gm</option>
-                                                <option value="400">400 gm</option>
-                                                <option value="500">500 gm</option>
-                                                <option value="600">600 gm</option>
+                                                @for($i=1;$i<=1000;$i++)
+                                                <option value="{{$i}}">{{$i}}</option>
+                                            @endfor
                                             </select></div>
                                         <div class="col-lg-3"><button type="button" class="btn btn-success" onclick="getData6_break1()">أضف</button></div>
                                     </div>
@@ -2019,16 +1796,9 @@
                                         </div>
                                         <div class="col-lg-3"> <select id="selectcountries6_lunch" class="form-control"></select></div>
                                         <div class="col-lg-3">  <select  id="gmValue6_lunch" class="form-control">
-                                                <option value="10">10 gm</option>
-                                                <option value="20">20 gm</option>
-                                                <option value="30">30 gm</option>
-                                                <option value="50">50 gm</option>
-                                                <option value="100">100 gm</option>
-                                                <option value="200">200 gm</option>
-                                                <option value="300">300 gm</option>
-                                                <option value="400">400 gm</option>
-                                                <option value="500">500 gm</option>
-                                                <option value="600">600 gm</option>
+                                                @for($i=1;$i<=1000;$i++)
+                                                <option value="{{$i}}">{{$i}}</option>
+                                            @endfor
                                             </select></div>
                                         <div class="col-lg-3"><button type="button" class="btn btn-success" onclick="getData6_lunch()">أضف</button></div>
                                     </div>
@@ -2068,16 +1838,9 @@
                                             </select></div>
                                         <div class="col-lg-3"><select id="selectcountries6_break2" class="form-control"></select></div>
                                         <div class="col-lg-3">   <select name="gmValue" id="gmValue6_break2" class="form-control">
-                                                <option value="10">10 gm</option>
-                                                <option value="20">20 gm</option>
-                                                <option value="30">30 gm</option>
-                                                <option value="50">50 gm</option>
-                                                <option value="100">100 gm</option>
-                                                <option value="200">200 gm</option>
-                                                <option value="300">300 gm</option>
-                                                <option value="400">400 gm</option>
-                                                <option value="500">500 gm</option>
-                                                <option value="600">600 gm</option>
+                                                @for($i=1;$i<=1000;$i++)
+                                                <option value="{{$i}}">{{$i}}</option>
+                                            @endfor
                                             </select></div>
                                         <div class="col-lg-3"><button type="button" class="btn btn-success" onclick="getData6_break2()">أضف</button></div>
                                     </div>
@@ -2119,16 +1882,9 @@
                                             <select id="selectcountries6_dinner" class="form-control"></select>
                                         </div>
                                         <div class="col-lg-3"> <select name="gmValue" id="gmValue6_dinner" class="form-control">
-                                                <option value="10">10 gm</option>
-                                                <option value="20">20 gm</option>
-                                                <option value="30">30 gm</option>
-                                                <option value="50">50 gm</option>
-                                                <option value="100">100 gm</option>
-                                                <option value="200">200 gm</option>
-                                                <option value="300">300 gm</option>
-                                                <option value="400">400 gm</option>
-                                                <option value="500">500 gm</option>
-                                                <option value="600">600 gm</option>
+                                                @for($i=1;$i<=1000;$i++)
+                                                <option value="{{$i}}">{{$i}}</option>
+                                            @endfor
                                             </select></div>
                                         <div class="col-lg-3"> <button type="button" class="btn btn-success" onclick="getData6_dinner()">أضف</button></div>
                                     </div>
@@ -2236,16 +1992,9 @@
                                         </div>
                                         <div class="col-lg-3">
                                             <select name="gmValue" id="gmValueg7" class="form-control">
-                                                <option value="10">10 gm</option>
-                                                <option value="20">20 gm</option>
-                                                <option value="30">30 gm</option>
-                                                <option value="50">50 gm</option>
-                                                <option value="100">100 gm</option>
-                                                <option value="200">200 gm</option>
-                                                <option value="300">300 gm</option>
-                                                <option value="400">400 gm</option>
-                                                <option value="500">500 gm</option>
-                                                <option value="600">600 gm</option>
+                                                @for($i=1;$i<=1000;$i++)
+                                                <option value="{{$i}}">{{$i}}</option>
+                                            @endfor
                                             </select>
                                         </div>
                                         <div class="col-lg-3">
@@ -2266,16 +2015,9 @@
                                             </select></div>
                                         <div class="col-lg-3"><select id="selectcountries7" class="form-control"></select></div>
                                         <div class="col-lg-3"> <select name="gmValue" id="gmValue7" class="form-control">
-                                                <option value="10">10 gm</option>
-                                                <option value="20">20 gm</option>
-                                                <option value="30">30 gm</option>
-                                                <option value="50">50 gm</option>
-                                                <option value="100">100 gm</option>
-                                                <option value="200">200 gm</option>
-                                                <option value="300">300 gm</option>
-                                                <option value="400">400 gm</option>
-                                                <option value="500">500 gm</option>
-                                                <option value="600">600 gm</option>
+                                                @for($i=1;$i<=1000;$i++)
+                                                <option value="{{$i}}">{{$i}}</option>
+                                            @endfor
                                             </select></div>
                                         <div class="col-lg-3"><button type="button" class="btn btn-success" onclick="getData7()">أضف</button></div>
                                     </div>
@@ -2316,16 +2058,9 @@
                                             </select></div>
                                         <div class="col-lg-3"> <select id="selectcountries7_break1" class="form-control"></select></div>
                                         <div class="col-lg-3">  <select name="gmValue" id="gmValue7_break1" class="form-control">
-                                                <option value="10">10 gm</option>
-                                                <option value="20">20 gm</option>
-                                                <option value="30">30 gm</option>
-                                                <option value="50">50 gm</option>
-                                                <option value="100">100 gm</option>
-                                                <option value="200">200 gm</option>
-                                                <option value="300">300 gm</option>
-                                                <option value="400">400 gm</option>
-                                                <option value="500">500 gm</option>
-                                                <option value="600">600 gm</option>
+                                                @for($i=1;$i<=1000;$i++)
+                                                <option value="{{$i}}">{{$i}}</option>
+                                            @endfor
                                             </select></div>
                                         <div class="col-lg-3"><button type="button" class="btn btn-success" onclick="getData7_break1()">أضف</button></div>
                                     </div>
@@ -2367,16 +2102,9 @@
                                         </div>
                                         <div class="col-lg-3"> <select id="selectcountries7_lunch" class="form-control"></select></div>
                                         <div class="col-lg-3">    <select  id="gmValue7_lunch" class="form-control">
-                                                <option value="10">10 gm</option>
-                                                <option value="20">20 gm</option>
-                                                <option value="30">30 gm</option>
-                                                <option value="50">50 gm</option>
-                                                <option value="100">100 gm</option>
-                                                <option value="200">200 gm</option>
-                                                <option value="300">300 gm</option>
-                                                <option value="400">400 gm</option>
-                                                <option value="500">500 gm</option>
-                                                <option value="600">600 gm</option>
+                                                @for($i=1;$i<=1000;$i++)
+                                                <option value="{{$i}}">{{$i}}</option>
+                                            @endfor
                                             </select></div>
                                         <div class="col-lg-3"><button type="button" class="btn btn-success" onclick="getData7_lunch()">أضف</button></div>
                                     </div>
@@ -2417,16 +2145,9 @@
                                             </select></div>
                                         <div class="col-lg-3"><select id="selectcountries7_break2" class="form-control"></select></div>
                                         <div class="col-lg-3">    <select name="gmValue" id="gmValue7_break2" class="form-control">
-                                                <option value="10">10 gm</option>
-                                                <option value="20">20 gm</option>
-                                                <option value="30">30 gm</option>
-                                                <option value="50">50 gm</option>
-                                                <option value="100">100 gm</option>
-                                                <option value="200">200 gm</option>
-                                                <option value="300">300 gm</option>
-                                                <option value="400">400 gm</option>
-                                                <option value="500">500 gm</option>
-                                                <option value="600">600 gm</option>
+                                                @for($i=1;$i<=1000;$i++)
+                                                <option value="{{$i}}">{{$i}}</option>
+                                            @endfor
                                             </select></div>
                                         <div class="col-lg-3"> <button type="button" class="btn btn-success" onclick="getData7_break2()">أضف</button></div>
                                     </div>
@@ -2467,16 +2188,9 @@
                                             </select></div>
                                         <div class="col-lg-3"><select id="selectcountries7_dinner" class="form-control"></select></div>
                                         <div class="col-lg-3">     <select name="gmValue" id="gmValue7_dinner" class="form-control">
-                                                <option value="10">10 gm</option>
-                                                <option value="20">20 gm</option>
-                                                <option value="30">30 gm</option>
-                                                <option value="50">50 gm</option>
-                                                <option value="100">100 gm</option>
-                                                <option value="200">200 gm</option>
-                                                <option value="300">300 gm</option>
-                                                <option value="400">400 gm</option>
-                                                <option value="500">500 gm</option>
-                                                <option value="600">600 gm</option>
+                                                @for($i=1;$i<=1000;$i++)
+                                                <option value="{{$i}}">{{$i}}</option>
+                                            @endfor
                                             </select></div>
                                         <div class="col-lg-3"><button type="button" class="btn btn-success" onclick="getData7_dinner()">أضف</button></div>
                                     </div>
