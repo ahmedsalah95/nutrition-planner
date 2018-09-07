@@ -319,7 +319,7 @@ function getData() {
     var x =  $("#gmValue option:selected").val();
     var y = $("#selectcountries option:selected").text();
     var t = y.split(/[ ,]+/);
-        alert(t[0]);
+
 
     if(t[6] ==1)
     {
@@ -467,7 +467,7 @@ function getData1_lunch() {
 
         }else
         {
-            $('#fatsSum').parseFloat(t[4])*x;
+            $('#fatsSum').val(parseFloat(t[4])*x);
             var current =  $('#day1_lunch').text();
             var currentVal =$('#day1_lunch').val();
             $('#day1_lunch').val(" ");
@@ -491,7 +491,7 @@ function getData1_lunch() {
 
         }else
         {
-            $('#proteinSum').parseFloat(t[4])*x;
+            $('#proteinSum').val(parseFloat(t[4])*x);
             var current =  $('#day1_lunch').text();
             var currentVal =$('#day1_lunch').val();
             $('#day1_lunch').val(" ");

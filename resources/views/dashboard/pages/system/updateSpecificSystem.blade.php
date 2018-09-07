@@ -2623,7 +2623,7 @@
 
         ?>
 
-        carb.push('<?php echo $item->food_name.' - '.$item->gm.' - '.$item->category_id; ?>');
+        carb.push('<?php echo $item->food_name.' - '.$item->unit.' - '.$item->calories.' - '.$item->category_id ; ?>');
 
             <?php }?>
 
@@ -2634,7 +2634,7 @@
 
         ?>
 
-        carbs.push('<?php echo $item->food_name.' - '.$item->gm.' - '.$item->category_id; ?>');
+        carbs.push('<?php echo $item->food_name.' - '.$item->unit.' - '.$item->calories.' - '.$item->category_id ; ?>');
 
             <?php }?>
 
@@ -2645,7 +2645,7 @@
 
         ?>
 
-        fats.push('<?php echo $item->food_name.' - '.$item->gm.' - '.$item->category_id; ?>');
+        fats.push('<?php echo $item->food_name.' - '.$item->unit.' - '.$item->calories.' - '.$item->category_id ; ?>');
 
             <?php }?>
 
@@ -2656,7 +2656,7 @@
 
         ?>
 
-        proteins.push('<?php echo $item->food_name.' - '.$item->gm.' - '.$item->category_id; ?>');
+        proteins.push('<?php echo $item->food_name.' - '.$item->unit.' - '.$item->calories.' - '.$item->category_id ; ?>');
 
         <?php }?>
 
