@@ -9,7 +9,7 @@ function deleteData() {
 
         if(value)
         {
-            value -=parseFloat(t[2]*x);
+            value -=parseFloat(x*t[6]*t[8]);
             $('#carbSum').val(value);
 
         }
@@ -23,7 +23,7 @@ function deleteData() {
 
         if(value)
         {
-            value -=parseFloat(t[2]*x);
+            value -=parseFloat(x*t[6]*t[8]);;
             $('#fatsSum').val(value);
         }
 
@@ -35,7 +35,7 @@ function deleteData() {
 
         if(value)
         {
-            value -=parseFloat(t[2]*x);
+            value -=parseFloat(x*t[6]*t[8]);
             $('#proteinSum').val(value);
 
 
@@ -319,15 +319,15 @@ function getData() {
     var x =  $("#gmValue option:selected").val();
     var y = $("#selectcountries option:selected").text();
     var t = y.split(/[ ,]+/);
+        alert(t[0]);
 
-
-    if(t[4] ==1)
+    if(t[6] ==1)
     {
         var value = parseFloat($('#carbSum').val()) ;
 
         if(value)
         {
-            value +=parseFloat(x*t[6]*t[8]);
+            value +=parseFloat(x*t[4]);
             $('#carbSum').val(value);
             var current =  $('#day1_breakfast').text();
             var currentVal =$('#day1_breakfast').val();
@@ -339,7 +339,7 @@ function getData() {
 
         else
         {
-            $('#carbSum').val(parseFloat(t[6])*x*t[8]);
+            $('#carbSum').val(parseFloat(t[4])*x);
 
             var current =  $('#day1_breakfast').text();
             var currentVal =$('#day1_breakfast').val();
@@ -353,7 +353,7 @@ function getData() {
     }
 
 
-    else if(t[4] ==2)
+    else if(t[6] ==2)
     {
         var value = parseFloat($('#fatsSum').val()) ;
 

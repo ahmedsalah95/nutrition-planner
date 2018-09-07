@@ -19,44 +19,11 @@
                             <div class="col-md-6 col-sm-6 col-xs-12">
                                 <input type="text" id="food_name" required="required" name="food_name"
                                        class="form-control col-md-7 col-xs-12"
-                                       value="{{$food->food_name}}">
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="calories">عدد السعرات الحرارية لكل ١٠٠ جرام
-                                <span class="required">*</span>
-                            </label>
-                            <div class="col-md-6 col-sm-6 col-xs-12">
-                                <input type="text" id="calories" required="required" name="calories"
-                                       class="form-control col-md-7 col-xs-12"
-                                       value="{{$food->calories}}">
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="calories">وحده القياس
-                                <span class="required">*</span>
-                            </label>
-                            <div class="col-md-6 col-sm-6 col-xs-12">
-                                <input type="text" id="unit" required="required" name="unit"
-                                       class="form-control col-md-7 col-xs-12"
-                                       value="{{$food->unit}}">
+                                       value="{{old('food_name')}}">
                             </div>
                         </div>
 
 
-
-                        <div class="form-group">
-                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="calories">عدد الغرامات في كل وحده
-                                <span class="required">*</span>
-                            </label>
-                            <div class="col-md-6 col-sm-6 col-xs-12">
-                                <input type="text" id="gm_in_each_unit" required="required" name="gm_in_each_unit"
-                                       class="form-control col-md-7 col-xs-12"
-                                       value="{{$food->gm_in_each_unit}}">
-                            </div>
-                        </div>
 
                         <div class="form-group">
                             <label class="control-label col-md-3 col-sm-3 col-xs-12" for="category_id">
@@ -81,11 +48,54 @@
 
 
                         <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="calories">وحده القياس / المكيال
+                                <span class="required">*</span>
+                            </label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <input type="text" id="unit" required="required" name="unit"
+                                       class="form-control col-md-7 col-xs-12"
+                                       value="{{old('unit')}}">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="calories">عدد السعرات الحرارية في كل مكيال
+                                <span class="required">*</span>
+                            </label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <input type="text" id="calories" required="required" name="calories"
+                                       class="form-control col-md-7 col-xs-12"
+                                       value="{{old('calories')}}">
+                            </div>
+                        </div>
+
+
+
+                        <div class="form-group">
                             <input type="submit" name="submit" value="حفظ" class="btn btn-success btn-block">
                         </div>
 
 
                     </form>
+                </div>
+                <br>
+                <div class="col-lg-12">
+                    <div class="row">
+                        <div class="text-center">
+                            <label for="value">عدد السعرات في كل ١٠٠ غرام</label>
+                            <input type="number" onblur="calc();" class="form-control"
+
+                                   id="value" placeholder="عدد السعرات الحرارية في كل ١٠٠ غرام ">
+                            <br>
+                            <label for="writeValue">عدد السعرات في الغرام الواحد</label>
+
+                            <input type="text" id="writeValue"
+                                   class="form-control"
+                                   placeholder="عدد السعرات في الغرام الواحد">
+
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </div>
@@ -94,6 +104,18 @@
     <script>
 
         CKEDITOR.replace('description');
+    </script>
+
+
+    <script>
+        function calc()
+        {
+            var v = $('#value').val();
+
+            $('#writeValue').val(parseFloat(v/100));
+        }
+
+
     </script>
 
 @stop
