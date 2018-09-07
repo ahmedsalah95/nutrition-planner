@@ -90,6 +90,25 @@
                                     <td>{!! $patient->goal !!}</td>
 
                                 </tr>
+                                <tr>
+                                    <td>الكم المطلوب من السعرات يوميا</td>
+                                    <td>
+                                        <?php
+
+                                            if($patient->gender == "ذكر")
+                                              {
+                                                  $maleCalories = (88.362 + (13.397 * $patient->weight) + (4.799 *$patient->height) - (5.677 *$patient->age))*1.2;
+                                                    echo $maleCalories;
+                                              }else
+                                               {
+                                                   $femaleCalories =(447.593 + (9.247 * $patient->weight) + (3.098  *$patient->height) - (4.330 *$patient->age))*1.2;
+                                                    echo $femaleCalories;
+                                               }
+
+                                        ?>
+
+                                    </td>
+                                </tr>
 
                                 <tr>
                                     <td>معدل النشاط  </td>

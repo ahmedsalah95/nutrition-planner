@@ -3,13 +3,13 @@ function deleteData() {
     var x =  $("#gmValueg option:selected").val();
     var y = $("#selectcountriesg option:selected").text();
     var t = y.split(/[ ,]+/);
-    if(t[4] ==1)
+    if(t[6] ==1)
     {
         var value = parseFloat($('#carbSum').val()) ;
 
         if(value)
         {
-            value -=parseFloat(x*t[6]*t[8]);
+            value -=parseFloat(t[4])*x;
             $('#carbSum').val(value);
 
         }
@@ -17,13 +17,13 @@ function deleteData() {
     }
 
 
-    else if(t[4] ==2)
+    else if(t[6] ==2)
     {
         var value = parseFloat($('#fatsSum').val()) ;
 
         if(value)
         {
-            value -=parseFloat(x*t[6]*t[8]);;
+            value -=parseFloat(t[4])*x;;
             $('#fatsSum').val(value);
         }
 
@@ -35,7 +35,7 @@ function deleteData() {
 
         if(value)
         {
-            value -=parseFloat(x*t[6]*t[8]);
+            value -=parseFloat(t[4])*x;
             $('#proteinSum').val(value);
 
 
@@ -50,13 +50,13 @@ function deleteData2() {
     var x =  $("#gmValueg2 option:selected").val();
     var y = $("#selectcountriesg2 option:selected").text();
     var t = y.split(/[ ,]+/);
-    if(t[4] ==1)
+    if(t[6] ==1)
     {
         var value = parseFloat($('#carbSum2').val()) ;
 
         if(value)
         {
-            value -=parseFloat(t[2]*x);
+            value -=parseFloat(t[4])*x;
             $('#carbSum2').val(value);
 
         }
@@ -64,13 +64,13 @@ function deleteData2() {
     }
 
 
-    else if(t[4] ==2)
+    else if(t[6] ==2)
     {
         var value = parseFloat($('#fatsSum2').val()) ;
 
         if(value)
         {
-            value -=parseFloat(t[2]*x);
+            value -=parseFloat(t[4])*x;
             $('#fatsSum2').val(value);
         }
 
@@ -82,7 +82,7 @@ function deleteData2() {
 
         if(value)
         {
-            value -=parseFloat(t[2]*x);
+            value -=parseFloat(t[4])*x;
             $('#proteinSum2').val(value);
 
 
@@ -95,13 +95,13 @@ function deleteData3() {
     var x =  $("#gmValueg3 option:selected").val();
     var y = $("#selectcountriesg3 option:selected").text();
     var t = y.split(/[ ,]+/);
-    if(t[4] ==1)
+    if(t[6] ==1)
     {
         var value = parseFloat($('#carbSum3').val()) ;
 
         if(value)
         {
-            value -=parseFloat(t[2]*x);
+            value -=parseFloat(t[4])*x;
             $('#carbSum3').val(value);
 
         }
@@ -109,13 +109,13 @@ function deleteData3() {
     }
 
 
-    else if(t[4] ==2)
+    else if(t[6] ==2)
     {
         var value = parseFloat($('#fatsSum3').val()) ;
 
         if(value)
         {
-            value -=parseFloat(t[2]*x);
+            value -=parseFloat(t[4])*x;
             $('#fatsSum3').val(value);
         }
 
@@ -127,7 +127,7 @@ function deleteData3() {
 
         if(value)
         {
-            value -=parseFloat(t[2]*x);
+            value -=parseFloat(t[4])*x;
             $('#proteinSum3').val(value);
 
 
@@ -140,13 +140,13 @@ function deleteData4() {
     var x =  $("#gmValueg4 option:selected").val();
     var y = $("#selectcountriesg4 option:selected").text();
     var t = y.split(/[ ,]+/);
-    if(t[4] ==1)
+    if(t[6] ==1)
     {
         var value = parseFloat($('#carbSum4').val()) ;
 
         if(value)
         {
-            value -=parseFloat(t[2]*x);
+            value -=parseFloat(t[4])*x;
             $('#carbSum4').val(value);
 
         }
@@ -154,13 +154,13 @@ function deleteData4() {
     }
 
 
-    else if(t[4] ==2)
+    else if(t[6] ==2)
     {
         var value = parseFloat($('#fatsSum4').val()) ;
 
         if(value)
         {
-            value -=parseFloat(t[2]*x);
+            value -=parseFloat(t[4])*x;
             $('#fatsSum4').val(value);
         }
 
@@ -172,7 +172,7 @@ function deleteData4() {
 
         if(value)
         {
-            value -=parseFloat(t[2]*x);
+            value -=parseFloat(t[4])*x;
             $('#proteinSum4').val(value);
 
 
@@ -185,13 +185,13 @@ function deleteData5() {
     var x =  $("#gmValueg5 option:selected").val();
     var y = $("#selectcountriesg5 option:selected").text();
     var t = y.split(/[ ,]+/);
-    if(t[4] ==1)
+    if(t[6] ==1)
     {
         var value = parseFloat($('#carbSum5').val()) ;
 
         if(value)
         {
-            value -=parseFloat(t[2]*x);
+            value -=parseFloat(t[4])*x;
             $('#carbSum5').val(value);
 
         }
@@ -199,13 +199,13 @@ function deleteData5() {
     }
 
 
-    else if(t[4] ==2)
+    else if(t[6] ==2)
     {
         var value = parseFloat($('#fatsSum5').val()) ;
 
         if(value)
         {
-            value -=parseFloat(t[2]*x);
+            value -=parseFloat(t[4])*x;
             $('#fatsSum5').val(value);
         }
 
@@ -217,7 +217,7 @@ function deleteData5() {
 
         if(value)
         {
-            value -=parseFloat(t[2]*x);
+            value -=parseFloat(t[4])*x;
             $('#proteinSum5').val(value);
 
 
@@ -229,13 +229,13 @@ function deleteData6() {
     var x =  $("#gmValueg6 option:selected").val();
     var y = $("#selectcountriesg6 option:selected").text();
     var t = y.split(/[ ,]+/);
-    if(t[4] ==1)
+    if(t[6] ==1)
     {
         var value = parseFloat($('#carbSum6').val()) ;
 
         if(value)
         {
-            value -=parseFloat(t[2]*x);
+            value -=parseFloat(t[4])*x;
             $('#carbSum6').val(value);
 
         }
@@ -243,13 +243,13 @@ function deleteData6() {
     }
 
 
-    else if(t[4] ==2)
+    else if(t[6] ==2)
     {
         var value = parseFloat($('#fatsSum6').val()) ;
 
         if(value)
         {
-            value -=parseFloat(t[2]*x);
+            value -=parseFloat(t[4])*x;
             $('#fatsSum6').val(value);
         }
 
@@ -261,7 +261,7 @@ function deleteData6() {
 
         if(value)
         {
-            value -=parseFloat(t[2]*x);
+            value -=parseFloat(t[4])*x;
             $('#proteinSum6').val(value);
 
 
@@ -273,13 +273,13 @@ function deleteData7() {
     var x =  $("#gmValueg7 option:selected").val();
     var y = $("#selectcountriesg7 option:selected").text();
     var t = y.split(/[ ,]+/);
-    if(t[4] ==1)
+    if(t[6] ==1)
     {
         var value = parseFloat($('#carbSum7').val()) ;
 
         if(value)
         {
-            value -=parseFloat(t[2]*x);
+            value -=parseFloat(t[4])*x;
             $('#carbSum7').val(value);
 
         }
@@ -287,13 +287,13 @@ function deleteData7() {
     }
 
 
-    else if(t[4] ==2)
+    else if(t[6] ==2)
     {
         var value = parseFloat($('#fatsSum7').val()) ;
 
         if(value)
         {
-            value -=parseFloat(t[2]*x);
+            value -=parseFloat(t[4])*x;
             $('#fatsSum7').val(value);
         }
 
@@ -305,7 +305,7 @@ function deleteData7() {
 
         if(value)
         {
-            value -=parseFloat(t[2]*x);
+            value -=parseFloat(t[4])*x;
             $('#proteinSum7').val(value);
 
 
@@ -359,7 +359,7 @@ function getData() {
 
         if(value)
         {
-            value +=parseFloat(x*t[6]*t[8]);
+            value +=parseFloat(t[4])*x;
             $('#fatsSum').val(value);
             var current =  $('#day1_breakfast').text();
             var currentVal =$('#day1_breakfast').val();
@@ -371,7 +371,7 @@ function getData() {
 
         else
         {
-            $('#fatsSum').val(parseFloat(t[6])*x*t[8]);
+            $('#fatsSum').val(parseFloat(t[4])*x);
 
             var current =  $('#day1_breakfast').text();
             var currentVal =$('#day1_breakfast').val();
@@ -390,7 +390,7 @@ function getData() {
 
         if(value)
         {
-            value +=parseFloat(x*t[6]*t[8]);
+            value +=parseFloat(t[4])*x;
             $('#proteinSum').val(value);
             var current =  $('#day1_breakfast').text();
             var currentVal =$('#day1_breakfast').val();
@@ -402,7 +402,7 @@ function getData() {
 
         else
         {
-            $('#proteinSum').val(parseFloat(t[6])*x*t[8]);
+            $('#proteinSum').val(parseFloat(t[4])*x);
 
             var current =  $('#day1_breakfast').text();
             var currentVal =$('#day1_breakfast').val();
@@ -424,13 +424,13 @@ function getData1_lunch() {
     var y = $("#selectcountries1_lunch option:selected").text();
     var t = y.split(/[ ,]+/);
 
-    if(t[4] ==1)
+    if(t[6] ==1)
     {
         var value = parseFloat($('#carbSum').val()) ;
 
         if(value)
         {
-            value +=parseFloat(x*t[6]*t[8]);
+            value +=parseFloat(t[4])*x;
             $('#carbSum').val(value);
 
             var current =  $('#day1_lunch').text();
@@ -441,7 +441,7 @@ function getData1_lunch() {
 
         }else
         {
-            $('#carbSum').val(parseFloat(t[6])*x*t[8]);
+            $('#carbSum').val(parseFloat(t[4])*x);
 
             var current =  $('#day1_lunch').text();
             var currentVal =$('#day1_lunch').val();
@@ -451,13 +451,13 @@ function getData1_lunch() {
 
         }
 
-    }else if(t[4] ==2)
+    }else if(t[6] ==2)
     {
         var value = parseFloat($('#fatsSum').val()) ;
 
         if(value)
         {
-            value +=parseFloat(x*t[6]*t[8]);
+            value +=parseFloat(t[4])*x;
             $('#fatsSum').val(value);
             var current =  $('#day1_lunch').text();
             var currentVal =$('#day1_lunch').val();
@@ -467,7 +467,7 @@ function getData1_lunch() {
 
         }else
         {
-            $('#fatsSum').parseFloat(x*t[6]*t[8]);
+            $('#fatsSum').parseFloat(t[4])*x;
             var current =  $('#day1_lunch').text();
             var currentVal =$('#day1_lunch').val();
             $('#day1_lunch').val(" ");
@@ -481,7 +481,7 @@ function getData1_lunch() {
 
         if(value)
         {
-            value +=parseFloat(x*t[6]*t[8]);
+            value +=parseFloat(t[4])*x;
             $('#proteinSum').val(value);
             var current =  $('#day1_lunch').text();
             var currentVal =$('#day1_lunch').val();
@@ -491,7 +491,7 @@ function getData1_lunch() {
 
         }else
         {
-            $('#proteinSum').parseFloat(x*t[6]*t[8]);
+            $('#proteinSum').parseFloat(t[4])*x;
             var current =  $('#day1_lunch').text();
             var currentVal =$('#day1_lunch').val();
             $('#day1_lunch').val(" ");
@@ -510,13 +510,13 @@ function getData1_dinner() {
     var y = $("#selectcountries1_dinner option:selected").text();
     var t = y.split(/[ ,]+/);
 
-    if(t[4] ==1)
+    if(t[6] ==1)
     {
         var value = parseFloat($('#carbSum').val()) ;
 
         if(value)
         {
-            value +=parseFloat(x*t[6]*t[8]);
+            value +=parseFloat(t[4])*x;
             $('#carbSum').val(value);
 
             var current =  $('#day1_dinner').text();
@@ -527,7 +527,7 @@ function getData1_dinner() {
 
         }else
         {
-            $('#carbSum').val(parseFloat(t[6])*x*t[8]);
+            $('#carbSum').val(parseFloat(t[4])*x);
 
             var current =  $('#day1_dinner').text();
             var currentVal =$('#day1_dinner').val();
@@ -537,13 +537,13 @@ function getData1_dinner() {
 
         }
 
-    }else if(t[4] ==2)
+    }else if(t[6] ==2)
     {
         var value = parseFloat($('#fatsSum').val()) ;
 
         if(value)
         {
-            value +=parseFloat(x*t[6]*t[8]);
+            value +=parseFloat(t[4])*x;
             $('#fatsSum').val(value);
             var current =  $('#day1_dinner').text();
             var currentVal =$('#day1_dinner').val();
@@ -553,7 +553,7 @@ function getData1_dinner() {
 
         }else
         {
-            $('#fatsSum').val(parseFloat(t[6])*x*t[8]);
+            $('#fatsSum').val(parseFloat(t[4])*x);
             var current =  $('#day1_dinner').text();
             var currentVal =$('#day1_dinner').val();
             $('#day1_dinner').val(" ");
@@ -567,7 +567,7 @@ function getData1_dinner() {
 
         if(value)
         {
-            value +=parseFloat(x*t[6]*t[8]);
+            value +=parseFloat(t[4])*x;
             $('#proteinSum').val(value);
             var current =  $('#day1_dinner').text();
             var currentVal =$('#day1_dinner').val();
@@ -577,7 +577,7 @@ function getData1_dinner() {
 
         }else
         {
-            $('#proteinSum').val(parseFloat(t[6])*x*t[8]);
+            $('#proteinSum').val(parseFloat(t[4])*x);
             var current =  $('#day1_dinner').text();
             var currentVal =$('#day1_dinner').val();
             $('#day1_dinner').val(" ");
@@ -596,13 +596,13 @@ function getData1_break1() {
     var y = $("#selectcountries1_break1 option:selected").text();
     var t = y.split(/[ ,]+/);
 
-    if(t[4] ==1)
+    if(t[6] ==1)
     {
         var value = parseFloat($('#carbSum').val()) ;
 
         if(value)
         {
-            value +=parseFloat(x*t[6]*t[8]);
+            value +=parseFloat(t[4])*x;
             $('#carbSum').val(value);
 
             var current =  $('#day1_break1').text();
@@ -614,7 +614,7 @@ function getData1_break1() {
 
         }else
         {
-            $('#carbSum').val(parseFloat(t[6])*x*t[8]);
+            $('#carbSum').val(parseFloat(t[4])*x);
 
             var current =  $('#day1_break1').text();
             var currentVal =$('#day1_break1').val();
@@ -624,13 +624,13 @@ function getData1_break1() {
 
         }
 
-    }else if(t[4] ==2)
+    }else if(t[6] ==2)
     {
         var value = parseFloat($('#fatsSum').val()) ;
 
         if(value)
         {
-            value +=parseFloat(x*t[6]*t[8]);
+            value +=parseFloat(t[4])*x;
             $('#fatsSum').val(value);
             var current =  $('#day1_break1').text();
             var currentVal =$('#day1_break1').val();
@@ -640,7 +640,7 @@ function getData1_break1() {
 
         }else
         {
-            $('#fatsSum').val(parseFloat(t[6])*x*t[8]);
+            $('#fatsSum').val(parseFloat(t[4])*x);
             var current =  $('#day1_break1').text();
             var currentVal =$('#day1_break1').val();
             $('#day1_break1').val(" ");
@@ -654,7 +654,7 @@ function getData1_break1() {
 
         if(value)
         {
-            value +=parseFloat(x*t[6]*t[8]);
+            value +=parseFloat(t[4])*x;
             $('#proteinSum').val(value);
             var current =  $('#day1_break1').text();
             var currentVal =$('#day1_break1').val();
@@ -664,7 +664,7 @@ function getData1_break1() {
 
         }else
         {
-            $('#proteinSum').val(parseFloat(t[6])*x*t[8]);
+            $('#proteinSum').val(parseFloat(t[4])*x);
             var current =  $('#day1_break1').text();
             var currentVal =$('#day1_break1').val();
             $('#day1_break1').val(" ");
@@ -683,13 +683,13 @@ function getData1_break2() {
     var y = $("#selectcountries1_break2 option:selected").text();
     var t = y.split(/[ ,]+/);
 
-    if(t[4] ==1)
+    if(t[6] ==1)
     {
         var value = parseFloat($('#carbSum').val()) ;
 
         if(value)
         {
-            value +=parseFloat(x*t[6]*t[8]);
+            value +=parseFloat(t[4])*x;
             $('#carbSum').val(value);
 
             var current =  $('#day1_break2').text();
@@ -700,7 +700,7 @@ function getData1_break2() {
 
         }else
         {
-            $('#carbSum').val(parseFloat(t[6])*x*t[8]);
+            $('#carbSum').val(parseFloat(t[4])*x);
 
             var current =  $('#day1_break2').text();
             var currentVal =$('#day1_break2').val();
@@ -710,13 +710,13 @@ function getData1_break2() {
 
         }
 
-    }else if(t[4] ==2)
+    }else if(t[6] ==2)
     {
         var value = parseFloat($('#fatsSum').val()) ;
 
         if(value)
         {
-            value +=parseFloat(x*t[6]*t[8]);
+            value +=parseFloat(t[4])*x;
             $('#fatsSum').val(value);
             var current =  $('#day1_break2').text();
             var currentVal =$('#day1_break2').val();
@@ -726,7 +726,7 @@ function getData1_break2() {
 
         }else
         {
-            $('#fatsSum').val(parseFloat(t[6])*x*t[8]);
+            $('#fatsSum').val(parseFloat(t[4])*x);
             var current =  $('#day1_break2').text();
             var currentVal =$('#day1_break2').val();
             $('#day1_break2').val(" ");
@@ -740,7 +740,7 @@ function getData1_break2() {
 
         if(value)
         {
-            value +=parseFloat(x*t[6]*t[8]);
+            value +=parseFloat(t[4])*x;
             $('#proteinSum').val(value);
             var current =  $('#day1_break2').text();
             var currentVal =$('#day1_break2').val();
@@ -750,7 +750,7 @@ function getData1_break2() {
 
         }else
         {
-            $('#proteinSum').val(parseFloat(t[6])*x*t[8]);
+            $('#proteinSum').val(parseFloat(t[4])*x);
             var current =  $('#day1_break2').text();
             var currentVal =$('#day1_break2').val();
             $('#day1_break2').val(" ");
@@ -773,13 +773,13 @@ function getData2() {
     var y = $("#selectcountries2 option:selected").text();
     var t = y.split(/[ ,]+/);
 
-    if(t[4] ==1)
+    if(t[6] ==1)
     {
         var value = parseFloat($('#carbSum2').val()) ;
 
         if(value)
         {
-            value +=parseFloat(t[2]*x);
+            value +=parseFloat(t[4])*x;
             $('#carbSum2').val(value);
             //    $('#day1_breakfast').focus();
 
@@ -795,7 +795,7 @@ function getData2() {
 
         else
         {
-            $('#carbSum2').val(parseFloat(t[2])*x);
+            $('#carbSum2').val(parseFloat(t[4])*x);
 
             var current =  $('#day2_breakfast').text();
             var currentVal =$('#day2_breakfast').val();
@@ -809,13 +809,13 @@ function getData2() {
     }
 
 
-    else if(t[4] ==2)
+    else if(t[6] ==2)
     {
         var value = parseFloat($('#fatsSum2').val()) ;
 
         if(value)
         {
-            value +=parseFloat(t[2]*x);
+            value +=parseFloat(t[4])*x;
             $('#fatsSum2').val(value);
             var current =  $('#day2_breakfast').text();
             var currentVal =$('#day2_breakfast').val();
@@ -825,7 +825,7 @@ function getData2() {
 
         }else
         {
-            $('#fatsSum2').val(parseFloat(t[2])*x);
+            $('#fatsSum2').val(parseFloat(t[4])*x);
             var current =  $('#day2_breakfast').text();
             var currentVal =$('#day2_breakfast').val();
             $('#day2_breakfast').val(" ");
@@ -841,7 +841,7 @@ function getData2() {
 
         if(value)
         {
-            value +=parseFloat(t[2]*x);
+            value +=parseFloat(t[4])*x;
             $('#proteinSum2').val(value);
 
             var current =  $('#day2_breakfast').text();
@@ -852,7 +852,7 @@ function getData2() {
 
         }else
         {
-            $('#proteinSum2').val(parseFloat(t[2])*x);
+            $('#proteinSum2').val(parseFloat(t[4])*x);
             var current =  $('#day2_breakfast').text();
             var currentVal =$('#day2_breakfast').val();
             $('#day2_breakfast').val(" ");
@@ -871,13 +871,13 @@ function getData2_lunch() {
     var y = $("#selectcountries2_lunch option:selected").text();
     var t = y.split(/[ ,]+/);
 
-    if(t[4] ==1)
+    if(t[6] ==1)
     {
         var value = parseFloat($('#carbSum2').val()) ;
 
         if(value)
         {
-            value +=parseFloat(t[2]*x);
+            value +=parseFloat(t[4])*x;
             $('#carbSum2').val(value);
 
             var current =  $('#day2_lunch').text();
@@ -888,7 +888,7 @@ function getData2_lunch() {
 
         }else
         {
-            $('#carbSum2').val(parseFloat(t[2])*x);
+            $('#carbSum2').val(parseFloat(t[4])*x);
 
             var current =  $('#day2_lunch').text();
             var currentVal =$('#day2_lunch').val();
@@ -898,13 +898,13 @@ function getData2_lunch() {
 
         }
 
-    }else if(t[4] ==2)
+    }else if(t[6] ==2)
     {
         var value = parseFloat($('#fatsSum2').val()) ;
 
         if(value)
         {
-            value +=parseFloat(t[2]*x);
+            value +=parseFloat(t[4])*x;
             $('#fatsSum2').val(value);
             var current =  $('#day2_lunch').text();
             var currentVal =$('#day2_lunch').val();
@@ -914,7 +914,7 @@ function getData2_lunch() {
 
         }else
         {
-            $('#fatsSum2').val(parseFloat(t[2])*x);
+            $('#fatsSum2').val(parseFloat(t[4])*x);
             var current =  $('#day2_lunch').text();
             var currentVal =$('#day2_lunch').val();
             $('#day2_lunch').val(" ");
@@ -928,7 +928,7 @@ function getData2_lunch() {
 
         if(value)
         {
-            value +=parseFloat(t[2]*x);
+            value +=parseFloat(t[4])*x;
             $('#proteinSum2').val(value);
             var current =  $('#day2_lunch').text();
             var currentVal =$('#day2_lunch').val();
@@ -938,7 +938,7 @@ function getData2_lunch() {
 
         }else
         {
-            $('#proteinSum2').val(parseFloat(t[2])*x);
+            $('#proteinSum2').val(parseFloat(t[4])*x);
             var current =  $('#day2_lunch').text();
             var currentVal =$('#day2_lunch').val();
             $('#day2_lunch').val(" ");
@@ -957,13 +957,13 @@ function getData2_dinner() {
     var y = $("#selectcountries2_dinner option:selected").text();
     var t = y.split(/[ ,]+/);
 
-    if(t[4] ==1)
+    if(t[6] ==1)
     {
         var value = parseFloat($('#carbSum2').val()) ;
 
         if(value)
         {
-            value +=parseFloat(t[2]*x);
+            value +=parseFloat(t[4])*x;
             $('#carbSum2').val(value);
 
             var current =  $('#day2_dinner').text();
@@ -974,7 +974,7 @@ function getData2_dinner() {
 
         }else
         {
-            $('#carbSum2').val(parseFloat(t[2])*x);
+            $('#carbSum2').val(parseFloat(t[4])*x);
 
             var current =  $('#day2_dinner').text();
             var currentVal =$('#day2_dinner').val();
@@ -984,13 +984,13 @@ function getData2_dinner() {
 
         }
 
-    }else if(t[4] ==2)
+    }else if(t[6] ==2)
     {
         var value = parseFloat($('#fatsSum2').val()) ;
 
         if(value)
         {
-            value +=parseFloat(t[2]*x);
+            value +=parseFloat(t[4])*x;
             $('#fatsSum2').val(value);
             var current =  $('#day2_dinner').text();
             var currentVal =$('#day2_dinner').val();
@@ -1000,7 +1000,7 @@ function getData2_dinner() {
 
         }else
         {
-            $('#fatsSum2').val(parseFloat(t[2])*x);
+            $('#fatsSum2').val(parseFloat(t[4])*x);
             var current =  $('#day2_dinner').text();
             var currentVal =$('#day2_dinner').val();
             $('#day2_dinner').val(" ");
@@ -1014,7 +1014,7 @@ function getData2_dinner() {
 
         if(value)
         {
-            value +=parseFloat(t[2]*x);
+            value +=parseFloat(t[4])*x;
             $('#proteinSum2').val(value);
             var current =  $('#day2_dinner').text();
             var currentVal =$('#day2_dinner').val();
@@ -1024,7 +1024,7 @@ function getData2_dinner() {
 
         }else
         {
-            $('#proteinSum2').val(parseFloat(t[2])*x);
+            $('#proteinSum2').val(parseFloat(t[4])*x);
             var current =  $('#day2_dinner').text();
             var currentVal =$('#day2_dinner').val();
             $('#day2_dinner').val(" ");
@@ -1043,13 +1043,13 @@ function getData2_break1() {
     var y = $("#selectcountries2_break1 option:selected").text();
     var t = y.split(/[ ,]+/);
 
-    if(t[4] ==1)
+    if(t[6] ==1)
     {
         var value = parseFloat($('#carbSum2').val()) ;
 
         if(value)
         {
-            value +=parseFloat(t[2]*x);
+            value +=parseFloat(t[4])*x;
             $('#carbSum2').val(value);
 
             var current =  $('#day2_break1').text();
@@ -1060,7 +1060,7 @@ function getData2_break1() {
 
         }else
         {
-            $('#carbSum2').val(parseFloat(t[2])*x);
+            $('#carbSum2').val(parseFloat(t[4])*x);
 
             var current =  $('#day2_break1').text();
             var currentVal =$('#day2_break1').val();
@@ -1070,13 +1070,13 @@ function getData2_break1() {
 
         }
 
-    }else if(t[4] ==2)
+    }else if(t[6] ==2)
     {
         var value = parseFloat($('#fatsSum2').val()) ;
 
         if(value)
         {
-            value +=parseFloat(t[2]*x);
+            value +=parseFloat(t[4])*x;
             $('#fatsSum2').val(value);
             var current =  $('#day2_break1').text();
             var currentVal =$('#day2_break1').val();
@@ -1086,7 +1086,7 @@ function getData2_break1() {
 
         }else
         {
-            $('#fatsSum2').val(parseFloat(t[2])*x);
+            $('#fatsSum2').val(parseFloat(t[4])*x);
             var current =  $('#day2_break1').text();
             var currentVal =$('#day2_break1').val();
             $('#day2_break1').val(" ");
@@ -1100,7 +1100,7 @@ function getData2_break1() {
 
         if(value)
         {
-            value +=parseFloat(t[2]*x);
+            value +=parseFloat(t[4])*x;
             $('#proteinSum2').val(value);
             var current =  $('#day2_break1').text();
             var currentVal =$('#day2_break1').val();
@@ -1110,7 +1110,7 @@ function getData2_break1() {
 
         }else
         {
-            $('#proteinSum2').val(parseFloat(t[2])*x);
+            $('#proteinSum2').val(parseFloat(t[4])*x);
             var current =  $('#day2_break1').text();
             var currentVal =$('#day2_break1').val();
             $('#day2_break1').val(" ");
@@ -1129,13 +1129,13 @@ function getData2_break2() {
     var y = $("#selectcountries2_break2 option:selected").text();
     var t = y.split(/[ ,]+/);
 
-    if(t[4] ==1)
+    if(t[6] ==1)
     {
         var value = parseFloat($('#carbSum2').val()) ;
 
         if(value)
         {
-            value +=parseFloat(t[2]*x);
+            value +=parseFloat(t[4])*x;
             $('#carbSum2').val(value);
 
             var current =  $('#day2_break2').text();
@@ -1146,7 +1146,7 @@ function getData2_break2() {
 
         }else
         {
-            $('#carbSum2').val(parseFloat(t[2])*x);
+            $('#carbSum2').val(parseFloat(t[4])*x);
 
             var current =  $('#day2_break2').text();
             var currentVal =$('#day2_break2').val();
@@ -1156,13 +1156,13 @@ function getData2_break2() {
 
         }
 
-    }else if(t[4] ==2)
+    }else if(t[6] ==2)
     {
         var value = parseFloat($('#fatsSum2').val()) ;
 
         if(value)
         {
-            value +=parseFloat(t[2]*x);
+            value +=parseFloat(t[4])*x;
             $('#fatsSum2').val(value);
             var current =  $('#day2_break2').text();
             var currentVal =$('#day2_break2').val();
@@ -1172,7 +1172,7 @@ function getData2_break2() {
 
         }else
         {
-            $('#fatsSum2').val(parseFloat(t[2])*x);
+            $('#fatsSum2').val(parseFloat(t[4])*x);
             var current =  $('#day2_break2').text();
             var currentVal =$('#day2_break2').val();
             $('#day2_break2').val(" ");
@@ -1186,7 +1186,7 @@ function getData2_break2() {
 
         if(value)
         {
-            value +=parseFloat(t[2]*x);
+            value +=parseFloat(t[4])*x;
             $('#proteinSum2').val(value);
             var current =  $('#day2_break2').text();
             var currentVal =$('#day2_break2').val();
@@ -1196,7 +1196,7 @@ function getData2_break2() {
 
         }else
         {
-            $('#proteinSum2').val(parseFloat(t[2])*x);
+            $('#proteinSum2').val(parseFloat(t[4])*x);
             var current =  $('#day2_break2').text();
             var currentVal =$('#day2_break2').val();
             $('#day2_break2').val(" ");
@@ -1218,13 +1218,13 @@ function getData3() {
     var y = $("#selectcountries3 option:selected").text();
     var t = y.split(/[ ,]+/);
 
-    if(t[4] ==1)
+    if(t[6] ==1)
     {
         var value = parseFloat($('#carbSum3').val()) ;
 
         if(value)
         {
-            value +=parseFloat(t[2]*x);
+            value +=parseFloat(t[4])*x;
             $('#carbSum3').val(value);
             //    $('#day1_breakfast').focus();
 
@@ -1240,13 +1240,13 @@ function getData3() {
 
         else
         {
-            $('#carbSum3').val(parseFloat(t[2])*x);
+            $('#carbSum3').val(parseFloat(t[4])*x);
 
             var current =  $('#day3_breakfast').text();
             var currentVal =$('#day3_breakfast').val();
             $('#day3_breakfast').val(" ");
             $('#day3_breakfast').text(" ");
-            $('#day3_breakfast').val( currentVal  + ' '+  t[0]+x+' جم ');
+            $('#day3_breakfast').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
 
         }
@@ -1254,13 +1254,13 @@ function getData3() {
     }
 
 
-    else if(t[4] ==2)
+    else if(t[6] ==2)
     {
         var value = parseFloat($('#fatsSum3').val()) ;
 
         if(value)
         {
-            value +=parseFloat(t[2]*x);
+            value +=parseFloat(t[4])*x;
             $('#fatsSum3').val(value);
             var current =  $('#day3_breakfast').text();
             var currentVal =$('#day3_breakfast').val();
@@ -1270,12 +1270,12 @@ function getData3() {
 
         }else
         {
-            $('#fatsSum3').val(parseFloat(t[2])*x);
+            $('#fatsSum3').val(parseFloat(t[4])*x);
             var current =  $('#day3_breakfast').text();
             var currentVal =$('#day3_breakfast').val();
             $('#day3_breakfast').val(" ");
             $('#day3_breakfast').text(" ");
-            $('#day3_breakfast').val( currentVal  + ' '+  t[0]+x+' جم ');
+            $('#day3_breakfast').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
         }
 
     }
@@ -1286,7 +1286,7 @@ function getData3() {
 
         if(value)
         {
-            value +=parseFloat(t[2]*x);
+            value +=parseFloat(t[4])*x;
             $('#proteinSum3').val(value);
 
             var current =  $('#day3_breakfast').text();
@@ -1297,12 +1297,12 @@ function getData3() {
 
         }else
         {
-            $('#proteinSum3').val(parseFloat(t[2])*x);
+            $('#proteinSum3').val(parseFloat(t[4])*x);
             var current =  $('#day3_breakfast').text();
             var currentVal =$('#day3_breakfast').val();
             $('#day3_breakfast').val(" ");
             $('#day3_breakfast').text(" ");
-            $('#day3_breakfast').val( currentVal  + ' '+  t[0]+x+' جم ');
+            $('#day3_breakfast').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
         }
     }
 
@@ -1316,13 +1316,13 @@ function getData3_lunch() {
     var y = $("#selectcountries3_lunch option:selected").text();
     var t = y.split(/[ ,]+/);
 
-    if(t[4] ==1)
+    if(t[6] ==1)
     {
         var value = parseFloat($('#carbSum3').val()) ;
 
         if(value)
         {
-            value +=parseFloat(t[2]*x);
+            value +=parseFloat(t[4])*x;
             $('#carbSum3').val(value);
 
             var current =  $('#day3_lunch').text();
@@ -1333,7 +1333,7 @@ function getData3_lunch() {
 
         }else
         {
-            $('#carbSum3').val(parseFloat(t[2])*x);
+            $('#carbSum3').val(parseFloat(t[4])*x);
 
             var current =  $('#day3_lunch').text();
             var currentVal =$('#day3_lunch').val();
@@ -1343,13 +1343,13 @@ function getData3_lunch() {
 
         }
 
-    }else if(t[4] ==2)
+    }else if(t[6] ==2)
     {
         var value = parseFloat($('#fatsSum3').val()) ;
 
         if(value)
         {
-            value +=parseFloat(t[2]*x);
+            value +=parseFloat(t[4])*x;
             $('#fatsSum3').val(value);
             var current =  $('#day3_lunch').text();
             var currentVal =$('#day3_lunch').val();
@@ -1359,7 +1359,7 @@ function getData3_lunch() {
 
         }else
         {
-            $('#fatsSum3').val(parseFloat(t[2])*x);
+            $('#fatsSum3').val(parseFloat(t[4])*x);
             var current =  $('#day3_lunch').text();
             var currentVal =$('#day3_lunch').val();
             $('#day3_lunch').val(" ");
@@ -1373,7 +1373,7 @@ function getData3_lunch() {
 
         if(value)
         {
-            value +=parseFloat(t[2]*x);
+            value +=parseFloat(t[4])*x;
             $('#proteinSum3').val(value);
             var current =  $('#day3_lunch').text();
             var currentVal =$('#day3_lunch').val();
@@ -1383,7 +1383,7 @@ function getData3_lunch() {
 
         }else
         {
-            $('#proteinSum3').val(parseFloat(t[2])*x);
+            $('#proteinSum3').val(parseFloat(t[4])*x);
             var current =  $('#day3_lunch').text();
             var currentVal =$('#day3_lunch').val();
             $('#day3_lunch').val(" ");
@@ -1402,13 +1402,13 @@ function getData3_dinner() {
     var y = $("#selectcountries3_dinner option:selected").text();
     var t = y.split(/[ ,]+/);
 
-    if(t[4] ==1)
+    if(t[6] ==1)
     {
         var value = parseFloat($('#carbSum3').val()) ;
 
         if(value)
         {
-            value +=parseFloat(t[2]*x);
+            value +=parseFloat(t[4])*x;
             $('#carbSum3').val(value);
 
             var current =  $('#day3_dinner').text();
@@ -1419,7 +1419,7 @@ function getData3_dinner() {
 
         }else
         {
-            $('#carbSum3').val(parseFloat(t[2])*x);
+            $('#carbSum3').val(parseFloat(t[4])*x);
 
             var current =  $('#day3_dinner').text();
             var currentVal =$('#day3_dinner').val();
@@ -1429,13 +1429,13 @@ function getData3_dinner() {
 
         }
 
-    }else if(t[4] ==2)
+    }else if(t[6] ==2)
     {
         var value = parseFloat($('#fatsSum3').val()) ;
 
         if(value)
         {
-            value +=parseFloat(t[2]*x);
+            value +=parseFloat(t[4])*x;
             $('#fatsSum3').val(value);
             var current =  $('#day3_dinner').text();
             var currentVal =$('#day3_dinner').val();
@@ -1445,7 +1445,7 @@ function getData3_dinner() {
 
         }else
         {
-            $('#fatsSum3').val(parseFloat(t[2])*x);
+            $('#fatsSum3').val(parseFloat(t[4])*x);
             var current =  $('#day3_dinner').text();
             var currentVal =$('#day3_dinner').val();
             $('#day3_dinner').val(" ");
@@ -1459,7 +1459,7 @@ function getData3_dinner() {
 
         if(value)
         {
-            value +=parseFloat(t[2]*x);
+            value +=parseFloat(t[4])*x;
             $('#proteinSum3').val(value);
             var current =  $('#day3_dinner').text();
             var currentVal =$('#day3_dinner').val();
@@ -1469,7 +1469,7 @@ function getData3_dinner() {
 
         }else
         {
-            $('#proteinSum3').val(parseFloat(t[2])*x);
+            $('#proteinSum3').val(parseFloat(t[4])*x);
             var current =  $('#day3_dinner').text();
             var currentVal =$('#day3_dinner').val();
             $('#day3_dinner').val(" ");
@@ -1488,13 +1488,13 @@ function getData3_break1() {
     var y = $("#selectcountries3_break1 option:selected").text();
     var t = y.split(/[ ,]+/);
 
-    if(t[4] ==1)
+    if(t[6] ==1)
     {
         var value = parseFloat($('#carbSum3').val()) ;
 
         if(value)
         {
-            value +=parseFloat(t[2]*x);
+            value +=parseFloat(t[4])*x;
             $('#carbSum3').val(value);
 
             var current =  $('#day3_break1').text();
@@ -1505,7 +1505,7 @@ function getData3_break1() {
 
         }else
         {
-            $('#carbSum3').val(parseFloat(t[2])*x);
+            $('#carbSum3').val(parseFloat(t[4])*x);
 
             var current =  $('#day3_break1').text();
             var currentVal =$('#day3_break1').val();
@@ -1515,13 +1515,13 @@ function getData3_break1() {
 
         }
 
-    }else if(t[4] ==2)
+    }else if(t[6] ==2)
     {
         var value = parseFloat($('#fatsSum3').val()) ;
 
         if(value)
         {
-            value +=parseFloat(t[2]*x);
+            value +=parseFloat(t[4])*x;
             $('#fatsSum3').val(value);
             var current =  $('#day3_break1').text();
             var currentVal =$('#day3_break1').val();
@@ -1531,7 +1531,7 @@ function getData3_break1() {
 
         }else
         {
-            $('#fatsSum3').val(parseFloat(t[2])*x);
+            $('#fatsSum3').val(parseFloat(t[4])*x);
             var current =  $('#day3_break1').text();
             var currentVal =$('#day3_break1').val();
             $('#day3_break1').val(" ");
@@ -1545,7 +1545,7 @@ function getData3_break1() {
 
         if(value)
         {
-            value +=parseFloat(t[2]*x);
+            value +=parseFloat(t[4])*x;
             $('#proteinSum3').val(value);
             var current =  $('#day3_break1').text();
             var currentVal =$('#day3_break1').val();
@@ -1555,7 +1555,7 @@ function getData3_break1() {
 
         }else
         {
-            $('#proteinSum3').val(parseFloat(t[2])*x);
+            $('#proteinSum3').val(parseFloat(t[4])*x);
             var current =  $('#day3_break1').text();
             var currentVal =$('#day3_break1').val();
             $('#day3_break1').val(" ");
@@ -1574,13 +1574,13 @@ function getData3_break2() {
     var y = $("#selectcountries3_break2 option:selected").text();
     var t = y.split(/[ ,]+/);
 
-    if(t[4] ==1)
+    if(t[6] ==1)
     {
         var value = parseFloat($('#carbSum3').val()) ;
 
         if(value)
         {
-            value +=parseFloat(t[2]*x);
+            value +=parseFloat(t[4])*x;
             $('#carbSum3').val(value);
 
             var current =  $('#day3_break2').text();
@@ -1591,7 +1591,7 @@ function getData3_break2() {
 
         }else
         {
-            $('#carbSum3').val(parseFloat(t[2])*x);
+            $('#carbSum3').val(parseFloat(t[4])*x);
 
             var current =  $('#day3_break2').text();
             var currentVal =$('#day3_break2').val();
@@ -1601,13 +1601,13 @@ function getData3_break2() {
 
         }
 
-    }else if(t[4] ==2)
+    }else if(t[6] ==2)
     {
         var value = parseFloat($('#fatsSum3').val()) ;
 
         if(value)
         {
-            value +=parseFloat(t[2]*x);
+            value +=parseFloat(t[4])*x;
             $('#fatsSum3').val(value);
             var current =  $('#day3_break2').text();
             var currentVal =$('#day3_break2').val();
@@ -1618,7 +1618,7 @@ function getData3_break2() {
 
         }else
         {
-            $('#fatsSum3').val(parseFloat(t[2])*x);
+            $('#fatsSum3').val(parseFloat(t[4])*x);
             var current =  $('#day3_break2').text();
             var currentVal =$('#day3_break2').val();
             $('#day3_break2').val(" ");
@@ -1633,7 +1633,7 @@ function getData3_break2() {
 
         if(value)
         {
-            value +=parseFloat(t[2]*x);
+            value +=parseFloat(t[4])*x;
             $('#proteinSum3').val(value);
             var current =  $('#day3_break2').text();
             var currentVal =$('#day3_break2').val();
@@ -1644,7 +1644,7 @@ function getData3_break2() {
 
         }else
         {
-            $('#proteinSum3').val(parseFloat(t[2])*x);
+            $('#proteinSum3').val(parseFloat(t[4])*x);
             var current =  $('#day3_break2').text();
             var currentVal =$('#day3_break2').val();
             $('#day3_break2').val(" ");
@@ -1668,13 +1668,13 @@ function getData4() {
     var y = $("#selectcountries4 option:selected").text();
     var t = y.split(/[ ,]+/);
 
-    if(t[4] ==1)
+    if(t[6] ==1)
     {
         var value = parseFloat($('#carbSum4').val()) ;
 
         if(value)
         {
-            value +=parseFloat(t[2]*x);
+            value +=parseFloat(t[4])*x;
             $('#carbSum4').val(value);
             //    $('#day1_breakfast').focus();
 
@@ -1690,7 +1690,7 @@ function getData4() {
 
         else
         {
-            $('#carbSum4').val(parseFloat(t[2])*x);
+            $('#carbSum4').val(parseFloat(t[4])*x);
 
             var current =  $('#day4_breakfast').text();
             var currentVal =$('#day4_breakfast').val();
@@ -1704,13 +1704,13 @@ function getData4() {
     }
 
 
-    else if(t[4] ==2)
+    else if(t[6] ==2)
     {
         var value = parseFloat($('#fatsSum4').val()) ;
 
         if(value)
         {
-            value +=parseFloat(t[2]*x);
+            value +=parseFloat(t[4])*x;
             $('#fatsSum4').val(value);
             var current =  $('#day4_breakfast').text();
             var currentVal =$('#day4_breakfast').val();
@@ -1720,7 +1720,7 @@ function getData4() {
 
         }else
         {
-            $('#fatsSum4').val(parseFloat(t[2])*x);
+            $('#fatsSum4').val(parseFloat(t[4])*x);
             var current =  $('#day4_breakfast').text();
             var currentVal =$('#day4_breakfast').val();
             $('#day4_breakfast').val(" ");
@@ -1737,7 +1737,7 @@ function getData4() {
 
         if(value)
         {
-            value +=parseFloat(t[2]*x);
+            value +=parseFloat(t[4])*x;
             $('#proteinSum4').val(value);
 
             var current =  $('#day4_breakfast').text();
@@ -1749,7 +1749,7 @@ function getData4() {
 
         }else
         {
-            $('#proteinSum4').val(parseFloat(t[2])*x);
+            $('#proteinSum4').val(parseFloat(t[4])*x);
             var current =  $('#day4_breakfast').text();
             var currentVal =$('#day4_breakfast').val();
             $('#day4_breakfast').val(" ");
@@ -1769,13 +1769,13 @@ function getData4_lunch() {
     var y = $("#selectcountries4_lunch option:selected").text();
     var t = y.split(/[ ,]+/);
 
-    if(t[4] ==1)
+    if(t[6] ==1)
     {
         var value = parseFloat($('#carbSum4').val()) ;
 
         if(value)
         {
-            value +=parseFloat(t[2]*x);
+            value +=parseFloat(t[4])*x;
             $('#carbSum4').val(value);
 
             var current =  $('#day4_lunch').text();
@@ -1786,7 +1786,7 @@ function getData4_lunch() {
 
         }else
         {
-            $('#carbSum4').val(parseFloat(t[2])*x);
+            $('#carbSum4').val(parseFloat(t[4])*x);
 
             var current =  $('#day4_lunch').text();
             var currentVal =$('#day4_lunch').val();
@@ -1796,13 +1796,13 @@ function getData4_lunch() {
 
         }
 
-    }else if(t[4] ==2)
+    }else if(t[6] ==2)
     {
         var value = parseFloat($('#fatsSum4').val()) ;
 
         if(value)
         {
-            value +=parseFloat(t[2]*x);
+            value +=parseFloat(t[4])*x;
             $('#fatsSum4').val(value);
             var current =  $('#day4_lunch').text();
             var currentVal =$('#day4_lunch').val();
@@ -1812,7 +1812,7 @@ function getData4_lunch() {
 
         }else
         {
-            $('#fatsSum4').val(parseFloat(t[2])*x);
+            $('#fatsSum4').val(parseFloat(t[4])*x);
             var current =  $('#day4_lunch').text();
             var currentVal =$('#day4_lunch').val();
             $('#day4_lunch').val(" ");
@@ -1826,7 +1826,7 @@ function getData4_lunch() {
 
         if(value)
         {
-            value +=parseFloat(t[2]*x);
+            value +=parseFloat(t[4])*x;
             $('#proteinSum4').val(value);
             var current =  $('#day4_lunch').text();
             var currentVal =$('#day4_lunch').val();
@@ -1836,7 +1836,7 @@ function getData4_lunch() {
 
         }else
         {
-            $('#proteinSum4').val(parseFloat(t[2])*x);
+            $('#proteinSum4').val(parseFloat(t[4])*x);
             var current =  $('#day4_lunch').text();
             var currentVal =$('#day4_lunch').val();
             $('#day4_lunch').val(" ");
@@ -1855,13 +1855,13 @@ function getData4_dinner() {
     var y = $("#selectcountries4_dinner option:selected").text();
     var t = y.split(/[ ,]+/);
 
-    if(t[4] ==1)
+    if(t[6] ==1)
     {
         var value = parseFloat($('#carbSum4').val()) ;
 
         if(value)
         {
-            value +=parseFloat(t[2]*x);
+            value +=parseFloat(t[4])*x;
             $('#carbSum4').val(value);
 
             var current =  $('#day4_dinner').text();
@@ -1872,7 +1872,7 @@ function getData4_dinner() {
 
         }else
         {
-            $('#carbSum4').val(parseFloat(t[2])*x);
+            $('#carbSum4').val(parseFloat(t[4])*x);
 
             var current =  $('#day4_dinner').text();
             var currentVal =$('#day4_dinner').val();
@@ -1882,13 +1882,13 @@ function getData4_dinner() {
 
         }
 
-    }else if(t[4] ==2)
+    }else if(t[6] ==2)
     {
         var value = parseFloat($('#fatsSum4').val()) ;
 
         if(value)
         {
-            value +=parseFloat(t[2]*x);
+            value +=parseFloat(t[4])*x;
             $('#fatsSum4').val(value);
             var current =  $('#day4_dinner').text();
             var currentVal =$('#day4_dinner').val();
@@ -1898,7 +1898,7 @@ function getData4_dinner() {
 
         }else
         {
-            $('#fatsSum4').val(parseFloat(t[2])*x);
+            $('#fatsSum4').val(parseFloat(t[4])*x);
             var current =  $('#day4_dinner').text();
             var currentVal =$('#day4_dinner').val();
             $('#day4_dinner').val(" ");
@@ -1912,7 +1912,7 @@ function getData4_dinner() {
 
         if(value)
         {
-            value +=parseFloat(t[2]*x);
+            value +=parseFloat(t[4])*x;
             $('#proteinSum4').val(value);
             var current =  $('#day4_dinner').text();
             var currentVal =$('#day4_dinner').val();
@@ -1922,7 +1922,7 @@ function getData4_dinner() {
 
         }else
         {
-            $('#proteinSum4').val(parseFloat(t[2])*x);
+            $('#proteinSum4').val(parseFloat(t[4])*x);
             var current =  $('#day4_dinner').text();
             var currentVal =$('#day4_dinner').val();
             $('#day4_dinner').val(" ");
@@ -1941,13 +1941,13 @@ function getData4_break1() {
     var y = $("#selectcountries4_break1 option:selected").text();
     var t = y.split(/[ ,]+/);
 
-    if(t[4] ==1)
+    if(t[6] ==1)
     {
         var value = parseFloat($('#carbSum4').val()) ;
 
         if(value)
         {
-            value +=parseFloat(t[2]*x);
+            value +=parseFloat(t[4])*x;
             $('#carbSum4').val(value);
 
             var current =  $('#day4_break1').text();
@@ -1958,7 +1958,7 @@ function getData4_break1() {
 
         }else
         {
-            $('#carbSum4').val(parseFloat(t[2])*x);
+            $('#carbSum4').val(parseFloat(t[4])*x);
 
             var current =  $('#day4_break1').text();
             var currentVal =$('#day4_break1').val();
@@ -1968,13 +1968,13 @@ function getData4_break1() {
 
         }
 
-    }else if(t[4] ==2)
+    }else if(t[6] ==2)
     {
         var value = parseFloat($('#fatsSum4').val()) ;
 
         if(value)
         {
-            value +=parseFloat(t[2]*x);
+            value +=parseFloat(t[4])*x;
             $('#fatsSum4').val(value);
             var current =  $('#day4_break1').text();
             var currentVal =$('#day4_break1').val();
@@ -1984,7 +1984,7 @@ function getData4_break1() {
 
         }else
         {
-            $('#fatsSum4').val(parseFloat(t[2])*x);
+            $('#fatsSum4').val(parseFloat(t[4])*x);
             var current =  $('#day4_break1').text();
             var currentVal =$('#day4_break1').val();
             $('#day4_break1').val(" ");
@@ -1998,7 +1998,7 @@ function getData4_break1() {
 
         if(value)
         {
-            value +=parseFloat(t[2]*x);
+            value +=parseFloat(t[4])*x;
             $('#proteinSum4').val(value);
             var current =  $('#day4_break1').text();
             var currentVal =$('#day4_break1').val();
@@ -2008,7 +2008,7 @@ function getData4_break1() {
 
         }else
         {
-            $('#proteinSum4').val(parseFloat(t[2])*x);
+            $('#proteinSum4').val(parseFloat(t[4])*x);
             var current =  $('#day4_break1').text();
             var currentVal =$('#day4_break1').val();
             $('#day4_break1').val(" ");
@@ -2027,13 +2027,13 @@ function getData4_break2() {
     var y = $("#selectcountries4_break2 option:selected").text();
     var t = y.split(/[ ,]+/);
 
-    if(t[4] ==1)
+    if(t[6] ==1)
     {
         var value = parseFloat($('#carbSum4').val()) ;
 
         if(value)
         {
-            value +=parseFloat(t[2]*x);
+            value +=parseFloat(t[4])*x;
             $('#carbSum4').val(value);
 
             var current =  $('#day4_break2').text();
@@ -2044,7 +2044,7 @@ function getData4_break2() {
 
         }else
         {
-            $('#carbSum4').val(parseFloat(t[2])*x);
+            $('#carbSum4').val(parseFloat(t[4])*x);
 
             var current =  $('#day4_break2').text();
             var currentVal =$('#day4_break2').val();
@@ -2055,13 +2055,13 @@ function getData4_break2() {
 
         }
 
-    }else if(t[4] ==2)
+    }else if(t[6] ==2)
     {
         var value = parseFloat($('#fatsSum4').val()) ;
 
         if(value)
         {
-            value +=parseFloat(t[2]*x);
+            value +=parseFloat(t[4])*x;
             $('#fatsSum4').val(value);
             var current =  $('#day4_break2').text();
             var currentVal =$('#day4_break2').val();
@@ -2072,7 +2072,7 @@ function getData4_break2() {
 
         }else
         {
-            $('#fatsSum4').val(parseFloat(t[2])*x);
+            $('#fatsSum4').val(parseFloat(t[4])*x);
             var current =  $('#day4_break2').text();
             var currentVal =$('#day4_break2').val();
             $('#day4_break2').val(" ");
@@ -2087,7 +2087,7 @@ function getData4_break2() {
 
         if(value)
         {
-            value +=parseFloat(t[2]*x);
+            value +=parseFloat(t[4])*x;
             $('#proteinSum4').val(value);
             var current =  $('#day4_break2').text();
             var currentVal =$('#day4_break2').val();
@@ -2098,7 +2098,7 @@ function getData4_break2() {
 
         }else
         {
-            $('#proteinSum4').val(parseFloat(t[2])*x);
+            $('#proteinSum4').val(parseFloat(t[4])*x);
             var current =  $('#day4_break2').text();
             var currentVal =$('#day4_break2').val();
             $('#day4_break2').val(" ");
@@ -2121,13 +2121,13 @@ function getData5() {
     var y = $("#selectcountries5 option:selected").text();
     var t = y.split(/[ ,]+/);
 
-    if(t[4] ==1)
+    if(t[6] ==1)
     {
         var value = parseFloat($('#carbSum5').val()) ;
 
         if(value)
         {
-            value +=parseFloat(t[2]*x);
+            value +=parseFloat(t[4])*x;
             $('#carbSum5').val(value);
             //    $('#day1_breakfast').focus();
 
@@ -2144,7 +2144,7 @@ function getData5() {
 
         else
         {
-            $('#carbSum5').val(parseFloat(t[2])*x);
+            $('#carbSum5').val(parseFloat(t[4])*x);
 
             var current =  $('#day5_breakfast').text();
             var currentVal =$('#day5_breakfast').val();
@@ -2159,13 +2159,13 @@ function getData5() {
     }
 
 
-    else if(t[4] ==2)
+    else if(t[6] ==2)
     {
         var value = parseFloat($('#fatsSum5').val()) ;
 
         if(value)
         {
-            value +=parseFloat(t[2]*x);
+            value +=parseFloat(t[4])*x;
             $('#fatsSum5').val(value);
             var current =  $('#day5_breakfast').text();
             var currentVal =$('#day5_breakfast').val();
@@ -2176,7 +2176,7 @@ function getData5() {
 
         }else
         {
-            $('#fatsSum5').val(parseFloat(t[2])*x);
+            $('#fatsSum5').val(parseFloat(t[4])*x);
             var current =  $('#day5_breakfast').text();
             var currentVal =$('#day5_breakfast').val();
             $('#day5_breakfast').val(" ");
@@ -2193,7 +2193,7 @@ function getData5() {
 
         if(value)
         {
-            value +=parseFloat(t[2]*x);
+            value +=parseFloat(t[4])*x;
             $('#proteinSum5').val(value);
 
             var current =  $('#day5_breakfast').text();
@@ -2205,7 +2205,7 @@ function getData5() {
 
         }else
         {
-            $('#proteinSum5').val(parseFloat(t[2])*x);
+            $('#proteinSum5').val(parseFloat(t[4])*x);
             var current =  $('#day5_breakfast').text();
             var currentVal =$('#day5_breakfast').val();
             $('#day5_breakfast').val(" ");
@@ -2225,13 +2225,13 @@ function getData5_lunch() {
     var y = $("#selectcountries5_lunch option:selected").text();
     var t = y.split(/[ ,]+/);
 
-    if(t[4] ==1)
+    if(t[6] ==1)
     {
         var value = parseFloat($('#carbSum5').val()) ;
 
         if(value)
         {
-            value +=parseFloat(t[2]*x);
+            value +=parseFloat(t[4])*x;
             $('#carbSum5').val(value);
 
             var current =  $('#day5_lunch').text();
@@ -2243,7 +2243,7 @@ function getData5_lunch() {
 
         }else
         {
-            $('#carbSum5').val(parseFloat(t[2])*x);
+            $('#carbSum5').val(parseFloat(t[4])*x);
 
             var current =  $('#day5_lunch').text();
             var currentVal =$('#day5_lunch').val();
@@ -2254,13 +2254,13 @@ function getData5_lunch() {
 
         }
 
-    }else if(t[4] ==2)
+    }else if(t[6] ==2)
     {
         var value = parseFloat($('#fatsSum5').val()) ;
 
         if(value)
         {
-            value +=parseFloat(t[2]*x);
+            value +=parseFloat(t[4])*x;
             $('#fatsSum5').val(value);
             var current =  $('#day5_lunch').text();
             var currentVal =$('#day5_lunch').val();
@@ -2271,7 +2271,7 @@ function getData5_lunch() {
 
         }else
         {
-            $('#fatsSum5').val(parseFloat(t[2])*x);
+            $('#fatsSum5').val(parseFloat(t[4])*x);
             var current =  $('#day5_lunch').text();
             var currentVal =$('#day5_lunch').val();
             $('#day5_lunch').val(" ");
@@ -2286,7 +2286,7 @@ function getData5_lunch() {
 
         if(value)
         {
-            value +=parseFloat(t[2]*x);
+            value +=parseFloat(t[4])*x;
             $('#proteinSum5').val(value);
             var current =  $('#day5_lunch').text();
             var currentVal =$('#day5_lunch').val();
@@ -2297,7 +2297,7 @@ function getData5_lunch() {
 
         }else
         {
-            $('#proteinSum5').val(parseFloat(t[2])*x);
+            $('#proteinSum5').val(parseFloat(t[4])*x);
             var current =  $('#day5_lunch').text();
             var currentVal =$('#day5_lunch').val();
             $('#day5_lunch').val(" ");
@@ -2317,13 +2317,13 @@ function getData5_dinner() {
     var y = $("#selectcountries5_dinner option:selected").text();
     var t = y.split(/[ ,]+/);
 
-    if(t[4] ==1)
+    if(t[6] ==1)
     {
         var value = parseFloat($('#carbSum5').val()) ;
 
         if(value)
         {
-            value +=parseFloat(t[2]*x);
+            value +=parseFloat(t[4])*x;
             $('#carbSum5').val(value);
 
             var current =  $('#day5_dinner').text();
@@ -2335,7 +2335,7 @@ function getData5_dinner() {
 
         }else
         {
-            $('#carbSum5').val(parseFloat(t[2])*x);
+            $('#carbSum5').val(parseFloat(t[4])*x);
 
             var current =  $('#day5_dinner').text();
             var currentVal =$('#day5_dinner').val();
@@ -2346,13 +2346,13 @@ function getData5_dinner() {
 
         }
 
-    }else if(t[4] ==2)
+    }else if(t[6] ==2)
     {
         var value = parseFloat($('#fatsSum5').val()) ;
 
         if(value)
         {
-            value +=parseFloat(t[2]*x);
+            value +=parseFloat(t[4])*x;
             $('#fatsSum5').val(value);
             var current =  $('#day5_dinner').text();
             var currentVal =$('#day5_dinner').val();
@@ -2362,7 +2362,7 @@ function getData5_dinner() {
 
         }else
         {
-            $('#fatsSum5').val(parseFloat(t[2])*x);
+            $('#fatsSum5').val(parseFloat(t[4])*x);
             var current =  $('#day5_dinner').text();
             var currentVal =$('#day5_dinner').val();
             $('#day5_dinner').val(" ");
@@ -2376,7 +2376,7 @@ function getData5_dinner() {
 
         if(value)
         {
-            value +=parseFloat(t[2]*x);
+            value +=parseFloat(t[4])*x;
             $('#proteinSum5').val(value);
             var current =  $('#day5_dinner').text();
             var currentVal =$('#day5_dinner').val();
@@ -2386,7 +2386,7 @@ function getData5_dinner() {
 
         }else
         {
-            $('#proteinSum5').val(parseFloat(t[2])*x);
+            $('#proteinSum5').val(parseFloat(t[4])*x);
             var current =  $('#day5_dinner').text();
             var currentVal =$('#day5_dinner').val();
             $('#day5_dinner').val(" ");
@@ -2405,13 +2405,13 @@ function getData5_break1() {
     var y = $("#selectcountries5_break1 option:selected").text();
     var t = y.split(/[ ,]+/);
 
-    if(t[4] ==1)
+    if(t[6] ==1)
     {
         var value = parseFloat($('#carbSum5').val()) ;
 
         if(value)
         {
-            value +=parseFloat(t[2]*x);
+            value +=parseFloat(t[4])*x;
             $('#carbSum5').val(value);
 
             var current =  $('#day5_break1').text();
@@ -2422,7 +2422,7 @@ function getData5_break1() {
 
         }else
         {
-            $('#carbSum5').val(parseFloat(t[2])*x);
+            $('#carbSum5').val(parseFloat(t[4])*x);
 
             var current =  $('#day5_break1').text();
             var currentVal =$('#day5_break1').val();
@@ -2432,13 +2432,13 @@ function getData5_break1() {
 
         }
 
-    }else if(t[4] ==2)
+    }else if(t[6] ==2)
     {
         var value = parseFloat($('#fatsSum5').val()) ;
 
         if(value)
         {
-            value +=parseFloat(t[2]*x);
+            value +=parseFloat(t[4])*x;
             $('#fatsSum5').val(value);
             var current =  $('#day5_break1').text();
             var currentVal =$('#day5_break1').val();
@@ -2448,7 +2448,7 @@ function getData5_break1() {
 
         }else
         {
-            $('#fatsSum5').val(parseFloat(t[2])*x);
+            $('#fatsSum5').val(parseFloat(t[4])*x);
             var current =  $('#day5_break1').text();
             var currentVal =$('#day5_break1').val();
             $('#day5_break1').val(" ");
@@ -2462,7 +2462,7 @@ function getData5_break1() {
 
         if(value)
         {
-            value +=parseFloat(t[2]*x);
+            value +=parseFloat(t[4])*x;
             $('#proteinSum5').val(value);
             var current =  $('#day5_break1').text();
             var currentVal =$('#day5_break1').val();
@@ -2472,7 +2472,7 @@ function getData5_break1() {
 
         }else
         {
-            $('#proteinSum5').val(parseFloat(t[2])*x);
+            $('#proteinSum5').val(parseFloat(t[4])*x);
             var current =  $('#day5_break1').text();
             var currentVal =$('#day5_break1').val();
             $('#day5_break1').val(" ");
@@ -2491,13 +2491,13 @@ function getData5_break2() {
     var y = $("#selectcountries5_break2 option:selected").text();
     var t = y.split(/[ ,]+/);
 
-    if(t[4] ==1)
+    if(t[6] ==1)
     {
         var value = parseFloat($('#carbSum5').val()) ;
 
         if(value)
         {
-            value +=parseFloat(t[2]*x);
+            value +=parseFloat(t[4])*x;
             $('#carbSum5').val(value);
 
             var current =  $('#day5_break2').text();
@@ -2508,7 +2508,7 @@ function getData5_break2() {
 
         }else
         {
-            $('#carbSum5').val(parseFloat(t[2])*x);
+            $('#carbSum5').val(parseFloat(t[4])*x);
 
             var current =  $('#day5_break2').text();
             var currentVal =$('#day5_break2').val();
@@ -2518,13 +2518,13 @@ function getData5_break2() {
 
         }
 
-    }else if(t[4] ==2)
+    }else if(t[6] ==2)
     {
         var value = parseFloat($('#fatsSum5').val()) ;
 
         if(value)
         {
-            value +=parseFloat(t[2]*x);
+            value +=parseFloat(t[4])*x;
             $('#fatsSum5').val(value);
             var current =  $('#day5_break2').text();
             var currentVal =$('#day5_break2').val();
@@ -2534,7 +2534,7 @@ function getData5_break2() {
 
         }else
         {
-            $('#fatsSum5').val(parseFloat(t[2])*x);
+            $('#fatsSum5').val(parseFloat(t[4])*x);
             var current =  $('#day5_break2').text();
             var currentVal =$('#day5_break2').val();
             $('#day5_break2').val(" ");
@@ -2548,7 +2548,7 @@ function getData5_break2() {
 
         if(value)
         {
-            value +=parseFloat(t[2]*x);
+            value +=parseFloat(t[4])*x;
             $('#proteinSum5').val(value);
             var current =  $('#day5_break2').text();
             var currentVal =$('#day5_break2').val();
@@ -2558,7 +2558,7 @@ function getData5_break2() {
 
         }else
         {
-            $('#proteinSum5').val(parseFloat(t[2])*x);
+            $('#proteinSum5').val(parseFloat(t[4])*x);
             var current =  $('#day5_break2').text();
             var currentVal =$('#day5_break2').val();
             $('#day5_break2').val(" ");
@@ -2580,13 +2580,13 @@ function getData6() {
     var y = $("#selectcountries6 option:selected").text();
     var t = y.split(/[ ,]+/);
 
-    if(t[4] ==1)
+    if(t[6] ==1)
     {
         var value = parseFloat($('#carbSum6').val()) ;
 
         if(value)
         {
-            value +=parseFloat(t[2]*x);
+            value +=parseFloat(t[4])*x;
             $('#carbSum6').val(value);
             //    $('#day1_breakfast').focus();
 
@@ -2602,7 +2602,7 @@ function getData6() {
 
         else
         {
-            $('#carbSum6').val(parseFloat(t[2])*x);
+            $('#carbSum6').val(parseFloat(t[4])*x);
 
             var current =  $('#day6_breakfast').text();
             var currentVal =$('#day6_breakfast').val();
@@ -2617,13 +2617,13 @@ function getData6() {
     }
 
 
-    else if(t[4] ==2)
+    else if(t[6] ==2)
     {
         var value = parseFloat($('#fatsSum6').val()) ;
 
         if(value)
         {
-            value +=parseFloat(t[2]*x);
+            value +=parseFloat(t[4])*x;
             $('#fatsSum6').val(value);
             var current =  $('#day6_breakfast').text();
             var currentVal =$('#day6_breakfast').val();
@@ -2634,7 +2634,7 @@ function getData6() {
 
         }else
         {
-            $('#fatsSum6').val(parseFloat(t[2])*x);
+            $('#fatsSum6').val(parseFloat(t[4])*x);
             var current =  $('#day6_breakfast').text();
             var currentVal =$('#day6_breakfast').val();
             $('#day6_breakfast').val(" ");
@@ -2651,7 +2651,7 @@ function getData6() {
 
         if(value)
         {
-            value +=parseFloat(t[2]*x);
+            value +=parseFloat(t[4])*x;
             $('#proteinSum6').val(value);
 
             var current =  $('#day6_breakfast').text();
@@ -2663,7 +2663,7 @@ function getData6() {
 
         }else
         {
-            $('#proteinSum6').val(parseFloat(t[2])*x);
+            $('#proteinSum6').val(parseFloat(t[4])*x);
             var current =  $('#day6_breakfast').text();
             var currentVal =$('#day6_breakfast').val();
             $('#day6_breakfast').val(" ");
@@ -2683,13 +2683,13 @@ function getData6_lunch() {
     var y = $("#selectcountries6_lunch option:selected").text();
     var t = y.split(/[ ,]+/);
 
-    if(t[4] ==1)
+    if(t[6] ==1)
     {
         var value = parseFloat($('#carbSum6').val()) ;
 
         if(value)
         {
-            value +=parseFloat(t[2]*x);
+            value +=parseFloat(t[4])*x;
             $('#carbSum6').val(value);
 
             var current =  $('#day6_lunch').text();
@@ -2701,7 +2701,7 @@ function getData6_lunch() {
 
         }else
         {
-            $('#carbSum6').val(parseFloat(t[2])*x);
+            $('#carbSum6').val(parseFloat(t[4])*x);
 
             var current =  $('#day6_lunch').text();
             var currentVal =$('#day6_lunch').val();
@@ -2713,13 +2713,13 @@ function getData6_lunch() {
 
         }
 
-    }else if(t[4] ==2)
+    }else if(t[6] ==2)
     {
         var value = parseFloat($('#fatsSum6').val()) ;
 
         if(value)
         {
-            value +=parseFloat(t[2]*x);
+            value +=parseFloat(t[4])*x;
             $('#fatsSum6').val(value);
             var current =  $('#day6_lunch').text();
             var currentVal =$('#day6_lunch').val();
@@ -2730,7 +2730,7 @@ function getData6_lunch() {
 
         }else
         {
-            $('#fatsSum6').val(parseFloat(t[2])*x);
+            $('#fatsSum6').val(parseFloat(t[4])*x);
             var current =  $('#day6_lunch').text();
             var currentVal =$('#day6_lunch').val();
             $('#day6_lunch').val(" ");
@@ -2744,7 +2744,7 @@ function getData6_lunch() {
 
         if(value)
         {
-            value +=parseFloat(t[2]*x);
+            value +=parseFloat(t[4])*x;
             $('#proteinSum6').val(value);
             var current =  $('#day6_lunch').text();
             var currentVal =$('#day6_lunch').val();
@@ -2754,7 +2754,7 @@ function getData6_lunch() {
 
         }else
         {
-            $('#proteinSum6').val(parseFloat(t[2])*x);
+            $('#proteinSum6').val(parseFloat(t[4])*x);
             var current =  $('#day6_lunch').text();
             var currentVal =$('#day6_lunch').val();
             $('#day6_lunch').val(" ");
@@ -2773,13 +2773,13 @@ function getData6_dinner() {
     var y = $("#selectcountries6_dinner option:selected").text();
     var t = y.split(/[ ,]+/);
 
-    if(t[4] ==1)
+    if(t[6] ==1)
     {
         var value = parseFloat($('#carbSum6').val()) ;
 
         if(value)
         {
-            value +=parseFloat(t[2]*x);
+            value +=parseFloat(t[4])*x;
             $('#carbSum6').val(value);
 
             var current =  $('#day6_dinner').text();
@@ -2790,7 +2790,7 @@ function getData6_dinner() {
 
         }else
         {
-            $('#carbSum6').val(parseFloat(t[2])*x);
+            $('#carbSum6').val(parseFloat(t[4])*x);
 
             var current =  $('#day6_dinner').text();
             var currentVal =$('#day6_dinner').val();
@@ -2801,13 +2801,13 @@ function getData6_dinner() {
 
         }
 
-    }else if(t[4] ==2)
+    }else if(t[6] ==2)
     {
         var value = parseFloat($('#fatsSum6').val()) ;
 
         if(value)
         {
-            value +=parseFloat(t[2]*x);
+            value +=parseFloat(t[4])*x;
             $('#fatsSum6').val(value);
             var current =  $('#day6_dinner').text();
             var currentVal =$('#day6_dinner').val();
@@ -2818,7 +2818,7 @@ function getData6_dinner() {
 
         }else
         {
-            $('#fatsSum6').val(parseFloat(t[2])*x);
+            $('#fatsSum6').val(parseFloat(t[4])*x);
             var current =  $('#day6_dinner').text();
             var currentVal =$('#day6_dinner').val();
             $('#day6_dinner').val(" ");
@@ -2833,7 +2833,7 @@ function getData6_dinner() {
 
         if(value)
         {
-            value +=parseFloat(t[2]*x);
+            value +=parseFloat(t[4])*x;
             $('#proteinSum6').val(value);
             var current =  $('#day6_dinner').text();
             var currentVal =$('#day6_dinner').val();
@@ -2844,7 +2844,7 @@ function getData6_dinner() {
 
         }else
         {
-            $('#proteinSum6').val(parseFloat(t[2])*x);
+            $('#proteinSum6').val(parseFloat(t[4])*x);
             var current =  $('#day6_dinner').text();
             var currentVal =$('#day6_dinner').val();
             $('#day6_dinner').val(" ");
@@ -2864,13 +2864,13 @@ function getData6_break1() {
     var y = $("#selectcountries6_break1 option:selected").text();
     var t = y.split(/[ ,]+/);
 
-    if(t[4] ==1)
+    if(t[6] ==1)
     {
         var value = parseFloat($('#carbSum6').val()) ;
 
         if(value)
         {
-            value +=parseFloat(t[2]*x);
+            value +=parseFloat(t[4])*x;
             $('#carbSum6').val(value);
 
             var current =  $('#day6_break1').text();
@@ -2882,7 +2882,7 @@ function getData6_break1() {
 
         }else
         {
-            $('#carbSum6').val(parseFloat(t[2])*x);
+            $('#carbSum6').val(parseFloat(t[4])*x);
 
             var current =  $('#day6_break1').text();
             var currentVal =$('#day6_break1').val();
@@ -2892,13 +2892,13 @@ function getData6_break1() {
 
         }
 
-    }else if(t[4] ==2)
+    }else if(t[6] ==2)
     {
         var value = parseFloat($('#fatsSum6').val()) ;
 
         if(value)
         {
-            value +=parseFloat(t[2]*x);
+            value +=parseFloat(t[4])*x;
             $('#fatsSum6').val(value);
             var current =  $('#day6_break1').text();
             var currentVal =$('#day6_break1').val();
@@ -2908,7 +2908,7 @@ function getData6_break1() {
 
         }else
         {
-            $('#fatsSum6').val(parseFloat(t[2])*x);
+            $('#fatsSum6').val(parseFloat(t[4])*x);
             var current =  $('#day6_break1').text();
             var currentVal =$('#day6_break1').val();
             $('#day6_break1').val(" ");
@@ -2922,7 +2922,7 @@ function getData6_break1() {
 
         if(value)
         {
-            value +=parseFloat(t[2]*x);
+            value +=parseFloat(t[4])*x;
             $('#proteinSum6').val(value);
             var current =  $('#day6_break1').text();
             var currentVal =$('#day6_break1').val();
@@ -2932,7 +2932,7 @@ function getData6_break1() {
 
         }else
         {
-            $('#proteinSum6').val(parseFloat(t[2])*x);
+            $('#proteinSum6').val(parseFloat(t[4])*x);
             var current =  $('#day6_break1').text();
             var currentVal =$('#day6_break1').val();
             $('#day6_break1').val(" ");
@@ -2951,13 +2951,13 @@ function getData6_break2() {
     var y = $("#selectcountries6_break2 option:selected").text();
     var t = y.split(/[ ,]+/);
 
-    if(t[4] ==1)
+    if(t[6] ==1)
     {
         var value = parseFloat($('#carbSum6').val()) ;
 
         if(value)
         {
-            value +=parseFloat(t[2]*x);
+            value +=parseFloat(t[4])*x;
             $('#carbSum6').val(value);
 
             var current =  $('#day6_break2').text();
@@ -2968,7 +2968,7 @@ function getData6_break2() {
 
         }else
         {
-            $('#carbSum6').val(parseFloat(t[2])*x);
+            $('#carbSum6').val(parseFloat(t[4])*x);
 
             var current =  $('#day6_break2').text();
             var currentVal =$('#day6_break2').val();
@@ -2979,13 +2979,13 @@ function getData6_break2() {
 
         }
 
-    }else if(t[4] ==2)
+    }else if(t[6] ==2)
     {
         var value = parseFloat($('#fatsSum6').val()) ;
 
         if(value)
         {
-            value +=parseFloat(t[2]*x);
+            value +=parseFloat(t[4])*x;
             $('#fatsSum6').val(value);
             var current =  $('#day6_break2').text();
             var currentVal =$('#day6_break2').val();
@@ -2996,7 +2996,7 @@ function getData6_break2() {
 
         }else
         {
-            $('#fatsSum6').val(parseFloat(t[2])*x);
+            $('#fatsSum6').val(parseFloat(t[4])*x);
             var current =  $('#day6_break2').text();
             var currentVal =$('#day6_break2').val();
             $('#day6_break2').val(" ");
@@ -3011,7 +3011,7 @@ function getData6_break2() {
 
         if(value)
         {
-            value +=parseFloat(t[2]*x);
+            value +=parseFloat(t[4])*x;
             $('#proteinSum6').val(value);
             var current =  $('#day6_break2').text();
             var currentVal =$('#day6_break2').val();
@@ -3022,7 +3022,7 @@ function getData6_break2() {
 
         }else
         {
-            $('#proteinSum6').val(parseFloat(t[2])*x);
+            $('#proteinSum6').val(parseFloat(t[4])*x);
             var current =  $('#day6_break2').text();
             var currentVal =$('#day6_break2').val();
             $('#day6_break2').val(" ");
@@ -3046,13 +3046,13 @@ function getData7() {
     var y = $("#selectcountries7 option:selected").text();
     var t = y.split(/[ ,]+/);
 
-    if(t[4] ==1)
+    if(t[6] ==1)
     {
         var value = parseFloat($('#carbSum7').val()) ;
 
         if(value)
         {
-            value +=parseFloat(t[2]*x);
+            value +=parseFloat(t[4])*x;
             $('#carbSum7').val(value);
             //    $('#day1_breakfast').focus();
 
@@ -3069,13 +3069,13 @@ function getData7() {
 
         else
         {
-            $('#carbSum7').val(parseFloat(t[2])*x);
+            $('#carbSum7').val(parseFloat(t[4])*x);
 
             var current =  $('#day7_breakfast').text();
             var currentVal =$('#day7_breakfast').val();
             $('#day7_breakfast').val(" ");
             $('#day7_breakfast').text(" ");
-            $('#day7_breakfast').val( currentVal  + '   '+  t[0]+x+' جم ');
+            $('#day7_breakfast').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
 
 
@@ -3084,13 +3084,13 @@ function getData7() {
     }
 
 
-    else if(t[4] ==2)
+    else if(t[6] ==2)
     {
         var value = parseFloat($('#fatsSum7').val()) ;
 
         if(value)
         {
-            value +=parseFloat(t[2]*x);
+            value +=parseFloat(t[4])*x;
             $('#fatsSum7').val(value);
             var current =  $('#day7_breakfast').text();
             var currentVal =$('#day7_breakfast').val();
@@ -3101,12 +3101,12 @@ function getData7() {
 
         }else
         {
-            $('#fatsSum7').val(parseFloat(t[2])*x);
+            $('#fatsSum7').val(parseFloat(t[4])*x);
             var current =  $('#day7_breakfast').text();
             var currentVal =$('#day7_breakfast').val();
             $('#day7_breakfast').val(" ");
             $('#day7_breakfast').text(" ");
-            $('#day7_breakfast').val( currentVal  + '   '+  t[0]+x+' جم ');
+            $('#day7_breakfast').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
         }
 
@@ -3118,7 +3118,7 @@ function getData7() {
 
         if(value)
         {
-            value +=parseFloat(t[2]*x);
+            value +=parseFloat(t[4])*x;
             $('#proteinSum7').val(value);
 
             var current =  $('#day7_breakfast').text();
@@ -3130,12 +3130,12 @@ function getData7() {
 
         }else
         {
-            $('#proteinSum7').val(parseFloat(t[2])*x);
+            $('#proteinSum7').val(parseFloat(t[4])*x);
             var current =  $('#day7_breakfast').text();
             var currentVal =$('#day7_breakfast').val();
             $('#day7_breakfast').val(" ");
             $('#day7_breakfast').text(" ");
-            $('#day7_breakfast').val( currentVal  + '   '+  t[0]+x+' جم ');
+            $('#day7_breakfast').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
         }
     }
@@ -3150,13 +3150,13 @@ function getData7_lunch() {
     var y = $("#selectcountries7_lunch option:selected").text();
     var t = y.split(/[ ,]+/);
 
-    if(t[4] ==1)
+    if(t[6] ==1)
     {
         var value = parseFloat($('#carbSum7').val()) ;
 
         if(value)
         {
-            value +=parseFloat(t[2]*x);
+            value +=parseFloat(t[4])*x;
             $('#carbSum7').val(value);
 
             var current =  $('#day7_lunch').text();
@@ -3168,24 +3168,24 @@ function getData7_lunch() {
 
         }else
         {
-            $('#carbSum7').val(parseFloat(t[2])*x);
+            $('#carbSum7').val(parseFloat(t[4])*x);
 
             var current =  $('#day7_lunch').text();
             var currentVal =$('#day7_lunch').val();
             $('#day7_lunch').val(" ");
             $('#day7_lunch').text(" ");
-            $('#day7_lunch').val( currentVal  + '   '+  t[0]+x+' جم ');
+            $('#day7_lunch').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
 
         }
 
-    }else if(t[4] ==2)
+    }else if(t[6] ==2)
     {
         var value = parseFloat($('#fatsSum7').val()) ;
 
         if(value)
         {
-            value +=parseFloat(t[2]*x);
+            value +=parseFloat(t[4])*x;
             $('#fatsSum7').val(value);
             var current =  $('#day7_lunch').text();
             var currentVal =$('#day7_lunch').val();
@@ -3196,12 +3196,12 @@ function getData7_lunch() {
 
         }else
         {
-            $('#fatsSum7').val(parseFloat(t[2])*x);
+            $('#fatsSum7').val(parseFloat(t[4])*x);
             var current =  $('#day7_lunch').text();
             var currentVal =$('#day7_lunch').val();
             $('#day7_lunch').val(" ");
             $('#day7_lunch').text(" ");
-            $('#day7_lunch').val( currentVal  + '   '+  t[0]+x+' جم ');
+            $('#day7_lunch').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
         }
 
@@ -3211,7 +3211,7 @@ function getData7_lunch() {
 
         if(value)
         {
-            value +=parseFloat(t[2]*x);
+            value +=parseFloat(t[4])*x;
             $('#proteinSum7').val(value);
             var current =  $('#day7_lunch').text();
             var currentVal =$('#day7_lunch').val();
@@ -3222,12 +3222,12 @@ function getData7_lunch() {
 
         }else
         {
-            $('#proteinSum7').val(parseFloat(t[2])*x);
+            $('#proteinSum7').val(parseFloat(t[4])*x);
             var current =  $('#day7_lunch').text();
             var currentVal =$('#day7_lunch').val();
             $('#day7_lunch').val(" ");
             $('#day7_lunch').text(" ");
-            $('#day7_lunch').val( currentVal  + '   '+  t[0]+x+' جم ');
+            $('#day7_lunch').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
         }
     }
@@ -3242,13 +3242,13 @@ function getData7_dinner() {
     var y = $("#selectcountries7_dinner option:selected").text();
     var t = y.split(/[ ,]+/);
 
-    if(t[4] ==1)
+    if(t[6] ==1)
     {
         var value = parseFloat($('#carbSum7').val()) ;
 
         if(value)
         {
-            value +=parseFloat(t[2]*x);
+            value +=parseFloat(t[4])*x;
             $('#carbSum7').val(value);
 
             var current =  $('#day7_dinner').text();
@@ -3260,24 +3260,24 @@ function getData7_dinner() {
 
         }else
         {
-            $('#carbSum7').val(parseFloat(t[2])*x);
+            $('#carbSum7').val(parseFloat(t[4])*x);
 
             var current =  $('#day7_dinner').text();
             var currentVal =$('#day7_dinner').val();
             $('#day7_dinner').val(" ");
             $('#day7_dinner').text(" ");
-            $('#day7_dinner').val( currentVal  + '   '+  t[0]+x+' جم ');
+            $('#day7_dinner').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
 
         }
 
-    }else if(t[4] ==2)
+    }else if(t[6] ==2)
     {
         var value = parseFloat($('#fatsSum7').val()) ;
 
         if(value)
         {
-            value +=parseFloat(t[2]*x);
+            value +=parseFloat(t[4])*x;
             $('#fatsSum7').val(value);
             var current =  $('#day7_dinner').text();
             var currentVal =$('#day7_dinner').val();
@@ -3288,12 +3288,12 @@ function getData7_dinner() {
 
         }else
         {
-            $('#fatsSum7').val(parseFloat(t[2])*x);
+            $('#fatsSum7').val(parseFloat(t[4])*x);
             var current =  $('#day7_dinner').text();
             var currentVal =$('#day7_dinner').val();
             $('#day7_dinner').val(" ");
             $('#day7_dinner').text(" ");
-            $('#day7_dinner').val( currentVal  + '   '+  t[0]+x+' جم ');
+            $('#day7_dinner').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
         }
 
@@ -3303,7 +3303,7 @@ function getData7_dinner() {
 
         if(value)
         {
-            value +=parseFloat(t[2]*x);
+            value +=parseFloat(t[4])*x;
             $('#proteinSum7').val(value);
             var current =  $('#day7_dinner').text();
             var currentVal =$('#day7_dinner').val();
@@ -3314,12 +3314,12 @@ function getData7_dinner() {
 
         }else
         {
-            $('#proteinSum7').val(parseFloat(t[2])*x);
+            $('#proteinSum7').val(parseFloat(t[4])*x);
             var current =  $('#day7_dinner').text();
             var currentVal =$('#day7_dinner').val();
             $('#day7_dinner').val(" ");
             $('#day7_dinner').text(" ");
-            $('#day7_dinner').val( currentVal  + '   '+  t[0]+x+' جم ');
+            $('#day7_dinner').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
         }
     }
@@ -3334,13 +3334,13 @@ function getData7_break1() {
     var y = $("#selectcountries7_break1 option:selected").text();
     var t = y.split(/[ ,]+/);
 
-    if(t[4] ==1)
+    if(t[6] ==1)
     {
         var value = parseFloat($('#carbSum7').val()) ;
 
         if(value)
         {
-            value +=parseFloat(t[2]*x);
+            value +=parseFloat(t[4])*x;
             $('#carbSum7').val(value);
 
             var current =  $('#day7_break1').text();
@@ -3352,24 +3352,24 @@ function getData7_break1() {
 
         }else
         {
-            $('#carbSum7').val(parseFloat(t[2])*x);
+            $('#carbSum7').val(parseFloat(t[4])*x);
 
             var current =  $('#day7_break1').text();
             var currentVal =$('#day7_break1').val();
             $('#day7_break1').val(" ");
             $('#day7_break1').text(" ");
-            $('#day7_break1').val( currentVal  + '   '+  t[0]+x+' جم ');
+            $('#day7_break1').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
 
         }
 
-    }else if(t[4] ==2)
+    }else if(t[6] ==2)
     {
         var value = parseFloat($('#fatsSum7').val()) ;
 
         if(value)
         {
-            value +=parseFloat(t[2]*x);
+            value +=parseFloat(t[4])*x;
             $('#fatsSum7').val(value);
             var current =  $('#day7_break1').text();
             var currentVal =$('#day7_break1').val();
@@ -3380,12 +3380,12 @@ function getData7_break1() {
 
         }else
         {
-            $('#fatsSum7').val(parseFloat(t[2])*x);
+            $('#fatsSum7').val(parseFloat(t[4])*x);
             var current =  $('#day7_break1').text();
             var currentVal =$('#day7_break1').val();
             $('#day7_break1').val(" ");
             $('#day7_break1').text(" ");
-            $('#day7_break1').val( currentVal  + '   '+  t[0]+x+' جم ');
+            $('#day7_break1').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
         }
 
@@ -3395,7 +3395,7 @@ function getData7_break1() {
 
         if(value)
         {
-            value +=parseFloat(t[2]*x);
+            value +=parseFloat(t[4])*x;
             $('#proteinSum7').val(value);
             var current =  $('#day7_break1').text();
             var currentVal =$('#day7_break1').val();
@@ -3406,12 +3406,12 @@ function getData7_break1() {
 
         }else
         {
-            $('#proteinSum7').val(parseFloat(t[2])*x);
+            $('#proteinSum7').val(parseFloat(t[4])*x);
             var current =  $('#day7_break1').text();
             var currentVal =$('#day7_break1').val();
             $('#day7_break1').val(" ");
             $('#day7_break1').text(" ");
-            $('#day7_break1').val( currentVal  + '   '+  t[0]+x+' جم ');
+            $('#day7_break1').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
         }
     }
@@ -3426,13 +3426,13 @@ function getData7_break2() {
     var y = $("#selectcountries7_break2 option:selected").text();
     var t = y.split(/[ ,]+/);
 
-    if(t[4] ==1)
+    if(t[6] ==1)
     {
         var value = parseFloat($('#carbSum7').val()) ;
 
         if(value)
         {
-            value +=parseFloat(t[2]*x);
+            value +=parseFloat(t[4])*x;
             $('#carbSum7').val(value);
 
             var current =  $('#day7_break2').text();
@@ -3444,24 +3444,24 @@ function getData7_break2() {
 
         }else
         {
-            $('#carbSum7').val(parseFloat(t[2])*x);
+            $('#carbSum7').val(parseFloat(t[4])*x);
 
             var current =  $('#day7_break2').text();
             var currentVal =$('#day7_break2').val();
             $('#day7_break2').val(" ");
             $('#day7_break2').text(" ");
-            $('#day7_break2').val( currentVal  + '   '+  t[0]+x+' جم ');
+            $('#day7_break2').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
 
         }
 
-    }else if(t[4] ==2)
+    }else if(t[6] ==2)
     {
         var value = parseFloat($('#fatsSum7').val()) ;
 
         if(value)
         {
-            value +=parseFloat(t[2]*x);
+            value +=parseFloat(t[4])*x;
             $('#fatsSum7').val(value);
             var current =  $('#day7_break2').text();
             var currentVal =$('#day7_break2').val();
@@ -3472,12 +3472,12 @@ function getData7_break2() {
 
         }else
         {
-            $('#fatsSum7').val(parseFloat(t[2])*x);
+            $('#fatsSum7').val(parseFloat(t[4])*x);
             var current =  $('#day7_break2').text();
             var currentVal =$('#day7_break2').val();
             $('#day7_break2').val(" ");
             $('#day7_break2').text(" ");
-            $('#day7_break2').val( currentVal  + '   '+  t[0]+x+' جم ');
+            $('#day7_break2').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
         }
 
@@ -3487,7 +3487,7 @@ function getData7_break2() {
 
         if(value)
         {
-            value +=parseFloat(t[2]*x);
+            value +=parseFloat(t[4])*x;
             $('#proteinSum7').val(value);
             var current =  $('#day7_break2').text();
             var currentVal =$('#day7_break2').val();
@@ -3498,12 +3498,12 @@ function getData7_break2() {
 
         }else
         {
-            $('#proteinSum7').val(parseFloat(t[2])*x);
+            $('#proteinSum7').val(parseFloat(t[4])*x);
             var current =  $('#day7_break2').text();
             var currentVal =$('#day7_break2').val();
             $('#day7_break2').val(" ");
             $('#day7_break2').text(" ");
-            $('#day7_break2').val( currentVal  + '   '+  t[0]+x+' جم ');
+            $('#day7_break2').val( currentVal  + ' و '+  t[0]+' '+x+' ' +t[2]);
 
         }
     }
