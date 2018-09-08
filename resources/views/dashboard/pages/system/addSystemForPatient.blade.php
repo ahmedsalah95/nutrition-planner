@@ -3,9 +3,10 @@
 @section('content')
 
     <link rel="stylesheet" href="{{url('/')}}/vendors/fm.tagator.jquery.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+    <script src="{{url('/')}}/js/jquery.js"></script>
     <script src="{{url('/')}}/vendors/fm.tagator.jquery.js"></script>
-    <script src="//cdn.ckeditor.com/4.9.0/standard/ckeditor.js"></script>
+
+    <script src="{{url('/')}}/ckeditor/ckeditor.js"></script>
 
 
 

@@ -20,7 +20,7 @@
                         <span class="count_top"><i class="fa fa-user"></i>المرضي الاناث  </span>
                         <div class="count">
                             <?php
-                               $data = \App\Patient::where('gender','female')->get();
+                               $data = \App\Patient::where('gender','انثي')->get();
                             echo count($data);
                             ?>
 
@@ -30,7 +30,7 @@
                         <span class="count_top"><i class="fa fa-user"></i>المرضي الذكور  </span>
                         <div class="count">
                             <?php
-                            $data = \App\Patient::where('gender','male')->get();
+                            $data = \App\Patient::where('gender','ذكر')->get();
                             echo count($data);
                             ?>
 
