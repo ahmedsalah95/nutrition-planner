@@ -6,6 +6,16 @@
     <script src="//cdn.ckeditor.com/4.9.0/standard/ckeditor.js"></script>
     <section class="category">
         <div class="container">
+
+            @if($errors->all())
+                <div style="color: #a94442; background-color: #f2dede; border-color: #ebccd1;" class="alert ">
+                    <ul>
+                        @foreach($errors->all() as $error)
+                            <li>{{$error}}</li>
+                        @endforeach
+                    </ul>
+                </div>
+            @endif
             <div class="row">
                 <div class="col-lg-12">
                     <form   action="/food/{{$id}}"  method="post" class="form-horizontal form-label-left" >

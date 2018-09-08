@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="{{url('/')}}/js/jquery.js"></script>
 
 
     <script type="text/javascript">
@@ -28,6 +28,17 @@
 
     <section class="category">
         <div class="container">
+            <div class="row">
+                @if($errors->all())
+                    <div style="color: #a94442; background-color: #f2dede; border-color: #ebccd1;" class="alert ">
+                        <ul>
+                            @foreach($errors->all() as $error)
+                                <li>{{$error}}</li>
+                            @endforeach
+                        </ul>
+                    </div>
+                @endif
+            </div>
             <div class="row">
                 <div class="col-lg-12">
                     <form   action="/reservation/{{$id}}"  method="post" class="form-horizontal form-label-left" >

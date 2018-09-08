@@ -41,6 +41,16 @@
 
     <section class="patients">
         <div class="container">
+
+            @if($errors->all())
+                <div style="color: #a94442; background-color: #f2dede; border-color: #ebccd1;" class="alert ">
+                    <ul>
+                        @foreach($errors->all() as $error)
+                            <li>{{$error}}</li>
+                        @endforeach
+                    </ul>
+                </div>
+            @endif
             <div class="row">
                 <form   action="/patient"  method="post" class="form-horizontal form-label-left" >
 
