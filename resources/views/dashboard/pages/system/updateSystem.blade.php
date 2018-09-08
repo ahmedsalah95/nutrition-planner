@@ -170,7 +170,7 @@
                                         <input type="text" id="day1_breakfast" name="day1_breakfast"
 
 
-                                               value="<?php echo str_replace("<br>","و", $data->day1_breakfast) ?>"
+                                               value="<?php echo str_replace("<br>","-", $data->day1_breakfast) ?>"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
 
@@ -229,7 +229,7 @@
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day1_break1" name="day1_break1"
 
-                                               value="<?php echo str_replace("<br>","و", $data->day1_break1) ?>"
+                                               value="<?php echo str_replace("<br>","-", $data->day1_break1) ?>"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
 
@@ -282,7 +282,7 @@
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day1_lunch" name="day1_lunch"
 
-                                               value="<?php echo str_replace("<br>","و", $data->day1_lunch) ?>"
+                                               value="<?php echo str_replace("<br>","-", $data->day1_lunch) ?>"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
 
@@ -343,7 +343,7 @@
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day1_break2" name="day1_break2"
 
-                                               value="<?php echo str_replace("<br>","و", $data->day1_break2) ?>"
+                                               value="<?php echo str_replace("<br>","-", $data->day1_break2) ?>"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
 
@@ -405,7 +405,7 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day1_dinner" name="day1_dinner"
-                                               value="<?php echo str_replace("<br>","و", $data->day1_dinner) ?>"
+                                               value="<?php echo str_replace("<br>","-", $data->day1_dinner) ?>"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
 
@@ -559,7 +559,7 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day2_breakfast" name="day2_breakfast"
-                                               value="<?php echo str_replace("<br>","و", $data->day2_breakfast) ?>"
+                                               value="<?php echo str_replace("<br>","-", $data->day2_breakfast) ?>"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
 
@@ -617,7 +617,7 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day2_break1" name="day2_break1"
-                                               value="<?php echo str_replace("<br>","و", $data->day2_break1) ?>"
+                                               value="<?php echo str_replace("<br>","-", $data->day2_break1) ?>"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
 
@@ -666,7 +666,7 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day2_lunch" name="day2_lunch"
-                                               value="<?php echo str_replace("<br>","و", $data->day2_lunch) ?>"
+                                               value="<?php echo str_replace("<br>","-", $data->day2_lunch) ?>"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
 
@@ -716,7 +716,7 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day2_break2" name="day2_break2"
-                                               value="<?php echo str_replace("<br>","و", $data->day2_break2) ?>"
+                                               value="<?php echo str_replace("<br>","-", $data->day2_break2) ?>"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
 
@@ -767,7 +767,7 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day2_dinner" name="day2_dinner"
-                                               value="<?php echo str_replace("<br>","و", $data->day2_dinner) ?>"
+                                               value="<?php echo str_replace("<br>","-", $data->day2_dinner) ?>"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
 
@@ -912,7 +912,7 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day3_breakfast" name="day3_breakfast"
-                                               value="<?php echo str_replace("<br>","و", $data->day3_breakfast) ?>"
+                                               value="<?php echo str_replace("<br>","-", $data->day3_breakfast) ?>"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
 
@@ -962,7 +962,7 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day3_break1" name="day3_break1"
-                                               value="<?php echo str_replace("<br>","و", $data->day3_break1) ?>"
+                                               value="<?php echo str_replace("<br>","-", $data->day3_break1) ?>"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
 
@@ -1011,7 +1011,7 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day3_lunch" name="day3_lunch"
-                                               value="<?php echo str_replace("<br>","و", $data->day3_lunch) ?>"
+                                               value="<?php echo str_replace("<br>","-", $data->day3_lunch) ?>"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
 
@@ -1062,7 +1062,7 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day3_break2" name="day3_break2"
-                                               value="<?php echo str_replace("<br>","و", $data->day3_break2) ?>"
+                                               value="<?php echo str_replace("<br>","-", $data->day3_break2) ?>"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
 
@@ -1112,7 +1112,7 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day3_dinner" name="day3_dinner"
-                                               value="<?php echo str_replace("<br>","و", $data->day3_dinner) ?>"
+                                               value="<?php echo str_replace("<br>","-", $data->day3_dinner) ?>"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
 
@@ -1258,7 +1258,7 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day4_breakfast" name="day4_breakfast"
-                                               value="<?php echo str_replace("<br>","و", $data->day4_breakfast) ?>"
+                                               value="<?php echo str_replace("<br>","-", $data->day4_breakfast) ?>"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
 
@@ -1306,7 +1306,7 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day4_break1" name="day4_break1"
-                                               value="<?php echo str_replace("<br>","و", $data->day4_break1) ?>"
+                                               value="<?php echo str_replace("<br>","-", $data->day4_break1) ?>"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
 
@@ -1354,7 +1354,7 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day4_lunch" name="day4_lunch"
-                                               value="<?php echo str_replace("<br>","و", $data->day4_lunch) ?>"
+                                               value="<?php echo str_replace("<br>","-", $data->day4_lunch) ?>"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
 
@@ -1404,7 +1404,7 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day4_break2" name="day4_break2"
-                                               value="<?php echo str_replace("<br>","و", $data->day4_break2) ?>"
+                                               value="<?php echo str_replace("<br>","-", $data->day4_break2) ?>"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
 
@@ -1454,7 +1454,7 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day4_dinner" name="day4_dinner"
-                                               value="<?php echo str_replace("<br>","و", $data->day4_dinner) ?>"
+                                               value="<?php echo str_replace("<br>","-", $data->day4_dinner) ?>"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
 
@@ -1601,7 +1601,7 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day5_breakfast" name="day5_breakfast"
-                                               value="<?php echo str_replace("<br>","و", $data->day5_breakfast) ?>"
+                                               value="<?php echo str_replace("<br>","-", $data->day5_breakfast) ?>"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
 
@@ -1651,7 +1651,7 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day5_break1" name="day5_break1"
-                                               value="<?php echo str_replace("<br>","و", $data->day5_break1) ?>"
+                                               value="<?php echo str_replace("<br>","-", $data->day5_break1) ?>"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
 
@@ -1702,7 +1702,7 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day5_lunch" name="day5_lunch"
-                                               value="<?php echo str_replace("<br>","و", $data->day5_lunch) ?>"
+                                               value="<?php echo str_replace("<br>","-", $data->day5_lunch) ?>"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
 
@@ -1751,7 +1751,7 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day5_break2" name="day5_break2"
-                                               value="<?php echo str_replace("<br>","و", $data->day5_break2) ?>"
+                                               value="<?php echo str_replace("<br>","-", $data->day5_break2) ?>"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
 
@@ -1799,7 +1799,7 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day5_dinner" name="day5_dinner"
-                                               value="<?php echo str_replace("<br>","و", $data->day5_dinner) ?>"
+                                               value="<?php echo str_replace("<br>","-", $data->day5_dinner) ?>"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
 
@@ -1945,7 +1945,7 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day6_breakfast" name="day6_breakfast"
-                                               value="<?php echo str_replace("<br>","و", $data->day6_breakfast) ?>"
+                                               value="<?php echo str_replace("<br>","-", $data->day6_breakfast) ?>"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
 
@@ -1995,7 +1995,7 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day6_break1" name="day6_break1"
-                                               value="<?php echo str_replace("<br>","و", $data->day6_break1) ?>"
+                                               value="<?php echo str_replace("<br>","-", $data->day6_break1) ?>"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
 
@@ -2046,7 +2046,7 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day6_lunch" name="day6_lunch"
-                                               value="<?php echo str_replace("<br>","و", $data->day6_lunch) ?>"
+                                               value="<?php echo str_replace("<br>","-", $data->day6_lunch) ?>"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
 
@@ -2095,7 +2095,7 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day6_break2" name="day6_break2"
-                                               value="<?php echo str_replace("<br>","و", $data->day6_break2) ?>"
+                                               value="<?php echo str_replace("<br>","-", $data->day6_break2) ?>"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
 
@@ -2147,7 +2147,7 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day6_dinner" name="day6_dinner"
-                                               value="<?php echo str_replace("<br>","و", $data->day6_dinner) ?>"
+                                               value="<?php echo str_replace("<br>","-", $data->day6_dinner) ?>"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
 
@@ -2294,7 +2294,7 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day7_breakfast" name="day7_breakfast"
-                                               value="<?php echo str_replace("<br>","و", $data->day7_breakfast) ?>"
+                                               value="<?php echo str_replace("<br>","-", $data->day7_breakfast) ?>"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
 
@@ -2344,7 +2344,7 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day7_break1" name="day7_break1"
-                                               value="<?php echo str_replace("<br>","و", $data->day7_break1) ?>"
+                                               value="<?php echo str_replace("<br>","-", $data->day7_break1) ?>"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
 
@@ -2395,7 +2395,7 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day7_lunch" name="day7_lunch"
-                                               value="<?php echo str_replace("<br>","و", $data->day7_lunch) ?>"
+                                               value="<?php echo str_replace("<br>","-", $data->day7_lunch) ?>"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
 
@@ -2445,7 +2445,7 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day7_break2" name="day7_break2"
-                                               value="<?php echo str_replace("<br>","و", $data->day7_break2) ?>"
+                                               value="<?php echo str_replace("<br>","-", $data->day7_break2) ?>"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
 
@@ -2495,7 +2495,7 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day7_dinner" name="day7_dinner"
-                                               value="<?php echo str_replace("<br>","و", $data->day7_dinner) ?>"
+                                               value="<?php echo str_replace("<br>","-", $data->day7_dinner) ?>"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
 
