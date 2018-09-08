@@ -89,18 +89,27 @@
                     </form>
                 </div>
                 <br>
-                <div class="col-lg-12">
-                    <div class="row">
+
+                <div class="col-lg-12" >
+                    <div class="col-lg-12">
+                        <h5 class="text-center">اذا اردت حساب عدد السعرات الحرارية في الغرام الواحد رجاء استخدم الاداه التاليه </h5>
+                    </div>
+                    <center>
+                        <button class="btn btn-warning" id="calculator">احسب</button>
+                    </center>
+
+                    <div class="row" id="calculatorShow" style="display: none">
+                        <br><br><br><br>
                         <div class="text-center">
                             <label for="value">عدد السعرات في كل ١٠٠ غرام</label>
-                            <input type="number" onblur="calc();" class="form-control"
+                            <input type="number" onblur="calc();" class="form-control col-md-7 col-xs-12"
 
                                    id="value" placeholder="عدد السعرات الحرارية في كل ١٠٠ غرام ">
                             <br>
                             <label for="writeValue">عدد السعرات في الغرام الواحد</label>
 
                             <input type="text" id="writeValue"
-                                   class="form-control"
+                                   class="form-control col-md-7 col-xs-12"
                                    placeholder="عدد السعرات في الغرام الواحد">
 
                         </div>
@@ -125,7 +134,10 @@
             $('#writeValue').val(parseFloat(v/100));
         }
 
+        $('#calculator').on('click',function(){
 
+            $('#calculatorShow').toggle();
+        });
     </script>
 
 @stop
