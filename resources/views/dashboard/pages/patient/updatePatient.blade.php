@@ -2,8 +2,8 @@
 
 @section('content')
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="//cdn.ckeditor.com/4.9.0/standard/ckeditor.js"></script>
+    <script src="{{url('/')}}/js/jquery.js"></script>
+    <script src="{{url('/')}}/ckeditor/ckeditor.js"></script>
     <script type="text/javascript">
         var datefield=document.createElement("input")
         datefield.setAttribute("type", "date")
@@ -61,7 +61,7 @@
                             <span class="required">*</span>
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
-                            <input type="text" id="name" required="required" name="name"
+                            <input type="text" id="name"  name="name"
                                    class="form-control col-md-7 col-xs-12"
                                    value="{{$patient->name}}">
                         </div>

@@ -61,7 +61,7 @@
                             <span class="required">*</span>
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
-                            <input type="text" id="phone" required="required" name="phone"
+                            <input type="text" id="phone"  name="phone"
                                    class="form-control col-md-7 col-xs-12"
                                    value="{{old('phone')}}">
                         </div>
@@ -113,7 +113,7 @@
                         <div class="col-md-6 col-sm-6 col-xs-12">
                             <input type="date" name="birthday" id="birthday"
                                    class="date-picker form-control col-md-7 col-xs-12"
-                                   required="required"
+
                                     value="{{old('birthday')}}"
                             >
                         </div>
@@ -127,7 +127,7 @@
                             <input type="text" name="height" id="height"
                                    class=" form-control col-md-7 col-xs-12"
                                    value="{{old('height')}}"
-                                   required="required" >
+                                    >
                         </div>
                     </div>
 
@@ -139,7 +139,7 @@
                         <div class="col-md-6 col-sm-6 col-xs-12">
                             <input type="text" name="weight"
                                    value="{{old('weight')}}"
-                                   id="weight" class=" form-control col-md-7 col-xs-12" required="required" >
+                                   id="weight" class=" form-control col-md-7 col-xs-12" >
                         </div>
                     </div>
 
@@ -151,7 +151,7 @@
                         <div class="col-md-6 col-sm-6 col-xs-12">
                             <input type="text" name="age" id="age"
                                    value="{{old('age')}}"
-                                   class=" form-control col-md-7 col-xs-12" required="required" >
+                                   class=" form-control col-md-7 col-xs-12"  >
                         </div>
                     </div>
 
@@ -173,7 +173,7 @@
 
                     <div class="form-group">
                         <label class="control-label col-md-3 col-sm-3 col-xs-12"> نسبة الدهون في الجسم</label>
-                        <div class="col-md-6 col-sm-6 col-xs-12"  id="body_fat" required="required" >
+                        <div class="col-md-6 col-sm-6 col-xs-12"  id="body_fat"  >
                             <select class="form-control" value="{{old('body_fat')}}" name="body_fat">
                                 <option >اختر</option>
                                 <option value="منخفض">منخفض</option>
@@ -185,7 +185,7 @@
 
                     <div class="form-group">
                         <label class="control-label col-md-3 col-sm-3 col-xs-12"> نشاط المريض</label>
-                        <div class="col-md-6 col-sm-6 col-xs-12"  id="activity_level" required="required" >
+                        <div class="col-md-6 col-sm-6 col-xs-12"  id="activity_level"  >
                             <select class="form-control" name="activity_level">
                                 <option >اختر</option>
                                 <option value="low">قليل</option>
@@ -199,7 +199,7 @@
 
                     <div class="form-group">
                         <label class="control-label col-md-3 col-sm-3 col-xs-12">  انواع الطعام المفضلة للمريض</label>
-                        <div class="col-md-6 col-sm-6 col-xs-12"  id="food_type_diet" required="required" >
+                        <div class="col-md-6 col-sm-6 col-xs-12"  id="food_type_diet"  >
                             <select class="form-control" name="food_type_diet">
                                 <option >اختر</option>
                                 <option value="anything">anything</option>
