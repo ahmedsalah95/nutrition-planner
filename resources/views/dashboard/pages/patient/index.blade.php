@@ -2,6 +2,7 @@
 
 @section('content')
 
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 
@@ -15,7 +16,15 @@
         </div>
     @endif
 
-
+    <style>
+       .t .pagination>.active>a,.t .pagination>.active>a:focus,.t .pagination>.active>a:hover,.t .pagination>.active>span,.t .pagination>.active>span:focus, .pagination>.active>span:hover {
+            z-index: 3;
+            color: #fff;
+            cursor: default;
+            background-color: red;
+            border-color: red;
+        }
+    </style>
 
     <div class="container">
 
@@ -75,7 +84,7 @@
 
                 </table>
 
-                    <center>{{$patients->links()}}</center>
+                    <center class="t">{{$patients->links()}}</center>
             </div>
         </div>
 

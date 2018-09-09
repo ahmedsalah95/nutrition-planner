@@ -15,7 +15,33 @@
         </div>
     @endif
 
+    <style>
+        .t .pagination>.active>a,.t .pagination>.active>a:focus,.t .pagination>.active>a:hover,.t .pagination>.active>span,.t .pagination>.active>span:focus, .pagination>.active>span:hover {
+            z-index: 3;
+            color: #fff;
+            cursor: default;
+            background-color: #cd3266;
+            border-color: #cd3266;
+        }
+        .pagination>li>a:focus, .pagination>li>a:hover, .pagination>li>span:focus, .pagination>li>span:hover {
+            z-index: 2;
+            color: #e698b2;
+            background-color: #eee;
+            border-color: #ddd;
+        }
 
+        .pagination>li>a, .pagination>li>span {
+            position: relative;
+            float: left;
+            padding: 6px 12px;
+            margin-left: -1px;
+            line-height: 1.42857143;
+            color: #e698b2;
+            text-decoration: none;
+            background-color: #fff;
+            border: 1px solid #ddd;
+        }
+    </style>
 
     <div class="container">
 
@@ -75,7 +101,9 @@
 
                 </table>
 
-                <center>{{$patients->links()}}</center>
+                @if(isset($patients))
+                <center class="t">{{$patients->links()}}</center>
+                @endif
             </div>
         </div>
 

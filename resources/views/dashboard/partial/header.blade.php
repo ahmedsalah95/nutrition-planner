@@ -33,7 +33,7 @@
     <link href="{{url('/')}}/vendors/bootstrap-tagsinput.css" rel="stylesheet">
 
     <!-- adding textext -->
-    <link  href="{{url('/')}}/vendors/textext.core.css" rel="stylesheet">
+{{--    <link  href="{{url('/')}}/vendors/textext.core.css" rel="stylesheet">
 
     <link  href="{{url('/')}}/vendors/textext.plugin.arrow.css" rel="stylesheet">
 
@@ -45,7 +45,7 @@
 
     <link  href="{{url('/')}}/vendors/textext.plugin.prompt.css" rel="stylesheet">
 
-    <link  href="{{url('/')}}/vendors/textext.plugin.tags.css" rel="stylesheet">
+    <link  href="{{url('/')}}/vendors/textext.plugin.tags.css" rel="stylesheet">--}}
 
     <link rel="stylesheet" href="{{url('/')}}/vendors/accordination.css">
 </head>
