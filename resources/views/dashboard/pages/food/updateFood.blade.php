@@ -29,7 +29,7 @@
                             <div class="col-md-6 col-sm-6 col-xs-12">
                                 <input type="text" id="food_name" required="required" name="food_name"
                                        class="form-control col-md-7 col-xs-12"
-                                       value="{{old('food_name')}}">
+                                       value="{{$food->food_name}}">
                             </div>
                         </div>
 
@@ -64,7 +64,7 @@
                             <div class="col-md-6 col-sm-6 col-xs-12">
                                 <input type="text" id="unit" required="required" name="unit"
                                        class="form-control col-md-7 col-xs-12"
-                                       value="{{old('unit')}}">
+                                       value="{{$food->unit}}">
                             </div>
                         </div>
 
@@ -75,7 +75,7 @@
                             <div class="col-md-6 col-sm-6 col-xs-12">
                                 <input type="text" id="calories" required="required" name="calories"
                                        class="form-control col-md-7 col-xs-12"
-                                       value="{{old('calories')}}">
+                                       value="{{$food->calories}}">
                             </div>
                         </div>
 
