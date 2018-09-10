@@ -131,12 +131,16 @@
 
                                         if($patient->gender == "ذكر")
                                         {
-                                            $maleMass = ($patient->height - 100) - (($patient->height - 100) * 0.15);
-                                            echo $maleMass;
+                                            $inches = $patient->height*0.032808399;
+
+                                            $maleMass = 48 +(2.7*($inches-5));
+                                            echo ceil($maleMass) .' kg';
+
                                         }else
                                         {
-                                            $femaleMass =10*$patient->weight+6.25*$patient->height-5*$patient->age-161;
-                                            echo $femaleMass;
+                                            $inches = $patient->height*0.032808399;
+                                            $femaleMass = 48 +(2.2*($inches-5));
+                                            echo ceil($femaleMass).' kg';
                                         }
 
                                         ?>
