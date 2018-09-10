@@ -30,7 +30,7 @@ class CreatePatientsTable extends Migration
             $table->string('activity_level')->nullable();
             $table->String('food_type_diet')->nullable();
             $table->String('dont_eat')->nullable();
-            $table->integer('system')->nullable();
+            $table->String('system')->nullable();
             $table->String('sensitivity')->nullable();
             $table->String('blood')->nullable();
             $table->String('sleeping_hours')->nullable();

@@ -72,7 +72,7 @@
                             <span class="required">*</span>
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
-                            <input type="text" id="phone" required="required" name="phone"
+                            <input type="text" id="phone"  name="phone"
                                    class="form-control col-md-7 col-xs-12"
                                    value="{{$patient->phone}}">
                         </div>
@@ -124,7 +124,7 @@
                         <div class="col-md-6 col-sm-6 col-xs-12">
                             <input type="date" name="birthday" id="birthday"
                                    class="date-picker form-control col-md-7 col-xs-12"
-                                   required="required"
+
                                    value="{{$patient->birthday}}"
                             >
                         </div>
@@ -138,7 +138,7 @@
                             <input type="text" name="height" id="height"
                                    class=" form-control col-md-7 col-xs-12"
                                    value="{{$patient->height}}"
-                                   required="required" >
+                                    >
                         </div>
                     </div>
 
@@ -149,8 +149,8 @@
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
                             <input type="text" name="weight"
-                                   value="{{$patient->height}}"
-                                   id="weight" class=" form-control col-md-7 col-xs-12" required="required" >
+                                   value="{{$patient->weight}}"
+                                   id="weight" class=" form-control col-md-7 col-xs-12"  >
                         </div>
                     </div>
 
@@ -162,7 +162,7 @@
                         <div class="col-md-6 col-sm-6 col-xs-12">
                             <input type="text" name="age" id="age"
                                    value="{{$patient->age}}"
-                                   class=" form-control col-md-7 col-xs-12" required="required" >
+                                   class=" form-control col-md-7 col-xs-12"  >
                         </div>
                     </div>
 
@@ -184,7 +184,7 @@
 
                     <div class="form-group">
                         <label class="control-label col-md-3 col-sm-3 col-xs-12"> نسبة الدهون في الجسم</label>
-                        <div class="col-md-6 col-sm-6 col-xs-12"  id="body_fat" required="required" >
+                        <div class="col-md-6 col-sm-6 col-xs-12"  id="body_fat"  >
                             <select class="form-control" name="body_fat">
                                 <option value="{{$patient->body_fat}}" >{{$patient->body_fat}} </option>
                                 <option value="منخفض">منخفض</option>
@@ -196,7 +196,7 @@
 
                     <div class="form-group">
                         <label class="control-label col-md-3 col-sm-3 col-xs-12"> نشاط المريض</label>
-                        <div class="col-md-6 col-sm-6 col-xs-12"  id="activity_level" required="required" >
+                        <div class="col-md-6 col-sm-6 col-xs-12"  id="activity_level"  >
                             <select class="form-control" name="activity_level" value="{{$patient->activity_level}}">
                                 <option value="{{$patient->activity_level}}" >{{$patient->activity_level}} </option>
                                 <option value="low">قليل</option>
@@ -210,7 +210,7 @@
 
                     <div class="form-group">
                         <label class="control-label col-md-3 col-sm-3 col-xs-12">  انواع الطعام المفضلة للمريض</label>
-                        <div class="col-md-6 col-sm-6 col-xs-12"  id="food_type_diet" required="required" >
+                        <div class="col-md-6 col-sm-6 col-xs-12"  id="food_type_diet"  >
                             <select class="form-control" value="{{$patient->food_type_diet}}" name="food_type_diet">
                                 <option value="{{$patient->food_type_diet}}" >{{$patient->food_type_diet}} </option>
                                 <option value="anything">anything</option>
@@ -229,7 +229,8 @@
                         <div class="col-md-6 col-sm-6 col-xs-12">
                             <input type="text" value="البقوليات,اللحوم,الالبان"
                                    value="{{$patient->dont_eat}}"
-                                   name="dont_eat" id="dont_eat" data-role="tagsinput">
+                                   class="form-control"
+                                   name="dont_eat" id="dont_eat" >
                         </div>
                     </div>
 
@@ -239,7 +240,7 @@
 
                         <div class="col-md-6 col-sm-6 col-xs-12">
 
-                            <input type="text" value="{{$patient->sensitivity}}" name="sensitivity" id="sensitivity" data-role="tagsinput" class="form-control col-md-7 col-xs-12">
+                            <input type="text" value="{{$patient->sensitivity}}" name="sensitivity" id="sensitivity"  class="form-control col-md-7 col-xs-12">
                         </div>
                     </div>
 
@@ -248,7 +249,7 @@
                         <label class="control-label col-md-3 col-sm-3 col-xs-12" for="blood"> ادوية مميعه للدم <span class="required">*</span>
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
-                            <input type="text" value="{{$patient->blood}}" name="blood" id="blood" data-role="tagsinput" class="form-control col-md-7 col-xs-12"
+                            <input type="text" value="{{$patient->blood}}" name="blood" id="blood"  class="form-control col-md-7 col-xs-12"
 
                             >
                         </div>
@@ -261,7 +262,7 @@
                         <div class="col-md-6 col-sm-6 col-xs-12">
                             <input type="text" name="sleeping_hours"
                                    value="{{$patient->sleeping_hours}}"
-                                   id="sleeping_hours" class=" form-control col-md-7 col-xs-12" required="required" >
+                                   id="sleeping_hours" class=" form-control col-md-7 col-xs-12"  >
                         </div>
                     </div>
 
@@ -272,7 +273,7 @@
                         <div class="col-md-6 col-sm-6 col-xs-12">
                             <input type="text" name="water"
                                    value="{{$patient->sleeping_hours}}"
-                                   id="water" class=" form-control col-md-7 col-xs-12" required="required" >
+                                   id="water" class=" form-control col-md-7 col-xs-12"  >
                         </div>
                     </div>
 
@@ -283,7 +284,7 @@
                         <div class="col-md-6 col-sm-6 col-xs-12">
                             <input type="text" name="diet"
                                    value="{{$patient->diet}}"
-                                   id="diet" class=" form-control col-md-7 col-xs-12" required="required" >
+                                   id="diet" class=" form-control col-md-7 col-xs-12"  >
                         </div>
                     </div>
                     <div class="form-group">
@@ -293,7 +294,7 @@
                         <div class="col-md-6 col-sm-6 col-xs-12">
                             <input type="text" name="diet_name"
                                    value="{{$patient->diet_name}}"
-                                   id="diet_name" class=" form-control col-md-7 col-xs-12" required="required" >
+                                   id="diet_name" class=" form-control col-md-7 col-xs-12"  >
                         </div>
                     </div>
 
@@ -304,7 +305,7 @@
                         <div class="col-md-6 col-sm-6 col-xs-12">
                             <input type="text" name="diet_result"
                                    value="{{$patient->diet_result}}"
-                                   id="diet_result" class=" form-control col-md-7 col-xs-12" required="required" >
+                                   id="diet_result" class=" form-control col-md-7 col-xs-12"  >
                         </div>
                     </div>
 

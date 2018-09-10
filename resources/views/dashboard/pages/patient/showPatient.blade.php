@@ -10,9 +10,6 @@
         <div class="container">
             <div class="row">
 
-
-
-
                         <div class="col-lg-6 col-md-6 col-sm-12">
 
                             <h2 class="text-center"> عن المريض</h2>
@@ -79,6 +76,23 @@
 
                                 </tr>
 
+
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+
+                            <h2 class="text-center">المعلومات الصحية</h2>
+                            <table class="table table-hover" border="3px solid #2A3F54">
+                                <thead>
+
+                                </thead>
+                                <tbody>
+
+
+
+
                                 <tr>
                                     <td>نسبة الدهون </td>
                                     <td>{{$patient->body_fat}}</td>
@@ -95,19 +109,40 @@
                                     <td>
                                         <?php
 
-                                            if($patient->gender == "ذكر")
-                                              {
-                                                  $maleCalories = (88.362 + (13.397 * $patient->weight) + (4.799 *$patient->height) - (5.677 *$patient->age))*1.2;
-                                                    echo $maleCalories;
-                                              }else
-                                               {
-                                                   $femaleCalories =(447.593 + (9.247 * $patient->weight) + (3.098  *$patient->height) - (4.330 *$patient->age))*1.2;
-                                                    echo $femaleCalories;
-                                               }
+                                        if($patient->gender == "ذكر")
+                                        {
+                                            $maleCalories = (88.362 + (13.397 * $patient->weight) + (4.799 *$patient->height) - (5.677 *$patient->age))*1.2;
+                                            echo floor($maleCalories);
+                                        }else
+                                        {
+                                            $femaleCalories =(447.593 + (9.247 * $patient->weight) + (3.098  *$patient->height) - (4.330 *$patient->age))*1.2;
+                                            echo floor($femaleCalories);
+                                        }
 
                                         ?>
 
                                     </td>
+                                </tr>
+
+                                <tr>
+                                    <td>الوزن المثالي للمريض</td>
+                                    <td>
+                                        <?php
+
+                                        if($patient->gender == "ذكر")
+                                        {
+                                            $maleMass = ($patient->height - 100) - (($patient->height - 100) * 0.15);
+                                            echo $maleMass;
+                                        }else
+                                        {
+                                            $femaleMass =10*$patient->weight+6.25*$patient->height-5*$patient->age-161;
+                                            echo $femaleMass;
+                                        }
+
+                                        ?>
+
+                                    </td>
+
                                 </tr>
 
                                 <tr>
@@ -137,7 +172,7 @@
                                         @if(isset($currentSystem))
                                             {{ $currentSystem->system_name}}
 
-                                            @endif
+                                        @endif
                                     </td>
                                 </tr>
                                 <tr>
@@ -180,7 +215,7 @@
                                             <br>
                                             <br>
 
-                                          <center> <button class="btn btn-warning btn-block" type="submit">عدل هذا النظام</button></center>
+                                            <center> <button class="btn btn-warning btn-block" type="submit">عدل هذا النظام</button></center>
 
                                         </form>
 
@@ -195,52 +230,54 @@
                                 </tbody>
                             </table>
                         </div>
-
-                        <div class="col-lg-1 col-md-1 col-sm-12"></div>
-                        <div class="col-lg-5 col-md-5 col-sm-12" style="background: #73879F;border-radius: 10px;color: white;padding: 10px">
-                            <h2 class="text-center">ملاحظات </h2>
-
-
-                            <form action="/notes/save/{{$patient->id}}" method="post" >
-                                @csrf
+            </div>
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12" style="background: #73879F;border-radius: 10px;color: white;padding: 10px">
+                        <h2 class="text-center">ملاحظات </h2>
 
 
-                                    <div class="tab-unit">
-                                        <div class="removable" >
-                                            <div class="col-lg-10 col-md-10 col-sm-10">
-                                                <div class="form-group">
+                        <form action="/notes/save/{{$patient->id}}" method="post" >
+                            @csrf
+
+
+                            <div class="tab-unit">
+                                <div class="removable" >
+                                    <div class="col-lg-10 col-md-10 col-sm-10">
+                                        <div class="form-group">
 
                                                 <textarea type="text" name="notes[]" class="form-control" style="text-align: center"
 
-                                                          id="notes"  ></textarea>
-                                                </div>
-                                            </div>
-
-
-                                            <div class="col-lg-2 col-md-2 col-sm-2">
-                                                <label for="price_of_visitor" style="    visibility: hidden;"> .</label>
-                                                <div class=" btn btn-danger form-control removeBt"
-                                                     onclick="del(this)">حذف</div>
-                                            </div>
-
+                                                          id="notes"  required ></textarea>
                                         </div>
-
-
                                     </div>
-                                    <hr>
-                                    <button type="button" class="btn btn-warning btn-block appendText">
-                                        اضف ملاحظة</button>
-
-                                <input type="submit" name="submit" value="حفظ" class="btn btn-success btn-block">
-                            </form>
 
 
-                        </div>
+                                    <div class="col-lg-2 col-md-2 col-sm-2">
+                                        <label for="price_of_visitor" style="    visibility: hidden;"> .</label>
+                                        <div class=" btn btn-danger form-control removeBt"
+                                             onclick="del(this)">حذف</div>
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+                            <hr>
+                            <button type="button" class="btn btn-warning btn-block appendText">
+                                اضف ملاحظة</button>
+
+                            <input type="submit" name="submit" value="حفظ" class="btn btn-success btn-block">
+                        </form>
+
+
+                    </div>
+                </div>
 
 
 
 
-            </div>
+
+
             <br>
             <hr>
             <div class="row">
@@ -276,7 +313,7 @@
             '                                        <div class="col-lg-10 col-md-10 col-sm-10">\n' +
             '                                            <div class="form-group">\n' +
             '\n' +
-            '                                                <textarea style="text-align: center" type="text" name="notes[]" class="form-control"\n' +
+            '                                                <textarea style="text-align: center" required type="text" name="notes[]" class="form-control"\n' +
             '\n' +
             '                                                          id="notes"  ></textarea>\n' +
             '                                            </div>\n' +

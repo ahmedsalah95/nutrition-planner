@@ -226,7 +226,10 @@
                         <label class="control-label col-md-3 col-sm-3 col-xs-12" for="dont_eat">  نوع طعام لا يفضله المريض
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
-                            <input type="text" value="الالبان" name="dont_eat" id="dont_eat" data-role="tagsinput" class="form-control col-md-7 col-xs-12">
+                            <input type="text" name="dont_eat" id="dont_eat"  class="form-control col-md-7 col-xs-12"
+                            placeholder="الالبان ، البقوليات "
+                                   value="{{old('dont_eat')}}"
+                            >
                         </div>
                     </div>
 
@@ -234,7 +237,10 @@
                         <label class="control-label col-md-3 col-sm-3 col-xs-12" for="dont_eat"> اطعمة تسبب الحساسية للمريض
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
-                            <input type="text" value="الفول السوداني" name="sensitivity" id="sensitivity" data-role="tagsinput" class="form-control col-md-7 col-xs-12">
+                            <input type="text"  name="sensitivity" id="sensitivity" class="form-control col-md-7 col-xs-12"
+                                   value="{{old('sensitivity')}}"
+                                   placeholder="الالبان ، البقوليات"
+                            >
                         </div>
                     </div>
 
@@ -243,8 +249,9 @@
                         <label class="control-label col-md-3 col-sm-3 col-xs-12" for="blood"> ادوية مميعه للدم
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
-                            <input type="text" value="Heparin" name="blood" id="blood" data-role="tagsinput" class="form-control col-md-7 col-xs-12"
-
+                            <input type="text"  name="blood" id="blood"  class="form-control col-md-7 col-xs-12"
+                                   value="{{old('blood')}}"
+                                   placeholder="Heparin"
                             >
                         </div>
                     </div>

@@ -40,7 +40,7 @@ class PatientController extends Controller
     public function store(Request $request)
     {
         $this->validate($request,[
-
+/*
             'name'=>'required',
             'phone'=>'required',
             'register_date'=>'required',
@@ -58,7 +58,7 @@ class PatientController extends Controller
             'activity_level'=>'required',
             'food_type_diet' => 'required',
 
-            'goal'=>'required',
+            'goal'=>'required', */
 
         ]);
 
@@ -139,7 +139,7 @@ class PatientController extends Controller
 
         $this->validate($request,[
 
-            'name'=>'required',
+        /*    'name'=>'required',
             'phone'=>'required',
             'register_date'=>'required',
             'email'=>'email|required',
@@ -156,7 +156,7 @@ class PatientController extends Controller
             'activity_level'=>'required',
             'food_type_diet' => 'required',
 
-            'goal'=>'required',
+            'goal'=>'required', */
 
         ]);
         $patientData = Patient::where('id',$id)->first();
