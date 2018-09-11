@@ -54,7 +54,7 @@ class FoodController extends Controller
         ]);
 
         $saveData = new Food();
-        $saveData->food_name = $request['food_name'];
+        $saveData->food_name = str_replace(' ','_' ,  $request['food_name']);
         $saveData->category_id=$request['category_id'];
         $saveData->calories =$request['calories'];
 
@@ -114,7 +114,7 @@ class FoodController extends Controller
         ]);
 
         $saveData =  Food::where('id',$id)->first();
-        $saveData->food_name = $request['food_name'];
+        $saveData->food_name = str_replace(' ','_' ,  $request['food_name']);
         if($request['category_id'])
         {
             $saveData->category_id=$request['category_id'];
