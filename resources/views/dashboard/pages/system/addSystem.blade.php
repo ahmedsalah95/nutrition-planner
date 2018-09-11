@@ -95,7 +95,7 @@
 
                                                 <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
-                                                @for($i=1;$i<=1000;$i++)
+                                                @for($i=1;$i<=500;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
 
@@ -134,7 +134,7 @@
 
                                                 <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
-                                                @for($i=1;$i<=1000;$i++)
+                                                @for($i=1;$i<=500;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
 
@@ -198,7 +198,7 @@
 
                                                 <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
-                                                @for($i=1;$i<=1000;$i++)
+                                                @for($i=1;$i<=500;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
 
@@ -254,7 +254,7 @@
 
                                                 <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
-                                                @for($i=1;$i<=1000;$i++)
+                                                @for($i=1;$i<=500;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
 
@@ -307,7 +307,7 @@
 
                                                 <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
-                                                @for($i=1;$i<=1000;$i++)
+                                                @for($i=1;$i<=500;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
 
@@ -369,7 +369,7 @@
 
                                                 <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
-                                                @for($i=1;$i<=1000;$i++)
+                                                @for($i=1;$i<=500;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
 
@@ -480,7 +480,7 @@
                                     </div>
                                     <div class="col-lg-3">
                                         <select name="gmValue" id="gmValueg2" class="form-control">
-                                            @for($i=1;$i<=1000;$i++)
+                                            @for($i=1;$i<=500;$i++)
                                                 <option value="{{$i}}">{{$i}}</option>
                                             @endfor
                                         </select>
@@ -516,7 +516,7 @@
 
                                                 <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
-                                                @for($i=1;$i<=1000;$i++)
+                                                @for($i=1;$i<=500;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
 
@@ -573,7 +573,7 @@
 
                                                 <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
-                                                @for($i=1;$i<=1000;$i++)
+                                                @for($i=1;$i<=500;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
 
@@ -628,7 +628,7 @@
 
                                                 <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
-                                                @for($i=1;$i<=1000;$i++)
+                                                @for($i=1;$i<=500;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
 
@@ -682,7 +682,7 @@
 
                                                 <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
-                                                @for($i=1;$i<=1000;$i++)
+                                                @for($i=1;$i<=500;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
 
@@ -737,7 +737,7 @@
 
                                                 <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
-                                                @for($i=1;$i<=1000;$i++)
+                                                @for($i=1;$i<=500;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
 
@@ -846,7 +846,7 @@
                                     </div>
                                     <div class="col-lg-3">
                                         <select name="gmValue" id="gmValueg3" class="form-control">
-                                            @for($i=1;$i<=1000;$i++)
+                                            @for($i=1;$i<=500;$i++)
                                                 <option value="{{$i}}">{{$i}}</option>
                                             @endfor
                                         </select>
@@ -877,7 +877,7 @@
 
                                                 <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
-                                                @for($i=1;$i<=1000;$i++)
+                                                @for($i=1;$i<=500;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
 
@@ -930,7 +930,7 @@
 
                                                 <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
-                                                @for($i=1;$i<=1000;$i++)
+                                                @for($i=1;$i<=500;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
 
@@ -983,7 +983,7 @@
 
                                                 <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
-                                                @for($i=1;$i<=1000;$i++)
+                                                @for($i=1;$i<=500;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
 
@@ -1038,7 +1038,7 @@
 
                                                 <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
-                                                @for($i=1;$i<=1000;$i++)
+                                                @for($i=1;$i<=500;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
 
@@ -1093,7 +1093,7 @@
 
                                                 <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
-                                                @for($i=1;$i<=1000;$i++)
+                                                @for($i=1;$i<=500;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
 
@@ -1203,7 +1203,7 @@
 
                                                 <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
-                                                @for($i=1;$i<=1000;$i++)
+                                                @for($i=1;$i<=500;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
 
@@ -1233,7 +1233,7 @@
 
                                                 <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
-                                                @for($i=1;$i<=1000;$i++)
+                                                @for($i=1;$i<=500;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
 
@@ -1286,7 +1286,7 @@
 
                                                 <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
-                                                @for($i=1;$i<=1000;$i++)
+                                                @for($i=1;$i<=500;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
 
@@ -1336,7 +1336,7 @@
 
                                                 <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
-                                                @for($i=1;$i<=1000;$i++)
+                                                @for($i=1;$i<=500;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
 
@@ -1390,7 +1390,7 @@
 
                                                 <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
-                                                @for($i=1;$i<=1000;$i++)
+                                                @for($i=1;$i<=500;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
 
@@ -1445,7 +1445,7 @@
 
                                                 <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
-                                                @for($i=1;$i<=1000;$i++)
+                                                @for($i=1;$i<=500;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
 
@@ -1559,7 +1559,7 @@
 
                                                 <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
-                                                @for($i=1;$i<=1000;$i++)
+                                                @for($i=1;$i<=500;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
 
@@ -1588,7 +1588,7 @@
 
                                                 <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
-                                                @for($i=1;$i<=1000;$i++)
+                                                @for($i=1;$i<=500;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
 
@@ -1640,7 +1640,7 @@
 
                                                 <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
-                                                @for($i=1;$i<=1000;$i++)
+                                                @for($i=1;$i<=500;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
 
@@ -1695,7 +1695,7 @@
 
                                                 <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
-                                                @for($i=1;$i<=1000;$i++)
+                                                @for($i=1;$i<=500;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
 
@@ -1749,7 +1749,7 @@
 
                                                 <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
-                                                @for($i=1;$i<=1000;$i++)
+                                                @for($i=1;$i<=500;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
 
@@ -1803,7 +1803,7 @@
 
                                                 <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
-                                                @for($i=1;$i<=1000;$i++)
+                                                @for($i=1;$i<=500;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
 
@@ -1914,7 +1914,7 @@
 
                                                 <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
-                                                @for($i=1;$i<=1000;$i++)
+                                                @for($i=1;$i<=500;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
 
@@ -1943,7 +1943,7 @@
 
                                                 <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
-                                                @for($i=1;$i<=1000;$i++)
+                                                @for($i=1;$i<=500;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
 
@@ -1996,7 +1996,7 @@
 
                                                 <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
-                                                @for($i=1;$i<=1000;$i++)
+                                                @for($i=1;$i<=500;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
 
@@ -2052,7 +2052,7 @@
 
                                                 <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
-                                                @for($i=1;$i<=1000;$i++)
+                                                @for($i=1;$i<=500;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
 
@@ -2105,7 +2105,7 @@
 
                                                 <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
-                                                @for($i=1;$i<=1000;$i++)
+                                                @for($i=1;$i<=500;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
 
@@ -2160,7 +2160,7 @@
 
                                                 <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
-                                                @for($i=1;$i<=1000;$i++)
+                                                @for($i=1;$i<=500;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
 
@@ -2273,7 +2273,7 @@
 
                                                 <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
-                                                @for($i=1;$i<=1000;$i++)
+                                                @for($i=1;$i<=500;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
 
@@ -2302,7 +2302,7 @@
 
                                                 <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
-                                                @for($i=1;$i<=1000;$i++)
+                                                @for($i=1;$i<=500;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
 
@@ -2355,7 +2355,7 @@
 
                                                 <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
-                                                @for($i=1;$i<=1000;$i++)
+                                                @for($i=1;$i<=500;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
 
@@ -2410,7 +2410,7 @@
 
                                                 <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
-                                                @for($i=1;$i<=1000;$i++)
+                                                @for($i=1;$i<=500;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
 
@@ -2464,7 +2464,7 @@
 
                                                 <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
-                                                @for($i=1;$i<=1000;$i++)
+                                                @for($i=1;$i<=500;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
 
@@ -2519,7 +2519,7 @@
 
                                                 <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
-                                                @for($i=1;$i<=1000;$i++)
+                                                @for($i=1;$i<=500;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
 

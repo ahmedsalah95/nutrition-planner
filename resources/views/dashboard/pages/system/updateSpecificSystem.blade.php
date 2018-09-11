@@ -70,7 +70,6 @@
                                     <h2 class="text-center">اليوم الاول</h2>
 
 
-
                                 </div>
 
 
@@ -80,7 +79,7 @@
                                     <div class="col-lg-12">
                                         <div class="col-lg-3">
                                             <select id="continentsg" class="form-control">
-                                                <option value = "0">all</option>
+                                                <option value="0">all</option>
                                                 <option value="1">carbs</option>
                                                 <option value="2">Fats</option>
                                                 <option value="3">proteins</option>
@@ -93,15 +92,16 @@
                                         </div>
                                         <div class="col-lg-3">
                                             <select name="gmValue" id="gmValueg" class="form-control">
-                                               <option value="0.25">1/4</option>
+                                                <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
-                                                @for($i=1;$i<=1000;$i++)
+                                                @for($i=1;$i<=500;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
                                             </select>
                                         </div>
                                         <div class="col-lg-3">
-                                            <button type="button" class="btn btn-warning" onclick="deleteData()">حذف</button>
+                                            <button type="button" class="btn btn-warning" onclick="deleteData()">حذف
+                                            </button>
                                         </div>
                                     </div>
                                 </div>
@@ -110,14 +110,12 @@
                                 <br><br><br>
 
 
-
-
                                 <div class="form-group text-center">
 
                                     <div class="col-lg-12">
                                         <div class="col-lg-3">
                                             <select id="continents" class="form-control">
-                                                <option value = "0">all</option>
+                                                <option value="0">all</option>
                                                 <option value="1">carbs</option>
                                                 <option value="2">Fats</option>
                                                 <option value="3">proteins</option>
@@ -130,24 +128,26 @@
                                         </div>
                                         <div class="col-lg-3">
                                             <select name="gmValue" id="gmValue" class="form-control">
-                                               <option value="0.25">1/4</option>
+                                                <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
-                                                @for($i=1;$i<=1000;$i++)
+                                                @for($i=1;$i<=500;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
                                             </select>
                                         </div>
                                         <div class="col-lg-3">
-                                            <button type="button" class="btn btn-success" onclick="getData()">أضف</button>
+                                            <button type="button" class="btn btn-success" onclick="getData()">أضف
+                                            </button>
+                                            <button type="button" class="btn btn-warning"
+                                                    onclick="deleteItem('gmValue','selectcountries','carbSum','fatsSum','proteinSum','day1_breakfast')">
+                                                حذف
+                                            </button>
                                         </div>
+
                                     </div>
 
                                     <br>
                                     <br>
-
-
-
-
 
 
                                     <br>
@@ -160,11 +160,9 @@
                                         <input type="text" id="day1_breakfast" name="day1_breakfast"
 
 
-                                               value="<?php echo str_replace("<br>","-", $data->day1_breakfast) ?>"
+                                               value="<?php echo str_replace("<br>", "-", $data->day1_breakfast) ?>"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
-
-
 
 
                                 </div>
@@ -173,12 +171,11 @@
                                 <br><br><br>
 
 
-
                                 <div class="form-group text-center">
                                     <div class="col-lg-12">
                                         <div class="col-lg-3">
                                             <select id="continents1_break1" class="form-control">
-                                                <option value = "0">all</option>
+                                                <option value="0">all</option>
                                                 <option value="1">carbs</option>
                                                 <option value="2">Fats</option>
                                                 <option value="3">proteins</option>
@@ -190,16 +187,22 @@
                                             <select id="selectcountries1_break1" class="form-control"></select>
                                         </div>
                                         <div class="col-lg-3">
-                                            <select name="gmValue" id="gmValue1_break1" class="form-control" >
-                                               <option value="0.25">1/4</option>
+                                            <select name="gmValue" id="gmValue1_break1" class="form-control">
+                                                <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
-                                                @for($i=1;$i<=1000;$i++)
+                                                @for($i=1;$i<=500;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
                                             </select>
                                         </div>
                                         <div class="col-lg-3">
-                                            <button type="button" class="btn btn-success" onclick="getData1_break1()">أضف</button>
+                                            <button type="button" class="btn btn-success" onclick="getData1_break1()">
+                                                أضف
+                                            </button>
+                                            <button type="button" class="btn btn-warning"
+                                                    onclick="deleteItem('gmValue1_break1','selectcountries1_break1','carbSum','fatsSum','proteinSum','day1_break1')">
+                                                حذف
+                                            </button>
                                         </div>
                                     </div>
 
@@ -208,17 +211,16 @@
                                     <br>
                                     <br>
 
-                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="day1_break1">وجبة خفيفة
+                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="day1_break1">وجبة
+                                        خفيفة
                                         <span class="required">*</span>
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day1_break1" name="day1_break1"
 
-                                               value="<?php echo str_replace("<br>","-", $data->day1_break1) ?>"
+                                               value="<?php echo str_replace("<br>", "-", $data->day1_break1) ?>"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
-
-
 
 
                                 </div>
@@ -226,34 +228,39 @@
                                 <br><br><br>
 
 
-
                                 <div class="form-group text-center">
                                     <div class="col-lg-12">
-                                        <div class="col-lg-3"> <select id="continents1_lunch" class="form-control">
-                                                <option value = "0">all</option>
+                                        <div class="col-lg-3"><select id="continents1_lunch" class="form-control">
+                                                <option value="0">all</option>
                                                 <option value="1">carbs</option>
                                                 <option value="2">Fats</option>
                                                 <option value="3">proteins</option>
 
 
                                             </select></div>
-                                        <div class="col-lg-3"><select id="selectcountries1_lunch" class="form-control"></select></div>
-                                        <div class="col-lg-3">  <select name="gmValue" id="gmValue1_lunch" class="form-control" >
-                                               <option value="0.25">1/4</option>
+                                        <div class="col-lg-3"><select id="selectcountries1_lunch"
+                                                                      class="form-control"></select></div>
+                                        <div class="col-lg-3"><select name="gmValue" id="gmValue1_lunch"
+                                                                      class="form-control">
+                                                <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
-                                                @for($i=1;$i<=1000;$i++)
+                                                @for($i=1;$i<=500;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
                                             </select></div>
                                         <div class="col-lg-3">
-                                            <button type="button" class="btn btn-success" onclick="getData1_lunch()">أضف</button>
+                                            <button type="button" class="btn btn-success" onclick="getData1_lunch()">
+                                                أضف
+                                            </button>
+                                            <button type="button" class="btn btn-warning"
+                                                    onclick="deleteItem('gmValue1_lunch','selectcountries1_lunch','carbSum','fatsSum','proteinSum','day1_lunch')">
+                                                حذف
+                                            </button>
                                         </div>
                                     </div>
 
 
                                     <br><br><br>
-
-
 
 
                                     <label class="control-label col-md-3 col-sm-3 col-xs-12" for="day1_lunch">الغداء
@@ -262,25 +269,19 @@
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day1_lunch" name="day1_lunch"
 
-                                               value="<?php echo str_replace("<br>","-", $data->day1_lunch) ?>"
+                                               value="<?php echo str_replace("<br>", "-", $data->day1_lunch) ?>"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
-
-
 
 
                                 </div>
                                 <br><br><br>
 
 
-
-
-
-
                                 <div class="form-group text-center">
                                     <div class="col-lg-12">
-                                        <div class="col-lg-3">   <select id="continents1_break2" class="form-control">
-                                                <option value = "0">all</option>
+                                        <div class="col-lg-3"><select id="continents1_break2" class="form-control">
+                                                <option value="0">all</option>
                                                 <option value="1">carbs</option>
                                                 <option value="2">Fats</option>
                                                 <option value="3">proteins</option>
@@ -291,16 +292,22 @@
                                             <select id="selectcountries1_break2" class="form-control"></select>
                                         </div>
                                         <div class="col-lg-3">
-                                            <select name="gmValue" id="gmValue1_break2" class="form-control" >
-                                               <option value="0.25">1/4</option>
+                                            <select name="gmValue" id="gmValue1_break2" class="form-control">
+                                                <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
-                                                @for($i=1;$i<=1000;$i++)
+                                                @for($i=1;$i<=500;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
                                             </select>
                                         </div>
                                         <div class="col-lg-3">
-                                            <button type="button" class="btn btn-success" onclick="getData1_break2()">أضف</button>
+                                            <button type="button" class="btn btn-success" onclick="getData1_break2()">
+                                                أضف
+                                            </button>
+                                            <button type="button" class="btn btn-warning"
+                                                    onclick="deleteItem('gmValue1_break2','selectcountries1_break2','carbSum','fatsSum','proteinSum','day1_break2')">
+                                                حذف
+                                            </button>
                                         </div>
                                     </div>
 
@@ -308,21 +315,19 @@
                                     <br><br>
 
 
-
                                     <br>
 
 
-                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="day1_break2">وجبة خفيفة
+                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="day1_break2">وجبة
+                                        خفيفة
                                         <span class="required">*</span>
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day1_break2" name="day1_break2"
 
-                                               value="<?php echo str_replace("<br>","-", $data->day1_break2) ?>"
+                                               value="<?php echo str_replace("<br>", "-", $data->day1_break2) ?>"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
-
-
 
 
                                 </div>
@@ -331,12 +336,11 @@
                                 <br><br><br>
 
 
-
                                 <div class="form-group text-center">
                                     <div class="col-lg-12">
                                         <div class="col-lg-3">
                                             <select id="continents1_dinner" class="form-control">
-                                                <option value = "0">all</option>
+                                                <option value="0">all</option>
                                                 <option value="1">carbs</option>
                                                 <option value="2">Fats</option>
                                                 <option value="3">proteins</option>
@@ -349,21 +353,24 @@
                                         </div>
                                         <div class="col-lg-3">
                                             <select name="gmValue" id="gmValue1_dinner" class="form-control">
-                                               <option value="0.25">1/4</option>
+                                                <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
-                                                @for($i=1;$i<=1000;$i++)
+                                                @for($i=1;$i<=500;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
                                             </select>
                                         </div>
                                         <div class="col-lg-3">
 
-                                            <button type="button" class="btn btn-success" onclick="getData1_dinner()">أضف</button>
+                                            <button type="button" class="btn btn-success" onclick="getData1_dinner()">
+                                                أضف
+                                            </button>
+                                            <button type="button" class="btn btn-warning"
+                                                    onclick="deleteItem('gmValue1_dinner','selectcountries1_dinner','carbSum','fatsSum','proteinSum','day1_dinner')">
+                                                حذف
+                                            </button>
                                         </div>
                                     </div>
-
-
-
 
 
                                     <br>
@@ -375,11 +382,9 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day1_dinner" name="day1_dinner"
-                                               value="<?php echo str_replace("<br>","-", $data->day1_dinner) ?>"
+                                               value="<?php echo str_replace("<br>", "-", $data->day1_dinner) ?>"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
-
-
 
 
                                 </div>
@@ -412,36 +417,31 @@
                                         <input type="text" id="carbSum" class="form-control"
                                                name="carbSum"
                                                value="{{$data->carbSum}}"
-                                               placeholder="مجموع الكربهيدرات" >
+                                               placeholder="مجموع الكربهيدرات">
                                     </div>
                                     <div class="col-lg-4 col-md-4 col-sm-12">
                                         <label for="fatsSum">fats old value : {{$data->fatsSum}}</label>
                                         <input type="text" id="fatsSum" class="form-control"
                                                name="fatsSum"
                                                value="{{$data->fatsSum}}"
-                                               placeholder="مجموع الدهون" >
+                                               placeholder="مجموع الدهون">
                                     </div>
                                     <div class="col-lg-4 col-md-4 col-sm-12">
                                         <label for="proteinSum">protein old value : {{$data->proteinSum}}</label>
                                         <input type="text" id="proteinSum" class="form-control"
                                                name="proteinSum"
                                                value="{{$data->proteinSum}}"
-                                               placeholder="مجموع البروتينات" >
+                                               placeholder="مجموع البروتينات">
                                     </div>
                                 </div>
-
-
-
 
 
                             </div>
                         </div>
 
 
-
                         <button class="accordion" type="button">اليوم الثانى</button>
                         <div class="panel">
-
 
 
                             <br>
@@ -450,7 +450,7 @@
                                 <div class="col-lg-12">
                                     <div class="col-lg-3">
                                         <select id="continentsg2" class="form-control">
-                                            <option value = "0">all</option>
+                                            <option value="0">all</option>
                                             <option value="1">carbs</option>
                                             <option value="2">Fats</option>
                                             <option value="3">proteins</option>
@@ -476,7 +476,9 @@
                                         </select>
                                     </div>
                                     <div class="col-lg-3">
-                                        <button type="button" class="btn btn-warning" onclick="deleteData2()">حذف</button>
+                                        <button type="button" class="btn btn-warning" onclick="deleteData2()">حذف
+                                        </button>
+
                                     </div>
                                 </div>
                             </div>
@@ -489,7 +491,7 @@
                                     <div class="col-lg-12">
                                         <div class="col-lg-3">
                                             <select id="continent2" class="form-control">
-                                                <option value = "0">all</option>
+                                                <option value="0">all</option>
                                                 <option value="1">carbs</option>
                                                 <option value="2">Fats</option>
                                                 <option value="3">proteins</option>
@@ -502,15 +504,20 @@
                                         </div>
                                         <div class="col-lg-3">
                                             <select name="gmValue" id="gmValue2" class="form-control">
-                                               <option value="0.25">1/4</option>
+                                                <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
-                                                @for($i=1;$i<=1000;$i++)
+                                                @for($i=1;$i<=500;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
                                             </select>
                                         </div>
                                         <div class="col-lg-3">
-                                            <button type="button" class="btn btn-success" onclick="getData2()">أضف</button>
+                                            <button type="button" class="btn btn-success" onclick="getData2()">أضف
+                                            </button>
+                                            <button type="button" class="btn btn-warning"
+                                                    onclick="deleteItem('gmValue2','selectcountries2','carbSum2','fatsSum2','proteinSum2','day2_breakfast')">
+                                                حذف
+                                            </button>
                                         </div>
                                     </div>
 
@@ -524,11 +531,9 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day2_breakfast" name="day2_breakfast"
-                                               value="<?php echo str_replace("<br>","-", $data->day2_breakfast) ?>"
+                                               value="<?php echo str_replace("<br>", "-", $data->day2_breakfast) ?>"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
-
-
 
 
                                 </div>
@@ -537,12 +542,11 @@
                                 <br><br><br>
 
 
-
                                 <div class="form-group text-center">
                                     <div class="col-lg-12">
                                         <div class="col-lg-3">
                                             <select id="continents2_break1" class="form-control">
-                                                <option value = "0">all</option>
+                                                <option value="0">all</option>
                                                 <option value="1">carbs</option>
                                                 <option value="2">Fats</option>
                                                 <option value="3">proteins</option>
@@ -555,15 +559,21 @@
                                         </div>
                                         <div class="col-lg-3">
                                             <select name="gmValue" id="gmValue2_break1" class="form-control">
-                                               <option value="0.25">1/4</option>
+                                                <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
-                                                @for($i=1;$i<=1000;$i++)
+                                                @for($i=1;$i<=500;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
                                             </select>
                                         </div>
                                         <div class="col-lg-3">
-                                            <button type="button" class="btn btn-success" onclick="getData2_break1()">أضف</button>
+                                            <button type="button" class="btn btn-success" onclick="getData2_break1()">
+                                                أضف
+                                            </button>
+                                            <button type="button" class="btn btn-warning"
+                                                    onclick="deleteItem('gmValue2_break1','selectcountries2_break1','carbSum2','fatsSum2','proteinSum2','day2_break1')">
+                                                حذف
+                                            </button>
                                         </div>
                                     </div>
 
@@ -572,16 +582,15 @@
                                     <br>
                                     <br>
 
-                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="day2_break1">وجبة خفيفة
+                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="day2_break1">وجبة
+                                        خفيفة
                                         <span class="required">*</span>
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day2_break1" name="day2_break1"
-                                               value="<?php echo str_replace("<br>","-", $data->day2_break1) ?>"
+                                               value="<?php echo str_replace("<br>", "-", $data->day2_break1) ?>"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
-
-
 
 
                                 </div>
@@ -589,26 +598,35 @@
                                 <br><br><br>
 
 
-
                                 <div class="form-group text-center">
                                     <div class="col-lg-12">
-                                        <div class="col-lg-3"> <select id="continents2_lunch" class="form-control">
-                                                <option value = "0">all</option>
+                                        <div class="col-lg-3"><select id="continents2_lunch" class="form-control">
+                                                <option value="0">all</option>
                                                 <option value="1">carbs</option>
                                                 <option value="2">Fats</option>
                                                 <option value="3">proteins</option>
 
 
                                             </select></div>
-                                        <div class="col-lg-3"> <select id="selectcountries2_lunch" class="form-control"></select></div>
-                                        <div class="col-lg-3">   <select name="gmValue" id="gmValue2_lunch"  class="form-control">
-                                               <option value="0.25">1/4</option>
+                                        <div class="col-lg-3"><select id="selectcountries2_lunch"
+                                                                      class="form-control"></select></div>
+                                        <div class="col-lg-3"><select name="gmValue" id="gmValue2_lunch"
+                                                                      class="form-control">
+                                                <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
-                                                @for($i=1;$i<=1000;$i++)
+                                                @for($i=1;$i<=500;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
                                             </select></div>
-                                        <div class="col-lg-3"> <button type="button" class="btn btn-success" onclick="getData2_lunch()">أضف</button></div>
+                                        <div class="col-lg-3">
+                                            <button type="button" class="btn btn-success" onclick="getData2_lunch()">
+                                                أضف
+                                            </button>
+                                            <button type="button" class="btn btn-warning"
+                                                    onclick="deleteItem('gmValue2_lunch','selectcountries2_lunch','carbSum2','fatsSum2','proteinSum2','day2_lunch')">
+                                                حذف
+                                            </button>
+                                        </div>
                                     </div>
 
 
@@ -621,11 +639,9 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day2_lunch" name="day2_lunch"
-                                               value="<?php echo str_replace("<br>","-", $data->day2_lunch) ?>"
+                                               value="<?php echo str_replace("<br>", "-", $data->day2_lunch) ?>"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
-
-
 
 
                                 </div>
@@ -634,72 +650,88 @@
                                 <br><br><br>
 
 
-
                                 <div class="form-group text-center">
                                     <div class="col-lg-12">
-                                        <div class="col-lg-3">   <select id="continents2_break2" class="form-control">
-                                                <option value = "0">all</option>
+                                        <div class="col-lg-3"><select id="continents2_break2" class="form-control">
+                                                <option value="0">all</option>
                                                 <option value="1">carbs</option>
                                                 <option value="2">Fats</option>
                                                 <option value="3">proteins</option>
 
 
                                             </select></div>
-                                        <div class="col-lg-3"><select id="selectcountries2_break2" class="form-control"></select></div>
-                                        <div class="col-lg-3">    <select name="gmValue" id="gmValue2_break2" class="form-control">
-                                               <option value="0.25">1/4</option>
+                                        <div class="col-lg-3"><select id="selectcountries2_break2"
+                                                                      class="form-control"></select></div>
+                                        <div class="col-lg-3"><select name="gmValue" id="gmValue2_break2"
+                                                                      class="form-control">
+                                                <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
-                                                @for($i=1;$i<=1000;$i++)
-                                                    <option value="{{$i}}">{{$i}}</option>
-                                                @endfor
-                                            </select></div>
-                                        <div class="col-lg-3">      <button type="button" class="btn btn-success" onclick="getData2_break2()">أضف</button></div>
-                                    </div>
-
-
-                                    <br>
-                                    <br>
-                                    <br>
-
-                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="day2_break2">وجبة خفيفة
-                                        <span class="required">*</span>
-                                    </label>
-                                    <div class="col-md-6 col-sm-6 col-xs-12">
-                                        <input type="text" id="day2_break2" name="day2_break2"
-                                               value="<?php echo str_replace("<br>","-", $data->day2_break2) ?>"
-                                               class="form-control col-md-7 col-xs-12">
-                                    </div>
-
-
-
-
-                                </div>
-
-
-                                <br><br><br>
-
-
-
-                                <div class="form-group text-center">
-                                    <div class="col-lg-12">
-                                        <div class="col-lg-3">   <select id="continents2_dinner" class="form-control">
-                                                <option value = "0">all</option>
-                                                <option value="1">carbs</option>
-                                                <option value="2">Fats</option>
-                                                <option value="3">proteins</option>
-
-
-                                            </select></div>
-                                        <div class="col-lg-3"> <select id="selectcountries2_dinner" class="form-control"></select></div>
-                                        <div class="col-lg-3">   <select name="gmValue" id="gmValue2_dinner" class="form-control">
-                                               <option value="0.25">1/4</option>
-                                                <option value="0.5">1/2</option>
-                                                @for($i=1;$i<=1000;$i++)
+                                                @for($i=1;$i<=500;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
                                             </select></div>
                                         <div class="col-lg-3">
-                                            <button type="button" class="btn btn-success" onclick="getData2_dinner()">أضف</button></div>
+                                            <button type="button" class="btn btn-success" onclick="getData2_break2()">
+                                                أضف
+                                            </button>
+                                            <button type="button" class="btn btn-warning"
+                                                    onclick="deleteItem('gmValue2_break2','selectcountries2_break2','carbSum2','fatsSum2','proteinSum2','day2_break2')">
+                                                حذف
+                                            </button>
+                                        </div>
+                                    </div>
+
+
+                                    <br>
+                                    <br>
+                                    <br>
+
+                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="day2_break2">وجبة
+                                        خفيفة
+                                        <span class="required">*</span>
+                                    </label>
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <input type="text" id="day2_break2" name="day2_break2"
+                                               value="<?php echo str_replace("<br>", "-", $data->day2_break2) ?>"
+                                               class="form-control col-md-7 col-xs-12">
+                                    </div>
+
+
+                                </div>
+
+
+                                <br><br><br>
+
+
+                                <div class="form-group text-center">
+                                    <div class="col-lg-12">
+                                        <div class="col-lg-3"><select id="continents2_dinner" class="form-control">
+                                                <option value="0">all</option>
+                                                <option value="1">carbs</option>
+                                                <option value="2">Fats</option>
+                                                <option value="3">proteins</option>
+
+
+                                            </select></div>
+                                        <div class="col-lg-3"><select id="selectcountries2_dinner"
+                                                                      class="form-control"></select></div>
+                                        <div class="col-lg-3"><select name="gmValue" id="gmValue2_dinner"
+                                                                      class="form-control">
+                                                <option value="0.25">1/4</option>
+                                                <option value="0.5">1/2</option>
+                                                @for($i=1;$i<=500;$i++)
+                                                    <option value="{{$i}}">{{$i}}</option>
+                                                @endfor
+                                            </select></div>
+                                        <div class="col-lg-3">
+                                            <button type="button" class="btn btn-success" onclick="getData2_dinner()">
+                                                أضف
+                                            </button>
+                                            <button type="button" class="btn btn-warning"
+                                                    onclick="deleteItem('gmValue2_dinner','selectcountries2_dinner','carbSum2','fatsSum2','proteinSum2','day2_dinner')">
+                                                حذف
+                                            </button>
+                                        </div>
                                     </div>
 
 
@@ -712,11 +744,9 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day2_dinner" name="day2_dinner"
-                                               value="<?php echo str_replace("<br>","-", $data->day2_dinner) ?>"
+                                               value="<?php echo str_replace("<br>", "-", $data->day2_dinner) ?>"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
-
-
 
 
                                 </div>
@@ -738,10 +768,6 @@
                                 </div>
 
 
-
-
-
-
                                 <br>
                                 <br>
                                 <br>
@@ -755,7 +781,7 @@
                                                value="{{$data->carbSum2}}"
                                                name="carbSum2"
 
-                                               placeholder="مجموع الكربهيدرات" >
+                                               placeholder="مجموع الكربهيدرات">
                                     </div>
                                     <div class="col-lg-4 col-md-4 col-sm-12">
                                         <label for="carbSum">fats old value : {{$data->fatsSum2}}</label>
@@ -763,7 +789,7 @@
                                                value="{{$data->fatsSum2}}"
                                                name="fatsSum2"
 
-                                               placeholder="مجموع الدهون" >
+                                               placeholder="مجموع الدهون">
                                     </div>
                                     <div class="col-lg-4 col-md-4 col-sm-12">
                                         <label for="carbSum">protein old value : {{$data->proteinSum2}}</label>
@@ -771,12 +797,9 @@
                                                value="{{$data->proteinSum2}}"
                                                name="proteinSum2"
 
-                                               placeholder="مجموع البروتينات" >
+                                               placeholder="مجموع البروتينات">
                                     </div>
                                 </div>
-
-
-
 
 
                             </div>
@@ -786,10 +809,11 @@
                         <button class="accordion" type="button">اليوم الثالث</button>
                         <div class="panel">
                             <div class="form-group text-center">
+                                <br><br>
                                 <div class="col-lg-12">
                                     <div class="col-lg-3">
                                         <select id="continentsg3" class="form-control">
-                                            <option value = "0">all</option>
+                                            <option value="0">all</option>
                                             <option value="1">carbs</option>
                                             <option value="2">Fats</option>
                                             <option value="3">proteins</option>
@@ -815,31 +839,41 @@
                                         </select>
                                     </div>
                                     <div class="col-lg-3">
-                                        <button type="button" class="btn btn-warning" onclick="deleteData3()">حذف</button>
+                                        <button type="button" class="btn btn-warning" onclick="deleteData3()">حذف
+                                        </button>
                                     </div>
                                 </div>
+                                <br><br><br>
                             </div>
                             <div class="form-group third_day">
 
                                 <div class="form-group text-center">
                                     <div class="col-lg-12">
-                                        <div class="col-lg-3">  <select id="continent3" class="form-control">
-                                                <option value = "0">all</option>
+                                        <div class="col-lg-3"><select id="continent3" class="form-control">
+                                                <option value="0">all</option>
                                                 <option value="1">carbs</option>
                                                 <option value="2">Fats</option>
                                                 <option value="3">proteins</option>
 
 
                                             </select></div>
-                                        <div class="col-lg-3"><select id="selectcountries3" class="form-control"></select></div>
-                                        <div class="col-lg-3">     <select name="gmValue" id="gmValue3" class="form-control">
-                                               <option value="0.25">1/4</option>
+                                        <div class="col-lg-3"><select id="selectcountries3"
+                                                                      class="form-control"></select></div>
+                                        <div class="col-lg-3"><select name="gmValue" id="gmValue3" class="form-control">
+                                                <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
-                                                @for($i=1;$i<=1000;$i++)
+                                                @for($i=1;$i<=500;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
                                             </select></div>
-                                        <div class="col-lg-3">  <button type="button" class="btn btn-success" onclick="getData3()">أضف</button></div>
+                                        <div class="col-lg-3">
+                                            <button type="button" class="btn btn-success" onclick="getData3()">أضف
+                                            </button>
+                                            <button type="button" class="btn btn-warning"
+                                                    onclick="deleteItem('gmValue3','selectcountries3','carbSum3','fatsSum3','proteinSum3','day3_breakfast')">
+                                                حذف
+                                            </button>
+                                        </div>
                                     </div>
 
 
@@ -852,39 +886,46 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day3_breakfast" name="day3_breakfast"
-                                               value="<?php echo str_replace("<br>","-", $data->day3_breakfast) ?>"
+                                               value="<?php echo str_replace("<br>", "-", $data->day3_breakfast) ?>"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
-
-
 
 
                                 </div>
 
 
                                 <br><br><br>
-
 
 
                                 <div class="form-group text-center">
                                     <div class="col-lg-12">
                                         <div class="col-lg-3">
                                             <select id="continents3_break1" class="form-control">
-                                                <option value = "0">all</option>
+                                                <option value="0">all</option>
                                                 <option value="1">carbs</option>
                                                 <option value="2">Fats</option>
                                                 <option value="3">proteins</option>
                                             </select>
                                         </div>
-                                        <div class="col-lg-3"><select id="selectcountries3_break1" class="form-control"></select></div>
-                                        <div class="col-lg-3">   <select name="gmValue" id="gmValue3_break1" class="form-control">
-                                               <option value="0.25">1/4</option>
+                                        <div class="col-lg-3"><select id="selectcountries3_break1"
+                                                                      class="form-control"></select></div>
+                                        <div class="col-lg-3"><select name="gmValue" id="gmValue3_break1"
+                                                                      class="form-control">
+                                                <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
-                                                @for($i=1;$i<=1000;$i++)
+                                                @for($i=1;$i<=500;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
                                             </select></div>
-                                        <div class="col-lg-3"><button type="button" class="btn btn-success" onclick="getData3_break1()">أضف</button></div>
+                                        <div class="col-lg-3">
+                                            <button type="button" class="btn btn-success" onclick="getData3_break1()">
+                                                أضف
+                                            </button>
+                                            <button type="button" class="btn btn-warning"
+                                                    onclick="deleteItem('gmValue3_break1','selectcountries3_break1','carbSum3','fatsSum3','proteinSum3','day3_break1')">
+                                                حذف
+                                            </button>
+                                        </div>
                                     </div>
 
 
@@ -892,16 +933,15 @@
                                     <br>
                                     <br>
 
-                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="day3_break1">وجبة خفيفة
+                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="day3_break1">وجبة
+                                        خفيفة
                                         <span class="required">*</span>
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day3_break1" name="day3_break1"
-                                               value="<?php echo str_replace("<br>","-", $data->day3_break1) ?>"
+                                               value="<?php echo str_replace("<br>", "-", $data->day3_break1) ?>"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
-
-
 
 
                                 </div>
@@ -909,26 +949,34 @@
                                 <br><br><br>
 
 
-
                                 <div class="form-group text-center">
                                     <div class="col-lg-12">
-                                        <div class="col-lg-3">  <select id="continents3_lunch" class="form-control">
-                                                <option value = "0">all</option>
+                                        <div class="col-lg-3"><select id="continents3_lunch" class="form-control">
+                                                <option value="0">all</option>
                                                 <option value="1">carbs</option>
                                                 <option value="2">Fats</option>
                                                 <option value="3">proteins</option>
 
 
                                             </select></div>
-                                        <div class="col-lg-3"> <select id="selectcountries3_lunch" class="form-control"></select></div>
-                                        <div class="col-lg-3">     <select  id="gmValue3_lunch" class="form-control">
-                                               <option value="0.25">1/4</option>
+                                        <div class="col-lg-3"><select id="selectcountries3_lunch"
+                                                                      class="form-control"></select></div>
+                                        <div class="col-lg-3"><select id="gmValue3_lunch" class="form-control">
+                                                <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
-                                                @for($i=1;$i<=1000;$i++)
+                                                @for($i=1;$i<=500;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
                                             </select></div>
-                                        <div class="col-lg-3"> <button type="button" class="btn btn-success" onclick="getData3_lunch()">أضف</button></div>
+                                        <div class="col-lg-3">
+                                            <button type="button" class="btn btn-success" onclick="getData3_lunch()">
+                                                أضف
+                                            </button>
+                                            <button type="button" class="btn btn-warning"
+                                                    onclick="deleteItem('gmValue3_lunch','selectcountries3_lunch','carbSum3','fatsSum3','proteinSum3','day3_lunch')">
+                                                حذف
+                                            </button>
+                                        </div>
                                     </div>
 
 
@@ -941,11 +989,9 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day3_lunch" name="day3_lunch"
-                                               value="<?php echo str_replace("<br>","-", $data->day3_lunch) ?>"
+                                               value="<?php echo str_replace("<br>", "-", $data->day3_lunch) ?>"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
-
-
 
 
                                 </div>
@@ -957,24 +1003,33 @@
                                 <br>
                                 <div class="form-group text-center">
                                     <div class="col-lg-12">
-                                        <div class="col-lg-3"> <select id="continents3_break2" class="form-control">
-                                                <option value = "0">all</option>
+                                        <div class="col-lg-3"><select id="continents3_break2" class="form-control">
+                                                <option value="0">all</option>
                                                 <option value="1">carbs</option>
                                                 <option value="2">Fats</option>
                                                 <option value="3">proteins</option>
 
 
                                             </select></div>
-                                        <div class="col-lg-3"><select id="selectcountries3_break2" class="form-control"></select></div>
-                                        <div class="col-lg-3">   <select name="gmValue" id="gmValue3_break2" class="form-control">
-                                               <option value="0.25">1/4</option>
+                                        <div class="col-lg-3"><select id="selectcountries3_break2"
+                                                                      class="form-control"></select></div>
+                                        <div class="col-lg-3"><select name="gmValue" id="gmValue3_break2"
+                                                                      class="form-control">
+                                                <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
-                                                @for($i=1;$i<=1000;$i++)
+                                                @for($i=1;$i<=500;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
                                             </select></div>
                                         <div class="col-lg-3">
-                                            <button type="button" class="btn btn-success" onclick="getData3_break2()">أضف</button></div>
+                                            <button type="button" class="btn btn-success" onclick="getData3_break2()">
+                                                أضف
+                                            </button>
+                                            <button type="button" class="btn btn-warning"
+                                                    onclick="deleteItem('gmValue3_break2','selectcountries3_break2','carbSum3','fatsSum3','proteinSum3','day3_break2')">
+                                                حذف
+                                            </button>
+                                        </div>
                                     </div>
 
 
@@ -982,16 +1037,15 @@
                                     <br>
                                     <br>
 
-                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="day3_break2">وجبة خفيفة
+                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="day3_break2">وجبة
+                                        خفيفة
                                         <span class="required">*</span>
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day3_break2" name="day3_break2"
-                                               value="<?php echo str_replace("<br>","-", $data->day3_break2) ?>"
+                                               value="<?php echo str_replace("<br>", "-", $data->day3_break2) ?>"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
-
-
 
 
                                 </div>
@@ -1000,26 +1054,35 @@
                                 <br><br><br>
 
 
-
                                 <div class="form-group text-center">
                                     <div class="col-lg-12">
-                                        <div class="col-lg-3"> <select id="continents3_dinner" class="form-control">
-                                                <option value = "0">all</option>
+                                        <div class="col-lg-3"><select id="continents3_dinner" class="form-control">
+                                                <option value="0">all</option>
                                                 <option value="1">carbs</option>
                                                 <option value="2">Fats</option>
                                                 <option value="3">proteins</option>
 
 
                                             </select></div>
-                                        <div class="col-lg-3"><select id="selectcountries3_dinner"class="form-control"></select></div>
-                                        <div class="col-lg-3">   <select name="gmValue" id="gmValue3_dinner" class="form-control">
-                                               <option value="0.25">1/4</option>
+                                        <div class="col-lg-3"><select id="selectcountries3_dinner"
+                                                                      class="form-control"></select></div>
+                                        <div class="col-lg-3"><select name="gmValue" id="gmValue3_dinner"
+                                                                      class="form-control">
+                                                <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
-                                                @for($i=1;$i<=1000;$i++)
+                                                @for($i=1;$i<=500;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
                                             </select></div>
-                                        <div class="col-lg-3"> <button type="button" class="btn btn-success" onclick="getData3_dinner()">أضف</button></div>
+                                        <div class="col-lg-3">
+                                            <button type="button" class="btn btn-success" onclick="getData3_dinner()">
+                                                أضف
+                                            </button>
+                                            <button type="button" class="btn btn-warning"
+                                                    onclick="deleteItem('gmValue3_dinner','selectcountries3_dinner','carbSum3','fatsSum3','proteinSum3','day3_dinner')">
+                                                حذف
+                                            </button>
+                                        </div>
                                     </div>
 
 
@@ -1032,11 +1095,9 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day3_dinner" name="day3_dinner"
-                                               value="<?php echo str_replace("<br>","-", $data->day3_dinner) ?>"
+                                               value="<?php echo str_replace("<br>", "-", $data->day3_dinner) ?>"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
-
-
 
 
                                 </div>
@@ -1058,10 +1119,6 @@
                                 </div>
 
 
-
-
-
-
                                 <br>
                                 <br>
                                 <br>
@@ -1074,32 +1131,27 @@
                                         <input type="text" id="carbSum3" class="form-control"
                                                name="carbSum3"
                                                value="{{$data->carbSum3}}"
-                                               placeholder="مجموع الكربهيدرات" >
+                                               placeholder="مجموع الكربهيدرات">
                                     </div>
                                     <div class="col-lg-4 col-md-4 col-sm-12">
                                         <label for="carbSum">fats old value : {{$data->fatsSum3}}</label>
                                         <input type="text" id="fatsSum3" class="form-control"
                                                name="fatsSum3"
                                                value="{{$data->fatsSum3}}"
-                                               placeholder="مجموع الدهون" >
+                                               placeholder="مجموع الدهون">
                                     </div>
                                     <div class="col-lg-4 col-md-4 col-sm-12">
                                         <label for="carbSum">protein old value : {{$data->proteinSum3}}</label>
                                         <input type="text" id="proteinSum3" class="form-control"
                                                name="proteinSum3"
                                                value="{{$data->proteinSum3}}"
-                                               placeholder="مجموع البروتينات" >
+                                               placeholder="مجموع البروتينات">
                                     </div>
                                 </div>
 
 
-
-
-
                             </div>
                         </div>
-
-
 
 
                         <button class="accordion" type="button">اليوم الرابع</button>
@@ -1110,7 +1162,7 @@
                                     <div class="col-lg-12">
                                         <div class="col-lg-3">
                                             <select id="continentsg4" class="form-control">
-                                                <option value = "0">all</option>
+                                                <option value="0">all</option>
                                                 <option value="1">carbs</option>
                                                 <option value="2">Fats</option>
                                                 <option value="3">proteins</option>
@@ -1123,15 +1175,16 @@
                                         </div>
                                         <div class="col-lg-3">
                                             <select name="gmValue" id="gmValueg4" class="form-control">
-                                               <option value="0.25">1/4</option>
+                                                <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
-                                                @for($i=1;$i<=1000;$i++)
+                                                @for($i=1;$i<=500;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
                                             </select>
                                         </div>
                                         <div class="col-lg-3">
-                                            <button type="button" class="btn btn-warning" onclick="deleteData4()">حذف</button>
+                                            <button type="button" class="btn btn-warning" onclick="deleteData4()">حذف
+                                            </button>
                                         </div>
                                     </div>
                                 </div>
@@ -1140,22 +1193,30 @@
                                 <div class="form-group text-center">
                                     <div class="col-lg-12">
                                         <div class="col-lg-3"><select id="continent4" class="form-control">
-                                                <option value = "0">all</option>
+                                                <option value="0">all</option>
                                                 <option value="1">carbs</option>
                                                 <option value="2">Fats</option>
                                                 <option value="3">proteins</option>
 
 
                                             </select></div>
-                                        <div class="col-lg-3">  <select id="selectcountries4" class="form-control"></select></div>
-                                        <div class="col-lg-3"> <select name="gmValue" id="gmValue4" class="form-control">
-                                               <option value="0.25">1/4</option>
+                                        <div class="col-lg-3"><select id="selectcountries4"
+                                                                      class="form-control"></select></div>
+                                        <div class="col-lg-3"><select name="gmValue" id="gmValue4" class="form-control">
+                                                <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
-                                                @for($i=1;$i<=1000;$i++)
+                                                @for($i=1;$i<=500;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
                                             </select></div>
-                                        <div class="col-lg-3"> <button type="button" class="btn btn-success" onclick="getData4()">أضف</button></div>
+                                        <div class="col-lg-3">
+                                            <button type="button" class="btn btn-success" onclick="getData4()">أضف
+                                            </button>
+                                            <button type="button" class="btn btn-warning"
+                                                    onclick="deleteItem('gmValue4','selectcountries4','carbSum4','fatsSum4','proteinSum4','day4_breakfast')">
+                                                حذف
+                                            </button>
+                                        </div>
                                     </div>
 
 
@@ -1168,11 +1229,9 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day4_breakfast" name="day4_breakfast"
-                                               value="<?php echo str_replace("<br>","-", $data->day4_breakfast) ?>"
+                                               value="<?php echo str_replace("<br>", "-", $data->day4_breakfast) ?>"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
-
-
 
 
                                 </div>
@@ -1181,41 +1240,49 @@
                                 <br><br><br>
 
 
-
                                 <div class="form-group text-center">
                                     <div class="col-lg-12">
-                                        <div class="col-lg-3">    <select id="continents4_break1" class="form-control">
-                                                <option value = "0">all</option>
+                                        <div class="col-lg-3"><select id="continents4_break1" class="form-control">
+                                                <option value="0">all</option>
                                                 <option value="1">carbs</option>
                                                 <option value="2">Fats</option>
                                                 <option value="3">proteins</option>
 
 
                                             </select></div>
-                                        <div class="col-lg-3"><select id="selectcountries4_break1" class="form-control"></select></div>
-                                        <div class="col-lg-3">   <select name="gmValue" id="gmValue4_break1" class="form-control">
-                                               <option value="0.25">1/4</option>
+                                        <div class="col-lg-3"><select id="selectcountries4_break1"
+                                                                      class="form-control"></select></div>
+                                        <div class="col-lg-3"><select name="gmValue" id="gmValue4_break1"
+                                                                      class="form-control">
+                                                <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
-                                                @for($i=1;$i<=1000;$i++)
+                                                @for($i=1;$i<=500;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
                                             </select></div>
-                                        <div class="col-lg-3"> <button type="button" class="btn btn-success" onclick="getData4_break1()">أضف</button></div>
+                                        <div class="col-lg-3">
+                                            <button type="button" class="btn btn-success" onclick="getData4_break1()">
+                                                أضف
+                                            </button>
+                                            <button type="button" class="btn btn-warning"
+                                                    onclick="deleteItem('gmValue4_break1','selectcountries4_break1','carbSum4','fatsSum4','proteinSum4','day4_break1')">
+                                                حذف
+                                            </button>
+                                        </div>
                                     </div>
                                     <br>
                                     <br>
                                     <br>
 
-                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="day4_break1">وجبة خفيفة
+                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="day4_break1">وجبة
+                                        خفيفة
                                         <span class="required">*</span>
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day4_break1" name="day4_break1"
-                                               value="<?php echo str_replace("<br>","-", $data->day4_break1) ?>"
+                                               value="<?php echo str_replace("<br>", "-", $data->day4_break1) ?>"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
-
-
 
 
                                 </div>
@@ -1223,25 +1290,33 @@
                                 <br><br><br>
 
 
-
                                 <div class="form-group text-center">
                                     <div class="col-lg-12">
-                                        <div class="col-lg-3"> <select id="continents4_lunch" class="form-control">
-                                                <option value = "0">all</option>
+                                        <div class="col-lg-3"><select id="continents4_lunch" class="form-control">
+                                                <option value="0">all</option>
                                                 <option value="1">carbs</option>
                                                 <option value="2">Fats</option>
                                                 <option value="3">proteins</option>
                                             </select></div>
-                                        <div class="col-lg-3"><select id="selectcountries4_lunch" class="form-control"></select></div>
+                                        <div class="col-lg-3"><select id="selectcountries4_lunch"
+                                                                      class="form-control"></select></div>
                                         <div class="col-lg-3">
-                                            <select  id="gmValue4_lunch" class="form-control">
-                                               <option value="0.25">1/4</option>
+                                            <select id="gmValue4_lunch" class="form-control">
+                                                <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
-                                                @for($i=1;$i<=1000;$i++)
+                                                @for($i=1;$i<=500;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
                                             </select></div>
-                                        <div class="col-lg-3"><button type="button" class="btn btn-success" onclick="getData4_lunch()">أضف</button></div>
+                                        <div class="col-lg-3">
+                                            <button type="button" class="btn btn-success" onclick="getData4_lunch()">
+                                                أضف
+                                            </button>
+                                            <button type="button" class="btn btn-warning"
+                                                    onclick="deleteItem('gmValue4_lunch','selectcountries4_lunch','carbSum4','fatsSum4','proteinSum4','day4_lunch')">
+                                                حذف
+                                            </button>
+                                        </div>
                                     </div>
 
 
@@ -1254,11 +1329,9 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day4_lunch" name="day4_lunch"
-                                               value="<?php echo str_replace("<br>","-", $data->day4_lunch) ?>"
+                                               value="<?php echo str_replace("<br>", "-", $data->day4_lunch) ?>"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
-
-
 
 
                                 </div>
@@ -1267,26 +1340,35 @@
                                 <br><br><br>
 
 
-
                                 <div class="form-group text-center">
                                     <div class="col-lg-12">
-                                        <div class="col-lg-3">   <select id="continents4_break2" class="form-control">
-                                                <option value = "0">all</option>
+                                        <div class="col-lg-3"><select id="continents4_break2" class="form-control">
+                                                <option value="0">all</option>
                                                 <option value="1">carbs</option>
                                                 <option value="2">Fats</option>
                                                 <option value="3">proteins</option>
 
 
                                             </select></div>
-                                        <div class="col-lg-3"><select id="selectcountries4_break2" class="form-control"></select></div>
-                                        <div class="col-lg-3">   <select name="gmValue" id="gmValue4_break2" class="form-control" >
-                                               <option value="0.25">1/4</option>
+                                        <div class="col-lg-3"><select id="selectcountries4_break2"
+                                                                      class="form-control"></select></div>
+                                        <div class="col-lg-3"><select name="gmValue" id="gmValue4_break2"
+                                                                      class="form-control">
+                                                <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
-                                                @for($i=1;$i<=1000;$i++)
+                                                @for($i=1;$i<=500;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
                                             </select></div>
-                                        <div class="col-lg-3"> <button type="button" class="btn btn-success" onclick="getData4_break2()">أضف</button></div>
+                                        <div class="col-lg-3">
+                                            <button type="button" class="btn btn-success" onclick="getData4_break2()">
+                                                أضف
+                                            </button>
+                                            <button type="button" class="btn btn-warning"
+                                                    onclick="deleteItem('gmValue4_break2','selectcountries4_break2','carbSum4','fatsSum4','proteinSum4','day4_break2')">
+                                                حذف
+                                            </button>
+                                        </div>
                                     </div>
 
 
@@ -1294,16 +1376,15 @@
                                     <br>
                                     <br>
 
-                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="day4_break2">وجبة خفيفة
+                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="day4_break2">وجبة
+                                        خفيفة
                                         <span class="required">*</span>
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day4_break2" name="day4_break2"
-                                               value="<?php echo str_replace("<br>","-", $data->day4_break2) ?>"
+                                               value="<?php echo str_replace("<br>", "-", $data->day4_break2) ?>"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
-
-
 
 
                                 </div>
@@ -1312,26 +1393,35 @@
                                 <br><br><br>
 
 
-
                                 <div class="form-group text-center">
                                     <div class="col-lg-12">
-                                        <div class="col-lg-3"> <select id="continents4_dinner" class="form-control">
-                                                <option value = "0">all</option>
+                                        <div class="col-lg-3"><select id="continents4_dinner" class="form-control">
+                                                <option value="0">all</option>
                                                 <option value="1">carbs</option>
                                                 <option value="2">Fats</option>
                                                 <option value="3">proteins</option>
 
 
                                             </select></div>
-                                        <div class="col-lg-3"> <select id="selectcountries4_dinner" class="form-control"></select></div>
-                                        <div class="col-lg-3">   <select name="gmValue" id="gmValue4_dinner" class="form-control">
-                                               <option value="0.25">1/4</option>
+                                        <div class="col-lg-3"><select id="selectcountries4_dinner"
+                                                                      class="form-control"></select></div>
+                                        <div class="col-lg-3"><select name="gmValue" id="gmValue4_dinner"
+                                                                      class="form-control">
+                                                <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
-                                                @for($i=1;$i<=1000;$i++)
+                                                @for($i=1;$i<=500;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
                                             </select></div>
-                                        <div class="col-lg-3"> <button type="button" class="btn btn-success" onclick="getData4_dinner()">أضف</button></div>
+                                        <div class="col-lg-3">
+                                            <button type="button" class="btn btn-success" onclick="getData4_dinner()">
+                                                أضف
+                                            </button>
+                                            <button type="button" class="btn btn-warning"
+                                                    onclick="deleteItem('gmValue4_dinner','selectcountries4_dinner','carbSum4','fatsSum4','proteinSum4','day4_dinner')">
+                                                حذف
+                                            </button>
+                                        </div>
                                     </div>
 
 
@@ -1344,11 +1434,9 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day4_dinner" name="day4_dinner"
-                                               value="<?php echo str_replace("<br>","-", $data->day4_dinner) ?>"
+                                               value="<?php echo str_replace("<br>", "-", $data->day4_dinner) ?>"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
-
-
 
 
                                 </div>
@@ -1370,10 +1458,6 @@
                                 </div>
 
 
-
-
-
-
                                 <br>
                                 <br>
                                 <br>
@@ -1387,7 +1471,7 @@
                                                value="{{$data->carbSum4}}"
                                                name="carbSum4"
 
-                                               placeholder="مجموع الكربهيدرات" >
+                                               placeholder="مجموع الكربهيدرات">
                                     </div>
                                     <div class="col-lg-4 col-md-4 col-sm-12">
                                         <label for="carbSum">fats old value : {{$data->fatsSum4}}</label>
@@ -1395,7 +1479,7 @@
                                                value="{{$data->fatsSum4}}"
                                                name="fatsSum4"
 
-                                               placeholder="مجموع الدهون" >
+                                               placeholder="مجموع الدهون">
                                     </div>
                                     <div class="col-lg-4 col-md-4 col-sm-12">
                                         <label for="carbSum">proteins old value : {{$data->proteinSum4}}</label>
@@ -1403,12 +1487,9 @@
                                                value="{{$data->proteinSum4}}"
                                                name="proteinSum4"
 
-                                               placeholder="مجموع البروتينات" >
+                                               placeholder="مجموع البروتينات">
                                     </div>
                                 </div>
-
-
-
 
 
                             </div>
@@ -1425,7 +1506,7 @@
                                     <div class="col-lg-12">
                                         <div class="col-lg-3">
                                             <select id="continentsg5" class="form-control">
-                                                <option value = "0">all</option>
+                                                <option value="0">all</option>
                                                 <option value="1">carbs</option>
                                                 <option value="2">Fats</option>
                                                 <option value="3">proteins</option>
@@ -1438,38 +1519,49 @@
                                         </div>
                                         <div class="col-lg-3">
                                             <select name="gmValue" id="gmValueg5" class="form-control">
-                                               <option value="0.25">1/4</option>
+                                                <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
-                                                @for($i=1;$i<=1000;$i++)
+                                                @for($i=1;$i<=500;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
                                             </select>
                                         </div>
                                         <div class="col-lg-3">
-                                            <button type="button" class="btn btn-warning" onclick="deleteData5()">حذف</button>
+                                            <button type="button" class="btn btn-warning" onclick="deleteData5()">حذف
+                                            </button>
+
                                         </div>
                                     </div>
                                 </div>
                                 <br><br><br>
-                                <div class="form-group text-center" >
+                                <div class="form-group text-center">
                                     <div class="col-lg-12">
-                                        <div class="col-lg-3"> <select id="continent5" class="form-control">
-                                                <option value = "0">all</option>
+                                        <div class="col-lg-3"><select id="continent5" class="form-control">
+                                                <option value="0">all</option>
                                                 <option value="1">carbs</option>
                                                 <option value="2">Fats</option>
                                                 <option value="3">proteins</option>
 
 
                                             </select></div>
-                                        <div class="col-lg-3"><select id="selectcountries5" class="form-control"></select></div>
-                                        <div class="col-lg-3"> <select name="gmValue" id="gmValue5" class="form-control">
-                                               <option value="0.25">1/4</option>
+                                        <div class="col-lg-3"><select id="selectcountries5"
+                                                                      class="form-control"></select></div>
+                                        <div class="col-lg-3"><select name="gmValue" id="gmValue5" class="form-control">
+                                                <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
-                                                @for($i=1;$i<=1000;$i++)
+                                                @for($i=1;$i<=500;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
                                             </select></div>
-                                        <div class="col-lg-3"><button type="button" class="btn btn-success" onclick="getData5()">أضف</button></div>
+                                        <div class="col-lg-3">
+                                            <button type="button" class="btn btn-success" onclick="getData5()">أضف
+                                            </button>
+                                            <button type="button" class="btn btn-warning"
+                                                    onclick="deleteItem('gmValue5','selectcountries5','carbSum5','fatsSum5','proteinSum5','day5_breakfast')">
+                                                حذف
+                                            </button>
+                                        </div>
+
                                     </div>
 
                                     <br>
@@ -1481,11 +1573,9 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day5_breakfast" name="day5_breakfast"
-                                               value="<?php echo str_replace("<br>","-", $data->day5_breakfast) ?>"
+                                               value="<?php echo str_replace("<br>", "-", $data->day5_breakfast) ?>"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
-
-
 
 
                                 </div>
@@ -1494,26 +1584,35 @@
                                 <br><br><br>
 
 
-
                                 <div class="form-group text-center">
                                     <div class="col-lg-12">
-                                        <div class="col-lg-3">   <select id="continents5_break1" class="form-control">
-                                                <option value = "0">all</option>
+                                        <div class="col-lg-3"><select id="continents5_break1" class="form-control">
+                                                <option value="0">all</option>
                                                 <option value="1">carbs</option>
                                                 <option value="2">Fats</option>
                                                 <option value="3">proteins</option>
 
 
                                             </select></div>
-                                        <div class="col-lg-3"><select id="selectcountries5_break1"class="form-control"></select></div>
-                                        <div class="col-lg-3">   <select name="gmValue" id="gmValue5_break1" class="form-control">
-                                               <option value="0.25">1/4</option>
+                                        <div class="col-lg-3"><select id="selectcountries5_break1"
+                                                                      class="form-control"></select></div>
+                                        <div class="col-lg-3"><select name="gmValue" id="gmValue5_break1"
+                                                                      class="form-control">
+                                                <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
-                                                @for($i=1;$i<=1000;$i++)
+                                                @for($i=1;$i<=500;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
                                             </select></div>
-                                        <div class="col-lg-3"><button type="button" class="btn btn-success" onclick="getData5_break1()">أضف</button></div>
+                                        <div class="col-lg-3">
+                                            <button type="button" class="btn btn-success" onclick="getData5_break1()">
+                                                أضف
+                                            </button>
+                                            <button type="button" class="btn btn-warning"
+                                                    onclick="deleteItem('gmValue5_break1','selectcountries5_break1','carbSum5','fatsSum5','proteinSum5','day5_break1')">
+                                                حذف
+                                            </button>
+                                        </div>
                                     </div>
 
 
@@ -1521,16 +1620,15 @@
                                     <br>
                                     <br>
 
-                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="day5_break1">وجبة خفيفة
+                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="day5_break1">وجبة
+                                        خفيفة
                                         <span class="required">*</span>
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day5_break1" name="day5_break1"
-                                               value="<?php echo str_replace("<br>","-", $data->day5_break1) ?>"
+                                               value="<?php echo str_replace("<br>", "-", $data->day5_break1) ?>"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
-
-
 
 
                                 </div>
@@ -1538,12 +1636,11 @@
                                 <br><br><br>
 
 
-
                                 <div class="form-group text-center">
                                     <div class="col-lg-12">
                                         <div class="col-lg-3">
                                             <select id="continents5_lunch" class="form-control">
-                                                <option value = "0">all</option>
+                                                <option value="0">all</option>
                                                 <option value="1">carbs</option>
                                                 <option value="2">Fats</option>
                                                 <option value="3">proteins</option>
@@ -1551,15 +1648,24 @@
 
                                             </select>
                                         </div>
-                                        <div class="col-lg-3">   <select id="selectcountries5_lunch" class="form-control"></select></div>
-                                        <div class="col-lg-3">  <select  id="gmValue5_lunch" class="form-control">
-                                               <option value="0.25">1/4</option>
+                                        <div class="col-lg-3"><select id="selectcountries5_lunch"
+                                                                      class="form-control"></select></div>
+                                        <div class="col-lg-3"><select id="gmValue5_lunch" class="form-control">
+                                                <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
-                                                @for($i=1;$i<=1000;$i++)
+                                                @for($i=1;$i<=500;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
                                             </select></div>
-                                        <div class="col-lg-3"><button type="button" class="btn btn-success" onclick="getData5_lunch()">أضف</button></div>
+                                        <div class="col-lg-3">
+                                            <button type="button" class="btn btn-success" onclick="getData5_lunch()">
+                                                أضف
+                                            </button>
+                                            <button type="button" class="btn btn-warning"
+                                                    onclick="deleteItem('gmValue5_lunch','selectcountries5_lunch','carbSum5','fatsSum5','proteinSum5','day5_lunch')">
+                                                حذف
+                                            </button>
+                                        </div>
                                     </div>
 
 
@@ -1572,11 +1678,9 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day5_lunch" name="day5_lunch"
-                                               value="<?php echo str_replace("<br>","-", $data->day5_lunch) ?>"
+                                               value="<?php echo str_replace("<br>", "-", $data->day5_lunch) ?>"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
-
-
 
 
                                 </div>
@@ -1585,42 +1689,50 @@
                                 <br><br><br>
 
 
-
                                 <div class="form-group text-center">
                                     <div class="col-lg-12">
-                                        <div class="col-lg-3">     <select id="continents5_break2" class="form-control">
-                                                <option value = "0">all</option>
+                                        <div class="col-lg-3"><select id="continents5_break2" class="form-control">
+                                                <option value="0">all</option>
                                                 <option value="1">carbs</option>
                                                 <option value="2">Fats</option>
                                                 <option value="3">proteins</option>
 
 
                                             </select></div>
-                                        <div class="col-lg-3"> <select id="selectcountries5_break2" class="form-control"></select></div>
-                                        <div class="col-lg-3"> <select name="gmValue" id="gmValue5_break2" class="form-control">
-                                               <option value="0.25">1/4</option>
+                                        <div class="col-lg-3"><select id="selectcountries5_break2"
+                                                                      class="form-control"></select></div>
+                                        <div class="col-lg-3"><select name="gmValue" id="gmValue5_break2"
+                                                                      class="form-control">
+                                                <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
-                                                @for($i=1;$i<=1000;$i++)
+                                                @for($i=1;$i<=500;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
                                             </select></div>
-                                        <div class="col-lg-3"><button type="button" class="btn btn-success" onclick="getData5_break2()">أضف</button></div>
+                                        <div class="col-lg-3">
+                                            <button type="button" class="btn btn-success" onclick="getData5_break2()">
+                                                أضف
+                                            </button>
+                                            <button type="button" class="btn btn-warning"
+                                                    onclick="deleteItem('gmValue5_break2','selectcountries5_break2','carbSum5','fatsSum5','proteinSum5','day5_break2')">
+                                                حذف
+                                            </button>
+                                        </div>
                                     </div>
 
                                     <br>
                                     <br>
                                     <br>
 
-                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="day5_break2">وجبة خفيفة
+                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="day5_break2">وجبة
+                                        خفيفة
                                         <span class="required">*</span>
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day5_break2" name="day5_break2"
-                                               value="<?php echo str_replace("<br>","-", $data->day5_break2) ?>"
+                                               value="<?php echo str_replace("<br>", "-", $data->day5_break2) ?>"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
-
-
 
 
                                 </div>
@@ -1629,26 +1741,35 @@
                                 <br><br><br>
 
 
-
                                 <div class="form-group text-center">
                                     <div class="col-lg-12">
-                                        <div class="col-lg-3">  <select id="continents5_dinner" class="form-control">
-                                                <option value = "0">all</option>
+                                        <div class="col-lg-3"><select id="continents5_dinner" class="form-control">
+                                                <option value="0">all</option>
                                                 <option value="1">carbs</option>
                                                 <option value="2">Fats</option>
                                                 <option value="3">proteins</option>
 
 
                                             </select></div>
-                                        <div class="col-lg-3"><select id="selectcountries5_dinner" class="form-control"></select></div>
-                                        <div class="col-lg-3">  <select name="gmValue" id="gmValue5_dinner" class="form-control"class="form-control">
-                                               <option value="0.25">1/4</option>
+                                        <div class="col-lg-3"><select id="selectcountries5_dinner"
+                                                                      class="form-control"></select></div>
+                                        <div class="col-lg-3"><select name="gmValue" id="gmValue5_dinner"
+                                                                      class="form-control" class="form-control">
+                                                <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
-                                                @for($i=1;$i<=1000;$i++)
+                                                @for($i=1;$i<=500;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
                                             </select></div>
-                                        <div class="col-lg-3"><button type="button" class="btn btn-success" onclick="getData5_dinner()">أضف</button></div>
+                                        <div class="col-lg-3">
+                                            <button type="button" class="btn btn-success" onclick="getData5_dinner()">
+                                                أضف
+                                            </button>
+                                            <button type="button" class="btn btn-warning"
+                                                    onclick="deleteItem('gmValue5_dinner','selectcountries5_dinner','carbSum5','fatsSum5','proteinSum5','day5_dinner')">
+                                                حذف
+                                            </button>
+                                        </div>
                                     </div>
                                     <br>
                                     <br>
@@ -1659,11 +1780,9 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day5_dinner" name="day5_dinner"
-                                               value="<?php echo str_replace("<br>","-", $data->day5_dinner) ?>"
+                                               value="<?php echo str_replace("<br>", "-", $data->day5_dinner) ?>"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
-
-
 
 
                                 </div>
@@ -1685,10 +1804,6 @@
                                 </div>
 
 
-
-
-
-
                                 <br>
                                 <br>
                                 <br>
@@ -1702,7 +1817,7 @@
                                                value="{{$data->carbSum5}}"
                                                name="carbSum5"
 
-                                               placeholder="مجموع الكربهيدرات" >
+                                               placeholder="مجموع الكربهيدرات">
                                     </div>
                                     <div class="col-lg-4 col-md-4 col-sm-12">
                                         <label for="carbSum">fats old value : {{$data->fatsSum5}}</label>
@@ -1710,7 +1825,7 @@
                                                value="{{$data->fatsSum5}}"
                                                name="fatsSum5"
 
-                                               placeholder="مجموع الدهون" >
+                                               placeholder="مجموع الدهون">
                                     </div>
                                     <div class="col-lg-4 col-md-4 col-sm-12">
                                         <label for="carbSum">protein old value : {{$data->proteinSum5}}</label>
@@ -1718,12 +1833,9 @@
                                                value="{{$data->proteinSum5}}"
                                                name="proteinSum5"
 
-                                               placeholder="مجموع البروتينات" >
+                                               placeholder="مجموع البروتينات">
                                     </div>
                                 </div>
-
-
-
 
 
                             </div>
@@ -1738,7 +1850,7 @@
                                     <div class="col-lg-12">
                                         <div class="col-lg-3">
                                             <select id="continentsg6" class="form-control">
-                                                <option value = "0">all</option>
+                                                <option value="0">all</option>
                                                 <option value="1">carbs</option>
                                                 <option value="2">Fats</option>
                                                 <option value="3">proteins</option>
@@ -1751,38 +1863,47 @@
                                         </div>
                                         <div class="col-lg-3">
                                             <select name="gmValue" id="gmValueg6" class="form-control">
-                                               <option value="0.25">1/4</option>
+                                                <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
-                                                @for($i=1;$i<=1000;$i++)
+                                                @for($i=1;$i<=500;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
                                             </select>
                                         </div>
                                         <div class="col-lg-3">
-                                            <button type="button" class="btn btn-warning" onclick="deleteData6()">حذف</button>
+                                            <button type="button" class="btn btn-warning" onclick="deleteData6()">حذف
+                                            </button>
                                         </div>
                                     </div>
                                 </div>
                                 <br><br><br>
                                 <div class="form-group text-center">
                                     <div class="col-lg-12">
-                                        <div class="col-lg-3">   <select id="continent6" class="form-control">
-                                                <option value = "0">all</option>
+                                        <div class="col-lg-3"><select id="continent6" class="form-control">
+                                                <option value="0">all</option>
                                                 <option value="1">carbs</option>
                                                 <option value="2">Fats</option>
                                                 <option value="3">proteins</option>
 
 
                                             </select></div>
-                                        <div class="col-lg-3"><select id="selectcountries6" class="form-control"></select></div>
-                                        <div class="col-lg-3">   <select name="gmValue" id="gmValue6" class="form-control">
-                                               <option value="0.25">1/4</option>
+                                        <div class="col-lg-3"><select id="selectcountries6"
+                                                                      class="form-control"></select></div>
+                                        <div class="col-lg-3"><select name="gmValue" id="gmValue6" class="form-control">
+                                                <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
-                                                @for($i=1;$i<=1000;$i++)
+                                                @for($i=1;$i<=500;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
                                             </select></div>
-                                        <div class="col-lg-3"> <button type="button" class="btn btn-success" onclick="getData6()">أضف</button></div>
+                                        <div class="col-lg-3">
+                                            <button type="button" class="btn btn-success" onclick="getData6()">أضف
+                                            </button>
+                                            <button type="button" class="btn btn-warning"
+                                                    onclick="deleteItem('gmValue6','selectcountries6','carbSum6','fatsSum6','proteinSum6','day6_breakfast')">
+                                                حذف
+                                            </button>
+                                        </div>
                                     </div>
 
 
@@ -1795,11 +1916,9 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day6_breakfast" name="day6_breakfast"
-                                               value="<?php echo str_replace("<br>","-", $data->day6_breakfast) ?>"
+                                               value="<?php echo str_replace("<br>", "-", $data->day6_breakfast) ?>"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
-
-
 
 
                                 </div>
@@ -1808,26 +1927,35 @@
                                 <br><br><br>
 
 
-
                                 <div class="form-group text-center">
                                     <div class="col-lg-12">
-                                        <div class="col-lg-3">  <select id="continents6_break1" class="form-control">
-                                                <option value = "0">all</option>
+                                        <div class="col-lg-3"><select id="continents6_break1" class="form-control">
+                                                <option value="0">all</option>
                                                 <option value="1">carbs</option>
                                                 <option value="2">Fats</option>
                                                 <option value="3">proteins</option>
 
 
                                             </select></div>
-                                        <div class="col-lg-3"><select id="selectcountries6_break1" class="form-control"></select></div>
-                                        <div class="col-lg-3">   <select name="gmValue" id="gmValue6_break1" class="form-control">
-                                               <option value="0.25">1/4</option>
+                                        <div class="col-lg-3"><select id="selectcountries6_break1"
+                                                                      class="form-control"></select></div>
+                                        <div class="col-lg-3"><select name="gmValue" id="gmValue6_break1"
+                                                                      class="form-control">
+                                                <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
-                                                @for($i=1;$i<=1000;$i++)
+                                                @for($i=1;$i<=500;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
                                             </select></div>
-                                        <div class="col-lg-3"><button type="button" class="btn btn-success" onclick="getData6_break1()">أضف</button></div>
+                                        <div class="col-lg-3">
+                                            <button type="button" class="btn btn-success" onclick="getData6_break1()">
+                                                أضف
+                                            </button>
+                                            <button type="button" class="btn btn-warning"
+                                                    onclick="deleteItem('gmValue6_break1','selectcountries6_break1','carbSum6','fatsSum6','proteinSum6','day6_break1')">
+                                                حذف
+                                            </button>
+                                        </div>
                                     </div>
 
 
@@ -1835,22 +1963,20 @@
                                     <br>
                                     <br>
 
-                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="day6_break1">وجبة خفيفة
+                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="day6_break1">وجبة
+                                        خفيفة
                                         <span class="required">*</span>
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day6_break1" name="day6_break1"
-                                               value="<?php echo str_replace("<br>","-", $data->day6_break1) ?>"
+                                               value="<?php echo str_replace("<br>", "-", $data->day6_break1) ?>"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
-
-
 
 
                                 </div>
 
                                 <br><br><br>
-
 
 
                                 <div class="form-group text-center">
@@ -1858,7 +1984,7 @@
                                     <div class="col-lg-12">
                                         <div class="col-lg-3">
                                             <select id="continents6_lunch" class="form-control">
-                                                <option value = "0">all</option>
+                                                <option value="0">all</option>
                                                 <option value="1">carbs</option>
                                                 <option value="2">Fats</option>
                                                 <option value="3">proteins</option>
@@ -1866,15 +1992,24 @@
 
                                             </select>
                                         </div>
-                                        <div class="col-lg-3"> <select id="selectcountries6_lunch" class="form-control"></select></div>
-                                        <div class="col-lg-3">  <select  id="gmValue6_lunch" class="form-control">
-                                               <option value="0.25">1/4</option>
+                                        <div class="col-lg-3"><select id="selectcountries6_lunch"
+                                                                      class="form-control"></select></div>
+                                        <div class="col-lg-3"><select id="gmValue6_lunch" class="form-control">
+                                                <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
-                                                @for($i=1;$i<=1000;$i++)
+                                                @for($i=1;$i<=500;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
                                             </select></div>
-                                        <div class="col-lg-3"><button type="button" class="btn btn-success" onclick="getData6_lunch()">أضف</button></div>
+                                        <div class="col-lg-3">
+                                            <button type="button" class="btn btn-success" onclick="getData6_lunch()">
+                                                أضف
+                                            </button>
+                                            <button type="button" class="btn btn-warning"
+                                                    onclick="deleteItem('gmValue6_lunch','selectcountries6_lunch','carbSum6','fatsSum6','proteinSum6','day6_lunch')">
+                                                حذف
+                                            </button>
+                                        </div>
                                     </div>
 
                                     <br>
@@ -1886,11 +2021,9 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day6_lunch" name="day6_lunch"
-                                               value="<?php echo str_replace("<br>","-", $data->day6_lunch) ?>"
+                                               value="<?php echo str_replace("<br>", "-", $data->day6_lunch) ?>"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
-
-
 
 
                                 </div>
@@ -1899,42 +2032,50 @@
                                 <br><br><br>
 
 
-
                                 <div class="form-group text-center">
                                     <div class="col-lg-12">
-                                        <div class="col-lg-3"> <select id="continents6_break2" class="form-control">
-                                                <option value = "0">all</option>
+                                        <div class="col-lg-3"><select id="continents6_break2" class="form-control">
+                                                <option value="0">all</option>
                                                 <option value="1">carbs</option>
                                                 <option value="2">Fats</option>
                                                 <option value="3">proteins</option>
 
 
                                             </select></div>
-                                        <div class="col-lg-3"><select id="selectcountries6_break2" class="form-control"></select></div>
-                                        <div class="col-lg-3">   <select name="gmValue" id="gmValue6_break2" class="form-control">
-                                               <option value="0.25">1/4</option>
+                                        <div class="col-lg-3"><select id="selectcountries6_break2"
+                                                                      class="form-control"></select></div>
+                                        <div class="col-lg-3"><select name="gmValue" id="gmValue6_break2"
+                                                                      class="form-control">
+                                                <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
-                                                @for($i=1;$i<=1000;$i++)
+                                                @for($i=1;$i<=500;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
                                             </select></div>
-                                        <div class="col-lg-3"><button type="button" class="btn btn-success" onclick="getData6_break2()">أضف</button></div>
+                                        <div class="col-lg-3">
+                                            <button type="button" class="btn btn-success" onclick="getData6_break2()">
+                                                أضف
+                                            </button>
+                                            <button type="button" class="btn btn-warning"
+                                                    onclick="deleteItem('gmValue6_break2','selectcountries6_break2','carbSum6','fatsSum6','proteinSum6','day6_break2')">
+                                                حذف
+                                            </button>
+                                        </div>
                                     </div>
 
                                     <br>
                                     <br>
                                     <br>
 
-                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="day6_break2">وجبة خفيفة
+                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="day6_break2">وجبة
+                                        خفيفة
                                         <span class="required">*</span>
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day6_break2" name="day6_break2"
-                                               value="<?php echo str_replace("<br>","-", $data->day6_break2) ?>"
+                                               value="<?php echo str_replace("<br>", "-", $data->day6_break2) ?>"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
-
-
 
 
                                 </div>
@@ -1943,12 +2084,11 @@
                                 <br><br><br>
 
 
-
                                 <div class="form-group text-center">
                                     <div class="col-lg-12">
                                         <div class="col-lg-3">
                                             <select id="continents6_dinner" class="form-control">
-                                                <option value = "0">all</option>
+                                                <option value="0">all</option>
                                                 <option value="1">carbs</option>
                                                 <option value="2">Fats</option>
                                                 <option value="3">proteins</option>
@@ -1957,14 +2097,23 @@
                                         <div class="col-lg-3">
                                             <select id="selectcountries6_dinner" class="form-control"></select>
                                         </div>
-                                        <div class="col-lg-3"> <select name="gmValue" id="gmValue6_dinner" class="form-control">
-                                               <option value="0.25">1/4</option>
+                                        <div class="col-lg-3"><select name="gmValue" id="gmValue6_dinner"
+                                                                      class="form-control">
+                                                <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
-                                                @for($i=1;$i<=1000;$i++)
+                                                @for($i=1;$i<=500;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
                                             </select></div>
-                                        <div class="col-lg-3"> <button type="button" class="btn btn-success" onclick="getData6_dinner()">أضف</button></div>
+                                        <div class="col-lg-3">
+                                            <button type="button" class="btn btn-success" onclick="getData6_dinner()">
+                                                أضف
+                                            </button>
+                                            <button type="button" class="btn btn-warning"
+                                                    onclick="deleteItem('gmValue6_dinner','selectcountries6_dinner','carbSum6','fatsSum6','proteinSum6','day6_dinner')">
+                                                حذف
+                                            </button>
+                                        </div>
                                     </div>
 
 
@@ -1977,11 +2126,9 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day6_dinner" name="day6_dinner"
-                                               value="<?php echo str_replace("<br>","-", $data->day6_dinner) ?>"
+                                               value="<?php echo str_replace("<br>", "-", $data->day6_dinner) ?>"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
-
-
 
 
                                 </div>
@@ -2003,10 +2150,6 @@
                                 </div>
 
 
-
-
-
-
                                 <br>
                                 <br>
                                 <br>
@@ -2020,7 +2163,7 @@
                                                value="{{$data->carbSum6}}"
                                                name="carbSum6"
 
-                                               placeholder="مجموع الكربهيدرات" >
+                                               placeholder="مجموع الكربهيدرات">
                                     </div>
                                     <div class="col-lg-4 col-md-4 col-sm-12">
                                         <label for="carbSum">fats old value : {{$data->fatsSum6}}</label>
@@ -2028,7 +2171,7 @@
                                                value="{{$data->fatsSum6}}"
                                                name="fatsSum6"
 
-                                               placeholder="مجموع الدهون" >
+                                               placeholder="مجموع الدهون">
                                     </div>
                                     <div class="col-lg-4 col-md-4 col-sm-12">
                                         <label for="carbSum">proteins old value : {{$data->proteinSum6}}</label>
@@ -2036,12 +2179,9 @@
                                                value="{{$data->proteinSum6}}"
                                                name="proteinSum6"
 
-                                               placeholder="مجموع البروتينات" >
+                                               placeholder="مجموع البروتينات">
                                     </div>
                                 </div>
-
-
-
 
 
                             </div>
@@ -2057,7 +2197,7 @@
                                     <div class="col-lg-12">
                                         <div class="col-lg-3">
                                             <select id="continentsg7" class="form-control">
-                                                <option value = "0">all</option>
+                                                <option value="0">all</option>
                                                 <option value="1">carbs</option>
                                                 <option value="2">Fats</option>
                                                 <option value="3">proteins</option>
@@ -2070,38 +2210,47 @@
                                         </div>
                                         <div class="col-lg-3">
                                             <select name="gmValue" id="gmValueg7" class="form-control">
-                                               <option value="0.25">1/4</option>
+                                                <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
-                                                @for($i=1;$i<=1000;$i++)
+                                                @for($i=1;$i<=500;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
                                             </select>
                                         </div>
                                         <div class="col-lg-3">
-                                            <button type="button" class="btn btn-warning" onclick="deleteData7()">حذف</button>
+                                            <button type="button" class="btn btn-warning" onclick="deleteData7()">حذف
+                                            </button>
                                         </div>
                                     </div>
                                 </div>
                                 <br><br><br>
                                 <div class="form-group text-center">
                                     <div class="col-lg-12">
-                                        <div class="col-lg-3">  <select id="continent7" class="form-control">
-                                                <option value = "0">all</option>
+                                        <div class="col-lg-3"><select id="continent7" class="form-control">
+                                                <option value="0">all</option>
                                                 <option value="1">carbs</option>
                                                 <option value="2">Fats</option>
                                                 <option value="3">proteins</option>
 
 
                                             </select></div>
-                                        <div class="col-lg-3"><select id="selectcountries7" class="form-control"></select></div>
-                                        <div class="col-lg-3"> <select name="gmValue" id="gmValue7" class="form-control">
-                                               <option value="0.25">1/4</option>
+                                        <div class="col-lg-3"><select id="selectcountries7"
+                                                                      class="form-control"></select></div>
+                                        <div class="col-lg-3"><select name="gmValue" id="gmValue7" class="form-control">
+                                                <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
-                                                @for($i=1;$i<=1000;$i++)
+                                                @for($i=1;$i<=500;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
                                             </select></div>
-                                        <div class="col-lg-3"><button type="button" class="btn btn-success" onclick="getData7()">أضف</button></div>
+                                        <div class="col-lg-3">
+                                            <button type="button" class="btn btn-success" onclick="getData7()">أضف
+                                            </button>
+                                            <button type="button" class="btn btn-warning"
+                                                    onclick="deleteItem('gmValue7','selectcountries7','carbSum7','fatsSum7','proteinSum7','day7_breakfast')">
+                                                حذف
+                                            </button>
+                                        </div>
                                     </div>
 
 
@@ -2114,11 +2263,9 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day7_breakfast" name="day7_breakfast"
-                                               value="<?php echo str_replace("<br>","-", $data->day7_breakfast) ?>"
+                                               value="<?php echo str_replace("<br>", "-", $data->day7_breakfast) ?>"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
-
-
 
 
                                 </div>
@@ -2127,26 +2274,35 @@
                                 <br><br><br>
 
 
-
                                 <div class="form-group text-center">
                                     <div class="col-lg-12">
-                                        <div class="col-lg-3"> <select id="continents7_break1" class="form-control">
-                                                <option value = "0">all</option>
+                                        <div class="col-lg-3"><select id="continents7_break1" class="form-control">
+                                                <option value="0">all</option>
                                                 <option value="1">carbs</option>
                                                 <option value="2">Fats</option>
                                                 <option value="3">proteins</option>
 
 
                                             </select></div>
-                                        <div class="col-lg-3"> <select id="selectcountries7_break1" class="form-control"></select></div>
-                                        <div class="col-lg-3">  <select name="gmValue" id="gmValue7_break1" class="form-control">
-                                               <option value="0.25">1/4</option>
+                                        <div class="col-lg-3"><select id="selectcountries7_break1"
+                                                                      class="form-control"></select></div>
+                                        <div class="col-lg-3"><select name="gmValue" id="gmValue7_break1"
+                                                                      class="form-control">
+                                                <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
-                                                @for($i=1;$i<=1000;$i++)
+                                                @for($i=1;$i<=500;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
                                             </select></div>
-                                        <div class="col-lg-3"><button type="button" class="btn btn-success" onclick="getData7_break1()">أضف</button></div>
+                                        <div class="col-lg-3">
+                                            <button type="button" class="btn btn-success" onclick="getData7_break1()">
+                                                أضف
+                                            </button>
+                                            <button type="button" class="btn btn-warning"
+                                                    onclick="deleteItem('gmValue7_break1','selectcountries7_break1','carbSum7','fatsSum7','proteinSum7','day7_break1')">
+                                                حذف
+                                            </button>
+                                        </div>
                                     </div>
 
 
@@ -2154,16 +2310,15 @@
                                     <br>
                                     <br>
 
-                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="day7_break1">وجبة خفيفة
+                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="day7_break1">وجبة
+                                        خفيفة
                                         <span class="required">*</span>
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day7_break1" name="day7_break1"
-                                               value="<?php echo str_replace("<br>","-", $data->day7_break1) ?>"
+                                               value="<?php echo str_replace("<br>", "-", $data->day7_break1) ?>"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
-
-
 
 
                                 </div>
@@ -2171,12 +2326,11 @@
                                 <br><br><br>
 
 
-
                                 <div class="form-group text-center">
                                     <div class="col-lg-12">
                                         <div class="col-lg-3">
                                             <select id="continents7_lunch" class="form-control">
-                                                <option value = "0">all</option>
+                                                <option value="0">all</option>
                                                 <option value="1">carbs</option>
                                                 <option value="2">Fats</option>
                                                 <option value="3">proteins</option>
@@ -2184,15 +2338,26 @@
 
                                             </select>
                                         </div>
-                                        <div class="col-lg-3"> <select id="selectcountries7_lunch" class="form-control"></select></div>
-                                        <div class="col-lg-3">    <select  id="gmValue7_lunch" class="form-control">
-                                               <option value="0.25">1/4</option>
+                                        <div class="col-lg-3"><select id="selectcountries7_lunch"
+                                                                      class="form-control"></select></div>
+                                        <div class="col-lg-3"><select id="gmValue7_lunch" class="form-control">
+                                                <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
-                                                @for($i=1;$i<=1000;$i++)
+                                                @for($i=1;$i<=500;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
                                             </select></div>
-                                        <div class="col-lg-3"><button type="button" class="btn btn-success" onclick="getData7_lunch()">أضف</button></div>
+                                        <div class="col-lg-3">
+                                            <button type="button" class="btn btn-success" onclick="getData7_lunch()">
+                                                أضف
+                                            </button>
+                                            <button type="button" class="btn btn-warning"
+                                                    onclick="deleteItem('gmValue7_lunch','selectcountries7_lunch','carbSum7','fatsSum7','proteinSum7','day7_lunch')">
+                                                حذف
+                                            </button>
+                                        </div>
+
+
                                     </div>
 
 
@@ -2205,11 +2370,9 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day7_lunch" name="day7_lunch"
-                                               value="<?php echo str_replace("<br>","-", $data->day7_lunch) ?>"
+                                               value="<?php echo str_replace("<br>", "-", $data->day7_lunch) ?>"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
-
-
 
 
                                 </div>
@@ -2218,26 +2381,35 @@
                                 <br><br><br>
 
 
-
                                 <div class="form-group text-center">
                                     <div class="col-lg-12">
-                                        <div class="col-lg-3">     <select id="continents7_break2" class="form-control">
-                                                <option value = "0">all</option>
+                                        <div class="col-lg-3"><select id="continents7_break2" class="form-control">
+                                                <option value="0">all</option>
                                                 <option value="1">carbs</option>
                                                 <option value="2">Fats</option>
                                                 <option value="3">proteins</option>
 
 
                                             </select></div>
-                                        <div class="col-lg-3"><select id="selectcountries7_break2" class="form-control"></select></div>
-                                        <div class="col-lg-3">    <select name="gmValue" id="gmValue7_break2" class="form-control">
-                                               <option value="0.25">1/4</option>
+                                        <div class="col-lg-3"><select id="selectcountries7_break2"
+                                                                      class="form-control"></select></div>
+                                        <div class="col-lg-3"><select name="gmValue" id="gmValue7_break2"
+                                                                      class="form-control">
+                                                <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
-                                                @for($i=1;$i<=1000;$i++)
+                                                @for($i=1;$i<=500;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
                                             </select></div>
-                                        <div class="col-lg-3"> <button type="button" class="btn btn-success" onclick="getData7_break2()">أضف</button></div>
+                                        <div class="col-lg-3">
+                                            <button type="button" class="btn btn-success" onclick="getData7_break2()">
+                                                أضف
+                                            </button>
+                                            <button type="button" class="btn btn-warning"
+                                                    onclick="deleteItem('gmValue7_break2','selectcountries7_break2','carbSum7','fatsSum7','proteinSum7','day7_break2')">
+                                                حذف
+                                            </button>
+                                        </div>
                                     </div>
 
 
@@ -2245,16 +2417,15 @@
                                     <br>
                                     <br>
 
-                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="day7_break2">وجبة خفيفة
+                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="day7_break2">وجبة
+                                        خفيفة
                                         <span class="required">*</span>
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day7_break2" name="day7_break2"
-                                               value="<?php echo str_replace("<br>","-", $data->day7_break2) ?>"
+                                               value="<?php echo str_replace("<br>", "-", $data->day7_break2) ?>"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
-
-
 
 
                                 </div>
@@ -2263,26 +2434,35 @@
                                 <br><br><br>
 
 
-
                                 <div class="form-group text-center">
                                     <div class="col-lg-12">
-                                        <div class="col-lg-3">  <select id="continents7_dinner" class="form-control">
-                                                <option value = "0">all</option>
+                                        <div class="col-lg-3"><select id="continents7_dinner" class="form-control">
+                                                <option value="0">all</option>
                                                 <option value="1">carbs</option>
                                                 <option value="2">Fats</option>
                                                 <option value="3">proteins</option>
 
 
                                             </select></div>
-                                        <div class="col-lg-3"><select id="selectcountries7_dinner" class="form-control"></select></div>
-                                        <div class="col-lg-3">     <select name="gmValue" id="gmValue7_dinner" class="form-control">
-                                               <option value="0.25">1/4</option>
+                                        <div class="col-lg-3"><select id="selectcountries7_dinner"
+                                                                      class="form-control"></select></div>
+                                        <div class="col-lg-3"><select name="gmValue" id="gmValue7_dinner"
+                                                                      class="form-control">
+                                                <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
-                                                @for($i=1;$i<=1000;$i++)
+                                                @for($i=1;$i<=500;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
                                             </select></div>
-                                        <div class="col-lg-3"><button type="button" class="btn btn-success" onclick="getData7_dinner()">أضف</button></div>
+                                        <div class="col-lg-3">
+                                            <button type="button" class="btn btn-success" onclick="getData7_dinner()">
+                                                أضف
+                                            </button>
+                                            <button type="button" class="btn btn-warning"
+                                                    onclick="deleteItem('gmValue7_dinner','selectcountries7_dinner','carbSum7','fatsSum7','proteinSum7','day7_dinner')">
+                                                حذف
+                                            </button>
+                                        </div>
                                     </div>
 
 
@@ -2295,11 +2475,9 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day7_dinner" name="day7_dinner"
-                                               value="<?php echo str_replace("<br>","-", $data->day7_dinner) ?>"
+                                               value="<?php echo str_replace("<br>", "-", $data->day7_dinner) ?>"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
-
-
 
 
                                 </div>
@@ -2321,10 +2499,6 @@
                                 </div>
 
 
-
-
-
-
                                 <br>
                                 <br>
                                 <br>
@@ -2338,7 +2512,7 @@
                                                value="{{$data->carbSum7}}"
                                                name="carbSum7"
 
-                                               placeholder="مجموع الكربهيدرات" >
+                                               placeholder="مجموع الكربهيدرات">
                                     </div>
                                     <div class="col-lg-4 col-md-4 col-sm-12">
                                         <label for="carbSum">fats old value : {{$data->fatsSum7}}</label>
@@ -2346,7 +2520,7 @@
                                                value="{{$data->fatsSum7}}"
                                                name="fatsSum7"
 
-                                               placeholder="مجموع الدهون" >
+                                               placeholder="مجموع الدهون">
                                     </div>
                                     <div class="col-lg-4 col-md-4 col-sm-12">
                                         <label for="carbSum">proteins old value : {{$data->proteinSum7}}</label>
@@ -2354,12 +2528,9 @@
                                                value=" {{$data->proteinSum7}}"
                                                name="proteinSum7"
 
-                                               placeholder="مجموع البروتينات" >
+                                               placeholder="مجموع البروتينات">
                                     </div>
                                 </div>
-
-
-
 
 
                             </div>
