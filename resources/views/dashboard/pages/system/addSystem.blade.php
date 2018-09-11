@@ -92,13 +92,13 @@
                                         </div>
                                         <div class="col-lg-3">
                                             <select name="gmValue" id="gmValueg" class="form-control">
-                                                
+
                                                 <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
                                                 @for($i=1;$i<=1000;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
-                                        
+
                                             </select>
                                         </div>
                                         <div class="col-lg-3">
@@ -131,19 +131,24 @@
                                         </div>
                                         <div class="col-lg-3">
                                             <select name="gmValue" id="gmValue" class="form-control">
-                                                
+
                                                 <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
                                                 @for($i=1;$i<=1000;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
-                                        
+
                                             </select>
                                         </div>
 
 
                                         <div class="col-lg-3">
                                             <button type="button" class="btn btn-success" onclick="getData()">أضف
+                                            </button>
+
+                                            <button type="button" class="btn btn-warning"
+                                                    onclick="deleteItem('gmValue','selectcountries','carbSum','fatsSum','proteinSum','day1_breakfast')">
+                                                حذف
                                             </button>
                                         </div>
                                     </div>
@@ -190,18 +195,22 @@
                                         </div>
                                         <div class="col-lg-3">
                                             <select name="gmValue" id="gmValue1_break1" class="form-control">
-                                                
+
                                                 <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
                                                 @for($i=1;$i<=1000;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
-                                        
+
                                             </select>
                                         </div>
                                         <div class="col-lg-3">
                                             <button type="button" class="btn btn-success" onclick="getData1_break1()">
                                                 أضف
+                                            </button>
+                                            <button type="button" class="btn btn-warning"
+                                                    onclick="deleteItem('gmValue1_break1','selectcountries1_break1','carbSum','fatsSum','proteinSum','day1_break1')">
+                                                حذف
                                             </button>
                                         </div>
                                     </div>
@@ -242,17 +251,21 @@
                                                                       class="form-control"></select></div>
                                         <div class="col-lg-3"><select name="gmValue" id="gmValue1_lunch"
                                                                       class="form-control">
-                                                
+
                                                 <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
                                                 @for($i=1;$i<=1000;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
-                                        
+
                                             </select></div>
                                         <div class="col-lg-3">
                                             <button type="button" class="btn btn-success" onclick="getData1_lunch()">
                                                 أضف
+                                            </button>
+                                            <button type="button" class="btn btn-warning"
+                                                    onclick="deleteItem('gmValue1_lunch','selectcountries1_lunch','carbSum','fatsSum','proteinSum','day1_lunch')">
+                                                حذف
                                             </button>
                                         </div>
                                     </div>
@@ -291,18 +304,22 @@
                                         </div>
                                         <div class="col-lg-3">
                                             <select name="gmValue" id="gmValue1_break2" class="form-control">
-                                                
+
                                                 <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
                                                 @for($i=1;$i<=1000;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
-                                        
+
                                             </select>
                                         </div>
                                         <div class="col-lg-3">
                                             <button type="button" class="btn btn-success" onclick="getData1_break2()">
                                                 أضف
+                                            </button>
+                                            <button type="button" class="btn btn-warning"
+                                                    onclick="deleteItem('gmValue1_break2','selectcountries1_break2','carbSum','fatsSum','proteinSum','day1_break2')">
+                                                حذف
                                             </button>
                                         </div>
                                     </div>
@@ -349,19 +366,23 @@
                                         </div>
                                         <div class="col-lg-3">
                                             <select name="gmValue" id="gmValue1_dinner" class="form-control">
-                                                
+
                                                 <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
                                                 @for($i=1;$i<=1000;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
-                                        
+
                                             </select>
                                         </div>
                                         <div class="col-lg-3">
 
                                             <button type="button" class="btn btn-success" onclick="getData1_dinner()">
                                                 أضف
+                                            </button>
+                                            <button type="button" class="btn btn-warning"
+                                                    onclick="deleteItem('gmValue1_dinner','selectcountries1_dinner','carbSum','fatsSum','proteinSum','day1_dinner')">
+                                                حذف
                                             </button>
                                         </div>
                                     </div>
@@ -492,17 +513,21 @@
                                         </div>
                                         <div class="col-lg-3">
                                             <select name="gmValue" id="gmValue2" class="form-control">
-                                                
+
                                                 <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
                                                 @for($i=1;$i<=1000;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
-                                        
+
                                             </select>
                                         </div>
                                         <div class="col-lg-3">
                                             <button type="button" class="btn btn-success" onclick="getData2()">أضف
+                                            </button>
+                                            <button type="button" class="btn btn-warning"
+                                                    onclick="deleteItem('gmValue2','selectcountries2','carbSum2','fatsSum2','proteinSum2','day2_breakfast')">
+                                                حذف
                                             </button>
                                         </div>
                                     </div>
@@ -545,18 +570,22 @@
                                         </div>
                                         <div class="col-lg-3">
                                             <select name="gmValue" id="gmValue2_break1" class="form-control">
-                                                
+
                                                 <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
                                                 @for($i=1;$i<=1000;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
-                                        
+
                                             </select>
                                         </div>
                                         <div class="col-lg-3">
                                             <button type="button" class="btn btn-success" onclick="getData2_break1()">
                                                 أضف
+                                            </button>
+                                            <button type="button" class="btn btn-warning"
+                                                    onclick="deleteItem('gmValue2_break1','selectcountries2_break1','carbSum2','fatsSum2','proteinSum2','day2_break1')">
+                                                حذف
                                             </button>
                                         </div>
                                     </div>
@@ -596,17 +625,21 @@
                                                                       class="form-control"></select></div>
                                         <div class="col-lg-3"><select name="gmValue" id="gmValue2_lunch"
                                                                       class="form-control">
-                                                
+
                                                 <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
                                                 @for($i=1;$i<=1000;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
-                                        
+
                                             </select></div>
                                         <div class="col-lg-3">
                                             <button type="button" class="btn btn-success" onclick="getData2_lunch()">
                                                 أضف
+                                            </button>
+                                            <button type="button" class="btn btn-warning"
+                                                    onclick="deleteItem('gmValue2_lunch','selectcountries2_lunch','carbSum2','fatsSum2','proteinSum2','day2_lunch')">
+                                                حذف
                                             </button>
                                         </div>
                                     </div>
@@ -646,17 +679,21 @@
                                                                       class="form-control"></select></div>
                                         <div class="col-lg-3"><select name="gmValue" id="gmValue2_break2"
                                                                       class="form-control">
-                                                
+
                                                 <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
                                                 @for($i=1;$i<=1000;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
-                                        
+
                                             </select></div>
                                         <div class="col-lg-3">
                                             <button type="button" class="btn btn-success" onclick="getData2_break2()">
                                                 أضف
+                                            </button>
+                                            <button type="button" class="btn btn-warning"
+                                                    onclick="deleteItem('gmValue2_break2','selectcountries2_break2','carbSum2','fatsSum2','proteinSum2','day2_break2')">
+                                                حذف
                                             </button>
                                         </div>
                                     </div>
@@ -697,17 +734,21 @@
                                                                       class="form-control"></select></div>
                                         <div class="col-lg-3"><select name="gmValue" id="gmValue2_dinner"
                                                                       class="form-control">
-                                                
+
                                                 <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
                                                 @for($i=1;$i<=1000;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
-                                        
+
                                             </select></div>
                                         <div class="col-lg-3">
                                             <button type="button" class="btn btn-success" onclick="getData2_dinner()">
                                                 أضف
+                                            </button>
+                                            <button type="button" class="btn btn-warning"
+                                                    onclick="deleteItem('gmValue2_dinner','selectcountries2_dinner','carbSum2','fatsSum2','proteinSum2','day2_dinner')">
+                                                حذف
                                             </button>
                                         </div>
                                     </div>
@@ -813,6 +854,7 @@
                                     <div class="col-lg-3">
                                         <button type="button" class="btn btn-warning" onclick="deleteData3()">حذف
                                         </button>
+
                                     </div>
                                 </div>
                             </div>
@@ -832,16 +874,20 @@
                                         <div class="col-lg-3"><select id="selectcountries3"
                                                                       class="form-control"></select></div>
                                         <div class="col-lg-3"><select name="gmValue" id="gmValue3" class="form-control">
-                                                
+
                                                 <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
                                                 @for($i=1;$i<=1000;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
-                                        
+
                                             </select></div>
                                         <div class="col-lg-3">
                                             <button type="button" class="btn btn-success" onclick="getData3()">أضف
+                                            </button>
+                                            <button type="button" class="btn btn-warning"
+                                                    onclick="deleteItem('gmValue3','selectcountries3','carbSum3','fatsSum3','proteinSum3','day3_breakfast')">
+                                                حذف
                                             </button>
                                         </div>
                                     </div>
@@ -881,17 +927,21 @@
                                                                       class="form-control"></select></div>
                                         <div class="col-lg-3"><select name="gmValue" id="gmValue3_break1"
                                                                       class="form-control">
-                                                
+
                                                 <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
                                                 @for($i=1;$i<=1000;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
-                                        
+
                                             </select></div>
                                         <div class="col-lg-3">
                                             <button type="button" class="btn btn-success" onclick="getData3_break1()">
                                                 أضف
+                                            </button>
+                                            <button type="button" class="btn btn-warning"
+                                                    onclick="deleteItem('gmValue3_break1','selectcountries3_break1','carbSum3','fatsSum3','proteinSum3','day3_break1')">
+                                                حذف
                                             </button>
                                         </div>
                                     </div>
@@ -930,17 +980,21 @@
                                         <div class="col-lg-3"><select id="selectcountries3_lunch"
                                                                       class="form-control"></select></div>
                                         <div class="col-lg-3"><select id="gmValue3_lunch" class="form-control">
-                                                
+
                                                 <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
                                                 @for($i=1;$i<=1000;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
-                                        
+
                                             </select></div>
                                         <div class="col-lg-3">
                                             <button type="button" class="btn btn-success" onclick="getData3_lunch()">
                                                 أضف
+                                            </button>
+                                            <button type="button" class="btn btn-warning"
+                                                    onclick="deleteItem('gmValue3_lunch','selectcountries3_lunch','carbSum3','fatsSum3','proteinSum3','day3_lunch')">
+                                                حذف
                                             </button>
                                         </div>
                                     </div>
@@ -981,17 +1035,21 @@
                                                                       class="form-control"></select></div>
                                         <div class="col-lg-3"><select name="gmValue" id="gmValue3_break2"
                                                                       class="form-control">
-                                                
+
                                                 <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
                                                 @for($i=1;$i<=1000;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
-                                        
+
                                             </select></div>
                                         <div class="col-lg-3">
                                             <button type="button" class="btn btn-success" onclick="getData3_break2()">
                                                 أضف
+                                            </button>
+                                            <button type="button" class="btn btn-warning"
+                                                    onclick="deleteItem('gmValue3_break2','selectcountries3_break2','carbSum3','fatsSum3','proteinSum3','day3_break2')">
+                                                حذف
                                             </button>
                                         </div>
                                     </div>
@@ -1032,19 +1090,24 @@
                                                                       class="form-control"></select></div>
                                         <div class="col-lg-3"><select name="gmValue" id="gmValue3_dinner"
                                                                       class="form-control">
-                                                
+
                                                 <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
                                                 @for($i=1;$i<=1000;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
-                                        
+
                                             </select></div>
                                         <div class="col-lg-3">
                                             <button type="button" class="btn btn-success" onclick="getData3_dinner()">
                                                 أضف
                                             </button>
+                                            <button type="button" class="btn btn-warning"
+                                                    onclick="deleteItem('gmValue3_dinner','selectcountries3_dinner','carbSum3','fatsSum3','proteinSum3','day3_dinner')">
+                                                حذف
+                                            </button>
                                         </div>
+
                                     </div>
 
 
@@ -1137,13 +1200,13 @@
                                         </div>
                                         <div class="col-lg-3">
                                             <select name="gmValue" id="gmValueg4" class="form-control">
-                                                
+
                                                 <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
                                                 @for($i=1;$i<=1000;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
-                                        
+
                                             </select>
                                         </div>
                                         <div class="col-lg-3">
@@ -1167,16 +1230,20 @@
                                         <div class="col-lg-3"><select id="selectcountries4"
                                                                       class="form-control"></select></div>
                                         <div class="col-lg-3"><select name="gmValue" id="gmValue4" class="form-control">
-                                                
+
                                                 <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
                                                 @for($i=1;$i<=1000;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
-                                        
+
                                             </select></div>
                                         <div class="col-lg-3">
                                             <button type="button" class="btn btn-success" onclick="getData4()">أضف
+                                            </button>
+                                            <button type="button" class="btn btn-warning"
+                                                    onclick="deleteItem('gmValue4','selectcountries4','carbSum4','fatsSum4','proteinSum4','day4_breakfast')">
+                                                حذف
                                             </button>
                                         </div>
                                     </div>
@@ -1216,17 +1283,21 @@
                                                                       class="form-control"></select></div>
                                         <div class="col-lg-3"><select name="gmValue" id="gmValue4_break1"
                                                                       class="form-control">
-                                                
+
                                                 <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
                                                 @for($i=1;$i<=1000;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
-                                        
+
                                             </select></div>
                                         <div class="col-lg-3">
                                             <button type="button" class="btn btn-success" onclick="getData4_break1()">
                                                 أضف
+                                            </button>
+                                            <button type="button" class="btn btn-warning"
+                                                    onclick="deleteItem('gmValue4_break1','selectcountries4_break1','carbSum4','fatsSum4','proteinSum4','day4_break1')">
+                                                حذف
                                             </button>
                                         </div>
                                     </div>
@@ -1262,17 +1333,21 @@
                                                                       class="form-control"></select></div>
                                         <div class="col-lg-3">
                                             <select id="gmValue4_lunch" class="form-control">
-                                                
+
                                                 <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
                                                 @for($i=1;$i<=1000;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
-                                        
+
                                             </select></div>
                                         <div class="col-lg-3">
                                             <button type="button" class="btn btn-success" onclick="getData4_lunch()">
                                                 أضف
+                                            </button>
+                                            <button type="button" class="btn btn-warning"
+                                                    onclick="deleteItem('gmValue4_lunch','selectcountries4_lunch','carbSum4','fatsSum4','proteinSum4','day4_lunch')">
+                                                حذف
                                             </button>
                                         </div>
                                     </div>
@@ -1312,17 +1387,21 @@
                                                                       class="form-control"></select></div>
                                         <div class="col-lg-3"><select name="gmValue" id="gmValue4_break2"
                                                                       class="form-control">
-                                                
+
                                                 <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
                                                 @for($i=1;$i<=1000;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
-                                        
+
                                             </select></div>
                                         <div class="col-lg-3">
                                             <button type="button" class="btn btn-success" onclick="getData4_break2()">
                                                 أضف
+                                            </button>
+                                            <button type="button" class="btn btn-warning"
+                                                    onclick="deleteItem('gmValue4_break2','selectcountries4_break2','carbSum4','fatsSum4','proteinSum4','day4_break2')">
+                                                حذف
                                             </button>
                                         </div>
                                     </div>
@@ -1363,17 +1442,21 @@
                                                                       class="form-control"></select></div>
                                         <div class="col-lg-3"><select name="gmValue" id="gmValue4_dinner"
                                                                       class="form-control">
-                                                
+
                                                 <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
                                                 @for($i=1;$i<=1000;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
-                                        
+
                                             </select></div>
                                         <div class="col-lg-3">
                                             <button type="button" class="btn btn-success" onclick="getData4_dinner()">
                                                 أضف
+                                            </button>
+                                            <button type="button" class="btn btn-warning"
+                                                    onclick="deleteItem('gmValue4_dinner','selectcountries4_dinner','carbSum4','fatsSum4','proteinSum4','day4_dinner')">
+                                                حذف
                                             </button>
                                         </div>
                                     </div>
@@ -1473,13 +1556,13 @@
                                         </div>
                                         <div class="col-lg-3">
                                             <select name="gmValue" id="gmValueg5" class="form-control">
-                                                
+
                                                 <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
                                                 @for($i=1;$i<=1000;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
-                                        
+
                                             </select>
                                         </div>
                                         <div class="col-lg-3">
@@ -1502,16 +1585,20 @@
                                         <div class="col-lg-3"><select id="selectcountries5"
                                                                       class="form-control"></select></div>
                                         <div class="col-lg-3"><select name="gmValue" id="gmValue5" class="form-control">
-                                                
+
                                                 <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
                                                 @for($i=1;$i<=1000;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
-                                        
+
                                             </select></div>
                                         <div class="col-lg-3">
                                             <button type="button" class="btn btn-success" onclick="getData5()">أضف
+                                            </button>
+                                            <button type="button" class="btn btn-warning"
+                                                    onclick="deleteItem('gmValue5','selectcountries5','carbSum5','fatsSum5','proteinSum5','day5_breakfast')">
+                                                حذف
                                             </button>
                                         </div>
                                     </div>
@@ -1550,17 +1637,21 @@
                                                                       class="form-control"></select></div>
                                         <div class="col-lg-3"><select name="gmValue" id="gmValue5_break1"
                                                                       class="form-control">
-                                                
+
                                                 <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
                                                 @for($i=1;$i<=1000;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
-                                        
+
                                             </select></div>
                                         <div class="col-lg-3">
                                             <button type="button" class="btn btn-success" onclick="getData5_break1()">
                                                 أضف
+                                            </button>
+                                            <button type="button" class="btn btn-warning"
+                                                    onclick="deleteItem('gmValue5_break1','selectcountries5_break1','carbSum5','fatsSum5','proteinSum5','day5_break1')">
+                                                حذف
                                             </button>
                                         </div>
                                     </div>
@@ -1601,17 +1692,21 @@
                                         <div class="col-lg-3"><select id="selectcountries5_lunch"
                                                                       class="form-control"></select></div>
                                         <div class="col-lg-3"><select id="gmValue5_lunch" class="form-control">
-                                                
+
                                                 <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
                                                 @for($i=1;$i<=1000;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
-                                        
+
                                             </select></div>
                                         <div class="col-lg-3">
                                             <button type="button" class="btn btn-success" onclick="getData5_lunch()">
                                                 أضف
+                                            </button>
+                                            <button type="button" class="btn btn-warning"
+                                                    onclick="deleteItem('gmValue5_lunch','selectcountries5_lunch','carbSum5','fatsSum5','proteinSum5','day5_lunch')">
+                                                حذف
                                             </button>
                                         </div>
                                     </div>
@@ -1651,17 +1746,21 @@
                                                                       class="form-control"></select></div>
                                         <div class="col-lg-3"><select name="gmValue" id="gmValue5_break2"
                                                                       class="form-control">
-                                                
+
                                                 <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
                                                 @for($i=1;$i<=1000;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
-                                        
+
                                             </select></div>
                                         <div class="col-lg-3">
                                             <button type="button" class="btn btn-success" onclick="getData5_break2()">
                                                 أضف
+                                            </button>
+                                            <button type="button" class="btn btn-warning"
+                                                    onclick="deleteItem('gmValue5_break2','selectcountries5_break2','carbSum5','fatsSum5','proteinSum5','day5_break2')">
+                                                حذف
                                             </button>
                                         </div>
                                     </div>
@@ -1701,17 +1800,21 @@
                                                                       class="form-control"></select></div>
                                         <div class="col-lg-3"><select name="gmValue" id="gmValue5_dinner"
                                                                       class="form-control" class="form-control">
-                                                
+
                                                 <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
                                                 @for($i=1;$i<=1000;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
-                                        
+
                                             </select></div>
                                         <div class="col-lg-3">
                                             <button type="button" class="btn btn-success" onclick="getData5_dinner()">
                                                 أضف
+                                            </button>
+                                            <button type="button" class="btn btn-warning"
+                                                    onclick="deleteItem('gmValue5_dinner','selectcountries5_dinner','carbSum5','fatsSum5','proteinSum5','day5_dinner')">
+                                                حذف
                                             </button>
                                         </div>
                                     </div>
@@ -1808,13 +1911,13 @@
                                         </div>
                                         <div class="col-lg-3">
                                             <select name="gmValue" id="gmValueg6" class="form-control">
-                                                
+
                                                 <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
                                                 @for($i=1;$i<=1000;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
-                                        
+
                                             </select>
                                         </div>
                                         <div class="col-lg-3">
@@ -1837,16 +1940,20 @@
                                         <div class="col-lg-3"><select id="selectcountries6"
                                                                       class="form-control"></select></div>
                                         <div class="col-lg-3"><select name="gmValue" id="gmValue6" class="form-control">
-                                                
+
                                                 <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
                                                 @for($i=1;$i<=1000;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
-                                        
+
                                             </select></div>
                                         <div class="col-lg-3">
                                             <button type="button" class="btn btn-success" onclick="getData6()">أضف
+                                            </button>
+                                            <button type="button" class="btn btn-warning"
+                                                    onclick="deleteItem('gmValue6','selectcountries6','carbSum6','fatsSum6','proteinSum6','day6_breakfast')">
+                                                حذف
                                             </button>
                                         </div>
                                     </div>
@@ -1886,17 +1993,21 @@
                                                                       class="form-control"></select></div>
                                         <div class="col-lg-3"><select name="gmValue" id="gmValue6_break1"
                                                                       class="form-control">
-                                                
+
                                                 <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
                                                 @for($i=1;$i<=1000;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
-                                        
+
                                             </select></div>
                                         <div class="col-lg-3">
                                             <button type="button" class="btn btn-success" onclick="getData6_break1()">
                                                 أضف
+                                            </button>
+                                            <button type="button" class="btn btn-warning"
+                                                    onclick="deleteItem('gmValue6_break1','selectcountries6_break1','carbSum6','fatsSum6','proteinSum6','day6_break1')">
+                                                حذف
                                             </button>
                                         </div>
                                     </div>
@@ -1938,17 +2049,21 @@
                                         <div class="col-lg-3"><select id="selectcountries6_lunch"
                                                                       class="form-control"></select></div>
                                         <div class="col-lg-3"><select id="gmValue6_lunch" class="form-control">
-                                                
+
                                                 <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
                                                 @for($i=1;$i<=1000;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
-                                        
+
                                             </select></div>
                                         <div class="col-lg-3">
                                             <button type="button" class="btn btn-success" onclick="getData6_lunch()">
                                                 أضف
+                                            </button>
+                                            <button type="button" class="btn btn-warning"
+                                                    onclick="deleteItem('gmValue6_lunch','selectcountries6_lunch','carbSum6','fatsSum6','proteinSum6','day6_lunch')">
+                                                حذف
                                             </button>
                                         </div>
                                     </div>
@@ -1987,17 +2102,21 @@
                                                                       class="form-control"></select></div>
                                         <div class="col-lg-3"><select name="gmValue" id="gmValue6_break2"
                                                                       class="form-control">
-                                                
+
                                                 <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
                                                 @for($i=1;$i<=1000;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
-                                        
+
                                             </select></div>
                                         <div class="col-lg-3">
                                             <button type="button" class="btn btn-success" onclick="getData6_break2()">
                                                 أضف
+                                            </button>
+                                            <button type="button" class="btn btn-warning"
+                                                    onclick="deleteItem('gmValue6_break2','selectcountries6_break2','carbSum6','fatsSum6','proteinSum6','day6_break2')">
+                                                حذف
                                             </button>
                                         </div>
                                     </div>
@@ -2038,17 +2157,21 @@
                                         </div>
                                         <div class="col-lg-3"><select name="gmValue" id="gmValue6_dinner"
                                                                       class="form-control">
-                                                
+
                                                 <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
                                                 @for($i=1;$i<=1000;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
-                                        
+
                                             </select></div>
                                         <div class="col-lg-3">
                                             <button type="button" class="btn btn-success" onclick="getData6_dinner()">
                                                 أضف
+                                            </button>
+                                            <button type="button" class="btn btn-warning"
+                                                    onclick="deleteItem('gmValue6_dinner','selectcountries6_dinner','carbSum6','fatsSum6','proteinSum6','day6_dinner')">
+                                                حذف
                                             </button>
                                         </div>
                                     </div>
@@ -2147,13 +2270,13 @@
                                         </div>
                                         <div class="col-lg-3">
                                             <select name="gmValue" id="gmValueg7" class="form-control">
-                                                
+
                                                 <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
                                                 @for($i=1;$i<=1000;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
-                                        
+
                                             </select>
                                         </div>
                                         <div class="col-lg-3">
@@ -2176,16 +2299,20 @@
                                         <div class="col-lg-3"><select id="selectcountries7"
                                                                       class="form-control"></select></div>
                                         <div class="col-lg-3"><select name="gmValue" id="gmValue7" class="form-control">
-                                                
+
                                                 <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
                                                 @for($i=1;$i<=1000;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
-                                        
+
                                             </select></div>
                                         <div class="col-lg-3">
                                             <button type="button" class="btn btn-success" onclick="getData7()">أضف
+                                            </button>
+                                            <button type="button" class="btn btn-warning"
+                                                    onclick="deleteItem('gmValue7','selectcountries7','carbSum7','fatsSum7','proteinSum7','day7_breakfast')">
+                                                حذف
                                             </button>
                                         </div>
                                     </div>
@@ -2225,17 +2352,21 @@
                                                                       class="form-control"></select></div>
                                         <div class="col-lg-3"><select name="gmValue" id="gmValue7_break1"
                                                                       class="form-control">
-                                                
+
                                                 <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
                                                 @for($i=1;$i<=1000;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
-                                        
+
                                             </select></div>
                                         <div class="col-lg-3">
                                             <button type="button" class="btn btn-success" onclick="getData7_break1()">
                                                 أضف
+                                            </button>
+                                            <button type="button" class="btn btn-warning"
+                                                    onclick="deleteItem('gmValue7_break1','selectcountries7_break1','carbSum7','fatsSum7','proteinSum7','day7_break1')">
+                                                حذف
                                             </button>
                                         </div>
                                     </div>
@@ -2276,17 +2407,21 @@
                                         <div class="col-lg-3"><select id="selectcountries7_lunch"
                                                                       class="form-control"></select></div>
                                         <div class="col-lg-3"><select id="gmValue7_lunch" class="form-control">
-                                                
+
                                                 <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
                                                 @for($i=1;$i<=1000;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
-                                        
+
                                             </select></div>
                                         <div class="col-lg-3">
                                             <button type="button" class="btn btn-success" onclick="getData7_lunch()">
                                                 أضف
+                                            </button>
+                                            <button type="button" class="btn btn-warning"
+                                                    onclick="deleteItem('gmValue7_lunch','selectcountries7_lunch','carbSum7','fatsSum7','proteinSum7','day7_lunch')">
+                                                حذف
                                             </button>
                                         </div>
                                     </div>
@@ -2326,17 +2461,21 @@
                                                                       class="form-control"></select></div>
                                         <div class="col-lg-3"><select name="gmValue" id="gmValue7_break2"
                                                                       class="form-control">
-                                                
+
                                                 <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
                                                 @for($i=1;$i<=1000;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
-                                        
+
                                             </select></div>
                                         <div class="col-lg-3">
                                             <button type="button" class="btn btn-success" onclick="getData7_break2()">
                                                 أضف
+                                            </button>
+                                            <button type="button" class="btn btn-warning"
+                                                    onclick="deleteItem('gmValue7_break2','selectcountries7_break2','carbSum7','fatsSum7','proteinSum7','day7_break2')">
+                                                حذف
                                             </button>
                                         </div>
                                     </div>
@@ -2377,17 +2516,21 @@
                                                                       class="form-control"></select></div>
                                         <div class="col-lg-3"><select name="gmValue" id="gmValue7_dinner"
                                                                       class="form-control">
-                                                
+
                                                 <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
                                                 @for($i=1;$i<=1000;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
-                                        
+
                                             </select></div>
                                         <div class="col-lg-3">
                                             <button type="button" class="btn btn-success" onclick="getData7_dinner()">
                                                 أضف
+                                            </button>
+                                            <button type="button" class="btn btn-warning"
+                                                    onclick="deleteItem('gmValue7_dinner','selectcountries7_dinner','carbSum7','fatsSum7','proteinSum7','day7_dinner')">
+                                                حذف
                                             </button>
                                         </div>
                                     </div>
