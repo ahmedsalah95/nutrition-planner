@@ -85,6 +85,11 @@ class PatientController extends Controller
         $patientData->diet=$request['diet'];
         $patientData->diet_name=$request['diet_name'];
         $patientData->diet_result=$request['diet_result'];
+        $patientData->fats_in_body=$request['fats_in_body'];
+        $patientData->muscles=$request['muscles'];
+        $patientData->water_in_body=$request['water_in_body'];
+        $patientData->minerals=$request['minerals'];
+        $patientData->khasr=$request['khasr'];
 
 
 
@@ -182,8 +187,14 @@ class PatientController extends Controller
         $patientData->diet=$request['diet'];
         $patientData->diet_name=$request['diet_name'];
         $patientData->diet_result=$request['diet_result'];
-
+        $patientData->fats_in_body=$request['fats_in_body'];
+        $patientData->muscles=$request['muscles'];
+        $patientData->water_in_body=$request['water_in_body'];
+        $patientData->minerals=$request['minerals'];
+        $patientData->khasr=$request['khasr'];
         $patientData->save();
+
+
 
         return redirect('patient');
 

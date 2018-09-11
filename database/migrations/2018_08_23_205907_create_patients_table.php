@@ -38,6 +38,11 @@ class CreatePatientsTable extends Migration
             $table->String('diet')->nullable();
             $table->String('diet_name')->nullable();
             $table->String('diet_result')->nullable();
+            $table->String('fats_in_body')->nullable();
+            $table->String('muscles')->nullable();
+            $table->String('water_in_body')->nullable();
+            $table->String('minerals')->nullable();
+            $table->String('khasr')->nullable();
 
             $table->timestamps();
         });

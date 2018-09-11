@@ -14,7 +14,10 @@
                         </div>
                     @endif
 
-                    You are logged in!
+                   تم تسجيل الدخول بنجاح
+
+                        <center><a href="/" class="btn btn-success">اذهب للنظام</a></center>
+
                 </div>
             </div>
         </div>

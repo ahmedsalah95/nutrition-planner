@@ -76,6 +76,38 @@
 
                                 </tr>
 
+                                <tr>
+                                    <td>هل قام المريض بعمل روجيم من قبل؟</td>
+                                    <td>{!! $patient->diet  !!}</td>
+
+                                </tr>
+                                <tr>
+                                    <td>اسم الروجيم المتبع</td>
+                                    <td>{!! $patient->diet_name  !!}</td>
+
+                                </tr>
+
+                                <tr>
+                                    <td>كم خسر المريض من الوزن نتيجه الروجيم</td>
+                                    <td>{!! $patient->diet_result  !!}</td>
+
+                                </tr>
+                                <tr>
+                                    <td>اطعمه تسبب حساسيه للمريض</td>
+                                    <td>{!! $patient->sensitivity  !!}</td>
+
+                                </tr>
+                                <tr>
+                                    <td>ادويه مميعه للدم</td>
+                                    <td>{!! $patient->blood  !!}</td>
+
+                                </tr>
+
+                                <tr>
+                                    <td> عدد ساعات النوم</td>
+                                    <td>{!! $patient->sleeping_hours  !!}</td>
+
+                                </tr>
 
                                 </tbody>
                             </table>
@@ -90,7 +122,11 @@
                                 </thead>
                                 <tbody>
 
+                                <tr>
+                                    <td> كم الماء المستهلك يوميا</td>
+                                    <td>لتر  {!! $patient->water  !!}  </td>
 
+                                </tr>
 
 
                                 <tr>
@@ -131,16 +167,19 @@
 
                                         if($patient->gender == "ذكر")
                                         {
-                                            $inches = $patient->height*0.032808399;
-
-                                            $maleMass = 48 +(2.7*($inches-5));
-                                            echo ceil($maleMass) .' kg';
+                                           $foot = $patient->height*0.032808399;
+                                           $foot = $foot-5;
+                                           $inches = $foot *12;
+                                           $mass = 48+(2.7*$inches);
+                                           echo floor($mass);
 
                                         }else
                                         {
-                                            $inches = $patient->height*0.032808399;
-                                            $femaleMass = 48 +(2.2*($inches-5));
-                                            echo ceil($femaleMass).' kg';
+                                            $foot = $patient->height*0.032808399;
+                                            $foot = $foot-5;
+                                            $inches = $foot *12;
+                                            $mass = 48+(2.3*$inches);
+                                            echo floor($mass);
                                         }
 
                                         ?>
@@ -234,6 +273,55 @@
                                 </tbody>
                             </table>
                         </div>
+
+
+
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+
+
+                    <table class="table table-hover" border="3px solid #2A3F54">
+                        <thead>
+
+                        </thead>
+                        <tbody>
+
+                        <tr>
+                            <td>نسبة الدهون في الجسم في أول زياره </td>
+                            <td>  {!! $patient->fats_in_body  !!}  </td>
+
+                        </tr>
+
+
+                        <tr>
+                            <td>نسبة العضلات في الجسم  في اول زياره </td>
+                            <td>{{$patient->muscles}}</td>
+
+                        </tr>
+
+                        <tr>
+                            <td>نسبة الماء في الجسم  في أول زياره   </td>
+                            <td>{!! $patient->water_in_body !!}</td>
+
+                        </tr>
+                        <tr>
+                            <td>نسبة المعادن في الجسم  في أول زياره   </td>
+                            <td>{!! $patient->minerals !!}</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>محيط الخصر  في أول زياره   </td>
+                            <td>{!! $patient->khasr !!}</td>
+                        </tr>
+
+
+                        </tbody>
+                    </table>
+                </div>
             </div>
                 <div class="row">
                     <div class="col-lg-12 col-md-12 col-sm-12" style="background: #73879F;border-radius: 10px;color: white;padding: 10px">

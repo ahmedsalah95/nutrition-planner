@@ -309,6 +309,63 @@
                         </div>
                     </div>
 
+                    <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="diet_result">نسبة الدهون في الجسم
+
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <input type="text" name="fats_in_body"
+                                   value="{{$patient->fats_in_body}}"
+                                   id="fats_in_body" class=" form-control col-md-7 col-xs-12"  >
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="diet_result">نسبة العضلات في الجسم
+
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <input type="text" name="muscles"
+                                   value="{{$patient->muscles}}"
+                                   id="muscles" class=" form-control col-md-7 col-xs-12"  >
+                        </div>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="diet_result">نسبة الماء في الجسم
+
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <input type="text" name="water_in_body"
+                                   value="{{$patient->water_in_body}}"
+                                   id="water_in_body" class=" form-control col-md-7 col-xs-12"  >
+                        </div>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="diet_result">نسبة المعادن
+
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <input type="text" name="minerals"
+                                   value="{{$patient->minerals}}"
+                                   id="minerals" class=" form-control col-md-7 col-xs-12"  >
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="diet_result"> محيط الخصر
+
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <input type="text" name="khasr"
+                                   value="{{$patient->khasr}}"
+                                   id="khasr" class=" form-control col-md-7 col-xs-12"  >
+                        </div>
+                    </div>
+
 
                     <div class="form-group">
                         <label class="control-label col-md-3 col-sm-3 col-xs-12" for="goal"> هدف المريض <span class="required">*</span>
