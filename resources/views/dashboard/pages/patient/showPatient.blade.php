@@ -55,7 +55,6 @@
                                 <tr>
                                     <td>الوزن</td>
                                     <td>{{$patient->weight}}</td>
-
                                 </tr>
 
 
@@ -287,35 +286,40 @@
 
                         </thead>
                         <tbody>
+                        <tr>
+                            <td>الوزن في اول زيارة </td>
+                            <td>{{$patient->weight_first_time}}</td>
+
+                        </tr>
 
                         <tr>
-                            <td>نسبة الدهون في الجسم في أول زياره </td>
-                            <td>  {!! $patient->fats_in_body  !!}  </td>
+                            <td>نسبة الدهون في الجسم في أول زيارة </td>
+                            <td>  {!! $patient->fats_in_body_first_time  !!}  </td>
 
                         </tr>
 
 
                         <tr>
-                            <td>نسبة العضلات في الجسم  في اول زياره </td>
-                            <td>{{$patient->muscles}}</td>
+                            <td>نسبة العضلات في الجسم  في اول زيارة </td>
+                            <td>{{$patient->muscles_first_time}}</td>
 
                         </tr>
 
                         <tr>
-                            <td>نسبة الماء في الجسم  في أول زياره   </td>
-                            <td>{!! $patient->water_in_body !!}</td>
+                            <td>نسبة الماء في الجسم  في أول زيارة   </td>
+                            <td>{!! $patient->water_in_body_first_time !!}</td>
 
                         </tr>
                         <tr>
-                            <td>نسبة المعادن في الجسم  في أول زياره   </td>
-                            <td>{!! $patient->minerals !!}</td>
+                            <td>نسبة المعادن في الجسم  في أول زيارة   </td>
+                            <td>{!! $patient->minerals_first_time !!}</td>
 
                         </tr>
 
                         <tr>
 
-                            <td>محيط الخصر  في أول زياره   </td>
-                            <td>{!! $patient->khasr !!}</td>
+                            <td>محيط الخصر  في أول زيارة   </td>
+                            <td>{!! $patient->khasr_first_time !!}</td>
                         </tr>
 
 
@@ -383,8 +387,8 @@
                             <div class="col-lg-12 col-md-12 col-sm-12" style="margin-top: 30px">
                                 <h5 class="pull-left"> وقت الملاحظة {{$note->created_at}}</h5>
                                 <a href="/noteDeletion/{{$note->id}}/{{$patient->id}}" class="btn btn-danger pull-right">احذف</a>
-                                <textarea name="" id="" cols="30" rows="10" readonly class="form-control" style="text-align: center">
-                                    {{$note->note}}
+                                <textarea name="" id="" cols="10" rows="5"  class="form-control" style="text-align: center">
+                                    {!!$note->note  !!}
                                 </textarea>
 
                             </div>
@@ -434,6 +438,10 @@
             var x =$(e).parents('.removable');
             x.remove();
         }
+    </script>
+
+    <script>
+        $('textarea').val().repl
     </script>
 
 @stop

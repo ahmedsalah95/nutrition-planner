@@ -41,7 +41,8 @@ class DatabaseSeeder extends Seeder
             'water'=>'2',
             'diet'=>'لا يوجد',
             'diet_name'=>'',
-            'diet_result'=>''
+            'diet_result'=>'',
+
 
         ]);
 

@@ -43,6 +43,13 @@ class CreatePatientsTable extends Migration
             $table->String('water_in_body')->nullable();
             $table->String('minerals')->nullable();
             $table->String('khasr')->nullable();
+            $table->String('weight_first_time')->nullable();
+            $table->String('fats_in_body_first_time')->nullable();
+            $table->String('muscles_first_time')->nullable();
+            $table->String('water_in_body_first_time')->nullable();
+            $table->String('minerals_first_time')->nullable();
+            $table->String('khasr_first_time')->nullable();
+
 
             $table->timestamps();
         });
