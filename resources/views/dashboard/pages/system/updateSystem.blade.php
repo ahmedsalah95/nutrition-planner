@@ -60,17 +60,12 @@
                         </div>
 
 
-                        <button class="accordion" type="button"> اليوم الاول</button>
+                        <button class="accordion" type="button"> السبت</button>
                         <div class="panel">
                             <br><br>
                             <div class="form-group first_day">
 
-                                <div class="text-center">
 
-                                    <h2 class="text-center">اليوم الاول</h2>
-
-
-                                </div>
 
 
                                 <br>
@@ -446,7 +441,7 @@
                         </div>
 
 
-                        <button class="accordion" type="button">اليوم الثانى</button>
+                        <button class="accordion" type="button"> الاحد</button>
                         <div class="panel">
 
 
@@ -818,7 +813,7 @@
                         </div>
 
 
-                        <button class="accordion" type="button">اليوم الثالث</button>
+                        <button class="accordion" type="button"> الاثنين</button>
                         <div class="panel">
                             <div class="form-group text-center">
                                 <br><br>
@@ -1173,7 +1168,7 @@
                         </div>
 
 
-                        <button class="accordion" type="button">اليوم الرابع</button>
+                        <button class="accordion" type="button"> الثلاثاء</button>
                         <div class="panel">
                             <div class="form-group forth_day">
                                 <br><br>
@@ -1521,7 +1516,7 @@
                         </div>
 
 
-                        <button class="accordion" type="button">اليوم الخامس</button>
+                        <button class="accordion" type="button"> الاربعاء</button>
                         <div class="panel">
                             <div class="form-group fifth_day">
 
@@ -1872,7 +1867,7 @@
                             </div>
                         </div>
 
-                        <button class="accordion" type="button">اليوم السادس</button>
+                        <button class="accordion" type="button"> الخميس</button>
                         <div class="panel">
                             <div class="form-group sixth_day">
 
@@ -2225,7 +2220,7 @@
                         </div>
 
 
-                        <button class="accordion" type="button">اليوم السابع</button>
+                        <button class="accordion" type="button"> الجمعة</button>
                         <div class="panel">
                             <div class="form-group seventh_day">
 
