@@ -136,7 +136,9 @@
                                             </select>
                                         </div>
                                         <div class="col-lg-3">
-                                            <button type="button" class="btn btn-success" onclick="getData()">أضف
+                                            <button type="button" class="btn btn-success"
+                                                    onclick="getData('gmValue','selectcountries','carbSum','fatsSum','proteinSum','day1_breakfast')">
+                                                أضف
                                             </button>
                                             <button type="button" class="btn btn-warning"
                                                     onclick="deleteItem('gmValue','selectcountries','carbSum','fatsSum','proteinSum','day1_breakfast')">
@@ -196,7 +198,8 @@
                                             </select>
                                         </div>
                                         <div class="col-lg-3">
-                                            <button type="button" class="btn btn-success" onclick="getData1_break1()">
+                                            <button type="button" class="btn btn-success"
+                                                    onclick="getData('gmValue1_break1','selectcountries1_break1','carbSum','fatsSum','proteinSum','day1_break1')">
                                                 أضف
                                             </button>
                                             <button type="button" class="btn btn-warning"
@@ -249,7 +252,8 @@
                                                 @endfor
                                             </select></div>
                                         <div class="col-lg-3">
-                                            <button type="button" class="btn btn-success" onclick="getData1_lunch()">
+                                            <button type="button" class="btn btn-success"
+                                                    onclick="getData('gmValue1_lunch','selectcountries1_lunch','carbSum','fatsSum','proteinSum','day1_lunch')">
                                                 أضف
                                             </button>
                                             <button type="button" class="btn btn-warning"
@@ -301,7 +305,8 @@
                                             </select>
                                         </div>
                                         <div class="col-lg-3">
-                                            <button type="button" class="btn btn-success" onclick="getData1_break2()">
+                                            <button type="button" class="btn btn-success"
+                                                    onclick="getData('gmValue1_break2','selectcountries1_break2','carbSum','fatsSum','proteinSum','day1_break2')">
                                                 أضف
                                             </button>
                                             <button type="button" class="btn btn-warning"
@@ -362,7 +367,8 @@
                                         </div>
                                         <div class="col-lg-3">
 
-                                            <button type="button" class="btn btn-success" onclick="getData1_dinner()">
+                                            <button type="button" class="btn btn-success"
+                                                    onclick="getData('gmValue1_dinner','selectcountries1_dinner','carbSum','fatsSum','proteinSum','day1_dinner')">
                                                 أضف
                                             </button>
                                             <button type="button" class="btn btn-warning"
@@ -512,7 +518,9 @@
                                             </select>
                                         </div>
                                         <div class="col-lg-3">
-                                            <button type="button" class="btn btn-success" onclick="getData2()">أضف
+                                            <button type="button" class="btn btn-success"
+                                                    onclick="getData('gmValue2','selectcountries2','carbSum2','fatsSum2','proteinSum2','day2_breakfast')">
+                                                أضف
                                             </button>
                                             <button type="button" class="btn btn-warning"
                                                     onclick="deleteItem('gmValue2','selectcountries2','carbSum2','fatsSum2','proteinSum2','day2_breakfast')">
@@ -567,7 +575,8 @@
                                             </select>
                                         </div>
                                         <div class="col-lg-3">
-                                            <button type="button" class="btn btn-success" onclick="getData2_break1()">
+                                            <button type="button" class="btn btn-success"
+                                                    onclick="getData('gmValue2_break1','selectcountries2_break1','carbSum2','fatsSum2','proteinSum2','day2_break1')">
                                                 أضف
                                             </button>
                                             <button type="button" class="btn btn-warning"
@@ -619,7 +628,8 @@
                                                 @endfor
                                             </select></div>
                                         <div class="col-lg-3">
-                                            <button type="button" class="btn btn-success" onclick="getData2_lunch()">
+                                            <button type="button" class="btn btn-success"
+                                                    onclick="getData('gmValue2_lunch','selectcountries2_lunch','carbSum2','fatsSum2','proteinSum2','day2_lunch')">
                                                 أضف
                                             </button>
                                             <button type="button" class="btn btn-warning"
@@ -671,7 +681,8 @@
                                                 @endfor
                                             </select></div>
                                         <div class="col-lg-3">
-                                            <button type="button" class="btn btn-success" onclick="getData2_break2()">
+                                            <button type="button" class="btn btn-success"
+                                                    onclick="getData('gmValue2_break2','selectcountries2_break2','carbSum2','fatsSum2','proteinSum2','day2_break2')">
                                                 أضف
                                             </button>
                                             <button type="button" class="btn btn-warning"
@@ -724,7 +735,8 @@
                                                 @endfor
                                             </select></div>
                                         <div class="col-lg-3">
-                                            <button type="button" class="btn btn-success" onclick="getData2_dinner()">
+                                            <button type="button" class="btn btn-success"
+                                                    onclick="getData('gmValue2_dinner','selectcountries2_dinner','carbSum2','fatsSum2','proteinSum2','day2_dinner')">
                                                 أضف
                                             </button>
                                             <button type="button" class="btn btn-warning"
@@ -868,7 +880,9 @@
                                                 @endfor
                                             </select></div>
                                         <div class="col-lg-3">
-                                            <button type="button" class="btn btn-success" onclick="getData3()">أضف
+                                            <button type="button" class="btn btn-success"
+                                                    onclick="getData('gmValue3','selectcountries3','carbSum3','fatsSum3','proteinSum3','day3_breakfast')">
+                                                أضف
                                             </button>
                                             <button type="button" class="btn btn-warning"
                                                     onclick="deleteItem('gmValue3','selectcountries3','carbSum3','fatsSum3','proteinSum3','day3_breakfast')">
@@ -919,7 +933,8 @@
                                                 @endfor
                                             </select></div>
                                         <div class="col-lg-3">
-                                            <button type="button" class="btn btn-success" onclick="getData3_break1()">
+                                            <button type="button" class="btn btn-success"
+                                                    onclick="getData('gmValue3_break1','selectcountries3_break1','carbSum3','fatsSum3','proteinSum3','day3_break1')">
                                                 أضف
                                             </button>
                                             <button type="button" class="btn btn-warning"
@@ -970,7 +985,8 @@
                                                 @endfor
                                             </select></div>
                                         <div class="col-lg-3">
-                                            <button type="button" class="btn btn-success" onclick="getData3_lunch()">
+                                            <button type="button" class="btn btn-success"
+                                                    onclick="getData('gmValue3_lunch','selectcountries3_lunch','carbSum3','fatsSum3','proteinSum3','day3_lunch')">
                                                 أضف
                                             </button>
                                             <button type="button" class="btn btn-warning"
@@ -1023,7 +1039,8 @@
                                                 @endfor
                                             </select></div>
                                         <div class="col-lg-3">
-                                            <button type="button" class="btn btn-success" onclick="getData3_break2()">
+                                            <button type="button" class="btn btn-success"
+                                                    onclick="getData('gmValue3_break2','selectcountries3_break2','carbSum3','fatsSum3','proteinSum3','day3_break2')">
                                                 أضف
                                             </button>
                                             <button type="button" class="btn btn-warning"
@@ -1076,7 +1093,8 @@
                                                 @endfor
                                             </select></div>
                                         <div class="col-lg-3">
-                                            <button type="button" class="btn btn-success" onclick="getData3_dinner()">
+                                            <button type="button" class="btn btn-success"
+                                                    onclick="getData('gmValue3_dinner','selectcountries3_dinner','carbSum3','fatsSum3','proteinSum3','day3_dinner')">
                                                 أضف
                                             </button>
                                             <button type="button" class="btn btn-warning"
@@ -1211,7 +1229,9 @@
                                                 @endfor
                                             </select></div>
                                         <div class="col-lg-3">
-                                            <button type="button" class="btn btn-success" onclick="getData4()">أضف
+                                            <button type="button" class="btn btn-success"
+                                                    onclick="getData('gmValue4','selectcountries4','carbSum4','fatsSum4','proteinSum4','day4_breakfast')">
+                                                أضف
                                             </button>
                                             <button type="button" class="btn btn-warning"
                                                     onclick="deleteItem('gmValue4','selectcountries4','carbSum4','fatsSum4','proteinSum4','day4_breakfast')">
@@ -1262,7 +1282,8 @@
                                                 @endfor
                                             </select></div>
                                         <div class="col-lg-3">
-                                            <button type="button" class="btn btn-success" onclick="getData4_break1()">
+                                            <button type="button" class="btn btn-success"
+                                                    onclick="getData('gmValue4_break1','selectcountries4_break1','carbSum4','fatsSum4','proteinSum4','day4_break1')">
                                                 أضف
                                             </button>
                                             <button type="button" class="btn btn-warning"
@@ -1310,7 +1331,8 @@
                                                 @endfor
                                             </select></div>
                                         <div class="col-lg-3">
-                                            <button type="button" class="btn btn-success" onclick="getData4_lunch()">
+                                            <button type="button" class="btn btn-success"
+                                                    onclick="getData('gmValue4_lunch','selectcountries4_lunch','carbSum4','fatsSum4','proteinSum4','day4_lunch')">
                                                 أضف
                                             </button>
                                             <button type="button" class="btn btn-warning"
@@ -1362,7 +1384,8 @@
                                                 @endfor
                                             </select></div>
                                         <div class="col-lg-3">
-                                            <button type="button" class="btn btn-success" onclick="getData4_break2()">
+                                            <button type="button" class="btn btn-success"
+                                                    onclick="getData('gmValue4_break2','selectcountries4_break2','carbSum4','fatsSum4','proteinSum4','day4_break2')">
                                                 أضف
                                             </button>
                                             <button type="button" class="btn btn-warning"
@@ -1415,7 +1438,8 @@
                                                 @endfor
                                             </select></div>
                                         <div class="col-lg-3">
-                                            <button type="button" class="btn btn-success" onclick="getData4_dinner()">
+                                            <button type="button" class="btn btn-success"
+                                                    onclick="getData('gmValue4_dinner','selectcountries4_dinner','carbSum4','fatsSum4','proteinSum4','day4_dinner')">
                                                 أضف
                                             </button>
                                             <button type="button" class="btn btn-warning"
@@ -1555,7 +1579,9 @@
                                                 @endfor
                                             </select></div>
                                         <div class="col-lg-3">
-                                            <button type="button" class="btn btn-success" onclick="getData5()">أضف
+                                            <button type="button" class="btn btn-success"
+                                                    onclick="getData('gmValue5','selectcountries5','carbSum5','fatsSum5','proteinSum5','day5_breakfast')">
+                                                أضف
                                             </button>
                                             <button type="button" class="btn btn-warning"
                                                     onclick="deleteItem('gmValue5','selectcountries5','carbSum5','fatsSum5','proteinSum5','day5_breakfast')">
@@ -1606,7 +1632,8 @@
                                                 @endfor
                                             </select></div>
                                         <div class="col-lg-3">
-                                            <button type="button" class="btn btn-success" onclick="getData5_break1()">
+                                            <button type="button" class="btn btn-success"
+                                                    onclick="getData('gmValue5_break1','selectcountries5_break1','carbSum5','fatsSum5','proteinSum5','day5_break1')">
                                                 أضف
                                             </button>
                                             <button type="button" class="btn btn-warning"
@@ -1659,7 +1686,8 @@
                                                 @endfor
                                             </select></div>
                                         <div class="col-lg-3">
-                                            <button type="button" class="btn btn-success" onclick="getData5_lunch()">
+                                            <button type="button" class="btn btn-success"
+                                                    onclick="getData('gmValue5_lunch','selectcountries5_lunch','carbSum5','fatsSum5','proteinSum5','day5_lunch')">
                                                 أضف
                                             </button>
                                             <button type="button" class="btn btn-warning"
@@ -1711,7 +1739,8 @@
                                                 @endfor
                                             </select></div>
                                         <div class="col-lg-3">
-                                            <button type="button" class="btn btn-success" onclick="getData5_break2()">
+                                            <button type="button" class="btn btn-success"
+                                                    onclick="getData('gmValue5_break2','selectcountries5_break2','carbSum5','fatsSum5','proteinSum5','day5_break2')">
                                                 أضف
                                             </button>
                                             <button type="button" class="btn btn-warning"
@@ -1763,7 +1792,8 @@
                                                 @endfor
                                             </select></div>
                                         <div class="col-lg-3">
-                                            <button type="button" class="btn btn-success" onclick="getData5_dinner()">
+                                            <button type="button" class="btn btn-success"
+                                                    onclick="getData('gmValue5_dinner','selectcountries5_dinner','carbSum5','fatsSum5','proteinSum5','day5_dinner')">
                                                 أضف
                                             </button>
                                             <button type="button" class="btn btn-warning"
@@ -1898,7 +1928,9 @@
                                                 @endfor
                                             </select></div>
                                         <div class="col-lg-3">
-                                            <button type="button" class="btn btn-success" onclick="getData6()">أضف
+                                            <button type="button" class="btn btn-success"
+                                                    onclick="getData('gmValue6','selectcountries6','carbSum6','fatsSum6','proteinSum6','day6_breakfast')">
+                                                أضف
                                             </button>
                                             <button type="button" class="btn btn-warning"
                                                     onclick="deleteItem('gmValue6','selectcountries6','carbSum6','fatsSum6','proteinSum6','day6_breakfast')">
@@ -1949,7 +1981,8 @@
                                                 @endfor
                                             </select></div>
                                         <div class="col-lg-3">
-                                            <button type="button" class="btn btn-success" onclick="getData6_break1()">
+                                            <button type="button" class="btn btn-success"
+                                                    onclick="getData('gmValue6_break1','selectcountries6_break1','carbSum6','fatsSum6','proteinSum6','day6_break1')">
                                                 أضف
                                             </button>
                                             <button type="button" class="btn btn-warning"
@@ -2003,7 +2036,8 @@
                                                 @endfor
                                             </select></div>
                                         <div class="col-lg-3">
-                                            <button type="button" class="btn btn-success" onclick="getData6_lunch()">
+                                            <button type="button" class="btn btn-success"
+                                                    onclick="getData('gmValue6_lunch','selectcountries6_lunch','carbSum6','fatsSum6','proteinSum6','day6_lunch')">
                                                 أضف
                                             </button>
                                             <button type="button" class="btn btn-warning"
@@ -2054,7 +2088,8 @@
                                                 @endfor
                                             </select></div>
                                         <div class="col-lg-3">
-                                            <button type="button" class="btn btn-success" onclick="getData6_break2()">
+                                            <button type="button" class="btn btn-success"
+                                                    onclick="getData('gmValue6_break2','selectcountries6_break2','carbSum6','fatsSum6','proteinSum6','day6_break2')">
                                                 أضف
                                             </button>
                                             <button type="button" class="btn btn-warning"
@@ -2107,7 +2142,8 @@
                                                 @endfor
                                             </select></div>
                                         <div class="col-lg-3">
-                                            <button type="button" class="btn btn-success" onclick="getData6_dinner()">
+                                            <button type="button" class="btn btn-success"
+                                                    onclick="getData('gmValue6_dinner','selectcountries6_dinner','carbSum6','fatsSum6','proteinSum6','day6_dinner')">
                                                 أضف
                                             </button>
                                             <button type="button" class="btn btn-warning"
@@ -2245,7 +2281,9 @@
                                                 @endfor
                                             </select></div>
                                         <div class="col-lg-3">
-                                            <button type="button" class="btn btn-success" onclick="getData7()">أضف
+                                            <button type="button" class="btn btn-success"
+                                                    onclick="getData('gmValue7','selectcountries7','carbSum7','fatsSum7','proteinSum7','day7_breakfast')">
+                                                أضف
                                             </button>
                                             <button type="button" class="btn btn-warning"
                                                     onclick="deleteItem('gmValue7','selectcountries7','carbSum7','fatsSum7','proteinSum7','day7_breakfast')">
@@ -2296,7 +2334,8 @@
                                                 @endfor
                                             </select></div>
                                         <div class="col-lg-3">
-                                            <button type="button" class="btn btn-success" onclick="getData7_break1()">
+                                            <button type="button" class="btn btn-success"
+                                                    onclick="getData('gmValue7_break1','selectcountries7_break1','carbSum7','fatsSum7','proteinSum7','day7_break1')">
                                                 أضف
                                             </button>
                                             <button type="button" class="btn btn-warning"
@@ -2349,7 +2388,8 @@
                                                 @endfor
                                             </select></div>
                                         <div class="col-lg-3">
-                                            <button type="button" class="btn btn-success" onclick="getData7_lunch()">
+                                            <button type="button" class="btn btn-success"
+                                                    onclick="getData('gmValue7_lunch','selectcountries7_lunch','carbSum7','fatsSum7','proteinSum7','day7_lunch')">
                                                 أضف
                                             </button>
                                             <button type="button" class="btn btn-warning"
@@ -2403,7 +2443,8 @@
                                                 @endfor
                                             </select></div>
                                         <div class="col-lg-3">
-                                            <button type="button" class="btn btn-success" onclick="getData7_break2()">
+                                            <button type="button" class="btn btn-success"
+                                                    onclick="getData('gmValue7_break2','selectcountries7_break2','carbSum7','fatsSum7','proteinSum7','day7_break2')">
                                                 أضف
                                             </button>
                                             <button type="button" class="btn btn-warning"
@@ -2456,7 +2497,8 @@
                                                 @endfor
                                             </select></div>
                                         <div class="col-lg-3">
-                                            <button type="button" class="btn btn-success" onclick="getData7_dinner()">
+                                            <button type="button" class="btn btn-success"
+                                                    onclick="getData('gmValue7_dinner','selectcountries7_dinner','carbSum7','fatsSum7','proteinSum7','day7_dinner')">
                                                 أضف
                                             </button>
                                             <button type="button" class="btn btn-warning"
