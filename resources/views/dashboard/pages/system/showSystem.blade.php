@@ -142,9 +142,7 @@
 </script>
 
 <script>
-    $( document ).ready(function() {
-        $('.toggle').click();
-    });
+
 </script>
 
 @stop
