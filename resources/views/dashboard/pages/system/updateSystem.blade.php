@@ -70,36 +70,7 @@
 
                                 <br>
 
-                                <div class="form-group text-center">
-                                    <div class="col-lg-12">
-                                        <div class="col-lg-3">
-                                            <select id="continentsg" class="form-control">
-                                                <option value="0">all</option>
-                                                <option value="1">carbs</option>
-                                                <option value="2">Fats</option>
-                                                <option value="3">proteins</option>
 
-
-                                            </select>
-                                        </div>
-                                        <div class="col-lg-3">
-                                            <select id="selectcountriesg" class="form-control"></select>
-                                        </div>
-                                        <div class="col-lg-3">
-                                            <select name="gmValue" id="gmValueg" class="form-control">
-                                                <option value="0.25">1/4</option>
-                                                <option value="0.5">1/2</option>
-                                                @for($i=1;$i<=500;$i++)
-                                                    <option value="{{$i}}">{{$i}}</option>
-                                                @endfor
-                                            </select>
-                                        </div>
-                                        <div class="col-lg-3">
-                                            <button type="button" class="btn btn-warning" onclick="deleteData()">حذف
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
 
 
                                 <br><br><br>
@@ -447,42 +418,7 @@
 
                             <br>
 
-                            <div class="form-group text-center">
-                                <div class="col-lg-12">
-                                    <div class="col-lg-3">
-                                        <select id="continentsg2" class="form-control">
-                                            <option value="0">all</option>
-                                            <option value="1">carbs</option>
-                                            <option value="2">Fats</option>
-                                            <option value="3">proteins</option>
 
-
-                                        </select>
-                                    </div>
-                                    <div class="col-lg-3">
-                                        <select id="selectcountriesg2" class="form-control"></select>
-                                    </div>
-                                    <div class="col-lg-3">
-                                        <select name="gmValue" id="gmValueg2" class="form-control">
-                                            <option value="10">10 gm</option>
-                                            <option value="20">20 gm</option>
-                                            <option value="30">30 gm</option>
-                                            <option value="50">50 gm</option>
-                                            <option value="100">100 gm</option>
-                                            <option value="200">200 gm</option>
-                                            <option value="300">300 gm</option>
-                                            <option value="400">400 gm</option>
-                                            <option value="500">500 gm</option>
-                                            <option value="600">600 gm</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-lg-3">
-                                        <button type="button" class="btn btn-warning" onclick="deleteData2()">حذف
-                                        </button>
-
-                                    </div>
-                                </div>
-                            </div>
 
 
                             <br><br><br>
@@ -816,40 +752,6 @@
                         <button class="accordion" type="button"> الاثنين</button>
                         <div class="panel">
                             <div class="form-group text-center">
-                                <br><br>
-                                <div class="col-lg-12">
-                                    <div class="col-lg-3">
-                                        <select id="continentsg3" class="form-control">
-                                            <option value="0">all</option>
-                                            <option value="1">carbs</option>
-                                            <option value="2">Fats</option>
-                                            <option value="3">proteins</option>
-
-
-                                        </select>
-                                    </div>
-                                    <div class="col-lg-3">
-                                        <select id="selectcountriesg3" class="form-control"></select>
-                                    </div>
-                                    <div class="col-lg-3">
-                                        <select name="gmValue" id="gmValueg3" class="form-control">
-                                            <option value="10">10 gm</option>
-                                            <option value="20">20 gm</option>
-                                            <option value="30">30 gm</option>
-                                            <option value="50">50 gm</option>
-                                            <option value="100">100 gm</option>
-                                            <option value="200">200 gm</option>
-                                            <option value="300">300 gm</option>
-                                            <option value="400">400 gm</option>
-                                            <option value="500">500 gm</option>
-                                            <option value="600">600 gm</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-lg-3">
-                                        <button type="button" class="btn btn-warning" onclick="deleteData3()">حذف
-                                        </button>
-                                    </div>
-                                </div>
 
                                 <br><br><br>
                             </div>
@@ -1171,37 +1073,8 @@
                         <button class="accordion" type="button"> الثلاثاء</button>
                         <div class="panel">
                             <div class="form-group forth_day">
-                                <br><br>
-                                <div class="form-group text-center">
-                                    <div class="col-lg-12">
-                                        <div class="col-lg-3">
-                                            <select id="continentsg4" class="form-control">
-                                                <option value="0">all</option>
-                                                <option value="1">carbs</option>
-                                                <option value="2">Fats</option>
-                                                <option value="3">proteins</option>
 
 
-                                            </select>
-                                        </div>
-                                        <div class="col-lg-3">
-                                            <select id="selectcountriesg4" class="form-control"></select>
-                                        </div>
-                                        <div class="col-lg-3">
-                                            <select name="gmValue" id="gmValueg4" class="form-control">
-                                                <option value="0.25">1/4</option>
-                                                <option value="0.5">1/2</option>
-                                                @for($i=1;$i<=500;$i++)
-                                                    <option value="{{$i}}">{{$i}}</option>
-                                                @endfor
-                                            </select>
-                                        </div>
-                                        <div class="col-lg-3">
-                                            <button type="button" class="btn btn-warning" onclick="deleteData4()">حذف
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
                                 <br><br><br>
 
                                 <div class="form-group text-center">
@@ -1521,38 +1394,6 @@
                             <div class="form-group fifth_day">
 
 
-                                <br><br>
-                                <div class="form-group text-center">
-                                    <div class="col-lg-12">
-                                        <div class="col-lg-3">
-                                            <select id="continentsg5" class="form-control">
-                                                <option value="0">all</option>
-                                                <option value="1">carbs</option>
-                                                <option value="2">Fats</option>
-                                                <option value="3">proteins</option>
-
-
-                                            </select>
-                                        </div>
-                                        <div class="col-lg-3">
-                                            <select id="selectcountriesg5" class="form-control"></select>
-                                        </div>
-                                        <div class="col-lg-3">
-                                            <select name="gmValue" id="gmValueg5" class="form-control">
-                                                <option value="0.25">1/4</option>
-                                                <option value="0.5">1/2</option>
-                                                @for($i=1;$i<=500;$i++)
-                                                    <option value="{{$i}}">{{$i}}</option>
-                                                @endfor
-                                            </select>
-                                        </div>
-                                        <div class="col-lg-3">
-                                            <button type="button" class="btn btn-warning" onclick="deleteData5()">حذف
-                                            </button>
-
-                                        </div>
-                                    </div>
-                                </div>
                                 <br><br><br>
                                 <div class="form-group text-center">
                                     <div class="col-lg-12">
@@ -1871,37 +1712,7 @@
                         <div class="panel">
                             <div class="form-group sixth_day">
 
-                                <br><br>
-                                <div class="form-group text-center">
-                                    <div class="col-lg-12">
-                                        <div class="col-lg-3">
-                                            <select id="continentsg6" class="form-control">
-                                                <option value="0">all</option>
-                                                <option value="1">carbs</option>
-                                                <option value="2">Fats</option>
-                                                <option value="3">proteins</option>
 
-
-                                            </select>
-                                        </div>
-                                        <div class="col-lg-3">
-                                            <select id="selectcountriesg6" class="form-control"></select>
-                                        </div>
-                                        <div class="col-lg-3">
-                                            <select name="gmValue" id="gmValueg6" class="form-control">
-                                                <option value="0.25">1/4</option>
-                                                <option value="0.5">1/2</option>
-                                                @for($i=1;$i<=500;$i++)
-                                                    <option value="{{$i}}">{{$i}}</option>
-                                                @endfor
-                                            </select>
-                                        </div>
-                                        <div class="col-lg-3">
-                                            <button type="button" class="btn btn-warning" onclick="deleteData6()">حذف
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
                                 <br><br><br>
                                 <div class="form-group text-center">
                                     <div class="col-lg-12">
@@ -2224,37 +2035,7 @@
                         <div class="panel">
                             <div class="form-group seventh_day">
 
-                                <br><br>
-                                <div class="form-group text-center">
-                                    <div class="col-lg-12">
-                                        <div class="col-lg-3">
-                                            <select id="continentsg7" class="form-control">
-                                                <option value="0">all</option>
-                                                <option value="1">carbs</option>
-                                                <option value="2">Fats</option>
-                                                <option value="3">proteins</option>
 
-
-                                            </select>
-                                        </div>
-                                        <div class="col-lg-3">
-                                            <select id="selectcountriesg7" class="form-control"></select>
-                                        </div>
-                                        <div class="col-lg-3">
-                                            <select name="gmValue" id="gmValueg7" class="form-control">
-                                                <option value="0.25">1/4</option>
-                                                <option value="0.5">1/2</option>
-                                                @for($i=1;$i<=500;$i++)
-                                                    <option value="{{$i}}">{{$i}}</option>
-                                                @endfor
-                                            </select>
-                                        </div>
-                                        <div class="col-lg-3">
-                                            <button type="button" class="btn btn-warning" onclick="deleteData7()">حذف
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
                                 <br><br><br>
                                 <div class="form-group text-center">
                                     <div class="col-lg-12">
