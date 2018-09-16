@@ -32,13 +32,8 @@
                     <li><a href="/system"> <i class="fa fa-paperclip"></i> الانظمة الغذائية</a></li>
                     <li><a href="/reservation"> <i class="fa fa-ticket"></i> حجز المواعيد </a></li>
 
-                    <li><a><i class="fa fa-apple"></i> الأطعمة <span class="fa fa-chevron-down"></span></a>
-                        <ul class="nav child_menu">
+                    <li><a href="/food"> <i class="fa fa-apple"></i> الطعام </a></li>
 
-                            <li><a href="/foodCategory">الانواع</a></li>
-                            <li><a href="/food">الطعام</a></li>
-                        </ul>
-                    </li>
 
                 </ul>
 
