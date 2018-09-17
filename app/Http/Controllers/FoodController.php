@@ -46,9 +46,12 @@ class FoodController extends Controller
         $this->validate($request,[
 
             'food_name'=>'required',
-            'calories'=>'required',
+
             'category_id'=>'required',
             'unit'=>'required',
+            'proteins_calories'=>'required',
+            'carb_calories'=>'required',
+            'fats_calories'=>'required',
 
 
         ]);
@@ -56,7 +59,10 @@ class FoodController extends Controller
         $saveData = new Food();
         $saveData->food_name = str_replace(' ','_' ,  $request['food_name']);
         $saveData->category_id=$request['category_id'];
-        $saveData->calories =$request['calories'];
+
+        $saveData->proteins_calories =$request['proteins_calories'];
+        $saveData->carb_calories =$request['carb_calories'];
+        $saveData->fats_calories =$request['fats_calories'];
 
         $saveData->unit =$request['unit'];
 
@@ -106,9 +112,12 @@ class FoodController extends Controller
         $this->validate($request,[
 
             'food_name'=>'required',
-            'calories'=>'required',
+
             'category_id'=>'required',
             'unit'=>'required',
+            'proteins_calories'=>'required',
+            'carb_calories'=>'required',
+            'fats_calories'=>'required',
 
 
         ]);
@@ -121,8 +130,9 @@ class FoodController extends Controller
 
         }
 
-        $saveData->calories =$request['calories'];
-
+        $saveData->proteins_calories =$request['proteins_calories'];
+        $saveData->carb_calories =$request['carb_calories'];
+        $saveData->fats_calories =$request['fats_calories'];
         $saveData->unit =$request['unit'];
 
 

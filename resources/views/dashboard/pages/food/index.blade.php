@@ -66,7 +66,7 @@
                     <tr>
                         <th>الاسم</th>
 
-                        <th>السعرات الحرارية</th>
+
                         <th>القسم</th>
                         <th> مسح\تعديل </th>
 
@@ -77,7 +77,7 @@
                         @foreach($foods as $food)
                             <tr>
                                 <td>{{$food->food_name}}</td>
-                                <td>{!! $food->calories !!}</td>
+
                                 <td>
 
                                     <?php
