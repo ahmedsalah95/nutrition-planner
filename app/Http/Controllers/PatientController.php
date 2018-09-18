@@ -71,7 +71,8 @@ class PatientController extends Controller
         $patientData->birthday = $request['birthday'];
         $patientData->height = $request['height'];
         $patientData->weight = $request['weight'];
-        $patientData->age = $request['age'];
+        $year = explode("/",$request['birthday']);
+        $patientData->age = date("Y") - $year[2];
         $patientData->health_condition = $request['health_condition'];
         $patientData->body_fat = $request['body_fat'];
         $patientData->activity_level = $request['activity_level'];
@@ -197,7 +198,8 @@ class PatientController extends Controller
         $patientData->birthday = $request['birthday'];
         $patientData->height = $request['height'];
 
-        $patientData->age = $request['age'];
+        $year = explode("/",$request['birthday']);
+        $patientData->age = date("Y") - $year[2];
         $patientData->health_condition = $request['health_condition'];
         $patientData->body_fat = $request['body_fat'];
         $patientData->activity_level = $request['activity_level'];
