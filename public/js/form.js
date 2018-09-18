@@ -123,7 +123,7 @@ function deleteItem(drop1,drop2,carb,fats,proteins,meal)
 
 }
 
-
+/*
 function getData(drop1,drop2,carb,fats,proteins,meal) {
 
     var x =  $( "#" +drop1+" option:selected").val();
@@ -226,4 +226,4 @@ function getData(drop1,drop2,carb,fats,proteins,meal) {
 
 
 
-}
+}*/

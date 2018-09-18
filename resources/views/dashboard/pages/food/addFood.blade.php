@@ -68,14 +68,38 @@
                             </div>
                         </div>
 
+
+
                         <div class="form-group">
-                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="calories">عدد السعرات الحرارية في كل مكيال
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="carb_calories">الكايبوهيدرات في كل مكيال
                                 <span class="required">*</span>
                             </label>
                             <div class="col-md-6 col-sm-6 col-xs-12">
-                                <input type="text" id="calories" required="required" name="calories"
+                                <input type="text" id="carb_calories" required="required" name="carb_calories"
                                        class="form-control col-md-7 col-xs-12"
-                                       value="{{old('calories')}}">
+                                       value="{{old('carb_calories')}}">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="proteins_calories">البروتينات في كل مكيال
+                                <span class="required">*</span>
+                            </label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <input type="text" id="proteins_calories" required="required" name="proteins_calories"
+                                       class="form-control col-md-7 col-xs-12"
+                                       value="{{old('proteins_calories')}}">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="calories">الدهون في كل مكيال
+                                <span class="required">*</span>
+                            </label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <input type="text" id="fats_calories" required="required" name="fats_calories"
+                                       class="form-control col-md-7 col-xs-12"
+                                       value="{{old('fats_calories')}}">
                             </div>
                         </div>
 
