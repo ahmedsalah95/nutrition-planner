@@ -104,6 +104,7 @@ class PatientController extends Controller
         $patientData->muscles_first_time = $request['muscles'];
         $patientData->water_in_body_first_time = $request['water_in_body'];
         $patientData->minerals_first_time = $request['minerals'];
+
         $patientData->khasr_first_time = $request['khasr'];
 
 
