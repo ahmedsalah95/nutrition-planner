@@ -71,6 +71,7 @@
                                 </thead>
                                 <tbody>
                                 <?php
+
                                 $reservations =\App\Reservation::where('reservation_date',date("m/d/Y"))->get();
 
 
