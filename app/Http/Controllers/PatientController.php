@@ -71,7 +71,7 @@ class PatientController extends Controller
         $patientData->birthday = $request['birthday'];
         $patientData->height = $request['height'];
         $patientData->weight = $request['weight'];
-        if(isset($request['birthday']))
+        if($request['birthday'])
         {
             $x = str_replace("-","/",$request['birthday']);
             $year = explode("/",$x);
@@ -211,7 +211,7 @@ class PatientController extends Controller
         $patientData->birthday = $request['birthday'];
         $patientData->height = $request['height'];
 
-        if(isset($request['birthday']))
+        if($request['birthday'])
         {
             $x = str_replace("-","/",$request['birthday']);
             $year = explode("/",$x);
