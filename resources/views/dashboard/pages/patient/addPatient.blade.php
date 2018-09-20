@@ -107,11 +107,11 @@
                             <div id="gender" class="btn-group" data-toggle="buttons">
                                 <label class="btn btn-default" data-toggle-class="btn-primary"
                                        data-toggle-passive-class="btn-default">
-                                    <input type="radio" name="gender" value="male" > &nbsp; ذكر &nbsp;
+                                    <input type="radio" name="gender" value="ذكر" > &nbsp; ذكر &nbsp;
                                 </label>
                                 <label class="btn btn-primary" data-toggle-class="btn-primary"
                                        data-toggle-passive-class="btn-default">
-                                    <input type="radio" name="gender" value="female" > أنثى
+                                    <input type="radio" name="gender" value="انثي" > أنثى
                                 </label>
                             </div>
                         </div>
