@@ -2484,7 +2484,8 @@
                 "fats": '<?php  echo $item->fats_calories?>',
             };
 
-        carb.push('<?php echo $item->food_name . ' - ' . $item->unit.' - '.$item->id; ?>');
+        carb.push('<?php echo $item->food_name . ' - ' . $item->unit . ' - ' . $item->carb_calories
+            . ' - ' . $item->fats_calories . ' - ' . $item->proteins_calories . ' - ' . $item->id; ?>');
         selectedData.push(dataset);
             <?php }?>
 
@@ -2495,7 +2496,8 @@
 
         ?>
 
-        carbs.push('<?php echo $item->food_name . ' - ' . $item->unit.' - '.$item->id; ?>');
+        carbs.push('<?php echo $item->food_name . ' - ' . $item->unit . ' - ' . $item->carb_calories
+            . ' - ' . $item->fats_calories . ' - ' . $item->proteins_calories . ' - ' . $item->id; ?>');
 
             <?php }?>
 
@@ -2506,7 +2508,8 @@
 
         ?>
 
-        fats.push('<?php echo $item->food_name . ' - ' . $item->unit.' - '.$item->id; ?>');
+        fats.push('<?php echo $item->food_name . ' - ' . $item->unit . ' - ' . $item->carb_calories
+            . ' - ' . $item->fats_calories . ' - ' . $item->proteins_calories . ' - ' . $item->id; ?>');
 
             <?php }?>
 
@@ -2517,7 +2520,8 @@
 
         ?>
 
-        proteins.push('<?php echo $item->food_name . ' - ' . $item->unit.' - '.$item->id; ?>');
+        proteins.push('<?php echo $item->food_name . ' - ' . $item->unit . ' - ' . $item->carb_calories
+            . ' - ' . $item->fats_calories . ' - ' . $item->proteins_calories . ' - ' . $item->id; ?>');
 
         <?php }?>
 
@@ -5232,41 +5236,37 @@
             var y = $("#" + drop2 + " option:selected").text();
             var t = y.split(/[ ,]+/);
 
-            for (i = 0; i < selectedData.length; i++) {
-                if (t[4] == selectedData[i].ID) {
-                    var carbValue = parseFloat($('#' + carb).val());
-                    var fatsValue = parseFloat($('#' + fats).val());
-                    var proteinsValue = parseFloat($('#' + proteins).val());
-                    if (carbValue || fatsValue || proteinsValue) {
-                        carbValue += x * selectedData[i].carb;
-                        fatsValue += x * selectedData[i].fats;
-                        proteinsValue += x * selectedData[i].proteins;
-                        $('#' + carb).val(carbValue);
-                        $('#' + fats).val(fatsValue);
-                        $('#' + proteins).val(proteinsValue);
-                        var current = $('#' + meal).text();
-                        var currentVal = $('#' + meal).val();
-                        $('#' + meal).val(" ");
-                        $('#' + meal).text(" ");
-                        $('#' + meal).val(currentVal + ' - ' + t[0] + ' ' + x + ' ' + selectedData[i].unit);
+            var carbValue = parseFloat($('#' + carb).val());
+            var fatsValue = parseFloat($('#' + fats).val());
+            var proteinsValue = parseFloat($('#' + proteins).val());
+            if (carbValue || fatsValue || proteinsValue) {
+                carbValue += x * t[4];
+                fatsValue += x * t[6];
+                proteinsValue += x * t[8];
+                $('#' + carb).val(carbValue);
+                $('#' + fats).val(fatsValue);
+                $('#' + proteins).val(proteinsValue);
+                var current = $('#' + meal).text();
+                var currentVal = $('#' + meal).val();
+                $('#' + meal).val(" ");
+                $('#' + meal).text(" ");
+                $('#' + meal).val(currentVal + ' - ' + t[0] + ' ' + x + ' ' + t[2]);
 
-                    }
+            }
 
-                    else {
+            else {
 
-                        $('#' + carb).val(selectedData[i].carb * x);
-                        $('#' + fats).val(selectedData[i].fats * x);
-                        $('#' + proteins).val(selectedData[i].proteins * x);
+                $('#' + carb).val(t[4] * x);
+                $('#' + fats).val(t[6] * x);
+                $('#' + proteins).val(t[8] * x);
 
-                        var current = $('#' + meal).text();
-                        var currentVal = $('#' + meal).val();
-                        $('#' + meal).val(" ");
-                        $('#' + meal).text(" ");
-                        $('#' + meal).val(currentVal + ' - ' + t[0] + ' ' + x + ' ' + selectedData[i].unit);
+                var current = $('#' + meal).text();
+                var currentVal = $('#' + meal).val();
+                $('#' + meal).val(" ");
+                $('#' + meal).text(" ");
+                $('#' + meal).val(currentVal + ' - ' + t[0] + ' ' + x + ' ' + t[2]);
 
 
-                    }
-                }
             }
 
 
@@ -5290,6 +5290,50 @@
 
         }
 
+        function deleteItem(drop1, drop2, carb, fats, proteins, meal) {
+            var x = $("#" + drop1 + " option:selected").val();
+            var y = $("#" + drop2 + " option:selected").text();
+            var inputData = $('#' + meal).val();
+            var array = inputData.split("-");
+
+            var t = y.split(/[ ,]+/);
+            var carbValue = parseFloat($('#' + carb).val());
+            var fatsValue = parseFloat($('#' + fats).val());
+            var proteinsValue = parseFloat($('#' + proteins).val());
+
+            if (carbValue || fatsValue || proteinsValue) {
+                carbValue -= parseFloat(x * t[4]);
+                fatsValue -= parseFloat(x * t[6]);
+                proteinsValue -= parseFloat(x * t[8]);
+                $('#' + carb).val(carbValue);
+                $('#' + fats).val(fatsValue);
+                $('#' + proteins).val(proteinsValue);
+
+
+                var remove = t[0] + ' ' + x + ' ' + t[2];
+
+                var result = "-";
+                removefunc(array, remove);
+
+
+                for (var i = 1; i < array.length; i++) {
+                    result += array[i];
+                    result += " - ";
+                }
+
+                $('#' + meal).val(" ");
+                $('#' + meal).val(result);
+
+
+            }
+
+
+        }
+    </script>
+
+
+
+    {{--<script>
         function deleteItem(drop1, drop2, carb, fats, proteins, meal) {
             var x = $("#" + drop1 + " option:selected").val();
             var y = $("#" + drop2 + " option:selected").text();
@@ -5333,5 +5377,5 @@
             }
 
         }
-    </script>
+    </script>--}}
 @stop
