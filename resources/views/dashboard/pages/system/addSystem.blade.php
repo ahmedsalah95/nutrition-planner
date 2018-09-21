@@ -2470,23 +2470,15 @@
 
 
         var carb = new Array();
-        var selectedData = new Array();
+
             <?php foreach ($data as $item) {
 
             ?>
-        var dataset = {
-                "ID": '<?php echo $item->id ?>',
-                "name": '<?php echo $item->food_name ?>',
-                "clories": '<?php echo $item->calories ?>',
-                "unit": '<?php echo $item->unit ?>',
-                "carb": '<?php  echo $item->carb_calories?>',
-                "proteins": '<?php  echo $item->proteins_calories?>',
-                "fats": '<?php  echo $item->fats_calories?>',
-            };
+
 
         carb.push('<?php echo $item->food_name . ' - ' . $item->unit . ' - ' . $item->carb_calories
-            . ' - ' . $item->fats_calories . ' - ' . $item->proteins_calories . ' - ' . $item->id; ?>');
-        selectedData.push(dataset);
+            . ' - ' . $item->fats_calories . ' - ' . $item->proteins_calories  ; ?>');
+
             <?php }?>
 
 
@@ -2497,7 +2489,7 @@
         ?>
 
         carbs.push('<?php echo $item->food_name . ' - ' . $item->unit . ' - ' . $item->carb_calories
-            . ' - ' . $item->fats_calories . ' - ' . $item->proteins_calories . ' - ' . $item->id; ?>');
+            . ' - ' . $item->fats_calories . ' - ' . $item->proteins_calories ; ?>');
 
             <?php }?>
 
@@ -2509,7 +2501,7 @@
         ?>
 
         fats.push('<?php echo $item->food_name . ' - ' . $item->unit . ' - ' . $item->carb_calories
-            . ' - ' . $item->fats_calories . ' - ' . $item->proteins_calories . ' - ' . $item->id; ?>');
+            . ' - ' . $item->fats_calories . ' - ' . $item->proteins_calories  ; ?>');
 
             <?php }?>
 
@@ -2521,7 +2513,7 @@
         ?>
 
         proteins.push('<?php echo $item->food_name . ' - ' . $item->unit . ' - ' . $item->carb_calories
-            . ' - ' . $item->fats_calories . ' - ' . $item->proteins_calories . ' - ' . $item->id; ?>');
+            . ' - ' . $item->fats_calories . ' - ' . $item->proteins_calories  ; ?>');
 
         <?php }?>
 
@@ -5333,49 +5325,5 @@
 
 
 
-    {{--<script>
-        function deleteItem(drop1, drop2, carb, fats, proteins, meal) {
-            var x = $("#" + drop1 + " option:selected").val();
-            var y = $("#" + drop2 + " option:selected").text();
-            var inputData = $('#' + meal).val();
-            var array = inputData.split("-");
 
-            var t = y.split(/[ ,]+/);
-            var carbValue = parseFloat($('#' + carb).val());
-            var fatsValue = parseFloat($('#' + fats).val());
-            var proteinsValue = parseFloat($('#' + proteins).val());
-            for (i = 0; i < selectedData.length; i++) {
-
-                if (t[4] == selectedData[i].ID) {
-                    if (carbValue || fatsValue || proteinsValue) {
-                        carbValue -= parseFloat(x * selectedData[i].carb);
-                        fatsValue -= parseFloat(x * selectedData[i].fats);
-                        proteinsValue -= parseFloat(x * selectedData[i].proteins);
-                        $('#' + carb).val(carbValue);
-                        $('#' + fats).val(fatsValue);
-                        $('#' + proteins).val(proteinsValue);
-
-
-                        var remove = t[0] + ' ' + x + ' ' + selectedData[i].unit;
-
-                        var result = "-";
-                        removefunc(array, remove);
-
-
-                        for (var i = 1; i < array.length; i++) {
-                            result += array[i];
-                            result += " - ";
-                        }
-
-                        $('#' + meal).val(" ");
-                        $('#' + meal).val(result);
-
-
-                    }
-                }
-
-            }
-
-        }
-    </script>--}}
 @stop

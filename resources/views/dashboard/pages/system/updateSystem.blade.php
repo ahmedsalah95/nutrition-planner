@@ -2407,22 +2407,15 @@
 
 
         var carb = new Array();
-        var selectedData = new Array();
-            <?php foreach ($data as $item) {
 
-            ?>
-        var dataset = {
-                "ID": '<?php echo $item->id ?>',
-                "name": '<?php echo $item->food_name ?>',
-                "clories": '<?php echo $item->calories ?>',
-                "unit": '<?php echo $item->unit ?>',
-                "carb": '<?php  echo $item->carb_calories?>',
-                "proteins": '<?php  echo $item->proteins_calories?>',
-                "fats": '<?php  echo $item->fats_calories?>',
-            };
+        <?php foreach ($data as $item) {
 
-        carb.push('<?php echo $item->food_name . ' - ' . $item->unit.' - '.$item->id; ?>');
-        selectedData.push(dataset);
+        ?>
+
+
+        carb.push('<?php echo $item->food_name . ' - ' . $item->unit . ' - ' . $item->carb_calories
+            . ' - ' . $item->fats_calories . ' - ' . $item->proteins_calories  ; ?>');
+
             <?php }?>
 
 
@@ -2432,7 +2425,8 @@
 
         ?>
 
-        carbs.push('<?php echo $item->food_name . ' - ' . $item->unit.' - '.$item->id; ?>');
+        carbs.push('<?php echo $item->food_name . ' - ' . $item->unit . ' - ' . $item->carb_calories
+            . ' - ' . $item->fats_calories . ' - ' . $item->proteins_calories ; ?>');
 
             <?php }?>
 
@@ -2443,7 +2437,8 @@
 
         ?>
 
-        fats.push('<?php echo $item->food_name . ' - ' . $item->unit.' - '.$item->id; ?>');
+        fats.push('<?php echo $item->food_name . ' - ' . $item->unit . ' - ' . $item->carb_calories
+            . ' - ' . $item->fats_calories . ' - ' . $item->proteins_calories  ; ?>');
 
             <?php }?>
 
@@ -2454,7 +2449,8 @@
 
         ?>
 
-        proteins.push('<?php echo $item->food_name . ' - ' . $item->unit.' - '.$item->id; ?>');
+        proteins.push('<?php echo $item->food_name . ' - ' . $item->unit . ' - ' . $item->carb_calories
+            . ' - ' . $item->fats_calories . ' - ' . $item->proteins_calories  ; ?>');
 
         <?php }?>
 
@@ -7097,7 +7093,6 @@
     {{-- day 7 break2 finish --}}
 
 
-    {{-- <script src="{{url('/')}}/js/form.js"></script>--}}
 
     <script>
         function getData(drop1, drop2, carb, fats, proteins, meal) {
@@ -7107,41 +7102,37 @@
             var y = $("#" + drop2 + " option:selected").text();
             var t = y.split(/[ ,]+/);
 
-            for (i = 0; i < selectedData.length; i++) {
-                if (t[4] == selectedData[i].ID) {
-                    var carbValue = parseFloat($('#' + carb).val());
-                    var fatsValue = parseFloat($('#' + fats).val());
-                    var proteinsValue = parseFloat($('#' + proteins).val());
-                    if (carbValue || fatsValue || proteinsValue) {
-                        carbValue += x * selectedData[i].carb;
-                        fatsValue += x * selectedData[i].fats;
-                        proteinsValue += x * selectedData[i].proteins;
-                        $('#' + carb).val(carbValue);
-                        $('#' + fats).val(fatsValue);
-                        $('#' + proteins).val(proteinsValue);
-                        var current = $('#' + meal).text();
-                        var currentVal = $('#' + meal).val();
-                        $('#' + meal).val(" ");
-                        $('#' + meal).text(" ");
-                        $('#' + meal).val(currentVal + ' - ' + t[0] + ' ' + x + ' ' + selectedData[i].unit);
+            var carbValue = parseFloat($('#' + carb).val());
+            var fatsValue = parseFloat($('#' + fats).val());
+            var proteinsValue = parseFloat($('#' + proteins).val());
+            if (carbValue || fatsValue || proteinsValue) {
+                carbValue += x * t[4];
+                fatsValue += x * t[6];
+                proteinsValue += x * t[8];
+                $('#' + carb).val(carbValue);
+                $('#' + fats).val(fatsValue);
+                $('#' + proteins).val(proteinsValue);
+                var current = $('#' + meal).text();
+                var currentVal = $('#' + meal).val();
+                $('#' + meal).val(" ");
+                $('#' + meal).text(" ");
+                $('#' + meal).val(currentVal + ' - ' + t[0] + ' ' + x + ' ' + t[2]);
 
-                    }
+            }
 
-                    else {
+            else {
 
-                        $('#' + carb).val(selectedData[i].carb * x);
-                        $('#' + fats).val(selectedData[i].fats * x);
-                        $('#' + proteins).val(selectedData[i].proteins * x);
+                $('#' + carb).val(t[4] * x);
+                $('#' + fats).val(t[6] * x);
+                $('#' + proteins).val(t[8] * x);
 
-                        var current = $('#' + meal).text();
-                        var currentVal = $('#' + meal).val();
-                        $('#' + meal).val(" ");
-                        $('#' + meal).text(" ");
-                        $('#' + meal).val(currentVal + ' - ' + t[0] + ' ' + x + ' ' + selectedData[i].unit);
+                var current = $('#' + meal).text();
+                var currentVal = $('#' + meal).val();
+                $('#' + meal).val(" ");
+                $('#' + meal).text(" ");
+                $('#' + meal).val(currentVal + ' - ' + t[0] + ' ' + x + ' ' + t[2]);
 
 
-                    }
-                }
             }
 
 
@@ -7175,37 +7166,33 @@
             var carbValue = parseFloat($('#' + carb).val());
             var fatsValue = parseFloat($('#' + fats).val());
             var proteinsValue = parseFloat($('#' + proteins).val());
-            for (i = 0; i < selectedData.length; i++) {
 
-                if (t[4] == selectedData[i].ID) {
-                    if (carbValue || fatsValue || proteinsValue) {
-                        carbValue -= parseFloat(x * selectedData[i].carb);
-                        fatsValue -= parseFloat(x * selectedData[i].fats);
-                        proteinsValue -= parseFloat(x * selectedData[i].proteins);
-                        $('#' + carb).val(carbValue);
-                        $('#' + fats).val(fatsValue);
-                        $('#' + proteins).val(proteinsValue);
+            if (carbValue || fatsValue || proteinsValue) {
+                carbValue -= parseFloat(x * t[4]);
+                fatsValue -= parseFloat(x * t[6]);
+                proteinsValue -= parseFloat(x * t[8]);
+                $('#' + carb).val(carbValue);
+                $('#' + fats).val(fatsValue);
+                $('#' + proteins).val(proteinsValue);
 
 
-                        var remove = t[0] + ' ' + x + ' ' + selectedData[i].unit;
+                var remove = t[0] + ' ' + x + ' ' + t[2];
 
-                        var result = "-";
-                        removefunc(array, remove);
-
-
-                        for (var i = 1; i < array.length; i++) {
-                            result += array[i];
-                            result += " - ";
-                        }
-
-                        $('#' + meal).val(" ");
-                        $('#' + meal).val(result);
+                var result = "-";
+                removefunc(array, remove);
 
 
-                    }
+                for (var i = 1; i < array.length; i++) {
+                    result += array[i];
+                    result += " - ";
                 }
 
+                $('#' + meal).val(" ");
+                $('#' + meal).val(result);
+
+
             }
+
 
         }
     </script>

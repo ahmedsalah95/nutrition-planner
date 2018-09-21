@@ -38,7 +38,7 @@
                 <td>{!! str_replace('_','  ', $data->day1_break2 )  !!}</td>
                 <td>{!! str_replace('_','  ', $data->day1_lunch )  !!}</td>
                 <td>{!!str_replace('_','  ', $data->day1_break1 ) !!}</td>
-                <td>{!!  str_replace('_','  ', $data->day1_breakfast)  !!}</td>
+                <td>{!!  str_replace('_',' ', $data->day1_breakfast)  !!}</td>
                 <th scope="row">السبت</th>
             </tr>
 
