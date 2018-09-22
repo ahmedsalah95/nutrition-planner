@@ -22,17 +22,10 @@
             </thead>
             <tbody>
             <tr>
-                <?php
-                if ($data->carbSum || $data->fatsSum || $data->proteinSum) {
-                    $sum = $data->carbSum + $data->fatsSum + $data->proteinSum;
-                }
 
-                ?>
-                @if(isset($sum))
-                    <td>{!! $data->carbSum !!} , {!! $data->fatsSum  !!}, {!! $data->proteinSum !!} ,{{$sum}}</td>
-                @else
-                    <td>{!! $data->carbSum !!} , {!! $data->fatsSum  !!}, {!! $data->proteinSum !!}</td>
-                @endif
+                <td>{!! $data->carbSum !!} , {!! $data->fatsSum  !!}, {!! $data->proteinSum !!}
+                    ,{{$data->caloriesSum}}</td>
+
                 <td><br>{{ $data->day1_notes }}</td>
                 <td>{!! str_replace('_','  ', $data->day1_dinner )    !!}</td>
                 <td>{!! str_replace('_','  ', $data->day1_break2 )  !!}</td>
@@ -44,20 +37,8 @@
 
             <tr>
 
-                <?php
-                if ($data->carbSum2) {
-                    $sum2 = $data->carbSum2 + $data->fatsSum2 + $data->proteinSum2;
-                }
-
-                ?>
-
-
-
-                @if(isset($sum2))
-                    <td>{!! $data->carbSum2 !!} , {!! $data->fatsSum2  !!}, {!! $data->proteinSum2 !!} ,{{$sum2}}</td>
-                @else
-                    <td>{!! $data->carbSum2 !!} , {!! $data->fatsSum2  !!}, {!! $data->proteinSum2 !!}</td>
-                @endif
+                <td>{!! $data->carbSum2 !!} , {!! $data->fatsSum2  !!}, {!! $data->proteinSum2 !!}
+                    ,{{$data->caloriesSum2}}</td>
                 <td><br>{{ $data->day2_notes }}</td>
                 <td>{!! str_replace('_','  ', $data->day2_dinner )    !!}</td>
                 <td>{!! str_replace('_','  ', $data->day2_break2 )  !!}</td>
@@ -69,20 +50,8 @@
 
             <tr>
 
-                <?php
-                if ($data->carbSum3) {
-                    $sum3 = $data->carbSum3 + $data->fatsSum3 + $data->proteinSum3;
-                }
-
-                ?>
-
-
-
-                @if(isset($sum3))
-                    <td>{!! $data->carbSum3 !!} , {!! $data->fatsSum3  !!}, {!! $data->proteinSum3 !!} ,{{$sum3}}</td>
-                @else
-                    <td>{!! $data->carbSum3 !!} , {!! $data->fatsSum3  !!}, {!! $data->proteinSum3 !!}</td>
-                @endif
+                <td>{!! $data->carbSum3 !!} , {!! $data->fatsSum3  !!}, {!! $data->proteinSum3 !!}
+                    ,{{$data->caloriesSum3}}</td>
                 <td><br>{{ $data->day3_notes }}</td>
                 <td>{!! str_replace('_','  ', $data->day3_dinner )    !!}</td>
                 <td>{!! str_replace('_','  ', $data->day3_break2 )  !!}</td>
@@ -94,18 +63,8 @@
 
             <tr>
 
-                <?php
-                if ($data->carbSum4) {
-                    $sum4 = $data->carbSum4 + $data->fatsSum4 + $data->proteinSum4;
-                }
-
-                ?>
-
-                @if(isset($sum4))
-                    <td>{!! $data->carbSum4 !!} , {!! $data->fatsSum4  !!}, {!! $data->proteinSum4 !!} ,{{$sum4}}</td>
-                @else
-                    <td>{!! $data->carbSum4 !!} , {!! $data->fatsSum4  !!}, {!! $data->proteinSum4 !!}</td>
-                @endif
+                <td>{!! $data->carbSum4 !!} , {!! $data->fatsSum4  !!}, {!! $data->proteinSum4 !!}
+                    ,{{$data->caloriesSum4}}</td>
                 <td><br>{{ $data->day4_notes }}</td>
                 <td>{!! str_replace('_','  ', $data->day4_dinner )    !!}</td>
                 <td>{!! str_replace('_','  ', $data->day4_break2 )  !!}</td>
@@ -115,18 +74,8 @@
                 <th scope="row">الثلاثاء</th>
             </tr>
             <tr>
-                <?php
-                if ($data->carbSum5) {
-                    $sum5 = $data->carbSum5 + $data->fatsSum5 + $data->proteinSum5;
-                }
-
-                ?>
-
-                @if(isset($sum5))
-                    <td>{!! $data->carbSum5 !!} , {!! $data->fatsSum5  !!}, {!! $data->proteinSum5 !!} ,{{$sum5}}</td>
-                @else
-                    <td>{!! $data->carbSum5 !!} , {!! $data->fatsSum5  !!}, {!! $data->proteinSum5 !!}</td>
-                @endif
+                <td>{!! $data->carbSum5 !!} , {!! $data->fatsSum5  !!}, {!! $data->proteinSum5 !!}
+                    ,{{$data->caloriesSum5}}</td>
                 <td><br>{{ $data->day5_notes }}</td>
                 <td>{!! str_replace('_','  ', $data->day5_dinner )    !!}</td>
                 <td>{!! str_replace('_','  ', $data->day5_break2 )  !!}</td>
@@ -137,19 +86,8 @@
             </tr>
 
             <tr>
-                <?php
-                if ($data->carbSum6) {
-                    $sum6 = $data->carbSum6 + $data->fatsSum6 + $data->proteinSum6;
-                }
-
-                ?>
-
-                @if(isset($sum6))
-                    <td>{!! $data->carbSum6 !!} , {!! $data->fatsSum6  !!}, {!! $data->proteinSum6 !!} ,{{$sum6}}</td>
-                @else
-                    <td>{!! $data->carbSum6 !!} , {!! $data->fatsSum6  !!}, {!! $data->proteinSum6 !!}</td>
-                @endif
-
+                <td>{!! $data->carbSum6 !!} , {!! $data->fatsSum6  !!}, {!! $data->proteinSum6 !!}
+                    ,{{$data->caloriesSum6}}</td>
                 <td><br>{{ $data->day6_notes }}</td>
                 <td>{!! str_replace('_','  ', $data->day6_dinner )    !!}</td>
                 <td>{!! str_replace('_','  ', $data->day6_break2 )  !!}</td>
@@ -160,19 +98,8 @@
             </tr>
 
 
-
-            <?php
-            if ($data->carbSum7) {
-                $sum7 = $data->carbSum7 + $data->fatsSum7 + $data->proteinSum7;
-            }
-
-            ?>
-
-            @if(isset($sum7))
-                <td>{!! $data->carbSum7 !!} , {!! $data->fatsSum7  !!}, {!! $data->proteinSum7 !!} ,{{$sum7}}</td>
-            @else
-                <td>{!! $data->carbSum7 !!} , {!! $data->fatsSum7  !!}, {!! $data->proteinSum7 !!}</td>
-            @endif
+            <td>{!! $data->carbSum7 !!} , {!! $data->fatsSum7  !!}, {!! $data->proteinSum7 !!}
+                ,{{$data->caloriesSum7}}</td>
             <td><br>{{ $data->day7_notes }}</td>
             <td>{!! str_replace('_','  ', $data->day7_dinner )    !!}</td>
             <td>{!! str_replace('_','  ', $data->day7_break2 )  !!}</td>
