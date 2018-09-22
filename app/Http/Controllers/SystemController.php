@@ -30,6 +30,15 @@ class SystemController extends Controller
     {
         return view('dashboard.pages.system.addSystem');
     }
+    public function saveTable($string)
+    {
+        $x = str_replace('-' ,'<br>',$string);
+
+       $x =preg_replace('#(<br */?>\s*)+#i', '<br>', $x);
+
+       return $x;
+
+    }
 
 
     public function store(Request $request)
@@ -39,7 +48,8 @@ class SystemController extends Controller
         $saveData->system_name = $request['system_name'];
         $saveData->system_desc = $request['system_desc'];
         //day 1
-        $saveData->day1_breakfast =str_replace('-' ,'<br>',$request['day1_breakfast']);
+       // $saveData->day1_breakfast =str_replace('-' ,'<br>',$request['day1_breakfast']);
+        $saveData->day1_breakfast = $this->saveTable($request['day1_breakfast']);
         $saveData->day1_lunch = str_replace('-' ,'<br>',$request['day1_lunch']);
         $saveData->day1_dinner =str_replace('-' ,'<br>',$request['day1_dinner']);
         $saveData->day1_break1 = str_replace('-' ,'<br>',$request['day1_break1']);
@@ -157,10 +167,11 @@ class SystemController extends Controller
         $saveData->system_desc = $request['system_desc'];
 
         //day 1
-        $saveData->day1_breakfast =str_replace('-' ,'<br>',$request['day1_breakfast']);
-        $saveData->day1_lunch = str_replace('-' ,'<br>',$request['day1_lunch']);
+        // $saveData->day1_breakfast =str_replace('-' ,'<br>',$request['day1_breakfast']);
+        $saveData->day1_breakfast = $this->saveTable($request['day1_breakfast']);
+        $saveData->day1_lunch = $this->saveTable($request['day1_lunch']);
         $saveData->day1_dinner =str_replace('-' ,'<br>',$request['day1_dinner']);
-        $saveData->day1_break1 = str_replace('-' ,'<br>',$request['day1_break1']);
+        $saveData->day1_break1 = $this->saveTable($request['day1_break1']);
         $saveData->day1_break2 = str_replace('-' ,'<br>',$request['day1_break2']);
         $saveData->day1_notes =  $request['day1_notes'];
         if($request['carbSum'] || $request['carbSum'] =="0")
