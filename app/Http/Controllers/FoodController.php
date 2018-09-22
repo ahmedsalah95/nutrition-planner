@@ -64,7 +64,7 @@ class FoodController extends Controller
         $saveData->carb_calories =ceil($request['carb_calories']);
         $saveData->fats_calories =ceil($request['fats_calories']);
 
-        $saveData->unit =$request['unit'];
+        $saveData->unit =str_replace(' ','_' ,  $request['unit']);
 
 
         $saveData->save();
