@@ -33,7 +33,7 @@
                 @else
                     <td>{!! $data->carbSum !!} , {!! $data->fatsSum  !!}, {!! $data->proteinSum !!}</td>
                 @endif
-                <td>{{ $data->day1_notes }}</td>
+                <td><br>{{ $data->day1_notes }}</td>
                 <td>{!! str_replace('_','  ', $data->day1_dinner )    !!}</td>
                 <td>{!! str_replace('_','  ', $data->day1_break2 )  !!}</td>
                 <td>{!! str_replace('_','  ', $data->day1_lunch )  !!}</td>
@@ -58,7 +58,7 @@
                 @else
                     <td>{!! $data->carbSum2 !!} , {!! $data->fatsSum2  !!}, {!! $data->proteinSum2 !!}</td>
                 @endif
-                <td>{{ $data->day2_notes }}</td>
+                <td><br>{{ $data->day2_notes }}</td>
                 <td>{!! str_replace('_','  ', $data->day2_dinner )    !!}</td>
                 <td>{!! str_replace('_','  ', $data->day2_break2 )  !!}</td>
                 <td>{!! str_replace('_','  ', $data->day2_lunch )  !!}</td>
@@ -83,7 +83,7 @@
                 @else
                     <td>{!! $data->carbSum3 !!} , {!! $data->fatsSum3  !!}, {!! $data->proteinSum3 !!}</td>
                 @endif
-                <td>{{ $data->day3_notes }}</td>
+                <td><br>{{ $data->day3_notes }}</td>
                 <td>{!! str_replace('_','  ', $data->day3_dinner )    !!}</td>
                 <td>{!! str_replace('_','  ', $data->day3_break2 )  !!}</td>
                 <td>{!! str_replace('_','  ', $data->day3_lunch )  !!}</td>
@@ -106,7 +106,7 @@
                 @else
                     <td>{!! $data->carbSum4 !!} , {!! $data->fatsSum4  !!}, {!! $data->proteinSum4 !!}</td>
                 @endif
-                <td>{{ $data->day4_notes }}</td>
+                <td><br>{{ $data->day4_notes }}</td>
                 <td>{!! str_replace('_','  ', $data->day4_dinner )    !!}</td>
                 <td>{!! str_replace('_','  ', $data->day4_break2 )  !!}</td>
                 <td>{!! str_replace('_','  ', $data->day4_lunch )  !!}</td>
@@ -127,7 +127,7 @@
                 @else
                     <td>{!! $data->carbSum5 !!} , {!! $data->fatsSum5  !!}, {!! $data->proteinSum5 !!}</td>
                 @endif
-                <td>{{ $data->day5_notes }}</td>
+                <td><br>{{ $data->day5_notes }}</td>
                 <td>{!! str_replace('_','  ', $data->day5_dinner )    !!}</td>
                 <td>{!! str_replace('_','  ', $data->day5_break2 )  !!}</td>
                 <td>{!! str_replace('_','  ', $data->day5_lunch )  !!}</td>
@@ -150,7 +150,7 @@
                     <td>{!! $data->carbSum6 !!} , {!! $data->fatsSum6  !!}, {!! $data->proteinSum6 !!}</td>
                 @endif
 
-                <td>{{ $data->day6_notes }}</td>
+                <td><br>{{ $data->day6_notes }}</td>
                 <td>{!! str_replace('_','  ', $data->day6_dinner )    !!}</td>
                 <td>{!! str_replace('_','  ', $data->day6_break2 )  !!}</td>
                 <td>{!! str_replace('_','  ', $data->day6_lunch )  !!}</td>
@@ -173,7 +173,7 @@
             @else
                 <td>{!! $data->carbSum7 !!} , {!! $data->fatsSum7  !!}, {!! $data->proteinSum7 !!}</td>
             @endif
-            <td>{{ $data->day7_notes }}</td>
+            <td><br>{{ $data->day7_notes }}</td>
             <td>{!! str_replace('_','  ', $data->day7_dinner )    !!}</td>
             <td>{!! str_replace('_','  ', $data->day7_break2 )  !!}</td>
             <td>{!! str_replace('_','  ', $data->day7_lunch )  !!}</td>
