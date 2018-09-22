@@ -29,6 +29,7 @@ class CreateSystemsTable extends Migration
             $table->String('carbSum')->nullable();
             $table->String('fatsSum')->nullable();
             $table->String('proteinSum')->nullable();
+            $table->String('caloriesSum')->nullable();
 
             $table->longText('day2_breakfast')->nullable();
             $table->longText('day2_lunch')->nullable();
@@ -39,7 +40,7 @@ class CreateSystemsTable extends Migration
             $table->String('carbSum2')->nullable();
             $table->String('fatsSum2')->nullable();
             $table->String('proteinSum2')->nullable();
-
+            $table->String('caloriesSum2')->nullable();
 
             $table->longText('day3_breakfast')->nullable();
             $table->longText('day3_lunch')->nullable();
@@ -50,6 +51,7 @@ class CreateSystemsTable extends Migration
             $table->String('carbSum3')->nullable();
             $table->String('fatsSum3')->nullable();
             $table->String('proteinSum3')->nullable();
+            $table->String('caloriesSum3')->nullable();
 
             $table->longText('day4_breakfast')->nullable();
             $table->longText('day4_lunch')->nullable();
@@ -60,6 +62,7 @@ class CreateSystemsTable extends Migration
             $table->String('carbSum4')->nullable();
             $table->String('fatsSum4')->nullable();
             $table->String('proteinSum4')->nullable();
+            $table->String('caloriesSum4')->nullable();
 
             $table->longText('day5_breakfast')->nullable();
             $table->longText('day5_lunch')->nullable();
@@ -70,6 +73,7 @@ class CreateSystemsTable extends Migration
             $table->String('carbSum5')->nullable();
             $table->String('fatsSum5')->nullable();
             $table->String('proteinSum5')->nullable();
+            $table->String('caloriesSum5')->nullable();
 
             $table->longText('day6_breakfast')->nullable();
             $table->longText('day6_lunch')->nullable();
@@ -80,6 +84,7 @@ class CreateSystemsTable extends Migration
             $table->String('carbSum6')->nullable();
             $table->String('fatsSum6')->nullable();
             $table->String('proteinSum6')->nullable();
+            $table->String('caloriesSum6')->nullable();
 
             $table->longText('day7_breakfast')->nullable();
             $table->longText('day7_lunch')->nullable();
@@ -90,6 +95,7 @@ class CreateSystemsTable extends Migration
             $table->String('carbSum7')->nullable();
             $table->String('fatsSum7')->nullable();
             $table->String('proteinSum7')->nullable();
+            $table->String('caloriesSum7')->nullable();
 
 
             $table->timestamps();

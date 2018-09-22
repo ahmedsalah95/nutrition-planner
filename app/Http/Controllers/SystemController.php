@@ -48,7 +48,7 @@ class SystemController extends Controller
         $saveData->carbSum  = str_replace('-' ,'<br>',$request['carbSum']);
         $saveData->fatsSum  =str_replace('-' ,'<br>',$request['fatsSum']);
         $saveData->proteinSum=str_replace('-' ,'<br>',$request['proteinSum']);
-
+        $saveData->caloriesSum=str_replace('-' ,'<br>',$request['caloriesSum']);
 
         //day 2
         $saveData->day2_breakfast =str_replace('-' ,'<br>',$request['day2_breakfast']);
@@ -60,6 +60,7 @@ class SystemController extends Controller
         $saveData->carbSum2  = str_replace('-' ,'<br>',$request['carbSum2']);
         $saveData->fatsSum2  =str_replace('-' ,'<br>',$request['fatsSum2']);
         $saveData->proteinSum2=str_replace('-' ,'<br>',$request['proteinSum2']);
+        $saveData->caloriesSum2=str_replace('-' ,'<br>',$request['caloriesSum2']);
 
 
         //day 3
@@ -72,6 +73,7 @@ class SystemController extends Controller
         $saveData->carbSum3  = str_replace('-' ,'<br>',$request['carbSum3']);
         $saveData->fatsSum3  =str_replace('-' ,'<br>',$request['fatsSum3']);
         $saveData->proteinSum3=str_replace('-' ,'<br>',$request['proteinSum3']);
+        $saveData->caloriesSum3=str_replace('-' ,'<br>',$request['caloriesSum3']);
         //day 4
         $saveData->day4_breakfast =str_replace('-' ,'<br>',$request['day4_breakfast']);
         $saveData->day4_lunch = str_replace('-' ,'<br>',$request['day4_lunch']);
@@ -82,6 +84,7 @@ class SystemController extends Controller
         $saveData->carbSum4  = str_replace('-' ,'<br>',$request['carbSum4']);
         $saveData->fatsSum4  =str_replace('-' ,'<br>',$request['fatsSum4']);
         $saveData->proteinSum4=str_replace('-' ,'<br>',$request['proteinSum4']);
+        $saveData->caloriesSum4=str_replace('-' ,'<br>',$request['caloriesSum4']);
 
         //day 5
         $saveData->day5_breakfast =str_replace('-' ,'<br>',$request['day5_breakfast']);
@@ -93,6 +96,7 @@ class SystemController extends Controller
         $saveData->carbSum5  = str_replace('-' ,'<br>',$request['carbSum5']);
         $saveData->fatsSum5  =str_replace('-' ,'<br>',$request['fatsSum5']);
         $saveData->proteinSum5=str_replace('-' ,'<br>',$request['proteinSum5']);
+        $saveData->caloriesSum5=str_replace('-' ,'<br>',$request['caloriesSum5']);
         //day 6
         $saveData->day6_breakfast =str_replace('-' ,'<br>',$request['day6_breakfast']);
         $saveData->day6_lunch = str_replace('-' ,'<br>',$request['day6_lunch']);
@@ -103,6 +107,7 @@ class SystemController extends Controller
         $saveData->carbSum6  = str_replace('-' ,'<br>',$request['carbSum6']);
         $saveData->fatsSum6  =str_replace('-' ,'<br>',$request['fatsSum6']);
         $saveData->proteinSum6=str_replace('-' ,'<br>',$request['proteinSum6']);
+        $saveData->caloriesSum6=str_replace('-' ,'<br>',$request['caloriesSum6']);
 
         //day 7
         $saveData->day7_breakfast =str_replace('-' ,'<br>',$request['day7_breakfast']);
@@ -114,6 +119,7 @@ class SystemController extends Controller
         $saveData->carbSum7  = str_replace('-' ,'<br>',$request['carbSum7']);
         $saveData->fatsSum7  =str_replace('-' ,'<br>',$request['fatsSum7']);
         $saveData->proteinSum7=str_replace('-' ,'<br>',$request['proteinSum7']);
+        $saveData->caloriesSum7=str_replace('-' ,'<br>',$request['caloriesSum7']);
 
 
         $saveData->save();
@@ -170,6 +176,10 @@ class SystemController extends Controller
         {
             $saveData->proteinSum=$request['proteinSum'];
         }
+        if($request['caloriesSum']|| $request['caloriesSum'] =="0")
+        {
+            $saveData->caloriesSum=$request['caloriesSum'];
+        }
 
 
 
@@ -194,7 +204,10 @@ class SystemController extends Controller
         {
             $saveData->proteinSum2=$request['proteinSum2'];
         }
-
+        if($request['caloriesSum2']|| $request['caloriesSum2'] =="0")
+        {
+            $saveData->caloriesSum2=$request['caloriesSum2'];
+        }
 
         //day 3
         $saveData->day3_breakfast =str_replace('-' ,'<br>',$request['day3_breakfast']);
@@ -216,6 +229,10 @@ class SystemController extends Controller
         {
             $saveData->proteinSum3=$request['proteinSum3'];
         }
+        if($request['caloriesSum3']|| $request['caloriesSum3'] =="0")
+        {
+            $saveData->caloriesSum3=$request['caloriesSum3'];
+        }
         //day 4
         $saveData->day4_breakfast =str_replace('-' ,'<br>',$request['day4_breakfast']);
         $saveData->day4_lunch = str_replace('-' ,'<br>',$request['day4_lunch']);
@@ -236,7 +253,10 @@ class SystemController extends Controller
         {
             $saveData->proteinSum4=$request['proteinSum4'];
         }
-
+        if($request['caloriesSum4']|| $request['caloriesSum4'] =="0")
+        {
+            $saveData->caloriesSum4=$request['caloriesSum4'];
+        }
         //day 5
         $saveData->day5_breakfast =str_replace('-' ,'<br>',$request['day5_breakfast']);
         $saveData->day5_lunch = str_replace('-' ,'<br>',$request['day5_lunch']);
@@ -256,6 +276,10 @@ class SystemController extends Controller
         if($request['proteinSum5']|| $request['proteinSum5'] =="0")
         {
             $saveData->proteinSum5=$request['proteinSum5'];
+        }
+        if($request['caloriesSum5']|| $request['caloriesSum5'] =="0")
+        {
+            $saveData->caloriesSum5=$request['caloriesSum5'];
         }
         //day 6
         $saveData->day6_breakfast =str_replace('-' ,'<br>',$request['day6_breakfast']);
@@ -277,7 +301,10 @@ class SystemController extends Controller
         {
             $saveData->proteinSum6=$request['proteinSum6'];
         }
-
+        if($request['caloriesSum6']|| $request['caloriesSum6'] =="0")
+        {
+            $saveData->caloriesSum6=$request['caloriesSum6'];
+        }
         //day 7
         $saveData->day7_breakfast =str_replace('-' ,'<br>',$request['day7_breakfast']);
         $saveData->day7_lunch = str_replace('-' ,'<br>',$request['day7_lunch']);
@@ -298,7 +325,10 @@ class SystemController extends Controller
         {
             $saveData->proteinSum7=$request['proteinSum7'];
         }
-
+        if($request['caloriesSum7']|| $request['caloriesSum7'] =="0")
+        {
+            $saveData->caloriesSum7=$request['caloriesSum7'];
+        }
 
         $saveData->save();
 
@@ -335,6 +365,10 @@ class SystemController extends Controller
         {
             $saveData->proteinSum=$request['proteinSum'];
         }
+        if($request['caloriesSum']|| $request['caloriesSum'] =="0")
+        {
+            $saveData->caloriesSum=$request['caloriesSum'];
+        }
 
 
 
@@ -359,7 +393,10 @@ class SystemController extends Controller
         {
             $saveData->proteinSum2=$request['proteinSum2'];
         }
-
+        if($request['caloriesSum2']|| $request['caloriesSum2'] =="0")
+        {
+            $saveData->caloriesSum2=$request['caloriesSum2'];
+        }
 
         //day 3
         $saveData->day3_breakfast =str_replace('-' ,'<br>',$request['day3_breakfast']);
@@ -381,6 +418,10 @@ class SystemController extends Controller
         {
             $saveData->proteinSum3=$request['proteinSum3'];
         }
+        if($request['caloriesSum3']|| $request['caloriesSum3'] =="0")
+        {
+            $saveData->caloriesSum3=$request['caloriesSum3'];
+        }
         //day 4
         $saveData->day4_breakfast =str_replace('-' ,'<br>',$request['day4_breakfast']);
         $saveData->day4_lunch = str_replace('-' ,'<br>',$request['day4_lunch']);
@@ -401,7 +442,10 @@ class SystemController extends Controller
         {
             $saveData->proteinSum4=$request['proteinSum4'];
         }
-
+        if($request['caloriesSum4']|| $request['caloriesSum4'] =="0")
+        {
+            $saveData->caloriesSum4=$request['caloriesSum4'];
+        }
         //day 5
         $saveData->day5_breakfast =str_replace('-' ,'<br>',$request['day5_breakfast']);
         $saveData->day5_lunch = str_replace('-' ,'<br>',$request['day5_lunch']);
@@ -421,6 +465,10 @@ class SystemController extends Controller
         if($request['proteinSum5']|| $request['proteinSum5'] =="0")
         {
             $saveData->proteinSum5=$request['proteinSum5'];
+        }
+        if($request['caloriesSum5']|| $request['caloriesSum5'] =="0")
+        {
+            $saveData->caloriesSum5=$request['caloriesSum5'];
         }
         //day 6
         $saveData->day6_breakfast =str_replace('-' ,'<br>',$request['day6_breakfast']);
@@ -442,7 +490,10 @@ class SystemController extends Controller
         {
             $saveData->proteinSum6=$request['proteinSum6'];
         }
-
+        if($request['caloriesSum6']|| $request['caloriesSum6'] =="0")
+        {
+            $saveData->caloriesSum6=$request['caloriesSum6'];
+        }
         //day 7
         $saveData->day7_breakfast =str_replace('-' ,'<br>',$request['day7_breakfast']);
         $saveData->day7_lunch = str_replace('-' ,'<br>',$request['day7_lunch']);
@@ -462,6 +513,10 @@ class SystemController extends Controller
         if($request['proteinSum7']|| $request['proteinSum7'] =="0")
         {
             $saveData->proteinSum7=$request['proteinSum7'];
+        }
+        if($request['caloriesSum7']|| $request['caloriesSum7'] =="0")
+        {
+            $saveData->caloriesSum7=$request['caloriesSum7'];
         }
 
 
@@ -501,7 +556,7 @@ class SystemController extends Controller
         $saveData->carbSum  = str_replace('-' ,'<br>',$request['carbSum']);
         $saveData->fatsSum  =str_replace('-' ,'<br>',$request['fatsSum']);
         $saveData->proteinSum=str_replace('-' ,'<br>',$request['proteinSum']);
-
+        $saveData->caloriesSum=str_replace('-' ,'<br>',$request['caloriesSum']);
 
         //day 2
         $saveData->day2_breakfast =str_replace('-' ,'<br>',$request['day2_breakfast']);
@@ -513,6 +568,7 @@ class SystemController extends Controller
         $saveData->carbSum2  = str_replace('-' ,'<br>',$request['carbSum2']);
         $saveData->fatsSum2  =str_replace('-' ,'<br>',$request['fatsSum2']);
         $saveData->proteinSum2=str_replace('-' ,'<br>',$request['proteinSum2']);
+        $saveData->caloriesSum2=str_replace('-' ,'<br>',$request['caloriesSum2']);
 
 
         //day 3
@@ -525,6 +581,7 @@ class SystemController extends Controller
         $saveData->carbSum3  = str_replace('-' ,'<br>',$request['carbSum3']);
         $saveData->fatsSum3  =str_replace('-' ,'<br>',$request['fatsSum3']);
         $saveData->proteinSum3=str_replace('-' ,'<br>',$request['proteinSum3']);
+        $saveData->caloriesSum3=str_replace('-' ,'<br>',$request['caloriesSum3']);
         //day 4
         $saveData->day4_breakfast =str_replace('-' ,'<br>',$request['day4_breakfast']);
         $saveData->day4_lunch = str_replace('-' ,'<br>',$request['day4_lunch']);
@@ -535,6 +592,7 @@ class SystemController extends Controller
         $saveData->carbSum4  = str_replace('-' ,'<br>',$request['carbSum4']);
         $saveData->fatsSum4  =str_replace('-' ,'<br>',$request['fatsSum4']);
         $saveData->proteinSum4=str_replace('-' ,'<br>',$request['proteinSum4']);
+        $saveData->caloriesSum4=str_replace('-' ,'<br>',$request['caloriesSum4']);
 
         //day 5
         $saveData->day5_breakfast =str_replace('-' ,'<br>',$request['day5_breakfast']);
@@ -546,6 +604,7 @@ class SystemController extends Controller
         $saveData->carbSum5  = str_replace('-' ,'<br>',$request['carbSum5']);
         $saveData->fatsSum5  =str_replace('-' ,'<br>',$request['fatsSum5']);
         $saveData->proteinSum5=str_replace('-' ,'<br>',$request['proteinSum5']);
+        $saveData->caloriesSum5=str_replace('-' ,'<br>',$request['caloriesSum5']);
         //day 6
         $saveData->day6_breakfast =str_replace('-' ,'<br>',$request['day6_breakfast']);
         $saveData->day6_lunch = str_replace('-' ,'<br>',$request['day6_lunch']);
@@ -556,6 +615,7 @@ class SystemController extends Controller
         $saveData->carbSum6  = str_replace('-' ,'<br>',$request['carbSum6']);
         $saveData->fatsSum6  =str_replace('-' ,'<br>',$request['fatsSum6']);
         $saveData->proteinSum6=str_replace('-' ,'<br>',$request['proteinSum6']);
+        $saveData->caloriesSum6=str_replace('-' ,'<br>',$request['caloriesSum6']);
 
         //day 7
         $saveData->day7_breakfast =str_replace('-' ,'<br>',$request['day7_breakfast']);
@@ -567,6 +627,8 @@ class SystemController extends Controller
         $saveData->carbSum7  = str_replace('-' ,'<br>',$request['carbSum7']);
         $saveData->fatsSum7  =str_replace('-' ,'<br>',$request['fatsSum7']);
         $saveData->proteinSum7=str_replace('-' ,'<br>',$request['proteinSum7']);
+        $saveData->caloriesSum7=str_replace('-' ,'<br>',$request['caloriesSum7']);
+
 
 
         $saveData->save();
