@@ -117,7 +117,7 @@
             <tr>
                 <?php
                 if ($data->carbSum5) {
-                    $sum4 = $data->carbSum5 + $data->fatsSum5 + $data->proteinSum5;
+                    $sum5 = $data->carbSum5 + $data->fatsSum5 + $data->proteinSum5;
                 }
 
                 ?>
@@ -139,7 +139,7 @@
             <tr>
                 <?php
                 if ($data->carbSum6) {
-                    $sum4 = $data->carbSum6 + $data->fatsSum6 + $data->proteinSum6;
+                    $sum6 = $data->carbSum6 + $data->fatsSum6 + $data->proteinSum6;
                 }
 
                 ?>
@@ -163,7 +163,7 @@
 
             <?php
             if ($data->carbSum7) {
-                $sum4 = $data->carbSum7 + $data->fatsSum7 + $data->proteinSum7;
+                $sum7 = $data->carbSum7 + $data->fatsSum7 + $data->proteinSum7;
             }
 
             ?>
