@@ -62,7 +62,6 @@
                         </div>
 
 
-
                         <button class="accordion" type="button"> السبت</button>
                         <div class="panel">
                             <br><br>
@@ -76,16 +75,13 @@
                                 </div>
 
 
-
-
-
                                 <br><br><br>
 
 
                                 <div class="form-group text-center">
 
                                     <div class="col-lg-12">
-                                        <div class="col-lg-3">
+                                        <div class="col-lg-2">
                                             <select id="continents" class="form-control">
                                                 <option value="0">all</option>
                                                 <option value="1">carbs</option>
@@ -95,7 +91,7 @@
 
                                             </select>
                                         </div>
-                                        <div class="col-lg-3">
+                                        <div class="col-lg-4">
 
                                             <select id="selectcountries" class="form-control"></select>
                                         </div>
@@ -114,12 +110,12 @@
 
                                         <div class="col-lg-3">
                                             <button type="button" class="btn btn-success"
-                                                    onclick="getData('gmValue','selectcountries','carbSum','fatsSum','proteinSum','day1_breakfast')">
+                                                    onclick="getData('gmValue','selectcountries','carbSum','fatsSum','proteinSum','caloriesSum','day1_breakfast')">
                                                 أضف
                                             </button>
 
                                             <button type="button" class="btn btn-warning"
-                                                    onclick="deleteItem('gmValue','selectcountries','carbSum','fatsSum','proteinSum','day1_breakfast')">
+                                                    onclick="deleteItem('gmValue','selectcountries','carbSum','fatsSum','proteinSum','caloriesSum','day1_breakfast')">
                                                 حذف
                                             </button>
                                         </div>
@@ -152,7 +148,7 @@
 
                                 <div class="form-group text-center">
                                     <div class="col-lg-12">
-                                        <div class="col-lg-3">
+                                        <div class="col-lg-2">
                                             <select id="continents1_break1" class="form-control">
                                                 <option value="0">all</option>
                                                 <option value="1">carbs</option>
@@ -162,7 +158,7 @@
 
                                             </select>
                                         </div>
-                                        <div class="col-lg-3">
+                                        <div class="col-lg-4">
                                             <select id="selectcountries1_break1" class="form-control"></select>
                                         </div>
                                         <div class="col-lg-3">
@@ -178,11 +174,11 @@
                                         </div>
                                         <div class="col-lg-3">
                                             <button type="button" class="btn btn-success"
-                                                    onclick="getData('gmValue1_break1','selectcountries1_break1','carbSum','fatsSum','proteinSum','day1_break1')">
+                                                    onclick="getData('gmValue1_break1','selectcountries1_break1','carbSum','fatsSum','proteinSum','caloriesSum','day1_break1')">
                                                 أضف
                                             </button>
                                             <button type="button" class="btn btn-warning"
-                                                    onclick="deleteItem('gmValue1_break1','selectcountries1_break1','carbSum','fatsSum','proteinSum','day1_break1')">
+                                                    onclick="deleteItem('gmValue1_break1','selectcountries1_break1','carbSum','fatsSum','proteinSum','caloriesSum','day1_break1')">
                                                 حذف
                                             </button>
                                         </div>
@@ -212,7 +208,7 @@
 
                                 <div class="form-group text-center">
                                     <div class="col-lg-12">
-                                        <div class="col-lg-3"><select id="continents1_lunch" class="form-control">
+                                        <div class="col-lg-2"><select id="continents1_lunch" class="form-control">
                                                 <option value="0">all</option>
                                                 <option value="1">carbs</option>
                                                 <option value="2">Fats</option>
@@ -220,7 +216,7 @@
 
 
                                             </select></div>
-                                        <div class="col-lg-3"><select id="selectcountries1_lunch"
+                                        <div class="col-lg-4"><select id="selectcountries1_lunch"
                                                                       class="form-control"></select></div>
                                         <div class="col-lg-3"><select name="gmValue" id="gmValue1_lunch"
                                                                       class="form-control">
@@ -234,11 +230,11 @@
                                             </select></div>
                                         <div class="col-lg-3">
                                             <button type="button" class="btn btn-success"
-                                                    onclick="getData('gmValue1_lunch','selectcountries1_lunch','carbSum','fatsSum','proteinSum','day1_lunch')">
+                                                    onclick="getData('gmValue1_lunch','selectcountries1_lunch','carbSum','fatsSum','proteinSum','caloriesSum','day1_lunch')">
                                                 أضف
                                             </button>
                                             <button type="button" class="btn btn-warning"
-                                                    onclick="deleteItem('gmValue1_lunch','selectcountries1_lunch','carbSum','fatsSum','proteinSum','day1_lunch')">
+                                                    onclick="deleteItem('gmValue1_lunch','selectcountries1_lunch','carbSum','fatsSum','proteinSum','caloriesSum','day1_lunch')">
                                                 حذف
                                             </button>
                                         </div>
@@ -265,7 +261,7 @@
 
                                 <div class="form-group text-center">
                                     <div class="col-lg-12">
-                                        <div class="col-lg-3"><select id="continents1_break2" class="form-control">
+                                        <div class="col-lg-2"><select id="continents1_break2" class="form-control">
                                                 <option value="0">all</option>
                                                 <option value="1">carbs</option>
                                                 <option value="2">Fats</option>
@@ -273,7 +269,7 @@
 
 
                                             </select></div>
-                                        <div class="col-lg-3">
+                                        <div class="col-lg-4">
                                             <select id="selectcountries1_break2" class="form-control"></select>
                                         </div>
                                         <div class="col-lg-3">
@@ -289,11 +285,11 @@
                                         </div>
                                         <div class="col-lg-3">
                                             <button type="button" class="btn btn-success"
-                                                    onclick="getData('gmValue1_break2','selectcountries1_break2','carbSum','fatsSum','proteinSum','day1_break2')">
+                                                    onclick="getData('gmValue1_break2','selectcountries1_break2','carbSum','fatsSum','proteinSum','caloriesSum','day1_break2')">
                                                 أضف
                                             </button>
                                             <button type="button" class="btn btn-warning"
-                                                    onclick="deleteItem('gmValue1_break2','selectcountries1_break2','carbSum','fatsSum','proteinSum','day1_break2')">
+                                                    onclick="deleteItem('gmValue1_break2','selectcountries1_break2','carbSum','fatsSum','proteinSum','caloriesSum','day1_break2')">
                                                 حذف
                                             </button>
                                         </div>
@@ -326,7 +322,7 @@
 
                                 <div class="form-group text-center">
                                     <div class="col-lg-12">
-                                        <div class="col-lg-3">
+                                        <div class="col-lg-2">
                                             <select id="continents1_dinner" class="form-control">
                                                 <option value="0">all</option>
                                                 <option value="1">carbs</option>
@@ -336,7 +332,7 @@
 
                                             </select>
                                         </div>
-                                        <div class="col-lg-3">
+                                        <div class="col-lg-4">
                                             <select id="selectcountries1_dinner" class="form-control"></select>
                                         </div>
                                         <div class="col-lg-3">
@@ -353,11 +349,11 @@
                                         <div class="col-lg-3">
 
                                             <button type="button" class="btn btn-success"
-                                                    onclick="getData('gmValue1_dinner','selectcountries1_dinner','carbSum','fatsSum','proteinSum','day1_dinner')">
+                                                    onclick="getData('gmValue1_dinner','selectcountries1_dinner','carbSum','fatsSum','proteinSum','caloriesSum','day1_dinner')">
                                                 أضف
                                             </button>
                                             <button type="button" class="btn btn-warning"
-                                                    onclick="deleteItem('gmValue1_dinner','selectcountries1_dinner','carbSum','fatsSum','proteinSum','day1_dinner')">
+                                                    onclick="deleteItem('gmValue1_dinner','selectcountries1_dinner','carbSum','fatsSum','proteinSum','caloriesSum','day1_dinner')">
                                                 حذف
                                             </button>
                                         </div>
@@ -403,7 +399,7 @@
                                 <div class="col-lg-12">
 
                                     <h2 class="text-center">مجموع السعرات الحرارية لليوم الاول</h2>
-                                    <div class="col-lg-4 col-md-4 col-sm-12">
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
                                         <label for="carbSum">carbs </label>
                                         <input type="text" id="carbSum" class="form-control"
                                                value="{{old('carbSum')}}"
@@ -411,7 +407,7 @@
 
                                                placeholder="مجموع الكربهيدرات">
                                     </div>
-                                    <div class="col-lg-4 col-md-4 col-sm-12">
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
                                         <label for="fatsSum">fats </label>
                                         <input type="text" id="fatsSum" class="form-control"
                                                name="fatsSum"
@@ -419,12 +415,20 @@
 
                                                placeholder="مجموع الدهون">
                                     </div>
-                                    <div class="col-lg-4 col-md-4 col-sm-12">
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
                                         <label for="proteinSum">protein </label>
                                         <input type="text" id="proteinSum" class="form-control"
                                                name="proteinSum"
                                                value="{{old('proteinSum')}}"
                                                placeholder="مجموع البروتينات">
+                                    </div>
+
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                        <label for="caloriesSum">total calories </label>
+                                        <input type="text" id="caloriesSum" class="form-control"
+                                               name="caloriesSum"
+                                               value="{{old('caloriesSum')}}"
+                                               placeholder="مجموع السعرات">
                                     </div>
                                 </div>
 
@@ -437,14 +441,12 @@
                         <div class="panel">
 
 
-
-
                             <br><br><br>
                             <div class="form-group sec_day">
 
                                 <div class="form-group text-center">
                                     <div class="col-lg-12">
-                                        <div class="col-lg-3">
+                                        <div class="col-lg-2">
                                             <select id="continent2" class="form-control">
                                                 <option value="0">all</option>
                                                 <option value="1">carbs</option>
@@ -454,7 +456,7 @@
 
                                             </select>
                                         </div>
-                                        <div class="col-lg-3">
+                                        <div class="col-lg-4">
                                             <select id="selectcountries2" class="form-control"></select>
                                         </div>
                                         <div class="col-lg-3">
@@ -470,11 +472,11 @@
                                         </div>
                                         <div class="col-lg-3">
                                             <button type="button" class="btn btn-success"
-                                                    onclick="getData('gmValue2','selectcountries2','carbSum2','fatsSum2','proteinSum2','day2_breakfast')">
+                                                    onclick="getData('gmValue2','selectcountries2','carbSum2','fatsSum2','proteinSum2','caloriesSum2','day2_breakfast')">
                                                 أضف
                                             </button>
                                             <button type="button" class="btn btn-warning"
-                                                    onclick="deleteItem('gmValue2','selectcountries2','carbSum2','fatsSum2','proteinSum2','day2_breakfast')">
+                                                    onclick="deleteItem('gmValue2','selectcountries2','carbSum2','fatsSum2','proteinSum2','caloriesSum2','day2_breakfast')">
                                                 حذف
                                             </button>
                                         </div>
@@ -503,7 +505,7 @@
 
                                 <div class="form-group text-center">
                                     <div class="col-lg-12">
-                                        <div class="col-lg-3">
+                                        <div class="col-lg-2">
                                             <select id="continents2_break1" class="form-control">
                                                 <option value="0">all</option>
                                                 <option value="1">carbs</option>
@@ -513,7 +515,7 @@
 
                                             </select>
                                         </div>
-                                        <div class="col-lg-3">
+                                        <div class="col-lg-4">
                                             <select id="selectcountries2_break1" class="form-control"></select>
                                         </div>
                                         <div class="col-lg-3">
@@ -529,11 +531,11 @@
                                         </div>
                                         <div class="col-lg-3">
                                             <button type="button" class="btn btn-success"
-                                                    onclick="getData('gmValue2_break1','selectcountries2_break1','carbSum2','fatsSum2','proteinSum2','day2_break1')">
+                                                    onclick="getData('gmValue2_break1','selectcountries2_break1','carbSum2','fatsSum2','proteinSum2','caloriesSum2','day2_break1')">
                                                 أضف
                                             </button>
                                             <button type="button" class="btn btn-warning"
-                                                    onclick="deleteItem('gmValue2_break1','selectcountries2_break1','carbSum2','fatsSum2','proteinSum2','day2_break1')">
+                                                    onclick="deleteItem('gmValue2_break1','selectcountries2_break1','carbSum2','fatsSum2','proteinSum2','caloriesSum2','day2_break1')">
                                                 حذف
                                             </button>
                                         </div>
@@ -562,7 +564,7 @@
 
                                 <div class="form-group text-center">
                                     <div class="col-lg-12">
-                                        <div class="col-lg-3"><select id="continents2_lunch" class="form-control">
+                                        <div class="col-lg-2"><select id="continents2_lunch" class="form-control">
                                                 <option value="0">all</option>
                                                 <option value="1">carbs</option>
                                                 <option value="2">Fats</option>
@@ -570,7 +572,7 @@
 
 
                                             </select></div>
-                                        <div class="col-lg-3"><select id="selectcountries2_lunch"
+                                        <div class="col-lg-4"><select id="selectcountries2_lunch"
                                                                       class="form-control"></select></div>
                                         <div class="col-lg-3"><select name="gmValue" id="gmValue2_lunch"
                                                                       class="form-control">
@@ -584,11 +586,11 @@
                                             </select></div>
                                         <div class="col-lg-3">
                                             <button type="button" class="btn btn-success"
-                                                    onclick="getData('gmValue2_lunch','selectcountries2_lunch','carbSum2','fatsSum2','proteinSum2','day2_lunch')">
+                                                    onclick="getData('gmValue2_lunch','selectcountries2_lunch','carbSum2','fatsSum2','proteinSum2','caloriesSum2','day2_lunch')">
                                                 أضف
                                             </button>
                                             <button type="button" class="btn btn-warning"
-                                                    onclick="deleteItem('gmValue2_lunch','selectcountries2_lunch','carbSum2','fatsSum2','proteinSum2','day2_lunch')">
+                                                    onclick="deleteItem('gmValue2_lunch','selectcountries2_lunch','carbSum2','fatsSum2','proteinSum2','caloriesSum2','day2_lunch')">
                                                 حذف
                                             </button>
                                         </div>
@@ -617,7 +619,7 @@
 
                                 <div class="form-group text-center">
                                     <div class="col-lg-12">
-                                        <div class="col-lg-3"><select id="continents2_break2" class="form-control">
+                                        <div class="col-lg-2"><select id="continents2_break2" class="form-control">
                                                 <option value="0">all</option>
                                                 <option value="1">carbs</option>
                                                 <option value="2">Fats</option>
@@ -625,7 +627,7 @@
 
 
                                             </select></div>
-                                        <div class="col-lg-3"><select id="selectcountries2_break2"
+                                        <div class="col-lg-4"><select id="selectcountries2_break2"
                                                                       class="form-control"></select></div>
                                         <div class="col-lg-3"><select name="gmValue" id="gmValue2_break2"
                                                                       class="form-control">
@@ -639,11 +641,11 @@
                                             </select></div>
                                         <div class="col-lg-3">
                                             <button type="button" class="btn btn-success"
-                                                    onclick="getData('gmValue2_break2','selectcountries2_break2','carbSum2','fatsSum2','proteinSum2','day2_break2')">
+                                                    onclick="getData('gmValue2_break2','selectcountries2_break2','carbSum2','fatsSum2','proteinSum2','caloriesSum2','day2_break2')">
                                                 أضف
                                             </button>
                                             <button type="button" class="btn btn-warning"
-                                                    onclick="deleteItem('gmValue2_break2','selectcountries2_break2','carbSum2','fatsSum2','proteinSum2','day2_break2')">
+                                                    onclick="deleteItem('gmValue2_break2','selectcountries2_break2','carbSum2','fatsSum2','proteinSum2','caloriesSum2','day2_break2')">
                                                 حذف
                                             </button>
                                         </div>
@@ -673,7 +675,7 @@
 
                                 <div class="form-group text-center">
                                     <div class="col-lg-12">
-                                        <div class="col-lg-3"><select id="continents2_dinner" class="form-control">
+                                        <div class="col-lg-2"><select id="continents2_dinner" class="form-control">
                                                 <option value="0">all</option>
                                                 <option value="1">carbs</option>
                                                 <option value="2">Fats</option>
@@ -681,7 +683,7 @@
 
 
                                             </select></div>
-                                        <div class="col-lg-3"><select id="selectcountries2_dinner"
+                                        <div class="col-lg-4"><select id="selectcountries2_dinner"
                                                                       class="form-control"></select></div>
                                         <div class="col-lg-3"><select name="gmValue" id="gmValue2_dinner"
                                                                       class="form-control">
@@ -695,11 +697,11 @@
                                             </select></div>
                                         <div class="col-lg-3">
                                             <button type="button" class="btn btn-success"
-                                                    onclick="getData('gmValue2_dinner','selectcountries2_dinner','carbSum2','fatsSum2','proteinSum2','day2_dinner')">
+                                                    onclick="getData('gmValue2_dinner','selectcountries2_dinner','carbSum2','fatsSum2','proteinSum2','caloriesSum2','day2_dinner')">
                                                 أضف
                                             </button>
                                             <button type="button" class="btn btn-warning"
-                                                    onclick="deleteItem('gmValue2_dinner','selectcountries2_dinner','carbSum2','fatsSum2','proteinSum2','day2_dinner')">
+                                                    onclick="deleteItem('gmValue2_dinner','selectcountries2_dinner','carbSum2','fatsSum2','proteinSum2','caloriesSum2','day2_dinner')">
                                                 حذف
                                             </button>
                                         </div>
@@ -746,7 +748,7 @@
                                 <div class="col-lg-12">
 
                                     <h2 class="text-center">مجموع السعرات الحرارية لليوم الثانى</h2>
-                                    <div class="col-lg-4 col-md-4 col-sm-12">
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
                                         <label for="carbSum">carbs </label>
                                         <input type="text" id="carbSum2" class="form-control"
                                                value="{{old('carbSum2')}}"
@@ -754,7 +756,7 @@
 
                                                placeholder="مجموع الكربهيدرات">
                                     </div>
-                                    <div class="col-lg-4 col-md-4 col-sm-12">
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
                                         <label for="carbSum">fats </label>
                                         <input type="text" id="fatsSum2" class="form-control"
                                                value="{{old('fatsSum2')}}"
@@ -762,13 +764,20 @@
 
                                                placeholder="مجموع الدهون">
                                     </div>
-                                    <div class="col-lg-4 col-md-4 col-sm-12">
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
                                         <label for="carbSum">protein </label>
                                         <input type="text" id="proteinSum2" class="form-control"
                                                value="{{old('proteinSum2')}}"
                                                name="proteinSum2"
 
                                                placeholder="مجموع البروتينات">
+                                    </div>
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                        <label for="caloriesSum2">total calories </label>
+                                        <input type="text" id="caloriesSum2" class="form-control"
+                                               name="caloriesSum2"
+                                               value="{{old('caloriesSum2')}}"
+                                               placeholder="مجموع السعرات">
                                     </div>
                                 </div>
 
@@ -786,7 +795,7 @@
 
                                 <div class="form-group text-center">
                                     <div class="col-lg-12">
-                                        <div class="col-lg-3"><select id="continent3" class="form-control">
+                                        <div class="col-lg-2"><select id="continent3" class="form-control">
                                                 <option value="0">all</option>
                                                 <option value="1">carbs</option>
                                                 <option value="2">Fats</option>
@@ -794,7 +803,7 @@
 
 
                                             </select></div>
-                                        <div class="col-lg-3"><select id="selectcountries3"
+                                        <div class="col-lg-4"><select id="selectcountries3"
                                                                       class="form-control"></select></div>
                                         <div class="col-lg-3"><select name="gmValue" id="gmValue3" class="form-control">
 
@@ -807,11 +816,11 @@
                                             </select></div>
                                         <div class="col-lg-3">
                                             <button type="button" class="btn btn-success"
-                                                    onclick="getData('gmValue3','selectcountries3','carbSum3','fatsSum3','proteinSum3','day3_breakfast')">
+                                                    onclick="getData('gmValue3','selectcountries3','carbSum3','fatsSum3','proteinSum3','caloriesSum3','day3_breakfast')">
                                                 أضف
                                             </button>
                                             <button type="button" class="btn btn-warning"
-                                                    onclick="deleteItem('gmValue3','selectcountries3','carbSum3','fatsSum3','proteinSum3','day3_breakfast')">
+                                                    onclick="deleteItem('gmValue3','selectcountries3','carbSum3','fatsSum3','proteinSum3','caloriesSum3','day3_breakfast')">
                                                 حذف
                                             </button>
                                         </div>
@@ -840,7 +849,7 @@
 
                                 <div class="form-group text-center">
                                     <div class="col-lg-12">
-                                        <div class="col-lg-3">
+                                        <div class="col-lg-2">
                                             <select id="continents3_break1" class="form-control">
                                                 <option value="0">all</option>
                                                 <option value="1">carbs</option>
@@ -848,7 +857,7 @@
                                                 <option value="3">proteins</option>
                                             </select>
                                         </div>
-                                        <div class="col-lg-3"><select id="selectcountries3_break1"
+                                        <div class="col-lg-4"><select id="selectcountries3_break1"
                                                                       class="form-control"></select></div>
                                         <div class="col-lg-3"><select name="gmValue" id="gmValue3_break1"
                                                                       class="form-control">
@@ -862,11 +871,11 @@
                                             </select></div>
                                         <div class="col-lg-3">
                                             <button type="button" class="btn btn-success"
-                                                    onclick="getData('gmValue3_break1','selectcountries3_break1','carbSum3','fatsSum3','proteinSum3','day3_break1')">
+                                                    onclick="getData('gmValue3_break1','selectcountries3_break1','carbSum3','fatsSum3','proteinSum3','caloriesSum3','day3_break1')">
                                                 أضف
                                             </button>
                                             <button type="button" class="btn btn-warning"
-                                                    onclick="deleteItem('gmValue3_break1','selectcountries3_break1','carbSum3','fatsSum3','proteinSum3','day3_break1')">
+                                                    onclick="deleteItem('gmValue3_break1','selectcountries3_break1','carbSum3','fatsSum3','proteinSum3','caloriesSum3','day3_break1')">
                                                 حذف
                                             </button>
                                         </div>
@@ -895,7 +904,7 @@
 
                                 <div class="form-group text-center">
                                     <div class="col-lg-12">
-                                        <div class="col-lg-3"><select id="continents3_lunch" class="form-control">
+                                        <div class="col-lg-2"><select id="continents3_lunch" class="form-control">
                                                 <option value="0">all</option>
                                                 <option value="1">carbs</option>
                                                 <option value="2">Fats</option>
@@ -903,7 +912,7 @@
 
 
                                             </select></div>
-                                        <div class="col-lg-3"><select id="selectcountries3_lunch"
+                                        <div class="col-lg-4"><select id="selectcountries3_lunch"
                                                                       class="form-control"></select></div>
                                         <div class="col-lg-3"><select id="gmValue3_lunch" class="form-control">
 
@@ -916,11 +925,11 @@
                                             </select></div>
                                         <div class="col-lg-3">
                                             <button type="button" class="btn btn-success"
-                                                    onclick="getData('gmValue3_lunch','selectcountries3_lunch','carbSum3','fatsSum3','proteinSum3','day3_lunch')">
+                                                    onclick="getData('gmValue3_lunch','selectcountries3_lunch','carbSum3','fatsSum3','proteinSum3','caloriesSum3','day3_lunch')">
                                                 أضف
                                             </button>
                                             <button type="button" class="btn btn-warning"
-                                                    onclick="deleteItem('gmValue3_lunch','selectcountries3_lunch','carbSum3','fatsSum3','proteinSum3','day3_lunch')">
+                                                    onclick="deleteItem('gmValue3_lunch','selectcountries3_lunch','carbSum3','fatsSum3','proteinSum3','caloriesSum3','day3_lunch')">
                                                 حذف
                                             </button>
                                         </div>
@@ -950,7 +959,7 @@
                                 <br>
                                 <div class="form-group text-center">
                                     <div class="col-lg-12">
-                                        <div class="col-lg-3"><select id="continents3_break2" class="form-control">
+                                        <div class="col-lg-2"><select id="continents3_break2" class="form-control">
                                                 <option value="0">all</option>
                                                 <option value="1">carbs</option>
                                                 <option value="2">Fats</option>
@@ -958,7 +967,7 @@
 
 
                                             </select></div>
-                                        <div class="col-lg-3"><select id="selectcountries3_break2"
+                                        <div class="col-lg-4"><select id="selectcountries3_break2"
                                                                       class="form-control"></select></div>
                                         <div class="col-lg-3"><select name="gmValue" id="gmValue3_break2"
                                                                       class="form-control">
@@ -972,11 +981,11 @@
                                             </select></div>
                                         <div class="col-lg-3">
                                             <button type="button" class="btn btn-success"
-                                                    onclick="getData('gmValue3_break2','selectcountries3_break2','carbSum3','fatsSum3','proteinSum3','day3_break2')">
+                                                    onclick="getData('gmValue3_break2','selectcountries3_break2','carbSum3','fatsSum3','proteinSum3','caloriesSum3','day3_break2')">
                                                 أضف
                                             </button>
                                             <button type="button" class="btn btn-warning"
-                                                    onclick="deleteItem('gmValue3_break2','selectcountries3_break2','carbSum3','fatsSum3','proteinSum3','day3_break2')">
+                                                    onclick="deleteItem('gmValue3_break2','selectcountries3_break2','carbSum3','fatsSum3','proteinSum3','caloriesSum3','day3_break2')">
                                                 حذف
                                             </button>
                                         </div>
@@ -1006,7 +1015,7 @@
 
                                 <div class="form-group text-center">
                                     <div class="col-lg-12">
-                                        <div class="col-lg-3"><select id="continents3_dinner" class="form-control">
+                                        <div class="col-lg-2"><select id="continents3_dinner" class="form-control">
                                                 <option value="0">all</option>
                                                 <option value="1">carbs</option>
                                                 <option value="2">Fats</option>
@@ -1014,7 +1023,7 @@
 
 
                                             </select></div>
-                                        <div class="col-lg-3"><select id="selectcountries3_dinner"
+                                        <div class="col-lg-4"><select id="selectcountries3_dinner"
                                                                       class="form-control"></select></div>
                                         <div class="col-lg-3"><select name="gmValue" id="gmValue3_dinner"
                                                                       class="form-control">
@@ -1028,11 +1037,11 @@
                                             </select></div>
                                         <div class="col-lg-3">
                                             <button type="button" class="btn btn-success"
-                                                    onclick="getData('gmValue3_dinner','selectcountries3_dinner','carbSum3','fatsSum3','proteinSum3','day3_dinner')">
+                                                    onclick="getData('gmValue3_dinner','selectcountries3_dinner','carbSum3','fatsSum3','proteinSum3','caloriesSum3','day3_dinner')">
                                                 أضف
                                             </button>
                                             <button type="button" class="btn btn-warning"
-                                                    onclick="deleteItem('gmValue3_dinner','selectcountries3_dinner','carbSum3','fatsSum3','proteinSum3','day3_dinner')">
+                                                    onclick="deleteItem('gmValue3_dinner','selectcountries3_dinner','carbSum3','fatsSum3','proteinSum3','caloriesSum3','day3_dinner')">
                                                 حذف
                                             </button>
                                         </div>
@@ -1080,26 +1089,34 @@
                                 <div class="col-lg-12">
 
                                     <h2 class="text-center">مجموع السعرات الحرارية لليوم الثالث</h2>
-                                    <div class="col-lg-4 col-md-4 col-sm-12">
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
                                         <label for="carbSum">carbs </label>
                                         <input type="text" id="carbSum3" class="form-control"
                                                name="carbSum3"
                                                value="{{old('carbSum3')}}"
                                                placeholder="مجموع الكربهيدرات">
                                     </div>
-                                    <div class="col-lg-4 col-md-4 col-sm-12">
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
                                         <label for="carbSum">fats </label>
                                         <input type="text" id="fatsSum3" class="form-control"
                                                name="fatsSum3"
                                                value="{{old('fatsSum3')}}"
                                                placeholder="مجموع الدهون">
                                     </div>
-                                    <div class="col-lg-4 col-md-4 col-sm-12">
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
                                         <label for="carbSum">protein </label>
                                         <input type="text" id="proteinSum3" class="form-control"
                                                name="proteinSum3"
                                                value="{{old('proteinSum3')}}"
                                                placeholder="مجموع البروتينات">
+                                    </div>
+
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                        <label for="proteinSum">total calories </label>
+                                        <input type="text" id="caloriesSum3" class="form-control"
+                                               name="caloriesSum3"
+                                               value="{{old('caloriesSum3')}}"
+                                               placeholder="مجموع السعرات">
                                     </div>
                                 </div>
 
@@ -1116,7 +1133,7 @@
 
                                 <div class="form-group text-center">
                                     <div class="col-lg-12">
-                                        <div class="col-lg-3"><select id="continent4" class="form-control">
+                                        <div class="col-lg-2"><select id="continent4" class="form-control">
                                                 <option value="0">all</option>
                                                 <option value="1">carbs</option>
                                                 <option value="2">Fats</option>
@@ -1124,7 +1141,7 @@
 
 
                                             </select></div>
-                                        <div class="col-lg-3"><select id="selectcountries4"
+                                        <div class="col-lg-4"><select id="selectcountries4"
                                                                       class="form-control"></select></div>
                                         <div class="col-lg-3"><select name="gmValue" id="gmValue4" class="form-control">
 
@@ -1137,11 +1154,11 @@
                                             </select></div>
                                         <div class="col-lg-3">
                                             <button type="button" class="btn btn-success"
-                                                    onclick="getData('gmValue4','selectcountries4','carbSum4','fatsSum4','proteinSum4','day4_breakfast')">
+                                                    onclick="getData('gmValue4','selectcountries4','carbSum4','fatsSum4','proteinSum4','caloriesSum4','day4_breakfast')">
                                                 أضف
                                             </button>
                                             <button type="button" class="btn btn-warning"
-                                                    onclick="deleteItem('gmValue4','selectcountries4','carbSum4','fatsSum4','proteinSum4','day4_breakfast')">
+                                                    onclick="deleteItem('gmValue4','selectcountries4','carbSum4','fatsSum4','proteinSum4','caloriesSum4','day4_breakfast')">
                                                 حذف
                                             </button>
                                         </div>
@@ -1170,7 +1187,7 @@
 
                                 <div class="form-group text-center">
                                     <div class="col-lg-12">
-                                        <div class="col-lg-3"><select id="continents4_break1" class="form-control">
+                                        <div class="col-lg-2"><select id="continents4_break1" class="form-control">
                                                 <option value="0">all</option>
                                                 <option value="1">carbs</option>
                                                 <option value="2">Fats</option>
@@ -1178,7 +1195,7 @@
 
 
                                             </select></div>
-                                        <div class="col-lg-3"><select id="selectcountries4_break1"
+                                        <div class="col-lg-4"><select id="selectcountries4_break1"
                                                                       class="form-control"></select></div>
                                         <div class="col-lg-3"><select name="gmValue" id="gmValue4_break1"
                                                                       class="form-control">
@@ -1192,11 +1209,11 @@
                                             </select></div>
                                         <div class="col-lg-3">
                                             <button type="button" class="btn btn-success"
-                                                    onclick="getData('gmValue4_break1','selectcountries4_break1','carbSum4','fatsSum4','proteinSum4','day4_break1')">
+                                                    onclick="getData('gmValue4_break1','selectcountries4_break1','carbSum4','fatsSum4','proteinSum4','caloriesSum4','day4_break1')">
                                                 أضف
                                             </button>
                                             <button type="button" class="btn btn-warning"
-                                                    onclick="deleteItem('gmValue4_break1','selectcountries4_break1','carbSum4','fatsSum4','proteinSum4','day4_break1')">
+                                                    onclick="deleteItem('gmValue4_break1','selectcountries4_break1','carbSum4','fatsSum4','proteinSum4','caloriesSum4','day4_break1')">
                                                 حذف
                                             </button>
                                         </div>
@@ -1223,13 +1240,13 @@
 
                                 <div class="form-group text-center">
                                     <div class="col-lg-12">
-                                        <div class="col-lg-3"><select id="continents4_lunch" class="form-control">
+                                        <div class="col-lg-2"><select id="continents4_lunch" class="form-control">
                                                 <option value="0">all</option>
                                                 <option value="1">carbs</option>
                                                 <option value="2">Fats</option>
                                                 <option value="3">proteins</option>
                                             </select></div>
-                                        <div class="col-lg-3"><select id="selectcountries4_lunch"
+                                        <div class="col-lg-4"><select id="selectcountries4_lunch"
                                                                       class="form-control"></select></div>
                                         <div class="col-lg-3">
                                             <select id="gmValue4_lunch" class="form-control">
@@ -1243,11 +1260,11 @@
                                             </select></div>
                                         <div class="col-lg-3">
                                             <button type="button" class="btn btn-success"
-                                                    onclick="getData('gmValue4_lunch','selectcountries4_lunch','carbSum4','fatsSum4','proteinSum4','day4_lunch')">
+                                                    onclick="getData('gmValue4_lunch','selectcountries4_lunch','carbSum4','fatsSum4','proteinSum4','caloriesSum4','day4_lunch')">
                                                 أضف
                                             </button>
                                             <button type="button" class="btn btn-warning"
-                                                    onclick="deleteItem('gmValue4_lunch','selectcountries4_lunch','carbSum4','fatsSum4','proteinSum4','day4_lunch')">
+                                                    onclick="deleteItem('gmValue4_lunch','selectcountries4_lunch','carbSum4','fatsSum4','proteinSum4','caloriesSum4','day4_lunch')">
                                                 حذف
                                             </button>
                                         </div>
@@ -1276,7 +1293,7 @@
 
                                 <div class="form-group text-center">
                                     <div class="col-lg-12">
-                                        <div class="col-lg-3"><select id="continents4_break2" class="form-control">
+                                        <div class="col-lg-2"><select id="continents4_break2" class="form-control">
                                                 <option value="0">all</option>
                                                 <option value="1">carbs</option>
                                                 <option value="2">Fats</option>
@@ -1284,7 +1301,7 @@
 
 
                                             </select></div>
-                                        <div class="col-lg-3"><select id="selectcountries4_break2"
+                                        <div class="col-lg-4"><select id="selectcountries4_break2"
                                                                       class="form-control"></select></div>
                                         <div class="col-lg-3"><select name="gmValue" id="gmValue4_break2"
                                                                       class="form-control">
@@ -1298,11 +1315,11 @@
                                             </select></div>
                                         <div class="col-lg-3">
                                             <button type="button" class="btn btn-success"
-                                                    onclick="getData('gmValue4_break2','selectcountries4_break2','carbSum4','fatsSum4','proteinSum4','day4_break2')">
+                                                    onclick="getData('gmValue4_break2','selectcountries4_break2','carbSum4','fatsSum4','proteinSum4','caloriesSum4','day4_break2')">
                                                 أضف
                                             </button>
                                             <button type="button" class="btn btn-warning"
-                                                    onclick="deleteItem('gmValue4_break2','selectcountries4_break2','carbSum4','fatsSum4','proteinSum4','day4_break2')">
+                                                    onclick="deleteItem('gmValue4_break2','selectcountries4_break2','carbSum4','fatsSum4','proteinSum4','caloriesSum4','day4_break2')">
                                                 حذف
                                             </button>
                                         </div>
@@ -1332,7 +1349,7 @@
 
                                 <div class="form-group text-center">
                                     <div class="col-lg-12">
-                                        <div class="col-lg-3"><select id="continents4_dinner" class="form-control">
+                                        <div class="col-lg-2"><select id="continents4_dinner" class="form-control">
                                                 <option value="0">all</option>
                                                 <option value="1">carbs</option>
                                                 <option value="2">Fats</option>
@@ -1340,7 +1357,7 @@
 
 
                                             </select></div>
-                                        <div class="col-lg-3"><select id="selectcountries4_dinner"
+                                        <div class="col-lg-4"><select id="selectcountries4_dinner"
                                                                       class="form-control"></select></div>
                                         <div class="col-lg-3"><select name="gmValue" id="gmValue4_dinner"
                                                                       class="form-control">
@@ -1354,11 +1371,11 @@
                                             </select></div>
                                         <div class="col-lg-3">
                                             <button type="button" class="btn btn-success"
-                                                    onclick="getData('gmValue4_dinner','selectcountries4_dinner','carbSum4','fatsSum4','proteinSum4','day4_dinner')">
+                                                    onclick="getData('gmValue4_dinner','selectcountries4_dinner','carbSum4','fatsSum4','proteinSum4','caloriesSum4','day4_dinner')">
                                                 أضف
                                             </button>
                                             <button type="button" class="btn btn-warning"
-                                                    onclick="deleteItem('gmValue4_dinner','selectcountries4_dinner','carbSum4','fatsSum4','proteinSum4','day4_dinner')">
+                                                    onclick="deleteItem('gmValue4_dinner','selectcountries4_dinner','carbSum4','fatsSum4','proteinSum4','caloriesSum4','day4_dinner')">
                                                 حذف
                                             </button>
                                         </div>
@@ -1405,7 +1422,7 @@
                                 <div class="col-lg-12">
 
                                     <h2 class="text-center">مجموع السعرات الحرارية لليوم الرابع</h2>
-                                    <div class="col-lg-4 col-md-4 col-sm-12">
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
                                         <label for="carbSum">carbs </label>
                                         <input type="text" id="carbSum4" class="form-control"
                                                value="{{old('carbSum4')}}"
@@ -1413,7 +1430,7 @@
 
                                                placeholder="مجموع الكربهيدرات">
                                     </div>
-                                    <div class="col-lg-4 col-md-4 col-sm-12">
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
                                         <label for="carbSum">fats </label>
                                         <input type="text" id="fatsSum4" class="form-control"
                                                value="{{old('fatsSum4')}}"
@@ -1421,13 +1438,21 @@
 
                                                placeholder="مجموع الدهون">
                                     </div>
-                                    <div class="col-lg-4 col-md-4 col-sm-12">
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
                                         <label for="carbSum">proteins </label>
                                         <input type="text" id="proteinSum4" class="form-control"
                                                value="{{old('proteinSum4')}}"
                                                name="proteinSum4"
 
                                                placeholder="مجموع البروتينات">
+                                    </div>
+
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                        <label for="caloriesSum4">total calories </label>
+                                        <input type="text" id="caloriesSum4" class="form-control"
+                                               name="caloriesSum4"
+                                               value="{{old('caloriesSum4')}}"
+                                               placeholder="مجموع السعرات">
                                     </div>
                                 </div>
 
@@ -1444,7 +1469,7 @@
                                 <br><br><br>
                                 <div class="form-group text-center">
                                     <div class="col-lg-12">
-                                        <div class="col-lg-3"><select id="continent5" class="form-control">
+                                        <div class="col-lg-2"><select id="continent5" class="form-control">
                                                 <option value="0">all</option>
                                                 <option value="1">carbs</option>
                                                 <option value="2">Fats</option>
@@ -1452,7 +1477,7 @@
 
 
                                             </select></div>
-                                        <div class="col-lg-3"><select id="selectcountries5"
+                                        <div class="col-lg-4"><select id="selectcountries5"
                                                                       class="form-control"></select></div>
                                         <div class="col-lg-3"><select name="gmValue" id="gmValue5" class="form-control">
 
@@ -1465,11 +1490,11 @@
                                             </select></div>
                                         <div class="col-lg-3">
                                             <button type="button" class="btn btn-success"
-                                                    onclick="getData('gmValue5','selectcountries5','carbSum5','fatsSum5','proteinSum5','day5_breakfast')">
+                                                    onclick="getData('gmValue5','selectcountries5','carbSum5','fatsSum5','proteinSum5','caloriesSum5','day5_breakfast')">
                                                 أضف
                                             </button>
                                             <button type="button" class="btn btn-warning"
-                                                    onclick="deleteItem('gmValue5','selectcountries5','carbSum5','fatsSum5','proteinSum5','day5_breakfast')">
+                                                    onclick="deleteItem('gmValue5','selectcountries5','carbSum5','fatsSum5','proteinSum5','caloriesSum5','day5_breakfast')">
                                                 حذف
                                             </button>
                                         </div>
@@ -1497,7 +1522,7 @@
 
                                 <div class="form-group text-center">
                                     <div class="col-lg-12">
-                                        <div class="col-lg-3"><select id="continents5_break1" class="form-control">
+                                        <div class="col-lg-2"><select id="continents5_break1" class="form-control">
                                                 <option value="0">all</option>
                                                 <option value="1">carbs</option>
                                                 <option value="2">Fats</option>
@@ -1505,7 +1530,7 @@
 
 
                                             </select></div>
-                                        <div class="col-lg-3"><select id="selectcountries5_break1"
+                                        <div class="col-lg-4"><select id="selectcountries5_break1"
                                                                       class="form-control"></select></div>
                                         <div class="col-lg-3"><select name="gmValue" id="gmValue5_break1"
                                                                       class="form-control">
@@ -1519,11 +1544,11 @@
                                             </select></div>
                                         <div class="col-lg-3">
                                             <button type="button" class="btn btn-success"
-                                                    onclick="getData('gmValue5_break1','selectcountries5_break1','carbSum5','fatsSum5','proteinSum5','day5_break1')">
+                                                    onclick="getData('gmValue5_break1','selectcountries5_break1','carbSum5','fatsSum5','proteinSum5','caloriesSum5','day5_break1')">
                                                 أضف
                                             </button>
                                             <button type="button" class="btn btn-warning"
-                                                    onclick="deleteItem('gmValue5_break1','selectcountries5_break1','carbSum5','fatsSum5','proteinSum5','day5_break1')">
+                                                    onclick="deleteItem('gmValue5_break1','selectcountries5_break1','carbSum5','fatsSum5','proteinSum5','caloriesSum5','day5_break1')">
                                                 حذف
                                             </button>
                                         </div>
@@ -1552,7 +1577,7 @@
 
                                 <div class="form-group text-center">
                                     <div class="col-lg-12">
-                                        <div class="col-lg-3">
+                                        <div class="col-lg-2">
                                             <select id="continents5_lunch" class="form-control">
                                                 <option value="0">all</option>
                                                 <option value="1">carbs</option>
@@ -1562,7 +1587,7 @@
 
                                             </select>
                                         </div>
-                                        <div class="col-lg-3"><select id="selectcountries5_lunch"
+                                        <div class="col-lg-4"><select id="selectcountries5_lunch"
                                                                       class="form-control"></select></div>
                                         <div class="col-lg-3"><select id="gmValue5_lunch" class="form-control">
 
@@ -1575,11 +1600,11 @@
                                             </select></div>
                                         <div class="col-lg-3">
                                             <button type="button" class="btn btn-success"
-                                                    onclick="getData('gmValue5_lunch','selectcountries5_lunch','carbSum5','fatsSum5','proteinSum5','day5_lunch')">
+                                                    onclick="getData('gmValue5_lunch','selectcountries5_lunch','carbSum5','fatsSum5','proteinSum5','caloriesSum5','day5_lunch')">
                                                 أضف
                                             </button>
                                             <button type="button" class="btn btn-warning"
-                                                    onclick="deleteItem('gmValue5_lunch','selectcountries5_lunch','carbSum5','fatsSum5','proteinSum5','day5_lunch')">
+                                                    onclick="deleteItem('gmValue5_lunch','selectcountries5_lunch','carbSum5','fatsSum5','proteinSum5','caloriesSum5','day5_lunch')">
                                                 حذف
                                             </button>
                                         </div>
@@ -1608,7 +1633,7 @@
 
                                 <div class="form-group text-center">
                                     <div class="col-lg-12">
-                                        <div class="col-lg-3"><select id="continents5_break2" class="form-control">
+                                        <div class="col-lg-2"><select id="continents5_break2" class="form-control">
                                                 <option value="0">all</option>
                                                 <option value="1">carbs</option>
                                                 <option value="2">Fats</option>
@@ -1616,7 +1641,7 @@
 
 
                                             </select></div>
-                                        <div class="col-lg-3"><select id="selectcountries5_break2"
+                                        <div class="col-lg-4"><select id="selectcountries5_break2"
                                                                       class="form-control"></select></div>
                                         <div class="col-lg-3"><select name="gmValue" id="gmValue5_break2"
                                                                       class="form-control">
@@ -1630,11 +1655,11 @@
                                             </select></div>
                                         <div class="col-lg-3">
                                             <button type="button" class="btn btn-success"
-                                                    onclick="getData('gmValue5_break2','selectcountries5_break2','carbSum5','fatsSum5','proteinSum5','day5_break2')">
+                                                    onclick="getData('gmValue5_break2','selectcountries5_break2','carbSum5','fatsSum5','proteinSum5','caloriesSum5','day5_break2')">
                                                 أضف
                                             </button>
                                             <button type="button" class="btn btn-warning"
-                                                    onclick="deleteItem('gmValue5_break2','selectcountries5_break2','carbSum5','fatsSum5','proteinSum5','day5_break2')">
+                                                    onclick="deleteItem('gmValue5_break2','selectcountries5_break2','carbSum5','fatsSum5','proteinSum5','caloriesSum5','day5_break2')">
                                                 حذف
                                             </button>
                                         </div>
@@ -1663,7 +1688,7 @@
 
                                 <div class="form-group text-center">
                                     <div class="col-lg-12">
-                                        <div class="col-lg-3"><select id="continents5_dinner" class="form-control">
+                                        <div class="col-lg-2"><select id="continents5_dinner" class="form-control">
                                                 <option value="0">all</option>
                                                 <option value="1">carbs</option>
                                                 <option value="2">Fats</option>
@@ -1671,7 +1696,7 @@
 
 
                                             </select></div>
-                                        <div class="col-lg-3"><select id="selectcountries5_dinner"
+                                        <div class="col-lg-4"><select id="selectcountries5_dinner"
                                                                       class="form-control"></select></div>
                                         <div class="col-lg-3"><select name="gmValue" id="gmValue5_dinner"
                                                                       class="form-control" class="form-control">
@@ -1685,11 +1710,11 @@
                                             </select></div>
                                         <div class="col-lg-3">
                                             <button type="button" class="btn btn-success"
-                                                    onclick="getData('gmValue5_dinner','selectcountries5_dinner','carbSum5','fatsSum5','proteinSum5','day5_dinner')">
+                                                    onclick="getData('gmValue5_dinner','selectcountries5_dinner','carbSum5','fatsSum5','proteinSum5','caloriesSum5','day5_dinner')">
                                                 أضف
                                             </button>
                                             <button type="button" class="btn btn-warning"
-                                                    onclick="deleteItem('gmValue5_dinner','selectcountries5_dinner','carbSum5','fatsSum5','proteinSum5','day5_dinner')">
+                                                    onclick="deleteItem('gmValue5_dinner','selectcountries5_dinner','carbSum5','fatsSum5','proteinSum5','caloriesSum5','day5_dinner')">
                                                 حذف
                                             </button>
                                         </div>
@@ -1734,7 +1759,7 @@
                                 <div class="col-lg-12">
 
                                     <h2 class="text-center">مجموع السعرات الحرارية لليوم الخامس</h2>
-                                    <div class="col-lg-4 col-md-4 col-sm-12">
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
                                         <label for="carbSum">carbs </label>
                                         <input type="text" id="carbSum5" class="form-control"
                                                value="{{old('carbSum5')}}"
@@ -1742,7 +1767,7 @@
 
                                                placeholder="مجموع الكربهيدرات">
                                     </div>
-                                    <div class="col-lg-4 col-md-4 col-sm-12">
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
                                         <label for="carbSum">fats </label>
                                         <input type="text" id="fatsSum5" class="form-control"
                                                value="{{old('fatsSum5')}}"
@@ -1750,7 +1775,7 @@
 
                                                placeholder="مجموع الدهون">
                                     </div>
-                                    <div class="col-lg-4 col-md-4 col-sm-12">
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
                                         <label for="carbSum">protein </label>
                                         <input type="text" id="proteinSum5" class="form-control"
                                                value="{{old('proteinSum5')}}"
@@ -1758,6 +1783,16 @@
 
                                                placeholder="مجموع البروتينات">
                                     </div>
+
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                        <label for="caloriesSum5">total calories </label>
+                                        <input type="text" id="caloriesSum5" class="form-control"
+                                               name="caloriesSum5"
+                                               value="{{old('caloriesSum5')}}"
+                                               placeholder="مجموع السعرات">
+                                    </div>
+
+
                                 </div>
 
 
@@ -1773,7 +1808,7 @@
                                 <br><br><br>
                                 <div class="form-group text-center">
                                     <div class="col-lg-12">
-                                        <div class="col-lg-3"><select id="continent6" class="form-control">
+                                        <div class="col-lg-2"><select id="continent6" class="form-control">
                                                 <option value="0">all</option>
                                                 <option value="1">carbs</option>
                                                 <option value="2">Fats</option>
@@ -1781,7 +1816,7 @@
 
 
                                             </select></div>
-                                        <div class="col-lg-3"><select id="selectcountries6"
+                                        <div class="col-lg-4"><select id="selectcountries6"
                                                                       class="form-control"></select></div>
                                         <div class="col-lg-3"><select name="gmValue" id="gmValue6" class="form-control">
 
@@ -1794,11 +1829,11 @@
                                             </select></div>
                                         <div class="col-lg-3">
                                             <button type="button" class="btn btn-success"
-                                                    onclick="getData('gmValue6','selectcountries6','carbSum6','fatsSum6','proteinSum6','day6_breakfast')">
+                                                    onclick="getData('gmValue6','selectcountries6','carbSum6','fatsSum6','proteinSum6','caloriesSum6','day6_breakfast')">
                                                 أضف
                                             </button>
                                             <button type="button" class="btn btn-warning"
-                                                    onclick="deleteItem('gmValue6','selectcountries6','carbSum6','fatsSum6','proteinSum6','day6_breakfast')">
+                                                    onclick="deleteItem('gmValue6','selectcountries6','carbSum6','fatsSum6','proteinSum6','caloriesSum6','day6_breakfast')">
                                                 حذف
                                             </button>
                                         </div>
@@ -1827,7 +1862,7 @@
 
                                 <div class="form-group text-center">
                                     <div class="col-lg-12">
-                                        <div class="col-lg-3"><select id="continents6_break1" class="form-control">
+                                        <div class="col-lg-2"><select id="continents6_break1" class="form-control">
                                                 <option value="0">all</option>
                                                 <option value="1">carbs</option>
                                                 <option value="2">Fats</option>
@@ -1835,7 +1870,7 @@
 
 
                                             </select></div>
-                                        <div class="col-lg-3"><select id="selectcountries6_break1"
+                                        <div class="col-lg-4"><select id="selectcountries6_break1"
                                                                       class="form-control"></select></div>
                                         <div class="col-lg-3"><select name="gmValue" id="gmValue6_break1"
                                                                       class="form-control">
@@ -1849,11 +1884,11 @@
                                             </select></div>
                                         <div class="col-lg-3">
                                             <button type="button" class="btn btn-success"
-                                                    onclick="getData('gmValue6_break1','selectcountries6_break1','carbSum6','fatsSum6','proteinSum6','day6_break1')">
+                                                    onclick="getData('gmValue6_break1','selectcountries6_break1','carbSum6','fatsSum6','proteinSum6','caloriesSum6','day6_break1')">
                                                 أضف
                                             </button>
                                             <button type="button" class="btn btn-warning"
-                                                    onclick="deleteItem('gmValue6_break1','selectcountries6_break1','carbSum6','fatsSum6','proteinSum6','day6_break1')">
+                                                    onclick="deleteItem('gmValue6_break1','selectcountries6_break1','carbSum6','fatsSum6','proteinSum6','caloriesSum6','day6_break1')">
                                                 حذف
                                             </button>
                                         </div>
@@ -1883,7 +1918,7 @@
                                 <div class="form-group text-center">
 
                                     <div class="col-lg-12">
-                                        <div class="col-lg-3">
+                                        <div class="col-lg-2">
                                             <select id="continents6_lunch" class="form-control">
                                                 <option value="0">all</option>
                                                 <option value="1">carbs</option>
@@ -1893,7 +1928,7 @@
 
                                             </select>
                                         </div>
-                                        <div class="col-lg-3"><select id="selectcountries6_lunch"
+                                        <div class="col-lg-4"><select id="selectcountries6_lunch"
                                                                       class="form-control"></select></div>
                                         <div class="col-lg-3"><select id="gmValue6_lunch" class="form-control">
 
@@ -1906,11 +1941,11 @@
                                             </select></div>
                                         <div class="col-lg-3">
                                             <button type="button" class="btn btn-success"
-                                                    onclick="getData('gmValue6_lunch','selectcountries6_lunch','carbSum6','fatsSum6','proteinSum6','day6_lunch')">
+                                                    onclick="getData('gmValue6_lunch','selectcountries6_lunch','carbSum6','fatsSum6','proteinSum6','caloriesSum6','day6_lunch')">
                                                 أضف
                                             </button>
                                             <button type="button" class="btn btn-warning"
-                                                    onclick="deleteItem('gmValue6_lunch','selectcountries6_lunch','carbSum6','fatsSum6','proteinSum6','day6_lunch')">
+                                                    onclick="deleteItem('gmValue6_lunch','selectcountries6_lunch','carbSum6','fatsSum6','proteinSum6','caloriesSum6','day6_lunch')">
                                                 حذف
                                             </button>
                                         </div>
@@ -1938,7 +1973,7 @@
 
                                 <div class="form-group text-center">
                                     <div class="col-lg-12">
-                                        <div class="col-lg-3"><select id="continents6_break2" class="form-control">
+                                        <div class="col-lg-2"><select id="continents6_break2" class="form-control">
                                                 <option value="0">all</option>
                                                 <option value="1">carbs</option>
                                                 <option value="2">Fats</option>
@@ -1946,7 +1981,7 @@
 
 
                                             </select></div>
-                                        <div class="col-lg-3"><select id="selectcountries6_break2"
+                                        <div class="col-lg-4"><select id="selectcountries6_break2"
                                                                       class="form-control"></select></div>
                                         <div class="col-lg-3"><select name="gmValue" id="gmValue6_break2"
                                                                       class="form-control">
@@ -1960,11 +1995,11 @@
                                             </select></div>
                                         <div class="col-lg-3">
                                             <button type="button" class="btn btn-success"
-                                                    onclick="getData('gmValue6_break2','selectcountries6_break2','carbSum6','fatsSum6','proteinSum6','day6_break2')">
+                                                    onclick="getData('gmValue6_break2','selectcountries6_break2','carbSum6','fatsSum6','proteinSum6','caloriesSum6','day6_break2')">
                                                 أضف
                                             </button>
                                             <button type="button" class="btn btn-warning"
-                                                    onclick="deleteItem('gmValue6_break2','selectcountries6_break2','carbSum6','fatsSum6','proteinSum6','day6_break2')">
+                                                    onclick="deleteItem('gmValue6_break2','selectcountries6_break2','carbSum6','fatsSum6','proteinSum6','caloriesSum6','day6_break2')">
                                                 حذف
                                             </button>
                                         </div>
@@ -1993,7 +2028,7 @@
 
                                 <div class="form-group text-center">
                                     <div class="col-lg-12">
-                                        <div class="col-lg-3">
+                                        <div class="col-lg-2">
                                             <select id="continents6_dinner" class="form-control">
                                                 <option value="0">all</option>
                                                 <option value="1">carbs</option>
@@ -2001,7 +2036,7 @@
                                                 <option value="3">proteins</option>
                                             </select>
                                         </div>
-                                        <div class="col-lg-3">
+                                        <div class="col-lg-4">
                                             <select id="selectcountries6_dinner" class="form-control"></select>
                                         </div>
                                         <div class="col-lg-3"><select name="gmValue" id="gmValue6_dinner"
@@ -2016,11 +2051,11 @@
                                             </select></div>
                                         <div class="col-lg-3">
                                             <button type="button" class="btn btn-success"
-                                                    onclick="getData('gmValue6_dinner','selectcountries6_dinner','carbSum6','fatsSum6','proteinSum6','day6_dinner')">
+                                                    onclick="getData('gmValue6_dinner','selectcountries6_dinner','carbSum6','fatsSum6','proteinSum6','caloriesSum6','day6_dinner')">
                                                 أضف
                                             </button>
                                             <button type="button" class="btn btn-warning"
-                                                    onclick="deleteItem('gmValue6_dinner','selectcountries6_dinner','carbSum6','fatsSum6','proteinSum6','day6_dinner')">
+                                                    onclick="deleteItem('gmValue6_dinner','selectcountries6_dinner','carbSum6','fatsSum6','proteinSum6','caloriesSum6','day6_dinner')">
                                                 حذف
                                             </button>
                                         </div>
@@ -2067,7 +2102,7 @@
                                 <div class="col-lg-12">
 
                                     <h2 class="text-center">مجموع السعرات الحرارية لليوم السادس</h2>
-                                    <div class="col-lg-4 col-md-4 col-sm-12">
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
                                         <label for="carbSum">carbs </label>
                                         <input type="text" id="carbSum6" class="form-control"
                                                value="{{old('carbSum6')}}"
@@ -2075,7 +2110,7 @@
 
                                                placeholder="مجموع الكربهيدرات">
                                     </div>
-                                    <div class="col-lg-4 col-md-4 col-sm-12">
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
                                         <label for="carbSum">fats </label>
                                         <input type="text" id="fatsSum6" class="form-control"
                                                value="{{old('fatsSum6')}}"
@@ -2083,13 +2118,21 @@
 
                                                placeholder="مجموع الدهون">
                                     </div>
-                                    <div class="col-lg-4 col-md-4 col-sm-12">
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
                                         <label for="carbSum">proteins </label>
                                         <input type="text" id="proteinSum6" class="form-control"
                                                value="{{old('proteinSum6')}}"
                                                name="proteinSum6"
 
                                                placeholder="مجموع البروتينات">
+                                    </div>
+
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                        <label for="caloriesSum6">total calories </label>
+                                        <input type="text" id="caloriesSum6" class="form-control"
+                                               name="caloriesSum6"
+                                               value="{{old('caloriesSum6')}}"
+                                               placeholder="مجموع السعرات">
                                     </div>
                                 </div>
 
@@ -2106,7 +2149,7 @@
                                 <br><br><br>
                                 <div class="form-group text-center">
                                     <div class="col-lg-12">
-                                        <div class="col-lg-3"><select id="continent7" class="form-control">
+                                        <div class="col-lg-2"><select id="continent7" class="form-control">
                                                 <option value="0">all</option>
                                                 <option value="1">carbs</option>
                                                 <option value="2">Fats</option>
@@ -2114,7 +2157,7 @@
 
 
                                             </select></div>
-                                        <div class="col-lg-3"><select id="selectcountries7"
+                                        <div class="col-lg-4"><select id="selectcountries7"
                                                                       class="form-control"></select></div>
                                         <div class="col-lg-3"><select name="gmValue" id="gmValue7" class="form-control">
 
@@ -2127,11 +2170,11 @@
                                             </select></div>
                                         <div class="col-lg-3">
                                             <button type="button" class="btn btn-success"
-                                                    onclick="getData('gmValue7','selectcountries7','carbSum7','fatsSum7','proteinSum7','day7_breakfast')">
+                                                    onclick="getData('gmValue7','selectcountries7','carbSum7','fatsSum7','proteinSum7','caloriesSum7','day7_breakfast')">
                                                 أضف
                                             </button>
                                             <button type="button" class="btn btn-warning"
-                                                    onclick="deleteItem('gmValue7','selectcountries7','carbSum7','fatsSum7','proteinSum7','day7_breakfast')">
+                                                    onclick="deleteItem('gmValue7','selectcountries7','carbSum7','fatsSum7','proteinSum7','caloriesSum7','day7_breakfast')">
                                                 حذف
                                             </button>
                                         </div>
@@ -2160,7 +2203,7 @@
 
                                 <div class="form-group text-center">
                                     <div class="col-lg-12">
-                                        <div class="col-lg-3"><select id="continents7_break1" class="form-control">
+                                        <div class="col-lg-2"><select id="continents7_break1" class="form-control">
                                                 <option value="0">all</option>
                                                 <option value="1">carbs</option>
                                                 <option value="2">Fats</option>
@@ -2168,7 +2211,7 @@
 
 
                                             </select></div>
-                                        <div class="col-lg-3"><select id="selectcountries7_break1"
+                                        <div class="col-lg-4"><select id="selectcountries7_break1"
                                                                       class="form-control"></select></div>
                                         <div class="col-lg-3"><select name="gmValue" id="gmValue7_break1"
                                                                       class="form-control">
@@ -2182,11 +2225,11 @@
                                             </select></div>
                                         <div class="col-lg-3">
                                             <button type="button" class="btn btn-success"
-                                                    onclick="getData('gmValue7_break1','selectcountries7_break1','carbSum7','fatsSum7','proteinSum7','day7_break1')">
+                                                    onclick="getData('gmValue7_break1','selectcountries7_break1','carbSum7','fatsSum7','proteinSum7','caloriesSum7','day7_break1')">
                                                 أضف
                                             </button>
                                             <button type="button" class="btn btn-warning"
-                                                    onclick="deleteItem('gmValue7_break1','selectcountries7_break1','carbSum7','fatsSum7','proteinSum7','day7_break1')">
+                                                    onclick="deleteItem('gmValue7_break1','selectcountries7_break1','carbSum7','fatsSum7','proteinSum7','caloriesSum7','day7_break1')">
                                                 حذف
                                             </button>
                                         </div>
@@ -2215,7 +2258,7 @@
 
                                 <div class="form-group text-center">
                                     <div class="col-lg-12">
-                                        <div class="col-lg-3">
+                                        <div class="col-lg-2">
                                             <select id="continents7_lunch" class="form-control">
                                                 <option value="0">all</option>
                                                 <option value="1">carbs</option>
@@ -2225,7 +2268,7 @@
 
                                             </select>
                                         </div>
-                                        <div class="col-lg-3"><select id="selectcountries7_lunch"
+                                        <div class="col-lg-4"><select id="selectcountries7_lunch"
                                                                       class="form-control"></select></div>
                                         <div class="col-lg-3"><select id="gmValue7_lunch" class="form-control">
 
@@ -2238,11 +2281,11 @@
                                             </select></div>
                                         <div class="col-lg-3">
                                             <button type="button" class="btn btn-success"
-                                                    onclick="getData('gmValue7_lunch','selectcountries7_lunch','carbSum7','fatsSum7','proteinSum7','day7_lunch')">
+                                                    onclick="getData('gmValue7_lunch','selectcountries7_lunch','carbSum7','fatsSum7','proteinSum7','caloriesSum7','day7_lunch')">
                                                 أضف
                                             </button>
                                             <button type="button" class="btn btn-warning"
-                                                    onclick="deleteItem('gmValue7_lunch','selectcountries7_lunch','carbSum7','fatsSum7','proteinSum7','day7_lunch')">
+                                                    onclick="deleteItem('gmValue7_lunch','selectcountries7_lunch','carbSum7','fatsSum7','proteinSum7','caloriesSum7','day7_lunch')">
                                                 حذف
                                             </button>
                                         </div>
@@ -2271,7 +2314,7 @@
 
                                 <div class="form-group text-center">
                                     <div class="col-lg-12">
-                                        <div class="col-lg-3"><select id="continents7_break2" class="form-control">
+                                        <div class="col-lg-2"><select id="continents7_break2" class="form-control">
                                                 <option value="0">all</option>
                                                 <option value="1">carbs</option>
                                                 <option value="2">Fats</option>
@@ -2279,7 +2322,7 @@
 
 
                                             </select></div>
-                                        <div class="col-lg-3"><select id="selectcountries7_break2"
+                                        <div class="col-lg-4"><select id="selectcountries7_break2"
                                                                       class="form-control"></select></div>
                                         <div class="col-lg-3"><select name="gmValue" id="gmValue7_break2"
                                                                       class="form-control">
@@ -2293,11 +2336,11 @@
                                             </select></div>
                                         <div class="col-lg-3">
                                             <button type="button" class="btn btn-success"
-                                                    onclick="getData('gmValue7_break2','selectcountries7_break2','carbSum7','fatsSum7','proteinSum7','day7_break2')">
+                                                    onclick="getData('gmValue7_break2','selectcountries7_break2','carbSum7','fatsSum7','proteinSum7','caloriesSum7','day7_break2')">
                                                 أضف
                                             </button>
                                             <button type="button" class="btn btn-warning"
-                                                    onclick="deleteItem('gmValue7_break2','selectcountries7_break2','carbSum7','fatsSum7','proteinSum7','day7_break2')">
+                                                    onclick="deleteItem('gmValue7_break2','selectcountries7_break2','carbSum7','fatsSum7','proteinSum7','caloriesSum7','day7_break2')">
                                                 حذف
                                             </button>
                                         </div>
@@ -2327,7 +2370,7 @@
 
                                 <div class="form-group text-center">
                                     <div class="col-lg-12">
-                                        <div class="col-lg-3"><select id="continents7_dinner" class="form-control">
+                                        <div class="col-lg-2"><select id="continents7_dinner" class="form-control">
                                                 <option value="0">all</option>
                                                 <option value="1">carbs</option>
                                                 <option value="2">Fats</option>
@@ -2335,7 +2378,7 @@
 
 
                                             </select></div>
-                                        <div class="col-lg-3"><select id="selectcountries7_dinner"
+                                        <div class="col-lg-4"><select id="selectcountries7_dinner"
                                                                       class="form-control"></select></div>
                                         <div class="col-lg-3"><select name="gmValue" id="gmValue7_dinner"
                                                                       class="form-control">
@@ -2349,11 +2392,11 @@
                                             </select></div>
                                         <div class="col-lg-3">
                                             <button type="button" class="btn btn-success"
-                                                    onclick="getData('gmValue7_dinner','selectcountries7_dinner','carbSum7','fatsSum7','proteinSum7','day7_dinner')">
+                                                    onclick="getData('gmValue7_dinner','selectcountries7_dinner','carbSum7','fatsSum7','proteinSum7','caloriesSum7','day7_dinner')">
                                                 أضف
                                             </button>
                                             <button type="button" class="btn btn-warning"
-                                                    onclick="deleteItem('gmValue7_dinner','selectcountries7_dinner','carbSum7','fatsSum7','proteinSum7','day7_dinner')">
+                                                    onclick="deleteItem('gmValue7_dinner','selectcountries7_dinner','carbSum7','fatsSum7','proteinSum7','caloriesSum7','day7_dinner')">
                                                 حذف
                                             </button>
                                         </div>
@@ -2400,7 +2443,7 @@
                                 <div class="col-lg-12">
 
                                     <h2 class="text-center">مجموع السعرات الحرارية لليوم السابع</h2>
-                                    <div class="col-lg-4 col-md-4 col-sm-12">
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
                                         <label for="carbSum">carbs </label>
                                         <input type="text" id="carbSum7" class="form-control"
                                                value="{{old('carbSum7')}}"
@@ -2408,7 +2451,7 @@
 
                                                placeholder="مجموع الكربهيدرات">
                                     </div>
-                                    <div class="col-lg-4 col-md-4 col-sm-12">
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
                                         <label for="carbSum">fats </label>
                                         <input type="text" id="fatsSum7" class="form-control"
                                                value="{{old('fatsSum7')}}"
@@ -2416,7 +2459,7 @@
 
                                                placeholder="مجموع الدهون">
                                     </div>
-                                    <div class="col-lg-4 col-md-4 col-sm-12">
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
                                         <label for="carbSum">proteins </label>
                                         <input type="text" id="proteinSum7" class="form-control"
                                                value="{{old('proteinSum7')}}"
@@ -2424,12 +2467,19 @@
 
                                                placeholder="مجموع البروتينات">
                                     </div>
+
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                        <label for="caloriesSum7">total calories </label>
+                                        <input type="text" id="caloriesSum7" class="form-control"
+                                               name="caloriesSum7"
+                                               value="{{old('caloriesSum7')}}"
+                                               placeholder="مجموع السعرات">
+                                    </div>
                                 </div>
 
 
                             </div>
                         </div>
-
 
 
                         <input type="submit" name="submit" value="حفظ" class="btn btn-success btn-block">
@@ -2472,6 +2522,9 @@
 
     </script>
 
+
+
+
     <script>
 
 
@@ -2483,7 +2536,7 @@
 
 
         carb.push('<?php echo $item->food_name . ' - ' . $item->unit . ' - ' . $item->carb_calories
-            . ' - ' . $item->fats_calories . ' - ' . $item->proteins_calories  ; ?>');
+            . ' - ' . $item->fats_calories . ' - ' . $item->proteins_calories .' - '.$item->calories  ; ?>');
 
             <?php }?>
 
@@ -2495,8 +2548,7 @@
         ?>
 
         carbs.push('<?php echo $item->food_name . ' - ' . $item->unit . ' - ' . $item->carb_calories
-            . ' - ' . $item->fats_calories . ' - ' . $item->proteins_calories ; ?>');
-
+            . ' - ' . $item->fats_calories . ' - ' . $item->proteins_calories .' - '.$item->calories  ; ?>');
             <?php }?>
 
 
@@ -2507,7 +2559,7 @@
         ?>
 
         fats.push('<?php echo $item->food_name . ' - ' . $item->unit . ' - ' . $item->carb_calories
-            . ' - ' . $item->fats_calories . ' - ' . $item->proteins_calories  ; ?>');
+            . ' - ' . $item->fats_calories . ' - ' . $item->proteins_calories .' - '.$item->calories  ; ?>');
 
             <?php }?>
 
@@ -2519,889 +2571,13 @@
         ?>
 
         proteins.push('<?php echo $item->food_name . ' - ' . $item->unit . ' - ' . $item->carb_calories
-            . ' - ' . $item->fats_calories . ' - ' . $item->proteins_calories  ; ?>');
+            . ' - ' . $item->fats_calories . ' - ' . $item->proteins_calories .' - '.$item->calories  ; ?>');
 
         <?php }?>
 
     </script>
 
 
-
-    {{-- day 1 deleting data --}}
-
-    <script>
-
-        function initSelectors() {
-            // next 2 statements should generate error message, see console
-            MAIN.createRelatedSelector();
-            MAIN.createRelatedSelector(document.querySelector('#continentsg'));
-
-            //countries
-            MAIN.createRelatedSelector
-            (document.querySelector('#continentsg')           // from select element
-                , document.querySelector('#selectcountriesg')      // to select element
-                , {                                               // values object
-
-
-                    carbs: carbs,
-                    Fats: fats,
-                    proteins: proteins
-                }
-                , function (a, b) {
-                    return a > b ? 1 : a < b ? -1 : 0;
-                }   // sort method
-            );
-
-
-        }
-
-        //create MAIN namespace
-        (function (ns) { // don't pollute the global namespace
-
-            function create(from, to, obj, srt) {
-                if (!from) {
-                    throw CreationError('create: parameter selector [from] missing');
-                }
-                if (!to) {
-                    throw CreationError('create: parameter related selector [to] missing');
-                }
-                if (!obj) {
-                    throw CreationError('create: related filter definition object [obj] missing');
-                }
-
-                //retrieve all options from obj and add it
-                obj.all = (function (o) {
-                    var a = [];
-                    for (var l in o) {
-                        a = /array/i.test(o[l].constructor) ? a.concat(o[l]) : a;
-                    }
-                    return a.sort(srt);
-                }(obj));
-                // initialize and populate to-selector with all
-                populator.call(from
-                    , null
-                    , to
-                    , obj
-                    , srt
-                );
-
-                // assign handler
-                from.onchange = populator;
-
-                function initStatics(fn, obj) {
-                    for (var l in obj) {
-                        if (obj.hasOwnProperty(l)) {
-                            fn[l] = obj[l];
-                        }
-                    }
-                    fn.initialized = true;
-                }
-
-                function populator(e, relatedto, obj, srt) {
-                    // set pseudo statics
-                    var self = populator;
-                    if (!self.initialized) {
-                        initStatics(self, {
-                            optselects: obj,
-                            optselectsall: obj.all,
-                            relatedTo: relatedto,
-                            sorter: srt || false
-                        });
-                    }
-
-                    if (!self.relatedTo) {
-                        throw 'not related to a selector';
-                    }
-                    // populate to-selector from filter/all
-                    var optsfilter = this.selectedIndex < 1
-                        ? self.optselectsall
-                        : self.optselects[this.options[this.selectedIndex].firstChild.nodeValue]
-                        , cselect = self.relatedTo
-                        , opts = cselect.options;
-                    if (self.sorter) optsfilter.sort(self.sorter);
-                    opts.length = 0;
-                    for (var i = 0; i < optsfilter.length; i += 1) {
-                        opts[i] = new Option(optsfilter[i], i);
-                    }
-                }
-            }
-
-            // custom Error
-            function CreationError(mssg) {
-                return {name: 'CreationError', message: mssg};
-            }
-
-            // return the create method with some error handling
-            window[ns] = {
-                createRelatedSelector: function (from, to, obj, srt) {
-                    try {
-                        if (arguments.length < 1) {
-                            throw CreationError('no parameters');
-                        }
-                        create.call(null, from, to, obj, srt);
-                    }
-                    catch (e) {
-                        console.log('createRelatedSelector ->', e.name, '\n'
-                            + e.message +
-                            '\ncheck parameters');
-                    }
-                }
-            };
-        }('MAIN'));
-        //initialize
-        initSelectors();
-    </script>
-
-    {{-- day 2 deleting data --}}
-
-    <script>
-
-        function initSelectors() {
-            // next 2 statements should generate error message, see console
-            MAIN.createRelatedSelector();
-            MAIN.createRelatedSelector(document.querySelector('#continentsg2'));
-
-            //countries
-            MAIN.createRelatedSelector
-            (document.querySelector('#continentsg2')           // from select element
-                , document.querySelector('#selectcountriesg2')      // to select element
-                , {                                               // values object
-
-
-                    carbs: carbs,
-                    Fats: fats,
-                    proteins: proteins
-                }
-                , function (a, b) {
-                    return a > b ? 1 : a < b ? -1 : 0;
-                }   // sort method
-            );
-
-
-        }
-
-        //create MAIN namespace
-        (function (ns) { // don't pollute the global namespace
-
-            function create(from, to, obj, srt) {
-                if (!from) {
-                    throw CreationError('create: parameter selector [from] missing');
-                }
-                if (!to) {
-                    throw CreationError('create: parameter related selector [to] missing');
-                }
-                if (!obj) {
-                    throw CreationError('create: related filter definition object [obj] missing');
-                }
-
-                //retrieve all options from obj and add it
-                obj.all = (function (o) {
-                    var a = [];
-                    for (var l in o) {
-                        a = /array/i.test(o[l].constructor) ? a.concat(o[l]) : a;
-                    }
-                    return a.sort(srt);
-                }(obj));
-                // initialize and populate to-selector with all
-                populator.call(from
-                    , null
-                    , to
-                    , obj
-                    , srt
-                );
-
-                // assign handler
-                from.onchange = populator;
-
-                function initStatics(fn, obj) {
-                    for (var l in obj) {
-                        if (obj.hasOwnProperty(l)) {
-                            fn[l] = obj[l];
-                        }
-                    }
-                    fn.initialized = true;
-                }
-
-                function populator(e, relatedto, obj, srt) {
-                    // set pseudo statics
-                    var self = populator;
-                    if (!self.initialized) {
-                        initStatics(self, {
-                            optselects: obj,
-                            optselectsall: obj.all,
-                            relatedTo: relatedto,
-                            sorter: srt || false
-                        });
-                    }
-
-                    if (!self.relatedTo) {
-                        throw 'not related to a selector';
-                    }
-                    // populate to-selector from filter/all
-                    var optsfilter = this.selectedIndex < 1
-                        ? self.optselectsall
-                        : self.optselects[this.options[this.selectedIndex].firstChild.nodeValue]
-                        , cselect = self.relatedTo
-                        , opts = cselect.options;
-                    if (self.sorter) optsfilter.sort(self.sorter);
-                    opts.length = 0;
-                    for (var i = 0; i < optsfilter.length; i += 1) {
-                        opts[i] = new Option(optsfilter[i], i);
-                    }
-                }
-            }
-
-            // custom Error
-            function CreationError(mssg) {
-                return {name: 'CreationError', message: mssg};
-            }
-
-            // return the create method with some error handling
-            window[ns] = {
-                createRelatedSelector: function (from, to, obj, srt) {
-                    try {
-                        if (arguments.length < 1) {
-                            throw CreationError('no parameters');
-                        }
-                        create.call(null, from, to, obj, srt);
-                    }
-                    catch (e) {
-                        console.log('createRelatedSelector ->', e.name, '\n'
-                            + e.message +
-                            '\ncheck parameters');
-                    }
-                }
-            };
-        }('MAIN'));
-        //initialize
-        initSelectors();
-    </script>
-
-    {{-- day 3 deleting data --}}
-
-    <script>
-
-        function initSelectors() {
-            // next 2 statements should generate error message, see console
-            MAIN.createRelatedSelector();
-            MAIN.createRelatedSelector(document.querySelector('#continentsg3'));
-
-            //countries
-            MAIN.createRelatedSelector
-            (document.querySelector('#continentsg3')           // from select element
-                , document.querySelector('#selectcountriesg3')      // to select element
-                , {                                               // values object
-
-
-                    carbs: carbs,
-                    Fats: fats,
-                    proteins: proteins
-                }
-                , function (a, b) {
-                    return a > b ? 1 : a < b ? -1 : 0;
-                }   // sort method
-            );
-
-
-        }
-
-        //create MAIN namespace
-        (function (ns) { // don't pollute the global namespace
-
-            function create(from, to, obj, srt) {
-                if (!from) {
-                    throw CreationError('create: parameter selector [from] missing');
-                }
-                if (!to) {
-                    throw CreationError('create: parameter related selector [to] missing');
-                }
-                if (!obj) {
-                    throw CreationError('create: related filter definition object [obj] missing');
-                }
-
-                //retrieve all options from obj and add it
-                obj.all = (function (o) {
-                    var a = [];
-                    for (var l in o) {
-                        a = /array/i.test(o[l].constructor) ? a.concat(o[l]) : a;
-                    }
-                    return a.sort(srt);
-                }(obj));
-                // initialize and populate to-selector with all
-                populator.call(from
-                    , null
-                    , to
-                    , obj
-                    , srt
-                );
-
-                // assign handler
-                from.onchange = populator;
-
-                function initStatics(fn, obj) {
-                    for (var l in obj) {
-                        if (obj.hasOwnProperty(l)) {
-                            fn[l] = obj[l];
-                        }
-                    }
-                    fn.initialized = true;
-                }
-
-                function populator(e, relatedto, obj, srt) {
-                    // set pseudo statics
-                    var self = populator;
-                    if (!self.initialized) {
-                        initStatics(self, {
-                            optselects: obj,
-                            optselectsall: obj.all,
-                            relatedTo: relatedto,
-                            sorter: srt || false
-                        });
-                    }
-
-                    if (!self.relatedTo) {
-                        throw 'not related to a selector';
-                    }
-                    // populate to-selector from filter/all
-                    var optsfilter = this.selectedIndex < 1
-                        ? self.optselectsall
-                        : self.optselects[this.options[this.selectedIndex].firstChild.nodeValue]
-                        , cselect = self.relatedTo
-                        , opts = cselect.options;
-                    if (self.sorter) optsfilter.sort(self.sorter);
-                    opts.length = 0;
-                    for (var i = 0; i < optsfilter.length; i += 1) {
-                        opts[i] = new Option(optsfilter[i], i);
-                    }
-                }
-            }
-
-            // custom Error
-            function CreationError(mssg) {
-                return {name: 'CreationError', message: mssg};
-            }
-
-            // return the create method with some error handling
-            window[ns] = {
-                createRelatedSelector: function (from, to, obj, srt) {
-                    try {
-                        if (arguments.length < 1) {
-                            throw CreationError('no parameters');
-                        }
-                        create.call(null, from, to, obj, srt);
-                    }
-                    catch (e) {
-                        console.log('createRelatedSelector ->', e.name, '\n'
-                            + e.message +
-                            '\ncheck parameters');
-                    }
-                }
-            };
-        }('MAIN'));
-        //initialize
-        initSelectors();
-    </script>
-
-    {{-- day 4 deleting data --}}
-
-    <script>
-
-        function initSelectors() {
-            // next 2 statements should generate error message, see console
-            MAIN.createRelatedSelector();
-            MAIN.createRelatedSelector(document.querySelector('#continentsg4'));
-
-            //countries
-            MAIN.createRelatedSelector
-            (document.querySelector('#continentsg4')           // from select element
-                , document.querySelector('#selectcountriesg4')      // to select element
-                , {                                               // values object
-
-
-                    carbs: carbs,
-                    Fats: fats,
-                    proteins: proteins
-                }
-                , function (a, b) {
-                    return a > b ? 1 : a < b ? -1 : 0;
-                }   // sort method
-            );
-
-
-        }
-
-        //create MAIN namespace
-        (function (ns) { // don't pollute the global namespace
-
-            function create(from, to, obj, srt) {
-                if (!from) {
-                    throw CreationError('create: parameter selector [from] missing');
-                }
-                if (!to) {
-                    throw CreationError('create: parameter related selector [to] missing');
-                }
-                if (!obj) {
-                    throw CreationError('create: related filter definition object [obj] missing');
-                }
-
-                //retrieve all options from obj and add it
-                obj.all = (function (o) {
-                    var a = [];
-                    for (var l in o) {
-                        a = /array/i.test(o[l].constructor) ? a.concat(o[l]) : a;
-                    }
-                    return a.sort(srt);
-                }(obj));
-                // initialize and populate to-selector with all
-                populator.call(from
-                    , null
-                    , to
-                    , obj
-                    , srt
-                );
-
-                // assign handler
-                from.onchange = populator;
-
-                function initStatics(fn, obj) {
-                    for (var l in obj) {
-                        if (obj.hasOwnProperty(l)) {
-                            fn[l] = obj[l];
-                        }
-                    }
-                    fn.initialized = true;
-                }
-
-                function populator(e, relatedto, obj, srt) {
-                    // set pseudo statics
-                    var self = populator;
-                    if (!self.initialized) {
-                        initStatics(self, {
-                            optselects: obj,
-                            optselectsall: obj.all,
-                            relatedTo: relatedto,
-                            sorter: srt || false
-                        });
-                    }
-
-                    if (!self.relatedTo) {
-                        throw 'not related to a selector';
-                    }
-                    // populate to-selector from filter/all
-                    var optsfilter = this.selectedIndex < 1
-                        ? self.optselectsall
-                        : self.optselects[this.options[this.selectedIndex].firstChild.nodeValue]
-                        , cselect = self.relatedTo
-                        , opts = cselect.options;
-                    if (self.sorter) optsfilter.sort(self.sorter);
-                    opts.length = 0;
-                    for (var i = 0; i < optsfilter.length; i += 1) {
-                        opts[i] = new Option(optsfilter[i], i);
-                    }
-                }
-            }
-
-            // custom Error
-            function CreationError(mssg) {
-                return {name: 'CreationError', message: mssg};
-            }
-
-            // return the create method with some error handling
-            window[ns] = {
-                createRelatedSelector: function (from, to, obj, srt) {
-                    try {
-                        if (arguments.length < 1) {
-                            throw CreationError('no parameters');
-                        }
-                        create.call(null, from, to, obj, srt);
-                    }
-                    catch (e) {
-                        console.log('createRelatedSelector ->', e.name, '\n'
-                            + e.message +
-                            '\ncheck parameters');
-                    }
-                }
-            };
-        }('MAIN'));
-        //initialize
-        initSelectors();
-    </script>
-
-    {{-- day 5 deleting data --}}
-
-    <script>
-
-        function initSelectors() {
-            // next 2 statements should generate error message, see console
-            MAIN.createRelatedSelector();
-            MAIN.createRelatedSelector(document.querySelector('#continentsg5'));
-
-            //countries
-            MAIN.createRelatedSelector
-            (document.querySelector('#continentsg5')           // from select element
-                , document.querySelector('#selectcountriesg5')      // to select element
-                , {                                               // values object
-
-
-                    carbs: carbs,
-                    Fats: fats,
-                    proteins: proteins
-                }
-                , function (a, b) {
-                    return a > b ? 1 : a < b ? -1 : 0;
-                }   // sort method
-            );
-
-
-        }
-
-        //create MAIN namespace
-        (function (ns) { // don't pollute the global namespace
-
-            function create(from, to, obj, srt) {
-                if (!from) {
-                    throw CreationError('create: parameter selector [from] missing');
-                }
-                if (!to) {
-                    throw CreationError('create: parameter related selector [to] missing');
-                }
-                if (!obj) {
-                    throw CreationError('create: related filter definition object [obj] missing');
-                }
-
-                //retrieve all options from obj and add it
-                obj.all = (function (o) {
-                    var a = [];
-                    for (var l in o) {
-                        a = /array/i.test(o[l].constructor) ? a.concat(o[l]) : a;
-                    }
-                    return a.sort(srt);
-                }(obj));
-                // initialize and populate to-selector with all
-                populator.call(from
-                    , null
-                    , to
-                    , obj
-                    , srt
-                );
-
-                // assign handler
-                from.onchange = populator;
-
-                function initStatics(fn, obj) {
-                    for (var l in obj) {
-                        if (obj.hasOwnProperty(l)) {
-                            fn[l] = obj[l];
-                        }
-                    }
-                    fn.initialized = true;
-                }
-
-                function populator(e, relatedto, obj, srt) {
-                    // set pseudo statics
-                    var self = populator;
-                    if (!self.initialized) {
-                        initStatics(self, {
-                            optselects: obj,
-                            optselectsall: obj.all,
-                            relatedTo: relatedto,
-                            sorter: srt || false
-                        });
-                    }
-
-                    if (!self.relatedTo) {
-                        throw 'not related to a selector';
-                    }
-                    // populate to-selector from filter/all
-                    var optsfilter = this.selectedIndex < 1
-                        ? self.optselectsall
-                        : self.optselects[this.options[this.selectedIndex].firstChild.nodeValue]
-                        , cselect = self.relatedTo
-                        , opts = cselect.options;
-                    if (self.sorter) optsfilter.sort(self.sorter);
-                    opts.length = 0;
-                    for (var i = 0; i < optsfilter.length; i += 1) {
-                        opts[i] = new Option(optsfilter[i], i);
-                    }
-                }
-            }
-
-            // custom Error
-            function CreationError(mssg) {
-                return {name: 'CreationError', message: mssg};
-            }
-
-            // return the create method with some error handling
-            window[ns] = {
-                createRelatedSelector: function (from, to, obj, srt) {
-                    try {
-                        if (arguments.length < 1) {
-                            throw CreationError('no parameters');
-                        }
-                        create.call(null, from, to, obj, srt);
-                    }
-                    catch (e) {
-                        console.log('createRelatedSelector ->', e.name, '\n'
-                            + e.message +
-                            '\ncheck parameters');
-                    }
-                }
-            };
-        }('MAIN'));
-        //initialize
-        initSelectors();
-    </script>
-
-
-    {{-- day 6 deleting data --}}
-
-    <script>
-
-        function initSelectors() {
-            // next 2 statements should generate error message, see console
-            MAIN.createRelatedSelector();
-            MAIN.createRelatedSelector(document.querySelector('#continentsg6'));
-
-            //countries
-            MAIN.createRelatedSelector
-            (document.querySelector('#continentsg6')           // from select element
-                , document.querySelector('#selectcountriesg6')      // to select element
-                , {                                               // values object
-
-
-                    carbs: carbs,
-                    Fats: fats,
-                    proteins: proteins
-                }
-                , function (a, b) {
-                    return a > b ? 1 : a < b ? -1 : 0;
-                }   // sort method
-            );
-
-
-        }
-
-        //create MAIN namespace
-        (function (ns) { // don't pollute the global namespace
-
-            function create(from, to, obj, srt) {
-                if (!from) {
-                    throw CreationError('create: parameter selector [from] missing');
-                }
-                if (!to) {
-                    throw CreationError('create: parameter related selector [to] missing');
-                }
-                if (!obj) {
-                    throw CreationError('create: related filter definition object [obj] missing');
-                }
-
-                //retrieve all options from obj and add it
-                obj.all = (function (o) {
-                    var a = [];
-                    for (var l in o) {
-                        a = /array/i.test(o[l].constructor) ? a.concat(o[l]) : a;
-                    }
-                    return a.sort(srt);
-                }(obj));
-                // initialize and populate to-selector with all
-                populator.call(from
-                    , null
-                    , to
-                    , obj
-                    , srt
-                );
-
-                // assign handler
-                from.onchange = populator;
-
-                function initStatics(fn, obj) {
-                    for (var l in obj) {
-                        if (obj.hasOwnProperty(l)) {
-                            fn[l] = obj[l];
-                        }
-                    }
-                    fn.initialized = true;
-                }
-
-                function populator(e, relatedto, obj, srt) {
-                    // set pseudo statics
-                    var self = populator;
-                    if (!self.initialized) {
-                        initStatics(self, {
-                            optselects: obj,
-                            optselectsall: obj.all,
-                            relatedTo: relatedto,
-                            sorter: srt || false
-                        });
-                    }
-
-                    if (!self.relatedTo) {
-                        throw 'not related to a selector';
-                    }
-                    // populate to-selector from filter/all
-                    var optsfilter = this.selectedIndex < 1
-                        ? self.optselectsall
-                        : self.optselects[this.options[this.selectedIndex].firstChild.nodeValue]
-                        , cselect = self.relatedTo
-                        , opts = cselect.options;
-                    if (self.sorter) optsfilter.sort(self.sorter);
-                    opts.length = 0;
-                    for (var i = 0; i < optsfilter.length; i += 1) {
-                        opts[i] = new Option(optsfilter[i], i);
-                    }
-                }
-            }
-
-            // custom Error
-            function CreationError(mssg) {
-                return {name: 'CreationError', message: mssg};
-            }
-
-            // return the create method with some error handling
-            window[ns] = {
-                createRelatedSelector: function (from, to, obj, srt) {
-                    try {
-                        if (arguments.length < 1) {
-                            throw CreationError('no parameters');
-                        }
-                        create.call(null, from, to, obj, srt);
-                    }
-                    catch (e) {
-                        console.log('createRelatedSelector ->', e.name, '\n'
-                            + e.message +
-                            '\ncheck parameters');
-                    }
-                }
-            };
-        }('MAIN'));
-        //initialize
-        initSelectors();
-    </script>
-
-    {{-- day 7 deleting data --}}
-
-    <script>
-
-        function initSelectors() {
-            // next 2 statements should generate error message, see console
-            MAIN.createRelatedSelector();
-            MAIN.createRelatedSelector(document.querySelector('#continentsg7'));
-
-            //countries
-            MAIN.createRelatedSelector
-            (document.querySelector('#continentsg7')           // from select element
-                , document.querySelector('#selectcountriesg7')      // to select element
-                , {                                               // values object
-
-
-                    carbs: carbs,
-                    Fats: fats,
-                    proteins: proteins
-                }
-                , function (a, b) {
-                    return a > b ? 1 : a < b ? -1 : 0;
-                }   // sort method
-            );
-
-
-        }
-
-        //create MAIN namespace
-        (function (ns) { // don't pollute the global namespace
-
-            function create(from, to, obj, srt) {
-                if (!from) {
-                    throw CreationError('create: parameter selector [from] missing');
-                }
-                if (!to) {
-                    throw CreationError('create: parameter related selector [to] missing');
-                }
-                if (!obj) {
-                    throw CreationError('create: related filter definition object [obj] missing');
-                }
-
-                //retrieve all options from obj and add it
-                obj.all = (function (o) {
-                    var a = [];
-                    for (var l in o) {
-                        a = /array/i.test(o[l].constructor) ? a.concat(o[l]) : a;
-                    }
-                    return a.sort(srt);
-                }(obj));
-                // initialize and populate to-selector with all
-                populator.call(from
-                    , null
-                    , to
-                    , obj
-                    , srt
-                );
-
-                // assign handler
-                from.onchange = populator;
-
-                function initStatics(fn, obj) {
-                    for (var l in obj) {
-                        if (obj.hasOwnProperty(l)) {
-                            fn[l] = obj[l];
-                        }
-                    }
-                    fn.initialized = true;
-                }
-
-                function populator(e, relatedto, obj, srt) {
-                    // set pseudo statics
-                    var self = populator;
-                    if (!self.initialized) {
-                        initStatics(self, {
-                            optselects: obj,
-                            optselectsall: obj.all,
-                            relatedTo: relatedto,
-                            sorter: srt || false
-                        });
-                    }
-
-                    if (!self.relatedTo) {
-                        throw 'not related to a selector';
-                    }
-                    // populate to-selector from filter/all
-                    var optsfilter = this.selectedIndex < 1
-                        ? self.optselectsall
-                        : self.optselects[this.options[this.selectedIndex].firstChild.nodeValue]
-                        , cselect = self.relatedTo
-                        , opts = cselect.options;
-                    if (self.sorter) optsfilter.sort(self.sorter);
-                    opts.length = 0;
-                    for (var i = 0; i < optsfilter.length; i += 1) {
-                        opts[i] = new Option(optsfilter[i], i);
-                    }
-                }
-            }
-
-            // custom Error
-            function CreationError(mssg) {
-                return {name: 'CreationError', message: mssg};
-            }
-
-            // return the create method with some error handling
-            window[ns] = {
-                createRelatedSelector: function (from, to, obj, srt) {
-                    try {
-                        if (arguments.length < 1) {
-                            throw CreationError('no parameters');
-                        }
-                        create.call(null, from, to, obj, srt);
-                    }
-                    catch (e) {
-                        console.log('createRelatedSelector ->', e.name, '\n'
-                            + e.message +
-                            '\ncheck parameters');
-                    }
-                }
-            };
-        }('MAIN'));
-        //initialize
-        initSelectors();
-    </script>
 
 
     {{-- day 1 breakfast start --}}
@@ -5229,7 +4405,7 @@
 
 
     <script>
-        function getData(drop1, drop2, carb, fats, proteins, meal) {
+        function getData(drop1, drop2, carb, fats, proteins,calories, meal) {
 
 
             var x = $("#" + drop1 + " option:selected").val();
@@ -5239,13 +4415,16 @@
             var carbValue = parseFloat($('#' + carb).val());
             var fatsValue = parseFloat($('#' + fats).val());
             var proteinsValue = parseFloat($('#' + proteins).val());
-            if (carbValue || fatsValue || proteinsValue) {
+            var totalValue = parseFloat($('#' + calories).val());
+            if (carbValue || fatsValue || proteinsValue || totalValue) {
                 carbValue += x * t[4];
                 fatsValue += x * t[6];
                 proteinsValue += x * t[8];
+                totalValue += x * t[10];
                 $('#' + carb).val(carbValue);
                 $('#' + fats).val(fatsValue);
                 $('#' + proteins).val(proteinsValue);
+                $('#' + calories).val(totalValue);
                 var current = $('#' + meal).text();
                 var currentVal = $('#' + meal).val();
                 $('#' + meal).val(" ");
@@ -5259,6 +4438,7 @@
                 $('#' + carb).val(t[4] * x);
                 $('#' + fats).val(t[6] * x);
                 $('#' + proteins).val(t[8] * x);
+                $('#' + calories).val(t[10] * x);
 
                 var current = $('#' + meal).text();
                 var currentVal = $('#' + meal).val();
@@ -5290,7 +4470,7 @@
 
         }
 
-        function deleteItem(drop1, drop2, carb, fats, proteins, meal) {
+        function deleteItem(drop1, drop2, carb, fats, proteins,calories, meal) {
             var x = $("#" + drop1 + " option:selected").val();
             var y = $("#" + drop2 + " option:selected").text();
             var inputData = $('#' + meal).val();
@@ -5300,15 +4480,16 @@
             var carbValue = parseFloat($('#' + carb).val());
             var fatsValue = parseFloat($('#' + fats).val());
             var proteinsValue = parseFloat($('#' + proteins).val());
-
-            if (carbValue || fatsValue || proteinsValue) {
+            var totalValue = parseFloat($('#' + calories).val());
+            if (carbValue || fatsValue || proteinsValue || totalValue) {
                 carbValue -= parseFloat(x * t[4]);
                 fatsValue -= parseFloat(x * t[6]);
                 proteinsValue -= parseFloat(x * t[8]);
+                totalValue -= parseFloat(x * t[10]);
                 $('#' + carb).val(carbValue);
                 $('#' + fats).val(fatsValue);
                 $('#' + proteins).val(proteinsValue);
-
+                $('#' + calories).val(totalValue);
 
                 var remove = t[0] + ' ' + x + ' ' + t[2];
 
@@ -5330,5 +4511,8 @@
 
         }
     </script>
+
+
+
 
 @stop

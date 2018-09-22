@@ -123,7 +123,7 @@
                         <div class="col-md-6 col-sm-6 col-xs-12">
                             <input type="date" name="birthday" id="birthday"
                                    class="date-picker form-control col-md-7 col-xs-12"
-
+                                    required
                                     value="{{old('birthday')}}"
                             >
                         </div>

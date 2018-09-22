@@ -2528,9 +2528,9 @@
 
         var carb = new Array();
 
-            <?php foreach ($data as $item) {
+        <?php foreach ($data as $item) {
 
-            ?>
+        ?>
 
 
         carb.push('<?php echo $item->food_name . ' - ' . $item->unit . ' - ' . $item->carb_calories

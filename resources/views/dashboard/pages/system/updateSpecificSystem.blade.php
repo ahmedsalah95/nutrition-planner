@@ -30,6 +30,7 @@
                         @csrf
                         <input type="hidden" value="{{$id}}" name="patientID">
 
+
                         <button class="accordion" type="button"> معلومات عن النظام</button>
                         <div class="panel">
                             <br><br>
@@ -52,7 +53,7 @@
                                     <span class="required">*</span>
                                 </label>
                                 <div class="col-md-6 col-sm-6 col-xs-12">
-                            <textarea name="system_desc"  cols="30" rows="10" id="system_desc" class="form-control">
+                            <textarea name="system_desc" cols="30" rows="10" id="system_desc" class="form-control">
                                 {!! $data->system_desc !!}
                             </textarea>
                                 </div>
@@ -60,18 +61,17 @@
                         </div>
 
 
-
                         <button class="accordion" type="button"> السبت</button>
                         <div class="panel">
                             <br><br>
                             <div class="form-group first_day">
 
+                                <div class="text-center">
+
+                                    <h2 class="text-center">اليوم الاول</h2>
 
 
-
-                                <br>
-
-
+                                </div>
 
 
                                 <br><br><br>
@@ -80,7 +80,7 @@
                                 <div class="form-group text-center">
 
                                     <div class="col-lg-12">
-                                        <div class="col-lg-3">
+                                        <div class="col-lg-2">
                                             <select id="continents" class="form-control">
                                                 <option value="0">all</option>
                                                 <option value="1">carbs</option>
@@ -90,29 +90,34 @@
 
                                             </select>
                                         </div>
-                                        <div class="col-lg-3">
+                                        <div class="col-lg-4">
+
                                             <select id="selectcountries" class="form-control"></select>
                                         </div>
                                         <div class="col-lg-3">
                                             <select name="gmValue" id="gmValue" class="form-control">
+
                                                 <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
                                                 @for($i=1;$i<=500;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
+
                                             </select>
                                         </div>
+
+
                                         <div class="col-lg-3">
                                             <button type="button" class="btn btn-success"
-                                                    onclick="getData('gmValue','selectcountries','carbSum','fatsSum','proteinSum','day1_breakfast')">
+                                                    onclick="getData('gmValue','selectcountries','carbSum','fatsSum','proteinSum','caloriesSum','day1_breakfast')">
                                                 أضف
                                             </button>
+
                                             <button type="button" class="btn btn-warning"
-                                                    onclick="deleteItem('gmValue','selectcountries','carbSum','fatsSum','proteinSum','day1_breakfast')">
+                                                    onclick="deleteItem('gmValue','selectcountries','carbSum','fatsSum','proteinSum','caloriesSum','day1_breakfast')">
                                                 حذف
                                             </button>
                                         </div>
-
                                     </div>
 
                                     <br>
@@ -142,7 +147,7 @@
 
                                 <div class="form-group text-center">
                                     <div class="col-lg-12">
-                                        <div class="col-lg-3">
+                                        <div class="col-lg-2">
                                             <select id="continents1_break1" class="form-control">
                                                 <option value="0">all</option>
                                                 <option value="1">carbs</option>
@@ -152,25 +157,27 @@
 
                                             </select>
                                         </div>
-                                        <div class="col-lg-3">
+                                        <div class="col-lg-4">
                                             <select id="selectcountries1_break1" class="form-control"></select>
                                         </div>
                                         <div class="col-lg-3">
                                             <select name="gmValue" id="gmValue1_break1" class="form-control">
+
                                                 <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
                                                 @for($i=1;$i<=500;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
+
                                             </select>
                                         </div>
                                         <div class="col-lg-3">
                                             <button type="button" class="btn btn-success"
-                                                    onclick="getData('gmValue1_break1','selectcountries1_break1','carbSum','fatsSum','proteinSum','day1_break1')">
+                                                    onclick="getData('gmValue1_break1','selectcountries1_break1','carbSum','fatsSum','proteinSum','caloriesSum','day1_break1')">
                                                 أضف
                                             </button>
                                             <button type="button" class="btn btn-warning"
-                                                    onclick="deleteItem('gmValue1_break1','selectcountries1_break1','carbSum','fatsSum','proteinSum','day1_break1')">
+                                                    onclick="deleteItem('gmValue1_break1','selectcountries1_break1','carbSum','fatsSum','proteinSum','caloriesSum','day1_break1')">
                                                 حذف
                                             </button>
                                         </div>
@@ -200,7 +207,7 @@
 
                                 <div class="form-group text-center">
                                     <div class="col-lg-12">
-                                        <div class="col-lg-3"><select id="continents1_lunch" class="form-control">
+                                        <div class="col-lg-2"><select id="continents1_lunch" class="form-control">
                                                 <option value="0">all</option>
                                                 <option value="1">carbs</option>
                                                 <option value="2">Fats</option>
@@ -208,23 +215,25 @@
 
 
                                             </select></div>
-                                        <div class="col-lg-3"><select id="selectcountries1_lunch"
+                                        <div class="col-lg-4"><select id="selectcountries1_lunch"
                                                                       class="form-control"></select></div>
                                         <div class="col-lg-3"><select name="gmValue" id="gmValue1_lunch"
                                                                       class="form-control">
+
                                                 <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
                                                 @for($i=1;$i<=500;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
+
                                             </select></div>
                                         <div class="col-lg-3">
                                             <button type="button" class="btn btn-success"
-                                                    onclick="getData('gmValue1_lunch','selectcountries1_lunch','carbSum','fatsSum','proteinSum','day1_lunch')">
+                                                    onclick="getData('gmValue1_lunch','selectcountries1_lunch','carbSum','fatsSum','proteinSum','caloriesSum','day1_lunch')">
                                                 أضف
                                             </button>
                                             <button type="button" class="btn btn-warning"
-                                                    onclick="deleteItem('gmValue1_lunch','selectcountries1_lunch','carbSum','fatsSum','proteinSum','day1_lunch')">
+                                                    onclick="deleteItem('gmValue1_lunch','selectcountries1_lunch','carbSum','fatsSum','proteinSum','caloriesSum','day1_lunch')">
                                                 حذف
                                             </button>
                                         </div>
@@ -251,7 +260,7 @@
 
                                 <div class="form-group text-center">
                                     <div class="col-lg-12">
-                                        <div class="col-lg-3"><select id="continents1_break2" class="form-control">
+                                        <div class="col-lg-2"><select id="continents1_break2" class="form-control">
                                                 <option value="0">all</option>
                                                 <option value="1">carbs</option>
                                                 <option value="2">Fats</option>
@@ -259,25 +268,27 @@
 
 
                                             </select></div>
-                                        <div class="col-lg-3">
+                                        <div class="col-lg-4">
                                             <select id="selectcountries1_break2" class="form-control"></select>
                                         </div>
                                         <div class="col-lg-3">
                                             <select name="gmValue" id="gmValue1_break2" class="form-control">
+
                                                 <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
                                                 @for($i=1;$i<=500;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
+
                                             </select>
                                         </div>
                                         <div class="col-lg-3">
                                             <button type="button" class="btn btn-success"
-                                                    onclick="getData('gmValue1_break2','selectcountries1_break2','carbSum','fatsSum','proteinSum','day1_break2')">
+                                                    onclick="getData('gmValue1_break2','selectcountries1_break2','carbSum','fatsSum','proteinSum','caloriesSum','day1_break2')">
                                                 أضف
                                             </button>
                                             <button type="button" class="btn btn-warning"
-                                                    onclick="deleteItem('gmValue1_break2','selectcountries1_break2','carbSum','fatsSum','proteinSum','day1_break2')">
+                                                    onclick="deleteItem('gmValue1_break2','selectcountries1_break2','carbSum','fatsSum','proteinSum','caloriesSum','day1_break2')">
                                                 حذف
                                             </button>
                                         </div>
@@ -310,7 +321,7 @@
 
                                 <div class="form-group text-center">
                                     <div class="col-lg-12">
-                                        <div class="col-lg-3">
+                                        <div class="col-lg-2">
                                             <select id="continents1_dinner" class="form-control">
                                                 <option value="0">all</option>
                                                 <option value="1">carbs</option>
@@ -320,26 +331,28 @@
 
                                             </select>
                                         </div>
-                                        <div class="col-lg-3">
+                                        <div class="col-lg-4">
                                             <select id="selectcountries1_dinner" class="form-control"></select>
                                         </div>
                                         <div class="col-lg-3">
                                             <select name="gmValue" id="gmValue1_dinner" class="form-control">
+
                                                 <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
                                                 @for($i=1;$i<=500;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
+
                                             </select>
                                         </div>
                                         <div class="col-lg-3">
 
                                             <button type="button" class="btn btn-success"
-                                                    onclick="getData('gmValue1_dinner','selectcountries1_dinner','carbSum','fatsSum','proteinSum','day1_dinner')">
+                                                    onclick="getData('gmValue1_dinner','selectcountries1_dinner','carbSum','fatsSum','proteinSum','caloriesSum','day1_dinner')">
                                                 أضف
                                             </button>
                                             <button type="button" class="btn btn-warning"
-                                                    onclick="deleteItem('gmValue1_dinner','selectcountries1_dinner','carbSum','fatsSum','proteinSum','day1_dinner')">
+                                                    onclick="deleteItem('gmValue1_dinner','selectcountries1_dinner','carbSum','fatsSum','proteinSum','caloriesSum','day1_dinner')">
                                                 حذف
                                             </button>
                                         </div>
@@ -385,26 +398,34 @@
                                 <div class="col-lg-12">
 
                                     <h2 class="text-center">مجموع السعرات الحرارية لليوم الاول</h2>
-                                    <div class="col-lg-4 col-md-4 col-sm-12">
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
                                         <label for="carbSum">carbs old value : {{$data->carbSum}}</label>
                                         <input type="text" id="carbSum" class="form-control"
                                                name="carbSum"
                                                value="{{$data->carbSum}}"
                                                placeholder="مجموع الكربهيدرات">
                                     </div>
-                                    <div class="col-lg-4 col-md-4 col-sm-12">
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
                                         <label for="fatsSum">fats old value : {{$data->fatsSum}}</label>
                                         <input type="text" id="fatsSum" class="form-control"
                                                name="fatsSum"
                                                value="{{$data->fatsSum}}"
                                                placeholder="مجموع الدهون">
                                     </div>
-                                    <div class="col-lg-4 col-md-4 col-sm-12">
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
                                         <label for="proteinSum">protein old value : {{$data->proteinSum}}</label>
                                         <input type="text" id="proteinSum" class="form-control"
                                                name="proteinSum"
                                                value="{{$data->proteinSum}}"
                                                placeholder="مجموع البروتينات">
+                                    </div>
+
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                        <label for="caloriesSum">calories old value : {{$data->caloriesSum}}</label>
+                                        <input type="text" id="caloriesSum" class="form-control"
+                                               name="caloriesSum"
+                                               value="{{$data->caloriesSum}}"
+                                               placeholder="مجموع السعرات">
                                     </div>
                                 </div>
 
@@ -417,17 +438,12 @@
                         <div class="panel">
 
 
-                            <br>
-
-
-
-
                             <br><br><br>
                             <div class="form-group sec_day">
 
                                 <div class="form-group text-center">
                                     <div class="col-lg-12">
-                                        <div class="col-lg-3">
+                                        <div class="col-lg-2">
                                             <select id="continent2" class="form-control">
                                                 <option value="0">all</option>
                                                 <option value="1">carbs</option>
@@ -437,25 +453,27 @@
 
                                             </select>
                                         </div>
-                                        <div class="col-lg-3">
+                                        <div class="col-lg-4">
                                             <select id="selectcountries2" class="form-control"></select>
                                         </div>
                                         <div class="col-lg-3">
                                             <select name="gmValue" id="gmValue2" class="form-control">
+
                                                 <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
                                                 @for($i=1;$i<=500;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
+
                                             </select>
                                         </div>
                                         <div class="col-lg-3">
                                             <button type="button" class="btn btn-success"
-                                                    onclick="getData('gmValue2','selectcountries2','carbSum2','fatsSum2','proteinSum2','day2_breakfast')">
+                                                    onclick="getData('gmValue2','selectcountries2','carbSum2','fatsSum2','proteinSum2','caloriesSum2','day2_breakfast')">
                                                 أضف
                                             </button>
                                             <button type="button" class="btn btn-warning"
-                                                    onclick="deleteItem('gmValue2','selectcountries2','carbSum2','fatsSum2','proteinSum2','day2_breakfast')">
+                                                    onclick="deleteItem('gmValue2','selectcountries2','carbSum2','fatsSum2','proteinSum2','caloriesSum2','day2_breakfast')">
                                                 حذف
                                             </button>
                                         </div>
@@ -484,7 +502,7 @@
 
                                 <div class="form-group text-center">
                                     <div class="col-lg-12">
-                                        <div class="col-lg-3">
+                                        <div class="col-lg-2">
                                             <select id="continents2_break1" class="form-control">
                                                 <option value="0">all</option>
                                                 <option value="1">carbs</option>
@@ -494,25 +512,27 @@
 
                                             </select>
                                         </div>
-                                        <div class="col-lg-3">
+                                        <div class="col-lg-4">
                                             <select id="selectcountries2_break1" class="form-control"></select>
                                         </div>
                                         <div class="col-lg-3">
                                             <select name="gmValue" id="gmValue2_break1" class="form-control">
+
                                                 <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
                                                 @for($i=1;$i<=500;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
+
                                             </select>
                                         </div>
                                         <div class="col-lg-3">
                                             <button type="button" class="btn btn-success"
-                                                    onclick="getData('gmValue2_break1','selectcountries2_break1','carbSum2','fatsSum2','proteinSum2','day2_break1')">
+                                                    onclick="getData('gmValue2_break1','selectcountries2_break1','carbSum2','fatsSum2','proteinSum2','caloriesSum2','day2_break1')">
                                                 أضف
                                             </button>
                                             <button type="button" class="btn btn-warning"
-                                                    onclick="deleteItem('gmValue2_break1','selectcountries2_break1','carbSum2','fatsSum2','proteinSum2','day2_break1')">
+                                                    onclick="deleteItem('gmValue2_break1','selectcountries2_break1','carbSum2','fatsSum2','proteinSum2','caloriesSum2','day2_break1')">
                                                 حذف
                                             </button>
                                         </div>
@@ -541,7 +561,7 @@
 
                                 <div class="form-group text-center">
                                     <div class="col-lg-12">
-                                        <div class="col-lg-3"><select id="continents2_lunch" class="form-control">
+                                        <div class="col-lg-2"><select id="continents2_lunch" class="form-control">
                                                 <option value="0">all</option>
                                                 <option value="1">carbs</option>
                                                 <option value="2">Fats</option>
@@ -549,23 +569,25 @@
 
 
                                             </select></div>
-                                        <div class="col-lg-3"><select id="selectcountries2_lunch"
+                                        <div class="col-lg-4"><select id="selectcountries2_lunch"
                                                                       class="form-control"></select></div>
                                         <div class="col-lg-3"><select name="gmValue" id="gmValue2_lunch"
                                                                       class="form-control">
+
                                                 <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
                                                 @for($i=1;$i<=500;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
+
                                             </select></div>
                                         <div class="col-lg-3">
                                             <button type="button" class="btn btn-success"
-                                                    onclick="getData('gmValue2_lunch','selectcountries2_lunch','carbSum2','fatsSum2','proteinSum2','day2_lunch')">
+                                                    onclick="getData('gmValue2_lunch','selectcountries2_lunch','carbSum2','fatsSum2','proteinSum2','caloriesSum2','day2_lunch')">
                                                 أضف
                                             </button>
                                             <button type="button" class="btn btn-warning"
-                                                    onclick="deleteItem('gmValue2_lunch','selectcountries2_lunch','carbSum2','fatsSum2','proteinSum2','day2_lunch')">
+                                                    onclick="deleteItem('gmValue2_lunch','selectcountries2_lunch','carbSum2','fatsSum2','proteinSum2','caloriesSum2','day2_lunch')">
                                                 حذف
                                             </button>
                                         </div>
@@ -594,7 +616,7 @@
 
                                 <div class="form-group text-center">
                                     <div class="col-lg-12">
-                                        <div class="col-lg-3"><select id="continents2_break2" class="form-control">
+                                        <div class="col-lg-2"><select id="continents2_break2" class="form-control">
                                                 <option value="0">all</option>
                                                 <option value="1">carbs</option>
                                                 <option value="2">Fats</option>
@@ -602,23 +624,25 @@
 
 
                                             </select></div>
-                                        <div class="col-lg-3"><select id="selectcountries2_break2"
+                                        <div class="col-lg-4"><select id="selectcountries2_break2"
                                                                       class="form-control"></select></div>
                                         <div class="col-lg-3"><select name="gmValue" id="gmValue2_break2"
                                                                       class="form-control">
+
                                                 <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
                                                 @for($i=1;$i<=500;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
+
                                             </select></div>
                                         <div class="col-lg-3">
                                             <button type="button" class="btn btn-success"
-                                                    onclick="getData('gmValue2_break2','selectcountries2_break2','carbSum2','fatsSum2','proteinSum2','day2_break2')">
+                                                    onclick="getData('gmValue2_break2','selectcountries2_break2','carbSum2','fatsSum2','proteinSum2','caloriesSum2','day2_break2')">
                                                 أضف
                                             </button>
                                             <button type="button" class="btn btn-warning"
-                                                    onclick="deleteItem('gmValue2_break2','selectcountries2_break2','carbSum2','fatsSum2','proteinSum2','day2_break2')">
+                                                    onclick="deleteItem('gmValue2_break2','selectcountries2_break2','carbSum2','fatsSum2','proteinSum2','caloriesSum2','day2_break2')">
                                                 حذف
                                             </button>
                                         </div>
@@ -648,7 +672,7 @@
 
                                 <div class="form-group text-center">
                                     <div class="col-lg-12">
-                                        <div class="col-lg-3"><select id="continents2_dinner" class="form-control">
+                                        <div class="col-lg-2"><select id="continents2_dinner" class="form-control">
                                                 <option value="0">all</option>
                                                 <option value="1">carbs</option>
                                                 <option value="2">Fats</option>
@@ -656,23 +680,25 @@
 
 
                                             </select></div>
-                                        <div class="col-lg-3"><select id="selectcountries2_dinner"
+                                        <div class="col-lg-4"><select id="selectcountries2_dinner"
                                                                       class="form-control"></select></div>
                                         <div class="col-lg-3"><select name="gmValue" id="gmValue2_dinner"
                                                                       class="form-control">
+
                                                 <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
                                                 @for($i=1;$i<=500;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
+
                                             </select></div>
                                         <div class="col-lg-3">
                                             <button type="button" class="btn btn-success"
-                                                    onclick="getData('gmValue2_dinner','selectcountries2_dinner','carbSum2','fatsSum2','proteinSum2','day2_dinner')">
+                                                    onclick="getData('gmValue2_dinner','selectcountries2_dinner','carbSum2','fatsSum2','proteinSum2','caloriesSum2','day2_dinner')">
                                                 أضف
                                             </button>
                                             <button type="button" class="btn btn-warning"
-                                                    onclick="deleteItem('gmValue2_dinner','selectcountries2_dinner','carbSum2','fatsSum2','proteinSum2','day2_dinner')">
+                                                    onclick="deleteItem('gmValue2_dinner','selectcountries2_dinner','carbSum2','fatsSum2','proteinSum2','caloriesSum2','day2_dinner')">
                                                 حذف
                                             </button>
                                         </div>
@@ -718,30 +744,35 @@
 
                                 <div class="col-lg-12">
 
-                                    <h2 class="text-center">مجموع السعرات الحرارية لليوم الثانى</h2>
-                                    <div class="col-lg-4 col-md-4 col-sm-12">
-                                        <label for="carbSum">carbs old value : {{$data->carbSum2}}</label>
+                                    <h2 class="text-center">مجموع السعرات الحرارية لليوم الاول</h2>
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                        <label for="carbSum2">carbs old value : {{$data->carbSum2}}</label>
                                         <input type="text" id="carbSum2" class="form-control"
-                                               value="{{$data->carbSum2}}"
                                                name="carbSum2"
-
+                                               value="{{$data->carbSum2}}"
                                                placeholder="مجموع الكربهيدرات">
                                     </div>
-                                    <div class="col-lg-4 col-md-4 col-sm-12">
-                                        <label for="carbSum">fats old value : {{$data->fatsSum2}}</label>
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                        <label for="fatsSum2">fats old value : {{$data->fatsSum2}}</label>
                                         <input type="text" id="fatsSum2" class="form-control"
-                                               value="{{$data->fatsSum2}}"
                                                name="fatsSum2"
-
+                                               value="{{$data->fatsSum2}}"
                                                placeholder="مجموع الدهون">
                                     </div>
-                                    <div class="col-lg-4 col-md-4 col-sm-12">
-                                        <label for="carbSum">protein old value : {{$data->proteinSum2}}</label>
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                        <label for="proteinSum2">protein old value : {{$data->proteinSum2}}</label>
                                         <input type="text" id="proteinSum2" class="form-control"
-                                               value="{{$data->proteinSum2}}"
                                                name="proteinSum2"
-
+                                               value="{{$data->proteinSum2}}"
                                                placeholder="مجموع البروتينات">
+                                    </div>
+
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                        <label for="caloriesSum2">calories old value : {{$data->caloriesSum2}}</label>
+                                        <input type="text" id="caloriesSum2" class="form-control"
+                                               name="caloriesSum2"
+                                               value="{{$data->caloriesSum2}}"
+                                               placeholder="مجموع السعرات">
                                     </div>
                                 </div>
 
@@ -750,17 +781,16 @@
                         </div>
 
 
-                        <button class="accordion" type="button"> الاثنين</button>
-                        <div class="panel">
-                            <div class="form-group text-center">
+                        <button class="accordion" type="button"> الاتنين</button>
 
-                                <br><br><br>
-                            </div>
+                        <div class="panel">
+
+                            <br><br><br>
                             <div class="form-group third_day">
 
                                 <div class="form-group text-center">
                                     <div class="col-lg-12">
-                                        <div class="col-lg-3"><select id="continent3" class="form-control">
+                                        <div class="col-lg-2"><select id="continent3" class="form-control">
                                                 <option value="0">all</option>
                                                 <option value="1">carbs</option>
                                                 <option value="2">Fats</option>
@@ -768,22 +798,24 @@
 
 
                                             </select></div>
-                                        <div class="col-lg-3"><select id="selectcountries3"
+                                        <div class="col-lg-4"><select id="selectcountries3"
                                                                       class="form-control"></select></div>
                                         <div class="col-lg-3"><select name="gmValue" id="gmValue3" class="form-control">
+
                                                 <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
                                                 @for($i=1;$i<=500;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
+
                                             </select></div>
                                         <div class="col-lg-3">
                                             <button type="button" class="btn btn-success"
-                                                    onclick="getData('gmValue3','selectcountries3','carbSum3','fatsSum3','proteinSum3','day3_breakfast')">
+                                                    onclick="getData('gmValue3','selectcountries3','carbSum3','fatsSum3','proteinSum3','caloriesSum3','day3_breakfast')">
                                                 أضف
                                             </button>
                                             <button type="button" class="btn btn-warning"
-                                                    onclick="deleteItem('gmValue3','selectcountries3','carbSum3','fatsSum3','proteinSum3','day3_breakfast')">
+                                                    onclick="deleteItem('gmValue3','selectcountries3','carbSum3','fatsSum3','proteinSum3','caloriesSum3','day3_breakfast')">
                                                 حذف
                                             </button>
                                         </div>
@@ -812,7 +844,7 @@
 
                                 <div class="form-group text-center">
                                     <div class="col-lg-12">
-                                        <div class="col-lg-3">
+                                        <div class="col-lg-2">
                                             <select id="continents3_break1" class="form-control">
                                                 <option value="0">all</option>
                                                 <option value="1">carbs</option>
@@ -820,23 +852,25 @@
                                                 <option value="3">proteins</option>
                                             </select>
                                         </div>
-                                        <div class="col-lg-3"><select id="selectcountries3_break1"
+                                        <div class="col-lg-4"><select id="selectcountries3_break1"
                                                                       class="form-control"></select></div>
                                         <div class="col-lg-3"><select name="gmValue" id="gmValue3_break1"
                                                                       class="form-control">
+
                                                 <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
                                                 @for($i=1;$i<=500;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
+
                                             </select></div>
                                         <div class="col-lg-3">
                                             <button type="button" class="btn btn-success"
-                                                    onclick="getData('gmValue3_break1','selectcountries3_break1','carbSum3','fatsSum3','proteinSum3','day3_break1')">
+                                                    onclick="getData('gmValue3_break1','selectcountries3_break1','carbSum3','fatsSum3','proteinSum3','caloriesSum3','day3_break1')">
                                                 أضف
                                             </button>
                                             <button type="button" class="btn btn-warning"
-                                                    onclick="deleteItem('gmValue3_break1','selectcountries3_break1','carbSum3','fatsSum3','proteinSum3','day3_break1')">
+                                                    onclick="deleteItem('gmValue3_break1','selectcountries3_break1','carbSum3','fatsSum3','proteinSum3','caloriesSum3','day3_break1')">
                                                 حذف
                                             </button>
                                         </div>
@@ -865,7 +899,7 @@
 
                                 <div class="form-group text-center">
                                     <div class="col-lg-12">
-                                        <div class="col-lg-3"><select id="continents3_lunch" class="form-control">
+                                        <div class="col-lg-2"><select id="continents3_lunch" class="form-control">
                                                 <option value="0">all</option>
                                                 <option value="1">carbs</option>
                                                 <option value="2">Fats</option>
@@ -873,22 +907,24 @@
 
 
                                             </select></div>
-                                        <div class="col-lg-3"><select id="selectcountries3_lunch"
+                                        <div class="col-lg-4"><select id="selectcountries3_lunch"
                                                                       class="form-control"></select></div>
                                         <div class="col-lg-3"><select id="gmValue3_lunch" class="form-control">
+
                                                 <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
                                                 @for($i=1;$i<=500;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
+
                                             </select></div>
                                         <div class="col-lg-3">
                                             <button type="button" class="btn btn-success"
-                                                    onclick="getData('gmValue3_lunch','selectcountries3_lunch','carbSum3','fatsSum3','proteinSum3','day3_lunch')">
+                                                    onclick="getData('gmValue3_lunch','selectcountries3_lunch','carbSum3','fatsSum3','proteinSum3','caloriesSum3','day3_lunch')">
                                                 أضف
                                             </button>
                                             <button type="button" class="btn btn-warning"
-                                                    onclick="deleteItem('gmValue3_lunch','selectcountries3_lunch','carbSum3','fatsSum3','proteinSum3','day3_lunch')">
+                                                    onclick="deleteItem('gmValue3_lunch','selectcountries3_lunch','carbSum3','fatsSum3','proteinSum3','caloriesSum3','day3_lunch')">
                                                 حذف
                                             </button>
                                         </div>
@@ -918,7 +954,7 @@
                                 <br>
                                 <div class="form-group text-center">
                                     <div class="col-lg-12">
-                                        <div class="col-lg-3"><select id="continents3_break2" class="form-control">
+                                        <div class="col-lg-2"><select id="continents3_break2" class="form-control">
                                                 <option value="0">all</option>
                                                 <option value="1">carbs</option>
                                                 <option value="2">Fats</option>
@@ -926,23 +962,25 @@
 
 
                                             </select></div>
-                                        <div class="col-lg-3"><select id="selectcountries3_break2"
+                                        <div class="col-lg-4"><select id="selectcountries3_break2"
                                                                       class="form-control"></select></div>
                                         <div class="col-lg-3"><select name="gmValue" id="gmValue3_break2"
                                                                       class="form-control">
+
                                                 <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
                                                 @for($i=1;$i<=500;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
+
                                             </select></div>
                                         <div class="col-lg-3">
                                             <button type="button" class="btn btn-success"
-                                                    onclick="getData('gmValue3_break2','selectcountries3_break2','carbSum3','fatsSum3','proteinSum3','day3_break2')">
+                                                    onclick="getData('gmValue3_break2','selectcountries3_break2','carbSum3','fatsSum3','proteinSum3','caloriesSum3','day3_break2')">
                                                 أضف
                                             </button>
                                             <button type="button" class="btn btn-warning"
-                                                    onclick="deleteItem('gmValue3_break2','selectcountries3_break2','carbSum3','fatsSum3','proteinSum3','day3_break2')">
+                                                    onclick="deleteItem('gmValue3_break2','selectcountries3_break2','carbSum3','fatsSum3','proteinSum3','caloriesSum3','day3_break2')">
                                                 حذف
                                             </button>
                                         </div>
@@ -972,7 +1010,7 @@
 
                                 <div class="form-group text-center">
                                     <div class="col-lg-12">
-                                        <div class="col-lg-3"><select id="continents3_dinner" class="form-control">
+                                        <div class="col-lg-2"><select id="continents3_dinner" class="form-control">
                                                 <option value="0">all</option>
                                                 <option value="1">carbs</option>
                                                 <option value="2">Fats</option>
@@ -980,26 +1018,29 @@
 
 
                                             </select></div>
-                                        <div class="col-lg-3"><select id="selectcountries3_dinner"
+                                        <div class="col-lg-4"><select id="selectcountries3_dinner"
                                                                       class="form-control"></select></div>
                                         <div class="col-lg-3"><select name="gmValue" id="gmValue3_dinner"
                                                                       class="form-control">
+
                                                 <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
                                                 @for($i=1;$i<=500;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
+
                                             </select></div>
                                         <div class="col-lg-3">
                                             <button type="button" class="btn btn-success"
-                                                    onclick="getData('gmValue3_dinner','selectcountries3_dinner','carbSum3','fatsSum3','proteinSum3','day3_dinner')">
+                                                    onclick="getData('gmValue3_dinner','selectcountries3_dinner','carbSum3','fatsSum3','proteinSum3','caloriesSum3','day3_dinner')">
                                                 أضف
                                             </button>
                                             <button type="button" class="btn btn-warning"
-                                                    onclick="deleteItem('gmValue3_dinner','selectcountries3_dinner','carbSum3','fatsSum3','proteinSum3','day3_dinner')">
+                                                    onclick="deleteItem('gmValue3_dinner','selectcountries3_dinner','carbSum3','fatsSum3','proteinSum3','caloriesSum3','day3_dinner')">
                                                 حذف
                                             </button>
                                         </div>
+
                                     </div>
 
 
@@ -1042,27 +1083,35 @@
 
                                 <div class="col-lg-12">
 
-                                    <h2 class="text-center">مجموع السعرات الحرارية لليوم الثالث</h2>
-                                    <div class="col-lg-4 col-md-4 col-sm-12">
-                                        <label for="carbSum">carbs old value : {{$data->carbSum3}}</label>
+                                    <h2 class="text-center">مجموع السعرات الحرارية لليوم الاول</h2>
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                        <label for="carbSum3">carbs old value : {{$data->carbSum3}}</label>
                                         <input type="text" id="carbSum3" class="form-control"
                                                name="carbSum3"
                                                value="{{$data->carbSum3}}"
                                                placeholder="مجموع الكربهيدرات">
                                     </div>
-                                    <div class="col-lg-4 col-md-4 col-sm-12">
-                                        <label for="carbSum">fats old value : {{$data->fatsSum3}}</label>
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                        <label for="fatsSum3">fats old value : {{$data->fatsSum3}}</label>
                                         <input type="text" id="fatsSum3" class="form-control"
                                                name="fatsSum3"
                                                value="{{$data->fatsSum3}}"
                                                placeholder="مجموع الدهون">
                                     </div>
-                                    <div class="col-lg-4 col-md-4 col-sm-12">
-                                        <label for="carbSum">protein old value : {{$data->proteinSum3}}</label>
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                        <label for="proteinSum3">protein old value : {{$data->proteinSum3}}</label>
                                         <input type="text" id="proteinSum3" class="form-control"
                                                name="proteinSum3"
                                                value="{{$data->proteinSum3}}"
                                                placeholder="مجموع البروتينات">
+                                    </div>
+
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                        <label for="caloriesSum3">calories old value : {{$data->caloriesSum3}}</label>
+                                        <input type="text" id="caloriesSum3" class="form-control"
+                                               name="caloriesSum3"
+                                               value="{{$data->caloriesSum3}}"
+                                               placeholder="مجموع السعرات">
                                     </div>
                                 </div>
 
@@ -1075,12 +1124,11 @@
                         <div class="panel">
                             <div class="form-group forth_day">
 
-
                                 <br><br><br>
 
                                 <div class="form-group text-center">
                                     <div class="col-lg-12">
-                                        <div class="col-lg-3"><select id="continent4" class="form-control">
+                                        <div class="col-lg-2"><select id="continent4" class="form-control">
                                                 <option value="0">all</option>
                                                 <option value="1">carbs</option>
                                                 <option value="2">Fats</option>
@@ -1088,22 +1136,24 @@
 
 
                                             </select></div>
-                                        <div class="col-lg-3"><select id="selectcountries4"
+                                        <div class="col-lg-4"><select id="selectcountries4"
                                                                       class="form-control"></select></div>
                                         <div class="col-lg-3"><select name="gmValue" id="gmValue4" class="form-control">
+
                                                 <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
                                                 @for($i=1;$i<=500;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
+
                                             </select></div>
                                         <div class="col-lg-3">
                                             <button type="button" class="btn btn-success"
-                                                    onclick="getData('gmValue4','selectcountries4','carbSum4','fatsSum4','proteinSum4','day4_breakfast')">
+                                                    onclick="getData('gmValue4','selectcountries4','carbSum4','fatsSum4','proteinSum4','caloriesSum4','day4_breakfast')">
                                                 أضف
                                             </button>
                                             <button type="button" class="btn btn-warning"
-                                                    onclick="deleteItem('gmValue4','selectcountries4','carbSum4','fatsSum4','proteinSum4','day4_breakfast')">
+                                                    onclick="deleteItem('gmValue4','selectcountries4','carbSum4','fatsSum4','proteinSum4','caloriesSum4','day4_breakfast')">
                                                 حذف
                                             </button>
                                         </div>
@@ -1132,7 +1182,7 @@
 
                                 <div class="form-group text-center">
                                     <div class="col-lg-12">
-                                        <div class="col-lg-3"><select id="continents4_break1" class="form-control">
+                                        <div class="col-lg-2"><select id="continents4_break1" class="form-control">
                                                 <option value="0">all</option>
                                                 <option value="1">carbs</option>
                                                 <option value="2">Fats</option>
@@ -1140,23 +1190,25 @@
 
 
                                             </select></div>
-                                        <div class="col-lg-3"><select id="selectcountries4_break1"
+                                        <div class="col-lg-4"><select id="selectcountries4_break1"
                                                                       class="form-control"></select></div>
                                         <div class="col-lg-3"><select name="gmValue" id="gmValue4_break1"
                                                                       class="form-control">
+
                                                 <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
                                                 @for($i=1;$i<=500;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
+
                                             </select></div>
                                         <div class="col-lg-3">
                                             <button type="button" class="btn btn-success"
-                                                    onclick="getData('gmValue4_break1','selectcountries4_break1','carbSum4','fatsSum4','proteinSum4','day4_break1')">
+                                                    onclick="getData('gmValue4_break1','selectcountries4_break1','carbSum4','fatsSum4','proteinSum4','caloriesSum4','day4_break1')">
                                                 أضف
                                             </button>
                                             <button type="button" class="btn btn-warning"
-                                                    onclick="deleteItem('gmValue4_break1','selectcountries4_break1','carbSum4','fatsSum4','proteinSum4','day4_break1')">
+                                                    onclick="deleteItem('gmValue4_break1','selectcountries4_break1','carbSum4','fatsSum4','proteinSum4','caloriesSum4','day4_break1')">
                                                 حذف
                                             </button>
                                         </div>
@@ -1183,29 +1235,31 @@
 
                                 <div class="form-group text-center">
                                     <div class="col-lg-12">
-                                        <div class="col-lg-3"><select id="continents4_lunch" class="form-control">
+                                        <div class="col-lg-2"><select id="continents4_lunch" class="form-control">
                                                 <option value="0">all</option>
                                                 <option value="1">carbs</option>
                                                 <option value="2">Fats</option>
                                                 <option value="3">proteins</option>
                                             </select></div>
-                                        <div class="col-lg-3"><select id="selectcountries4_lunch"
+                                        <div class="col-lg-4"><select id="selectcountries4_lunch"
                                                                       class="form-control"></select></div>
                                         <div class="col-lg-3">
                                             <select id="gmValue4_lunch" class="form-control">
+
                                                 <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
                                                 @for($i=1;$i<=500;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
+
                                             </select></div>
                                         <div class="col-lg-3">
                                             <button type="button" class="btn btn-success"
-                                                    onclick="getData('gmValue4_lunch','selectcountries4_lunch','carbSum4','fatsSum4','proteinSum4','day4_lunch')">
+                                                    onclick="getData('gmValue4_lunch','selectcountries4_lunch','carbSum4','fatsSum4','proteinSum4','caloriesSum4','day4_lunch')">
                                                 أضف
                                             </button>
                                             <button type="button" class="btn btn-warning"
-                                                    onclick="deleteItem('gmValue4_lunch','selectcountries4_lunch','carbSum4','fatsSum4','proteinSum4','day4_lunch')">
+                                                    onclick="deleteItem('gmValue4_lunch','selectcountries4_lunch','carbSum4','fatsSum4','proteinSum4','caloriesSum4','day4_lunch')">
                                                 حذف
                                             </button>
                                         </div>
@@ -1234,7 +1288,7 @@
 
                                 <div class="form-group text-center">
                                     <div class="col-lg-12">
-                                        <div class="col-lg-3"><select id="continents4_break2" class="form-control">
+                                        <div class="col-lg-2"><select id="continents4_break2" class="form-control">
                                                 <option value="0">all</option>
                                                 <option value="1">carbs</option>
                                                 <option value="2">Fats</option>
@@ -1242,23 +1296,25 @@
 
 
                                             </select></div>
-                                        <div class="col-lg-3"><select id="selectcountries4_break2"
+                                        <div class="col-lg-4"><select id="selectcountries4_break2"
                                                                       class="form-control"></select></div>
                                         <div class="col-lg-3"><select name="gmValue" id="gmValue4_break2"
                                                                       class="form-control">
+
                                                 <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
                                                 @for($i=1;$i<=500;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
+
                                             </select></div>
                                         <div class="col-lg-3">
                                             <button type="button" class="btn btn-success"
-                                                    onclick="getData('gmValue4_break2','selectcountries4_break2','carbSum4','fatsSum4','proteinSum4','day4_break2')">
+                                                    onclick="getData('gmValue4_break2','selectcountries4_break2','carbSum4','fatsSum4','proteinSum4','caloriesSum4','day4_break2')">
                                                 أضف
                                             </button>
                                             <button type="button" class="btn btn-warning"
-                                                    onclick="deleteItem('gmValue4_break2','selectcountries4_break2','carbSum4','fatsSum4','proteinSum4','day4_break2')">
+                                                    onclick="deleteItem('gmValue4_break2','selectcountries4_break2','carbSum4','fatsSum4','proteinSum4','caloriesSum4','day4_break2')">
                                                 حذف
                                             </button>
                                         </div>
@@ -1288,7 +1344,7 @@
 
                                 <div class="form-group text-center">
                                     <div class="col-lg-12">
-                                        <div class="col-lg-3"><select id="continents4_dinner" class="form-control">
+                                        <div class="col-lg-2"><select id="continents4_dinner" class="form-control">
                                                 <option value="0">all</option>
                                                 <option value="1">carbs</option>
                                                 <option value="2">Fats</option>
@@ -1296,23 +1352,25 @@
 
 
                                             </select></div>
-                                        <div class="col-lg-3"><select id="selectcountries4_dinner"
+                                        <div class="col-lg-4"><select id="selectcountries4_dinner"
                                                                       class="form-control"></select></div>
                                         <div class="col-lg-3"><select name="gmValue" id="gmValue4_dinner"
                                                                       class="form-control">
+
                                                 <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
                                                 @for($i=1;$i<=500;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
+
                                             </select></div>
                                         <div class="col-lg-3">
                                             <button type="button" class="btn btn-success"
-                                                    onclick="getData('gmValue4_dinner','selectcountries4_dinner','carbSum4','fatsSum4','proteinSum4','day4_dinner')">
+                                                    onclick="getData('gmValue4_dinner','selectcountries4_dinner','carbSum4','fatsSum4','proteinSum4','caloriesSum4','day4_dinner')">
                                                 أضف
                                             </button>
                                             <button type="button" class="btn btn-warning"
-                                                    onclick="deleteItem('gmValue4_dinner','selectcountries4_dinner','carbSum4','fatsSum4','proteinSum4','day4_dinner')">
+                                                    onclick="deleteItem('gmValue4_dinner','selectcountries4_dinner','carbSum4','fatsSum4','proteinSum4','caloriesSum4','day4_dinner')">
                                                 حذف
                                             </button>
                                         </div>
@@ -1355,33 +1413,37 @@
                                 <br>
                                 <br>
                                 <br>
-
                                 <div class="col-lg-12">
 
-                                    <h2 class="text-center">مجموع السعرات الحرارية لليوم الرابع</h2>
-                                    <div class="col-lg-4 col-md-4 col-sm-12">
-                                        <label for="carbSum">carbs old value : {{$data->carbSum4}}</label>
+                                    <h2 class="text-center">مجموع السعرات الحرارية لليوم الاول</h2>
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                        <label for="carbSum4">carbs old value : {{$data->carbSum4}}</label>
                                         <input type="text" id="carbSum4" class="form-control"
-                                               value="{{$data->carbSum4}}"
                                                name="carbSum4"
-
+                                               value="{{$data->carbSum4}}"
                                                placeholder="مجموع الكربهيدرات">
                                     </div>
-                                    <div class="col-lg-4 col-md-4 col-sm-12">
-                                        <label for="carbSum">fats old value : {{$data->fatsSum4}}</label>
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                        <label for="fatsSum4">fats old value : {{$data->fatsSum4}}</label>
                                         <input type="text" id="fatsSum4" class="form-control"
-                                               value="{{$data->fatsSum4}}"
                                                name="fatsSum4"
-
+                                               value="{{$data->fatsSum4}}"
                                                placeholder="مجموع الدهون">
                                     </div>
-                                    <div class="col-lg-4 col-md-4 col-sm-12">
-                                        <label for="carbSum">proteins old value : {{$data->proteinSum4}}</label>
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                        <label for="proteinSum4">protein old value : {{$data->proteinSum4}}</label>
                                         <input type="text" id="proteinSum4" class="form-control"
-                                               value="{{$data->proteinSum4}}"
                                                name="proteinSum4"
-
+                                               value="{{$data->proteinSum4}}"
                                                placeholder="مجموع البروتينات">
+                                    </div>
+
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                        <label for="caloriesSum4">calories old value : {{$data->caloriesSum4}}</label>
+                                        <input type="text" id="caloriesSum4" class="form-control"
+                                               name="caloriesSum4"
+                                               value="{{$data->caloriesSum4}}"
+                                               placeholder="مجموع السعرات">
                                     </div>
                                 </div>
 
@@ -1398,7 +1460,7 @@
                                 <br><br><br>
                                 <div class="form-group text-center">
                                     <div class="col-lg-12">
-                                        <div class="col-lg-3"><select id="continent5" class="form-control">
+                                        <div class="col-lg-2"><select id="continent5" class="form-control">
                                                 <option value="0">all</option>
                                                 <option value="1">carbs</option>
                                                 <option value="2">Fats</option>
@@ -1406,26 +1468,27 @@
 
 
                                             </select></div>
-                                        <div class="col-lg-3"><select id="selectcountries5"
+                                        <div class="col-lg-4"><select id="selectcountries5"
                                                                       class="form-control"></select></div>
                                         <div class="col-lg-3"><select name="gmValue" id="gmValue5" class="form-control">
+
                                                 <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
                                                 @for($i=1;$i<=500;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
+
                                             </select></div>
                                         <div class="col-lg-3">
                                             <button type="button" class="btn btn-success"
-                                                    onclick="getData('gmValue5','selectcountries5','carbSum5','fatsSum5','proteinSum5','day5_breakfast')">
+                                                    onclick="getData('gmValue5','selectcountries5','carbSum5','fatsSum5','proteinSum5','caloriesSum5','day5_breakfast')">
                                                 أضف
                                             </button>
                                             <button type="button" class="btn btn-warning"
-                                                    onclick="deleteItem('gmValue5','selectcountries5','carbSum5','fatsSum5','proteinSum5','day5_breakfast')">
+                                                    onclick="deleteItem('gmValue5','selectcountries5','carbSum5','fatsSum5','proteinSum5','caloriesSum5','day5_breakfast')">
                                                 حذف
                                             </button>
                                         </div>
-
                                     </div>
 
                                     <br>
@@ -1450,7 +1513,7 @@
 
                                 <div class="form-group text-center">
                                     <div class="col-lg-12">
-                                        <div class="col-lg-3"><select id="continents5_break1" class="form-control">
+                                        <div class="col-lg-2"><select id="continents5_break1" class="form-control">
                                                 <option value="0">all</option>
                                                 <option value="1">carbs</option>
                                                 <option value="2">Fats</option>
@@ -1458,23 +1521,25 @@
 
 
                                             </select></div>
-                                        <div class="col-lg-3"><select id="selectcountries5_break1"
+                                        <div class="col-lg-4"><select id="selectcountries5_break1"
                                                                       class="form-control"></select></div>
                                         <div class="col-lg-3"><select name="gmValue" id="gmValue5_break1"
                                                                       class="form-control">
+
                                                 <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
                                                 @for($i=1;$i<=500;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
+
                                             </select></div>
                                         <div class="col-lg-3">
                                             <button type="button" class="btn btn-success"
-                                                    onclick="getData('gmValue5_break1','selectcountries5_break1','carbSum5','fatsSum5','proteinSum5','day5_break1')">
+                                                    onclick="getData('gmValue5_break1','selectcountries5_break1','carbSum5','fatsSum5','proteinSum5','caloriesSum5','day5_break1')">
                                                 أضف
                                             </button>
                                             <button type="button" class="btn btn-warning"
-                                                    onclick="deleteItem('gmValue5_break1','selectcountries5_break1','carbSum5','fatsSum5','proteinSum5','day5_break1')">
+                                                    onclick="deleteItem('gmValue5_break1','selectcountries5_break1','carbSum5','fatsSum5','proteinSum5','caloriesSum5','day5_break1')">
                                                 حذف
                                             </button>
                                         </div>
@@ -1503,7 +1568,7 @@
 
                                 <div class="form-group text-center">
                                     <div class="col-lg-12">
-                                        <div class="col-lg-3">
+                                        <div class="col-lg-2">
                                             <select id="continents5_lunch" class="form-control">
                                                 <option value="0">all</option>
                                                 <option value="1">carbs</option>
@@ -1513,22 +1578,24 @@
 
                                             </select>
                                         </div>
-                                        <div class="col-lg-3"><select id="selectcountries5_lunch"
+                                        <div class="col-lg-4"><select id="selectcountries5_lunch"
                                                                       class="form-control"></select></div>
                                         <div class="col-lg-3"><select id="gmValue5_lunch" class="form-control">
+
                                                 <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
                                                 @for($i=1;$i<=500;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
+
                                             </select></div>
                                         <div class="col-lg-3">
                                             <button type="button" class="btn btn-success"
-                                                    onclick="getData('gmValue5_lunch','selectcountries5_lunch','carbSum5','fatsSum5','proteinSum5','day5_lunch')">
+                                                    onclick="getData('gmValue5_lunch','selectcountries5_lunch','carbSum5','fatsSum5','proteinSum5','caloriesSum5','day5_lunch')">
                                                 أضف
                                             </button>
                                             <button type="button" class="btn btn-warning"
-                                                    onclick="deleteItem('gmValue5_lunch','selectcountries5_lunch','carbSum5','fatsSum5','proteinSum5','day5_lunch')">
+                                                    onclick="deleteItem('gmValue5_lunch','selectcountries5_lunch','carbSum5','fatsSum5','proteinSum5','caloriesSum5','day5_lunch')">
                                                 حذف
                                             </button>
                                         </div>
@@ -1557,7 +1624,7 @@
 
                                 <div class="form-group text-center">
                                     <div class="col-lg-12">
-                                        <div class="col-lg-3"><select id="continents5_break2" class="form-control">
+                                        <div class="col-lg-2"><select id="continents5_break2" class="form-control">
                                                 <option value="0">all</option>
                                                 <option value="1">carbs</option>
                                                 <option value="2">Fats</option>
@@ -1565,23 +1632,25 @@
 
 
                                             </select></div>
-                                        <div class="col-lg-3"><select id="selectcountries5_break2"
+                                        <div class="col-lg-4"><select id="selectcountries5_break2"
                                                                       class="form-control"></select></div>
                                         <div class="col-lg-3"><select name="gmValue" id="gmValue5_break2"
                                                                       class="form-control">
+
                                                 <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
                                                 @for($i=1;$i<=500;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
+
                                             </select></div>
                                         <div class="col-lg-3">
                                             <button type="button" class="btn btn-success"
-                                                    onclick="getData('gmValue5_break2','selectcountries5_break2','carbSum5','fatsSum5','proteinSum5','day5_break2')">
+                                                    onclick="getData('gmValue5_break2','selectcountries5_break2','carbSum5','fatsSum5','proteinSum5','caloriesSum5','day5_break2')">
                                                 أضف
                                             </button>
                                             <button type="button" class="btn btn-warning"
-                                                    onclick="deleteItem('gmValue5_break2','selectcountries5_break2','carbSum5','fatsSum5','proteinSum5','day5_break2')">
+                                                    onclick="deleteItem('gmValue5_break2','selectcountries5_break2','carbSum5','fatsSum5','proteinSum5','caloriesSum5','day5_break2')">
                                                 حذف
                                             </button>
                                         </div>
@@ -1610,7 +1679,7 @@
 
                                 <div class="form-group text-center">
                                     <div class="col-lg-12">
-                                        <div class="col-lg-3"><select id="continents5_dinner" class="form-control">
+                                        <div class="col-lg-2"><select id="continents5_dinner" class="form-control">
                                                 <option value="0">all</option>
                                                 <option value="1">carbs</option>
                                                 <option value="2">Fats</option>
@@ -1618,23 +1687,25 @@
 
 
                                             </select></div>
-                                        <div class="col-lg-3"><select id="selectcountries5_dinner"
+                                        <div class="col-lg-4"><select id="selectcountries5_dinner"
                                                                       class="form-control"></select></div>
                                         <div class="col-lg-3"><select name="gmValue" id="gmValue5_dinner"
                                                                       class="form-control" class="form-control">
+
                                                 <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
                                                 @for($i=1;$i<=500;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
+
                                             </select></div>
                                         <div class="col-lg-3">
                                             <button type="button" class="btn btn-success"
-                                                    onclick="getData('gmValue5_dinner','selectcountries5_dinner','carbSum5','fatsSum5','proteinSum5','day5_dinner')">
+                                                    onclick="getData('gmValue5_dinner','selectcountries5_dinner','carbSum5','fatsSum5','proteinSum5','caloriesSum5','day5_dinner')">
                                                 أضف
                                             </button>
                                             <button type="button" class="btn btn-warning"
-                                                    onclick="deleteItem('gmValue5_dinner','selectcountries5_dinner','carbSum5','fatsSum5','proteinSum5','day5_dinner')">
+                                                    onclick="deleteItem('gmValue5_dinner','selectcountries5_dinner','carbSum5','fatsSum5','proteinSum5','caloriesSum5','day5_dinner')">
                                                 حذف
                                             </button>
                                         </div>
@@ -1676,38 +1747,45 @@
                                 <br>
                                 <br>
 
+
                                 <div class="col-lg-12">
 
-                                    <h2 class="text-center">مجموع السعرات الحرارية لليوم الخامس</h2>
-                                    <div class="col-lg-4 col-md-4 col-sm-12">
-                                        <label for="carbSum">carbs old value : {{$data->carbSum5}}</label>
+                                    <h2 class="text-center">مجموع السعرات الحرارية لليوم الاول</h2>
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                        <label for="carbSum5">carbs old value : {{$data->carbSum5}}</label>
                                         <input type="text" id="carbSum5" class="form-control"
-                                               value="{{$data->carbSum5}}"
                                                name="carbSum5"
-
+                                               value="{{$data->carbSum5}}"
                                                placeholder="مجموع الكربهيدرات">
                                     </div>
-                                    <div class="col-lg-4 col-md-4 col-sm-12">
-                                        <label for="carbSum">fats old value : {{$data->fatsSum5}}</label>
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                        <label for="fatsSum5">fats old value : {{$data->fatsSum5}}</label>
                                         <input type="text" id="fatsSum5" class="form-control"
-                                               value="{{$data->fatsSum5}}"
                                                name="fatsSum5"
-
+                                               value="{{$data->fatsSum5}}"
                                                placeholder="مجموع الدهون">
                                     </div>
-                                    <div class="col-lg-4 col-md-4 col-sm-12">
-                                        <label for="carbSum">protein old value : {{$data->proteinSum5}}</label>
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                        <label for="proteinSum5">protein old value : {{$data->proteinSum5}}</label>
                                         <input type="text" id="proteinSum5" class="form-control"
-                                               value="{{$data->proteinSum5}}"
                                                name="proteinSum5"
-
+                                               value="{{$data->proteinSum5}}"
                                                placeholder="مجموع البروتينات">
+                                    </div>
+
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                        <label for="caloriesSum5">calories old value : {{$data->caloriesSum5}}</label>
+                                        <input type="text" id="caloriesSum5" class="form-control"
+                                               name="caloriesSum5"
+                                               value="{{$data->caloriesSum5}}"
+                                               placeholder="مجموع السعرات">
                                     </div>
                                 </div>
 
 
                             </div>
                         </div>
+
 
                         <button class="accordion" type="button"> الخميس</button>
                         <div class="panel">
@@ -1717,7 +1795,7 @@
                                 <br><br><br>
                                 <div class="form-group text-center">
                                     <div class="col-lg-12">
-                                        <div class="col-lg-3"><select id="continent6" class="form-control">
+                                        <div class="col-lg-2"><select id="continent6" class="form-control">
                                                 <option value="0">all</option>
                                                 <option value="1">carbs</option>
                                                 <option value="2">Fats</option>
@@ -1725,22 +1803,24 @@
 
 
                                             </select></div>
-                                        <div class="col-lg-3"><select id="selectcountries6"
+                                        <div class="col-lg-4"><select id="selectcountries6"
                                                                       class="form-control"></select></div>
                                         <div class="col-lg-3"><select name="gmValue" id="gmValue6" class="form-control">
+
                                                 <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
                                                 @for($i=1;$i<=500;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
+
                                             </select></div>
                                         <div class="col-lg-3">
                                             <button type="button" class="btn btn-success"
-                                                    onclick="getData('gmValue6','selectcountries6','carbSum6','fatsSum6','proteinSum6','day6_breakfast')">
+                                                    onclick="getData('gmValue6','selectcountries6','carbSum6','fatsSum6','proteinSum6','caloriesSum6','day6_breakfast')">
                                                 أضف
                                             </button>
                                             <button type="button" class="btn btn-warning"
-                                                    onclick="deleteItem('gmValue6','selectcountries6','carbSum6','fatsSum6','proteinSum6','day6_breakfast')">
+                                                    onclick="deleteItem('gmValue6','selectcountries6','carbSum6','fatsSum6','proteinSum6','caloriesSum6','day6_breakfast')">
                                                 حذف
                                             </button>
                                         </div>
@@ -1769,7 +1849,7 @@
 
                                 <div class="form-group text-center">
                                     <div class="col-lg-12">
-                                        <div class="col-lg-3"><select id="continents6_break1" class="form-control">
+                                        <div class="col-lg-2"><select id="continents6_break1" class="form-control">
                                                 <option value="0">all</option>
                                                 <option value="1">carbs</option>
                                                 <option value="2">Fats</option>
@@ -1777,23 +1857,25 @@
 
 
                                             </select></div>
-                                        <div class="col-lg-3"><select id="selectcountries6_break1"
+                                        <div class="col-lg-4"><select id="selectcountries6_break1"
                                                                       class="form-control"></select></div>
                                         <div class="col-lg-3"><select name="gmValue" id="gmValue6_break1"
                                                                       class="form-control">
+
                                                 <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
                                                 @for($i=1;$i<=500;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
+
                                             </select></div>
                                         <div class="col-lg-3">
                                             <button type="button" class="btn btn-success"
-                                                    onclick="getData('gmValue6_break1','selectcountries6_break1','carbSum6','fatsSum6','proteinSum6','day6_break1')">
+                                                    onclick="getData('gmValue6_break1','selectcountries6_break1','carbSum6','fatsSum6','proteinSum6','caloriesSum6','day6_break1')">
                                                 أضف
                                             </button>
                                             <button type="button" class="btn btn-warning"
-                                                    onclick="deleteItem('gmValue6_break1','selectcountries6_break1','carbSum6','fatsSum6','proteinSum6','day6_break1')">
+                                                    onclick="deleteItem('gmValue6_break1','selectcountries6_break1','carbSum6','fatsSum6','proteinSum6','caloriesSum6','day6_break1')">
                                                 حذف
                                             </button>
                                         </div>
@@ -1823,7 +1905,7 @@
                                 <div class="form-group text-center">
 
                                     <div class="col-lg-12">
-                                        <div class="col-lg-3">
+                                        <div class="col-lg-2">
                                             <select id="continents6_lunch" class="form-control">
                                                 <option value="0">all</option>
                                                 <option value="1">carbs</option>
@@ -1833,22 +1915,24 @@
 
                                             </select>
                                         </div>
-                                        <div class="col-lg-3"><select id="selectcountries6_lunch"
+                                        <div class="col-lg-4"><select id="selectcountries6_lunch"
                                                                       class="form-control"></select></div>
                                         <div class="col-lg-3"><select id="gmValue6_lunch" class="form-control">
+
                                                 <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
                                                 @for($i=1;$i<=500;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
+
                                             </select></div>
                                         <div class="col-lg-3">
                                             <button type="button" class="btn btn-success"
-                                                    onclick="getData('gmValue6_lunch','selectcountries6_lunch','carbSum6','fatsSum6','proteinSum6','day6_lunch')">
+                                                    onclick="getData('gmValue6_lunch','selectcountries6_lunch','carbSum6','fatsSum6','proteinSum6','caloriesSum6','day6_lunch')">
                                                 أضف
                                             </button>
                                             <button type="button" class="btn btn-warning"
-                                                    onclick="deleteItem('gmValue6_lunch','selectcountries6_lunch','carbSum6','fatsSum6','proteinSum6','day6_lunch')">
+                                                    onclick="deleteItem('gmValue6_lunch','selectcountries6_lunch','carbSum6','fatsSum6','proteinSum6','caloriesSum6','day6_lunch')">
                                                 حذف
                                             </button>
                                         </div>
@@ -1876,7 +1960,7 @@
 
                                 <div class="form-group text-center">
                                     <div class="col-lg-12">
-                                        <div class="col-lg-3"><select id="continents6_break2" class="form-control">
+                                        <div class="col-lg-2"><select id="continents6_break2" class="form-control">
                                                 <option value="0">all</option>
                                                 <option value="1">carbs</option>
                                                 <option value="2">Fats</option>
@@ -1884,23 +1968,25 @@
 
 
                                             </select></div>
-                                        <div class="col-lg-3"><select id="selectcountries6_break2"
+                                        <div class="col-lg-4"><select id="selectcountries6_break2"
                                                                       class="form-control"></select></div>
                                         <div class="col-lg-3"><select name="gmValue" id="gmValue6_break2"
                                                                       class="form-control">
+
                                                 <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
                                                 @for($i=1;$i<=500;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
+
                                             </select></div>
                                         <div class="col-lg-3">
                                             <button type="button" class="btn btn-success"
-                                                    onclick="getData('gmValue6_break2','selectcountries6_break2','carbSum6','fatsSum6','proteinSum6','day6_break2')">
+                                                    onclick="getData('gmValue6_break2','selectcountries6_break2','carbSum6','fatsSum6','proteinSum6','caloriesSum6','day6_break2')">
                                                 أضف
                                             </button>
                                             <button type="button" class="btn btn-warning"
-                                                    onclick="deleteItem('gmValue6_break2','selectcountries6_break2','carbSum6','fatsSum6','proteinSum6','day6_break2')">
+                                                    onclick="deleteItem('gmValue6_break2','selectcountries6_break2','carbSum6','fatsSum6','proteinSum6','caloriesSum6','day6_break2')">
                                                 حذف
                                             </button>
                                         </div>
@@ -1929,7 +2015,7 @@
 
                                 <div class="form-group text-center">
                                     <div class="col-lg-12">
-                                        <div class="col-lg-3">
+                                        <div class="col-lg-2">
                                             <select id="continents6_dinner" class="form-control">
                                                 <option value="0">all</option>
                                                 <option value="1">carbs</option>
@@ -1937,24 +2023,26 @@
                                                 <option value="3">proteins</option>
                                             </select>
                                         </div>
-                                        <div class="col-lg-3">
+                                        <div class="col-lg-4">
                                             <select id="selectcountries6_dinner" class="form-control"></select>
                                         </div>
                                         <div class="col-lg-3"><select name="gmValue" id="gmValue6_dinner"
                                                                       class="form-control">
+
                                                 <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
                                                 @for($i=1;$i<=500;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
+
                                             </select></div>
                                         <div class="col-lg-3">
                                             <button type="button" class="btn btn-success"
-                                                    onclick="getData('gmValue6_dinner','selectcountries6_dinner','carbSum6','fatsSum6','proteinSum6','day6_dinner')">
+                                                    onclick="getData('gmValue6_dinner','selectcountries6_dinner','carbSum6','fatsSum6','proteinSum6','caloriesSum6','day6_dinner')">
                                                 أضف
                                             </button>
                                             <button type="button" class="btn btn-warning"
-                                                    onclick="deleteItem('gmValue6_dinner','selectcountries6_dinner','carbSum6','fatsSum6','proteinSum6','day6_dinner')">
+                                                    onclick="deleteItem('gmValue6_dinner','selectcountries6_dinner','carbSum6','fatsSum6','proteinSum6','caloriesSum6','day6_dinner')">
                                                 حذف
                                             </button>
                                         </div>
@@ -1998,32 +2086,38 @@
                                 <br>
                                 <br>
 
+
                                 <div class="col-lg-12">
 
-                                    <h2 class="text-center">مجموع السعرات الحرارية لليوم السادس</h2>
-                                    <div class="col-lg-4 col-md-4 col-sm-12">
-                                        <label for="carbSum">carbs old value : {{$data->carbSum6}}</label>
+                                    <h2 class="text-center">مجموع السعرات الحرارية لليوم الاول</h2>
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                        <label for="carbSum6">carbs old value : {{$data->carbSum6}}</label>
                                         <input type="text" id="carbSum6" class="form-control"
-                                               value="{{$data->carbSum6}}"
                                                name="carbSum6"
-
+                                               value="{{$data->carbSum6}}"
                                                placeholder="مجموع الكربهيدرات">
                                     </div>
-                                    <div class="col-lg-4 col-md-4 col-sm-12">
-                                        <label for="carbSum">fats old value : {{$data->fatsSum6}}</label>
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                        <label for="fatsSum6">fats old value : {{$data->fatsSum6}}</label>
                                         <input type="text" id="fatsSum6" class="form-control"
-                                               value="{{$data->fatsSum6}}"
                                                name="fatsSum6"
-
+                                               value="{{$data->fatsSum6}}"
                                                placeholder="مجموع الدهون">
                                     </div>
-                                    <div class="col-lg-4 col-md-4 col-sm-12">
-                                        <label for="carbSum">proteins old value : {{$data->proteinSum6}}</label>
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                        <label for="proteinSum6">protein old value : {{$data->proteinSum6}}</label>
                                         <input type="text" id="proteinSum6" class="form-control"
-                                               value="{{$data->proteinSum6}}"
                                                name="proteinSum6"
-
+                                               value="{{$data->proteinSum6}}"
                                                placeholder="مجموع البروتينات">
+                                    </div>
+
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                        <label for="caloriesSum6">calories old value : {{$data->caloriesSum6}}</label>
+                                        <input type="text" id="caloriesSum6" class="form-control"
+                                               name="caloriesSum6"
+                                               value="{{$data->caloriesSum6}}"
+                                               placeholder="مجموع السعرات">
                                     </div>
                                 </div>
 
@@ -2032,7 +2126,7 @@
                         </div>
 
 
-                        <button class="accordion" type="button"> الجمعة</button>
+                        <button class="accordion" type="button"> الجمعه</button>
                         <div class="panel">
                             <div class="form-group seventh_day">
 
@@ -2040,7 +2134,7 @@
                                 <br><br><br>
                                 <div class="form-group text-center">
                                     <div class="col-lg-12">
-                                        <div class="col-lg-3"><select id="continent7" class="form-control">
+                                        <div class="col-lg-2"><select id="continent7" class="form-control">
                                                 <option value="0">all</option>
                                                 <option value="1">carbs</option>
                                                 <option value="2">Fats</option>
@@ -2048,22 +2142,24 @@
 
 
                                             </select></div>
-                                        <div class="col-lg-3"><select id="selectcountries7"
+                                        <div class="col-lg-4"><select id="selectcountries7"
                                                                       class="form-control"></select></div>
                                         <div class="col-lg-3"><select name="gmValue" id="gmValue7" class="form-control">
+
                                                 <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
                                                 @for($i=1;$i<=500;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
+
                                             </select></div>
                                         <div class="col-lg-3">
                                             <button type="button" class="btn btn-success"
-                                                    onclick="getData('gmValue7','selectcountries7','carbSum7','fatsSum7','proteinSum7','day7_breakfast')">
+                                                    onclick="getData('gmValue7','selectcountries7','carbSum7','fatsSum7','proteinSum7','caloriesSum7','day7_breakfast')">
                                                 أضف
                                             </button>
                                             <button type="button" class="btn btn-warning"
-                                                    onclick="deleteItem('gmValue7','selectcountries7','carbSum7','fatsSum7','proteinSum7','day7_breakfast')">
+                                                    onclick="deleteItem('gmValue7','selectcountries7','carbSum7','fatsSum7','proteinSum7','caloriesSum7','day7_breakfast')">
                                                 حذف
                                             </button>
                                         </div>
@@ -2092,7 +2188,7 @@
 
                                 <div class="form-group text-center">
                                     <div class="col-lg-12">
-                                        <div class="col-lg-3"><select id="continents7_break1" class="form-control">
+                                        <div class="col-lg-2"><select id="continents7_break1" class="form-control">
                                                 <option value="0">all</option>
                                                 <option value="1">carbs</option>
                                                 <option value="2">Fats</option>
@@ -2100,23 +2196,25 @@
 
 
                                             </select></div>
-                                        <div class="col-lg-3"><select id="selectcountries7_break1"
+                                        <div class="col-lg-4"><select id="selectcountries7_break1"
                                                                       class="form-control"></select></div>
                                         <div class="col-lg-3"><select name="gmValue" id="gmValue7_break1"
                                                                       class="form-control">
+
                                                 <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
                                                 @for($i=1;$i<=500;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
+
                                             </select></div>
                                         <div class="col-lg-3">
                                             <button type="button" class="btn btn-success"
-                                                    onclick="getData('gmValue7_break1','selectcountries7_break1','carbSum7','fatsSum7','proteinSum7','day7_break1')">
+                                                    onclick="getData('gmValue7_break1','selectcountries7_break1','carbSum7','fatsSum7','proteinSum7','caloriesSum7','day7_break1')">
                                                 أضف
                                             </button>
                                             <button type="button" class="btn btn-warning"
-                                                    onclick="deleteItem('gmValue7_break1','selectcountries7_break1','carbSum7','fatsSum7','proteinSum7','day7_break1')">
+                                                    onclick="deleteItem('gmValue7_break1','selectcountries7_break1','carbSum7','fatsSum7','proteinSum7','caloriesSum7','day7_break1')">
                                                 حذف
                                             </button>
                                         </div>
@@ -2145,7 +2243,7 @@
 
                                 <div class="form-group text-center">
                                     <div class="col-lg-12">
-                                        <div class="col-lg-3">
+                                        <div class="col-lg-2">
                                             <select id="continents7_lunch" class="form-control">
                                                 <option value="0">all</option>
                                                 <option value="1">carbs</option>
@@ -2155,27 +2253,27 @@
 
                                             </select>
                                         </div>
-                                        <div class="col-lg-3"><select id="selectcountries7_lunch"
+                                        <div class="col-lg-4"><select id="selectcountries7_lunch"
                                                                       class="form-control"></select></div>
                                         <div class="col-lg-3"><select id="gmValue7_lunch" class="form-control">
+
                                                 <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
                                                 @for($i=1;$i<=500;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
+
                                             </select></div>
                                         <div class="col-lg-3">
                                             <button type="button" class="btn btn-success"
-                                                    onclick="getData('gmValue7_lunch','selectcountries7_lunch','carbSum7','fatsSum7','proteinSum7','day7_lunch')">
+                                                    onclick="getData('gmValue7_lunch','selectcountries7_lunch','carbSum7','fatsSum7','proteinSum7','caloriesSum7','day7_lunch')">
                                                 أضف
                                             </button>
                                             <button type="button" class="btn btn-warning"
-                                                    onclick="deleteItem('gmValue7_lunch','selectcountries7_lunch','carbSum7','fatsSum7','proteinSum7','day7_lunch')">
+                                                    onclick="deleteItem('gmValue7_lunch','selectcountries7_lunch','carbSum7','fatsSum7','proteinSum7','caloriesSum7','day7_lunch')">
                                                 حذف
                                             </button>
                                         </div>
-
-
                                     </div>
 
 
@@ -2201,7 +2299,7 @@
 
                                 <div class="form-group text-center">
                                     <div class="col-lg-12">
-                                        <div class="col-lg-3"><select id="continents7_break2" class="form-control">
+                                        <div class="col-lg-2"><select id="continents7_break2" class="form-control">
                                                 <option value="0">all</option>
                                                 <option value="1">carbs</option>
                                                 <option value="2">Fats</option>
@@ -2209,23 +2307,25 @@
 
 
                                             </select></div>
-                                        <div class="col-lg-3"><select id="selectcountries7_break2"
+                                        <div class="col-lg-4"><select id="selectcountries7_break2"
                                                                       class="form-control"></select></div>
                                         <div class="col-lg-3"><select name="gmValue" id="gmValue7_break2"
                                                                       class="form-control">
+
                                                 <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
                                                 @for($i=1;$i<=500;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
+
                                             </select></div>
                                         <div class="col-lg-3">
                                             <button type="button" class="btn btn-success"
-                                                    onclick="getData('gmValue7_break2','selectcountries7_break2','carbSum7','fatsSum7','proteinSum7','day7_break2')">
+                                                    onclick="getData('gmValue7_break2','selectcountries7_break2','carbSum7','fatsSum7','proteinSum7','caloriesSum7','day7_break2')">
                                                 أضف
                                             </button>
                                             <button type="button" class="btn btn-warning"
-                                                    onclick="deleteItem('gmValue7_break2','selectcountries7_break2','carbSum7','fatsSum7','proteinSum7','day7_break2')">
+                                                    onclick="deleteItem('gmValue7_break2','selectcountries7_break2','carbSum7','fatsSum7','proteinSum7','caloriesSum7','day7_break2')">
                                                 حذف
                                             </button>
                                         </div>
@@ -2255,7 +2355,7 @@
 
                                 <div class="form-group text-center">
                                     <div class="col-lg-12">
-                                        <div class="col-lg-3"><select id="continents7_dinner" class="form-control">
+                                        <div class="col-lg-2"><select id="continents7_dinner" class="form-control">
                                                 <option value="0">all</option>
                                                 <option value="1">carbs</option>
                                                 <option value="2">Fats</option>
@@ -2263,23 +2363,25 @@
 
 
                                             </select></div>
-                                        <div class="col-lg-3"><select id="selectcountries7_dinner"
+                                        <div class="col-lg-4"><select id="selectcountries7_dinner"
                                                                       class="form-control"></select></div>
                                         <div class="col-lg-3"><select name="gmValue" id="gmValue7_dinner"
                                                                       class="form-control">
+
                                                 <option value="0.25">1/4</option>
                                                 <option value="0.5">1/2</option>
                                                 @for($i=1;$i<=500;$i++)
                                                     <option value="{{$i}}">{{$i}}</option>
                                                 @endfor
+
                                             </select></div>
                                         <div class="col-lg-3">
                                             <button type="button" class="btn btn-success"
-                                                    onclick="getData('gmValue7_dinner','selectcountries7_dinner','carbSum7','fatsSum7','proteinSum7','day7_dinner')">
+                                                    onclick="getData('gmValue7_dinner','selectcountries7_dinner','carbSum7','fatsSum7','proteinSum7','caloriesSum7','day7_dinner')">
                                                 أضف
                                             </button>
                                             <button type="button" class="btn btn-warning"
-                                                    onclick="deleteItem('gmValue7_dinner','selectcountries7_dinner','carbSum7','fatsSum7','proteinSum7','day7_dinner')">
+                                                    onclick="deleteItem('gmValue7_dinner','selectcountries7_dinner','carbSum7','fatsSum7','proteinSum7','caloriesSum7','day7_dinner')">
                                                 حذف
                                             </button>
                                         </div>
@@ -2311,7 +2413,7 @@
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" id="day7_notes" name="day7_notes"
-                                               value="{{$data->day7_notes}}"
+                                               value="{{old('day7_notes')}}"
                                                class="form-control col-md-7 col-xs-12">
                                     </div>
 
@@ -2325,38 +2427,41 @@
 
                                 <div class="col-lg-12">
 
-                                    <h2 class="text-center">مجموع السعرات الحرارية لليوم السابع</h2>
-                                    <div class="col-lg-4 col-md-4 col-sm-12">
-                                        <label for="carbSum">carbs old value : {{$data->carbSum7}}</label>
+                                    <h2 class="text-center">مجموع السعرات الحرارية لليوم الاول</h2>
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                        <label for="carbSum7">carbs old value : {{$data->carbSum7}}</label>
                                         <input type="text" id="carbSum7" class="form-control"
-                                               value="{{$data->carbSum7}}"
                                                name="carbSum7"
-
+                                               value="{{$data->carbSum7}}"
                                                placeholder="مجموع الكربهيدرات">
                                     </div>
-                                    <div class="col-lg-4 col-md-4 col-sm-12">
-                                        <label for="carbSum">fats old value : {{$data->fatsSum7}}</label>
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                        <label for="fatsSum7">fats old value : {{$data->fatsSum7}}</label>
                                         <input type="text" id="fatsSum7" class="form-control"
-                                               value="{{$data->fatsSum7}}"
                                                name="fatsSum7"
-
+                                               value="{{$data->fatsSum7}}"
                                                placeholder="مجموع الدهون">
                                     </div>
-                                    <div class="col-lg-4 col-md-4 col-sm-12">
-                                        <label for="carbSum">proteins old value : {{$data->proteinSum7}}</label>
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                        <label for="proteinSum7">protein old value : {{$data->proteinSum7}}</label>
                                         <input type="text" id="proteinSum7" class="form-control"
-                                               value=" {{$data->proteinSum7}}"
                                                name="proteinSum7"
-
+                                               value="{{$data->proteinSum7}}"
                                                placeholder="مجموع البروتينات">
+                                    </div>
+
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                        <label for="caloriesSum7">calories old value : {{$data->caloriesSum7}}</label>
+                                        <input type="text" id="caloriesSum7" class="form-control"
+                                               name="caloriesSum7"
+                                               value="{{$data->caloriesSum7}}"
+                                               placeholder="مجموع السعرات">
                                     </div>
                                 </div>
 
 
                             </div>
                         </div>
-
-
 
 
                         <input type="submit" name="submit" value="حفظ" class="btn btn-success btn-block">
@@ -2367,9 +2472,9 @@
         <?php
 
         $data = \App\Food::all();
-        $carbs=\App\Food::where('category_id',1)->get();
-        $fats=\App\Food::where('category_id',2)->get();
-        $proteins=\App\Food::where('category_id',3)->get();
+        $carbs = \App\Food::where('category_id', 1)->get();
+        $fats = \App\Food::where('category_id', 2)->get();
+        $proteins = \App\Food::where('category_id', 3)->get();
 
         ?>
     </section>
@@ -2381,6 +2486,7 @@
         CKEDITOR.replace('system_desc');
     </script>
     <script src="{{url('/')}}/js/typeahead.js"></script>
+
 
 
 
@@ -2396,15 +2502,11 @@
 
         <?php }?>
 
-        /*   $('#day1_breakfast').tagator({
-
-               autocomplete: pausecontent,
-               //showAllOptionsOnFocus: true,
-
-
-           }); */
 
     </script>
+
+
+
 
     <script>
 
@@ -2417,7 +2519,7 @@
 
 
         carb.push('<?php echo $item->food_name . ' - ' . $item->unit . ' - ' . $item->carb_calories
-            . ' - ' . $item->fats_calories . ' - ' . $item->proteins_calories  ; ?>');
+            . ' - ' . $item->fats_calories . ' - ' . $item->proteins_calories . ' - ' . $item->calories; ?>');
 
             <?php }?>
 
@@ -2429,8 +2531,7 @@
         ?>
 
         carbs.push('<?php echo $item->food_name . ' - ' . $item->unit . ' - ' . $item->carb_calories
-            . ' - ' . $item->fats_calories . ' - ' . $item->proteins_calories ; ?>');
-
+            . ' - ' . $item->fats_calories . ' - ' . $item->proteins_calories . ' - ' . $item->calories; ?>');
             <?php }?>
 
 
@@ -2441,7 +2542,7 @@
         ?>
 
         fats.push('<?php echo $item->food_name . ' - ' . $item->unit . ' - ' . $item->carb_calories
-            . ' - ' . $item->fats_calories . ' - ' . $item->proteins_calories  ; ?>');
+            . ' - ' . $item->fats_calories . ' - ' . $item->proteins_calories . ' - ' . $item->calories; ?>');
 
             <?php }?>
 
@@ -2453,838 +2554,12 @@
         ?>
 
         proteins.push('<?php echo $item->food_name . ' - ' . $item->unit . ' - ' . $item->carb_calories
-            . ' - ' . $item->fats_calories . ' - ' . $item->proteins_calories  ; ?>');
+            . ' - ' . $item->fats_calories . ' - ' . $item->proteins_calories . ' - ' . $item->calories; ?>');
 
         <?php }?>
 
     </script>
 
-    {{-- day 1 deleting data --}}
-
-    <script>
-
-        function initSelectors(){
-            // next 2 statements should generate error message, see console
-            MAIN.createRelatedSelector();
-            MAIN.createRelatedSelector(document.querySelector('#continentsg') );
-
-            //countries
-            MAIN.createRelatedSelector
-            ( document.querySelector('#continentsg')           // from select element
-                ,document.querySelector('#selectcountriesg')      // to select element
-                ,{                                               // values object
-
-
-                    carbs: carbs,
-                    Fats: fats,
-                    proteins: proteins
-                }
-                ,function(a,b){return a>b ? 1 : a<b ? -1 : 0;}   // sort method
-            );
-
-
-
-
-        }
-
-        //create MAIN namespace
-        (function(ns){ // don't pollute the global namespace
-
-            function create(from, to, obj, srt){
-                if (!from) {
-                    throw CreationError('create: parameter selector [from] missing');
-                }
-                if (!to) {
-                    throw CreationError('create: parameter related selector [to] missing');
-                }
-                if (!obj) {
-                    throw CreationError('create: related filter definition object [obj] missing');
-                }
-
-                //retrieve all options from obj and add it
-                obj.all = (function(o){
-                    var a = [];
-                    for (var l in o) {
-                        a = /array/i.test (o[l].constructor) ? a.concat(o[l]) : a;
-                    }
-                    return a.sort(srt);
-                }(obj));
-                // initialize and populate to-selector with all
-                populator.call( from
-                    ,null
-                    ,to
-                    ,obj
-                    ,srt
-                );
-
-                // assign handler
-                from.onchange = populator;
-
-                function initStatics(fn,obj){
-                    for (var l in obj) {
-                        if (obj.hasOwnProperty(l)){
-                            fn[l] = obj[l];
-                        }
-                    }
-                    fn.initialized = true;
-                }
-
-                function populator(e, relatedto, obj, srt){
-                    // set pseudo statics
-                    var self = populator;
-                    if (!self.initialized) {
-                        initStatics(self,{optselects:obj,optselectsall:obj.all,relatedTo:relatedto,sorter:srt || false});
-                    }
-
-                    if (!self.relatedTo){
-                        throw 'not related to a selector';
-                    }
-                    // populate to-selector from filter/all
-                    var optsfilter = this.selectedIndex < 1
-                        ? self.optselectsall
-                        : self.optselects[this.options[this.selectedIndex].firstChild.nodeValue]
-                        ,cselect = self.relatedTo
-                        ,opts = cselect.options;
-                    if (self.sorter) optsfilter.sort(self.sorter);
-                    opts.length = 0;
-                    for (var i=0;i<optsfilter.length;i+=1){
-                        opts[i] = new Option(optsfilter[i],i);
-                    }
-                }
-            }
-
-            // custom Error
-            function CreationError(mssg){
-                return {name:'CreationError',message:mssg};
-            }
-
-            // return the create method with some error handling
-            window[ns] = {
-                createRelatedSelector: function(from,to,obj,srt) {
-                    try {
-                        if (arguments.length<1) {
-                            throw CreationError('no parameters');
-                        }
-                        create.call(null,from,to,obj,srt);
-                    }
-                    catch(e) { console.log('createRelatedSelector ->',e.name,'\n'
-                        + e.message +
-                        '\ncheck parameters'); }
-                }
-            };
-        }('MAIN'));
-        //initialize
-        initSelectors();
-    </script>
-
-    {{-- day 2 deleting data --}}
-
-    <script>
-
-        function initSelectors(){
-            // next 2 statements should generate error message, see console
-            MAIN.createRelatedSelector();
-            MAIN.createRelatedSelector(document.querySelector('#continentsg2') );
-
-            //countries
-            MAIN.createRelatedSelector
-            ( document.querySelector('#continentsg2')           // from select element
-                ,document.querySelector('#selectcountriesg2')      // to select element
-                ,{                                               // values object
-
-
-                    carbs: carbs,
-                    Fats: fats,
-                    proteins: proteins
-                }
-                ,function(a,b){return a>b ? 1 : a<b ? -1 : 0;}   // sort method
-            );
-
-
-
-
-        }
-
-        //create MAIN namespace
-        (function(ns){ // don't pollute the global namespace
-
-            function create(from, to, obj, srt){
-                if (!from) {
-                    throw CreationError('create: parameter selector [from] missing');
-                }
-                if (!to) {
-                    throw CreationError('create: parameter related selector [to] missing');
-                }
-                if (!obj) {
-                    throw CreationError('create: related filter definition object [obj] missing');
-                }
-
-                //retrieve all options from obj and add it
-                obj.all = (function(o){
-                    var a = [];
-                    for (var l in o) {
-                        a = /array/i.test (o[l].constructor) ? a.concat(o[l]) : a;
-                    }
-                    return a.sort(srt);
-                }(obj));
-                // initialize and populate to-selector with all
-                populator.call( from
-                    ,null
-                    ,to
-                    ,obj
-                    ,srt
-                );
-
-                // assign handler
-                from.onchange = populator;
-
-                function initStatics(fn,obj){
-                    for (var l in obj) {
-                        if (obj.hasOwnProperty(l)){
-                            fn[l] = obj[l];
-                        }
-                    }
-                    fn.initialized = true;
-                }
-
-                function populator(e, relatedto, obj, srt){
-                    // set pseudo statics
-                    var self = populator;
-                    if (!self.initialized) {
-                        initStatics(self,{optselects:obj,optselectsall:obj.all,relatedTo:relatedto,sorter:srt || false});
-                    }
-
-                    if (!self.relatedTo){
-                        throw 'not related to a selector';
-                    }
-                    // populate to-selector from filter/all
-                    var optsfilter = this.selectedIndex < 1
-                        ? self.optselectsall
-                        : self.optselects[this.options[this.selectedIndex].firstChild.nodeValue]
-                        ,cselect = self.relatedTo
-                        ,opts = cselect.options;
-                    if (self.sorter) optsfilter.sort(self.sorter);
-                    opts.length = 0;
-                    for (var i=0;i<optsfilter.length;i+=1){
-                        opts[i] = new Option(optsfilter[i],i);
-                    }
-                }
-            }
-
-            // custom Error
-            function CreationError(mssg){
-                return {name:'CreationError',message:mssg};
-            }
-
-            // return the create method with some error handling
-            window[ns] = {
-                createRelatedSelector: function(from,to,obj,srt) {
-                    try {
-                        if (arguments.length<1) {
-                            throw CreationError('no parameters');
-                        }
-                        create.call(null,from,to,obj,srt);
-                    }
-                    catch(e) { console.log('createRelatedSelector ->',e.name,'\n'
-                        + e.message +
-                        '\ncheck parameters'); }
-                }
-            };
-        }('MAIN'));
-        //initialize
-        initSelectors();
-    </script>
-
-    {{-- day 3 deleting data --}}
-
-    <script>
-
-        function initSelectors(){
-            // next 2 statements should generate error message, see console
-            MAIN.createRelatedSelector();
-            MAIN.createRelatedSelector(document.querySelector('#continentsg3') );
-
-            //countries
-            MAIN.createRelatedSelector
-            ( document.querySelector('#continentsg3')           // from select element
-                ,document.querySelector('#selectcountriesg3')      // to select element
-                ,{                                               // values object
-
-
-                    carbs: carbs,
-                    Fats: fats,
-                    proteins: proteins
-                }
-                ,function(a,b){return a>b ? 1 : a<b ? -1 : 0;}   // sort method
-            );
-
-
-
-
-        }
-
-        //create MAIN namespace
-        (function(ns){ // don't pollute the global namespace
-
-            function create(from, to, obj, srt){
-                if (!from) {
-                    throw CreationError('create: parameter selector [from] missing');
-                }
-                if (!to) {
-                    throw CreationError('create: parameter related selector [to] missing');
-                }
-                if (!obj) {
-                    throw CreationError('create: related filter definition object [obj] missing');
-                }
-
-                //retrieve all options from obj and add it
-                obj.all = (function(o){
-                    var a = [];
-                    for (var l in o) {
-                        a = /array/i.test (o[l].constructor) ? a.concat(o[l]) : a;
-                    }
-                    return a.sort(srt);
-                }(obj));
-                // initialize and populate to-selector with all
-                populator.call( from
-                    ,null
-                    ,to
-                    ,obj
-                    ,srt
-                );
-
-                // assign handler
-                from.onchange = populator;
-
-                function initStatics(fn,obj){
-                    for (var l in obj) {
-                        if (obj.hasOwnProperty(l)){
-                            fn[l] = obj[l];
-                        }
-                    }
-                    fn.initialized = true;
-                }
-
-                function populator(e, relatedto, obj, srt){
-                    // set pseudo statics
-                    var self = populator;
-                    if (!self.initialized) {
-                        initStatics(self,{optselects:obj,optselectsall:obj.all,relatedTo:relatedto,sorter:srt || false});
-                    }
-
-                    if (!self.relatedTo){
-                        throw 'not related to a selector';
-                    }
-                    // populate to-selector from filter/all
-                    var optsfilter = this.selectedIndex < 1
-                        ? self.optselectsall
-                        : self.optselects[this.options[this.selectedIndex].firstChild.nodeValue]
-                        ,cselect = self.relatedTo
-                        ,opts = cselect.options;
-                    if (self.sorter) optsfilter.sort(self.sorter);
-                    opts.length = 0;
-                    for (var i=0;i<optsfilter.length;i+=1){
-                        opts[i] = new Option(optsfilter[i],i);
-                    }
-                }
-            }
-
-            // custom Error
-            function CreationError(mssg){
-                return {name:'CreationError',message:mssg};
-            }
-
-            // return the create method with some error handling
-            window[ns] = {
-                createRelatedSelector: function(from,to,obj,srt) {
-                    try {
-                        if (arguments.length<1) {
-                            throw CreationError('no parameters');
-                        }
-                        create.call(null,from,to,obj,srt);
-                    }
-                    catch(e) { console.log('createRelatedSelector ->',e.name,'\n'
-                        + e.message +
-                        '\ncheck parameters'); }
-                }
-            };
-        }('MAIN'));
-        //initialize
-        initSelectors();
-    </script>
-
-    {{-- day 4 deleting data --}}
-
-    <script>
-
-        function initSelectors(){
-            // next 2 statements should generate error message, see console
-            MAIN.createRelatedSelector();
-            MAIN.createRelatedSelector(document.querySelector('#continentsg4') );
-
-            //countries
-            MAIN.createRelatedSelector
-            ( document.querySelector('#continentsg4')           // from select element
-                ,document.querySelector('#selectcountriesg4')      // to select element
-                ,{                                               // values object
-
-
-                    carbs: carbs,
-                    Fats: fats,
-                    proteins: proteins
-                }
-                ,function(a,b){return a>b ? 1 : a<b ? -1 : 0;}   // sort method
-            );
-
-
-
-
-        }
-
-        //create MAIN namespace
-        (function(ns){ // don't pollute the global namespace
-
-            function create(from, to, obj, srt){
-                if (!from) {
-                    throw CreationError('create: parameter selector [from] missing');
-                }
-                if (!to) {
-                    throw CreationError('create: parameter related selector [to] missing');
-                }
-                if (!obj) {
-                    throw CreationError('create: related filter definition object [obj] missing');
-                }
-
-                //retrieve all options from obj and add it
-                obj.all = (function(o){
-                    var a = [];
-                    for (var l in o) {
-                        a = /array/i.test (o[l].constructor) ? a.concat(o[l]) : a;
-                    }
-                    return a.sort(srt);
-                }(obj));
-                // initialize and populate to-selector with all
-                populator.call( from
-                    ,null
-                    ,to
-                    ,obj
-                    ,srt
-                );
-
-                // assign handler
-                from.onchange = populator;
-
-                function initStatics(fn,obj){
-                    for (var l in obj) {
-                        if (obj.hasOwnProperty(l)){
-                            fn[l] = obj[l];
-                        }
-                    }
-                    fn.initialized = true;
-                }
-
-                function populator(e, relatedto, obj, srt){
-                    // set pseudo statics
-                    var self = populator;
-                    if (!self.initialized) {
-                        initStatics(self,{optselects:obj,optselectsall:obj.all,relatedTo:relatedto,sorter:srt || false});
-                    }
-
-                    if (!self.relatedTo){
-                        throw 'not related to a selector';
-                    }
-                    // populate to-selector from filter/all
-                    var optsfilter = this.selectedIndex < 1
-                        ? self.optselectsall
-                        : self.optselects[this.options[this.selectedIndex].firstChild.nodeValue]
-                        ,cselect = self.relatedTo
-                        ,opts = cselect.options;
-                    if (self.sorter) optsfilter.sort(self.sorter);
-                    opts.length = 0;
-                    for (var i=0;i<optsfilter.length;i+=1){
-                        opts[i] = new Option(optsfilter[i],i);
-                    }
-                }
-            }
-
-            // custom Error
-            function CreationError(mssg){
-                return {name:'CreationError',message:mssg};
-            }
-
-            // return the create method with some error handling
-            window[ns] = {
-                createRelatedSelector: function(from,to,obj,srt) {
-                    try {
-                        if (arguments.length<1) {
-                            throw CreationError('no parameters');
-                        }
-                        create.call(null,from,to,obj,srt);
-                    }
-                    catch(e) { console.log('createRelatedSelector ->',e.name,'\n'
-                        + e.message +
-                        '\ncheck parameters'); }
-                }
-            };
-        }('MAIN'));
-        //initialize
-        initSelectors();
-    </script>
-
-    {{-- day 5 deleting data --}}
-
-    <script>
-
-        function initSelectors(){
-            // next 2 statements should generate error message, see console
-            MAIN.createRelatedSelector();
-            MAIN.createRelatedSelector(document.querySelector('#continentsg5') );
-
-            //countries
-            MAIN.createRelatedSelector
-            ( document.querySelector('#continentsg5')           // from select element
-                ,document.querySelector('#selectcountriesg5')      // to select element
-                ,{                                               // values object
-
-
-                    carbs: carbs,
-                    Fats: fats,
-                    proteins: proteins
-                }
-                ,function(a,b){return a>b ? 1 : a<b ? -1 : 0;}   // sort method
-            );
-
-
-
-
-        }
-
-        //create MAIN namespace
-        (function(ns){ // don't pollute the global namespace
-
-            function create(from, to, obj, srt){
-                if (!from) {
-                    throw CreationError('create: parameter selector [from] missing');
-                }
-                if (!to) {
-                    throw CreationError('create: parameter related selector [to] missing');
-                }
-                if (!obj) {
-                    throw CreationError('create: related filter definition object [obj] missing');
-                }
-
-                //retrieve all options from obj and add it
-                obj.all = (function(o){
-                    var a = [];
-                    for (var l in o) {
-                        a = /array/i.test (o[l].constructor) ? a.concat(o[l]) : a;
-                    }
-                    return a.sort(srt);
-                }(obj));
-                // initialize and populate to-selector with all
-                populator.call( from
-                    ,null
-                    ,to
-                    ,obj
-                    ,srt
-                );
-
-                // assign handler
-                from.onchange = populator;
-
-                function initStatics(fn,obj){
-                    for (var l in obj) {
-                        if (obj.hasOwnProperty(l)){
-                            fn[l] = obj[l];
-                        }
-                    }
-                    fn.initialized = true;
-                }
-
-                function populator(e, relatedto, obj, srt){
-                    // set pseudo statics
-                    var self = populator;
-                    if (!self.initialized) {
-                        initStatics(self,{optselects:obj,optselectsall:obj.all,relatedTo:relatedto,sorter:srt || false});
-                    }
-
-                    if (!self.relatedTo){
-                        throw 'not related to a selector';
-                    }
-                    // populate to-selector from filter/all
-                    var optsfilter = this.selectedIndex < 1
-                        ? self.optselectsall
-                        : self.optselects[this.options[this.selectedIndex].firstChild.nodeValue]
-                        ,cselect = self.relatedTo
-                        ,opts = cselect.options;
-                    if (self.sorter) optsfilter.sort(self.sorter);
-                    opts.length = 0;
-                    for (var i=0;i<optsfilter.length;i+=1){
-                        opts[i] = new Option(optsfilter[i],i);
-                    }
-                }
-            }
-
-            // custom Error
-            function CreationError(mssg){
-                return {name:'CreationError',message:mssg};
-            }
-
-            // return the create method with some error handling
-            window[ns] = {
-                createRelatedSelector: function(from,to,obj,srt) {
-                    try {
-                        if (arguments.length<1) {
-                            throw CreationError('no parameters');
-                        }
-                        create.call(null,from,to,obj,srt);
-                    }
-                    catch(e) { console.log('createRelatedSelector ->',e.name,'\n'
-                        + e.message +
-                        '\ncheck parameters'); }
-                }
-            };
-        }('MAIN'));
-        //initialize
-        initSelectors();
-    </script>
-
-
-    {{-- day 6 deleting data --}}
-
-    <script>
-
-        function initSelectors(){
-            // next 2 statements should generate error message, see console
-            MAIN.createRelatedSelector();
-            MAIN.createRelatedSelector(document.querySelector('#continentsg6') );
-
-            //countries
-            MAIN.createRelatedSelector
-            ( document.querySelector('#continentsg6')           // from select element
-                ,document.querySelector('#selectcountriesg6')      // to select element
-                ,{                                               // values object
-
-
-                    carbs: carbs,
-                    Fats: fats,
-                    proteins: proteins
-                }
-                ,function(a,b){return a>b ? 1 : a<b ? -1 : 0;}   // sort method
-            );
-
-
-
-
-        }
-
-        //create MAIN namespace
-        (function(ns){ // don't pollute the global namespace
-
-            function create(from, to, obj, srt){
-                if (!from) {
-                    throw CreationError('create: parameter selector [from] missing');
-                }
-                if (!to) {
-                    throw CreationError('create: parameter related selector [to] missing');
-                }
-                if (!obj) {
-                    throw CreationError('create: related filter definition object [obj] missing');
-                }
-
-                //retrieve all options from obj and add it
-                obj.all = (function(o){
-                    var a = [];
-                    for (var l in o) {
-                        a = /array/i.test (o[l].constructor) ? a.concat(o[l]) : a;
-                    }
-                    return a.sort(srt);
-                }(obj));
-                // initialize and populate to-selector with all
-                populator.call( from
-                    ,null
-                    ,to
-                    ,obj
-                    ,srt
-                );
-
-                // assign handler
-                from.onchange = populator;
-
-                function initStatics(fn,obj){
-                    for (var l in obj) {
-                        if (obj.hasOwnProperty(l)){
-                            fn[l] = obj[l];
-                        }
-                    }
-                    fn.initialized = true;
-                }
-
-                function populator(e, relatedto, obj, srt){
-                    // set pseudo statics
-                    var self = populator;
-                    if (!self.initialized) {
-                        initStatics(self,{optselects:obj,optselectsall:obj.all,relatedTo:relatedto,sorter:srt || false});
-                    }
-
-                    if (!self.relatedTo){
-                        throw 'not related to a selector';
-                    }
-                    // populate to-selector from filter/all
-                    var optsfilter = this.selectedIndex < 1
-                        ? self.optselectsall
-                        : self.optselects[this.options[this.selectedIndex].firstChild.nodeValue]
-                        ,cselect = self.relatedTo
-                        ,opts = cselect.options;
-                    if (self.sorter) optsfilter.sort(self.sorter);
-                    opts.length = 0;
-                    for (var i=0;i<optsfilter.length;i+=1){
-                        opts[i] = new Option(optsfilter[i],i);
-                    }
-                }
-            }
-
-            // custom Error
-            function CreationError(mssg){
-                return {name:'CreationError',message:mssg};
-            }
-
-            // return the create method with some error handling
-            window[ns] = {
-                createRelatedSelector: function(from,to,obj,srt) {
-                    try {
-                        if (arguments.length<1) {
-                            throw CreationError('no parameters');
-                        }
-                        create.call(null,from,to,obj,srt);
-                    }
-                    catch(e) { console.log('createRelatedSelector ->',e.name,'\n'
-                        + e.message +
-                        '\ncheck parameters'); }
-                }
-            };
-        }('MAIN'));
-        //initialize
-        initSelectors();
-    </script>
-
-    {{-- day 7 deleting data --}}
-
-    <script>
-
-        function initSelectors(){
-            // next 2 statements should generate error message, see console
-            MAIN.createRelatedSelector();
-            MAIN.createRelatedSelector(document.querySelector('#continentsg7') );
-
-            //countries
-            MAIN.createRelatedSelector
-            ( document.querySelector('#continentsg7')           // from select element
-                ,document.querySelector('#selectcountriesg7')      // to select element
-                ,{                                               // values object
-
-
-                    carbs: carbs,
-                    Fats: fats,
-                    proteins: proteins
-                }
-                ,function(a,b){return a>b ? 1 : a<b ? -1 : 0;}   // sort method
-            );
-
-
-
-
-        }
-
-        //create MAIN namespace
-        (function(ns){ // don't pollute the global namespace
-
-            function create(from, to, obj, srt){
-                if (!from) {
-                    throw CreationError('create: parameter selector [from] missing');
-                }
-                if (!to) {
-                    throw CreationError('create: parameter related selector [to] missing');
-                }
-                if (!obj) {
-                    throw CreationError('create: related filter definition object [obj] missing');
-                }
-
-                //retrieve all options from obj and add it
-                obj.all = (function(o){
-                    var a = [];
-                    for (var l in o) {
-                        a = /array/i.test (o[l].constructor) ? a.concat(o[l]) : a;
-                    }
-                    return a.sort(srt);
-                }(obj));
-                // initialize and populate to-selector with all
-                populator.call( from
-                    ,null
-                    ,to
-                    ,obj
-                    ,srt
-                );
-
-                // assign handler
-                from.onchange = populator;
-
-                function initStatics(fn,obj){
-                    for (var l in obj) {
-                        if (obj.hasOwnProperty(l)){
-                            fn[l] = obj[l];
-                        }
-                    }
-                    fn.initialized = true;
-                }
-
-                function populator(e, relatedto, obj, srt){
-                    // set pseudo statics
-                    var self = populator;
-                    if (!self.initialized) {
-                        initStatics(self,{optselects:obj,optselectsall:obj.all,relatedTo:relatedto,sorter:srt || false});
-                    }
-
-                    if (!self.relatedTo){
-                        throw 'not related to a selector';
-                    }
-                    // populate to-selector from filter/all
-                    var optsfilter = this.selectedIndex < 1
-                        ? self.optselectsall
-                        : self.optselects[this.options[this.selectedIndex].firstChild.nodeValue]
-                        ,cselect = self.relatedTo
-                        ,opts = cselect.options;
-                    if (self.sorter) optsfilter.sort(self.sorter);
-                    opts.length = 0;
-                    for (var i=0;i<optsfilter.length;i+=1){
-                        opts[i] = new Option(optsfilter[i],i);
-                    }
-                }
-            }
-
-            // custom Error
-            function CreationError(mssg){
-                return {name:'CreationError',message:mssg};
-            }
-
-            // return the create method with some error handling
-            window[ns] = {
-                createRelatedSelector: function(from,to,obj,srt) {
-                    try {
-                        if (arguments.length<1) {
-                            throw CreationError('no parameters');
-                        }
-                        create.call(null,from,to,obj,srt);
-                    }
-                    catch(e) { console.log('createRelatedSelector ->',e.name,'\n'
-                        + e.message +
-                        '\ncheck parameters'); }
-                }
-            };
-        }('MAIN'));
-        //initialize
-        initSelectors();
-    </script>
 
 
 
@@ -3331,121 +2606,7 @@
 
     {{-- day 2 lunch start --}}
 
-    <script>
-
-        function initSelectors(){
-            // next 2 statements should generate error message, see console
-            MAIN.createRelatedSelector();
-            MAIN.createRelatedSelector(document.querySelector('#continents2_lunch') );
-
-            //countries
-            MAIN.createRelatedSelector
-            ( document.querySelector('#continents2_lunch')           // from select element
-                ,document.querySelector('#selectcountries2_lunch')      // to select element
-                ,{                                               // values object
-
-
-                    carbs: carbs,
-                    Fats: fats,
-                    proteins: proteins
-                }
-                ,function(a,b){return a>b ? 1 : a<b ? -1 : 0;}   // sort method
-            );
-
-
-
-
-        }
-
-        //create MAIN namespace
-        (function(ns){ // don't pollute the global namespace
-
-            function create(from, to, obj, srt){
-                if (!from) {
-                    throw CreationError('create: parameter selector [from] missing');
-                }
-                if (!to) {
-                    throw CreationError('create: parameter related selector [to] missing');
-                }
-                if (!obj) {
-                    throw CreationError('create: related filter definition object [obj] missing');
-                }
-
-                //retrieve all options from obj and add it
-                obj.all = (function(o){
-                    var a = [];
-                    for (var l in o) {
-                        a = /array/i.test (o[l].constructor) ? a.concat(o[l]) : a;
-                    }
-                    return a.sort(srt);
-                }(obj));
-                // initialize and populate to-selector with all
-                populator.call( from
-                    ,null
-                    ,to
-                    ,obj
-                    ,srt
-                );
-
-                // assign handler
-                from.onchange = populator;
-
-                function initStatics(fn,obj){
-                    for (var l in obj) {
-                        if (obj.hasOwnProperty(l)){
-                            fn[l] = obj[l];
-                        }
-                    }
-                    fn.initialized = true;
-                }
-
-                function populator(e, relatedto, obj, srt){
-                    // set pseudo statics
-                    var self = populator;
-                    if (!self.initialized) {
-                        initStatics(self,{optselects:obj,optselectsall:obj.all,relatedTo:relatedto,sorter:srt || false});
-                    }
-
-                    if (!self.relatedTo){
-                        throw 'not related to a selector';
-                    }
-                    // populate to-selector from filter/all
-                    var optsfilter = this.selectedIndex < 1
-                        ? self.optselectsall
-                        : self.optselects[this.options[this.selectedIndex].firstChild.nodeValue]
-                        ,cselect = self.relatedTo
-                        ,opts = cselect.options;
-                    if (self.sorter) optsfilter.sort(self.sorter);
-                    opts.length = 0;
-                    for (var i=0;i<optsfilter.length;i+=1){
-                        opts[i] = new Option(optsfilter[i],i);
-                    }
-                }
-            }
-
-            // custom Error
-            function CreationError(mssg){
-                return {name:'CreationError',message:mssg};
-            }
-
-            // return the create method with some error handling
-            window[ns] = {
-                createRelatedSelector: function(from,to,obj,srt) {
-                    try {
-                        if (arguments.length<1) {
-                            throw CreationError('no parameters');
-                        }
-                        create.call(null,from,to,obj,srt);
-                    }
-                    catch(e) { console.log('createRelatedSelector ->',e.name,'\n'
-                        + e.message +
-                        '\ncheck parameters'); }
-                }
-            };
-        }('MAIN'));
-        //initialize
-        initSelectors();
-    </script>
+    <script src="{{url('/')}}/js/day2/day2_lunch.js"></script>
 
     {{-- day 2 lunch finish --}}
 
@@ -3453,361 +2614,19 @@
 
     {{-- day 2 dinner start --}}
 
-    <script>
-
-        function initSelectors(){
-            // next 2 statements should generate error message, see console
-            MAIN.createRelatedSelector();
-            MAIN.createRelatedSelector(document.querySelector('#continents2_dinner') );
-
-            //countries
-            MAIN.createRelatedSelector
-            ( document.querySelector('#continents2_dinner')           // from select element
-                ,document.querySelector('#selectcountries2_dinner')      // to select element
-                ,{                                               // values object
-
-
-                    carbs: carbs,
-                    Fats: fats,
-                    proteins: proteins
-                }
-                ,function(a,b){return a>b ? 1 : a<b ? -1 : 0;}   // sort method
-            );
-
-
-
-
-        }
-
-        //create MAIN namespace
-        (function(ns){ // don't pollute the global namespace
-
-            function create(from, to, obj, srt){
-                if (!from) {
-                    throw CreationError('create: parameter selector [from] missing');
-                }
-                if (!to) {
-                    throw CreationError('create: parameter related selector [to] missing');
-                }
-                if (!obj) {
-                    throw CreationError('create: related filter definition object [obj] missing');
-                }
-
-                //retrieve all options from obj and add it
-                obj.all = (function(o){
-                    var a = [];
-                    for (var l in o) {
-                        a = /array/i.test (o[l].constructor) ? a.concat(o[l]) : a;
-                    }
-                    return a.sort(srt);
-                }(obj));
-                // initialize and populate to-selector with all
-                populator.call( from
-                    ,null
-                    ,to
-                    ,obj
-                    ,srt
-                );
-
-                // assign handler
-                from.onchange = populator;
-
-                function initStatics(fn,obj){
-                    for (var l in obj) {
-                        if (obj.hasOwnProperty(l)){
-                            fn[l] = obj[l];
-                        }
-                    }
-                    fn.initialized = true;
-                }
-
-                function populator(e, relatedto, obj, srt){
-                    // set pseudo statics
-                    var self = populator;
-                    if (!self.initialized) {
-                        initStatics(self,{optselects:obj,optselectsall:obj.all,relatedTo:relatedto,sorter:srt || false});
-                    }
-
-                    if (!self.relatedTo){
-                        throw 'not related to a selector';
-                    }
-                    // populate to-selector from filter/all
-                    var optsfilter = this.selectedIndex < 1
-                        ? self.optselectsall
-                        : self.optselects[this.options[this.selectedIndex].firstChild.nodeValue]
-                        ,cselect = self.relatedTo
-                        ,opts = cselect.options;
-                    if (self.sorter) optsfilter.sort(self.sorter);
-                    opts.length = 0;
-                    for (var i=0;i<optsfilter.length;i+=1){
-                        opts[i] = new Option(optsfilter[i],i);
-                    }
-                }
-            }
-
-            // custom Error
-            function CreationError(mssg){
-                return {name:'CreationError',message:mssg};
-            }
-
-            // return the create method with some error handling
-            window[ns] = {
-                createRelatedSelector: function(from,to,obj,srt) {
-                    try {
-                        if (arguments.length<1) {
-                            throw CreationError('no parameters');
-                        }
-                        create.call(null,from,to,obj,srt);
-                    }
-                    catch(e) { console.log('createRelatedSelector ->',e.name,'\n'
-                        + e.message +
-                        '\ncheck parameters'); }
-                }
-            };
-        }('MAIN'));
-        //initialize
-        initSelectors();
-    </script>
+    <script src="{{url('/')}}/js/day2/day2_dinner.js"></script>
 
     {{-- day 2 dinner finish --}}
 
     {{-- day 2 break1 start --}}
 
-    <script>
-
-        function initSelectors(){
-            // next 2 statements should generate error message, see console
-            MAIN.createRelatedSelector();
-            MAIN.createRelatedSelector(document.querySelector('#continents2_break1') );
-
-            //countries
-            MAIN.createRelatedSelector
-            ( document.querySelector('#continents2_break1')           // from select element
-                ,document.querySelector('#selectcountries2_break1')      // to select element
-                ,{                                               // values object
-
-
-                    carbs: carbs,
-                    Fats: fats,
-                    proteins: proteins
-                }
-                ,function(a,b){return a>b ? 1 : a<b ? -1 : 0;}   // sort method
-            );
-
-
-
-
-        }
-
-        //create MAIN namespace
-        (function(ns){ // don't pollute the global namespace
-
-            function create(from, to, obj, srt){
-                if (!from) {
-                    throw CreationError('create: parameter selector [from] missing');
-                }
-                if (!to) {
-                    throw CreationError('create: parameter related selector [to] missing');
-                }
-                if (!obj) {
-                    throw CreationError('create: related filter definition object [obj] missing');
-                }
-
-                //retrieve all options from obj and add it
-                obj.all = (function(o){
-                    var a = [];
-                    for (var l in o) {
-                        a = /array/i.test (o[l].constructor) ? a.concat(o[l]) : a;
-                    }
-                    return a.sort(srt);
-                }(obj));
-                // initialize and populate to-selector with all
-                populator.call( from
-                    ,null
-                    ,to
-                    ,obj
-                    ,srt
-                );
-
-                // assign handler
-                from.onchange = populator;
-
-                function initStatics(fn,obj){
-                    for (var l in obj) {
-                        if (obj.hasOwnProperty(l)){
-                            fn[l] = obj[l];
-                        }
-                    }
-                    fn.initialized = true;
-                }
-
-                function populator(e, relatedto, obj, srt){
-                    // set pseudo statics
-                    var self = populator;
-                    if (!self.initialized) {
-                        initStatics(self,{optselects:obj,optselectsall:obj.all,relatedTo:relatedto,sorter:srt || false});
-                    }
-
-                    if (!self.relatedTo){
-                        throw 'not related to a selector';
-                    }
-                    // populate to-selector from filter/all
-                    var optsfilter = this.selectedIndex < 1
-                        ? self.optselectsall
-                        : self.optselects[this.options[this.selectedIndex].firstChild.nodeValue]
-                        ,cselect = self.relatedTo
-                        ,opts = cselect.options;
-                    if (self.sorter) optsfilter.sort(self.sorter);
-                    opts.length = 0;
-                    for (var i=0;i<optsfilter.length;i+=1){
-                        opts[i] = new Option(optsfilter[i],i);
-                    }
-                }
-            }
-
-            // custom Error
-            function CreationError(mssg){
-                return {name:'CreationError',message:mssg};
-            }
-
-            // return the create method with some error handling
-            window[ns] = {
-                createRelatedSelector: function(from,to,obj,srt) {
-                    try {
-                        if (arguments.length<1) {
-                            throw CreationError('no parameters');
-                        }
-                        create.call(null,from,to,obj,srt);
-                    }
-                    catch(e) { console.log('createRelatedSelector ->',e.name,'\n'
-                        + e.message +
-                        '\ncheck parameters'); }
-                }
-            };
-        }('MAIN'));
-        //initialize
-        initSelectors();
-    </script>
+    <script src="{{url('/')}}/js/day2/day2_break1.js"></script>
     {{-- day 2 break1 finish --}}
 
 
     {{-- day 2 break2 start --}}
 
-    <script>
-
-        function initSelectors(){
-            // next 2 statements should generate error message, see console
-            MAIN.createRelatedSelector();
-            MAIN.createRelatedSelector(document.querySelector('#continents2_break2') );
-
-            //countries
-            MAIN.createRelatedSelector
-            ( document.querySelector('#continents2_break2')           // from select element
-                ,document.querySelector('#selectcountries2_break2')      // to select element
-                ,{                                               // values object
-
-
-                    carbs: carbs,
-                    Fats: fats,
-                    proteins: proteins
-                }
-                ,function(a,b){return a>b ? 1 : a<b ? -1 : 0;}   // sort method
-            );
-
-
-
-
-        }
-
-        //create MAIN namespace
-        (function(ns){ // don't pollute the global namespace
-
-            function create(from, to, obj, srt){
-                if (!from) {
-                    throw CreationError('create: parameter selector [from] missing');
-                }
-                if (!to) {
-                    throw CreationError('create: parameter related selector [to] missing');
-                }
-                if (!obj) {
-                    throw CreationError('create: related filter definition object [obj] missing');
-                }
-
-                //retrieve all options from obj and add it
-                obj.all = (function(o){
-                    var a = [];
-                    for (var l in o) {
-                        a = /array/i.test (o[l].constructor) ? a.concat(o[l]) : a;
-                    }
-                    return a.sort(srt);
-                }(obj));
-                // initialize and populate to-selector with all
-                populator.call( from
-                    ,null
-                    ,to
-                    ,obj
-                    ,srt
-                );
-
-                // assign handler
-                from.onchange = populator;
-
-                function initStatics(fn,obj){
-                    for (var l in obj) {
-                        if (obj.hasOwnProperty(l)){
-                            fn[l] = obj[l];
-                        }
-                    }
-                    fn.initialized = true;
-                }
-
-                function populator(e, relatedto, obj, srt){
-                    // set pseudo statics
-                    var self = populator;
-                    if (!self.initialized) {
-                        initStatics(self,{optselects:obj,optselectsall:obj.all,relatedTo:relatedto,sorter:srt || false});
-                    }
-
-                    if (!self.relatedTo){
-                        throw 'not related to a selector';
-                    }
-                    // populate to-selector from filter/all
-                    var optsfilter = this.selectedIndex < 1
-                        ? self.optselectsall
-                        : self.optselects[this.options[this.selectedIndex].firstChild.nodeValue]
-                        ,cselect = self.relatedTo
-                        ,opts = cselect.options;
-                    if (self.sorter) optsfilter.sort(self.sorter);
-                    opts.length = 0;
-                    for (var i=0;i<optsfilter.length;i+=1){
-                        opts[i] = new Option(optsfilter[i],i);
-                    }
-                }
-            }
-
-            // custom Error
-            function CreationError(mssg){
-                return {name:'CreationError',message:mssg};
-            }
-
-            // return the create method with some error handling
-            window[ns] = {
-                createRelatedSelector: function(from,to,obj,srt) {
-                    try {
-                        if (arguments.length<1) {
-                            throw CreationError('no parameters');
-                        }
-                        create.call(null,from,to,obj,srt);
-                    }
-                    catch(e) { console.log('createRelatedSelector ->',e.name,'\n'
-                        + e.message +
-                        '\ncheck parameters'); }
-                }
-            };
-        }('MAIN'));
-        //initialize
-        initSelectors();
-    </script>
+    <script src="{{url('/')}}/js/day2/day2_break2.js"></script>
     {{-- day 2 break2 finish --}}
 
 
@@ -3816,241 +2635,13 @@
 
 
     {{-- day 3 breakfast start --}}
-    <script>
 
-        function initSelectors(){
-            // next 2 statements should generate error message, see console
-            MAIN.createRelatedSelector();
-            MAIN.createRelatedSelector(document.querySelector('#continent3') );
-
-            //countries
-            MAIN.createRelatedSelector
-            ( document.querySelector('#continent3')           // from select element
-                ,document.querySelector('#selectcountries3')      // to select element
-                ,{                                               // values object
-
-
-                    carbs: carbs,
-                    Fats: fats,
-                    proteins: proteins
-                }
-                ,function(a,b){return a>b ? 1 : a<b ? -1 : 0;}   // sort method
-            );
-
-
-
-
-        }
-
-        //create MAIN namespace
-        (function(ns){ // don't pollute the global namespace
-
-            function create(from, to, obj, srt){
-                if (!from) {
-                    throw CreationError('create: parameter selector [from] missing');
-                }
-                if (!to) {
-                    throw CreationError('create: parameter related selector [to] missing');
-                }
-                if (!obj) {
-                    throw CreationError('create: related filter definition object [obj] missing');
-                }
-
-                //retrieve all options from obj and add it
-                obj.all = (function(o){
-                    var a = [];
-                    for (var l in o) {
-                        a = /array/i.test (o[l].constructor) ? a.concat(o[l]) : a;
-                    }
-                    return a.sort(srt);
-                }(obj));
-                // initialize and populate to-selector with all
-                populator.call( from
-                    ,null
-                    ,to
-                    ,obj
-                    ,srt
-                );
-
-                // assign handler
-                from.onchange = populator;
-
-                function initStatics(fn,obj){
-                    for (var l in obj) {
-                        if (obj.hasOwnProperty(l)){
-                            fn[l] = obj[l];
-                        }
-                    }
-                    fn.initialized = true;
-                }
-
-                function populator(e, relatedto, obj, srt){
-                    // set pseudo statics
-                    var self = populator;
-                    if (!self.initialized) {
-                        initStatics(self,{optselects:obj,optselectsall:obj.all,relatedTo:relatedto,sorter:srt || false});
-                    }
-
-                    if (!self.relatedTo){
-                        throw 'not related to a selector';
-                    }
-                    // populate to-selector from filter/all
-                    var optsfilter = this.selectedIndex < 1
-                        ? self.optselectsall
-                        : self.optselects[this.options[this.selectedIndex].firstChild.nodeValue]
-                        ,cselect = self.relatedTo
-                        ,opts = cselect.options;
-                    if (self.sorter) optsfilter.sort(self.sorter);
-                    opts.length = 0;
-                    for (var i=0;i<optsfilter.length;i+=1){
-                        opts[i] = new Option(optsfilter[i],i);
-                    }
-                }
-            }
-
-            // custom Error
-            function CreationError(mssg){
-                return {name:'CreationError',message:mssg};
-            }
-
-            // return the create method with some error handling
-            window[ns] = {
-                createRelatedSelector: function(from,to,obj,srt) {
-                    try {
-                        if (arguments.length<1) {
-                            throw CreationError('no parameters');
-                        }
-                        create.call(null,from,to,obj,srt);
-                    }
-                    catch(e) { console.log('createRelatedSelector ->',e.name,'\n'
-                        + e.message +
-                        '\ncheck parameters'); }
-                }
-            };
-        }('MAIN'));
-        //initialize
-        initSelectors();
-    </script>
-
+    <script src="{{url('/')}}/js/day3/day3_breakfast1.js"></script>
     {{-- day 3 breakfast finish --}}
 
     {{-- day 3 lunch start --}}
 
-    <script>
-
-        function initSelectors(){
-            // next 2 statements should generate error message, see console
-            MAIN.createRelatedSelector();
-            MAIN.createRelatedSelector(document.querySelector('#continents3_lunch') );
-
-            //countries
-            MAIN.createRelatedSelector
-            ( document.querySelector('#continents3_lunch')           // from select element
-                ,document.querySelector('#selectcountries3_lunch')      // to select element
-                ,{                                               // values object
-
-
-                    carbs: carbs,
-                    Fats: fats,
-                    proteins: proteins
-                }
-                ,function(a,b){return a>b ? 1 : a<b ? -1 : 0;}   // sort method
-            );
-
-
-
-
-        }
-
-        //create MAIN namespace
-        (function(ns){ // don't pollute the global namespace
-
-            function create(from, to, obj, srt){
-                if (!from) {
-                    throw CreationError('create: parameter selector [from] missing');
-                }
-                if (!to) {
-                    throw CreationError('create: parameter related selector [to] missing');
-                }
-                if (!obj) {
-                    throw CreationError('create: related filter definition object [obj] missing');
-                }
-
-                //retrieve all options from obj and add it
-                obj.all = (function(o){
-                    var a = [];
-                    for (var l in o) {
-                        a = /array/i.test (o[l].constructor) ? a.concat(o[l]) : a;
-                    }
-                    return a.sort(srt);
-                }(obj));
-                // initialize and populate to-selector with all
-                populator.call( from
-                    ,null
-                    ,to
-                    ,obj
-                    ,srt
-                );
-
-                // assign handler
-                from.onchange = populator;
-
-                function initStatics(fn,obj){
-                    for (var l in obj) {
-                        if (obj.hasOwnProperty(l)){
-                            fn[l] = obj[l];
-                        }
-                    }
-                    fn.initialized = true;
-                }
-
-                function populator(e, relatedto, obj, srt){
-                    // set pseudo statics
-                    var self = populator;
-                    if (!self.initialized) {
-                        initStatics(self,{optselects:obj,optselectsall:obj.all,relatedTo:relatedto,sorter:srt || false});
-                    }
-
-                    if (!self.relatedTo){
-                        throw 'not related to a selector';
-                    }
-                    // populate to-selector from filter/all
-                    var optsfilter = this.selectedIndex < 1
-                        ? self.optselectsall
-                        : self.optselects[this.options[this.selectedIndex].firstChild.nodeValue]
-                        ,cselect = self.relatedTo
-                        ,opts = cselect.options;
-                    if (self.sorter) optsfilter.sort(self.sorter);
-                    opts.length = 0;
-                    for (var i=0;i<optsfilter.length;i+=1){
-                        opts[i] = new Option(optsfilter[i],i);
-                    }
-                }
-            }
-
-            // custom Error
-            function CreationError(mssg){
-                return {name:'CreationError',message:mssg};
-            }
-
-            // return the create method with some error handling
-            window[ns] = {
-                createRelatedSelector: function(from,to,obj,srt) {
-                    try {
-                        if (arguments.length<1) {
-                            throw CreationError('no parameters');
-                        }
-                        create.call(null,from,to,obj,srt);
-                    }
-                    catch(e) { console.log('createRelatedSelector ->',e.name,'\n'
-                        + e.message +
-                        '\ncheck parameters'); }
-                }
-            };
-        }('MAIN'));
-        //initialize
-        initSelectors();
-    </script>
+    <script src="{{url('/')}}/js/day3/day3_lunch.js"></script>
 
     {{-- day 3 lunch finish --}}
 
@@ -4058,361 +2649,19 @@
 
     {{-- day 3 dinner start --}}
 
-    <script>
-
-        function initSelectors(){
-            // next 2 statements should generate error message, see console
-            MAIN.createRelatedSelector();
-            MAIN.createRelatedSelector(document.querySelector('#continents3_dinner') );
-
-            //countries
-            MAIN.createRelatedSelector
-            ( document.querySelector('#continents3_dinner')           // from select element
-                ,document.querySelector('#selectcountries3_dinner')      // to select element
-                ,{                                               // values object
-
-
-                    carbs: carbs,
-                    Fats: fats,
-                    proteins: proteins
-                }
-                ,function(a,b){return a>b ? 1 : a<b ? -1 : 0;}   // sort method
-            );
-
-
-
-
-        }
-
-        //create MAIN namespace
-        (function(ns){ // don't pollute the global namespace
-
-            function create(from, to, obj, srt){
-                if (!from) {
-                    throw CreationError('create: parameter selector [from] missing');
-                }
-                if (!to) {
-                    throw CreationError('create: parameter related selector [to] missing');
-                }
-                if (!obj) {
-                    throw CreationError('create: related filter definition object [obj] missing');
-                }
-
-                //retrieve all options from obj and add it
-                obj.all = (function(o){
-                    var a = [];
-                    for (var l in o) {
-                        a = /array/i.test (o[l].constructor) ? a.concat(o[l]) : a;
-                    }
-                    return a.sort(srt);
-                }(obj));
-                // initialize and populate to-selector with all
-                populator.call( from
-                    ,null
-                    ,to
-                    ,obj
-                    ,srt
-                );
-
-                // assign handler
-                from.onchange = populator;
-
-                function initStatics(fn,obj){
-                    for (var l in obj) {
-                        if (obj.hasOwnProperty(l)){
-                            fn[l] = obj[l];
-                        }
-                    }
-                    fn.initialized = true;
-                }
-
-                function populator(e, relatedto, obj, srt){
-                    // set pseudo statics
-                    var self = populator;
-                    if (!self.initialized) {
-                        initStatics(self,{optselects:obj,optselectsall:obj.all,relatedTo:relatedto,sorter:srt || false});
-                    }
-
-                    if (!self.relatedTo){
-                        throw 'not related to a selector';
-                    }
-                    // populate to-selector from filter/all
-                    var optsfilter = this.selectedIndex < 1
-                        ? self.optselectsall
-                        : self.optselects[this.options[this.selectedIndex].firstChild.nodeValue]
-                        ,cselect = self.relatedTo
-                        ,opts = cselect.options;
-                    if (self.sorter) optsfilter.sort(self.sorter);
-                    opts.length = 0;
-                    for (var i=0;i<optsfilter.length;i+=1){
-                        opts[i] = new Option(optsfilter[i],i);
-                    }
-                }
-            }
-
-            // custom Error
-            function CreationError(mssg){
-                return {name:'CreationError',message:mssg};
-            }
-
-            // return the create method with some error handling
-            window[ns] = {
-                createRelatedSelector: function(from,to,obj,srt) {
-                    try {
-                        if (arguments.length<1) {
-                            throw CreationError('no parameters');
-                        }
-                        create.call(null,from,to,obj,srt);
-                    }
-                    catch(e) { console.log('createRelatedSelector ->',e.name,'\n'
-                        + e.message +
-                        '\ncheck parameters'); }
-                }
-            };
-        }('MAIN'));
-        //initialize
-        initSelectors();
-    </script>
+    <script src="{{url('/')}}/js/day3/day3_dinner.js"></script>
 
     {{-- day 3 dinner finish --}}
 
     {{-- day 3 break1 start --}}
+    <script src="{{url('/')}}/js/day3/day3_break1.js"></script>
 
-    <script>
-
-        function initSelectors(){
-            // next 2 statements should generate error message, see console
-            MAIN.createRelatedSelector();
-            MAIN.createRelatedSelector(document.querySelector('#continents3_break1') );
-
-            //countries
-            MAIN.createRelatedSelector
-            ( document.querySelector('#continents3_break1')           // from select element
-                ,document.querySelector('#selectcountries3_break1')      // to select element
-                ,{                                               // values object
-
-
-                    carbs: carbs,
-                    Fats: fats,
-                    proteins: proteins
-                }
-                ,function(a,b){return a>b ? 1 : a<b ? -1 : 0;}   // sort method
-            );
-
-
-
-
-        }
-
-        //create MAIN namespace
-        (function(ns){ // don't pollute the global namespace
-
-            function create(from, to, obj, srt){
-                if (!from) {
-                    throw CreationError('create: parameter selector [from] missing');
-                }
-                if (!to) {
-                    throw CreationError('create: parameter related selector [to] missing');
-                }
-                if (!obj) {
-                    throw CreationError('create: related filter definition object [obj] missing');
-                }
-
-                //retrieve all options from obj and add it
-                obj.all = (function(o){
-                    var a = [];
-                    for (var l in o) {
-                        a = /array/i.test (o[l].constructor) ? a.concat(o[l]) : a;
-                    }
-                    return a.sort(srt);
-                }(obj));
-                // initialize and populate to-selector with all
-                populator.call( from
-                    ,null
-                    ,to
-                    ,obj
-                    ,srt
-                );
-
-                // assign handler
-                from.onchange = populator;
-
-                function initStatics(fn,obj){
-                    for (var l in obj) {
-                        if (obj.hasOwnProperty(l)){
-                            fn[l] = obj[l];
-                        }
-                    }
-                    fn.initialized = true;
-                }
-
-                function populator(e, relatedto, obj, srt){
-                    // set pseudo statics
-                    var self = populator;
-                    if (!self.initialized) {
-                        initStatics(self,{optselects:obj,optselectsall:obj.all,relatedTo:relatedto,sorter:srt || false});
-                    }
-
-                    if (!self.relatedTo){
-                        throw 'not related to a selector';
-                    }
-                    // populate to-selector from filter/all
-                    var optsfilter = this.selectedIndex < 1
-                        ? self.optselectsall
-                        : self.optselects[this.options[this.selectedIndex].firstChild.nodeValue]
-                        ,cselect = self.relatedTo
-                        ,opts = cselect.options;
-                    if (self.sorter) optsfilter.sort(self.sorter);
-                    opts.length = 0;
-                    for (var i=0;i<optsfilter.length;i+=1){
-                        opts[i] = new Option(optsfilter[i],i);
-                    }
-                }
-            }
-
-            // custom Error
-            function CreationError(mssg){
-                return {name:'CreationError',message:mssg};
-            }
-
-            // return the create method with some error handling
-            window[ns] = {
-                createRelatedSelector: function(from,to,obj,srt) {
-                    try {
-                        if (arguments.length<1) {
-                            throw CreationError('no parameters');
-                        }
-                        create.call(null,from,to,obj,srt);
-                    }
-                    catch(e) { console.log('createRelatedSelector ->',e.name,'\n'
-                        + e.message +
-                        '\ncheck parameters'); }
-                }
-            };
-        }('MAIN'));
-        //initialize
-        initSelectors();
-    </script>
     {{-- day 3 break1 finish --}}
 
 
     {{-- day 3 break2 start --}}
 
-    <script>
-
-        function initSelectors(){
-            // next 2 statements should generate error message, see console
-            MAIN.createRelatedSelector();
-            MAIN.createRelatedSelector(document.querySelector('#continents3_break2') );
-
-            //countries
-            MAIN.createRelatedSelector
-            ( document.querySelector('#continents3_break2')           // from select element
-                ,document.querySelector('#selectcountries3_break2')      // to select element
-                ,{                                               // values object
-
-
-                    carbs: carbs,
-                    Fats: fats,
-                    proteins: proteins
-                }
-                ,function(a,b){return a>b ? 1 : a<b ? -1 : 0;}   // sort method
-            );
-
-
-
-
-        }
-
-        //create MAIN namespace
-        (function(ns){ // don't pollute the global namespace
-
-            function create(from, to, obj, srt){
-                if (!from) {
-                    throw CreationError('create: parameter selector [from] missing');
-                }
-                if (!to) {
-                    throw CreationError('create: parameter related selector [to] missing');
-                }
-                if (!obj) {
-                    throw CreationError('create: related filter definition object [obj] missing');
-                }
-
-                //retrieve all options from obj and add it
-                obj.all = (function(o){
-                    var a = [];
-                    for (var l in o) {
-                        a = /array/i.test (o[l].constructor) ? a.concat(o[l]) : a;
-                    }
-                    return a.sort(srt);
-                }(obj));
-                // initialize and populate to-selector with all
-                populator.call( from
-                    ,null
-                    ,to
-                    ,obj
-                    ,srt
-                );
-
-                // assign handler
-                from.onchange = populator;
-
-                function initStatics(fn,obj){
-                    for (var l in obj) {
-                        if (obj.hasOwnProperty(l)){
-                            fn[l] = obj[l];
-                        }
-                    }
-                    fn.initialized = true;
-                }
-
-                function populator(e, relatedto, obj, srt){
-                    // set pseudo statics
-                    var self = populator;
-                    if (!self.initialized) {
-                        initStatics(self,{optselects:obj,optselectsall:obj.all,relatedTo:relatedto,sorter:srt || false});
-                    }
-
-                    if (!self.relatedTo){
-                        throw 'not related to a selector';
-                    }
-                    // populate to-selector from filter/all
-                    var optsfilter = this.selectedIndex < 1
-                        ? self.optselectsall
-                        : self.optselects[this.options[this.selectedIndex].firstChild.nodeValue]
-                        ,cselect = self.relatedTo
-                        ,opts = cselect.options;
-                    if (self.sorter) optsfilter.sort(self.sorter);
-                    opts.length = 0;
-                    for (var i=0;i<optsfilter.length;i+=1){
-                        opts[i] = new Option(optsfilter[i],i);
-                    }
-                }
-            }
-
-            // custom Error
-            function CreationError(mssg){
-                return {name:'CreationError',message:mssg};
-            }
-
-            // return the create method with some error handling
-            window[ns] = {
-                createRelatedSelector: function(from,to,obj,srt) {
-                    try {
-                        if (arguments.length<1) {
-                            throw CreationError('no parameters');
-                        }
-                        create.call(null,from,to,obj,srt);
-                    }
-                    catch(e) { console.log('createRelatedSelector ->',e.name,'\n'
-                        + e.message +
-                        '\ncheck parameters'); }
-                }
-            };
-        }('MAIN'));
-        //initialize
-        initSelectors();
-    </script>
+    <script src="{{url('/')}}/js/day3/day3_break2.js"></script>
     {{-- day 3 break2 finish --}}
 
 
@@ -4424,241 +2673,13 @@
 
 
    {{-- day 4 breakfast start --}}
-    <script>
-
-        function initSelectors(){
-            // next 2 statements should generate error message, see console
-            MAIN.createRelatedSelector();
-            MAIN.createRelatedSelector(document.querySelector('#continent4') );
-
-            //countries
-            MAIN.createRelatedSelector
-            ( document.querySelector('#continent4')           // from select element
-                ,document.querySelector('#selectcountries4')      // to select element
-                ,{                                               // values object
-
-
-                    carbs: carbs,
-                    Fats: fats,
-                    proteins: proteins
-                }
-                ,function(a,b){return a>b ? 1 : a<b ? -1 : 0;}   // sort method
-            );
-
-
-
-
-        }
-
-        //create MAIN namespace
-        (function(ns){ // don't pollute the global namespace
-
-            function create(from, to, obj, srt){
-                if (!from) {
-                    throw CreationError('create: parameter selector [from] missing');
-                }
-                if (!to) {
-                    throw CreationError('create: parameter related selector [to] missing');
-                }
-                if (!obj) {
-                    throw CreationError('create: related filter definition object [obj] missing');
-                }
-
-                //retrieve all options from obj and add it
-                obj.all = (function(o){
-                    var a = [];
-                    for (var l in o) {
-                        a = /array/i.test (o[l].constructor) ? a.concat(o[l]) : a;
-                    }
-                    return a.sort(srt);
-                }(obj));
-                // initialize and populate to-selector with all
-                populator.call( from
-                    ,null
-                    ,to
-                    ,obj
-                    ,srt
-                );
-
-                // assign handler
-                from.onchange = populator;
-
-                function initStatics(fn,obj){
-                    for (var l in obj) {
-                        if (obj.hasOwnProperty(l)){
-                            fn[l] = obj[l];
-                        }
-                    }
-                    fn.initialized = true;
-                }
-
-                function populator(e, relatedto, obj, srt){
-                    // set pseudo statics
-                    var self = populator;
-                    if (!self.initialized) {
-                        initStatics(self,{optselects:obj,optselectsall:obj.all,relatedTo:relatedto,sorter:srt || false});
-                    }
-
-                    if (!self.relatedTo){
-                        throw 'not related to a selector';
-                    }
-                    // populate to-selector from filter/all
-                    var optsfilter = this.selectedIndex < 1
-                        ? self.optselectsall
-                        : self.optselects[this.options[this.selectedIndex].firstChild.nodeValue]
-                        ,cselect = self.relatedTo
-                        ,opts = cselect.options;
-                    if (self.sorter) optsfilter.sort(self.sorter);
-                    opts.length = 0;
-                    for (var i=0;i<optsfilter.length;i+=1){
-                        opts[i] = new Option(optsfilter[i],i);
-                    }
-                }
-            }
-
-            // custom Error
-            function CreationError(mssg){
-                return {name:'CreationError',message:mssg};
-            }
-
-            // return the create method with some error handling
-            window[ns] = {
-                createRelatedSelector: function(from,to,obj,srt) {
-                    try {
-                        if (arguments.length<1) {
-                            throw CreationError('no parameters');
-                        }
-                        create.call(null,from,to,obj,srt);
-                    }
-                    catch(e) { console.log('createRelatedSelector ->',e.name,'\n'
-                        + e.message +
-                        '\ncheck parameters'); }
-                }
-            };
-        }('MAIN'));
-        //initialize
-        initSelectors();
-    </script>
+    <script src="{{url('/')}}/js/day4/day4_breakfast.js"></script>
 
     {{-- day 4 breakfast finish --}}
 
     {{-- day 4 lunch start --}}
 
-    <script>
-
-        function initSelectors(){
-            // next 2 statements should generate error message, see console
-            MAIN.createRelatedSelector();
-            MAIN.createRelatedSelector(document.querySelector('#continents4_lunch') );
-
-            //countries
-            MAIN.createRelatedSelector
-            ( document.querySelector('#continents4_lunch')           // from select element
-                ,document.querySelector('#selectcountries4_lunch')      // to select element
-                ,{                                               // values object
-
-
-                    carbs: carbs,
-                    Fats: fats,
-                    proteins: proteins
-                }
-                ,function(a,b){return a>b ? 1 : a<b ? -1 : 0;}   // sort method
-            );
-
-
-
-
-        }
-
-        //create MAIN namespace
-        (function(ns){ // don't pollute the global namespace
-
-            function create(from, to, obj, srt){
-                if (!from) {
-                    throw CreationError('create: parameter selector [from] missing');
-                }
-                if (!to) {
-                    throw CreationError('create: parameter related selector [to] missing');
-                }
-                if (!obj) {
-                    throw CreationError('create: related filter definition object [obj] missing');
-                }
-
-                //retrieve all options from obj and add it
-                obj.all = (function(o){
-                    var a = [];
-                    for (var l in o) {
-                        a = /array/i.test (o[l].constructor) ? a.concat(o[l]) : a;
-                    }
-                    return a.sort(srt);
-                }(obj));
-                // initialize and populate to-selector with all
-                populator.call( from
-                    ,null
-                    ,to
-                    ,obj
-                    ,srt
-                );
-
-                // assign handler
-                from.onchange = populator;
-
-                function initStatics(fn,obj){
-                    for (var l in obj) {
-                        if (obj.hasOwnProperty(l)){
-                            fn[l] = obj[l];
-                        }
-                    }
-                    fn.initialized = true;
-                }
-
-                function populator(e, relatedto, obj, srt){
-                    // set pseudo statics
-                    var self = populator;
-                    if (!self.initialized) {
-                        initStatics(self,{optselects:obj,optselectsall:obj.all,relatedTo:relatedto,sorter:srt || false});
-                    }
-
-                    if (!self.relatedTo){
-                        throw 'not related to a selector';
-                    }
-                    // populate to-selector from filter/all
-                    var optsfilter = this.selectedIndex < 1
-                        ? self.optselectsall
-                        : self.optselects[this.options[this.selectedIndex].firstChild.nodeValue]
-                        ,cselect = self.relatedTo
-                        ,opts = cselect.options;
-                    if (self.sorter) optsfilter.sort(self.sorter);
-                    opts.length = 0;
-                    for (var i=0;i<optsfilter.length;i+=1){
-                        opts[i] = new Option(optsfilter[i],i);
-                    }
-                }
-            }
-
-            // custom Error
-            function CreationError(mssg){
-                return {name:'CreationError',message:mssg};
-            }
-
-            // return the create method with some error handling
-            window[ns] = {
-                createRelatedSelector: function(from,to,obj,srt) {
-                    try {
-                        if (arguments.length<1) {
-                            throw CreationError('no parameters');
-                        }
-                        create.call(null,from,to,obj,srt);
-                    }
-                    catch(e) { console.log('createRelatedSelector ->',e.name,'\n'
-                        + e.message +
-                        '\ncheck parameters'); }
-                }
-            };
-        }('MAIN'));
-        //initialize
-        initSelectors();
-    </script>
+    <script src="{{url('/')}}/js/day4/day4_lunch.js"></script>
 
     {{-- day 4 lunch finish --}}
 
@@ -4666,361 +2687,19 @@
 
     {{-- day 4 dinner start --}}
 
-    <script>
-
-        function initSelectors(){
-            // next 2 statements should generate error message, see console
-            MAIN.createRelatedSelector();
-            MAIN.createRelatedSelector(document.querySelector('#continents4_dinner') );
-
-            //countries
-            MAIN.createRelatedSelector
-            ( document.querySelector('#continents4_dinner')           // from select element
-                ,document.querySelector('#selectcountries4_dinner')      // to select element
-                ,{                                               // values object
-
-
-                    carbs: carbs,
-                    Fats: fats,
-                    proteins: proteins
-                }
-                ,function(a,b){return a>b ? 1 : a<b ? -1 : 0;}   // sort method
-            );
-
-
-
-
-        }
-
-        //create MAIN namespace
-        (function(ns){ // don't pollute the global namespace
-
-            function create(from, to, obj, srt){
-                if (!from) {
-                    throw CreationError('create: parameter selector [from] missing');
-                }
-                if (!to) {
-                    throw CreationError('create: parameter related selector [to] missing');
-                }
-                if (!obj) {
-                    throw CreationError('create: related filter definition object [obj] missing');
-                }
-
-                //retrieve all options from obj and add it
-                obj.all = (function(o){
-                    var a = [];
-                    for (var l in o) {
-                        a = /array/i.test (o[l].constructor) ? a.concat(o[l]) : a;
-                    }
-                    return a.sort(srt);
-                }(obj));
-                // initialize and populate to-selector with all
-                populator.call( from
-                    ,null
-                    ,to
-                    ,obj
-                    ,srt
-                );
-
-                // assign handler
-                from.onchange = populator;
-
-                function initStatics(fn,obj){
-                    for (var l in obj) {
-                        if (obj.hasOwnProperty(l)){
-                            fn[l] = obj[l];
-                        }
-                    }
-                    fn.initialized = true;
-                }
-
-                function populator(e, relatedto, obj, srt){
-                    // set pseudo statics
-                    var self = populator;
-                    if (!self.initialized) {
-                        initStatics(self,{optselects:obj,optselectsall:obj.all,relatedTo:relatedto,sorter:srt || false});
-                    }
-
-                    if (!self.relatedTo){
-                        throw 'not related to a selector';
-                    }
-                    // populate to-selector from filter/all
-                    var optsfilter = this.selectedIndex < 1
-                        ? self.optselectsall
-                        : self.optselects[this.options[this.selectedIndex].firstChild.nodeValue]
-                        ,cselect = self.relatedTo
-                        ,opts = cselect.options;
-                    if (self.sorter) optsfilter.sort(self.sorter);
-                    opts.length = 0;
-                    for (var i=0;i<optsfilter.length;i+=1){
-                        opts[i] = new Option(optsfilter[i],i);
-                    }
-                }
-            }
-
-            // custom Error
-            function CreationError(mssg){
-                return {name:'CreationError',message:mssg};
-            }
-
-            // return the create method with some error handling
-            window[ns] = {
-                createRelatedSelector: function(from,to,obj,srt) {
-                    try {
-                        if (arguments.length<1) {
-                            throw CreationError('no parameters');
-                        }
-                        create.call(null,from,to,obj,srt);
-                    }
-                    catch(e) { console.log('createRelatedSelector ->',e.name,'\n'
-                        + e.message +
-                        '\ncheck parameters'); }
-                }
-            };
-        }('MAIN'));
-        //initialize
-        initSelectors();
-    </script>
+    <script src="{{url('/')}}/js/day4/day4_dinner.js"></script>
 
     {{-- day 4 dinner finish --}}
 
     {{-- day 4 break1 start --}}
+    <script src="{{url('/')}}/js/day4/day4_break1.js"></script>
 
-    <script>
-
-        function initSelectors(){
-            // next 2 statements should generate error message, see console
-            MAIN.createRelatedSelector();
-            MAIN.createRelatedSelector(document.querySelector('#continents4_break1') );
-
-            //countries
-            MAIN.createRelatedSelector
-            ( document.querySelector('#continents4_break1')           // from select element
-                ,document.querySelector('#selectcountries4_break1')      // to select element
-                ,{                                               // values object
-
-
-                    carbs: carbs,
-                    Fats: fats,
-                    proteins: proteins
-                }
-                ,function(a,b){return a>b ? 1 : a<b ? -1 : 0;}   // sort method
-            );
-
-
-
-
-        }
-
-        //create MAIN namespace
-        (function(ns){ // don't pollute the global namespace
-
-            function create(from, to, obj, srt){
-                if (!from) {
-                    throw CreationError('create: parameter selector [from] missing');
-                }
-                if (!to) {
-                    throw CreationError('create: parameter related selector [to] missing');
-                }
-                if (!obj) {
-                    throw CreationError('create: related filter definition object [obj] missing');
-                }
-
-                //retrieve all options from obj and add it
-                obj.all = (function(o){
-                    var a = [];
-                    for (var l in o) {
-                        a = /array/i.test (o[l].constructor) ? a.concat(o[l]) : a;
-                    }
-                    return a.sort(srt);
-                }(obj));
-                // initialize and populate to-selector with all
-                populator.call( from
-                    ,null
-                    ,to
-                    ,obj
-                    ,srt
-                );
-
-                // assign handler
-                from.onchange = populator;
-
-                function initStatics(fn,obj){
-                    for (var l in obj) {
-                        if (obj.hasOwnProperty(l)){
-                            fn[l] = obj[l];
-                        }
-                    }
-                    fn.initialized = true;
-                }
-
-                function populator(e, relatedto, obj, srt){
-                    // set pseudo statics
-                    var self = populator;
-                    if (!self.initialized) {
-                        initStatics(self,{optselects:obj,optselectsall:obj.all,relatedTo:relatedto,sorter:srt || false});
-                    }
-
-                    if (!self.relatedTo){
-                        throw 'not related to a selector';
-                    }
-                    // populate to-selector from filter/all
-                    var optsfilter = this.selectedIndex < 1
-                        ? self.optselectsall
-                        : self.optselects[this.options[this.selectedIndex].firstChild.nodeValue]
-                        ,cselect = self.relatedTo
-                        ,opts = cselect.options;
-                    if (self.sorter) optsfilter.sort(self.sorter);
-                    opts.length = 0;
-                    for (var i=0;i<optsfilter.length;i+=1){
-                        opts[i] = new Option(optsfilter[i],i);
-                    }
-                }
-            }
-
-            // custom Error
-            function CreationError(mssg){
-                return {name:'CreationError',message:mssg};
-            }
-
-            // return the create method with some error handling
-            window[ns] = {
-                createRelatedSelector: function(from,to,obj,srt) {
-                    try {
-                        if (arguments.length<1) {
-                            throw CreationError('no parameters');
-                        }
-                        create.call(null,from,to,obj,srt);
-                    }
-                    catch(e) { console.log('createRelatedSelector ->',e.name,'\n'
-                        + e.message +
-                        '\ncheck parameters'); }
-                }
-            };
-        }('MAIN'));
-        //initialize
-        initSelectors();
-    </script>
     {{-- day 4 break1 finish --}}
 
 
     {{-- day 4 break2 start --}}
+    <script src="{{url('/')}}/js/day4/day4_break2.js"></script>
 
-    <script>
-
-        function initSelectors(){
-            // next 2 statements should generate error message, see console
-            MAIN.createRelatedSelector();
-            MAIN.createRelatedSelector(document.querySelector('#continents4_break2') );
-
-            //countries
-            MAIN.createRelatedSelector
-            ( document.querySelector('#continents4_break2')           // from select element
-                ,document.querySelector('#selectcountries4_break2')      // to select element
-                ,{                                               // values object
-
-
-                    carbs: carbs,
-                    Fats: fats,
-                    proteins: proteins
-                }
-                ,function(a,b){return a>b ? 1 : a<b ? -1 : 0;}   // sort method
-            );
-
-
-
-
-        }
-
-        //create MAIN namespace
-        (function(ns){ // don't pollute the global namespace
-
-            function create(from, to, obj, srt){
-                if (!from) {
-                    throw CreationError('create: parameter selector [from] missing');
-                }
-                if (!to) {
-                    throw CreationError('create: parameter related selector [to] missing');
-                }
-                if (!obj) {
-                    throw CreationError('create: related filter definition object [obj] missing');
-                }
-
-                //retrieve all options from obj and add it
-                obj.all = (function(o){
-                    var a = [];
-                    for (var l in o) {
-                        a = /array/i.test (o[l].constructor) ? a.concat(o[l]) : a;
-                    }
-                    return a.sort(srt);
-                }(obj));
-                // initialize and populate to-selector with all
-                populator.call( from
-                    ,null
-                    ,to
-                    ,obj
-                    ,srt
-                );
-
-                // assign handler
-                from.onchange = populator;
-
-                function initStatics(fn,obj){
-                    for (var l in obj) {
-                        if (obj.hasOwnProperty(l)){
-                            fn[l] = obj[l];
-                        }
-                    }
-                    fn.initialized = true;
-                }
-
-                function populator(e, relatedto, obj, srt){
-                    // set pseudo statics
-                    var self = populator;
-                    if (!self.initialized) {
-                        initStatics(self,{optselects:obj,optselectsall:obj.all,relatedTo:relatedto,sorter:srt || false});
-                    }
-
-                    if (!self.relatedTo){
-                        throw 'not related to a selector';
-                    }
-                    // populate to-selector from filter/all
-                    var optsfilter = this.selectedIndex < 1
-                        ? self.optselectsall
-                        : self.optselects[this.options[this.selectedIndex].firstChild.nodeValue]
-                        ,cselect = self.relatedTo
-                        ,opts = cselect.options;
-                    if (self.sorter) optsfilter.sort(self.sorter);
-                    opts.length = 0;
-                    for (var i=0;i<optsfilter.length;i+=1){
-                        opts[i] = new Option(optsfilter[i],i);
-                    }
-                }
-            }
-
-            // custom Error
-            function CreationError(mssg){
-                return {name:'CreationError',message:mssg};
-            }
-
-            // return the create method with some error handling
-            window[ns] = {
-                createRelatedSelector: function(from,to,obj,srt) {
-                    try {
-                        if (arguments.length<1) {
-                            throw CreationError('no parameters');
-                        }
-                        create.call(null,from,to,obj,srt);
-                    }
-                    catch(e) { console.log('createRelatedSelector ->',e.name,'\n'
-                        + e.message +
-                        '\ncheck parameters'); }
-                }
-            };
-        }('MAIN'));
-        //initialize
-        initSelectors();
-    </script>
     {{-- day 4 break2 finish --}}
 
 
@@ -5030,242 +2709,14 @@
 
 
    {{-- day 5 breakfast start --}}
-    <script>
 
-        function initSelectors(){
-            // next 2 statements should generate error message, see console
-            MAIN.createRelatedSelector();
-            MAIN.createRelatedSelector(document.querySelector('#continent5') );
-
-            //countries
-            MAIN.createRelatedSelector
-            ( document.querySelector('#continent5')           // from select element
-                ,document.querySelector('#selectcountries5')      // to select element
-                ,{                                               // values object
-
-
-                    carbs: carbs,
-                    Fats: fats,
-                    proteins: proteins
-                }
-                ,function(a,b){return a>b ? 1 : a<b ? -1 : 0;}   // sort method
-            );
-
-
-
-
-        }
-
-        //create MAIN namespace
-        (function(ns){ // don't pollute the global namespace
-
-            function create(from, to, obj, srt){
-                if (!from) {
-                    throw CreationError('create: parameter selector [from] missing');
-                }
-                if (!to) {
-                    throw CreationError('create: parameter related selector [to] missing');
-                }
-                if (!obj) {
-                    throw CreationError('create: related filter definition object [obj] missing');
-                }
-
-                //retrieve all options from obj and add it
-                obj.all = (function(o){
-                    var a = [];
-                    for (var l in o) {
-                        a = /array/i.test (o[l].constructor) ? a.concat(o[l]) : a;
-                    }
-                    return a.sort(srt);
-                }(obj));
-                // initialize and populate to-selector with all
-                populator.call( from
-                    ,null
-                    ,to
-                    ,obj
-                    ,srt
-                );
-
-                // assign handler
-                from.onchange = populator;
-
-                function initStatics(fn,obj){
-                    for (var l in obj) {
-                        if (obj.hasOwnProperty(l)){
-                            fn[l] = obj[l];
-                        }
-                    }
-                    fn.initialized = true;
-                }
-
-                function populator(e, relatedto, obj, srt){
-                    // set pseudo statics
-                    var self = populator;
-                    if (!self.initialized) {
-                        initStatics(self,{optselects:obj,optselectsall:obj.all,relatedTo:relatedto,sorter:srt || false});
-                    }
-
-                    if (!self.relatedTo){
-                        throw 'not related to a selector';
-                    }
-                    // populate to-selector from filter/all
-                    var optsfilter = this.selectedIndex < 1
-                        ? self.optselectsall
-                        : self.optselects[this.options[this.selectedIndex].firstChild.nodeValue]
-                        ,cselect = self.relatedTo
-                        ,opts = cselect.options;
-                    if (self.sorter) optsfilter.sort(self.sorter);
-                    opts.length = 0;
-                    for (var i=0;i<optsfilter.length;i+=1){
-                        opts[i] = new Option(optsfilter[i],i);
-                    }
-                }
-            }
-
-            // custom Error
-            function CreationError(mssg){
-                return {name:'CreationError',message:mssg};
-            }
-
-            // return the create method with some error handling
-            window[ns] = {
-                createRelatedSelector: function(from,to,obj,srt) {
-                    try {
-                        if (arguments.length<1) {
-                            throw CreationError('no parameters');
-                        }
-                        create.call(null,from,to,obj,srt);
-                    }
-                    catch(e) { console.log('createRelatedSelector ->',e.name,'\n'
-                        + e.message +
-                        '\ncheck parameters'); }
-                }
-            };
-        }('MAIN'));
-        //initialize
-        initSelectors();
-    </script>
-
+    <script src="{{url('/')}}/js/day5/day5_breakfast.js"></script>
     {{-- day 5 breakfast finish --}}
 
     {{-- day 5 lunch start --}}
 
-    <script>
 
-        function initSelectors(){
-            // next 2 statements should generate error message, see console
-            MAIN.createRelatedSelector();
-            MAIN.createRelatedSelector(document.querySelector('#continents5_lunch') );
-
-            //countries
-            MAIN.createRelatedSelector
-            ( document.querySelector('#continents5_lunch')           // from select element
-                ,document.querySelector('#selectcountries5_lunch')      // to select element
-                ,{                                               // values object
-
-
-                    carbs: carbs,
-                    Fats: fats,
-                    proteins: proteins
-                }
-                ,function(a,b){return a>b ? 1 : a<b ? -1 : 0;}   // sort method
-            );
-
-
-
-
-        }
-
-        //create MAIN namespace
-        (function(ns){ // don't pollute the global namespace
-
-            function create(from, to, obj, srt){
-                if (!from) {
-                    throw CreationError('create: parameter selector [from] missing');
-                }
-                if (!to) {
-                    throw CreationError('create: parameter related selector [to] missing');
-                }
-                if (!obj) {
-                    throw CreationError('create: related filter definition object [obj] missing');
-                }
-
-                //retrieve all options from obj and add it
-                obj.all = (function(o){
-                    var a = [];
-                    for (var l in o) {
-                        a = /array/i.test (o[l].constructor) ? a.concat(o[l]) : a;
-                    }
-                    return a.sort(srt);
-                }(obj));
-                // initialize and populate to-selector with all
-                populator.call( from
-                    ,null
-                    ,to
-                    ,obj
-                    ,srt
-                );
-
-                // assign handler
-                from.onchange = populator;
-
-                function initStatics(fn,obj){
-                    for (var l in obj) {
-                        if (obj.hasOwnProperty(l)){
-                            fn[l] = obj[l];
-                        }
-                    }
-                    fn.initialized = true;
-                }
-
-                function populator(e, relatedto, obj, srt){
-                    // set pseudo statics
-                    var self = populator;
-                    if (!self.initialized) {
-                        initStatics(self,{optselects:obj,optselectsall:obj.all,relatedTo:relatedto,sorter:srt || false});
-                    }
-
-                    if (!self.relatedTo){
-                        throw 'not related to a selector';
-                    }
-                    // populate to-selector from filter/all
-                    var optsfilter = this.selectedIndex < 1
-                        ? self.optselectsall
-                        : self.optselects[this.options[this.selectedIndex].firstChild.nodeValue]
-                        ,cselect = self.relatedTo
-                        ,opts = cselect.options;
-                    if (self.sorter) optsfilter.sort(self.sorter);
-                    opts.length = 0;
-                    for (var i=0;i<optsfilter.length;i+=1){
-                        opts[i] = new Option(optsfilter[i],i);
-                    }
-                }
-            }
-
-            // custom Error
-            function CreationError(mssg){
-                return {name:'CreationError',message:mssg};
-            }
-
-            // return the create method with some error handling
-            window[ns] = {
-                createRelatedSelector: function(from,to,obj,srt) {
-                    try {
-                        if (arguments.length<1) {
-                            throw CreationError('no parameters');
-                        }
-                        create.call(null,from,to,obj,srt);
-                    }
-                    catch(e) { console.log('createRelatedSelector ->',e.name,'\n'
-                        + e.message +
-                        '\ncheck parameters'); }
-                }
-            };
-        }('MAIN'));
-        //initialize
-        initSelectors();
-    </script>
-
+    <script src="{{url('/')}}/js/day5/day5_lunch.js"></script>
     {{-- day 5 lunch finish --}}
 
 
@@ -5274,34 +2725,34 @@
 
     <script>
 
-        function initSelectors(){
+        function initSelectors() {
             // next 2 statements should generate error message, see console
             MAIN.createRelatedSelector();
-            MAIN.createRelatedSelector(document.querySelector('#continents5_dinner') );
+            MAIN.createRelatedSelector(document.querySelector('#continents5_dinner'));
 
             //countries
             MAIN.createRelatedSelector
-            ( document.querySelector('#continents5_dinner')           // from select element
-                ,document.querySelector('#selectcountries5_dinner')      // to select element
-                ,{                                               // values object
+            (document.querySelector('#continents5_dinner')           // from select element
+                , document.querySelector('#selectcountries5_dinner')      // to select element
+                , {                                               // values object
 
 
                     carbs: carbs,
                     Fats: fats,
                     proteins: proteins
                 }
-                ,function(a,b){return a>b ? 1 : a<b ? -1 : 0;}   // sort method
+                , function (a, b) {
+                    return a > b ? 1 : a < b ? -1 : 0;
+                }   // sort method
             );
-
-
 
 
         }
 
         //create MAIN namespace
-        (function(ns){ // don't pollute the global namespace
+        (function (ns) { // don't pollute the global namespace
 
-            function create(from, to, obj, srt){
+            function create(from, to, obj, srt) {
                 if (!from) {
                     throw CreationError('create: parameter selector [from] missing');
                 }
@@ -5313,74 +2764,81 @@
                 }
 
                 //retrieve all options from obj and add it
-                obj.all = (function(o){
+                obj.all = (function (o) {
                     var a = [];
                     for (var l in o) {
-                        a = /array/i.test (o[l].constructor) ? a.concat(o[l]) : a;
+                        a = /array/i.test(o[l].constructor) ? a.concat(o[l]) : a;
                     }
                     return a.sort(srt);
                 }(obj));
                 // initialize and populate to-selector with all
-                populator.call( from
-                    ,null
-                    ,to
-                    ,obj
-                    ,srt
+                populator.call(from
+                    , null
+                    , to
+                    , obj
+                    , srt
                 );
 
                 // assign handler
                 from.onchange = populator;
 
-                function initStatics(fn,obj){
+                function initStatics(fn, obj) {
                     for (var l in obj) {
-                        if (obj.hasOwnProperty(l)){
+                        if (obj.hasOwnProperty(l)) {
                             fn[l] = obj[l];
                         }
                     }
                     fn.initialized = true;
                 }
 
-                function populator(e, relatedto, obj, srt){
+                function populator(e, relatedto, obj, srt) {
                     // set pseudo statics
                     var self = populator;
                     if (!self.initialized) {
-                        initStatics(self,{optselects:obj,optselectsall:obj.all,relatedTo:relatedto,sorter:srt || false});
+                        initStatics(self, {
+                            optselects: obj,
+                            optselectsall: obj.all,
+                            relatedTo: relatedto,
+                            sorter: srt || false
+                        });
                     }
 
-                    if (!self.relatedTo){
+                    if (!self.relatedTo) {
                         throw 'not related to a selector';
                     }
                     // populate to-selector from filter/all
                     var optsfilter = this.selectedIndex < 1
                         ? self.optselectsall
                         : self.optselects[this.options[this.selectedIndex].firstChild.nodeValue]
-                        ,cselect = self.relatedTo
-                        ,opts = cselect.options;
+                        , cselect = self.relatedTo
+                        , opts = cselect.options;
                     if (self.sorter) optsfilter.sort(self.sorter);
                     opts.length = 0;
-                    for (var i=0;i<optsfilter.length;i+=1){
-                        opts[i] = new Option(optsfilter[i],i);
+                    for (var i = 0; i < optsfilter.length; i += 1) {
+                        opts[i] = new Option(optsfilter[i], i);
                     }
                 }
             }
 
             // custom Error
-            function CreationError(mssg){
-                return {name:'CreationError',message:mssg};
+            function CreationError(mssg) {
+                return {name: 'CreationError', message: mssg};
             }
 
             // return the create method with some error handling
             window[ns] = {
-                createRelatedSelector: function(from,to,obj,srt) {
+                createRelatedSelector: function (from, to, obj, srt) {
                     try {
-                        if (arguments.length<1) {
+                        if (arguments.length < 1) {
                             throw CreationError('no parameters');
                         }
-                        create.call(null,from,to,obj,srt);
+                        create.call(null, from, to, obj, srt);
                     }
-                    catch(e) { console.log('createRelatedSelector ->',e.name,'\n'
-                        + e.message +
-                        '\ncheck parameters'); }
+                    catch (e) {
+                        console.log('createRelatedSelector ->', e.name, '\n'
+                            + e.message +
+                            '\ncheck parameters');
+                    }
                 }
             };
         }('MAIN'));
@@ -5394,34 +2852,34 @@
 
     <script>
 
-        function initSelectors(){
+        function initSelectors() {
             // next 2 statements should generate error message, see console
             MAIN.createRelatedSelector();
-            MAIN.createRelatedSelector(document.querySelector('#continents5_break1') );
+            MAIN.createRelatedSelector(document.querySelector('#continents5_break1'));
 
             //countries
             MAIN.createRelatedSelector
-            ( document.querySelector('#continents5_break1')           // from select element
-                ,document.querySelector('#selectcountries5_break1')      // to select element
-                ,{                                               // values object
+            (document.querySelector('#continents5_break1')           // from select element
+                , document.querySelector('#selectcountries5_break1')      // to select element
+                , {                                               // values object
 
 
                     carbs: carbs,
                     Fats: fats,
                     proteins: proteins
                 }
-                ,function(a,b){return a>b ? 1 : a<b ? -1 : 0;}   // sort method
+                , function (a, b) {
+                    return a > b ? 1 : a < b ? -1 : 0;
+                }   // sort method
             );
-
-
 
 
         }
 
         //create MAIN namespace
-        (function(ns){ // don't pollute the global namespace
+        (function (ns) { // don't pollute the global namespace
 
-            function create(from, to, obj, srt){
+            function create(from, to, obj, srt) {
                 if (!from) {
                     throw CreationError('create: parameter selector [from] missing');
                 }
@@ -5433,74 +2891,81 @@
                 }
 
                 //retrieve all options from obj and add it
-                obj.all = (function(o){
+                obj.all = (function (o) {
                     var a = [];
                     for (var l in o) {
-                        a = /array/i.test (o[l].constructor) ? a.concat(o[l]) : a;
+                        a = /array/i.test(o[l].constructor) ? a.concat(o[l]) : a;
                     }
                     return a.sort(srt);
                 }(obj));
                 // initialize and populate to-selector with all
-                populator.call( from
-                    ,null
-                    ,to
-                    ,obj
-                    ,srt
+                populator.call(from
+                    , null
+                    , to
+                    , obj
+                    , srt
                 );
 
                 // assign handler
                 from.onchange = populator;
 
-                function initStatics(fn,obj){
+                function initStatics(fn, obj) {
                     for (var l in obj) {
-                        if (obj.hasOwnProperty(l)){
+                        if (obj.hasOwnProperty(l)) {
                             fn[l] = obj[l];
                         }
                     }
                     fn.initialized = true;
                 }
 
-                function populator(e, relatedto, obj, srt){
+                function populator(e, relatedto, obj, srt) {
                     // set pseudo statics
                     var self = populator;
                     if (!self.initialized) {
-                        initStatics(self,{optselects:obj,optselectsall:obj.all,relatedTo:relatedto,sorter:srt || false});
+                        initStatics(self, {
+                            optselects: obj,
+                            optselectsall: obj.all,
+                            relatedTo: relatedto,
+                            sorter: srt || false
+                        });
                     }
 
-                    if (!self.relatedTo){
+                    if (!self.relatedTo) {
                         throw 'not related to a selector';
                     }
                     // populate to-selector from filter/all
                     var optsfilter = this.selectedIndex < 1
                         ? self.optselectsall
                         : self.optselects[this.options[this.selectedIndex].firstChild.nodeValue]
-                        ,cselect = self.relatedTo
-                        ,opts = cselect.options;
+                        , cselect = self.relatedTo
+                        , opts = cselect.options;
                     if (self.sorter) optsfilter.sort(self.sorter);
                     opts.length = 0;
-                    for (var i=0;i<optsfilter.length;i+=1){
-                        opts[i] = new Option(optsfilter[i],i);
+                    for (var i = 0; i < optsfilter.length; i += 1) {
+                        opts[i] = new Option(optsfilter[i], i);
                     }
                 }
             }
 
             // custom Error
-            function CreationError(mssg){
-                return {name:'CreationError',message:mssg};
+            function CreationError(mssg) {
+                return {name: 'CreationError', message: mssg};
             }
 
             // return the create method with some error handling
             window[ns] = {
-                createRelatedSelector: function(from,to,obj,srt) {
+                createRelatedSelector: function (from, to, obj, srt) {
                     try {
-                        if (arguments.length<1) {
+                        if (arguments.length < 1) {
                             throw CreationError('no parameters');
                         }
-                        create.call(null,from,to,obj,srt);
+                        create.call(null, from, to, obj, srt);
                     }
-                    catch(e) { console.log('createRelatedSelector ->',e.name,'\n'
-                        + e.message +
-                        '\ncheck parameters'); }
+                    catch (e) {
+                        console.log('createRelatedSelector ->', e.name, '\n'
+                            + e.message +
+                            '\ncheck parameters');
+                    }
                 }
             };
         }('MAIN'));
@@ -5514,34 +2979,34 @@
 
     <script>
 
-        function initSelectors(){
+        function initSelectors() {
             // next 2 statements should generate error message, see console
             MAIN.createRelatedSelector();
-            MAIN.createRelatedSelector(document.querySelector('#continents5_break2') );
+            MAIN.createRelatedSelector(document.querySelector('#continents5_break2'));
 
             //countries
             MAIN.createRelatedSelector
-            ( document.querySelector('#continents5_break2')           // from select element
-                ,document.querySelector('#selectcountries5_break2')      // to select element
-                ,{                                               // values object
+            (document.querySelector('#continents5_break2')           // from select element
+                , document.querySelector('#selectcountries5_break2')      // to select element
+                , {                                               // values object
 
 
                     carbs: carbs,
                     Fats: fats,
                     proteins: proteins
                 }
-                ,function(a,b){return a>b ? 1 : a<b ? -1 : 0;}   // sort method
+                , function (a, b) {
+                    return a > b ? 1 : a < b ? -1 : 0;
+                }   // sort method
             );
-
-
 
 
         }
 
         //create MAIN namespace
-        (function(ns){ // don't pollute the global namespace
+        (function (ns) { // don't pollute the global namespace
 
-            function create(from, to, obj, srt){
+            function create(from, to, obj, srt) {
                 if (!from) {
                     throw CreationError('create: parameter selector [from] missing');
                 }
@@ -5553,74 +3018,81 @@
                 }
 
                 //retrieve all options from obj and add it
-                obj.all = (function(o){
+                obj.all = (function (o) {
                     var a = [];
                     for (var l in o) {
-                        a = /array/i.test (o[l].constructor) ? a.concat(o[l]) : a;
+                        a = /array/i.test(o[l].constructor) ? a.concat(o[l]) : a;
                     }
                     return a.sort(srt);
                 }(obj));
                 // initialize and populate to-selector with all
-                populator.call( from
-                    ,null
-                    ,to
-                    ,obj
-                    ,srt
+                populator.call(from
+                    , null
+                    , to
+                    , obj
+                    , srt
                 );
 
                 // assign handler
                 from.onchange = populator;
 
-                function initStatics(fn,obj){
+                function initStatics(fn, obj) {
                     for (var l in obj) {
-                        if (obj.hasOwnProperty(l)){
+                        if (obj.hasOwnProperty(l)) {
                             fn[l] = obj[l];
                         }
                     }
                     fn.initialized = true;
                 }
 
-                function populator(e, relatedto, obj, srt){
+                function populator(e, relatedto, obj, srt) {
                     // set pseudo statics
                     var self = populator;
                     if (!self.initialized) {
-                        initStatics(self,{optselects:obj,optselectsall:obj.all,relatedTo:relatedto,sorter:srt || false});
+                        initStatics(self, {
+                            optselects: obj,
+                            optselectsall: obj.all,
+                            relatedTo: relatedto,
+                            sorter: srt || false
+                        });
                     }
 
-                    if (!self.relatedTo){
+                    if (!self.relatedTo) {
                         throw 'not related to a selector';
                     }
                     // populate to-selector from filter/all
                     var optsfilter = this.selectedIndex < 1
                         ? self.optselectsall
                         : self.optselects[this.options[this.selectedIndex].firstChild.nodeValue]
-                        ,cselect = self.relatedTo
-                        ,opts = cselect.options;
+                        , cselect = self.relatedTo
+                        , opts = cselect.options;
                     if (self.sorter) optsfilter.sort(self.sorter);
                     opts.length = 0;
-                    for (var i=0;i<optsfilter.length;i+=1){
-                        opts[i] = new Option(optsfilter[i],i);
+                    for (var i = 0; i < optsfilter.length; i += 1) {
+                        opts[i] = new Option(optsfilter[i], i);
                     }
                 }
             }
 
             // custom Error
-            function CreationError(mssg){
-                return {name:'CreationError',message:mssg};
+            function CreationError(mssg) {
+                return {name: 'CreationError', message: mssg};
             }
 
             // return the create method with some error handling
             window[ns] = {
-                createRelatedSelector: function(from,to,obj,srt) {
+                createRelatedSelector: function (from, to, obj, srt) {
                     try {
-                        if (arguments.length<1) {
+                        if (arguments.length < 1) {
                             throw CreationError('no parameters');
                         }
-                        create.call(null,from,to,obj,srt);
+                        create.call(null, from, to, obj, srt);
                     }
-                    catch(e) { console.log('createRelatedSelector ->',e.name,'\n'
-                        + e.message +
-                        '\ncheck parameters'); }
+                    catch (e) {
+                        console.log('createRelatedSelector ->', e.name, '\n'
+                            + e.message +
+                            '\ncheck parameters');
+                    }
                 }
             };
         }('MAIN'));
@@ -5638,34 +3110,34 @@
    {{-- day 6 breakfast start --}}
     <script>
 
-        function initSelectors(){
+        function initSelectors() {
             // next 2 statements should generate error message, see console
             MAIN.createRelatedSelector();
-            MAIN.createRelatedSelector(document.querySelector('#continent6') );
+            MAIN.createRelatedSelector(document.querySelector('#continent6'));
 
             //countries
             MAIN.createRelatedSelector
-            ( document.querySelector('#continent6')           // from select element
-                ,document.querySelector('#selectcountries6')      // to select element
-                ,{                                               // values object
+            (document.querySelector('#continent6')           // from select element
+                , document.querySelector('#selectcountries6')      // to select element
+                , {                                               // values object
 
 
                     carbs: carbs,
                     Fats: fats,
                     proteins: proteins
                 }
-                ,function(a,b){return a>b ? 1 : a<b ? -1 : 0;}   // sort method
+                , function (a, b) {
+                    return a > b ? 1 : a < b ? -1 : 0;
+                }   // sort method
             );
-
-
 
 
         }
 
         //create MAIN namespace
-        (function(ns){ // don't pollute the global namespace
+        (function (ns) { // don't pollute the global namespace
 
-            function create(from, to, obj, srt){
+            function create(from, to, obj, srt) {
                 if (!from) {
                     throw CreationError('create: parameter selector [from] missing');
                 }
@@ -5677,74 +3149,81 @@
                 }
 
                 //retrieve all options from obj and add it
-                obj.all = (function(o){
+                obj.all = (function (o) {
                     var a = [];
                     for (var l in o) {
-                        a = /array/i.test (o[l].constructor) ? a.concat(o[l]) : a;
+                        a = /array/i.test(o[l].constructor) ? a.concat(o[l]) : a;
                     }
                     return a.sort(srt);
                 }(obj));
                 // initialize and populate to-selector with all
-                populator.call( from
-                    ,null
-                    ,to
-                    ,obj
-                    ,srt
+                populator.call(from
+                    , null
+                    , to
+                    , obj
+                    , srt
                 );
 
                 // assign handler
                 from.onchange = populator;
 
-                function initStatics(fn,obj){
+                function initStatics(fn, obj) {
                     for (var l in obj) {
-                        if (obj.hasOwnProperty(l)){
+                        if (obj.hasOwnProperty(l)) {
                             fn[l] = obj[l];
                         }
                     }
                     fn.initialized = true;
                 }
 
-                function populator(e, relatedto, obj, srt){
+                function populator(e, relatedto, obj, srt) {
                     // set pseudo statics
                     var self = populator;
                     if (!self.initialized) {
-                        initStatics(self,{optselects:obj,optselectsall:obj.all,relatedTo:relatedto,sorter:srt || false});
+                        initStatics(self, {
+                            optselects: obj,
+                            optselectsall: obj.all,
+                            relatedTo: relatedto,
+                            sorter: srt || false
+                        });
                     }
 
-                    if (!self.relatedTo){
+                    if (!self.relatedTo) {
                         throw 'not related to a selector';
                     }
                     // populate to-selector from filter/all
                     var optsfilter = this.selectedIndex < 1
                         ? self.optselectsall
                         : self.optselects[this.options[this.selectedIndex].firstChild.nodeValue]
-                        ,cselect = self.relatedTo
-                        ,opts = cselect.options;
+                        , cselect = self.relatedTo
+                        , opts = cselect.options;
                     if (self.sorter) optsfilter.sort(self.sorter);
                     opts.length = 0;
-                    for (var i=0;i<optsfilter.length;i+=1){
-                        opts[i] = new Option(optsfilter[i],i);
+                    for (var i = 0; i < optsfilter.length; i += 1) {
+                        opts[i] = new Option(optsfilter[i], i);
                     }
                 }
             }
 
             // custom Error
-            function CreationError(mssg){
-                return {name:'CreationError',message:mssg};
+            function CreationError(mssg) {
+                return {name: 'CreationError', message: mssg};
             }
 
             // return the create method with some error handling
             window[ns] = {
-                createRelatedSelector: function(from,to,obj,srt) {
+                createRelatedSelector: function (from, to, obj, srt) {
                     try {
-                        if (arguments.length<1) {
+                        if (arguments.length < 1) {
                             throw CreationError('no parameters');
                         }
-                        create.call(null,from,to,obj,srt);
+                        create.call(null, from, to, obj, srt);
                     }
-                    catch(e) { console.log('createRelatedSelector ->',e.name,'\n'
-                        + e.message +
-                        '\ncheck parameters'); }
+                    catch (e) {
+                        console.log('createRelatedSelector ->', e.name, '\n'
+                            + e.message +
+                            '\ncheck parameters');
+                    }
                 }
             };
         }('MAIN'));
@@ -5758,34 +3237,34 @@
 
     <script>
 
-        function initSelectors(){
+        function initSelectors() {
             // next 2 statements should generate error message, see console
             MAIN.createRelatedSelector();
-            MAIN.createRelatedSelector(document.querySelector('#continents6_lunch') );
+            MAIN.createRelatedSelector(document.querySelector('#continents6_lunch'));
 
             //countries
             MAIN.createRelatedSelector
-            ( document.querySelector('#continents6_lunch')           // from select element
-                ,document.querySelector('#selectcountries6_lunch')      // to select element
-                ,{                                               // values object
+            (document.querySelector('#continents6_lunch')           // from select element
+                , document.querySelector('#selectcountries6_lunch')      // to select element
+                , {                                               // values object
 
 
                     carbs: carbs,
                     Fats: fats,
                     proteins: proteins
                 }
-                ,function(a,b){return a>b ? 1 : a<b ? -1 : 0;}   // sort method
+                , function (a, b) {
+                    return a > b ? 1 : a < b ? -1 : 0;
+                }   // sort method
             );
-
-
 
 
         }
 
         //create MAIN namespace
-        (function(ns){ // don't pollute the global namespace
+        (function (ns) { // don't pollute the global namespace
 
-            function create(from, to, obj, srt){
+            function create(from, to, obj, srt) {
                 if (!from) {
                     throw CreationError('create: parameter selector [from] missing');
                 }
@@ -5797,74 +3276,81 @@
                 }
 
                 //retrieve all options from obj and add it
-                obj.all = (function(o){
+                obj.all = (function (o) {
                     var a = [];
                     for (var l in o) {
-                        a = /array/i.test (o[l].constructor) ? a.concat(o[l]) : a;
+                        a = /array/i.test(o[l].constructor) ? a.concat(o[l]) : a;
                     }
                     return a.sort(srt);
                 }(obj));
                 // initialize and populate to-selector with all
-                populator.call( from
-                    ,null
-                    ,to
-                    ,obj
-                    ,srt
+                populator.call(from
+                    , null
+                    , to
+                    , obj
+                    , srt
                 );
 
                 // assign handler
                 from.onchange = populator;
 
-                function initStatics(fn,obj){
+                function initStatics(fn, obj) {
                     for (var l in obj) {
-                        if (obj.hasOwnProperty(l)){
+                        if (obj.hasOwnProperty(l)) {
                             fn[l] = obj[l];
                         }
                     }
                     fn.initialized = true;
                 }
 
-                function populator(e, relatedto, obj, srt){
+                function populator(e, relatedto, obj, srt) {
                     // set pseudo statics
                     var self = populator;
                     if (!self.initialized) {
-                        initStatics(self,{optselects:obj,optselectsall:obj.all,relatedTo:relatedto,sorter:srt || false});
+                        initStatics(self, {
+                            optselects: obj,
+                            optselectsall: obj.all,
+                            relatedTo: relatedto,
+                            sorter: srt || false
+                        });
                     }
 
-                    if (!self.relatedTo){
+                    if (!self.relatedTo) {
                         throw 'not related to a selector';
                     }
                     // populate to-selector from filter/all
                     var optsfilter = this.selectedIndex < 1
                         ? self.optselectsall
                         : self.optselects[this.options[this.selectedIndex].firstChild.nodeValue]
-                        ,cselect = self.relatedTo
-                        ,opts = cselect.options;
+                        , cselect = self.relatedTo
+                        , opts = cselect.options;
                     if (self.sorter) optsfilter.sort(self.sorter);
                     opts.length = 0;
-                    for (var i=0;i<optsfilter.length;i+=1){
-                        opts[i] = new Option(optsfilter[i],i);
+                    for (var i = 0; i < optsfilter.length; i += 1) {
+                        opts[i] = new Option(optsfilter[i], i);
                     }
                 }
             }
 
             // custom Error
-            function CreationError(mssg){
-                return {name:'CreationError',message:mssg};
+            function CreationError(mssg) {
+                return {name: 'CreationError', message: mssg};
             }
 
             // return the create method with some error handling
             window[ns] = {
-                createRelatedSelector: function(from,to,obj,srt) {
+                createRelatedSelector: function (from, to, obj, srt) {
                     try {
-                        if (arguments.length<1) {
+                        if (arguments.length < 1) {
                             throw CreationError('no parameters');
                         }
-                        create.call(null,from,to,obj,srt);
+                        create.call(null, from, to, obj, srt);
                     }
-                    catch(e) { console.log('createRelatedSelector ->',e.name,'\n'
-                        + e.message +
-                        '\ncheck parameters'); }
+                    catch (e) {
+                        console.log('createRelatedSelector ->', e.name, '\n'
+                            + e.message +
+                            '\ncheck parameters');
+                    }
                 }
             };
         }('MAIN'));
@@ -5880,34 +3366,34 @@
 
     <script>
 
-        function initSelectors(){
+        function initSelectors() {
             // next 2 statements should generate error message, see console
             MAIN.createRelatedSelector();
-            MAIN.createRelatedSelector(document.querySelector('#continents6_dinner') );
+            MAIN.createRelatedSelector(document.querySelector('#continents6_dinner'));
 
             //countries
             MAIN.createRelatedSelector
-            ( document.querySelector('#continents6_dinner')           // from select element
-                ,document.querySelector('#selectcountries6_dinner')      // to select element
-                ,{                                               // values object
+            (document.querySelector('#continents6_dinner')           // from select element
+                , document.querySelector('#selectcountries6_dinner')      // to select element
+                , {                                               // values object
 
 
                     carbs: carbs,
                     Fats: fats,
                     proteins: proteins
                 }
-                ,function(a,b){return a>b ? 1 : a<b ? -1 : 0;}   // sort method
+                , function (a, b) {
+                    return a > b ? 1 : a < b ? -1 : 0;
+                }   // sort method
             );
-
-
 
 
         }
 
         //create MAIN namespace
-        (function(ns){ // don't pollute the global namespace
+        (function (ns) { // don't pollute the global namespace
 
-            function create(from, to, obj, srt){
+            function create(from, to, obj, srt) {
                 if (!from) {
                     throw CreationError('create: parameter selector [from] missing');
                 }
@@ -5919,74 +3405,81 @@
                 }
 
                 //retrieve all options from obj and add it
-                obj.all = (function(o){
+                obj.all = (function (o) {
                     var a = [];
                     for (var l in o) {
-                        a = /array/i.test (o[l].constructor) ? a.concat(o[l]) : a;
+                        a = /array/i.test(o[l].constructor) ? a.concat(o[l]) : a;
                     }
                     return a.sort(srt);
                 }(obj));
                 // initialize and populate to-selector with all
-                populator.call( from
-                    ,null
-                    ,to
-                    ,obj
-                    ,srt
+                populator.call(from
+                    , null
+                    , to
+                    , obj
+                    , srt
                 );
 
                 // assign handler
                 from.onchange = populator;
 
-                function initStatics(fn,obj){
+                function initStatics(fn, obj) {
                     for (var l in obj) {
-                        if (obj.hasOwnProperty(l)){
+                        if (obj.hasOwnProperty(l)) {
                             fn[l] = obj[l];
                         }
                     }
                     fn.initialized = true;
                 }
 
-                function populator(e, relatedto, obj, srt){
+                function populator(e, relatedto, obj, srt) {
                     // set pseudo statics
                     var self = populator;
                     if (!self.initialized) {
-                        initStatics(self,{optselects:obj,optselectsall:obj.all,relatedTo:relatedto,sorter:srt || false});
+                        initStatics(self, {
+                            optselects: obj,
+                            optselectsall: obj.all,
+                            relatedTo: relatedto,
+                            sorter: srt || false
+                        });
                     }
 
-                    if (!self.relatedTo){
+                    if (!self.relatedTo) {
                         throw 'not related to a selector';
                     }
                     // populate to-selector from filter/all
                     var optsfilter = this.selectedIndex < 1
                         ? self.optselectsall
                         : self.optselects[this.options[this.selectedIndex].firstChild.nodeValue]
-                        ,cselect = self.relatedTo
-                        ,opts = cselect.options;
+                        , cselect = self.relatedTo
+                        , opts = cselect.options;
                     if (self.sorter) optsfilter.sort(self.sorter);
                     opts.length = 0;
-                    for (var i=0;i<optsfilter.length;i+=1){
-                        opts[i] = new Option(optsfilter[i],i);
+                    for (var i = 0; i < optsfilter.length; i += 1) {
+                        opts[i] = new Option(optsfilter[i], i);
                     }
                 }
             }
 
             // custom Error
-            function CreationError(mssg){
-                return {name:'CreationError',message:mssg};
+            function CreationError(mssg) {
+                return {name: 'CreationError', message: mssg};
             }
 
             // return the create method with some error handling
             window[ns] = {
-                createRelatedSelector: function(from,to,obj,srt) {
+                createRelatedSelector: function (from, to, obj, srt) {
                     try {
-                        if (arguments.length<1) {
+                        if (arguments.length < 1) {
                             throw CreationError('no parameters');
                         }
-                        create.call(null,from,to,obj,srt);
+                        create.call(null, from, to, obj, srt);
                     }
-                    catch(e) { console.log('createRelatedSelector ->',e.name,'\n'
-                        + e.message +
-                        '\ncheck parameters'); }
+                    catch (e) {
+                        console.log('createRelatedSelector ->', e.name, '\n'
+                            + e.message +
+                            '\ncheck parameters');
+                    }
                 }
             };
         }('MAIN'));
@@ -6000,34 +3493,34 @@
 
     <script>
 
-        function initSelectors(){
+        function initSelectors() {
             // next 2 statements should generate error message, see console
             MAIN.createRelatedSelector();
-            MAIN.createRelatedSelector(document.querySelector('#continents6_break1') );
+            MAIN.createRelatedSelector(document.querySelector('#continents6_break1'));
 
             //countries
             MAIN.createRelatedSelector
-            ( document.querySelector('#continents6_break1')           // from select element
-                ,document.querySelector('#selectcountries6_break1')      // to select element
-                ,{                                               // values object
+            (document.querySelector('#continents6_break1')           // from select element
+                , document.querySelector('#selectcountries6_break1')      // to select element
+                , {                                               // values object
 
 
                     carbs: carbs,
                     Fats: fats,
                     proteins: proteins
                 }
-                ,function(a,b){return a>b ? 1 : a<b ? -1 : 0;}   // sort method
+                , function (a, b) {
+                    return a > b ? 1 : a < b ? -1 : 0;
+                }   // sort method
             );
-
-
 
 
         }
 
         //create MAIN namespace
-        (function(ns){ // don't pollute the global namespace
+        (function (ns) { // don't pollute the global namespace
 
-            function create(from, to, obj, srt){
+            function create(from, to, obj, srt) {
                 if (!from) {
                     throw CreationError('create: parameter selector [from] missing');
                 }
@@ -6039,74 +3532,81 @@
                 }
 
                 //retrieve all options from obj and add it
-                obj.all = (function(o){
+                obj.all = (function (o) {
                     var a = [];
                     for (var l in o) {
-                        a = /array/i.test (o[l].constructor) ? a.concat(o[l]) : a;
+                        a = /array/i.test(o[l].constructor) ? a.concat(o[l]) : a;
                     }
                     return a.sort(srt);
                 }(obj));
                 // initialize and populate to-selector with all
-                populator.call( from
-                    ,null
-                    ,to
-                    ,obj
-                    ,srt
+                populator.call(from
+                    , null
+                    , to
+                    , obj
+                    , srt
                 );
 
                 // assign handler
                 from.onchange = populator;
 
-                function initStatics(fn,obj){
+                function initStatics(fn, obj) {
                     for (var l in obj) {
-                        if (obj.hasOwnProperty(l)){
+                        if (obj.hasOwnProperty(l)) {
                             fn[l] = obj[l];
                         }
                     }
                     fn.initialized = true;
                 }
 
-                function populator(e, relatedto, obj, srt){
+                function populator(e, relatedto, obj, srt) {
                     // set pseudo statics
                     var self = populator;
                     if (!self.initialized) {
-                        initStatics(self,{optselects:obj,optselectsall:obj.all,relatedTo:relatedto,sorter:srt || false});
+                        initStatics(self, {
+                            optselects: obj,
+                            optselectsall: obj.all,
+                            relatedTo: relatedto,
+                            sorter: srt || false
+                        });
                     }
 
-                    if (!self.relatedTo){
+                    if (!self.relatedTo) {
                         throw 'not related to a selector';
                     }
                     // populate to-selector from filter/all
                     var optsfilter = this.selectedIndex < 1
                         ? self.optselectsall
                         : self.optselects[this.options[this.selectedIndex].firstChild.nodeValue]
-                        ,cselect = self.relatedTo
-                        ,opts = cselect.options;
+                        , cselect = self.relatedTo
+                        , opts = cselect.options;
                     if (self.sorter) optsfilter.sort(self.sorter);
                     opts.length = 0;
-                    for (var i=0;i<optsfilter.length;i+=1){
-                        opts[i] = new Option(optsfilter[i],i);
+                    for (var i = 0; i < optsfilter.length; i += 1) {
+                        opts[i] = new Option(optsfilter[i], i);
                     }
                 }
             }
 
             // custom Error
-            function CreationError(mssg){
-                return {name:'CreationError',message:mssg};
+            function CreationError(mssg) {
+                return {name: 'CreationError', message: mssg};
             }
 
             // return the create method with some error handling
             window[ns] = {
-                createRelatedSelector: function(from,to,obj,srt) {
+                createRelatedSelector: function (from, to, obj, srt) {
                     try {
-                        if (arguments.length<1) {
+                        if (arguments.length < 1) {
                             throw CreationError('no parameters');
                         }
-                        create.call(null,from,to,obj,srt);
+                        create.call(null, from, to, obj, srt);
                     }
-                    catch(e) { console.log('createRelatedSelector ->',e.name,'\n'
-                        + e.message +
-                        '\ncheck parameters'); }
+                    catch (e) {
+                        console.log('createRelatedSelector ->', e.name, '\n'
+                            + e.message +
+                            '\ncheck parameters');
+                    }
                 }
             };
         }('MAIN'));
@@ -6120,34 +3620,34 @@
 
     <script>
 
-        function initSelectors(){
+        function initSelectors() {
             // next 2 statements should generate error message, see console
             MAIN.createRelatedSelector();
-            MAIN.createRelatedSelector(document.querySelector('#continents6_break2') );
+            MAIN.createRelatedSelector(document.querySelector('#continents6_break2'));
 
             //countries
             MAIN.createRelatedSelector
-            ( document.querySelector('#continents6_break2')           // from select element
-                ,document.querySelector('#selectcountries6_break2')      // to select element
-                ,{                                               // values object
+            (document.querySelector('#continents6_break2')           // from select element
+                , document.querySelector('#selectcountries6_break2')      // to select element
+                , {                                               // values object
 
 
                     carbs: carbs,
                     Fats: fats,
                     proteins: proteins
                 }
-                ,function(a,b){return a>b ? 1 : a<b ? -1 : 0;}   // sort method
+                , function (a, b) {
+                    return a > b ? 1 : a < b ? -1 : 0;
+                }   // sort method
             );
-
-
 
 
         }
 
         //create MAIN namespace
-        (function(ns){ // don't pollute the global namespace
+        (function (ns) { // don't pollute the global namespace
 
-            function create(from, to, obj, srt){
+            function create(from, to, obj, srt) {
                 if (!from) {
                     throw CreationError('create: parameter selector [from] missing');
                 }
@@ -6159,74 +3659,81 @@
                 }
 
                 //retrieve all options from obj and add it
-                obj.all = (function(o){
+                obj.all = (function (o) {
                     var a = [];
                     for (var l in o) {
-                        a = /array/i.test (o[l].constructor) ? a.concat(o[l]) : a;
+                        a = /array/i.test(o[l].constructor) ? a.concat(o[l]) : a;
                     }
                     return a.sort(srt);
                 }(obj));
                 // initialize and populate to-selector with all
-                populator.call( from
-                    ,null
-                    ,to
-                    ,obj
-                    ,srt
+                populator.call(from
+                    , null
+                    , to
+                    , obj
+                    , srt
                 );
 
                 // assign handler
                 from.onchange = populator;
 
-                function initStatics(fn,obj){
+                function initStatics(fn, obj) {
                     for (var l in obj) {
-                        if (obj.hasOwnProperty(l)){
+                        if (obj.hasOwnProperty(l)) {
                             fn[l] = obj[l];
                         }
                     }
                     fn.initialized = true;
                 }
 
-                function populator(e, relatedto, obj, srt){
+                function populator(e, relatedto, obj, srt) {
                     // set pseudo statics
                     var self = populator;
                     if (!self.initialized) {
-                        initStatics(self,{optselects:obj,optselectsall:obj.all,relatedTo:relatedto,sorter:srt || false});
+                        initStatics(self, {
+                            optselects: obj,
+                            optselectsall: obj.all,
+                            relatedTo: relatedto,
+                            sorter: srt || false
+                        });
                     }
 
-                    if (!self.relatedTo){
+                    if (!self.relatedTo) {
                         throw 'not related to a selector';
                     }
                     // populate to-selector from filter/all
                     var optsfilter = this.selectedIndex < 1
                         ? self.optselectsall
                         : self.optselects[this.options[this.selectedIndex].firstChild.nodeValue]
-                        ,cselect = self.relatedTo
-                        ,opts = cselect.options;
+                        , cselect = self.relatedTo
+                        , opts = cselect.options;
                     if (self.sorter) optsfilter.sort(self.sorter);
                     opts.length = 0;
-                    for (var i=0;i<optsfilter.length;i+=1){
-                        opts[i] = new Option(optsfilter[i],i);
+                    for (var i = 0; i < optsfilter.length; i += 1) {
+                        opts[i] = new Option(optsfilter[i], i);
                     }
                 }
             }
 
             // custom Error
-            function CreationError(mssg){
-                return {name:'CreationError',message:mssg};
+            function CreationError(mssg) {
+                return {name: 'CreationError', message: mssg};
             }
 
             // return the create method with some error handling
             window[ns] = {
-                createRelatedSelector: function(from,to,obj,srt) {
+                createRelatedSelector: function (from, to, obj, srt) {
                     try {
-                        if (arguments.length<1) {
+                        if (arguments.length < 1) {
                             throw CreationError('no parameters');
                         }
-                        create.call(null,from,to,obj,srt);
+                        create.call(null, from, to, obj, srt);
                     }
-                    catch(e) { console.log('createRelatedSelector ->',e.name,'\n'
-                        + e.message +
-                        '\ncheck parameters'); }
+                    catch (e) {
+                        console.log('createRelatedSelector ->', e.name, '\n'
+                            + e.message +
+                            '\ncheck parameters');
+                    }
                 }
             };
         }('MAIN'));
@@ -6245,34 +3752,34 @@
  {{-- day 7 breakfast start --}}
     <script>
 
-        function initSelectors(){
+        function initSelectors() {
             // next 2 statements should generate error message, see console
             MAIN.createRelatedSelector();
-            MAIN.createRelatedSelector(document.querySelector('#continent7') );
+            MAIN.createRelatedSelector(document.querySelector('#continent7'));
 
             //countries
             MAIN.createRelatedSelector
-            ( document.querySelector('#continent7')           // from select element
-                ,document.querySelector('#selectcountries7')      // to select element
-                ,{                                               // values object
+            (document.querySelector('#continent7')           // from select element
+                , document.querySelector('#selectcountries7')      // to select element
+                , {                                               // values object
 
 
                     carbs: carbs,
                     Fats: fats,
                     proteins: proteins
                 }
-                ,function(a,b){return a>b ? 1 : a<b ? -1 : 0;}   // sort method
+                , function (a, b) {
+                    return a > b ? 1 : a < b ? -1 : 0;
+                }   // sort method
             );
-
-
 
 
         }
 
         //create MAIN namespace
-        (function(ns){ // don't pollute the global namespace
+        (function (ns) { // don't pollute the global namespace
 
-            function create(from, to, obj, srt){
+            function create(from, to, obj, srt) {
                 if (!from) {
                     throw CreationError('create: parameter selector [from] missing');
                 }
@@ -6284,74 +3791,81 @@
                 }
 
                 //retrieve all options from obj and add it
-                obj.all = (function(o){
+                obj.all = (function (o) {
                     var a = [];
                     for (var l in o) {
-                        a = /array/i.test (o[l].constructor) ? a.concat(o[l]) : a;
+                        a = /array/i.test(o[l].constructor) ? a.concat(o[l]) : a;
                     }
                     return a.sort(srt);
                 }(obj));
                 // initialize and populate to-selector with all
-                populator.call( from
-                    ,null
-                    ,to
-                    ,obj
-                    ,srt
+                populator.call(from
+                    , null
+                    , to
+                    , obj
+                    , srt
                 );
 
                 // assign handler
                 from.onchange = populator;
 
-                function initStatics(fn,obj){
+                function initStatics(fn, obj) {
                     for (var l in obj) {
-                        if (obj.hasOwnProperty(l)){
+                        if (obj.hasOwnProperty(l)) {
                             fn[l] = obj[l];
                         }
                     }
                     fn.initialized = true;
                 }
 
-                function populator(e, relatedto, obj, srt){
+                function populator(e, relatedto, obj, srt) {
                     // set pseudo statics
                     var self = populator;
                     if (!self.initialized) {
-                        initStatics(self,{optselects:obj,optselectsall:obj.all,relatedTo:relatedto,sorter:srt || false});
+                        initStatics(self, {
+                            optselects: obj,
+                            optselectsall: obj.all,
+                            relatedTo: relatedto,
+                            sorter: srt || false
+                        });
                     }
 
-                    if (!self.relatedTo){
+                    if (!self.relatedTo) {
                         throw 'not related to a selector';
                     }
                     // populate to-selector from filter/all
                     var optsfilter = this.selectedIndex < 1
                         ? self.optselectsall
                         : self.optselects[this.options[this.selectedIndex].firstChild.nodeValue]
-                        ,cselect = self.relatedTo
-                        ,opts = cselect.options;
+                        , cselect = self.relatedTo
+                        , opts = cselect.options;
                     if (self.sorter) optsfilter.sort(self.sorter);
                     opts.length = 0;
-                    for (var i=0;i<optsfilter.length;i+=1){
-                        opts[i] = new Option(optsfilter[i],i);
+                    for (var i = 0; i < optsfilter.length; i += 1) {
+                        opts[i] = new Option(optsfilter[i], i);
                     }
                 }
             }
 
             // custom Error
-            function CreationError(mssg){
-                return {name:'CreationError',message:mssg};
+            function CreationError(mssg) {
+                return {name: 'CreationError', message: mssg};
             }
 
             // return the create method with some error handling
             window[ns] = {
-                createRelatedSelector: function(from,to,obj,srt) {
+                createRelatedSelector: function (from, to, obj, srt) {
                     try {
-                        if (arguments.length<1) {
+                        if (arguments.length < 1) {
                             throw CreationError('no parameters');
                         }
-                        create.call(null,from,to,obj,srt);
+                        create.call(null, from, to, obj, srt);
                     }
-                    catch(e) { console.log('createRelatedSelector ->',e.name,'\n'
-                        + e.message +
-                        '\ncheck parameters'); }
+                    catch (e) {
+                        console.log('createRelatedSelector ->', e.name, '\n'
+                            + e.message +
+                            '\ncheck parameters');
+                    }
                 }
             };
         }('MAIN'));
@@ -6365,34 +3879,34 @@
 
     <script>
 
-        function initSelectors(){
+        function initSelectors() {
             // next 2 statements should generate error message, see console
             MAIN.createRelatedSelector();
-            MAIN.createRelatedSelector(document.querySelector('#continents7_lunch') );
+            MAIN.createRelatedSelector(document.querySelector('#continents7_lunch'));
 
             //countries
             MAIN.createRelatedSelector
-            ( document.querySelector('#continents7_lunch')           // from select element
-                ,document.querySelector('#selectcountries7_lunch')      // to select element
-                ,{                                               // values object
+            (document.querySelector('#continents7_lunch')           // from select element
+                , document.querySelector('#selectcountries7_lunch')      // to select element
+                , {                                               // values object
 
 
                     carbs: carbs,
                     Fats: fats,
                     proteins: proteins
                 }
-                ,function(a,b){return a>b ? 1 : a<b ? -1 : 0;}   // sort method
+                , function (a, b) {
+                    return a > b ? 1 : a < b ? -1 : 0;
+                }   // sort method
             );
-
-
 
 
         }
 
         //create MAIN namespace
-        (function(ns){ // don't pollute the global namespace
+        (function (ns) { // don't pollute the global namespace
 
-            function create(from, to, obj, srt){
+            function create(from, to, obj, srt) {
                 if (!from) {
                     throw CreationError('create: parameter selector [from] missing');
                 }
@@ -6404,74 +3918,81 @@
                 }
 
                 //retrieve all options from obj and add it
-                obj.all = (function(o){
+                obj.all = (function (o) {
                     var a = [];
                     for (var l in o) {
-                        a = /array/i.test (o[l].constructor) ? a.concat(o[l]) : a;
+                        a = /array/i.test(o[l].constructor) ? a.concat(o[l]) : a;
                     }
                     return a.sort(srt);
                 }(obj));
                 // initialize and populate to-selector with all
-                populator.call( from
-                    ,null
-                    ,to
-                    ,obj
-                    ,srt
+                populator.call(from
+                    , null
+                    , to
+                    , obj
+                    , srt
                 );
 
                 // assign handler
                 from.onchange = populator;
 
-                function initStatics(fn,obj){
+                function initStatics(fn, obj) {
                     for (var l in obj) {
-                        if (obj.hasOwnProperty(l)){
+                        if (obj.hasOwnProperty(l)) {
                             fn[l] = obj[l];
                         }
                     }
                     fn.initialized = true;
                 }
 
-                function populator(e, relatedto, obj, srt){
+                function populator(e, relatedto, obj, srt) {
                     // set pseudo statics
                     var self = populator;
                     if (!self.initialized) {
-                        initStatics(self,{optselects:obj,optselectsall:obj.all,relatedTo:relatedto,sorter:srt || false});
+                        initStatics(self, {
+                            optselects: obj,
+                            optselectsall: obj.all,
+                            relatedTo: relatedto,
+                            sorter: srt || false
+                        });
                     }
 
-                    if (!self.relatedTo){
+                    if (!self.relatedTo) {
                         throw 'not related to a selector';
                     }
                     // populate to-selector from filter/all
                     var optsfilter = this.selectedIndex < 1
                         ? self.optselectsall
                         : self.optselects[this.options[this.selectedIndex].firstChild.nodeValue]
-                        ,cselect = self.relatedTo
-                        ,opts = cselect.options;
+                        , cselect = self.relatedTo
+                        , opts = cselect.options;
                     if (self.sorter) optsfilter.sort(self.sorter);
                     opts.length = 0;
-                    for (var i=0;i<optsfilter.length;i+=1){
-                        opts[i] = new Option(optsfilter[i],i);
+                    for (var i = 0; i < optsfilter.length; i += 1) {
+                        opts[i] = new Option(optsfilter[i], i);
                     }
                 }
             }
 
             // custom Error
-            function CreationError(mssg){
-                return {name:'CreationError',message:mssg};
+            function CreationError(mssg) {
+                return {name: 'CreationError', message: mssg};
             }
 
             // return the create method with some error handling
             window[ns] = {
-                createRelatedSelector: function(from,to,obj,srt) {
+                createRelatedSelector: function (from, to, obj, srt) {
                     try {
-                        if (arguments.length<1) {
+                        if (arguments.length < 1) {
                             throw CreationError('no parameters');
                         }
-                        create.call(null,from,to,obj,srt);
+                        create.call(null, from, to, obj, srt);
                     }
-                    catch(e) { console.log('createRelatedSelector ->',e.name,'\n'
-                        + e.message +
-                        '\ncheck parameters'); }
+                    catch (e) {
+                        console.log('createRelatedSelector ->', e.name, '\n'
+                            + e.message +
+                            '\ncheck parameters');
+                    }
                 }
             };
         }('MAIN'));
@@ -6487,34 +4008,34 @@
 
     <script>
 
-        function initSelectors(){
+        function initSelectors() {
             // next 2 statements should generate error message, see console
             MAIN.createRelatedSelector();
-            MAIN.createRelatedSelector(document.querySelector('#continents7_dinner') );
+            MAIN.createRelatedSelector(document.querySelector('#continents7_dinner'));
 
             //countries
             MAIN.createRelatedSelector
-            ( document.querySelector('#continents7_dinner')           // from select element
-                ,document.querySelector('#selectcountries7_dinner')      // to select element
-                ,{                                               // values object
+            (document.querySelector('#continents7_dinner')           // from select element
+                , document.querySelector('#selectcountries7_dinner')      // to select element
+                , {                                               // values object
 
 
                     carbs: carbs,
                     Fats: fats,
                     proteins: proteins
                 }
-                ,function(a,b){return a>b ? 1 : a<b ? -1 : 0;}   // sort method
+                , function (a, b) {
+                    return a > b ? 1 : a < b ? -1 : 0;
+                }   // sort method
             );
-
-
 
 
         }
 
         //create MAIN namespace
-        (function(ns){ // don't pollute the global namespace
+        (function (ns) { // don't pollute the global namespace
 
-            function create(from, to, obj, srt){
+            function create(from, to, obj, srt) {
                 if (!from) {
                     throw CreationError('create: parameter selector [from] missing');
                 }
@@ -6526,74 +4047,81 @@
                 }
 
                 //retrieve all options from obj and add it
-                obj.all = (function(o){
+                obj.all = (function (o) {
                     var a = [];
                     for (var l in o) {
-                        a = /array/i.test (o[l].constructor) ? a.concat(o[l]) : a;
+                        a = /array/i.test(o[l].constructor) ? a.concat(o[l]) : a;
                     }
                     return a.sort(srt);
                 }(obj));
                 // initialize and populate to-selector with all
-                populator.call( from
-                    ,null
-                    ,to
-                    ,obj
-                    ,srt
+                populator.call(from
+                    , null
+                    , to
+                    , obj
+                    , srt
                 );
 
                 // assign handler
                 from.onchange = populator;
 
-                function initStatics(fn,obj){
+                function initStatics(fn, obj) {
                     for (var l in obj) {
-                        if (obj.hasOwnProperty(l)){
+                        if (obj.hasOwnProperty(l)) {
                             fn[l] = obj[l];
                         }
                     }
                     fn.initialized = true;
                 }
 
-                function populator(e, relatedto, obj, srt){
+                function populator(e, relatedto, obj, srt) {
                     // set pseudo statics
                     var self = populator;
                     if (!self.initialized) {
-                        initStatics(self,{optselects:obj,optselectsall:obj.all,relatedTo:relatedto,sorter:srt || false});
+                        initStatics(self, {
+                            optselects: obj,
+                            optselectsall: obj.all,
+                            relatedTo: relatedto,
+                            sorter: srt || false
+                        });
                     }
 
-                    if (!self.relatedTo){
+                    if (!self.relatedTo) {
                         throw 'not related to a selector';
                     }
                     // populate to-selector from filter/all
                     var optsfilter = this.selectedIndex < 1
                         ? self.optselectsall
                         : self.optselects[this.options[this.selectedIndex].firstChild.nodeValue]
-                        ,cselect = self.relatedTo
-                        ,opts = cselect.options;
+                        , cselect = self.relatedTo
+                        , opts = cselect.options;
                     if (self.sorter) optsfilter.sort(self.sorter);
                     opts.length = 0;
-                    for (var i=0;i<optsfilter.length;i+=1){
-                        opts[i] = new Option(optsfilter[i],i);
+                    for (var i = 0; i < optsfilter.length; i += 1) {
+                        opts[i] = new Option(optsfilter[i], i);
                     }
                 }
             }
 
             // custom Error
-            function CreationError(mssg){
-                return {name:'CreationError',message:mssg};
+            function CreationError(mssg) {
+                return {name: 'CreationError', message: mssg};
             }
 
             // return the create method with some error handling
             window[ns] = {
-                createRelatedSelector: function(from,to,obj,srt) {
+                createRelatedSelector: function (from, to, obj, srt) {
                     try {
-                        if (arguments.length<1) {
+                        if (arguments.length < 1) {
                             throw CreationError('no parameters');
                         }
-                        create.call(null,from,to,obj,srt);
+                        create.call(null, from, to, obj, srt);
                     }
-                    catch(e) { console.log('createRelatedSelector ->',e.name,'\n'
-                        + e.message +
-                        '\ncheck parameters'); }
+                    catch (e) {
+                        console.log('createRelatedSelector ->', e.name, '\n'
+                            + e.message +
+                            '\ncheck parameters');
+                    }
                 }
             };
         }('MAIN'));
@@ -6607,34 +4135,34 @@
 
     <script>
 
-        function initSelectors(){
+        function initSelectors() {
             // next 2 statements should generate error message, see console
             MAIN.createRelatedSelector();
-            MAIN.createRelatedSelector(document.querySelector('#continents7_break1') );
+            MAIN.createRelatedSelector(document.querySelector('#continents7_break1'));
 
             //countries
             MAIN.createRelatedSelector
-            ( document.querySelector('#continents7_break1')           // from select element
-                ,document.querySelector('#selectcountries7_break1')      // to select element
-                ,{                                               // values object
+            (document.querySelector('#continents7_break1')           // from select element
+                , document.querySelector('#selectcountries7_break1')      // to select element
+                , {                                               // values object
 
 
                     carbs: carbs,
                     Fats: fats,
                     proteins: proteins
                 }
-                ,function(a,b){return a>b ? 1 : a<b ? -1 : 0;}   // sort method
+                , function (a, b) {
+                    return a > b ? 1 : a < b ? -1 : 0;
+                }   // sort method
             );
-
-
 
 
         }
 
         //create MAIN namespace
-        (function(ns){ // don't pollute the global namespace
+        (function (ns) { // don't pollute the global namespace
 
-            function create(from, to, obj, srt){
+            function create(from, to, obj, srt) {
                 if (!from) {
                     throw CreationError('create: parameter selector [from] missing');
                 }
@@ -6646,74 +4174,81 @@
                 }
 
                 //retrieve all options from obj and add it
-                obj.all = (function(o){
+                obj.all = (function (o) {
                     var a = [];
                     for (var l in o) {
-                        a = /array/i.test (o[l].constructor) ? a.concat(o[l]) : a;
+                        a = /array/i.test(o[l].constructor) ? a.concat(o[l]) : a;
                     }
                     return a.sort(srt);
                 }(obj));
                 // initialize and populate to-selector with all
-                populator.call( from
-                    ,null
-                    ,to
-                    ,obj
-                    ,srt
+                populator.call(from
+                    , null
+                    , to
+                    , obj
+                    , srt
                 );
 
                 // assign handler
                 from.onchange = populator;
 
-                function initStatics(fn,obj){
+                function initStatics(fn, obj) {
                     for (var l in obj) {
-                        if (obj.hasOwnProperty(l)){
+                        if (obj.hasOwnProperty(l)) {
                             fn[l] = obj[l];
                         }
                     }
                     fn.initialized = true;
                 }
 
-                function populator(e, relatedto, obj, srt){
+                function populator(e, relatedto, obj, srt) {
                     // set pseudo statics
                     var self = populator;
                     if (!self.initialized) {
-                        initStatics(self,{optselects:obj,optselectsall:obj.all,relatedTo:relatedto,sorter:srt || false});
+                        initStatics(self, {
+                            optselects: obj,
+                            optselectsall: obj.all,
+                            relatedTo: relatedto,
+                            sorter: srt || false
+                        });
                     }
 
-                    if (!self.relatedTo){
+                    if (!self.relatedTo) {
                         throw 'not related to a selector';
                     }
                     // populate to-selector from filter/all
                     var optsfilter = this.selectedIndex < 1
                         ? self.optselectsall
                         : self.optselects[this.options[this.selectedIndex].firstChild.nodeValue]
-                        ,cselect = self.relatedTo
-                        ,opts = cselect.options;
+                        , cselect = self.relatedTo
+                        , opts = cselect.options;
                     if (self.sorter) optsfilter.sort(self.sorter);
                     opts.length = 0;
-                    for (var i=0;i<optsfilter.length;i+=1){
-                        opts[i] = new Option(optsfilter[i],i);
+                    for (var i = 0; i < optsfilter.length; i += 1) {
+                        opts[i] = new Option(optsfilter[i], i);
                     }
                 }
             }
 
             // custom Error
-            function CreationError(mssg){
-                return {name:'CreationError',message:mssg};
+            function CreationError(mssg) {
+                return {name: 'CreationError', message: mssg};
             }
 
             // return the create method with some error handling
             window[ns] = {
-                createRelatedSelector: function(from,to,obj,srt) {
+                createRelatedSelector: function (from, to, obj, srt) {
                     try {
-                        if (arguments.length<1) {
+                        if (arguments.length < 1) {
                             throw CreationError('no parameters');
                         }
-                        create.call(null,from,to,obj,srt);
+                        create.call(null, from, to, obj, srt);
                     }
-                    catch(e) { console.log('createRelatedSelector ->',e.name,'\n'
-                        + e.message +
-                        '\ncheck parameters'); }
+                    catch (e) {
+                        console.log('createRelatedSelector ->', e.name, '\n'
+                            + e.message +
+                            '\ncheck parameters');
+                    }
                 }
             };
         }('MAIN'));
@@ -6727,34 +4262,34 @@
 
     <script>
 
-        function initSelectors(){
+        function initSelectors() {
             // next 2 statements should generate error message, see console
             MAIN.createRelatedSelector();
-            MAIN.createRelatedSelector(document.querySelector('#continents7_break2') );
+            MAIN.createRelatedSelector(document.querySelector('#continents7_break2'));
 
             //countries
             MAIN.createRelatedSelector
-            ( document.querySelector('#continents7_break2')           // from select element
-                ,document.querySelector('#selectcountries7_break2')      // to select element
-                ,{                                               // values object
+            (document.querySelector('#continents7_break2')           // from select element
+                , document.querySelector('#selectcountries7_break2')      // to select element
+                , {                                               // values object
 
 
                     carbs: carbs,
                     Fats: fats,
                     proteins: proteins
                 }
-                ,function(a,b){return a>b ? 1 : a<b ? -1 : 0;}   // sort method
+                , function (a, b) {
+                    return a > b ? 1 : a < b ? -1 : 0;
+                }   // sort method
             );
-
-
 
 
         }
 
         //create MAIN namespace
-        (function(ns){ // don't pollute the global namespace
+        (function (ns) { // don't pollute the global namespace
 
-            function create(from, to, obj, srt){
+            function create(from, to, obj, srt) {
                 if (!from) {
                     throw CreationError('create: parameter selector [from] missing');
                 }
@@ -6766,74 +4301,81 @@
                 }
 
                 //retrieve all options from obj and add it
-                obj.all = (function(o){
+                obj.all = (function (o) {
                     var a = [];
                     for (var l in o) {
-                        a = /array/i.test (o[l].constructor) ? a.concat(o[l]) : a;
+                        a = /array/i.test(o[l].constructor) ? a.concat(o[l]) : a;
                     }
                     return a.sort(srt);
                 }(obj));
                 // initialize and populate to-selector with all
-                populator.call( from
-                    ,null
-                    ,to
-                    ,obj
-                    ,srt
+                populator.call(from
+                    , null
+                    , to
+                    , obj
+                    , srt
                 );
 
                 // assign handler
                 from.onchange = populator;
 
-                function initStatics(fn,obj){
+                function initStatics(fn, obj) {
                     for (var l in obj) {
-                        if (obj.hasOwnProperty(l)){
+                        if (obj.hasOwnProperty(l)) {
                             fn[l] = obj[l];
                         }
                     }
                     fn.initialized = true;
                 }
 
-                function populator(e, relatedto, obj, srt){
+                function populator(e, relatedto, obj, srt) {
                     // set pseudo statics
                     var self = populator;
                     if (!self.initialized) {
-                        initStatics(self,{optselects:obj,optselectsall:obj.all,relatedTo:relatedto,sorter:srt || false});
+                        initStatics(self, {
+                            optselects: obj,
+                            optselectsall: obj.all,
+                            relatedTo: relatedto,
+                            sorter: srt || false
+                        });
                     }
 
-                    if (!self.relatedTo){
+                    if (!self.relatedTo) {
                         throw 'not related to a selector';
                     }
                     // populate to-selector from filter/all
                     var optsfilter = this.selectedIndex < 1
                         ? self.optselectsall
                         : self.optselects[this.options[this.selectedIndex].firstChild.nodeValue]
-                        ,cselect = self.relatedTo
-                        ,opts = cselect.options;
+                        , cselect = self.relatedTo
+                        , opts = cselect.options;
                     if (self.sorter) optsfilter.sort(self.sorter);
                     opts.length = 0;
-                    for (var i=0;i<optsfilter.length;i+=1){
-                        opts[i] = new Option(optsfilter[i],i);
+                    for (var i = 0; i < optsfilter.length; i += 1) {
+                        opts[i] = new Option(optsfilter[i], i);
                     }
                 }
             }
 
             // custom Error
-            function CreationError(mssg){
-                return {name:'CreationError',message:mssg};
+            function CreationError(mssg) {
+                return {name: 'CreationError', message: mssg};
             }
 
             // return the create method with some error handling
             window[ns] = {
-                createRelatedSelector: function(from,to,obj,srt) {
+                createRelatedSelector: function (from, to, obj, srt) {
                     try {
-                        if (arguments.length<1) {
+                        if (arguments.length < 1) {
                             throw CreationError('no parameters');
                         }
-                        create.call(null,from,to,obj,srt);
+                        create.call(null, from, to, obj, srt);
                     }
-                    catch(e) { console.log('createRelatedSelector ->',e.name,'\n'
-                        + e.message +
-                        '\ncheck parameters'); }
+                    catch (e) {
+                        console.log('createRelatedSelector ->', e.name, '\n'
+                            + e.message +
+                            '\ncheck parameters');
+                    }
                 }
             };
         }('MAIN'));
@@ -6844,8 +4386,9 @@
 
 
 
+
     <script>
-        function getData(drop1, drop2, carb, fats, proteins, meal) {
+        function getData(drop1, drop2, carb, fats, proteins, calories, meal) {
 
 
             var x = $("#" + drop1 + " option:selected").val();
@@ -6855,13 +4398,16 @@
             var carbValue = parseFloat($('#' + carb).val());
             var fatsValue = parseFloat($('#' + fats).val());
             var proteinsValue = parseFloat($('#' + proteins).val());
-            if (carbValue || fatsValue || proteinsValue) {
+            var totalValue = parseFloat($('#' + calories).val());
+            if (carbValue || fatsValue || proteinsValue || totalValue) {
                 carbValue += x * t[4];
                 fatsValue += x * t[6];
                 proteinsValue += x * t[8];
+                totalValue += x * t[10];
                 $('#' + carb).val(carbValue);
                 $('#' + fats).val(fatsValue);
                 $('#' + proteins).val(proteinsValue);
+                $('#' + calories).val(totalValue);
                 var current = $('#' + meal).text();
                 var currentVal = $('#' + meal).val();
                 $('#' + meal).val(" ");
@@ -6875,6 +4421,7 @@
                 $('#' + carb).val(t[4] * x);
                 $('#' + fats).val(t[6] * x);
                 $('#' + proteins).val(t[8] * x);
+                $('#' + calories).val(t[10] * x);
 
                 var current = $('#' + meal).text();
                 var currentVal = $('#' + meal).val();
@@ -6906,7 +4453,7 @@
 
         }
 
-        function deleteItem(drop1, drop2, carb, fats, proteins, meal) {
+        function deleteItem(drop1, drop2, carb, fats, proteins, calories, meal) {
             var x = $("#" + drop1 + " option:selected").val();
             var y = $("#" + drop2 + " option:selected").text();
             var inputData = $('#' + meal).val();
@@ -6916,15 +4463,16 @@
             var carbValue = parseFloat($('#' + carb).val());
             var fatsValue = parseFloat($('#' + fats).val());
             var proteinsValue = parseFloat($('#' + proteins).val());
-
-            if (carbValue || fatsValue || proteinsValue) {
+            var totalValue = parseFloat($('#' + calories).val());
+            if (carbValue || fatsValue || proteinsValue || totalValue) {
                 carbValue -= parseFloat(x * t[4]);
                 fatsValue -= parseFloat(x * t[6]);
                 proteinsValue -= parseFloat(x * t[8]);
+                totalValue -= parseFloat(x * t[10]);
                 $('#' + carb).val(carbValue);
                 $('#' + fats).val(fatsValue);
                 $('#' + proteins).val(proteinsValue);
-
+                $('#' + calories).val(totalValue);
 
                 var remove = t[0] + ' ' + x + ' ' + t[2];
 
@@ -6946,6 +4494,8 @@
 
         }
     </script>
+
+
 
 
 @stop
