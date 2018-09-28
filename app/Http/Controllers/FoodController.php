@@ -59,10 +59,10 @@ class FoodController extends Controller
         $saveData = new Food();
         $saveData->food_name = str_replace(' ','_' ,  $request['food_name']);
         $saveData->category_id=$request['category_id'];
-        $saveData->calories =ceil($request['calories']);
-        $saveData->proteins_calories =ceil($request['proteins_calories']);
-        $saveData->carb_calories =ceil($request['carb_calories']);
-        $saveData->fats_calories =ceil($request['fats_calories']);
+        $saveData->calories =$request['calories'];
+        $saveData->proteins_calories =$request['proteins_calories'];
+        $saveData->carb_calories =$request['carb_calories'];
+        $saveData->fats_calories =$request['fats_calories'];
 
         $saveData->unit =str_replace(' ','_' ,  $request['unit']);
 
@@ -129,10 +129,10 @@ class FoodController extends Controller
             $saveData->category_id=$request['category_id'];
 
         }
-        $saveData->calories =ceil($request['calories']);
-        $saveData->proteins_calories =ceil($request['proteins_calories']);
-        $saveData->carb_calories =ceil($request['carb_calories']);
-        $saveData->fats_calories =ceil($request['fats_calories']);
+        $saveData->calories =$request['calories'];
+        $saveData->proteins_calories =$request['proteins_calories'];
+        $saveData->carb_calories =$request['carb_calories'];
+        $saveData->fats_calories =$request['fats_calories'];
         $saveData->unit =str_replace(' ','_' ,  $request['unit']);
 
 
