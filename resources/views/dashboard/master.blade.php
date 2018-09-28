@@ -79,7 +79,7 @@
 
 
             @yield('content')
-           
+
         </div>
 
         <!-- /page content -->
