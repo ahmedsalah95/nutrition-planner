@@ -60,7 +60,7 @@
     <section class="indexPatient">
         <div class="container">
             <div class="row">
-
+                <h1> test</h1>
                 <table class="table table-bordered table-striped">
                     <thead>
                     <tr>
