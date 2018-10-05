@@ -64,8 +64,8 @@ class FoodController extends Controller
         $saveData->carb_calories =$request['carb_calories'];
         $saveData->fats_calories =$request['fats_calories'];
 
-        $saveData->unit =str_replace(' ','_' ,  $request['unit']);
 
+        $saveData->unit =str_replace(' ','_' ,  $request['unit']);
 
         $saveData->save();
         return redirect('food');
