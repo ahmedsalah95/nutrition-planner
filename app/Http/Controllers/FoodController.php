@@ -136,6 +136,7 @@ class FoodController extends Controller
         $saveData->unit =str_replace(' ','_' ,  $request['unit']);
 
 
+
         $saveData->save();
         return redirect('food');
     }
