@@ -79,7 +79,7 @@
 
                             <td>
 
-                                <a href="/foodCategory/{{$food->id}}/edit" class="btn btn-warning"><i class="fa fa-pencil"></i></a>
+                                <a href="{{url('/')}}/foodCategory/{{$food->id}}/edit" class="btn btn-warning"><i class="fa fa-pencil"></i></a>
                                 <a href="#" onclick="event.preventDefault();
                                         document.getElementById('delete-form{{$food->id}}').submit();"
                                    style="font-size: 20px;margin-right: 5px;color: #D73925;">

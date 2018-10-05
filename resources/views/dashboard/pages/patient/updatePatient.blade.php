@@ -52,7 +52,7 @@
         </div>
         <div class="container">
             <div class="row">
-                <form   action="/patient/{{$id}}"  method="post" class="form-horizontal form-label-left" >
+                <form   action="{{url('/')}}/patient/{{$id}}"  method="post" class="form-horizontal form-label-left" >
 
                     <input type="hidden" name="_method" value="PUT">
                     @csrf

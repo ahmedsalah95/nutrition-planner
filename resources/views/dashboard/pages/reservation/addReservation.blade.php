@@ -41,7 +41,7 @@
             </div>
             <div class="row">
                 <div class="col-lg-12">
-                    <form   action="/reservation"  method="post" class="form-horizontal form-label-left" >
+                    <form   action="{{url('/')}}/reservation"  method="post" class="form-horizontal form-label-left" >
 
                         @csrf
 

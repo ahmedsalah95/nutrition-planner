@@ -60,7 +60,7 @@
     <section class="indexPatient">
         <div class="container">
             <div class="row">
-                <h1> test</h1>
+
                 <table class="table table-bordered table-striped">
                     <thead>
                     <tr>
@@ -79,7 +79,7 @@
                             <td>{{$patient->reservation_date}}</td>
                             <td>
 
-                                <a href="/reservation/{{$patient->id}}/edit" class="btn btn-warning"><i class="fa fa-pencil"></i></a>
+                                <a href="{{url('/')}}/reservation/{{$patient->id}}/edit" class="btn btn-warning"><i class="fa fa-pencil"></i></a>
                                 <a href="#" onclick="event.preventDefault();
                                         document.getElementById('delete-form{{$patient->id}}').submit();"
                                    style="font-size: 20px;margin-right: 5px;color: #D73925;">

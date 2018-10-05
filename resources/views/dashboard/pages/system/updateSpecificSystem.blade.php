@@ -25,7 +25,7 @@
             @endif
             <div class="row">
                 <div class="col-lg-12">
-                    <form   action="/systemUpdatedForPatient/"  method="post" class="form-horizontal form-label-left" >
+                    <form   action="{{url('/')}}/systemUpdatedForPatient/"  method="post" class="form-horizontal form-label-left" >
 
                         @csrf
                         <input type="hidden" value="{{$id}}" name="patientID">

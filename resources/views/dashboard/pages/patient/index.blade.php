@@ -79,7 +79,7 @@
 
                         <td>
 
-                            <a href="/patient/{{$patient->id}}/edit" class="btn btn-warning"><i class="fa fa-pencil"></i></a>
+                            <a href="{{url('/')}}/patient/{{$patient->id}}/edit" class="btn btn-warning"><i class="fa fa-pencil"></i></a>
                             <a href="#" onclick="event.preventDefault();
                                     document.getElementById('delete-form{{$patient->id}}').submit();"
                                style="font-size: 20px;margin-right: 5px;color: #D73925;">
@@ -92,7 +92,7 @@
                                 <input type="hidden" name="_method" value="delete"/>
 
                             </form>
-                            <a href="/patient/{{$patient->id}}" class="btn btn-success"> <i class="fa fa-eye"></i></a>
+                            <a href="{{url('/')}}/patient/{{$patient->id}}" class="btn btn-success"> <i class="fa fa-eye"></i></a>
                         </td>
                     </tr>
                         @endforeach

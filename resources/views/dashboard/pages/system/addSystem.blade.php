@@ -26,7 +26,7 @@
             @endif
             <div class="row">
                 <div class="col-lg-12">
-                    <form action="/system" method="post" class="form-horizontal form-label-left">
+                    <form action="{{url('/')}}/system" method="post" class="form-horizontal form-label-left">
                         @csrf
 
 

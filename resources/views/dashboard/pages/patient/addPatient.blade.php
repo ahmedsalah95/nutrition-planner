@@ -52,7 +52,7 @@
                 </div>
             @endif
             <div class="row">
-                <form   action="/patient"  method="post" class="form-horizontal form-label-left" >
+                <form   action="{{url('/')}}/patient"  method="post" class="form-horizontal form-label-left" >
 
                     @csrf
                     <div class="form-group">

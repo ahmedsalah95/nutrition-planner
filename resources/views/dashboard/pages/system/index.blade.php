@@ -84,7 +84,7 @@
                                 <td>{!! $system->system_desc !!}</td>
 
                                 <td>
-                                    <a href="/system/{{$system->id}}/edit" class="btn btn-warning"><i class="fa fa-pencil"></i></a>
+                                    <a href="{{url('/')}}/system/{{$system->id}}/edit" class="btn btn-warning"><i class="fa fa-pencil"></i></a>
                                     <a href="#" onclick="event.preventDefault();
                                             document.getElementById('delete-form{{$system->id}}').submit();"
                                        style="font-size: 20px;margin-right: 5px;color: #D73925;">
@@ -98,7 +98,7 @@
 
 
                                     </form>
-                                    <a href="/system/{{$system->id}}" class="btn btn-success">
+                                    <a href="{{url('/')}}/system/{{$system->id}}" class="btn btn-success">
                                         <i class="fa fa-eye"></i>
                                     </a>
                                 </td>

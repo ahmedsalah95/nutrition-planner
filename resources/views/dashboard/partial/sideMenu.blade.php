@@ -27,12 +27,12 @@
                 <ul class="nav side-menu">
 
 
-                    <li><a href="/settings"> <i class="fa fa-laptop"></i> الصفحة الرئيسية</a></li>
-                    <li><a href="/patient"> <i class="fa fa-users"></i> المرضي</a></li>
-                    <li><a href="/system"> <i class="fa fa-paperclip"></i> الانظمة الغذائية</a></li>
-                    <li><a href="/reservation"> <i class="fa fa-ticket"></i> حجز المواعيد </a></li>
+                    <li><a href="{{url('/')}}/settings"> <i class="fa fa-laptop"></i> الصفحة الرئيسية</a></li>
+                    <li><a href="{{url('/')}}/patient"> <i class="fa fa-users"></i> المرضي</a></li>
+                    <li><a href="{{url('/')}}/system"> <i class="fa fa-paperclip"></i> الانظمة الغذائية</a></li>
+                    <li><a href="{{url('/')}}/reservation"> <i class="fa fa-ticket"></i> حجز المواعيد </a></li>
 
-                    <li><a href="/food"> <i class="fa fa-apple"></i> الطعام </a></li>
+                    <li><a href="{{url('/')}}/food"> <i class="fa fa-apple"></i> الطعام </a></li>
 
 
                 </ul>

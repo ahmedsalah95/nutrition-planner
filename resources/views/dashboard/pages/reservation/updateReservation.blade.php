@@ -41,7 +41,7 @@
             </div>
             <div class="row">
                 <div class="col-lg-12">
-                    <form   action="/reservation/{{$id}}"  method="post" class="form-horizontal form-label-left" >
+                    <form   action="{{url('/')}}/reservation/{{$id}}"  method="post" class="form-horizontal form-label-left" >
 
                         <input type="hidden" name="_method" value="PUT">
                         @csrf

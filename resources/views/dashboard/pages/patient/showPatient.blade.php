@@ -219,7 +219,7 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <form action="/saveSystem/{{$patient->id}}" method="post">
+                                        <form action="{{url('/')}}/saveSystem/{{$patient->id}}" method="post">
                                             @csrf
                                             <select name="patientSystem" class="form-control">
                                                 <?php

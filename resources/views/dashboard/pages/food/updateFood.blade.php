@@ -18,7 +18,7 @@
             @endif
             <div class="row">
                 <div class="col-lg-12">
-                    <form   action="/food/{{$id}}"  method="post" class="form-horizontal form-label-left" >
+                    <form   action="{{url('/')}}/food/{{$id}}"  method="post" class="form-horizontal form-label-left" >
                         <input type="hidden" name="_method" value="PUT">
                         @csrf
 
