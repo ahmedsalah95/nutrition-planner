@@ -26,7 +26,7 @@ class SystemController extends Controller
     {
         $x = str_replace('-' ,'<br>',$string);
 
-       $x =preg_replace('#(<br */?>\s*)+#i', '<br>', $x);
+       $x =preg_replace('#(<br */?>\s*)+#i', '<br><br> -', $x);
 
        return $x;
 
