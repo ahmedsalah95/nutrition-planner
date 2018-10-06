@@ -15,7 +15,7 @@ class ReservationController extends Controller
     public function index()
     {
 
-        $patients = Reservation::paginate(3);
+        $patients = Reservation::all();
         return view('dashboard.pages.reservation.index')->with([
             'patients'=>$patients
         ]);
