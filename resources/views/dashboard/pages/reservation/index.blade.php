@@ -5,6 +5,7 @@
     <script src="{{url('/')}}/js/jquery.js"></script>
 
 
+
     @if($errors->all())
         <div style="color: #a94442; background-color: #f2dede; border-color: #ebccd1;" class="alert ">
             <ul>
