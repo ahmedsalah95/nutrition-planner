@@ -117,7 +117,19 @@ class ReservationController extends Controller
 
         $saveData->patient_name = $request['patient_name'];
         $saveData->patient_number=$request['patient_number'];
-        $saveData->reservation_date=$request['reservation_date'];
+        $date = str_replace("-","/",$request['reservation_date']);
+        $dateArray = explode("/",$date);
+
+        if($dateArray[2] <1000)
+        {
+            $day = $dateArray[2];
+            $month=$dateArray[1];
+            $year = $dateArray[0];
+            $saveData->reservation_date=$month."/".$day."/".$year;
+        }else
+        {
+            $saveData->reservation_date=$request['reservation_date'];
+        }
         $saveData->save();
 
         return redirect('reservation');
