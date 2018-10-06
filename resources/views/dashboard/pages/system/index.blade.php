@@ -110,9 +110,7 @@
 
                 </table>
 
-                @if(isset($systems))
-                    <center class="t">{{$systems->links()}}</center>
-                @endif
+              
             </div>
         </div>
 

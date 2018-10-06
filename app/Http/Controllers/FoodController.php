@@ -15,7 +15,7 @@ class FoodController extends Controller
      */
     public function index()
     {
-        $foods = Food::paginate(4);
+        $foods = Food::all();
         return view('dashboard.pages.food.index')->with([
 
             'foods'=>$foods

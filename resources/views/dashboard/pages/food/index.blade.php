@@ -118,9 +118,7 @@
 
                 </table>
 
-                @if(isset($foods))
-                    <center class="t">{{$foods->links()}}</center>
-                @endif
+               
             </div>
         </div>
 

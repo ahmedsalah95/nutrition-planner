@@ -101,9 +101,7 @@
 
                 </table>
 
-                @if(isset($patients))
-                <center class="t">{{$patients->links()}}</center>
-                @endif
+               
             </div>
         </div>
 

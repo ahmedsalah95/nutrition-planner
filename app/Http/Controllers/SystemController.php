@@ -11,7 +11,7 @@ class SystemController extends Controller
 
     public function index()
     {
-        $systems = System::paginate(3);
+        $systems = System::all();
         return view('dashboard.pages.system.index')->with([
             'systems'=>$systems
         ]);

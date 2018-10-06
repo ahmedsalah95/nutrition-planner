@@ -102,7 +102,7 @@
 
                 </table>
 
-                    <center class="t">{{$patients->links()}}</center>
+                   
             </div>
         </div>
 
